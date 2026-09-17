@@ -14,7 +14,9 @@ Line format: `- [Title](Category/file-name.md) - one-line description`
 _(no articles yet)_
 
 ## Machinery
+- [AES SAF 10,000 STK — Fine Dust Extractor (centralised)](Machinery/aes-saf-10000-stk-extractor.md) - the workshop's asset `FA2402`; the only extraction plant on site since both Inventairs were sold; 10,000 m³/h sourced from the vendor's quotation, but the vendor supplied no ducting, cabling or on-site connection and the installation is undocumented (Task T014); no operating manual, so not yet in the maintenance system
 - [Altendorf F45 ElmoDrive — Sliding Table Saw](Machinery/altendorf-f45-panel-saw.md) - the workshop's machine `FA2303`; CNC panel saw with its own ElmoDrive control-unit and spare-parts manuals; safety certificates have expired, owning entity unconfirmed, see Open questions
+- [Brother TD-4420DN — Direct Thermal Label Printer](Machinery/brother-td-4420dn-label-printer.md) - the workshop's asset `FA2401`, the first 2024 asset and the only non-machine-tool on the register; suits short-life part labels, not asset or offcut labels; ZPL emulation contradicted between resellers and Brother's own manual; no company named on the billing line
 - [Hebrock F4 — Edge Banding Machine](Machinery/hebrock-f4-next-edge-bander.md) - the workshop's machine `FA2301`; setup, safety and maintenance schedule from its 6-part manual; corner-rounding incident resolved
 - [Vitap K2-2.0 — CNC Boring, Drilling and Routing Centre](Machinery/vitap-k2-panel-saw.md) - the workshop's machine `FA2304`; CNC boring/drilling/routing centre; no serial/DoC in the manual, §6.8 safety-check documentation requirement unresolved; bought with the Inventair MK2 MTFA (`FA2305`); open TpaCAD tool-ambiguity incident, see Incidents/Open questions
 
@@ -22,6 +24,7 @@ _(no articles yet)_
 _(no articles yet)_
 
 ## Processes
+- [Barcode and scan-event system](Processes/barcode-and-scan-event-system.md) - draft: how a scan becomes a record; the two ID namespaces (physical label number vs `FA` code) and why they are never merged; Phase 0 (the `Scan Events` sheet) built and empty, Phases 1-4 designed with the precondition each is waiting on
 - [Process: Altendorf F45 monthly safety-device check](Processes/f45-monthly-safety-device-check.md) - the F45's mandatory, documented monthly safety check (E-stop, limit switches, hood) and where it's logged (Smartsheet "Safety Check Log")
 - [Machinery maintenance system (routine maintenance)](Processes/machinery-maintenance-system.md) - how routine maintenance is scheduled/tracked; the Maintenance Schedule, Safety Check Log and Fault Log sheets and how their RYGB health works
 - [Maintenance schedule — Altendorf F45 (FA2303)](Processes/maintenance-schedule-altendorf-f45.md) - the F45's manual Chapter-7 cleaning/lubrication schedule + annual PTC electrical check, mapped to Maintenance Schedule rows MT-020…MT-028
@@ -35,6 +38,7 @@ _(no articles yet)_
 
 ## Suppliers
 - [Altendorf GmbH (manufacturer)](Suppliers/altendorf-gmbh.md) - manufacturer of `FA2303` (and parent group of Hebrock, maker of `FA2301`); ordering/contact details for spare parts; the actual UK reseller who sold the machine is still unidentified
+- [Markfield Woodworking Machinery Ltd (supplier)](Suppliers/markfield-woodworking-machinery.md) - UK dealer who sold `FA2402` in October 2024; the first supplier in this KB evidenced by a purchase document rather than a manufacturer's manual; sells and delivers but does not install, connect or commission
 
 ## Troubleshooting
 - [Troubleshooting & fault-log system](Troubleshooting/troubleshooting-and-fault-log-system.md) - how faults are diagnosed, fixed and remembered; the Fault Log sheet and the per-machine references; safety-first rules

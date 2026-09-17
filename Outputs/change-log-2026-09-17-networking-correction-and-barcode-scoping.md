@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, and the charter taken to v11
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v11 and the owed Wiki articles written
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -391,6 +391,42 @@ each one. **v10 (`1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`) archived; v11 live at
   complete". It now reads: the register is *known* to be missing at least one machine class, and
   nothing inside the KB can say whether it is missing others.
 
+### Four Wiki articles written — the documentation debt cleared
+
+The whole day's work had gone into Smartsheet and the control files; **not one Wiki article had been
+created or changed.** Four were owed, and all four are now written:
+
+| Article | Covers |
+|---|---|
+| `Wiki/Machinery/aes-saf-10000-stk-extractor.md` | `FA2402` — the full sourced specification, and the installation nobody documented |
+| `Wiki/Machinery/brother-td-4420dn-label-printer.md` | `FA2401` — suitability, the ZPL contradiction, the four-party billing trail |
+| `Wiki/Suppliers/markfield-woodworking-machinery.md` | The first supplier in this KB evidenced by a purchase rather than a manual |
+| `Wiki/Processes/barcode-and-scan-event-system.md` | Phase 0 as built, and what each later phase is waiting on |
+
+`Wiki/index.md` updated with all four; the predecessor is archived.
+
+**Three things worth noting about how they were written:**
+
+- **The AES article leads with what the KB does *not* have.** For the three production machines
+  there are full manufacturer's manuals. For `FA2402` there is a quotation, an invoice and a
+  control-panel drawing — commercial documents, not engineering ones. The article says so in its
+  second paragraph rather than letting a confident-looking specification table imply otherwise, and
+  the arithmetic comparing rated capacity against demand is labelled as *mine*, not a manufacturer's.
+- **The barcode article records the settled design decisions explicitly**, under a heading that says
+  not to re-litigate them: 2D over Code 128 and why, the three-level `Order → Unit → Part` scheme,
+  the append-only design forced by Smartsheet forms being unable to update rows, and the four
+  Smartsheet API constraints found the hard way. A design written down only as a conclusion gets
+  re-argued; written down with its reasoning, it holds.
+- **The Markfield article ends by warning against a merge.** The R&J Machinery sticker on the Vitap
+  is a *different* lead about a *different* supplier, and the two are easy to conflate now that one
+  of them finally has a name. Recorded as "do not merge the two leads".
+
+**One convention gap found and not silently fixed:** the article template says `related:` links
+should be kept bidirectional. The new articles link out to the three machinery articles; those three
+do not link back (`hebrock-f4-next-edge-bander.md` carries `related: []`). Rewriting three large
+articles for a metadata field was judged not worth it today — flagged here so it is a known debt
+rather than a surprise.
+
 ## Governance
 
 Owner-directed work inside this KB only. No outward action; no purchase committed (scanner and label
@@ -444,9 +480,12 @@ still logs a technician into the saw.
   asking 6-8 bar**, which wants checking on its own account.
 - **Disposal dates and sale proceeds for both Inventairs** (`FA2302`, `FA2305`) — both carry a
   purchase price on the register, so the disposals have a book consequence.
-- **`FA2401` has no asset label applied**, and no Wiki article; nor does `FA2402`.
-- **`Wiki/Suppliers/` entries owed** — Markfield Woodworking Machinery Ltd (fully evidenced by invoice
-  22473) and, once confirmed, R&J Machinery (a dealer sticker on the Vitap, not yet a document).
+- **`FA2401` has no asset label applied** — it is now the only registered asset without a physical
+  tag. *(Its Wiki article, and `FA2402`'s, were written later the same day.)*
+- **`Wiki/Suppliers/` entry still owed for R&J Machinery**, once the dealer sticker on the Vitap is
+  confirmed against a document. *(Markfield's was written later the same day.)*
+- **`related:` links are not bidirectional** — the new articles point at the three machinery
+  articles, which do not point back.
 - ~~**Unit 30's postcode**~~ — **answered by the owner: NE28 6HA**, the same postcode as Unit 31.
   Owed to `CLAUDE.md` §7, which still carries a `[confirm]` marker against it.
 - **The Unit 31 lease body** — only the cover page has been seen. Alterations, repair/reinstatement
