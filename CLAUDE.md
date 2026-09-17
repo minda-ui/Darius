@@ -1,9 +1,18 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 9 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
+**Version 10 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v10 — the workshop is at Unit 31, not Unit 32.** The second documented-fact correction of
+the same day. §7 had recorded the workshop at **Unit 32** since the KB's first session. The owner corrected
+it on 2026-09-17: **Unit 32 is no longer held.** The **workshop is Unit 31**; **office and warehouse are
+Unit 30**. Evidenced by the lease cover page — *Forth England Limited* (landlord) and *Furniture by
+Fishbone Limited* (tenant), **dated 25 June 2026**, for **Unit 31, Point Pleasant Industrial Estate,
+Wallsend, Tyne and Wear NE28 6HA**. All six Machinery Register rows were corrected to Unit 31 and the three
+machinery articles swept. **This also means the machines were physically moved**, which the KB had no record
+of at all — see the re-commissioning question in §7. v9 (`1STw2KS1Ny7GKeDRMC_UbLxZtkjPtCr8z`) is archived.
 
 **Changed in v9 — the networking claim corrected.** §1 stated since the KB's early sessions that the
 design computer and the CNC control PC were **not** networked and that files moved by USB. The owner
@@ -112,23 +121,32 @@ Workshop of Furniture Making - Knowledge Base/
 No `Properties`/`Tenants`/`Contracts` folders: not applicable to this KB's scope.
 
 **Live data sources.** Smartsheet workspace `Workshop`, one sheet of each after the 2026-09-15
-duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2305`),
+duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2305` + `FA2401`),
 **Document Register** (`838802392352644`), **Tasks** (`4087584374523780`), **Safety Check Log**
 (`913380204480388`, F45 monthly safety check), **Maintenance Schedule** (`6753985971226500`, all
-recurring maintenance tasks, RYGB by due date) and **Fault Log** (`414932606781316`, faults & fixes,
-RYGB by status). These sheets, not any Wiki article, are the live source for current status/dates;
-Wiki articles narrate and cite them. The Vitap's own §6.8 check is **not** yet added to the Safety
+recurring maintenance tasks, RYGB by due date), **Fault Log** (`414932606781316`, faults & fixes,
+RYGB by status) and **Scan Events** (`4828191892047748`, the append-only barcode scan log, RYGB by
+Actioned — added 2026-09-17 as Phase 0 of the barcode system). These sheets, not any Wiki article, are
+the live source for current status/dates; Wiki articles narrate and cite them. The Vitap's own §6.8 check is **not** yet added to the Safety
 Check Log — see §7 (Task T013).
 
 **Register conventions.** Per group document-numbering policy v1.3: `FA` prefix (Amfa Furniture),
 7-digit document numbers on the shared group register (not yet used by this KB — see below), 4-digit
 property/asset codes self-assigned locally as `FA` + 2-digit year + 2-digit sequence.
 
+**Asset labels are a separate namespace.** The group uses pre-printed "PROPERTY OF FISHBONE GROUP"
+tags carrying a QR code and a four-digit number (`0017`, `0018` seen; the series starts below that, so
+`0001`–`0016` are elsewhere in the estate). **The label number is the physical tag; the `FA` code is
+this register's ID.** They are joined by the Machinery Register's `Asset Label No.` column and are never
+merged — assets are not renumbered to match labels. The master label register is **group-wide and owned
+by Alex**, not this KB; see `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`.
+
 **Assigned so far**: `FA2301` (Hebrock F4, corrected 2026-09-15 from a wrongly-assumed `FA2601`),
 `FA2302` (Inventair MK1 MTFA extractor, status under review — possibly superseded, Task T014),
 `FA2303` (Altendorf F45), `FA2304` (Vitap K2-2.0), `FA2305` (Inventair MK2 MTFA — acquisition year
 confirmed from invoice 100154 before assigning the code, same discipline applied since the `FA2601`
-mistake).
+mistake), `FA2401` (Brother TD-4420DN label printer — **the first 2024 asset**; the year was evidenced from
+its order receipt *before* a code was assigned, which is exactly why it is not `FA26xx`).
 
 **Correspondence/documents** (invoices, manuals, certificates) are registered on the **shared group
 Document Register** under AMFA Furniture Ltd's `FA` prefix, not a locally invented one — **appending
@@ -197,7 +215,10 @@ Lessons from Sessions 2–12, all on real incidents rather than invented ahead o
   articles, and shaped real advice (a whole barcode-system design was built around an air gap that does
   not exist) before the owner corrected it on 2026-09-17. It carried no citation and no `[confirm]`
   marker, so nothing ever flagged it as inferred. **Infrastructure and environment facts get a source or
-  a marker, exactly like a figure off an invoice.**
+  a marker, exactly like a figure off an invoice.** *Confirmed twice over on the same day:* the workshop's
+  address had said **Unit 32** since Session 1 and was also wrong (it is Unit 31), and a billing address was
+  described as "residential" purely from its format when it is in fact the companies' registered office.
+  Three unsourced statements, three corrections, one day. **If it was not read off a document, say so.**
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -223,17 +244,33 @@ inspector/manufacturer; never edit or delete a row on the shared group Document 
 in-scope documents only, and only once write access is confirmed — not yet done); never touch AMFA
 Furniture Ltd's own KB/Property Register/Document Register from this KB; never hold, type or request a
 secret/credential. Appending to the Workshop workspace's own sheets (Machinery Register, Document
-Register, Tasks, Maintenance Schedule, Fault Log, Safety Check Log) and creating Wiki articles here is
-normal KB work and allowed. Deleting whole Smartsheet sheets is a UI action the owner takes (the
+Register, Tasks, Maintenance Schedule, Fault Log, Safety Check Log, Scan Events) and creating Wiki
+articles here is normal KB work and allowed. Deleting whole Smartsheet sheets is a UI action the owner takes (the
 connector has no delete-sheet tool); the 2026-09-15 duplicate cleanup was done that way.
 **6b — access review:** 2026-09-14, initial setup — Drive KB and Smartsheet workspace created by the
 owner (minda@fishboneconstruction.co.uk); no other access granted. Shared group Document Register
-write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` created (owner) + seeded.
+write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` created (owner) + seeded;
+**confirmed private by the owner 2026-09-17**. 2026-09-17: a supplier support ticket containing live
+SIP trunk credentials was shown in a screenshot; **not recorded anywhere in this KB** per the
+never-hold-a-credential rule, and the owner was advised to have the password rotated.
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions
 
-**Location:** Unit 32, Point Pleasant Industrial Estate, Wallsend NE28 6HA.
+**Location:** **Unit 31, Point Pleasant Industrial Estate, Wallsend, Tyne and Wear NE28 6HA** — the
+workshop. **Unit 30** on the same estate is office and warehouse (postcode `[confirm]`). **Unit 32 is no
+longer held**; everything in this KB dated before 2026-09-17 that says Unit 32 was wrong or is historic.
+
+Evidenced by the lease cover page: **Forth England Limited** (landlord) and **Furniture by Fishbone
+Limited** (tenant), **dated 25 June 2026**. *Furniture by Fishbone Limited is this company's former name —
+Companies House confirms it renamed to **AMFA Furniture Ltd** on 13 July 2026, three weeks after the lease
+was signed (Fishbone Construction KB, `Wiki/Suppliers/amfa-furniture-ltd.md`, CH overview `FH0000019`).*
+Same company, not a new one. **Unit 31's previous occupant was Fishbone Waste**, who have moved out — which
+is why the 2024 Brother order receipt shows "Fishbone Waste, Unit 31" for what is now the workshop's address.
+
+**The lease itself is not this KB's to hold** — §1 deliberately has no `Properties`/`Contracts` folders. It
+belongs in the AMFA Furniture Ltd KB, along with **Forth England Limited** as a Suppliers entry. Flagged for
+the owner/Victoria; only the cover page has been seen.
 
 **Machines registered:**
 - `FA2301` — Hebrock F4 edge banding machine, Serial F3809. CE-compliant. Corner-rounding fault
@@ -256,6 +293,12 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
   manual yet ("will follow later" per the owner) — registered in the Machinery Register only, no Wiki
   article; can't join the maintenance/troubleshooting systems until a manual arrives. May supersede
   `FA2302` (Task T014).
+- `FA2401` — Brother TD-4420DN direct-thermal label printer, bought 09/05/2024 (Printerland order receipt
+  SOA2606351, £211.58 ex VAT). Registered 2026-09-17. **Billing trail unresolved and recorded as such:** no
+  company is named on the billing line — it is in the owner's name at the companies' registered office — and
+  it shipped to Fishbone Waste at Unit 31, then a different occupant. **ZPL emulation unverified** (resellers
+  claim it, Brother's own manual for this model never mentions it); direct thermal fades, so it suits
+  short-life part labels, not asset or offcut labels. No Wiki article yet.
 
 **Operational systems (built 2026-09-15):**
 - **Maintenance** — `Wiki/Processes/machinery-maintenance-system.md` + the Maintenance Schedule sheet
@@ -271,6 +314,9 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
 - **SmartCabinet CAD reference** — `Wiki/Processes/smartcabinet-wall-support-cam-table-reference.md`:
   how to add hardware to SmartCabinet's Wall Support library, full column reference, two worked
   examples that exposed the X-sign discrepancy (Task T017).
+- **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
+  Machinery Register's `Asset Label No.` column. Phases 1–4 (part labels, stage tracking, the offcut
+  library, Vitap program selection) are designed but not built; no Wiki article yet.
 
 **Open questions / tasks:**
 - **SmartCabinet product specifics** — *partly resolved 2026-09-17.* **Vendor and product confirmed:**
@@ -291,6 +337,21 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
   Tools "Dia. 5mm" entry created on the SmartCabinet computer, exported and transferred, then
   referenced in the failing operation's Tool [T] field (Task T016). **TpaCAD complete manual /
   `Workings.pdf`** not yet obtained — likely on the shop's Albatros PC at `Albatros\Help\` (Task T015).
+- **Were the machines re-commissioned after the move to Unit 31?** The KB holds no record that a move
+  happened at all, yet the lease is dated 25 June 2026. The F45's own manual requires, after installation:
+  a flat, level, load-bearing floor (~1100 kg, centre of gravity ~100 mm below the blade axis); swing-arm
+  check (0.5 mm); sub-rollers; main-table height (0.1–0.2 mm); cross-slide height; free-cut both sides;
+  angle-cut calibration by test cut (**< 0.2 mm**); an electrician to verify motor rotation direction; and
+  extraction interlocked to machine power. Extraction also needs **≥ 20 m/s** through the ø140 mm connection,
+  and new duct runs change the velocity actually achieved — which bears on the extraction-sizing question
+  below. **Not assumed skipped; simply unrecorded.** Ask, then either log the checks or schedule them.
+- **The Unit 31 lease body has not been seen** — only the cover page. Alterations, repair/reinstatement and
+  nuisance clauses all bear on the workshop (extraction ducting, three-phase runs, fixing machines to the
+  slab, noise and dust). The lease belongs in the AMFA KB, but those clauses affect this patch.
+- **`0191 605 2945` is printed on every group asset label — and is in a SIP trunk migration.** The ticket
+  (WebMate `T02530-15072026`) lists `+441916052945` among four DDIs migrating, with a stated completion date
+  of **03/08/2026 that has already passed**. If that number does not survive, every asset label points at a
+  dead line. Telephony is **not** this KB's scope; this is flagged only because the labels depend on it.
 - **The shared Google Drive job folder** — the dedicated folder through which SmartCabinet and the
   machines exchange files is not yet identified or examined. Its structure and naming convention
   constrain any barcode/tracking ID scheme, and it may hold customer data from SmartCABINET's CRM
@@ -308,8 +369,11 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
   parallel tracker without knowing what the purchased software already does risks duplicating it.
   Owner has chosen Smartsheet as the tracking layer regardless (2026-09-17); this remains worth
   establishing so the two don't fight.
+- **What do the asset labels' QR codes decode to**, and which label number goes on which machine? Until
+  both are known the `Asset Label No.` column stays empty and Phase 1 cannot start.
 - **Who legally owns `FA2301`–`FA2305`?** All invoiced to Fishbone Drylining Limited (now Fishbone
-  Construction Ltd), not AMFA Furniture Ltd (Task T004).
+  Construction Ltd), not AMFA Furniture Ltd (Task T004). *Sharpened 2026-09-17:* AMFA Furniture Ltd holds
+  the Unit 31 lease, so the picture is one company's machines operating in another's leased premises.
 - **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
   **first F45 monthly safety check not yet logged** (Task T008); **`FA2303` serial/supplier
   unconfirmed** (Task T009); **`FA2303` annual PTC electrician check** needs scheduling (Task T011;

@@ -42,8 +42,10 @@ Offered as a suggestion from the first contributor, not as a specification.
 
 ## The five rows
 
-All five are at **Unit 32, Point Pleasant Industrial Estate, Wallsend NE28 6HA** and all are
-currently **In service**. Label numbers are unassigned — they cannot be filled until someone
+All five are at **Unit 31, Point Pleasant Industrial Estate, Wallsend, Tyne and Wear NE28 6HA** and
+all are currently **In service**. *(Corrected 2026-09-17: an earlier draft of this handoff said Unit
+32. The workshop moved to Unit 31 — the lease is dated 25 June 2026 — and Unit 32 is no longer held.
+Invoices from 2023 show Unit 32 because that is where the machines were then delivered.)* Label numbers are unassigned — they cannot be filled until someone
 physically applies the stickers.
 
 | Asset Label No. | Asset Code | Description | Manufacturer | Model | Serial No. |
@@ -62,7 +64,14 @@ physically applies the stickers.
 ## Owning Entity — identical for all five, and not to be shortened
 
 > Invoiced to **Fishbone Drylining Limited** (now Fishbone Construction Ltd), **not** AMFA Furniture
-> Ltd. Operated by AMFA Furniture Ltd at Unit 32. **Formally unresolved** — Workshop KB Task T004.
+> Ltd. Operated by AMFA Furniture Ltd at Unit 31. **Formally unresolved** — Workshop KB Task T004.
+
+**The premises sharpen this rather than muddy it.** AMFA Furniture Ltd holds the Unit 31 lease
+(landlord *Forth England Limited*, dated 25 June 2026, signed in the company's former name
+**Furniture by Fishbone Limited** — Companies House confirms the rename to AMFA Furniture Ltd on
+13 July 2026, three weeks later; same company, not a new one). So the picture is **one company's
+machines operating in another company's leased premises** — a cleaner question than "who owns these?"
+
 
 Invoices, all dated 09/11/2023:
 
@@ -118,17 +127,18 @@ repeating the `FA2601`→`FA2301` mistake exactly.*
 | Role | Named party |
 |---|---|
 | Ordered from mailbox | `minda@fishbonedrylining.co.uk` — Fishbone Drylining Ltd |
-| **Invoiced to** | **Mindaugas Gaudiesius personally**, 6 Beverley Place, Wallsend NE28 7BH — an individual at a residential address, not a company |
-| **Shipped to** | **Fishbone Waste, Unit 31**, Point Pleasant Industrial Estate, Wallsend NE28 6HA |
-| In use at | Unit 32, the workshop — **assumed, not confirmed** |
+| **Invoiced to** | **Mindaugas Gaudiesius** by name, at 6 Beverley Place, Wallsend NE28 7BH — **the companies' registered office** (owner-confirmed 2026-09-17), not a private address. No company is named on the billing line. |
+| **Shipped to** | **Fishbone Waste, Unit 31**, Point Pleasant Industrial Estate, Wallsend NE28 6HA — Unit 31's occupant in 2024. Fishbone Waste has since moved out and **Unit 31 is now the AMFA workshop**. |
+| In use at | **Unit 31 — confirmed by the owner, 2026-09-17** |
 
-Four different parties, and none of them is AMFA Furniture Ltd. Note also that this document is an
-**order receipt, not an invoice** — the email states "an invoice will also follow", and that invoice
-has not been seen. The order was paid by credit/debit card at the time.
+No company is named on the billing line, so the owning entity is unconfirmed — the same open question
+as T004, and not unusual for a trade account opened in a person's name. Note also that this document
+is an **order receipt, not an invoice** — the email states "an invoice will also follow", and that
+invoice has not been seen. The order was paid by credit/debit card at the time.
 
-**Not registered yet.** Whether this belongs on the *workshop's* register at all depends on where it
-physically sits: the paperwork points at Unit 31 and Fishbone Waste, not Unit 32 and the workshop.
-Pending the owner's confirmation.
+**Registered as `FA2401` on 2026-09-17**, once the owner confirmed the printer is physically at
+Unit 31. The full billing trail above is recorded in the register's Note field rather than tidied
+away.
 
 ---
 
@@ -153,3 +163,8 @@ identifier instead. This has not been tested.
 - Fishbone Construction KB, `Wiki/Suppliers/kosmosoft-smartcabinet.md` — the SmartCABINET purchase
   (read-only to this KB; cited, not copied).
 - Owner's photograph of the asset labels, 2026-09-17.
+- Owner's photograph of the **Unit 31 lease cover page** (Forth England Limited / Furniture by
+  Fishbone Limited, dated 25 June 2026), 2026-09-17 — the source for the address, the landlord and
+  the move date.
+- Fishbone Construction KB, archived `furniture-by-fishbone-ltd.md` and `Wiki/Suppliers/amfa-furniture-ltd.md`
+  (CH overview `FH0000019`) — the 13 July 2026 rename. Read-only to this KB; cited, not copied.
