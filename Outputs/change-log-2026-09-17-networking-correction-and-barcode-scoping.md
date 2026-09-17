@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered and an unregistered compressor found
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, and the charter taken to v11
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -357,6 +357,39 @@ twice as evidence arrived.
 limit**, mid-sentence, with no error returned — caught by reading the API response back rather than
 trusting the success code, and rewritten more compactly. Worth remembering: Smartsheet does not tell
 you it has cut your text.*
+
+### `CLAUDE.md` v11 — the charter catches up
+
+Written at the end of the day, deliberately after the flow of documents settled rather than chasing
+each one. **v10 (`1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`) archived; v11 live at
+`1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`.** What it takes on:
+
+- **§0** — the billing pattern was scoped to `FA2301`–`FA2305`; it now names `FA2402` and the
+  SmartCABINET software too, and records that `FA2401` names no company at all.
+- **§1** — `FA2402` added to the live-sources list and to *Assigned so far*; `FA2302`/`FA2305` marked
+  Sold; the label map written in; and **two new standing rules**. *Codes are never retired or reused* —
+  a sold asset keeps its row and its history, because a disposal changes status, not existence.
+  *Registered ≠ complete* — with the compressor as the worked example of why.
+- **§3 — four new lessons**, all from things that actually happened today:
+  - **A register only contains what somebody thought to put in it.** Five sessions of detailed machine
+    documentation, and the machine feeding all three sat unregistered. **The gap was invisible from
+    inside the KB.** Completeness is not something a knowledge base can check about itself.
+  - **A model name is not a specification.** `STK 10000` was labelled as an unsourced reading for days
+    before the quotation confirmed it. *Label the inference, not just the conclusion.*
+  - **What a document excludes can matter more than what it states** — the AES quotation's exclusion
+    clauses moved an entire installation into the undocumented column.
+  - **Trust the API's response, not its status code** — the silent 4,000-character truncation.
+  - The existing "don't assume one finding resolves another" lesson was **closed rather than deleted**:
+    the answer to "did `FA2305` supersede `FA2302`?" was *neither*, and the restraint is recorded as
+    having paid off.
+- **§6b** — the AnyDesk/PuTTY binaries and the uncopied banking details joined the SIP credential
+  incident, so all three of the day's security events sit in one place.
+- **§7** — Unit 30's postcode confirmed and its `[confirm]` dropped; `FA2402` and the unregistered
+  compressor written up in full; T014 rewritten around the installation question; T018/T019/T020 and
+  the supplier question added; the re-commissioning question marked **partly** answered.
+- **The inventory question was rewritten from soft to hard.** It used to read "not necessarily
+  complete". It now reads: the register is *known* to be missing at least one machine class, and
+  nothing inside the KB can say whether it is missing others.
 
 ## Governance
 

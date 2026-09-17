@@ -1,9 +1,22 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 10 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
+**Version 11 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v11 — the register caught up with the shop floor.** The third session-block of the same
+day, after the owner walked the workshop photographing each machine as its asset label went on. Five
+labels mapped (`0017`-`0021`); **both Inventair extractors sold** (`FA2302`, `FA2305`), which answers
+the supersession question T014 had carried since Session 8 — by replacing both with one centralised
+unit; **`FA2402` registered** (AES SAF 10,000 STK) with its acquisition year evidenced from invoice
+22473 first and its full specification sourced from the vendor's quotation afterwards; and an **ABAC
+screw compressor discovered that was never on the register at all** — the machine that feeds the
+pneumatics of all three production machines. **No code was assigned to it**, because its plate carries
+a *manufacture* year and this KB's convention needs an *acquisition* year: the `FA2601` lesson, applied
+for the third time in one day. Unit 30's postcode confirmed (NE28 6HA), the `[confirm]` dropped. New
+§3 lesson: *a register only contains what somebody thought to put in it.*
+v10 (`1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`) is archived.
 
 **Changed in v10 — the workshop is at Unit 31, not Unit 32.** The second documented-fact correction of
 the same day. §7 had recorded the workshop at **Unit 32** since the KB's first session. The owner corrected
@@ -66,10 +79,11 @@ avoided, but the discipline stands.
 
 This KB shares a parent company (AMFA Furniture Ltd) with a separate, company-wide KB. If a fact
 could be recorded in either, check the AMFA Furniture Ltd KB rather than assuming this one is silent
-on it, and cite across rather than duplicate. **This matters concretely**: every asset registered so
-far (`FA2301`–`FA2305`) was invoiced to Fishbone Drylining Limited (now Fishbone Construction Ltd),
-not to AMFA Furniture Ltd — the AMFA KB may hold the intercompany side of this that this KB doesn't
-have standing to resolve on its own. See §7.
+on it, and cite across rather than duplicate. **This matters concretely**: every machine registered
+here — `FA2301`–`FA2305` and `FA2402` — was invoiced to Fishbone Drylining Limited (now Fishbone
+Construction Ltd), not to AMFA Furniture Ltd, and so was the SmartCABINET software. `FA2401` names no
+company at all. The AMFA KB may hold the intercompany side of this that this KB doesn't have standing
+to resolve on its own. See §7.
 
 ## 1. Database structure
 
@@ -121,8 +135,8 @@ Workshop of Furniture Making - Knowledge Base/
 No `Properties`/`Tenants`/`Contracts` folders: not applicable to this KB's scope.
 
 **Live data sources.** Smartsheet workspace `Workshop`, one sheet of each after the 2026-09-15
-duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2305` + `FA2401`),
-**Document Register** (`838802392352644`), **Tasks** (`4087584374523780`), **Safety Check Log**
+duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2305`,
+`FA2401`, `FA2402`), **Document Register** (`838802392352644`), **Tasks** (`4087584374523780`), **Safety Check Log**
 (`913380204480388`, F45 monthly safety check), **Maintenance Schedule** (`6753985971226500`, all
 recurring maintenance tasks, RYGB by due date), **Fault Log** (`414932606781316`, faults & fixes,
 RYGB by status) and **Scan Events** (`4828191892047748`, the append-only barcode scan log, RYGB by
@@ -135,18 +149,38 @@ Check Log — see §7 (Task T013).
 property/asset codes self-assigned locally as `FA` + 2-digit year + 2-digit sequence.
 
 **Asset labels are a separate namespace.** The group uses pre-printed "PROPERTY OF FISHBONE GROUP"
-tags carrying a QR code and a four-digit number (`0017`, `0018` seen; the series starts below that, so
-`0001`–`0016` are elsewhere in the estate). **The label number is the physical tag; the `FA` code is
-this register's ID.** They are joined by the Machinery Register's `Asset Label No.` column and are never
-merged — assets are not renumbered to match labels. The master label register is **group-wide and owned
-by Alex**, not this KB; see `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`.
+tags carrying a QR code and a four-digit number. **The label number is the physical tag; the `FA` code
+is this register's ID.** The two are joined by the Machinery Register's `Asset Label No.` column and are
+never merged — assets are not renumbered to match labels. The master label register is **group-wide and
+owned by Alex**, not this KB; see
+`Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`.
+
+**Mapped 2026-09-17** from the owner's photographs, one machine at a time: `0017` → the
+**unregistered** ABAC compressor, `0018` → `FA2301`, `0019` → `FA2402`, `0020` → `FA2303`,
+`0021` → `FA2304`. `FA2401` has no label yet. The series starts above `0001`, so `0001`–`0016` are
+elsewhere in the estate. **What the QR codes actually decode to is still unknown** and blocks barcode
+Phase 1 — a scanner has to know what it will receive. `0019` was held at `[confirm]` for several steps
+rather than guessed: the owner photographed it on "our extractor" while two extractors were
+registered, and the right answer turned out to be a third machine the register did not contain.
 
 **Assigned so far**: `FA2301` (Hebrock F4, corrected 2026-09-15 from a wrongly-assumed `FA2601`),
-`FA2302` (Inventair MK1 MTFA extractor, status under review — possibly superseded, Task T014),
-`FA2303` (Altendorf F45), `FA2304` (Vitap K2-2.0), `FA2305` (Inventair MK2 MTFA — acquisition year
-confirmed from invoice 100154 before assigning the code, same discipline applied since the `FA2601`
-mistake), `FA2401` (Brother TD-4420DN label printer — **the first 2024 asset**; the year was evidenced from
-its order receipt *before* a code was assigned, which is exactly why it is not `FA26xx`).
+`FA2302` (Inventair MK1 MTFA extractor — **Sold**), `FA2303` (Altendorf F45), `FA2304` (Vitap K2-2.0),
+`FA2305` (Inventair MK2 MTFA — **Sold**; acquisition year had been confirmed from invoice 100154 before
+the code was assigned, same discipline applied since the `FA2601` mistake), `FA2401` (Brother TD-4420DN
+label printer — **the first 2024 asset**; the year was evidenced from its order receipt *before* a code
+was assigned, which is exactly why it is not `FA26xx`), `FA2402` (AES SAF 10,000 STK fine dust extractor
+— same discipline, year evidenced from invoice 22473 first).
+
+**Codes are never retired or reused.** `FA2302` and `FA2305` were sold in the period before this KB
+existed; their rows stay, marked `Sold`, because they carry purchase prices, an invoice trail and the
+history of how the shop's extraction came to be centralised. A disposal changes an asset's status, not
+its existence in the register.
+
+**Registered ≠ complete.** The ABAC GENESIS 15 500L screw compressor — which supplies the pneumatics of
+`FA2301`, `FA2303` and `FA2304`, and is therefore a single point of failure for the whole workshop — was
+found on 2026-09-17 to have never been registered. It still has **no code**, deliberately: its type plate
+gives a *manufacture* year (2023) and this KB's convention needs an *acquisition* year (Task T019). See
+§3 and §7.
 
 **Correspondence/documents** (invoices, manuals, certificates) are registered on the **shared group
 Document Register** under AMFA Furniture Ltd's `FA` prefix, not a locally invented one — **appending
@@ -170,7 +204,7 @@ Front matter, citation, linking and stub rules: `Wiki/Process-Fishbone-Systems-H
 ## 3. Workflow for processing new items
 
 Group workflow (Detect → Register → Read → Extract → Update → Check → Log → Output → Commit).
-Lessons from Sessions 2–12, all on real incidents rather than invented ahead of time:
+Lessons from Sessions 2–14, all on real incidents rather than invented ahead of time:
 - For a multi-part scanned manual, extract via background sub-tasks (split across parallel agents
   for large sets, e.g. 8 parts as two 4-part agents) rather than reading everything inline; flag
   illegible/OCR'd figures and cross-part inconsistencies explicitly rather than silently picking one
@@ -194,7 +228,11 @@ Lessons from Sessions 2–12, all on real incidents rather than invented ahead o
   name-similarity alone (Task T013).
 - Don't assume one finding resolves another just because they're related — e.g. a new centralised
   extraction unit plausibly supersedes an older single-machine extractor, but that's a task to
-  confirm, not a status to assert (still open for `FA2302`/`FA2305`, Task T014).
+  confirm, not a status to assert. **Closed 2026-09-17, and the restraint paid**: the answer to "did
+  `FA2305` supersede `FA2302`?" was *neither*. Both were sold and replaced by a third machine
+  (`FA2402`) that the register did not contain. Had either been marked "superseded" on plausibility,
+  the correction would have had to unpick a status, a date and a relationship; as it was, nothing
+  needed unpicking.
 - **A formula validated on one invoice becomes evidence for others once repeated.** The 70%-balance
   cross-check was confirmed independently on invoices 100153, 100154 and 100155 — a third clean match
   closes the underlying question generally, not just for the invoice it was first raised on.
@@ -219,6 +257,27 @@ Lessons from Sessions 2–12, all on real incidents rather than invented ahead o
   address had said **Unit 32** since Session 1 and was also wrong (it is Unit 31), and a billing address was
   described as "residential" purely from its format when it is in fact the companies' registered office.
   Three unsourced statements, three corrections, one day. **If it was not read off a document, say so.**
+- **A register only contains what somebody thought to put in it.** Five sessions were spent
+  documenting three machines in detail — manuals, fault tables, maintenance schedules, re-commissioning
+  requirements — while the compressor that feeds all three sat unregistered and unmentioned. It surfaced
+  only because the owner photographed an asset label on it. **The gap was invisible from inside the
+  KB**: nothing in the register pointed at a machine the register did not contain. Completeness is not
+  something a knowledge base can check about itself; it needs a walk round the floor. The same walk
+  turned up the first dealer sticker (R&J Machinery) in the whole KB, after three machines had been
+  documented with no seller identified at all.
+- **A model name is not a specification.** `STK 10000` was read as "probably 10,000 m³/h" and the
+  reading was labelled, in the task itself, as *not* sourced — *"that is a reading of the model name,
+  NOT a specification — do not rely on it."* It held for days until the vendor's quotation arrived and
+  confirmed it. The label cost nothing and would have prevented a wrong number hardening into a fact if
+  the guess had been wrong. **Label the inference, not just the conclusion.**
+- **What a document excludes can matter more than what it states.** The AES quotation's specification
+  table was useful; the two clauses saying the vendor supplies no cabling, no hose and no on-site
+  electrical connection were more useful, because they moved the whole installation — ductwork,
+  electrics, commissioning — into the group's own undocumented column. **Read the exclusions, the
+  payment terms and the delivery conditions, not only the spec table.**
+- **Trust the API's response, not its status code.** A 4,000-character Smartsheet cell value was
+  **silently truncated mid-sentence** and still returned success. It was caught only by reading the
+  stored value back out of the response. Long note fields go in compact, and get read back.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -252,14 +311,21 @@ owner (minda@fishboneconstruction.co.uk); no other access granted. Shared group 
 write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` created (owner) + seeded;
 **confirmed private by the owner 2026-09-17**. 2026-09-17: a supplier support ticket containing live
 SIP trunk credentials was shown in a screenshot; **not recorded anywhere in this KB** per the
-never-hold-a-credential rule, and the owner was advised to have the password rotated.
+never-hold-a-credential rule, and the owner was advised to have the password rotated — with the point
+made plainly that deleting the image does not un-expose a credential already shown. Same day:
+**`AnyDesk.exe` and `putty-64bit-0.85-installer.msi` were found sitting in `Raw/`** — a remote-access
+client and an SSH client in a document inbox. Flagged to the owner, **never opened, run or moved**; the
+owner has since removed them (confirmed by folder listing). Same day: **bank sort code and account
+number on the MWM quotation were deliberately not copied** into the register or the Document Register,
+and the omission is recorded in the `FA2402` note so it reads as a decision, not an oversight.
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions
 
 **Location:** **Unit 31, Point Pleasant Industrial Estate, Wallsend, Tyne and Wear NE28 6HA** — the
-workshop. **Unit 30** on the same estate is office and warehouse (postcode `[confirm]`). **Unit 32 is no
-longer held**; everything in this KB dated before 2026-09-17 that says Unit 32 was wrong or is historic.
+workshop. **Unit 30** on the same estate is office and warehouse — **also NE28 6HA** (owner, 2026-09-17;
+the `[confirm]` that stood against this is discharged). **Unit 32 is no longer held**; everything in this
+KB dated before 2026-09-17 that says Unit 32 was wrong or is historic.
 
 Evidenced by the lease cover page: **Forth England Limited** (landlord) and **Furniture by Fishbone
 Limited** (tenant), **dated 25 June 2026**. *Furniture by Fishbone Limited is this company's former name —
@@ -276,8 +342,9 @@ the owner/Victoria; only the cover page has been seen.
 - `FA2301` — Hebrock F4 edge banding machine, Serial F3809. CE-compliant. Corner-rounding fault
   (stop-screw misadjustment) resolved (FL-001). Maintenance schedule (MT-001…014) + troubleshooting
   reference built. See `Wiki/Machinery/hebrock-f4-next-edge-bander.md`.
-- `FA2302` — Inventair MK1 MTFA dust/fume extractor. Status under review — likely superseded by
-  `FA2305` (Task T014, not confirmed). No manual yet; not in the maintenance system.
+- `FA2302` — Inventair MK1 MTFA dust/fume extractor. **Sold** (owner, 2026-09-17). Never had a manual;
+  never joined the maintenance system. **Disposal date and sale proceeds unknown** — it carries a
+  purchase price, so the disposal has a book consequence.
 - `FA2303` — Altendorf F45 ElmoDrive CNC sliding-table saw. **Safety certificates expired 22.02.2024
   — unresolved compliance gap, Task T007.** Mandatory monthly documented safety check required (Task
   T008, not yet performed). Maintenance schedule (MT-020…028) + troubleshooting reference built. See
@@ -289,16 +356,42 @@ the owner/Victoria; only the cover page has been seen.
   the outfit's per-bush ID), not yet tested end-to-end (Task T016). Maintenance schedule (MT-030…036)
   + troubleshooting reference built. See `Wiki/Machinery/vitap-k2-panel-saw.md`,
   `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md`.
-- `FA2305` — Inventair MK2 MTFA dust/fume extractor, bought alongside `FA2304` on invoice 100154. No
-  manual yet ("will follow later" per the owner) — registered in the Machinery Register only, no Wiki
-  article; can't join the maintenance/troubleshooting systems until a manual arrives. May supersede
-  `FA2302` (Task T014).
+- `FA2305` — Inventair MK2 MTFA dust/fume extractor, bought alongside `FA2304` on invoice 100154.
+  **Sold** (owner, 2026-09-17). The promised manual never arrived and now never will. **Disposal date
+  and sale proceeds unknown**, same book consequence as `FA2302`. *The long-running question of whether
+  `FA2305` superseded `FA2302` is answered: neither did.* Both were sold and replaced by a single
+  centralised unit, `FA2402`, that this KB had never heard of. The suspicion had been recorded as
+  unconfirmed rather than asserted, so nothing had to be unpicked — see §3.
 - `FA2401` — Brother TD-4420DN direct-thermal label printer, bought 09/05/2024 (Printerland order receipt
   SOA2606351, £211.58 ex VAT). Registered 2026-09-17. **Billing trail unresolved and recorded as such:** no
   company is named on the billing line — it is in the owner's name at the companies' registered office — and
   it shipped to Fishbone Waste at Unit 31, then a different occupant. **ZPL emulation unverified** (resellers
   claim it, Brother's own manual for this model never mentions it); direct thermal fades, so it suits
-  short-life part labels, not asset or offcut labels. No Wiki article yet.
+  short-life part labels, not asset or offcut labels. No Wiki article yet; **no asset label applied yet**.
+- `FA2402` — **AES SAF 10,000 STK fine dust extractor** (centralised, three-phase), serial **A-077**.
+  Invoice **22473**, **08/10/2024**, **Markfield Woodworking Machinery Ltd**, £6,350 net / £7,620 inc
+  VAT, paid in full. Asset label **`0019`**. Registered 2026-09-17, acquisition year evidenced before
+  the code was assigned. **Specification sourced from the vendor's quotation of 02/10/2024** (six days
+  before the invoice, identical figures): **10,000 m³/h**; 11 kW / 15 HP direct drive, star-delta; **355
+  mm** suction; **64 filters at Ø160 × 940 mm, 30.22 m²**; three waste buckets; 720 kg; a Part Holder
+  stopping parts over 25 × 25 mm reaching the propeller. **What the vendor did *not* supply is the
+  important part** — *"not supplied with electrical cabling, extraction hose or blades"* and *"we do not
+  electrically connect machinery on-site"* — so the ductwork and electrics were the group's own work and
+  **nothing about that installation is recorded** (Task T014). *"Dust absorption rate 40 m/min"* is
+  recorded verbatim and **unreconciled**: it matches neither the inlet velocity nor the filter face
+  velocity, and is not to be used until a vendor or a real manual explains it. **Still no operating
+  manual**, so it cannot join the Maintenance Schedule or Fault Log. Billed to Fishbone Drylining Ltd and
+  **delivered to Unit 31 in October 2024 — nearly two years before AMFA's Unit 31 lease** (T004). No Wiki
+  article yet.
+- **The ABAC compressor — on the floor, on a label, not on the register.** ABAC **GENESIS 15 500L**
+  rotary screw compressor with integrated dryer; asset label **`0017`**; serial **ITJ717909**, product
+  4152025548, **plate year 2023**, 455 kg, **15 kW three-phase**, 0.58 kW dryer, max **10 bar**,
+  refrigerant **R513A 0.5 kg = 316 kg CO₂e**. **No `FA` code assigned** — the plate year is manufacture,
+  the convention needs acquisition; purchase paperwork requested (Task T019). **It feeds the pneumatics
+  of `FA2301`, `FA2303` and `FA2304`.** Two live concerns: its gauge read **5.4 bar** against machines
+  asking 6–8 bar, and the service log printed on its own yellow label is **blank** (Task T020). F-Gas:
+  0.32 tonnes CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no periodic
+  leak checking.
 
 **Operational systems (built 2026-09-15):**
 - **Maintenance** — `Wiki/Processes/machinery-maintenance-system.md` + the Maintenance Schedule sheet
@@ -344,7 +437,10 @@ the owner/Victoria; only the cover page has been seen.
   angle-cut calibration by test cut (**< 0.2 mm**); an electrician to verify motor rotation direction; and
   extraction interlocked to machine power. Extraction also needs **≥ 20 m/s** through the ø140 mm connection,
   and new duct runs change the velocity actually achieved — which bears on the extraction-sizing question
-  below. **Not assumed skipped; simply unrecorded.** Ask, then either log the checks or schedule them.
+  below. **Not assumed skipped; simply unrecorded.** *The owner has confirmed the machines are "up and
+  running"* — which answers whether they work, **not** whether these checks were carried out. Recorded as
+  partly answered, not closed (Task T018): "it runs" is not "it was commissioned", and treating one as the
+  other is the inference §3 keeps warning about.
 - **The Unit 31 lease body has not been seen** — only the cover page. Alterations, repair/reinstatement and
   nuisance clauses all bear on the workshop (extraction ducting, three-phase runs, fixing machines to the
   slab, noise and dust). The lease belongs in the AMFA KB, but those clauses affect this patch.
@@ -369,23 +465,55 @@ the owner/Victoria; only the cover page has been seen.
   parallel tracker without knowing what the purchased software already does risks duplicating it.
   Owner has chosen Smartsheet as the tracking layer regardless (2026-09-17); this remains worth
   establishing so the two don't fight.
-- **What do the asset labels' QR codes decode to**, and which label number goes on which machine? Until
-  both are known the `Asset Label No.` column stays empty and Phase 1 cannot start.
-- **Who legally owns `FA2301`–`FA2305`?** All invoiced to Fishbone Drylining Limited (now Fishbone
-  Construction Ltd), not AMFA Furniture Ltd (Task T004). *Sharpened 2026-09-17:* AMFA Furniture Ltd holds
-  the Unit 31 lease, so the picture is one company's machines operating in another's leased premises.
+- **What do the asset labels' QR codes decode to?** *Which label goes on which machine is now answered*
+  (`0017`–`0021`, §1), but the QR payload is still unknown and **Phase 1 cannot start until it is** — a
+  scanner has to know what it will receive.
+- **Who legally owns `FA2301`–`FA2305` and `FA2402`?** All invoiced to Fishbone Drylining Limited (now
+  Fishbone Construction Ltd), not AMFA Furniture Ltd (Task T004) — and so was the SmartCABINET software.
+  *Sharpened 2026-09-17:* AMFA Furniture Ltd holds the Unit 31 lease, so the picture is one company's
+  machines operating in another's leased premises. **`FA2402` sharpens it again**: it was delivered to
+  Unit 31 in **October 2024**, nearly two years before that lease was signed, which suggests the 2026
+  "move" was AMFA taking a lease on a unit the group already occupied rather than a relocation. Evidence,
+  not a conclusion — the lease body and the intercompany side both sit outside this KB.
 - **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
   **first F45 monthly safety check not yet logged** (Task T008); **`FA2303` serial/supplier
   unconfirmed** (Task T009); **`FA2303` annual PTC electrician check** needs scheduling (Task T011;
   Maintenance Schedule MT-025).
-- **`FA2302`/`FA2305` relationship and extraction sizing for `FA2304`** — not confirmed; the Vitap
-  alone needs ~2000 m³/h (Task T014).
+- **Installed extraction performance (Task T014, rewritten).** The `FA2302`/`FA2305` half is closed —
+  both sold, both replaced by `FA2402`. The sizing half is now a different question. `FA2402` is rated
+  **10,000 m³/h**, against known demand of the Vitap's ~2000 m³/h plus roughly **1,110 m³/h** for the
+  F45 — *that second figure is my own arithmetic from ≥20 m/s through ø140 mm, not a manufacturer
+  number* — plus the Hebrock, whose duct diameter this KB does not hold, so its ≥25 m/s cannot be
+  converted. Comfortable on paper. **But the vendor supplied no ducting, no cabling and no on-site
+  connection, and the machines have since been moved**, so what each machine actually receives is
+  decided by pipework nobody documented. **Closing action: an anemometer velocity reading at each
+  machine's connection**, which also answers the extraction half of T018.
+- **A real AES operating manual** — the quotation gives specification, the schematic gives the control
+  panel; neither gives maintenance intervals, filter-change criteria, safety instructions or a fault
+  table. Until one arrives `FA2402` stays outside the maintenance and troubleshooting systems. The
+  consumables are known (64 filters, three buckets), so the schedule can be built the moment the
+  intervals exist.
+- **The ABAC compressor** — purchase paperwork before a code can be assigned (T019); service history and
+  F-Gas position (T020); and the **5.4 bar gauge reading against machines asking 6–8 bar**, which wants
+  checking on its own account rather than as paperwork.
+- **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
+  disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
   pre-cycle functional test enough? Owner decision (Task T013); MT-036 holds the place meanwhile.
 - **`FA2304` serial/manufacture year** — confirm invoice-derived Serial 320070 AT against the type
   plate (Task T012).
-- Full inventory of remaining workshop machinery beyond these five — advanced by the Vitap/Inventair
-  MK2 additions; not necessarily complete.
+- **Who actually sold `FA2301`, `FA2303` and `FA2304`?** Invoices 100153/100154/100155 name the customer
+  and the items but carry no seller letterhead. The Vitap wears an **R&J Machinery** dealer sticker
+  (`01455`, Hinckley) — recorded **`[confirm]`**, because a sticker on a machine is not a document, but
+  it is the first evidence there has been. **Markfield Woodworking Machinery Ltd** (`FA2402`) is by
+  contrast fully evidenced and warrants a `Wiki/Suppliers/` article — the first supplier entry in this
+  KB derived from a purchase rather than from a manufacturer's manual.
+- **Full inventory of workshop machinery — demonstrably still incomplete.** This was a soft open
+  question until 2026-09-17, when a 15 kW compressor feeding all three production machines turned out
+  never to have been registered. That is no longer a theoretical gap: **the register is known to be
+  missing at least one machine class, and nothing inside the KB can tell us whether it is missing
+  others.** Hand tools, extraction ductwork, the air receiver and the server rack itself have never been
+  assessed. Closing it needs a walk round the floor, not a document (see §3).
 - `AMF` vs `FA` property/asset-code inconsistency in AMFA's own Property Register — still just flagged.
 - ~~Exact price on the Hebrock invoice unconfirmed~~ — **resolved 2026-09-15** by the 70%-balance
   cross-check confirmed on three invoices (Task T005, closed Done).
