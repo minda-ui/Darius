@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v11 and the owed Wiki articles written
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v12 and the owed Wiki articles written
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -437,6 +437,41 @@ do not link back (`hebrock-f4-next-edge-bander.md` carries `related: []`). Rewri
 articles for a metadata field was judged not worth it today — flagged here so it is a known debt
 rather than a surprise.
 
+### `CLAUDE.md` v12 — a claim in the charter was not true
+
+The last act of the session was an attempt to close the git-mirror gap flagged earlier. It failed, and
+**the failure was more useful than the fix would have been.**
+
+**§1 said the mirror "is kept in step" with Drive. It never was.** The mirror holds the charter,
+`README.md`, `Wiki/index.md`, everything in `Outputs/`, and the four articles written today — not the
+other fifteen Wiki articles, which exist on Drive only. That claim had stood since v8 and nobody had
+checked it. **The fourth unsourced statement corrected in a single day**, after the networking claim,
+the Unit 32 address and the "residential" billing address.
+
+**And it cannot be made true by copying.** Before attempting fifteen article transfers I tested the
+method on the smallest one — `Suppliers/altendorf-gmbh.md`, 2,007 bytes. The Drive connector's read
+tool does not return a file's bytes; it returns a *rendering* with leading punctuation escaped and
+two-space hard breaks appended. The reconstruction came back at **2,003 bytes — four out, silently.**
+
+Scaled to fifteen articles that method would have produced a mirror that looked complete and differed
+from the source in ways nobody would ever notice. **An honestly incomplete mirror beats a quietly
+corrupted one**, so the mirror stays partial, §1 now says so precisely, and §7 records what closing it
+would actually need: a mechanism that returns bytes — an owner-side folder download or a proper
+Drive-to-git sync — not a read-and-re-emit.
+
+**The same finding settles the `related:` link debt.** Making those links bidirectional means
+re-authoring three 21–30 KB machinery articles through that same lossy read, to change one metadata
+field. Recorded in §7 as deliberately not fixed, with the reason and the condition under which it
+should be: the next time one of those articles is rewritten for a substantive reason anyway.
+
+**Also into §3, from this session's own mistakes:** *verify like with like* (a byte count is not a
+character count), and *the connector's read tool does not round-trip, so never "copy" a file with it* —
+with the working rule that replaces it: **write new content to both stores from the same local copy
+and check `wc -c` on both sides.** Every file written this session was verified that way.
+
+v11 (`1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`) archived; **v12 live at
+`1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`**, 47,496 bytes on both sides.
+
 ## Governance
 
 Owner-directed work inside this KB only. No outward action; no purchase committed (scanner and label
@@ -495,7 +530,11 @@ still logs a technician into the saw.
 - **`Wiki/Suppliers/` entry still owed for R&J Machinery**, once the dealer sticker on the Vitap is
   confirmed against a document. *(Markfield's was written later the same day.)*
 - **`related:` links are not bidirectional** — the new articles point at the three machinery
-  articles, which do not point back.
+  articles, which do not point back. *Deliberately left: the fix needs a lossy re-author of three
+  large articles (see v12 above). Recorded in `CLAUDE.md` §7.*
+- **The git mirror is partial** — fifteen Wiki articles are on Drive only, and the connector cannot
+  copy them faithfully. Closing it needs an owner-side folder download or a real Drive-to-git sync.
+  *`CLAUDE.md` §1 claimed the mirror was in step; that claim was wrong and is corrected in v12.*
 - ~~**Unit 30's postcode**~~ — **answered by the owner: NE28 6HA**, the same postcode as Unit 31.
   Owed to `CLAUDE.md` §7, which still carries a `[confirm]` marker against it.
 - **The Unit 31 lease body** — only the cover page has been seen. Alterations, repair/reinstatement

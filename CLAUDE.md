@@ -1,9 +1,25 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 11 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
+**Version 12 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v12 — a claim in this file was not true, and the reason it can't be made true.** §1 has
+said since 2026-09-16 that the git mirror "is kept in step" with Drive. **It is not.** The mirror holds
+this charter, `README.md`, `Wiki/index.md`, `Outputs/`, and the four Wiki articles written on
+2026-09-17 — **not** the other fifteen Wiki articles, which exist on Drive only. Found while trying to
+close that gap, and corrected here rather than left as the fourth unsourced claim of the day.
+
+**And the gap cannot be closed by copying.** The Drive connector's read tool returns a *re-formatted*
+rendering — punctuation escaped, hard-break spaces appended — not the bytes on disk. Reconstructing a
+2 KB article from it landed **4 bytes out**, and the error is silent. Copying fifteen articles that way
+would produce a mirror that looks right and differs from the source in ways nobody would notice, which
+is worse than a mirror that is honestly incomplete. **So the mirror stays partial and says so**, and
+the same finding rules out rewriting the three machinery articles just to add `related:` back-links —
+a metadata fix is not worth re-authoring 75 KB of text through a lossy read. Both are recorded as debt
+in §7. Also new in §3: *verify like with like* — a byte count is not a character count.
+v11 (`1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`) is archived.
 
 **Changed in v11 — the register caught up with the shop floor.** The third session-block of the same
 day, after the owner walked the workshop photographing each machine as its asset label went on. Five
@@ -108,8 +124,15 @@ application databases, and whether an entry added in one reaches the other autom
 network.
 
 **Where it lives.** Google Drive, folder `Workshop of Furniture Making - Knowledge Base`, primary
-copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). Git mirror `minda-ui/Darius` (seeded 2026-09-16); Drive
-stays the source of truth, the mirror is kept in step.
+copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
+
+**The git mirror `minda-ui/Darius` is partial, and that is a deliberate, recorded state — not an
+oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and the
+four Wiki articles created on 2026-09-17. The other fifteen Wiki articles live on Drive only. Anything
+authored in a session is written to both and verified with `wc -c` against Drive's reported size;
+anything that predates the mirror stays on Drive, because **the connector's read tool cannot return a
+file byte-for-byte** (§3), so back-filling would silently corrupt what it copied. *v8–v11 of this file
+claimed the mirror "is kept in step". That was never true; corrected in v12.*
 
 **Folders.**
 ```
@@ -257,6 +280,7 @@ Lessons from Sessions 2–14, all on real incidents rather than invented ahead o
   address had said **Unit 32** since Session 1 and was also wrong (it is Unit 31), and a billing address was
   described as "residential" purely from its format when it is in fact the companies' registered office.
   Three unsourced statements, three corrections, one day. **If it was not read off a document, say so.**
+  *A fourth surfaced the same evening — §1's claim that the git mirror "is kept in step" (v12).*
 - **A register only contains what somebody thought to put in it.** Five sessions were spent
   documenting three machines in detail — manuals, fault tables, maintenance schedules, re-commissioning
   requirements — while the compressor that feeds all three sat unregistered and unmentioned. It surfaced
@@ -278,6 +302,17 @@ Lessons from Sessions 2–14, all on real incidents rather than invented ahead o
 - **Trust the API's response, not its status code.** A 4,000-character Smartsheet cell value was
   **silently truncated mid-sentence** and still returned success. It was caught only by reading the
   stored value back out of the response. Long note fields go in compact, and get read back.
+- **Verify like with like.** A Drive file's reported `fileSize` is **bytes**; Python's `len()` is
+  **characters**. Comparing one against the other on a file full of `—`, `≥`, `³` and `Ø` showed a
+  329-"byte" gap that did not exist, and cost a full withdraw-re-read-re-upload cycle plus a wrong
+  "do not cite" label on an archived file that had nothing wrong with it. **Use `wc -c` both sides.**
+- **The connector's read tool does not round-trip, so never "copy" a file with it.** It returns a
+  re-formatted rendering — leading punctuation escaped, two-space hard breaks appended — not the bytes
+  on disk. A 2 KB article reconstructed from it came back **4 bytes out, silently**. This is why the
+  git mirror is deliberately partial (§1) rather than back-filled, and why a large article is never
+  rewritten just to change one metadata field: **every rewrite through a lossy read risks drift in the
+  99% you did not mean to touch.** Write new content to both stores from the same local copy and check
+  `wc -c`; do not treat Drive as a source you can read back and re-emit.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -367,7 +402,8 @@ the owner/Victoria; only the cover page has been seen.
   company is named on the billing line — it is in the owner's name at the companies' registered office — and
   it shipped to Fishbone Waste at Unit 31, then a different occupant. **ZPL emulation unverified** (resellers
   claim it, Brother's own manual for this model never mentions it); direct thermal fades, so it suits
-  short-life part labels, not asset or offcut labels. No Wiki article yet; **no asset label applied yet**.
+  short-life part labels, not asset or offcut labels. **No asset label applied yet.** See
+  `Wiki/Machinery/brother-td-4420dn-label-printer.md`.
 - `FA2402` — **AES SAF 10,000 STK fine dust extractor** (centralised, three-phase), serial **A-077**.
   Invoice **22473**, **08/10/2024**, **Markfield Woodworking Machinery Ltd**, £6,350 net / £7,620 inc
   VAT, paid in full. Asset label **`0019`**. Registered 2026-09-17, acquisition year evidenced before
@@ -381,8 +417,9 @@ the owner/Victoria; only the cover page has been seen.
   recorded verbatim and **unreconciled**: it matches neither the inlet velocity nor the filter face
   velocity, and is not to be used until a vendor or a real manual explains it. **Still no operating
   manual**, so it cannot join the Maintenance Schedule or Fault Log. Billed to Fishbone Drylining Ltd and
-  **delivered to Unit 31 in October 2024 — nearly two years before AMFA's Unit 31 lease** (T004). No Wiki
-  article yet.
+  **delivered to Unit 31 in October 2024 — nearly two years before AMFA's Unit 31 lease** (T004). See
+  `Wiki/Machinery/aes-saf-10000-stk-extractor.md` and
+  `Wiki/Suppliers/markfield-woodworking-machinery.md`.
 - **The ABAC compressor — on the floor, on a label, not on the register.** ABAC **GENESIS 15 500L**
   rotary screw compressor with integrated dryer; asset label **`0017`**; serial **ITJ717909**, product
   4152025548, **plate year 2023**, 455 kg, **15 kW three-phase**, 0.58 kW dryer, max **10 bar**,
@@ -408,8 +445,9 @@ the owner/Victoria; only the cover page has been seen.
   how to add hardware to SmartCabinet's Wall Support library, full column reference, two worked
   examples that exposed the X-sign discrepancy (Task T017).
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
-  Machinery Register's `Asset Label No.` column. Phases 1–4 (part labels, stage tracking, the offcut
-  library, Vitap program selection) are designed but not built; no Wiki article yet.
+  Machinery Register's `Asset Label No.` column, documented in
+  `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
+  offcut library, Vitap program selection) are designed but not built; the sheet is still empty.
 
 **Open questions / tasks:**
 - **SmartCabinet product specifics** — *partly resolved 2026-09-17.* **Vendor and product confirmed:**
@@ -506,7 +544,7 @@ the owner/Victoria; only the cover page has been seen.
   and the items but carry no seller letterhead. The Vitap wears an **R&J Machinery** dealer sticker
   (`01455`, Hinckley) — recorded **`[confirm]`**, because a sticker on a machine is not a document, but
   it is the first evidence there has been. **Markfield Woodworking Machinery Ltd** (`FA2402`) is by
-  contrast fully evidenced and warrants a `Wiki/Suppliers/` article — the first supplier entry in this
+  contrast fully evidenced and has its own `Wiki/Suppliers/` article — the first supplier entry in this
   KB derived from a purchase rather than from a manufacturer's manual.
 - **Full inventory of workshop machinery — demonstrably still incomplete.** This was a soft open
   question until 2026-09-17, when a 15 kW compressor feeding all three production machines turned out
@@ -514,6 +552,16 @@ the owner/Victoria; only the cover page has been seen.
   missing at least one machine class, and nothing inside the KB can tell us whether it is missing
   others.** Hand tools, extraction ductwork, the air receiver and the server rack itself have never been
   assessed. Closing it needs a walk round the floor, not a document (see §3).
+- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). Fifteen Wiki articles
+  exist on Drive only. Closing it needs a mechanism that returns bytes — an owner-side folder download,
+  or a Drive-to-git sync outside this connector — not a read-and-re-emit. Until then the mirror is a
+  *partial* mirror and this file says so.
+- **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
+  `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
+  link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:
+  the fix means re-authoring three 21–30 KB articles through a lossy read to change one metadata
+  field, which risks more than it repairs (§3). Fix it the next time one of those articles is being
+  rewritten for a substantive reason anyway.
 - `AMF` vs `FA` property/asset-code inconsistency in AMFA's own Property Register — still just flagged.
 - ~~Exact price on the Hebrock invoice unconfirmed~~ — **resolved 2026-09-15** by the 70%-balance
   cross-check confirmed on three invoices (Task T005, closed Done).
