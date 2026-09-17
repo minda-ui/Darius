@@ -112,8 +112,54 @@ human-readable text alongside), a three-level `Order → Unit → Part` ID schem
 never update them. The BP-scheme stage list in
 `Wiki/Software/smartcabinet-and-production-workflow.md` supplies the stages.
 
-**Not built this session** — the ID scheme depends on what SmartCabinet's label designer can put in a
-barcode field, and on the structure of the shared Drive job folder, neither of which has been seen.
+**Phase 0 built (later the same session, on the owner's go-ahead):**
+
+- **Smartsheet `Scan Events`** created (`4828191892047748`) — the append-only scan log. `Health` (RYGB
+  column formula off `Actioned`, matching the Fault Log and Maintenance Schedule convention),
+  `Code Scanned` (primary — the raw value, untidied), `Event No.` (auto `SE-00001`),
+  `Logged At`/`Logged By` (set automatically on row creation), `Asset / Machine ID`, `Event Type`,
+  `Detail`, `Linked Record`, `Actioned`, `Notes`. Production and offcut options were included in
+  `Event Type` now so the sheet needs no restructuring at Phase 2.
+  *Build notes: column formulas are rejected at sheet-creation time (error 1032) and had to be added
+  afterwards; `CREATED_DATE` requires column type `DATETIME`, not `ABSTRACT_DATETIME` (error 1079);
+  column descriptions cap at 250 characters (error 1041).*
+- **`Asset Label No.` column** added to the Machinery Register.
+
+**The labels arrived mid-session and changed the design for the better.** They are pre-printed
+"PROPERTY OF FISHBONE GROUP / TEL: 0191 605 2945" asset tags with a QR code and a four-digit number
+(`0017`, `0018` seen). Durable printed stock, so the direct-thermal fade problem does not apply to
+machine labels at all. Consequences recorded:
+- **Two ID systems now, deliberately not merged.** The label number is the physical tag; the `FA` code
+  is the register ID. Written into the new column's description, with *never renumber assets to match
+  labels*. `Scan Events` already separates `Code Scanned` from `Asset / Machine ID` for the same reason.
+- **The series starts at 0017**, so `0001`-`0016` exist elsewhere — this is a **group-wide** series.
+- **Owner decision:** one group-wide asset/label register, to be built by **Alex**, not per-KB. The
+  boundary agreed: that register holds the index (label no., what it is, whose it is, where); this KB
+  keeps the detail; **the join key is the label number**. Recorded in
+  `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`, the handoff prepared for Alex.
+- **"PROPERTY OF FISHBONE GROUP" is deterrent labelling, not evidence of title** — flagged so the
+  wording does not get copied into the group register's owning-entity column and bake T004's ambiguity
+  in estate-wide.
+
+**Brother TD-4420DN — order receipt processed, asset NOT registered.**
+`Raw/Fishbone Drylining Ltd Mail - Order Receipt SOA2606351.pdf`: Printerland order **SOA2606351**,
+**9 May 2024** — printer £211.58 ex VAT plus two direct-thermal die-cut rolls (102x50mm £14.45,
+102x152mm £5.57); £231.60 + £46.32 VAT = **£277.92**.
+- **Acquisition year 2024 evidenced**, so the code is **`FA2401`** — the first 2024 asset here. Had it
+  been numbered when it first came to notice it would have been `FA26xx`, repeating `FA2601` exactly.
+  The discipline of waiting for the document worked.
+- **Four parties, none of them AMFA**: ordered from the Fishbone Drylining mailbox; **invoiced to
+  Mindaugas Gaudiesius personally at a residential address**; **shipped to Fishbone Waste, Unit 31** -
+  not Unit 32. Its presence in the workshop is assumed, not confirmed.
+- It is an **order receipt, not the invoice** ("an invoice will also follow"); that invoice has not
+  been seen.
+- **Not registered pending the owner's confirmation of where it physically sits.** Registering Unit 31
+  / Fishbone Waste equipment on the workshop's register would assert something the paperwork contradicts.
+- Useful by-product: the shop already owns **102x50mm** die-cut stock, a workable part-label size.
+
+**Still not built** — the production tracker. The ID scheme depends on what SmartCabinet's label
+designer can put in a barcode field, and on the structure of the shared Drive job folder, neither of
+which has been seen.
 
 ## Governance
 
@@ -131,4 +177,8 @@ was **read and cited**, never edited. No secret or credential handled.
   remote-maintenance access code (published in the manual, but it does permit a technician login), and
   the full Wiki mirror has not yet been pushed. Raised with the owner before any Wiki sync.
 - Does SmartCABINET's ERP already track production?
-- Brother TD-4420DN invoice, for asset registration.
+- **Where the Brother TD-4420DN physically sits** - Unit 32 (workshop) or Unit 31 (Fishbone Waste)?
+  Decides whether it is registered here as `FA2401`. The actual invoice (as opposed to the order
+  receipt) has also not been seen.
+- **What the asset labels' QR codes decode to**, and which label number goes on which machine.
+- **Who holds labels `0001`-`0016`**, and where that list lives - group-level, so not this KB's to own.
