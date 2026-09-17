@@ -320,10 +320,9 @@ Register at all. From its type plate: serial **ITJ717909**, product 4152025548, 
   — the `FA2601` lesson applied for the third time in one day. **`FA23xx` would probably be right and
   is still not good enough.** Purchase paperwork requested; **T019** raised to register it once the
   year is evidenced.
-- **The gauge read 5.4 bar.** The Hebrock wants a minimum of 7 bar, the F45 8 bar to ISO 8573-1:2010
-  [7:4:-], the Vitap 6–8 bar. That is **below what all three machines ask for** — recorded as a
-  reading from one photograph at one moment, not as a diagnosis, but it is the kind of reading that
-  explains intermittent pneumatic faults.
+- **The gauge read 5.4 bar.** *Recorded at the time as being below what all three machines ask for —
+  see the correction at the end of this log: the compressor was switched off when photographed, so
+  this was residual receiver pressure and never a finding.*
 - **The service log on the manufacturer's yellow label is blank** — printed columns for *Official
   Specialist / Latest Service / Running Hours / Type of Service*, all empty in the photograph. Either
   the machine has never been serviced or the servicing was never logged on it. **T020** raised for
