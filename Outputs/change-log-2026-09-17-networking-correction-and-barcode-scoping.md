@@ -396,7 +396,11 @@ still logs a technician into the saw.
   (`0017`-`0021` mapped above), but the QR payload is still unknown and **Phase 1 cannot start until
   it is**: a scanner needs to know what it will receive.
 - **Were the machines re-commissioned after the move to Unit 31?** The single biggest open item to
-  come out of this session (Task T018). See the per-machine lists above.
+  come out of this session (Task T018). See the per-machine lists above. *The owner has confirmed the
+  machines are "up and running"* — which answers whether they work, **not** whether the manuals' own
+  post-installation checks were carried out (the F45 alone calls for a levelled floor, swing-arm and
+  table-height settings, an angle-cut test cut under 0.2 mm, and an electrician on rotation
+  direction). Recorded as partially answered rather than closed.
 - **Installed extraction performance** — `FA2402` is rated 10,000 m³/h, but the vendor supplied no
   ducting, no cabling and no on-site connection, and nothing records what was installed. One
   anemometer reading per machine closes this and the extraction half of T018 (Task T014).
@@ -410,7 +414,8 @@ still logs a technician into the saw.
 - **`FA2401` has no asset label applied**, and no Wiki article; nor does `FA2402`.
 - **`Wiki/Suppliers/` entries owed** — Markfield Woodworking Machinery Ltd (fully evidenced by invoice
   22473) and, once confirmed, R&J Machinery (a dealer sticker on the Vitap, not yet a document).
-- **Unit 30's postcode** — assumed to be the same estate, not confirmed.
+- ~~**Unit 30's postcode**~~ — **answered by the owner: NE28 6HA**, the same postcode as Unit 31.
+  Owed to `CLAUDE.md` §7, which still carries a `[confirm]` marker against it.
 - **The Unit 31 lease body** — only the cover page has been seen. Alterations, repair/reinstatement
   and nuisance clauses bear on extraction ducting, three-phase runs and fixing machines to the slab.
   The lease belongs in the AMFA KB, not this one.
