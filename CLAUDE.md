@@ -1,9 +1,17 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 8 — 2026-09-16.** Structure and conventions modelled on the Fishbone Commercial
+**Version 9 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v9 — the networking claim corrected.** §1 stated since the KB's early sessions that the
+design computer and the CNC control PC were **not** networked and that files moved by USB. The owner
+corrected this on 2026-09-17: the workshop runs on a network served from an on-site server rack, a
+WiFi 7 access point covers the whole floor, and **files are shared through Google Drive in a dedicated
+folder**. The claim had no citation and no `[confirm]` marker, so nothing flagged it as inferred and it
+survived six versions — see the new lesson in §3. Corrected here, with the downstream articles swept in
+the same session. v8 (`1teaQsa5DRuZGbtvSSSRjmpAo6p6Uu0Gp`) is archived.
 
 **Changed in v8 — fork reconciliation + owner assigned.** Two parallel session-lines on 2026-09-15/16
 had each rewritten this file (and `Wiki/index.md` and `Outputs/kb-registers.md`) without seeing the
@@ -63,11 +71,18 @@ used to design and program the machines' work: both the machine-side programming
 driving the Vitap) and the design-side CAD software (SmartCabinet, producing the job files TpaCAD
 consumes). See the Decisions articles for why it's a separate KB and why the scope was extended.
 
-**Two computers, not networked.** The shop runs SmartCabinet on a separate design/office computer
-from the CNC machine's own control PC (which runs TpaCAD/WSCM/Albatros). They are **not** live-
-networked — files move by manual transfer (USB/similar), the same way `.TCN` job files do. This
-matters for any shared data between the two (e.g. tool/hardware catalogs): an addition made on one
-computer does not appear on the other until manually exported and transferred across.
+**Two computers, one network.** The shop runs SmartCabinet on a design/office computer; the CNC
+machine's own control PC runs TpaCAD/WSCM/Albatros. **They are networked** — the workshop runs on a
+network served from an on-site server rack, with a **WiFi 7** access point covering the whole workshop
+floor, and **files are shared between design and machines through Google Drive, in a dedicated
+folder** (that folder not yet identified or examined — see §7). *Corrected 2026-09-17 by the owner;
+v8 and earlier asserted the opposite.*
+
+**Still open, and not to be assumed either way:** a shared network does not merge two programs'
+internal catalogs. SmartCabinet's **CAM Tools** table and TpaCAD's **CN Tools** catalog are separate
+application databases, and whether an entry added in one reaches the other automatically is
+**unverified**. This bears directly on Task T016 and must be checked, not inferred from the fact of a
+network.
 
 **Where it lives.** Google Drive, folder `Workshop of Furniture Making - Knowledge Base`, primary
 copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). Git mirror `minda-ui/Darius` (seeded 2026-09-16); Drive
@@ -177,6 +192,12 @@ Lessons from Sessions 2–12, all on real incidents rather than invented ahead o
   resolve.** The SmartCabinet Wall Support session found two "measured from the back edge" hole
   positions needing opposite X signs; both were documented as actually used, with the disagreement
   itself flagged as the open question rather than guessing which is wrong (Task T017).
+- **A fact recorded without a source hardens into an assumption nobody revisits.** The "two computers,
+  not networked" claim sat in §1 through six versions, was repeated into the Vitap/TpaCAD/SmartCabinet
+  articles, and shaped real advice (a whole barcode-system design was built around an air gap that does
+  not exist) before the owner corrected it on 2026-09-17. It carried no citation and no `[confirm]`
+  marker, so nothing ever flagged it as inferred. **Infrastructure and environment facts get a source or
+  a marker, exactly like a figure off an invoice.**
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -252,9 +273,17 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
   examples that exposed the X-sign discrepancy (Task T017).
 
 **Open questions / tasks:**
-- **SmartCabinet product specifics** `[confirm]`: exact product/version, file formats to each machine
-  (F45 cut lists, Vitap boring programmes, Hebrock edge recipes), where its CRM/customer data lives
-  (data-protection relevance — cite, never copy client data).
+- **SmartCabinet product specifics** — *partly resolved 2026-09-17.* **Vendor and product confirmed:**
+  **SmartCABINET**, by **Kosmosoft Engineering S.r.l.** (Bagnolo San Vito, Italy), described as
+  "CRM/CAD/CAM/ERP software for cabinet making"; offer/contract **22910**, 10/09/2026, **€1,000, paid**,
+  registered `FCD0000024` in the *Construction* Document Register — **billed to Fishbone Drylining Ltd,
+  not AMFA Furniture Ltd**, the same pattern as every machine (evidence for Task T004). Cited from the
+  Fishbone Construction KB, `Wiki/Suppliers/kosmosoft-smartcabinet.md` — not duplicated here, and that
+  KB is read-only to this one. **Outputs confirmed** from the release notes and the owner's screens:
+  `.TCN` post (Vitap), custom CSV export splittable by material, real-shape nesting, ZPL barcode label
+  printing, Panel Optimization with an offcut/cutout library. **Still `[confirm]`:** which version is
+  actually *installed* (release notes list 3.2.0.9 of 07/07/2026 as newest released); whether the
+  Hebrock gets any file at all; where CRM/customer data lives (cite, never copy client data).
 - **SmartCabinet Wall Support hardware X-sign discrepancy** — two items both "measured from the back
   edge" needed opposite X signs (−15 vs +5); needs visual confirmation in SmartCabinet's own preview
   on a real job (Task T017).
@@ -262,6 +291,23 @@ write access still not confirmed. 2026-09-16: git mirror `minda-ui/Darius` creat
   Tools "Dia. 5mm" entry created on the SmartCabinet computer, exported and transferred, then
   referenced in the failing operation's Tool [T] field (Task T016). **TpaCAD complete manual /
   `Workings.pdf`** not yet obtained — likely on the shop's Albatros PC at `Albatros\Help\` (Task T015).
+- **The shared Google Drive job folder** — the dedicated folder through which SmartCabinet and the
+  machines exchange files is not yet identified or examined. Its structure and naming convention
+  constrain any barcode/tracking ID scheme, and it may hold customer data from SmartCABINET's CRM
+  side (**cite, never copy client data**).
+- **Does `FA2303` (F45) accept a digital cut list?** The ElmoDrive is a *positioning* control — rip
+  fence, blade height, tilt, scorer, crosscut-fence angle, with tool management and per-axis
+  calibration. Across all three F45 documents **no cut-list or job-file import is documented**, and the
+  only data interface that appears is a USB drive, for firmware updates (`E21`/`E22`) and
+  remote-maintenance files (`E23`). An "optimisation limit" error in the `E01`–`E15` block hints at some
+  optimisation function on the control, but that block's OCR pairing was never reconstructed. **Working
+  answer: the saw takes dimensions, not cut lists** — confirm against the ElmoDrive's own menus before
+  recording it as fact.
+- **Does SmartCABINET's own ERP module already do production tracking?** The vendor describes it as
+  "CRM/CAD/CAM/ERP" (Fishbone Construction KB, `Wiki/Suppliers/kosmosoft-smartcabinet.md`). Building a
+  parallel tracker without knowing what the purchased software already does risks duplicating it.
+  Owner has chosen Smartsheet as the tracking layer regardless (2026-09-17); this remains worth
+  establishing so the two don't fight.
 - **Who legally owns `FA2301`–`FA2305`?** All invoiced to Fishbone Drylining Limited (now Fishbone
   Construction Ltd), not AMFA Furniture Ltd (Task T004).
 - **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
