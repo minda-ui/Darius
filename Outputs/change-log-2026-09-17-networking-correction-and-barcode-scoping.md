@@ -421,6 +421,16 @@ created or changed.** Four were owed, and all four are now written:
   is a *different* lead about a *different* supplier, and the two are easy to conflate now that one
   of them finally has a name. Recorded as "do not merge the two leads".
 
+**A self-inflicted false alarm, recorded because the lesson is cheap and the mistake was not.**
+After uploading the change log to Drive I compared Drive's reported `fileSize` (37070) against a
+character count from Python's `len()` (36741), concluded the hand-copy had drifted by 329 bytes,
+withdrew the Drive copy with a "do not cite" label, re-read the whole file and re-uploaded it. The
+re-upload came back at 37070 again — because **`fileSize` is bytes and `len()` is characters, and
+this file holds 329 bytes of multibyte characters** (`—`, `≥`, `³`, `Ø`). Nothing had drifted. The
+withdrawn copy's label was wrong and has been corrected in place rather than left to mislead.
+**Verify like with like: `wc -c`, not a character count.** The earlier verifications in this session
+used `wc -c` and were sound.
+
 **One convention gap found and not silently fixed:** the article template says `related:` links
 should be kept bidirectional. The new articles link out to the three machinery articles; those three
 do not link back (`hebrock-f4-next-edge-bander.md` carries `related: []`). Rewriting three large
