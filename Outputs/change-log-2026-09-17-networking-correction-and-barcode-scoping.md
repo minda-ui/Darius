@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v12 and the owed Wiki articles written
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v12, the owed Wiki articles written, and an AES manual assessed and not accepted
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -472,6 +472,57 @@ and check `wc -c` on both sides.** Every file written this session was verified 
 v11 (`1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`) archived; **v12 live at
 `1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`**, 47,496 bytes on both sides.
 
+### An AES manual arrived — and was not accepted as this machine's
+
+Late in the session the owner uploaded **`AES GROUP S Series Mobile Units User Manual`** (18.6 MB,
+covering S-2000 / S-3500 / S-4000 / S-5000 / S-6500 / S-10000), in response to the standing request
+for an AES operating manual for `FA2402`. **It was not accepted as closing that request**, and the
+reasoning is the point of this entry.
+
+**One arithmetic check did real work.** The quotation lists *64 filters, Ø160 × 940 mm, total
+surface 30.22 m²*. The lateral surface of a cylinder that size is π × 0.160 × 0.940 = 0.4725 m²;
+**× 64 = 30.240 m² against the quoted 30.22 — 0.07 % apart.** That establishes two things that no
+document states outright: `FA2402`'s "filters" are **cylindrical sleeves**, not cartridges; and the
+quotation is **internally consistent**, which raises confidence in the rest of its spec table. The
+sleeve finding matters because it makes this bag-type manual a *plausible family match* where the
+word "bag" would otherwise have looked like a mismatch.
+
+**But the evidence does not close.** Against it: the manual is titled **"MOBILE UNITS"** and
+describes **plug-connected** machines (*"Plug in the unit's power plug"*, *"Do not use an extension
+cord"*, `H05 RN-F 3×2.5+1.5 mm²`, G16 fuse) — while `FA2402` is a **fixed, hard-wired, star-delta,
+720 kg** unit whose vendor supplied no cabling at all. It describes emptying **a dust bag**;
+`FA2402` has **three metal waste buckets**. The designation is **`STK`, not `S-`**. And the
+extracted technical table **stops at S-6500** (7.5 kW, 6,500 m³/h, 420 kg) — the S-10000 row was
+never seen, though 11 kW / 10,000 m³/h / 720 kg extends that progression neatly. That absence may
+simply be extraction loss from an 18.6 MB PDF; **it has not been checked against the original.**
+
+**So: right manufacturer, probably right family, not confirmed as this model's manual.** No interval
+from it goes into the Maintenance Schedule against `FA2402`. Two things would settle it — read the
+S-10000 column off the original PDF, and ask whether `STK 10000` and `S-10000` are the same machine.
+
+**It was still worth processing, because it is not empty-handed:**
+
+- **`Wiki/Suppliers/aes-group.md` created** — the manufacturer, with real contact details for the
+  first time. **AES Europe BVBA, Genk, Belgium** is the practically useful one: far nearer than
+  Bursa, and the obvious first approach for a manual confirmed for `STK 10000`.
+- **Warranty: 12 months from completion of assembly** — on an October 2024 install, long expired.
+  Worth knowing before anyone assumes a warranty claim is available.
+- **Stated service life 10 years**; ambient limits −25 to +55 °C, < 95 % RH, max 1,000 m; supply
+  380–400 V ±10 % to DIN VDE 0100.
+- A generic daily/periodic check list and an **eleven-row fault table**, including *electric shock on
+  touching the housing → grounding circuit rusted, broken or loose*.
+- **Fire precautions are explicit**, with ABC or BC extinguishers recommended near the unit — which
+  makes sense of the quotation's Part Holder guard, sold partly as a fire measure.
+
+**What it does not carry, and what `FA2402` still needs:** a filter-change interval or
+differential-pressure trigger for those 64 sleeves, the star-delta starting procedure, anything on
+the Part Holder, and any hours-based servicing. The `FA2402` Machinery Register note still reads
+"still no operating manual" and **that remains true as written** — no manual confirmed for this
+model — so it was left alone; the Wiki article carries the full assessment.
+
+**Registered** in the Document Register (`Document No.` = `pending`, row 13) with the full for/against
+reasoning in its Description, so the next person does not have to re-derive it.
+
 ## Governance
 
 Owner-directed work inside this KB only. No outward action; no purchase committed (scanner and label
@@ -518,8 +569,11 @@ still logs a technician into the saw.
 - **Installed extraction performance** — `FA2402` is rated 10,000 m³/h, but the vendor supplied no
   ducting, no cabling and no on-site connection, and nothing records what was installed. One
   anemometer reading per machine closes this and the extraction half of T018 (Task T014).
-- **A real AES operating manual** — until one arrives `FA2402` cannot join the Maintenance Schedule
-  or the Fault Log, whatever else is known about it.
+- **A manual confirmed for `STK 10000`** — an AES S-series manual arrived and is from the right
+  manufacturer, but is titled for *mobile* units and its S-10000 row was not visible in the extract.
+  Settle it by reading the S-10000 column off the original PDF and asking AES Europe or Markfield
+  whether `STK 10000` and `S-10000` are the same machine. Until then `FA2402` stays out of the
+  Maintenance Schedule and Fault Log.
 - **The ABAC compressor's purchase paperwork** — needed before a code can be assigned (T019); its
   service history and F-Gas position are open too (T020). **Its gauge read 5.4 bar against machines
   asking 6-8 bar**, which wants checking on its own account.

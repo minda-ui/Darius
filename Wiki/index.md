@@ -14,7 +14,7 @@ Line format: `- [Title](Category/file-name.md) - one-line description`
 _(no articles yet)_
 
 ## Machinery
-- [AES SAF 10,000 STK — Fine Dust Extractor (centralised)](Machinery/aes-saf-10000-stk-extractor.md) - the workshop's asset `FA2402`; the only extraction plant on site since both Inventairs were sold; 10,000 m³/h sourced from the vendor's quotation, but the vendor supplied no ducting, cabling or on-site connection and the installation is undocumented (Task T014); no operating manual, so not yet in the maintenance system
+- [AES SAF 10,000 STK — Fine Dust Extractor (centralised)](Machinery/aes-saf-10000-stk-extractor.md) - the workshop's asset `FA2402`; the only extraction plant on site since both Inventairs were sold; 10,000 m³/h sourced from the vendor's quotation, but the vendor supplied no ducting, cabling or on-site connection and the installation is undocumented (Task T014); an AES manual arrived 2026-09-17 but is **not confirmed** to cover this model, so still not in the maintenance system
 - [Altendorf F45 ElmoDrive — Sliding Table Saw](Machinery/altendorf-f45-panel-saw.md) - the workshop's machine `FA2303`; CNC panel saw with its own ElmoDrive control-unit and spare-parts manuals; safety certificates have expired, owning entity unconfirmed, see Open questions
 - [Brother TD-4420DN — Direct Thermal Label Printer](Machinery/brother-td-4420dn-label-printer.md) - the workshop's asset `FA2401`, the first 2024 asset and the only non-machine-tool on the register; suits short-life part labels, not asset or offcut labels; ZPL emulation contradicted between resellers and Brother's own manual; no company named on the billing line
 - [Hebrock F4 — Edge Banding Machine](Machinery/hebrock-f4-next-edge-bander.md) - the workshop's machine `FA2301`; setup, safety and maintenance schedule from its 6-part manual; corner-rounding incident resolved
@@ -37,6 +37,7 @@ _(no articles yet)_
 - [SmartCabinet & the furniture production workflow](Software/smartcabinet-and-production-workflow.md) - draft: the order-to-delivery process from the BP-scheme map and how SmartCabinet (design + 3D visuals + CRM) drives the F45/Vitap/Hebrock machines; product specifics flagged [confirm]; seed for the design→production→Sales processes + tracker
 
 ## Suppliers
+- [AES Group (manufacturer)](Suppliers/aes-group.md) - Turkish maker of `FA2402`; contact details incl. AES Europe BVBA in Belgium, warranty terms and the S-series maintenance/fault content — recorded with the caveat that the S-series manual is **not confirmed** to cover `FA2402`'s `STK 10000`
 - [Altendorf GmbH (manufacturer)](Suppliers/altendorf-gmbh.md) - manufacturer of `FA2303` (and parent group of Hebrock, maker of `FA2301`); ordering/contact details for spare parts; the actual UK reseller who sold the machine is still unidentified
 - [Markfield Woodworking Machinery Ltd (supplier)](Suppliers/markfield-woodworking-machinery.md) - UK dealer who sold `FA2402` in October 2024; the first supplier in this KB evidenced by a purchase document rather than a manufacturer's manual; sells and delivers but does not install, connect or commission
 
