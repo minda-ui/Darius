@@ -1,9 +1,22 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 12 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
+**Version 13 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v13 — the compressor's "low pressure" was not low pressure.** §7 recorded the ABAC's
+gauge at **5.4 bar** as a live concern, "below what all three machines ask for". The owner corrected it
+the same evening: **the compressor was switched off when it was photographed.** 5.4 bar was residual
+pressure standing in the receiver, not delivered line pressure, and it says nothing about what the
+machines get when running. **There is no low-pressure finding, and there never was one.** The error was
+mine and of a specific kind: reading a gauge in a photograph and inferring an *operating* condition
+without establishing whether the machine was running — the **fifth unsourced inference corrected in a
+single day**, after the networking claim, the Unit 32 address, the "residential" billing address and
+§1's git-mirror claim. §3's lesson gains a second clause: *a reading is only a reading of the state the
+thing was actually in.* Corrected in §7 and in Task T019; T019's own note had at least hedged it
+("a single reading proves nothing… this is to VERIFY, not a fault"), but never gave the reason.
+v12 (`1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`) is archived.
 
 **Changed in v12 — a claim in this file was not true, and the reason it can't be made true.** §1 has
 said since 2026-09-16 that the git mirror "is kept in step" with Drive. **It is not.** The mirror holds
@@ -280,7 +293,11 @@ Lessons from Sessions 2–14, all on real incidents rather than invented ahead o
   address had said **Unit 32** since Session 1 and was also wrong (it is Unit 31), and a billing address was
   described as "residential" purely from its format when it is in fact the companies' registered office.
   Three unsourced statements, three corrections, one day. **If it was not read off a document, say so.**
-  *A fourth surfaced the same evening — §1's claim that the git mirror "is kept in step" (v12).*
+  *A fourth surfaced the same evening — §1's claim that the git mirror "is kept in step" (v12) — and a
+  fifth right after it: the compressor's 5.4 bar "low pressure", which was residual receiver pressure
+  on a machine that was switched off (v13).* **A reading is only a reading of the state the thing was
+  actually in.** A photograph shows a number; it does not show whether the machine was running, warm,
+  loaded or mid-cycle. Establish the state, or record the number as uninterpreted.
 - **A register only contains what somebody thought to put in it.** Five sessions were spent
   documenting three machines in detail — manuals, fault tables, maintenance schedules, re-commissioning
   requirements — while the compressor that feeds all three sat unregistered and unmentioned. It surfaced
@@ -425,10 +442,15 @@ the owner/Victoria; only the cover page has been seen.
   4152025548, **plate year 2023**, 455 kg, **15 kW three-phase**, 0.58 kW dryer, max **10 bar**,
   refrigerant **R513A 0.5 kg = 316 kg CO₂e**. **No `FA` code assigned** — the plate year is manufacture,
   the convention needs acquisition; purchase paperwork requested (Task T019). **It feeds the pneumatics
-  of `FA2301`, `FA2303` and `FA2304`.** Two live concerns: its gauge read **5.4 bar** against machines
-  asking 6–8 bar, and the service log printed on its own yellow label is **blank** (Task T020). F-Gas:
-  0.32 tonnes CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no periodic
-  leak checking.
+  of `FA2301`, `FA2303` and `FA2304`.** One live concern: the service log printed on its own yellow
+  label is **blank** (Task T020). **The gauge reading is not a concern** — it showed 5.4 bar, but *the
+  compressor was switched off when photographed* (owner, 2026-09-17), so that was residual receiver
+  pressure, not delivered line pressure. The plate rates the unit to **10 bar** working pressure, so the
+  compressor is not the limitation. Whether each machine receives its required 6–8 bar under load is
+  simply unmeasured — routine verification, **not** the follow-up to a suspected fault. *v11 and v12 of
+  this file presented the 5.4 bar as a finding; that was wrong, see the v13 note.* F-Gas: 0.32 tonnes
+  CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no periodic leak
+  checking.
 
 **Operational systems (built 2026-09-15):**
 - **Maintenance** — `Wiki/Processes/machinery-maintenance-system.md` + the Maintenance Schedule sheet
@@ -531,9 +553,10 @@ the owner/Victoria; only the cover page has been seen.
   table. Until one arrives `FA2402` stays outside the maintenance and troubleshooting systems. The
   consumables are known (64 filters, three buckets), so the schedule can be built the moment the
   intervals exist.
-- **The ABAC compressor** — purchase paperwork before a code can be assigned (T019); service history and
-  F-Gas position (T020); and the **5.4 bar gauge reading against machines asking 6–8 bar**, which wants
-  checking on its own account rather than as paperwork.
+- **The ABAC compressor** — **purchase paperwork before a code can be assigned (T019), which is the
+  only blocking item**; and service history plus the F-Gas position (T020). *The 5.4 bar gauge reading
+  is closed: the machine was off. It was never a low-pressure finding.* Delivered pressure at each
+  machine under load is still unmeasured and worth a reading, but as routine verification.
 - **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a

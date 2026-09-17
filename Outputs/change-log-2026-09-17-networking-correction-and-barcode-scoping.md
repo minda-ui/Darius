@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v12, the owed Wiki articles written, and an AES manual assessed and not accepted
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v13, the owed Wiki articles written, an AES manual assessed and not accepted, and the compressor's "low pressure" corrected — it was switched off
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -523,6 +523,44 @@ model — so it was left alone; the Wiki article carries the full assessment.
 **Registered** in the Document Register (`Document No.` = `pending`, row 13) with the full for/against
 reasoning in its Description, so the next person does not have to re-derive it.
 
+### The compressor's "low pressure" was not low pressure — corrected at the end of the day
+
+After the session had been closed out, the owner corrected one more thing: **the compressor was
+switched off when it was photographed.**
+
+So the **5.4 bar** on its gauge was **residual pressure standing in the receiver**, not delivered line
+pressure. It says nothing about what the machines get when running. **There is no low-pressure finding,
+and there never was one** — and the sign-off message above had put it forward as "the one I'd not leave
+sitting", which was wrong.
+
+**The error is of a specific kind and worth naming.** I read a number off a gauge in a photograph and
+inferred an *operating* condition from it, without establishing whether the machine was running. That
+is the **fifth unsourced inference corrected in a single day**, after the networking claim, the Unit 32
+address, the "residential" billing address and §1's own git-mirror claim.
+
+**Task T019's note had partly protected itself** — it already said *"a single reading proves nothing —
+compressors cycle between cut-in and cut-out and the photo may catch a refill — so this is to VERIFY,
+not a fault."* That hedge was right as far as it went, and it is why nothing downstream was built on
+the reading. But it offered the wrong explanation: the machine was not mid-cycle, it was **off**. The
+hedge saved the conclusion; it did not supply the reason.
+
+Corrected in:
+- **`CLAUDE.md` → v13.** §7's compressor entry drops from "two live concerns" to one — the blank
+  service log — and states the plate's **10 bar** rating, so the compressor is not the limitation. The
+  open-questions bullet now says the purchase paperwork (T019) is the **only blocking item**. §3's
+  lesson gains a second clause: ***a reading is only a reading of the state the thing was actually
+  in.*** A photograph shows a number; it does not show whether the machine was running, warm, loaded or
+  mid-cycle. Establish the state, or record the number as uninterpreted. v12
+  (`1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`) archived.
+- **Task T019** rewritten: the pressure paragraph now leads with the correction and marks it *not a
+  finding*, while keeping the three machines' genuine requirements, which are unaffected. A stale line
+  was fixed in passing — it said the next 2024 code would be `FA2402`, which the AES extractor has
+  since taken, so it is **`FA2403`**.
+
+**What survives unchanged:** the compressor is still unregistered and still has no `FA` code, still
+feeds the pneumatics of all three production machines, and its yellow-label service log is still blank.
+Those were never contingent on the gauge.
+
 ## Governance
 
 Owner-directed work inside this KB only. No outward action; no purchase committed (scanner and label
@@ -574,9 +612,9 @@ still logs a technician into the saw.
   Settle it by reading the S-10000 column off the original PDF and asking AES Europe or Markfield
   whether `STK 10000` and `S-10000` are the same machine. Until then `FA2402` stays out of the
   Maintenance Schedule and Fault Log.
-- **The ABAC compressor's purchase paperwork** — needed before a code can be assigned (T019); its
-  service history and F-Gas position are open too (T020). **Its gauge read 5.4 bar against machines
-  asking 6-8 bar**, which wants checking on its own account.
+- **The ABAC compressor's purchase paperwork** — needed before a code can be assigned (T019), and the
+  **only blocking item**; its service history and F-Gas position are open too (T020). *The 5.4 bar
+  gauge reading is closed — the machine was switched off. Never a finding.*
 - **Disposal dates and sale proceeds for both Inventairs** (`FA2302`, `FA2305`) — both carry a
   purchase price on the register, so the disposals have a book consequence.
 - **`FA2401` has no asset label applied** — it is now the only registered asset without a physical
