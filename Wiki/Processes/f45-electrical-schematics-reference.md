@@ -8,6 +8,7 @@ updated: 2026-09-18
 sources:
  - ../../Raw/Altendorf F45 Electrical Schematics part 1.pdf
  - ../../Raw/Altendorf F45 Electrical Schematics part 2.pdf
+ - "`FA2303` type plate photographed by the owner 2026-09-18 (for the T009 note under \"What is not in these schematics\")"
 related:
  - ../Processes/f45-monthly-safety-device-check.md
  - ../Suppliers/altendorf-gmbh.md
@@ -254,8 +255,13 @@ most others "Aus".
 
 Stated plainly, because absence is the thing most likely to be misremembered later:
 
-- **No serial number, machine number, commission number, order number or customer name.** Task **T009**
-  is not closed. The internal job number `23-11-12-005` does not appear either.
+- **No serial number, machine number, commission number, order number or customer name.** The number
+  `23-11-12-005` does not appear anywhere in either part either. *Written before the type plate was
+  photographed on 2026-09-18, when `23-11-12-005` turned out to be sitting in the plate's own `S/N`
+  field — **Task T009 is closed**, and it was closed by a walk round the floor, not by this document.
+  The sentence above stands because it is still true of the schematics: the serial is genuinely not in
+  them, and two full extractions hunting for it is why the KB now has a §3 lesson about facts filed
+  under the wrong name.*
 - **No main isolator / disconnect device** (`-Q1`, *Hauptschalter*) was found — very likely on one of
   the missing sheets rather than genuinely absent.
 - **The `F1`–`F16` fuse list** the spare-parts manual could not confirm is **still unconfirmed**. Only
@@ -279,7 +285,8 @@ Stated plainly, because absence is the thing most likely to be misremembered lat
   not been normalised into a plausible-looking code.**
 
 **One sharp photograph of a sheet header and title block — ideally the cover sheet — very likely
-settles both.**
+settles both.** *Neither turned out to be the serial number: that came off the machine's type plate on
+2026-09-18.*
 
 ---
 
@@ -304,6 +311,8 @@ access code was found in the machine's manual and removed before the Wiki was pu
 - **Is the extraction interlock actually wired?** The terminals exist; the installation is unrecorded.
 - **`-X3 POT_1/POT_2` or `-X1` 13/14 and 21/22** — which is the motor-temperature measurement point?
 - **Bimetal or PTC?** The drawing uses both words in the same circuit area.
-- **The serial number** — see above; a photo of the cover sheet is the cheapest route.
+- ~~**The serial number**~~ — **closed 2026-09-18** from the machine's own type plate (`S/N
+  23-11-12-005`), not from these drawings. Photographing sheet 1's title block is no longer needed for
+  that; it would still settle the `FNI_001_ALD09` header if anyone wants it.
 - **Which fence and which operator terminal** are actually fitted.
 - **A better scan** would be worth more than another document.
