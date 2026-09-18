@@ -1,9 +1,30 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 15 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
+**Version 16 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v16 — a walk round the floor closed two tasks that documents could not, and one of them
+had been answered in this KB all along under the wrong name.** The owner photographed four type plates.
+**`FA2303`'s plate carries `S/N: 23-11-12-005`** — the exact number this KB has held since Session 6 and
+recorded as *"an Altendorf internal job number"* with *"no confirmed serial number"*. **T009 closed.**
+That same morning, two 10 MB schematic PDFs had been put through extraction specifically hunting for
+that serial; both came back empty and recommended photographing a title block. **The answer was never in
+the document.** New §3 lesson: *a fact filed under the wrong name is worse than a missing one, because
+the KB stops looking for it.* **T012 closed** too — the Vitap's plate reads `320070 AT`, identical to the
+invoice-derived value. And **`FA2402`'s plate states `DUST CAPACITY 10.000 M³/H` as its own field**, so
+the long-running *"10000 is a reading of the model name"* caveat is fully discharged.
+
+**Also in v16.** The **QR payload is known**: a bare four-digit label number as plain text (`Text: 0027`),
+which unblocks barcode Phase 1 and vindicates the two-namespace design — a scan yields a *label number*
+that must be looked up against `Asset Label No.` to reach an `FA` code (Task **T022** for what still
+blocks Phase 1). The **F45 electrical schematics** arrived and moved **T018**: the machine *does* provide
+volt-free terminals to start an external extractor, so the question becomes whether they are wired, not
+whether they exist. Two **weight discrepancies recorded, not resolved** (`FA2304` 1385 kg on the plate vs
+1030 kg in the manual; `FA2402` 740 kg vs 720 kg quoted). And a second §3 lesson, from finding that the
+two "parts" of the TPA CAD manual are the **even and odd pages of one duplex scan**, not two volumes.
+v15 (`13B3LV7siGSR39EFjedrnPiRwUPDVTM5n`) is archived.
 
 **Changed in v15 — the compressor was delivered to Unit 32, and a premises claim of mine is withdrawn.**
 Hours after v14, the owner corrected the one thing in it I had inferred rather than read: *"Compressor was
@@ -230,8 +251,13 @@ owned by Alex**, not this KB; see
 **Mapped 2026-09-17** from the owner's photographs, one machine at a time: `0017` → the ABAC
 compressor — then unregistered, **`FA2306`** since 2026-09-18 — `0018` → `FA2301`, `0019` → `FA2402`, `0020` → `FA2303`,
 `0021` → `FA2304`. `FA2401` has no label yet. The series starts above `0001`, so `0001`–`0016` are
-elsewhere in the estate. **What the QR codes actually decode to is still unknown** and blocks barcode
-Phase 1 — a scanner has to know what it will receive. `0019` was held at `[confirm]` for several steps
+elsewhere in the estate; **`0025`–`0027` exist on an unapplied sheet** held by the owner, and nothing is
+known about `0022`–`0024`. **What the QR codes decode to was answered 2026-09-18: the bare four-digit
+label number as plain text** (`Text: 0027`) — no URL, no prefix, no `FA` code, leading zeros preserved,
+*read from one tag, so generalising to the series is an inference.* **Phase 1's precondition is
+discharged**; what still blocks it is in Task T022. The payload is **not self-describing**, so a scan
+means nothing without the `Asset Label No.` lookup — and **leading zeros must never be stripped**, or
+that join breaks silently. `0019` was held at `[confirm]` for several steps
 rather than guessed: the owner photographed it on "our extractor" while two extractors were
 registered, and the right answer turned out to be a third machine the register did not contain.
 
@@ -338,6 +364,23 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   on a machine that was switched off (v13).* **A reading is only a reading of the state the thing was
   actually in.** A photograph shows a number; it does not show whether the machine was running, warm,
   loaded or mid-cycle. Establish the state, or record the number as uninterpreted.
+- **A fact filed under the wrong name is worse than a missing one, because the KB stops looking for
+  it.** `FA2303`'s serial number sat in the Machinery Register from Session 6 as *"Job No.
+  23-11-12-005 (Altendorf internal; no confirmed serial number)"*. On 2026-09-18 two 10 MB schematic
+  PDFs were put through extraction specifically to find that serial; both reported none present and
+  recommended photographing a title block. **A photograph of the machine's own plate showed
+  `23-11-12-005` sitting in the `S/N` field.** The KB had transcribed the right value and then told
+  every future reader it was something else, so five sessions of work routed around it. **A missing
+  fact advertises itself; a mislabelled one does not.** When a field is filled with a hedge —
+  *"internal"*, *"working value"*, *"no confirmed…"* — that hedge is a claim in its own right and needs
+  checking like any other.
+- **Check what a multi-part scan actually contains before trusting any one part.** The TPA CAD manual's
+  *"part 1"* and *"part 2"* are not two volumes: part 1 holds the **even** pages and part 2 the **odd**
+  pages in reverse order — two sides of one duplex scan, with pages 1, 2 and 50 in neither. **Part 1
+  alone gives materially wrong answers**, because the milling-setup compensation fields exist only in
+  part 2. Extracting both parts independently is what exposed this; a single read would have produced a
+  confident, incomplete answer. Same shape as the Vitap manual's two duplex pairs, and worth checking
+  page numbering on any scanned set before quoting it.
 - **A printed delivery clause is not a delivery note.** Proforma 208027 carried the line *"DELIVERY AS
   PER INV ADDRESS"* against a Unit 31 address, and §7 recorded the compressor as delivered to Unit 31 —
   then built a premises conclusion on it (*"the group was using both units in November 2023"*). The owner
@@ -456,12 +499,24 @@ the owner/Victoria; only the cover page has been seen.
 - `FA2302` — Inventair MK1 MTFA dust/fume extractor. **Sold** (owner, 2026-09-17). Never had a manual;
   never joined the maintenance system. **Disposal date and sale proceeds unknown** — it carries a
   purchase price, so the disposal has a book consequence.
-- `FA2303` — Altendorf F45 ElmoDrive CNC sliding-table saw. **Safety certificates expired 22.02.2024
-  — unresolved compliance gap, Task T007.** Mandatory monthly documented safety check required (Task
-  T008, not yet performed). Maintenance schedule (MT-020…028) + troubleshooting reference built. See
-  `Wiki/Machinery/altendorf-f45-panel-saw.md` and `Wiki/Processes/f45-monthly-safety-device-check.md`.
-- `FA2304` — Vitap K2-2.0 CNC boring/drilling/routing centre. No real serial/manufacture year in the
-  manual (invoice serial 320070 AT used; confirm against the type plate, Task T012). **Open incident:**
+- `FA2303` — Altendorf F45 ElmoDrive CNC sliding-table saw. **Serial `23-11-12-005`, confirmed from the
+  type plate 2026-09-18 (T009 closed)** — the same number the KB had carried since Session 6 as "an
+  internal job number"; the plate also gives 2023, 8,293 kVA, 13,34 A, blade 300–450 mm at 2000–5000 rpm,
+  and carries the **DGUV marks HM 220024 (GS) and HM 220025 (wood dust)** physically on the machine.
+  **Safety certificates expired 22.02.2024 — unresolved compliance gap, Task T007.** Mandatory monthly
+  documented safety check required (Task T008, not yet performed); the schematics now give **device tags**
+  for it, including **three** emergency stops and a **reduced 50 mm safety zone at the rip fence** the KB
+  had no record of. **The machine provides volt-free terminals to start an external extractor** (max
+  240 VAC, 1 A) — capability confirmed, wiring unverified (T018). Maintenance schedule (MT-020…028) +
+  troubleshooting reference built. See `Wiki/Machinery/altendorf-f45-panel-saw.md`,
+  `Wiki/Processes/f45-monthly-safety-device-check.md` and
+  `Wiki/Processes/f45-electrical-schematics-reference.md`.
+- `FA2304` — Vitap K2-2.0 CNC boring/drilling/routing centre. **Serial `320070 AT` and year 2023
+  confirmed from the type plate 2026-09-18 (T012 closed)** — identical to the invoice-derived value the
+  manual could not corroborate. The plate also gives 415 V, 19,3 A and **1385 kg**, which **disagrees
+  with the 1030 kg this KB carried from the manual** (355 kg apart; floor loading and levelling both
+  scale with it, so prefer the plate until someone reconciles them — recorded, not resolved).
+  **Open incident:**
   TpaCAD "Tool for this working not found" on Blind bore drill operations — root cause refined (fix
   likely lives in the operation's own Tool [T] field referencing a real CN Tools catalog entry, not
   the outfit's per-bush ID), not yet tested end-to-end (Task T016). Maintenance schedule (MT-030…036)
@@ -484,7 +539,11 @@ the owner/Victoria; only the cover page has been seen.
   Invoice **22473**, **08/10/2024**, **Markfield Woodworking Machinery Ltd**, £6,350 net / £7,620 inc
   VAT, paid in full. Asset label **`0019`**. Registered 2026-09-17, acquisition year evidenced before
   the code was assigned. **Specification sourced from the vendor's quotation of 02/10/2024** (six days
-  before the invoice, identical figures): **10,000 m³/h**; 11 kW / 15 HP direct drive, star-delta; **355
+  before the invoice, identical figures), and **the type plate photographed 2026-09-18 states `DUST
+  CAPACITY 10.000 M³/H` as its own field**, which fully discharges the old *"10000 is a reading of the
+  model name"* caveat; the plate also confirms serial `A-077`, production year 2024, and names the maker
+  **AES ELEKTRİK MAKİNA SAN. VE TİC. A.Ş.** (settling the two renderings), but gives **740 kg against the
+  quotation's 720 kg** — recorded, not resolved: **10,000 m³/h**; 11 kW / 15 HP direct drive, star-delta; **355
   mm** suction; **64 filters at Ø160 × 940 mm, 30.22 m²**; three waste buckets; 720 kg; a Part Holder
   stopping parts over 25 × 25 mm reaching the propeller. **What the vendor did *not* supply is the
   important part** — *"not supplied with electrical cabling, extraction hose or blades"* and *"we do not
@@ -560,8 +619,16 @@ the owner/Victoria; only the cover page has been seen.
   on a real job (Task T017).
 - **TpaCAD Blind-bore-drill tool-ambiguity fix** refined but not fully tested — likely needs a real CN
   Tools "Dia. 5mm" entry created on the SmartCabinet computer, exported and transferred, then
-  referenced in the failing operation's Tool [T] field (Task T016). **TpaCAD complete manual /
-  `Workings.pdf`** not yet obtained — likely on the shop's Albatros PC at `Albatros\Help\` (Task T015).
+  referenced in the failing operation's Tool [T] field (Task T016) — *the manual now supports this: the
+  setup's `Tool type` "is automatically assigned by selecting the tool", and on `HOLE` an explicit `Tool`
+  "prevails over the programming per diameter" with `Tool type` driving "a validity check of the tool".*
+  **TpaCAD complete manual / `Workings.pdf`** not yet obtained — at `Albatros\Help\` on the shop's
+  Albatros PC (Task T015), and **no longer housekeeping**: it holds the compensation semantics, the
+  entry/exit segments and the `THREE HOLES HINGE` parameter table, three of which were needed on
+  2026-09-18 to answer a live 35 mm hinge-cup question and could not be. *The extract we hold gives the
+  right working — `CIRCULAR INTERNAL WINDOW`, "a circle with internal emptying", under `CUSTOM WORKINGS:
+  PROFILES` — but never says whether its `Diameter` is the finished hole or the tool path, which on a
+  12 mm cutter is 35 mm versus 47 mm. Settle it with a test cut in scrap.*
 - **Were the machines re-commissioned after the move to Unit 31?** The KB holds no record that a move
   happened at all, yet the lease is dated 25 June 2026. The F45's own manual requires, after installation:
   a flat, level, load-bearing floor (~1100 kg, centre of gravity ~100 mm below the blade axis); swing-arm
@@ -597,9 +664,10 @@ the owner/Victoria; only the cover page has been seen.
   parallel tracker without knowing what the purchased software already does risks duplicating it.
   Owner has chosen Smartsheet as the tracking layer regardless (2026-09-17); this remains worth
   establishing so the two don't fight.
-- **What do the asset labels' QR codes decode to?** *Which label goes on which machine is now answered*
-  (`0017`–`0021`, §1), but the QR payload is still unknown and **Phase 1 cannot start until it is** — a
-  scanner has to know what it will receive.
+- ~~**What do the asset labels' QR codes decode to?**~~ — **answered 2026-09-18: the bare four-digit
+  label number as plain text.** See §1. What now blocks barcode Phase 1 is Task **T022**: no scanner has
+  been bought (a purchase, so the owner's), the Brother TD-4420DN's ZPL support is still unverified, and
+  a disambiguation rule between asset labels and future part labels needs deciding.
 - **Who legally owns `FA2301`–`FA2306` and `FA2402`?** All invoiced to Fishbone Drylining Limited (now
   Fishbone Construction Ltd), not AMFA Furniture Ltd (Task T004) — and so was the SmartCABINET software.
   *Sharpened 2026-09-17:* AMFA Furniture Ltd holds the Unit 31 lease, so the picture is one company's
@@ -611,10 +679,13 @@ the owner/Victoria; only the cover page has been seen.
   **the owner withdrew that on 2026-09-18 — the compressor went to Unit 32.** So the earliest evidence
   this KB holds for the group occupying Unit 31 is **2024**, not 2023. Evidence, not a conclusion — the
   lease body and the intercompany side both sit outside this KB.
-- **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
-  **first F45 monthly safety check not yet logged** (Task T008); **`FA2303` serial/supplier
-  unconfirmed** (Task T009); **`FA2303` annual PTC electrician check** needs scheduling (Task T011;
-  Maintenance Schedule MT-025).
+- **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007), and note the
+  DGUV marks **HM 220024 / HM 220025 are on the machine's own plate**; **first F45 monthly safety check
+  not yet logged** (Task T008, now with real device tags to name); ~~`FA2303` serial unconfirmed~~ —
+  **closed 2026-09-18 from the type plate**, though **who sold it is still unknown**; **`FA2303` annual
+  PTC electrician check** needs scheduling (Task T011; Maintenance Schedule MT-025) — the schematics give
+  a likely measurement point at `-X3` `POT_1`/`POT_2` but **no resistance value**, and leave
+  bimetal-vs-PTC unresolved.
 - **Installed extraction performance (Task T014, rewritten).** The `FA2302`/`FA2305` half is closed —
   both sold, both replaced by `FA2402`. The sizing half is now a different question. `FA2402` is rated
   **10,000 m³/h**, against known demand of the Vitap's ~2000 m³/h plus roughly **1,110 m³/h** for the
@@ -651,8 +722,9 @@ the owner/Victoria; only the cover page has been seen.
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
   pre-cycle functional test enough? Owner decision (Task T013); MT-036 holds the place meanwhile.
-- **`FA2304` serial/manufacture year** — confirm invoice-derived Serial 320070 AT against the type
-  plate (Task T012).
+- ~~**`FA2304` serial/manufacture year**~~ — **closed 2026-09-18** (Task T012): the plate reads
+  `320070 AT`, year 2023, matching the invoice exactly. It also reads **1385 kg against the manual's
+  1030 kg** — that discrepancy is now the open part.
 - **Who actually sold `FA2301`, `FA2303` and `FA2304`?** Invoices 100153/100154/100155 name the customer
   and the items but carry no seller letterhead. The Vitap wears an **R&J Machinery** dealer sticker
   (`01455`, Hinckley) — recorded **`[confirm]`**, because a sticker on a machine is not a document, but

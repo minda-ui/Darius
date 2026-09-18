@@ -241,3 +241,131 @@ receiver's plate, the compressor's service label, an anemometer reading at each 
 F45's water separator and filter, two type plates, and an asset label for the Brother printer. It also
 flags **T010 as answered and ready to close**, and separates genuine compliance items from recorded
 debts that are deliberately not being fixed.
+
+---
+
+## Later the same day — four more `Raw/` deliveries, two tasks closed, and a lesson about our own filing
+
+The compressor work above finished mid-morning. What followed came from the owner walking the floor
+with a phone, and it closed more than the documents did.
+
+### The QR payload — barcode Phase 1 unblocked
+
+A screenshot of a phone camera decoding a tag from an unapplied label sheet read **`Text: 0027`**.
+
+**The QR payload is the bare four-digit label number as plain text** — no URL, no prefix, no company
+name, no `FA` code, leading zeros preserved. *One tag was scanned; that the series behaves identically
+is an inference from them being one printed batch, and is labelled as such. A second scan on an applied
+tag would settle it.*
+
+**It vindicates the two-namespace design rather than merely confirming it.** A scan yields a *label
+number*, which has to be looked up against the Machinery Register's `Asset Label No.` column to reach
+an `FA` code — exactly the structure documented in Phase 0. Three constraints fall out, one of them a
+proposal rather than a decision:
+
+1. The payload is **not self-describing** — a bare `0027` says nothing about what kind of thing it is.
+2. **A disambiguation rule will be needed** once part labels exist. *Proposed, not decided:* bare
+   four-digit numeric = group asset label; anything else = part or offcut.
+3. **Leading zeros must never be stripped.** `0027` is a string, not 27. Any import that coerces it to
+   an integer breaks the join silently.
+
+Also learned: labels **`0025`–`0027`** exist on a sheet held by the owner. **Nothing is known about
+`0022`–`0024`** and nothing has been guessed. Task **T022** raised for Phase 1's remaining blockers —
+no scanner bought, the Brother ZPL question unverified, the rule undecided.
+
+### The F45 electrical schematics — one real move, badly scanned
+
+Two ~10 MB PDFs, Altendorf drawing **`B1434.0220`**, ePlan, 17.10.2022, editor HK. Extracted via two
+sub-agents per §3.
+
+**The scan bounds everything.** OCR returned scattered labels, not circuits; **no wire could be traced
+end to end in either part**; a third to two-thirds of sheets produced nothing.
+
+**T018 moved.** The drawing states, on the main-saw converter load sheet (`+1432.0020`, near `-X1A`,
+contact `53`): *"terminals to switch an external contactor to start an exhaust unit — max. control
+current 1A — max. control voltage 240VAC"*. **The capability is confirmed from the manufacturer.**
+Whether anything is *landed* on those terminals at Unit 31 is not — so the question stops being a
+document hunt and becomes a look inside the cabinet.
+
+**T008 gained device tags** — sliding table `+1460.1000-S1`, blade cover `+1480.0030-S1`, and
+**three** emergency stops where the check article says "the E-stop", singular. Plus a **reduced 50 mm
+safety zone at the rip fence** on an inductive sensor the KB had no record of at all.
+
+**T011 gained a measurement point but not the number** — `-X3` `POT_1`/`POT_2` at the converter. Two
+things recorded rather than resolved: the two parts **disagree** on where the circuit terminates, and
+the drawing uses both `Thermokontakt` (bimetal, a continuity check) and "excess temperature resistor"
+(PTC, a resistance measurement) in the same area. **The 150–1000 Ω figure is not in the schematics.**
+
+Written up as `Wiki/Processes/f45-electrical-schematics-reference.md` — a **new** article rather than
+an edit to the F45 machinery page, which is Drive-only and cannot be safely rewritten through a lossy
+read (§3).
+
+### Four type plates — and the most instructive find of the day
+
+| Machine | What the plate gave |
+|---|---|
+| `FA2303` Altendorf | **`S/N: 23-11-12-005`**, `F45 ElmoDrive`, 2023, 8,293 kVA, 13,34 A, blade 300–450 mm @ 2000–5000 rpm, DGUV **HM 220024** + **HM 220025** physically on the machine |
+| `FA2304` Vitap | **`MATR. 320070 AT`**, 2023, **1385 kg**, 415 V, 19,3 A |
+| `FA2402` AES | `STK - 10.000`, **`DUST CAPACITY 10.000 M³/H`**, 11 kW, `A-077`, **production year 2024**, 740 kg |
+| `FA2301` Hebrock | `S/N F3809`, 2023, 400 V / 19,00 A / **7,08 kW**, Hebrock's own address at Hüllhorst |
+
+**T009 closed — and the answer had been in the KB all along, under the wrong name.** `23-11-12-005`
+sits in the plate's **S/N field**. This KB has held that number since Session 6 but recorded it as
+*"an Altendorf internal job number"* with *"no confirmed serial number"*. Both schematic extracts were
+sent hunting for a serial that morning; both came back empty and recommended photographing a title
+block. **The answer was never in the document. It was on the machine, in a field we had already
+transcribed and mislabelled.** New §3 lesson.
+
+**T012 closed** — `320070 AT` on the plate is identical to the invoice-derived value.
+
+Two discrepancies **recorded, not resolved**: `FA2304` weight **1385 kg on the plate vs 1030 kg** in
+T018's levelling note (355 kg apart, and floor loading scales with it — the plate figure should be
+preferred); `FA2402` weight **740 kg on the plate vs 720 kg** on the quotation.
+
+**`FA2402`'s capacity is now plate-evidenced.** `DUST CAPACITY 10.000 M³/H` is its own field on the
+plate, so the long-running *"10000 is a reading of the model name, not a specification"* caveat is
+fully discharged. Manufacturer resolved to **AES ELEKTRİK MAKİNA SAN. VE TİC. A.Ş.** — *Elektrik*,
+settling the two renderings the supplier article flagged as unreconciled.
+
+The `FA2301` plate also carries a three-language warning worth knowing now that the compressor is
+registered: **"Main switch does not disconnect the machine from compressed air supply!"**
+
+### A live TpaCAD question, answered from the manual
+
+The owner asked at the machine how to cut a **35 mm hinge-cup pocket with a 12 mm cutter (Tool 1002)**.
+Both halves of the TPA CAD extract were read.
+
+**The working is `CIRCULAR INTERNAL WINDOW`** — *"It programs a circle with internal emptying"* — under
+the group **`CUSTOM WORKINGS: PROFILES`**. Parameters: X/Y centre, `Diameter`, `Final depth`,
+`Intermediate depth` (the per-pass Z bite), `Tool`, and three speeds. It owns the clearing, so no
+stepover arithmetic is needed.
+
+**What the manual does not say, and it is the dangerous part:** whether `Diameter` is the finished hole
+or the tool-centre path. The macro carries **no compensation parameter at all**, and the only
+compensation values printed anywhere are `Off` / `Left` / `Right` — **no internal/external**. On a
+12 mm tool that is the difference between a 35 mm hole and a 47 mm one. Advice given: **test cut in
+scrap and measure** — 35 means finished size, 47 means enter 23 instead.
+
+**Also absent entirely: entry and exit segments.** No helical, ramp or vertical entry is named
+anywhere, though that section is visible in the operator's own dialog.
+
+**Better route flagged:** a dedicated **`THREE HOLES HINGE`** working exists — cup and both screw holes
+in one operation — if a 35 mm bit is in the boring head. Its parameter table sits on a cropped page and
+did not survive the scan.
+
+**A structural finding about our own copies:** *"part 1"* and *"part 2"* are **not two volumes**. Part 1
+holds the **even** pages, part 2 the **odd** pages in reverse. Two sides of one duplex scan. Pages 1, 2
+and 50 (and possibly 5 and 7) are in neither. **Reading part 1 alone gives materially wrong answers** —
+the milling-setup compensation fields exist only in part 2. This explains why earlier sessions found
+the extract patchy.
+
+**T015 re-scoped from housekeeping to blocking**: `Workings.pdf`, at `Albatros\Help\` on the machine,
+holds the compensation semantics, the entry/exit segments and the hinge parameter table — three of the
+day's unknowns in one file.
+
+**T016 gained documentary support.** The manual states of the setup's `Tool type` field: *"It is
+automatically assigned by selecting the tool"* — so `T=1002` with `TP` blank is documented behaviour,
+not a workaround. And on the `HOLE` working: *"Tool — sets the tool number **and prevails over the
+programming per diameter**"*, with `Tool type` driving *"a validity check of the tool"*. That is the
+mechanism this task inferred from the shop floor, in the manufacturer's own words. **Still untested end
+to end.**
