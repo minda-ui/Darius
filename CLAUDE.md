@@ -1,9 +1,27 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 13 — 2026-09-17.** Structure and conventions modelled on the Fishbone Commercial
+**Version 14 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v14 — the compressor is on the register, and a correction was found still standing where
+the sweep had not reached.** `Raw/FISHBONE DRYLINING LTD.pdf` arrived on 2026-09-18: **proforma invoice
+208027**, Pneumatic Tools & Compressors Ltd, **14/11/2023**, £9,696.00 net / £11,635.20 inc VAT. It closed
+**T019**, the only blocking item in the KB, and the ABAC compressor is now **`FA2306`**. What tied the paper
+to the machine was the **product number `4152025548`, identical on proforma and type plate** — the *model
+designations disagree* (plate `GENESIS 15 500L`, proforma `GENESIS C67`) and are **recorded, not merged**.
+The year was evidenced before the code was assigned, for the fourth time; and the caveat is stated rather
+than buried — **a proforma evidences the order, not payment or delivery**, so the VAT invoice is still
+wanted. New task **T021**: the plate's `500L` reads as a 500 litre receiver, which at 10 bar would be a
+pressure system needing a written scheme of examination — but *that is a reading of a model name, not a
+specification*, so T021 starts by establishing what the receiver actually is.
+
+**And the lesson that came with it.** Task **T016** in Smartsheet still asserted the two computers *"are
+not networked - confirmed"* — the claim the owner corrected on 2026-09-17. The sweep of that correction
+covered this file and the Wiki articles; **it never touched the Smartsheet note fields**, so a retracted
+claim was still giving instructions, with the word *confirmed* attached. New §3 lesson: *a correction has
+to be swept through every store the claim reached.* v13 (`1NKINGz5XwT9IdxtHdKerqeJPdssr6vaR`) is archived.
 
 **Changed in v13 — the compressor's "low pressure" was not low pressure.** §7 recorded the ABAC's
 gauge at **5.4 bar** as a live concern, "below what all three machines ask for". The owner corrected it
@@ -109,7 +127,7 @@ avoided, but the discipline stands.
 This KB shares a parent company (AMFA Furniture Ltd) with a separate, company-wide KB. If a fact
 could be recorded in either, check the AMFA Furniture Ltd KB rather than assuming this one is silent
 on it, and cite across rather than duplicate. **This matters concretely**: every machine registered
-here — `FA2301`–`FA2305` and `FA2402` — was invoiced to Fishbone Drylining Limited (now Fishbone
+here — `FA2301`–`FA2306` and `FA2402` — was invoiced to Fishbone Drylining Limited (now Fishbone
 Construction Ltd), not to AMFA Furniture Ltd, and so was the SmartCABINET software. `FA2401` names no
 company at all. The AMFA KB may hold the intercompany side of this that this KB doesn't have standing
 to resolve on its own. See §7.
@@ -171,7 +189,7 @@ Workshop of Furniture Making - Knowledge Base/
 No `Properties`/`Tenants`/`Contracts` folders: not applicable to this KB's scope.
 
 **Live data sources.** Smartsheet workspace `Workshop`, one sheet of each after the 2026-09-15
-duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2305`,
+duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2306`,
 `FA2401`, `FA2402`), **Document Register** (`838802392352644`), **Tasks** (`4087584374523780`), **Safety Check Log**
 (`913380204480388`, F45 monthly safety check), **Maintenance Schedule** (`6753985971226500`, all
 recurring maintenance tasks, RYGB by due date), **Fault Log** (`414932606781316`, faults & fixes,
@@ -191,8 +209,8 @@ never merged — assets are not renumbered to match labels. The master label reg
 owned by Alex**, not this KB; see
 `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`.
 
-**Mapped 2026-09-17** from the owner's photographs, one machine at a time: `0017` → the
-**unregistered** ABAC compressor, `0018` → `FA2301`, `0019` → `FA2402`, `0020` → `FA2303`,
+**Mapped 2026-09-17** from the owner's photographs, one machine at a time: `0017` → the ABAC
+compressor — then unregistered, **`FA2306`** since 2026-09-18 — `0018` → `FA2301`, `0019` → `FA2402`, `0020` → `FA2303`,
 `0021` → `FA2304`. `FA2401` has no label yet. The series starts above `0001`, so `0001`–`0016` are
 elsewhere in the estate. **What the QR codes actually decode to is still unknown** and blocks barcode
 Phase 1 — a scanner has to know what it will receive. `0019` was held at `[confirm]` for several steps
@@ -202,7 +220,9 @@ registered, and the right answer turned out to be a third machine the register d
 **Assigned so far**: `FA2301` (Hebrock F4, corrected 2026-09-15 from a wrongly-assumed `FA2601`),
 `FA2302` (Inventair MK1 MTFA extractor — **Sold**), `FA2303` (Altendorf F45), `FA2304` (Vitap K2-2.0),
 `FA2305` (Inventair MK2 MTFA — **Sold**; acquisition year had been confirmed from invoice 100154 before
-the code was assigned, same discipline applied since the `FA2601` mistake), `FA2401` (Brother TD-4420DN
+the code was assigned, same discipline applied since the `FA2601` mistake), `FA2306` (ABAC GENESIS rotary screw air compressor — registered 2026-09-18 from **proforma invoice
+208027**, 14/11/2023; the year evidenced before the code, the same discipline a fourth time, and the
+proforma's status as *not* an invoice recorded rather than glossed), `FA2401` (Brother TD-4420DN
 label printer — **the first 2024 asset**; the year was evidenced from its order receipt *before* a code
 was assigned, which is exactly why it is not `FA26xx`), `FA2402` (AES SAF 10,000 STK fine dust extractor
 — same discipline, year evidenced from invoice 22473 first).
@@ -212,11 +232,13 @@ existed; their rows stay, marked `Sold`, because they carry purchase prices, an 
 history of how the shop's extraction came to be centralised. A disposal changes an asset's status, not
 its existence in the register.
 
-**Registered ≠ complete.** The ABAC GENESIS 15 500L screw compressor — which supplies the pneumatics of
-`FA2301`, `FA2303` and `FA2304`, and is therefore a single point of failure for the whole workshop — was
-found on 2026-09-17 to have never been registered. It still has **no code**, deliberately: its type plate
-gives a *manufacture* year (2023) and this KB's convention needs an *acquisition* year (Task T019). See
-§3 and §7.
+**Registered ≠ complete.** The ABAC screw compressor — which supplies the pneumatics of `FA2301`,
+`FA2303` and `FA2304`, and is therefore a single point of failure for the whole workshop — was found on
+2026-09-17 to have never been registered at all. It was held at **no code** for a day, deliberately,
+because its type plate gives a *manufacture* year and this KB's convention needs an *acquisition* year;
+**registered as `FA2306` on 2026-09-18** once dated purchase paperwork arrived. **The lesson outlives the
+gap it exposed**: nothing inside the register could point at a machine the register did not contain, and
+nothing inside it can tell us whether it is missing others. See §3 and §7.
 
 **Correspondence/documents** (invoices, manuals, certificates) are registered on the **shared group
 Document Register** under AMFA Furniture Ltd's `FA` prefix, not a locally invented one — **appending
@@ -298,6 +320,14 @@ Lessons from Sessions 2–14, all on real incidents rather than invented ahead o
   on a machine that was switched off (v13).* **A reading is only a reading of the state the thing was
   actually in.** A photograph shows a number; it does not show whether the machine was running, warm,
   loaded or mid-cycle. Establish the state, or record the number as uninterpreted.
+- **A correction has to be swept through every store the claim reached.** The "not networked" claim was
+  corrected on 2026-09-17, and the sweep covered this file and the Wiki articles. It did not cover
+  Smartsheet, and on 2026-09-18 Task **T016** was still instructing a future reader to carry a file across
+  by hand *"(the two are not networked - confirmed)"* — a retracted claim, still giving directions, with
+  the word *confirmed* attached to it. **The narrative layer and the live-data layer are different
+  places.** A correction is not finished when the article reads right; it is finished when every sheet
+  note, task and register row that repeated it reads right too. Corrected in place and visibly, not
+  quietly overwritten.
 - **A register only contains what somebody thought to put in it.** Five sessions were spent
   documenting three machines in detail — manuals, fault tables, maintenance schedules, re-commissioning
   requirements — while the compressor that feeds all three sat unregistered and unmentioned. It surfaced
@@ -370,6 +400,9 @@ client and an SSH client in a document inbox. Flagged to the owner, **never open
 owner has since removed them (confirmed by folder listing). Same day: **bank sort code and account
 number on the MWM quotation were deliberately not copied** into the register or the Document Register,
 and the omission is recorded in the `FA2402` note so it reads as a decision, not an oversight.
+2026-09-18: **bank sort code and account number, and a personal mobile number, on proforma invoice 208027
+were deliberately not copied** into the Machinery Register, the Document Register, either Wiki article or
+the change log — the same decision made for the MWM quotation, and recorded so it reads as a decision.
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions
@@ -437,20 +470,30 @@ the owner/Victoria; only the cover page has been seen.
   **delivered to Unit 31 in October 2024 — nearly two years before AMFA's Unit 31 lease** (T004). See
   `Wiki/Machinery/aes-saf-10000-stk-extractor.md` and
   `Wiki/Suppliers/markfield-woodworking-machinery.md`.
-- **The ABAC compressor — on the floor, on a label, not on the register.** ABAC **GENESIS 15 500L**
-  rotary screw compressor with integrated dryer; asset label **`0017`**; serial **ITJ717909**, product
-  4152025548, **plate year 2023**, 455 kg, **15 kW three-phase**, 0.58 kW dryer, max **10 bar**,
-  refrigerant **R513A 0.5 kg = 316 kg CO₂e**. **No `FA` code assigned** — the plate year is manufacture,
-  the convention needs acquisition; purchase paperwork requested (Task T019). **It feeds the pneumatics
-  of `FA2301`, `FA2303` and `FA2304`.** One live concern: the service log printed on its own yellow
-  label is **blank** (Task T020). **The gauge reading is not a concern** — it showed 5.4 bar, but *the
-  compressor was switched off when photographed* (owner, 2026-09-17), so that was residual receiver
-  pressure, not delivered line pressure. The plate rates the unit to **10 bar** working pressure, so the
-  compressor is not the limitation. Whether each machine receives its required 6–8 bar under load is
-  simply unmeasured — routine verification, **not** the follow-up to a suspected fault. *v11 and v12 of
-  this file presented the 5.4 bar as a finding; that was wrong, see the v13 note.* F-Gas: 0.32 tonnes
-  CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no periodic leak
-  checking.
+- `FA2306` — **ABAC GENESIS rotary screw air compressor** with integrated refrigerant dryer. Asset label
+  **`0017`**; serial **ITJ717909**; product **4152025548**; plate year 2023; 455 kg; **15 kW
+  three-phase** (the proforma also says 20 HP), 0.58 kW dryer; **74 CFM**; max **10 bar**; refrigerant
+  **R513A 0.5 kg = 316 kg CO₂e**. **It feeds the pneumatics of `FA2301`, `FA2303` and `FA2304`** and is
+  therefore a single point of failure for the whole workshop. **Found on the floor 2026-09-17, on a
+  label but not on the register; registered 2026-09-18** from **proforma invoice 208027**, Pneumatic
+  Tools & Compressors Ltd (Long Eaton, Nottingham), **14/11/2023**, **£9,696.00 net / £11,635.20 inc
+  VAT**, billed to Fishbone Drylining Ltd and delivered to **Unit 31**. **Two model designations, not
+  reconciled:** the plate reads `GENESIS 15 500L`, the proforma reads `GENESIS C67` — the *product
+  number* is identical on both and is what identifies the machine; every figure agrees, only the string
+  differs. **The document is a proforma, not an invoice** (*"THIS IS NOT A VAT RECEIPT"*), so it
+  evidences the order, not payment or delivery; 2023 is safe because its 30-day validity closes
+  14/12/2023 and the other five machines were invoiced five days earlier. **The VAT invoice is still
+  wanted.** Two live items: the service log on its own yellow label is **blank** (Task T020), and the
+  **air receiver's pressure-system position is unestablished** (Task T021). **The 5.4 bar gauge reading
+  is not a concern and never was** — the compressor was switched off when photographed (owner,
+  2026-09-17), so that was residual receiver pressure, not line pressure; *v11 and v12 of this file
+  presented it as a finding, which was wrong (see the v13 note)*. The plate rates 10 bar against a
+  highest stated demand of 8 bar, so the compressor is not the limitation; what each machine receives
+  under load is simply unmeasured — routine verification, **not** the follow-up to a suspected fault.
+  F-Gas: 0.32 tonnes CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no
+  periodic leak checking. **No operating manual**, so it is not yet on the Maintenance Schedule. See
+  `Wiki/Machinery/abac-genesis-screw-air-compressor.md` and
+  `Wiki/Suppliers/pneumatic-tools-and-compressors.md`.
 
 **Operational systems (built 2026-09-15):**
 - **Maintenance** — `Wiki/Processes/machinery-maintenance-system.md` + the Maintenance Schedule sheet
@@ -528,13 +571,18 @@ the owner/Victoria; only the cover page has been seen.
 - **What do the asset labels' QR codes decode to?** *Which label goes on which machine is now answered*
   (`0017`–`0021`, §1), but the QR payload is still unknown and **Phase 1 cannot start until it is** — a
   scanner has to know what it will receive.
-- **Who legally owns `FA2301`–`FA2305` and `FA2402`?** All invoiced to Fishbone Drylining Limited (now
+- **Who legally owns `FA2301`–`FA2306` and `FA2402`?** All invoiced to Fishbone Drylining Limited (now
   Fishbone Construction Ltd), not AMFA Furniture Ltd (Task T004) — and so was the SmartCABINET software.
   *Sharpened 2026-09-17:* AMFA Furniture Ltd holds the Unit 31 lease, so the picture is one company's
   machines operating in another's leased premises. **`FA2402` sharpens it again**: it was delivered to
   Unit 31 in **October 2024**, nearly two years before that lease was signed, which suggests the 2026
-  "move" was AMFA taking a lease on a unit the group already occupied rather than a relocation. Evidence,
-  not a conclusion — the lease body and the intercompany side both sit outside this KB.
+  "move" was AMFA taking a lease on a unit the group already occupied rather than a relocation.
+  **`FA2306` pushes that back another year and makes it concrete**: its proforma delivers to **Unit 31 on
+  14/11/2023**, while invoice 100153 — five days earlier — delivers `FA2303` to **Unit 32**. The group was
+  using *both* units in November 2023. That raises a question of its own worth putting to the owner: was
+  the compressor in a different building from the three machines it feeds, or is Unit 31 simply where the
+  paperwork went? *"Delivery as per inv address"* says the former, but a proforma is not a delivery note.
+  Evidence, not a conclusion — the lease body and the intercompany side both sit outside this KB.
 - **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
   **first F45 monthly safety check not yet logged** (Task T008); **`FA2303` serial/supplier
   unconfirmed** (Task T009); **`FA2303` annual PTC electrician check** needs scheduling (Task T011;
@@ -553,10 +601,24 @@ the owner/Victoria; only the cover page has been seen.
   table. Until one arrives `FA2402` stays outside the maintenance and troubleshooting systems. The
   consumables are known (64 filters, three buckets), so the schedule can be built the moment the
   intervals exist.
-- **The ABAC compressor** — **purchase paperwork before a code can be assigned (T019), which is the
-  only blocking item**; and service history plus the F-Gas position (T020). *The 5.4 bar gauge reading
-  is closed: the machine was off. It was never a low-pressure finding.* Delivered pressure at each
-  machine under load is still unmeasured and worth a reading, but as routine verification.
+- **`FA2306`, the ABAC compressor** — *registration closed 2026-09-18 (T019); the blocking item is gone.*
+  What remains: **has it ever been serviced?** Its yellow label's log table is blank and it was delivered
+  in November 2023, so against a *"2,000 hours or 1 year, whichever comes first"* interval the gap is
+  approaching three years — but **a blank label is not proof**, and the supplier is a compressor
+  specialist and the obvious place to ask (T020). The **F-Gas** position is settled by figure and wants
+  qualified confirmation (T020). **The VAT invoice** has never been seen. Delivered pressure and flow at
+  each machine under load is still unmeasured and worth a reading, as routine verification. *The 5.4 bar
+  gauge reading is closed: the machine was off. It was never a low-pressure finding.*
+- **Does `FA2306`'s air receiver need a written scheme of examination? (Task T021.)** The plate's model
+  string reads `GENESIS 15 500L`, and read plainly the "500L" is a 500 litre receiver — which at 10 bar
+  would be a pressure system far above the commonly cited 250 bar-litre threshold, calling under the
+  Pressure Systems Safety Regulations 2000 for a written scheme by a competent person and examination
+  under it. **This KB holds no record of any such scheme or examination.** But **"500L" is a reading of a
+  model name, not a specification** — neither the plate nor the proforma states a receiver volume, and the
+  proforma does not mention a receiver at all — so T021 *starts* by establishing what the receiver
+  actually is. One photograph of its own plate turns the whole question from inference into fact. **This
+  KB does not give regulatory advice**; it records that the question is open and that absence of a record
+  is not evidence of absence.
 - **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
@@ -571,10 +633,11 @@ the owner/Victoria; only the cover page has been seen.
   KB derived from a purchase rather than from a manufacturer's manual.
 - **Full inventory of workshop machinery — demonstrably still incomplete.** This was a soft open
   question until 2026-09-17, when a 15 kW compressor feeding all three production machines turned out
-  never to have been registered. That is no longer a theoretical gap: **the register is known to be
-  missing at least one machine class, and nothing inside the KB can tell us whether it is missing
-  others.** Hand tools, extraction ductwork, the air receiver and the server rack itself have never been
-  assessed. Closing it needs a walk round the floor, not a document (see §3).
+  never to have been registered. *That particular gap is now closed — it is `FA2306` — but closing it
+  proves the point rather than retiring it:* **the register was missing a whole machine class, nothing
+  inside the KB could tell us, and nothing inside it can tell us whether it is missing others.** Hand
+  tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
+  rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
 - **The git mirror is partial and cannot be back-filled by copying** (§1, §3). Fifteen Wiki articles
   exist on Drive only. Closing it needs a mechanism that returns bytes — an owner-side folder download,
   or a Drive-to-git sync outside this connector — not a read-and-re-emit. Until then the mirror is a
