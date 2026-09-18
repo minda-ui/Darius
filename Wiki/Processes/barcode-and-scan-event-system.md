@@ -21,7 +21,8 @@ later phase is waiting on — so that the next person to pick it up does not re-
 design decisions or start a phase whose precondition is still open.
 
 **Status, stated plainly:** the `Scan Events` sheet exists and is **empty**. Nothing has been scanned
-yet, because no scanner has been bought and the QR payload on the existing labels is still unknown.
+yet — but as of **2026-09-18 the QR payload is known**, so the precondition that blocked Phase 1 is
+discharged. See "What the QR codes actually contain" below.
 
 ## Two ID systems, deliberately never merged
 
@@ -115,7 +116,7 @@ Ranked by value, each with a real gate. **None should start before its precondit
 
 | Phase | What it does | Blocked on |
 |---|---|---|
-| **1. Part labels** | SmartCABINET prints a barcode per part; scanning it identifies the part at any machine | **Two open questions**: what the existing labels' QR codes decode to, and whether the [Brother TD-4420DN](../Machinery/brother-td-4420dn-label-printer.md) actually speaks ZPL |
+| **1. Part labels** | SmartCABINET prints a barcode per part; scanning it identifies the part at any machine | **QR payload answered 2026-09-18** (a bare four-digit label number — see below). **Still open**: whether the [Brother TD-4420DN](../Machinery/brother-td-4420dn-label-printer.md) actually speaks ZPL, and no scanner has been bought |
 | **2. Stage tracking** | Scanning a part at each stage builds a live production tracker from the append-only log | Phase 1, plus the stage list from the BP-scheme map in [the workflow article](../Software/smartcabinet-and-production-workflow.md) |
 | **3. Offcut library** | Label the physical offcut so the rack matches SmartCABINET's cutout library | Nothing technical — but the loop has **never been closed**: `Remaining cutouts` held seven offcuts while `Load cutouts` read *"There are no items to show."* Needs a minimum keep size and the `Vein` (grain) field filled |
 | **4. Vitap program selection** | Scan a part, load its `.TCN` program on the machine | Phases 1–2, and knowing the shared Drive job folder's structure |
@@ -138,10 +139,49 @@ Ranked by value, each with a real gate. **None should start before its precondit
 - **Machine asset labels do not come from the Brother printer.** The pre-printed group tags are
   durable stock; direct thermal fades. The printer is for short-life labels.
 
-## Open questions
+## What the QR codes actually contain — answered 2026-09-18
 
-- **What do the asset labels' QR codes decode to?** Still unknown, and it **blocks Phase 1** — a
-  scanner has to know what it will receive. One scan of any tag with a phone answers it.
+The owner photographed a phone camera decoding a tag from an unapplied label sheet. The camera's
+overlay read:
+
+> **`Text: 0027`**
+
+**The QR payload is the bare four-digit label number as plain text.** Nothing else — no URL, no
+prefix, no company name, no asset code. Leading zeros are preserved: the payload is `0027`, not `27`.
+
+*Scope of the evidence, stated honestly: **one** tag was scanned (`0027`), from a sheet that also
+showed `0025` and `0026`. That the rest of the series behaves identically is an inference from them
+being pre-printed as one batch — reasonable, but an inference. A second scan on an applied tag, say
+`0017` on the compressor, would settle it.*
+
+### What this means for the design
+
+**Good news: the two-namespace design holds, and its join column already exists.** A scan delivers a
+*label number*, not an asset code, so the scanner's output has to be looked up against the Machinery
+Register's `Asset Label No.` column to resolve `0027` → an `FA` code. That is exactly the structure
+described above, which is now vindicated rather than merely asserted.
+
+**Three consequences that constrain Phase 1:**
+
+1. **The payload is not self-describing.** A bare `0027` carries nothing to say *what kind of thing*
+   it identifies. Any handler must decide by context or by an explicit rule.
+2. **So a disambiguation rule is needed before part labels exist.** Once SmartCABINET starts printing
+   part barcodes, a scanner will see two kinds of payload. **Proposed rule, to be confirmed:** a bare
+   four-digit numeric payload is a *group asset label*; anything else (longer, prefixed, or
+   non-numeric) is a part or offcut label. This costs nothing to adopt now and is expensive to
+   retrofit — but it is a *proposal*, not a decision, and it needs the part-label format settled first.
+3. **Leading zeros must not be stripped.** `0027` is a string, not the integer 27. Any spreadsheet
+   import, form field or script that coerces it to a number will silently break the join against
+   `Asset Label No.` — which stores `0017`, `0019`, `0021` and so on as text.
+
+### Also visible on the sheet
+
+Labels **`0025`, `0026` and `0027`** exist on an unapplied sheet held by the owner. The register
+previously accounted only for `0017`–`0021` (applied) with `0001`–`0016` understood to be elsewhere in
+the estate. **What happened to `0022`–`0024` is not known** and is not guessed at here. The sheet also
+carried the marking `12M`, whose meaning is unknown.
+
+## Open questions
 - **Does the Brother TD-4420DN support ZPL?** SmartCABINET prints ZPL; Brother's manual for this
   model never mentions it while resellers claim it. Decisive test in the
   [printer's article](../Machinery/brother-td-4420dn-label-printer.md).
