@@ -128,6 +128,10 @@ It also raises a new one worth putting to the owner: **if the compressor was del
 November 2023 while the three machines it feeds went to Unit 32, was it in a different building from
 them?** *"Delivery as per inv address"* says it was — but a proforma is not a delivery note.
 
+> **⚠ THIS WHOLE SECTION WAS WRONG AND IS RETRACTED — see "Correction, same day" at the end of this
+> file.** The owner confirmed the compressor was **delivered to Unit 32**. It is left standing rather
+> than deleted because the error, and how it was made, is the point.
+
 ### Written this session
 
 | What | Where | Size |
@@ -174,6 +178,7 @@ the filename would have asserted the thing the article explicitly declines to re
 - **Delivered pressure and flow at each machine under load** — still unmeasured. Routine verification,
   **not** the follow-up to a fault. *The 5.4 bar reading was never a finding: the machine was off.*
 - **Was the compressor in Unit 31 while the machines it feeds were in Unit 32?** New question, above.
+  *Answered later the same day: no — see the correction below.*
 - **The second sticker** on the compressor — *"29 / Compressor"* with its own QR — origin still unknown.
 - Everything carried forward from Session 14 and unaffected by today: the anemometer readings (T014 /
   T018), the QR payload blocking barcode Phase 1, the `STK 10000` manual, `FA2303`'s expired
@@ -226,3 +231,13 @@ later:
 | `Wiki/Machinery/abac-genesis-screw-air-compressor.md` | New section "Where it was delivered — a correction"; Key facts row now reads Unit 32; the open question struck through as answered |
 | `Wiki/Suppliers/pneumatic-tools-and-compressors.md` | Delivery line reframed as a billing address |
 | `CLAUDE.md` | **→ v15**: §7 machine entry and T004 bullet corrected, new §3 lesson |
+
+## Also produced — `Outputs/2026-09-18-outstanding-items.md`
+
+An outstanding-items list for the owner, prepared on request at the end of the session. **21 tasks
+raised, 4 closed, 17 open**, ordered by *what it takes to close each item* rather than by task number.
+Its headline: **eight open items close with one walk round the workshop** — the QR payload, the air
+receiver's plate, the compressor's service label, an anemometer reading at each extraction port, the
+F45's water separator and filter, two type plates, and an asset label for the Brother printer. It also
+flags **T010 as answered and ready to close**, and separates genuine compliance items from recorded
+debts that are deliberately not being fixed.
