@@ -1,9 +1,31 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 16 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
+**Version 17 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v17 — the kitchen unit library started, and comparing three units found what reading
+one could not.** The owner asked for a library of low-cost kitchen units and named **`AMFA Wall Unit
+600 RH`** as the master. Its `worklist.xmlst` was decoded: eleven parts, **19 mm throughout including
+the back and the door**, and **no file anywhere states the finished unit size** — so it was derived
+from the part sizes, arithmetic shown, as **600 wide × 900 high × 300 deep**. The `300mm` and `600mm
+Wall unit` worklists were then decoded and compared, which **corroborated the derivation
+independently** (the same width rules hold across all three) and turned up a real defect: **shelf
+depth is 266, 256 and 255 mm on three carcases that are all 300 deep**. Recorded with all three
+values, not resolved by preferring the master's. **Nothing was created, moved or renamed on Drive** —
+the range and the carcase spec are commercial decisions. New article
+`Wiki/Software/kitchen-unit-library.md`; new §3 lesson: *comparing siblings finds what reading one
+cannot.*
+
+**And T016 stopped being a one-off.** Every hole in the master's `03-BOTTOM.TCN` carries a diameter
+and **no tool number** — the exact condition behind the live "Tool for this working not found" fault.
+*That reading of the parameter indices is mine and is not documented in the manual extract this KB
+holds*, but if it is right, **T016 fails every unit in the library identically**, so it is now a
+precondition for populating the library rather than a single machine's fault. **Counts recounted, as
+§1 requires and as this file has twice failed to do:** the git mirror holds **nine** Wiki articles, not
+seven, and there are **twenty-seven** in total, not twenty-five. The eighteen Drive-only figure was
+correct and is unchanged. v16 (`1V6aSqeW7Lrj9wNNPjsxEj_cPDbcPS3mO`) is archived.
 
 **Changed in v16 — a walk round the floor closed two tasks that documents could not, and one of them
 had been answered in this KB all along under the wrong name.** The owner photographed four type plates.
@@ -196,9 +218,10 @@ copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
 
 **The git mirror `minda-ui/Darius` is partial, and that is a deliberate, recorded state — not an
 oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and the
-**seven** Wiki articles created on 2026-09-17 and 2026-09-18. The other **eighteen** live on Drive only
-— *counted on 2026-09-18 with `git ls-files`, not carried forward: v12 and v13 said "four" and
-"fifteen", which had quietly gone stale as articles were added.* Anything
+**nine** Wiki articles created on 2026-09-17 and 2026-09-18. The other **eighteen** live on Drive only
+— *recounted on 2026-09-18 with `git ls-files`, not carried forward: v12 and v13 said "four" and
+"fifteen", and v16 said "seven", each having quietly gone stale as articles were added. The habit is
+the point, not the number.* Anything
 authored in a session is written to both and verified with `wc -c` against Drive's reported size;
 anything that predates the mirror stays on Drive, because **the connector's read tool cannot return a
 file byte-for-byte** (§3), so back-filling would silently corrupt what it copied. *v8–v11 of this file
@@ -381,6 +404,15 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   part 2. Extracting both parts independently is what exposed this; a single read would have produced a
   confident, incomplete answer. Same shape as the Vitap manual's two duplex pairs, and worth checking
   page numbering on any scanned set before quoting it.
+- **Comparing siblings finds what reading one cannot.** The `AMFA Wall Unit 600 RH` cutting list read
+  cleanly on its own — every number internally consistent, nothing to query. Decoding the `300mm` and
+  `600mm Wall unit` lists and putting all three side by side did two things at once: it **corroborated**
+  the derived 600 × 900 × 300 nominal, because the same width rules held across all three, and it
+  **exposed** a shelf depth of 266 / 256 / 255 mm on three carcases that are all 300 deep. Neither was
+  visible from one file. *A single artefact can only be checked for internal consistency; a family can
+  be checked against itself.* Where several things are meant to be the same, read more than one before
+  calling any of them the master — and when they disagree, record every value, because preferring the
+  one labelled "master" is a guess wearing a title.
 - **A printed delivery clause is not a delivery note.** Proforma 208027 carried the line *"DELIVERY AS
   PER INV ADDRESS"* against a Unit 31 address, and §7 recorded the compressor as delivered to Unit 31 —
   then built a premises conclusion on it (*"the group was using both units in November 2023"*). The owner
@@ -597,6 +629,12 @@ the owner/Victoria; only the cover page has been seen.
 - **SmartCabinet CAD reference** — `Wiki/Processes/smartcabinet-wall-support-cam-table-reference.md`:
   how to add hardware to SmartCabinet's Wall Support library, full column reference, two worked
   examples that exposed the X-sign discrepancy (Task T017).
+- **Kitchen unit library (started 2026-09-18)** — `Wiki/Software/kitchen-unit-library.md`
+  (**draft, nothing built**): the `AMFA Wall Unit 600 RH` master read out of its own files, the derived
+  nominal, the three-unit comparison, and a folder/unit-code convention **proposed for approval, not
+  created**. The owner's Drive `Furniture` folder was listed but **not reorganised**, and the two
+  `ANVAR_KITCHEN_*` folders were **not opened** — a customer name on a folder is enough to treat it as
+  client data.
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
   Machinery Register's `Asset Label No.` column, documented in
   `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
@@ -718,6 +756,17 @@ the owner/Victoria; only the cover page has been seen.
   actually is. One photograph of its own plate turns the whole question from inference into fact. **This
   KB does not give regulatory advice**; it records that the question is open and that absence of a record
   is not evidence of absence.
+- **The kitchen unit library — four owner decisions and two defects.** The decisions: the range
+  (types and widths), whether *"low cost"* denotes a defined carcase spec or is only a range name,
+  whether hand belongs in the unit code or is mirrored at job time, and whether library units are
+  separated from customer jobs on Drive. The defects already visible: **shelf depth 266 / 256 / 255 mm**
+  across three 300 mm-deep carcases, and **two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank in the
+  master where neither earlier unit has a second back at all. Also unestablished: whether SmartCABINET
+  generates a unit's parts **parametrically** from a width, which would make the whole folder question
+  smaller than it looks. See `Wiki/Software/kitchen-unit-library.md`.
+- **`T016` is a precondition for the library, not just a Vitap fault.** Every hole in the master
+  exports with a diameter and no tool number, so a Ø5 that does not resolve in the CN Tools catalog
+  fails every unit identically. Fixing one catalog entry once is cheap; re-cutting a range is not.
 - **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
@@ -739,7 +788,7 @@ the owner/Victoria; only the cover page has been seen.
   tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
   rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
 - **The git mirror is partial and cannot be back-filled by copying** (§1, §3). **Eighteen** of the
-  twenty-five Wiki articles exist on Drive only (counted 2026-09-18). Closing it needs a mechanism that returns bytes — an owner-side folder download,
+  twenty-seven Wiki articles exist on Drive only (recounted 2026-09-18). Closing it needs a mechanism that returns bytes — an owner-side folder download,
   or a Drive-to-git sync outside this connector — not a read-and-re-emit. Until then the mirror is a
   *partial* mirror and this file says so.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
