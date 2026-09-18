@@ -26,6 +26,7 @@ _(no articles yet)_
 
 ## Processes
 - [Barcode and scan-event system](Processes/barcode-and-scan-event-system.md) - draft: how a scan becomes a record; the two ID namespaces (physical label number vs `FA` code) and why they are never merged; Phase 0 (the `Scan Events` sheet) built and empty, Phases 1-4 designed with the precondition each is waiting on
+- [Carcase fixings: Cabineo X vs confirmat screws](Processes/carcase-fixings-cabineo-x-vs-confirmat.md) - which fixing suits the low-cost kitchen range: confirmat is ~29x cheaper per joint and the Vitap's horizontal spindles cancel Cabineo's usual no-edge-drilling advantage, so confirmat is the default - but SmartCABINET already holds a "Cabineo X" drill-head profile, and the missing Ø5 entry in it **is** Task T016, which reframes that fault as the Cabineo X tooling being half-configured
 - [Process: Altendorf F45 monthly safety-device check](Processes/f45-monthly-safety-device-check.md) - the F45's mandatory, documented monthly safety check (E-stop, limit switches, hood) and where it's logged (Smartsheet "Safety Check Log")
 - [Machinery maintenance system (routine maintenance)](Processes/machinery-maintenance-system.md) - how routine maintenance is scheduled/tracked; the Maintenance Schedule, Safety Check Log and Fault Log sheets and how their RYGB health works
 - [Maintenance schedule — Altendorf F45 (FA2303)](Processes/maintenance-schedule-altendorf-f45.md) - the F45's manual Chapter-7 cleaning/lubrication schedule + annual PTC electrical check, mapped to Maintenance Schedule rows MT-020…MT-028
