@@ -9,6 +9,7 @@ sources:
  - "Google Drive folder `Furniture` (1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1), listed 2026-09-18"
  - "`AMFA Wall Unit 600 RH/worklist.xmlst` (1uJ3LlrN6yWe9USvPIvJTa50SehARoTFh), decoded 2026-09-18"
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m), decoded 2026-09-18"
+ - "`300mm Wall unit/worklist.xmlst` (1pBz_N2ty5_0UVuCVSpYx-smioTbD5W3u) and `600mm Wall unit/worklist.xmlst` (1k98zBX7Safi_foFnYsyD5ZznJX2QefXD), decoded and compared 2026-09-18"
  - "Owner (Minda), 2026-09-18: the AMFA unit is the master design for basic kitchen units"
 related:
  - ../Software/smartcabinet-and-production-workflow.md
@@ -38,6 +39,9 @@ is the owner's.
   consequence for a range whose selling point is price; recorded here as a fact, not a criticism.
 - **The unit's nominal size is not stated in any file.** It is derived below from the part sizes, and
   the derivation is shown so it can be checked rather than believed.
+- **Shelf depth disagrees across the three units built so far** — 255, 256 and 266 mm for the same
+  300 mm-deep carcase. A real inconsistency, found by comparing the three cutting lists, and worth
+  settling before it is copied into a range.
 - **Every hole in the master exports with no tool specified.** This is the same condition behind the
   live TpaCAD "Tool for this working not found" fault (Task **T016**) — see the risk section. It is
   the one finding here that could stop the whole library at the machine.
@@ -102,12 +106,46 @@ checkable against the table above:
 right-hand hung.** *This is my arithmetic, not a figure read off a document* — if the owner's intended
 nominal is anything other than 600 × 900 × 300, the derivation is wrong and everything below moves.
 
+### Corroborated against the two earlier units
+
+The `300mm` and `600mm Wall unit` worklists were decoded the same way and compared byte for byte.
+They are **genuinely different files** — same length, same structure, eight cell values differing on
+six rows — so the earlier folders are a real attempt at a family, not copies.
+
+| Part | 300mm unit | 600mm unit | AMFA master |
+|---|---|---|---|
+| `01-SIDE-LEFT` | 862.0 × 300.0 | 862.0 × 300.0 | 862.0 × 300.0 |
+| `02-SIDE-RIGHT` | 862.0 × 300.0 | 862.0 × 300.0 | 862.0 × 300.0 |
+| `03-BOTTOM` | 300.0 × 300.0 | 600.0 × 300.0 | 600.0 × 300.0 |
+| `04-UP` | 300.0 × 300.0 | 600.0 × 300.0 | 600.0 × 300.0 |
+| `05-SHELF-1` | 261.0 × **266.0** | 561.0 × **256.0** | 561.0 × **255.0** |
+| `06-SHELF-2` | 261.0 × **266.0** | 561.0 × **256.0** | 561.0 × **255.0** |
+| `07-BACK-1` | 862.0 × 262.0 | 862.0 × 562.0 | 862.0 × 562.0 |
+| `07-BACK-1B` | — | — | 862.0 × 562.0 |
+| `08-DOOR-1` | 896.0 × 297.0 | 896.0 × 597.0 | 896.0 × 597.0 |
+
+Everything is 19 mm and every row is `MIRROR = 0`, `REPETITIONS = 1` in all three.
+
+**This corroborates the derivation above.** Across three units the same rules hold: bottom length =
+nominal width; back = nominal width − 38 (two 19 mm sides); shelf = back − 1 mm; door = nominal
+width − 3 mm and 896 high against a 900 nominal. The sides never change, because a wall unit's height
+and depth do not change with its width. So the family is **600 or 300 wide × 900 high × 300 deep**,
+and the master is the 600.
+
+**And it turns up one thing that does not hold.** Shelf depth is **266.0** on the 300 mm unit,
+**256.0** on the 600 mm unit and **255.0** on the master — three values for what should be one
+number, since all three carcases are 300 deep and a shelf's depth has nothing to do with the unit's
+width. One of them is right and two are wrong, or they encode a set-back that changed between
+16 September 10:22 and 13:45 and was never written down. **This is exactly the kind of drift a
+library exists to prevent**, and it is already present in four folders made in one morning.
+
 ### Two backs, not one
 
 `07-BACK-1` and `07-BACK-1B` are the **same blank** (862 × 562 × 19) and both are listed once in the
 worklist, so both get cut. Their programs differ substantially in size — 60,458 bytes against 11,994 —
-so they are not duplicates. Either the unit genuinely takes two backs, or one is an alternative that
-should not be in the cut list. **Open — not guessed.**
+so they are not duplicates. **Neither earlier unit has a `07-BACK-1B` at all**, so the second back is
+something the master gained, not something the family always had. Either the unit genuinely takes two
+backs, or one is an alternative that should not be in the cut list. **Open — not guessed.**
 
 ## The one risk that affects the whole library
 
@@ -194,8 +232,12 @@ was derived from. Without it a library unit cannot be quoted, costed or checked 
 
 - Is the derived nominal **600 × 900 × 300** right? Everything above rests on it.
 - **Two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank — deliberate, or a stray file in the cut list?
+- **Which shelf depth is right — 255, 256 or 266?** Three units, three answers, all 300 mm deep. This
+  one should be settled before anything is copied, because a library propagates whichever value it is
+  built on.
 - Are the four `300`–`600mm Wall unit` folders to be kept, regenerated from the master, or archived?
-  They predate the master by three hours and nothing records what changed between them.
+  They predate the master by three hours, differ from it in shelf depth, lack the second back and the
+  nesting files, and nothing records what changed between them.
 - Is the **19 mm back and 19 mm door** intended for a low-cost range, or inherited from the master
   being drawn as a one-off?
 - Does SmartCABINET generate a unit's parts **parametrically** from a width? If it does, the library
