@@ -159,7 +159,9 @@ copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
 
 **The git mirror `minda-ui/Darius` is partial, and that is a deliberate, recorded state — not an
 oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and the
-four Wiki articles created on 2026-09-17. The other fifteen Wiki articles live on Drive only. Anything
+**seven** Wiki articles created on 2026-09-17 and 2026-09-18. The other **eighteen** live on Drive only
+— *counted on 2026-09-18 with `git ls-files`, not carried forward: v12 and v13 said "four" and
+"fifteen", which had quietly gone stale as articles were added.* Anything
 authored in a session is written to both and verified with `wc -c` against Drive's reported size;
 anything that predates the mirror stays on Drive, because **the connector's read tool cannot return a
 file byte-for-byte** (§3), so back-filling would silently corrupt what it copied. *v8–v11 of this file
@@ -262,7 +264,7 @@ Front matter, citation, linking and stub rules: `Wiki/Process-Fishbone-Systems-H
 ## 3. Workflow for processing new items
 
 Group workflow (Detect → Register → Read → Extract → Update → Check → Log → Output → Commit).
-Lessons from Sessions 2–14, all on real incidents rather than invented ahead of time:
+Lessons from Sessions 2–15, all on real incidents rather than invented ahead of time:
 - For a multi-part scanned manual, extract via background sub-tasks (split across parallel agents
   for large sets, e.g. 8 parts as two 4-part agents) rather than reading everything inline; flag
   illegible/OCR'd figures and cross-part inconsistencies explicitly rather than silently picking one
@@ -638,8 +640,8 @@ the owner/Victoria; only the cover page has been seen.
   inside the KB could tell us, and nothing inside it can tell us whether it is missing others.** Hand
   tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
   rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
-- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). Fifteen Wiki articles
-  exist on Drive only. Closing it needs a mechanism that returns bytes — an owner-side folder download,
+- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). **Eighteen** of the
+  twenty-five Wiki articles exist on Drive only (counted 2026-09-18). Closing it needs a mechanism that returns bytes — an owner-side folder download,
   or a Drive-to-git sync outside this connector — not a read-and-re-emit. Until then the mirror is a
   *partial* mirror and this file says so.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
