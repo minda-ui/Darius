@@ -1,9 +1,25 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 14 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
+**Version 15 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v15 — the compressor was delivered to Unit 32, and a premises claim of mine is withdrawn.**
+Hours after v14, the owner corrected the one thing in it I had inferred rather than read: *"Compressor was
+all the time unit 31, it was delivered to unit 32."* Proforma 208027 prints **"DELIVERY AS PER INV ADDRESS"**
+against a **Unit 31** address, and I recorded that as where the machine went. **It is not a delivery record.**
+Unit 31 is the billing address; the compressor went to **Unit 32**, with the three machines it feeds.
+
+**Two consequences.** The open question "was the compressor in a different building from its machines?" is
+**answered: no** — it arrived with them and has moved with them. And **v14's claim that "the group was using
+both units in November 2023" is withdrawn**: it rested entirely on reading that printed clause as fact, so
+nothing in this KB now places the group in Unit 31 before **2024** (`FA2402` delivered there October 2024;
+`FA2401` shipped to "Fishbone Waste, Unit 31" May 2024). **The sixth unsourced inference corrected in two
+days**, and the same family as the 5.4 bar gauge — treating something printed on a page as a record of what
+physically happened. New §3 lesson: *a printed delivery clause is not a delivery note.* Swept through the
+Machinery Register, Document Register, T004, both Wiki articles and this file — the v14 lesson applied to
+its own author, one day later. v14 (`1BEZ8NYkfCVRU0mEv-fnIVnRAX-Y8GSh_`) is archived.
 
 **Changed in v14 — the compressor is on the register, and a correction was found still standing where
 the sweep had not reached.** `Raw/FISHBONE DRYLINING LTD.pdf` arrived on 2026-09-18: **proforma invoice
@@ -322,6 +338,14 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   on a machine that was switched off (v13).* **A reading is only a reading of the state the thing was
   actually in.** A photograph shows a number; it does not show whether the machine was running, warm,
   loaded or mid-cycle. Establish the state, or record the number as uninterpreted.
+- **A printed delivery clause is not a delivery note.** Proforma 208027 carried the line *"DELIVERY AS
+  PER INV ADDRESS"* against a Unit 31 address, and §7 recorded the compressor as delivered to Unit 31 —
+  then built a premises conclusion on it (*"the group was using both units in November 2023"*). The owner
+  corrected it within hours: **it went to Unit 32.** Unit 31 was the billing address. A supplier's
+  boilerplate describes an intention at the moment of quoting, not an event; only a delivery note, a
+  signature or somebody's memory records where a thing actually arrived. **The same family as the 5.4 bar
+  gauge** — treating a mark on a page as a record of the physical world. Where a document gives an address,
+  record *which* address it is (billing, correspondence, delivery), and if it does not say, say that.
 - **A correction has to be swept through every store the claim reached.** The "not networked" claim was
   corrected on 2026-09-17, and the sweep covered this file and the Wiki articles. It did not cover
   Smartsheet, and on 2026-09-18 Task **T016** was still instructing a future reader to carry a file across
@@ -479,7 +503,10 @@ the owner/Victoria; only the cover page has been seen.
   therefore a single point of failure for the whole workshop. **Found on the floor 2026-09-17, on a
   label but not on the register; registered 2026-09-18** from **proforma invoice 208027**, Pneumatic
   Tools & Compressors Ltd (Long Eaton, Nottingham), **14/11/2023**, **£9,696.00 net / £11,635.20 inc
-  VAT**, billed to Fishbone Drylining Ltd and delivered to **Unit 31**. **Two model designations, not
+  VAT**, billed to Fishbone Drylining Ltd. **Delivered to Unit 32**, with the three machines it feeds —
+  *not* Unit 31, although the proforma prints "delivery as per inv address" against a Unit 31 address;
+  that is the billing address, and the owner corrected the point on 2026-09-18 (see the v15 note).
+  **Two model designations, not
   reconciled:** the plate reads `GENESIS 15 500L`, the proforma reads `GENESIS C67` — the *product
   number* is identical on both and is what identifies the machine; every figure agrees, only the string
   differs. **The document is a proforma, not an invoice** (*"THIS IS NOT A VAT RECEIPT"*), so it
@@ -579,12 +606,11 @@ the owner/Victoria; only the cover page has been seen.
   machines operating in another's leased premises. **`FA2402` sharpens it again**: it was delivered to
   Unit 31 in **October 2024**, nearly two years before that lease was signed, which suggests the 2026
   "move" was AMFA taking a lease on a unit the group already occupied rather than a relocation.
-  **`FA2306` pushes that back another year and makes it concrete**: its proforma delivers to **Unit 31 on
-  14/11/2023**, while invoice 100153 — five days earlier — delivers `FA2303` to **Unit 32**. The group was
-  using *both* units in November 2023. That raises a question of its own worth putting to the owner: was
-  the compressor in a different building from the three machines it feeds, or is Unit 31 simply where the
-  paperwork went? *"Delivery as per inv address"* says the former, but a proforma is not a delivery note.
-  Evidence, not a conclusion — the lease body and the intercompany side both sit outside this KB.
+  **`FA2306` briefly appeared to push that back another year, and does not.** v14 read its proforma's
+  Unit 31 address as a delivery address and concluded the group was using both units in November 2023;
+  **the owner withdrew that on 2026-09-18 — the compressor went to Unit 32.** So the earliest evidence
+  this KB holds for the group occupying Unit 31 is **2024**, not 2023. Evidence, not a conclusion — the
+  lease body and the intercompany side both sit outside this KB.
 - **`FA2303`'s expired safety certificates** — check with Altendorf/supplier (Task T007);
   **first F45 monthly safety check not yet logged** (Task T008); **`FA2303` serial/supplier
   unconfirmed** (Task T009); **`FA2303` annual PTC electrician check** needs scheduling (Task T011;

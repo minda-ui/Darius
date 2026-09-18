@@ -180,3 +180,49 @@ the filename would have asserted the thing the article explicitly declines to re
   certificates (T007) and first monthly check (T008), the Inventair disposal dates and proceeds, the
   Unit 31 lease body, `FA2401`'s missing asset label, the partial git mirror, and the non-bidirectional
   `related:` links.
+
+---
+
+## Correction, same day — the delivery address was not a delivery record
+
+The owner corrected the one thing in the session above that I had inferred rather than read:
+
+> *"Compressor was all the time unit 31, it was delivered to unit 32."*
+
+**The compressor was delivered to Unit 32**, where `FA2301`, `FA2303` and `FA2304` already were. The
+Unit 31 on proforma 208027 is the **billing and correspondence address**.
+
+**What I did wrong.** The proforma prints **"DELIVERY AS PER INV ADDRESS"**. I read that as a record of
+where the machine physically went, and then built on it — concluding in the section above that *"the
+group was using both units in November 2023"*, and treating that as new evidence for T004 that pushed
+the premises picture back a year earlier than `FA2402`'s October 2024 delivery.
+
+**That conclusion is withdrawn.** A supplier's boilerplate describes an intention at the moment of
+quoting, not an event. **Nothing in this KB now places the group in Unit 31 before 2024** — the two
+surviving data points are `FA2402` delivered to Unit 31 in October 2024, and `FA2401` shipped to
+"Fishbone Waste, Unit 31" in May 2024. Both stand; neither is a 2023 data point.
+
+**What it does settle.** The open question *"was the compressor in a different building from the three
+machines it feeds?"* is **answered: no.** It arrived with them and has moved with them.
+
+**One clause I have not resolved, and have labelled rather than guessed.** I read *"was all the time
+unit 31"* as referring to the **paperwork** address being Unit 31 throughout, not the machine's physical
+location. That reading is mine. It is flagged as a reading in the register note, the Document Register
+note and the machine's article, so that if it means the opposite, the correction lands in one place.
+
+**This is the sixth unsourced inference corrected in two days**, and the same family as the 5.4 bar
+gauge: treating a mark on a page as a record of the physical world. New `CLAUDE.md` §3 lesson — **a
+printed delivery clause is not a delivery note**; where a document gives an address, record *which*
+address it is, and if the document does not say, say that.
+
+**Swept through every store the claim reached** — the v14 lesson applied to its own author, one day
+later:
+
+| Store | What changed |
+|---|---|
+| Machinery Register, `FA2306` row | Delivery paragraph rewritten; the withdrawn inference named |
+| Document Register, proforma 208027 row | "Cite this document for the order, the price and the specification — not for where the machine went" |
+| Tasks, **T004** | The "both units in use in November 2023" block replaced with the retraction and what survives |
+| `Wiki/Machinery/abac-genesis-screw-air-compressor.md` | New section "Where it was delivered — a correction"; Key facts row now reads Unit 32; the open question struck through as answered |
+| `Wiki/Suppliers/pneumatic-tools-and-compressors.md` | Delivery line reframed as a billing address |
+| `CLAUDE.md` | **→ v15**: §7 machine entry and T004 bullet corrected, new §3 lesson |

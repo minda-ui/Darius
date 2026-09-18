@@ -43,7 +43,7 @@ It was registered as **`FA2306`** on 2026-09-18, when its purchase paperwork arr
 | Supplier | [Pneumatic Tools & Compressors Ltd](../Suppliers/pneumatic-tools-and-compressors.md) | [^1] |
 | Price | **£9,696.00 net**, VAT £1,939.20, **£11,635.20 inc VAT** | [^1] |
 | Billed to | **Fishbone Drylining Ltd** — the seventh machine in the same pattern (Task T004) | [^1] |
-| Delivered to | **Unit 31**, Point Pleasant Industrial Estate, Wallsend NE28 6HA | [^1] |
+| Delivered to | **Unit 32** — *not* Unit 31; the proforma's address is a billing address, see below | owner, 2026-09-18 |
 | Weight | 455 kg | [^2] |
 | Compressor motor | **400 V, 50 Hz, 15 kW, 3-phase** (proforma also states **20 HP**) | [^2][^1] |
 | Integrated dryer | 230 V, 50 Hz, 0.58 kW, 1-phase, refrigerant type | [^2] |
@@ -87,6 +87,35 @@ settle payment properly; its absence is recorded, not glossed.
 
 The `Purchase Date` on the Machinery Register row is therefore **the proforma date**, not a confirmed
 payment or delivery date, and the row says so.
+
+## Where it was delivered — a correction
+
+The proforma prints **"DELIVERY AS PER INV ADDRESS"** against a **Unit 31** invoice address, and this
+article first recorded that as the delivery destination. **It is not one.** The owner corrected it the
+same day:
+
+> *"Compressor was all the time unit 31, it was delivered to unit 32."*
+
+**The compressor was delivered to Unit 32** — where `FA2301`, `FA2303` and `FA2304` already were. The
+Unit 31 on the document is the billing and correspondence address.
+
+*My reading of the first clause is that the **paperwork** address was Unit 31 throughout, rather than the
+machine's physical location — that reading is mine and is labelled as such.* If it means the machine's
+location, this section needs correcting again.
+
+**Two consequences, one of them a retraction:**
+
+1. **The compressor was never in a different building from the machines it feeds.** It arrived with
+   them and has moved with them. That open question is answered: no.
+2. **A claim of mine is withdrawn.** This article and Task T004 had used the Unit 31 address as evidence
+   that the group occupied Unit 31 in **November 2023**, pushing the premises picture back a year
+   earlier than `FA2402`'s October 2024 delivery. **That inference is gone.** A billing address is not
+   an occupation record, and a printed delivery clause is not a delivery note. What still stands is
+   2024 evidence only: `FA2402` delivered to Unit 31 in October 2024, and `FA2401` shipped to "Fishbone
+   Waste, Unit 31" in May 2024.
+
+It is the same family of error as the 5.4 bar gauge below — taking something printed on a page as a
+record of what physically happened. The lesson is in `CLAUDE.md` §3.
 
 ## Air supply and what the machines ask of it
 
@@ -187,11 +216,8 @@ disposal must be done by suitably certified personnel. Task **T020**.
 - **Delivered pressure and flow at each machine under load** — unmeasured. Routine, not urgent.
 - **Does the F45's required water separator and 40 µm filter exist in the installation?** Never checked.
 - **Who owns it?** Billed to Fishbone Drylining Ltd, like every other machine here (T004).
-- **Was it in Unit 31 while the machines it feeds were in Unit 32?** The proforma says *"delivery as
-  per inv address"* and that address is **Unit 31**, dated 14/11/2023 — five days after `FA2301`,
-  `FA2303` and `FA2304` were invoiced for delivery to **Unit 32** (invoice 100153). Both units were in
-  use by the group in November 2023. A proforma is not a delivery note, so this is evidence, not a
-  conclusion — but it is worth putting to the owner, and it bears on T004 and T018.
+- ~~Was it in Unit 31 while the machines it feeds were in Unit 32?~~ — **answered by the owner
+  2026-09-18: no.** It was delivered to Unit 32, with them. See "Where it was delivered" above.
 - **The second sticker** beside the type plate reads **"29 / Compressor"** with its own QR code — an
   installer's or third party's numbering, origin unknown. Not the group asset label, which is `0017`.
 - **No operating manual.** Without one there are no filter-change criteria or fault table beyond the

@@ -42,9 +42,14 @@ The three that do the work do not.
 |---|---|---|---|
 | **14/11/2023** | **Proforma invoice 208027**, order no 206542 | *"1 X ABAC GENESIS C67 SCREW AIR COMP — 20HP 15KW 74 CFM 10 BAR 3 PHASE"*, product **4152025548** | **£9,696.00 net** / £11,635.20 inc VAT |
 
-Customer: **Fishbone Drylining Ltd**, Unit 31 Point Pleasant Industrial Estate, Wallsend NE28 6HA —
-the same billing entity as every other machine on the register (Task T004). Delivery *"as per inv
-address"*.
+Customer as printed: **Fishbone Drylining Ltd**, Unit 31 Point Pleasant Industrial Estate, Wallsend
+NE28 6HA — the same billing entity as every other machine on the register (Task T004).
+
+**The document's delivery line is not a delivery record.** It prints *"delivery as per inv address"*
+against that Unit 31 address, and this article first repeated it as fact. The owner corrected it on
+2026-09-18: **the machine was delivered to Unit 32**, where the machines it feeds already were. Unit 31
+is this supplier's billing and correspondence address for the customer. **Cite this document for the
+order, the price and the specification — not for where the machine went.**
 
 ### It is a proforma, and that is not a quibble
 
