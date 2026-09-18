@@ -9,6 +9,7 @@ sources:
  - "Owner (Minda), 2026-09-18: range will contain wall, base, sink, appliance housing and tall units; asks which fixing is better for a low-cost range"
  - "`Wiki/Machinery/vitap-k2-panel-saw.md` (Drive `1z41BjgLjOglkPSRD8vjigs6fypHqVGkm`), read 2026-09-18 — machine capability and the T016 incident record"
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (Drive `1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m`), decoded 2026-09-18"
+ - "`AMFA Wall Unit 600 RH/01-SIDE-LEFT.TCN` (Drive `1ZWciFvdK2rkKbeWvRpNQ825UWJsnnPe1`) and `08-DOOR-1.TCN` (Drive `1FfGBMAP4XfjJeCBwM5hvEVraRnhIWzHL`), decoded 2026-09-18"
  - "Lamello product pages and UK reseller listings, searched 2026-09-18 — see Prices, and read the caveat there"
 related:
  - ../Software/kitchen-unit-library.md
@@ -26,11 +27,20 @@ is made.
 ## The short answer
 
 **On price alone, confirmat wins by roughly 29×, and that is not close.** On everything else —
-appearance, demountability, assembly speed — Cabineo X wins. For a range whose selling point is
-price, **confirmat is the default and Cabineo X has to justify about £80 a kitchen**.
+appearance, demountability, assembly speed — Cabineo X wins.
 
-**But there is a finding that changes the question**, and it was not in either product's
-specification. See the next section.
+**But price is not where this decision actually sits, because the choice appears to have been made
+already.** The master unit's own part files are drawn for a **face-inserted connector**, not for
+confirmat, and SmartCABINET holds a drill-head profile called **Cabineo X**. So the real question is
+not "which is better in the abstract" but **"was Cabineo X chosen, or did it arrive by default?"** —
+and nothing in this KB records an answer.
+
+- **If it was chosen**, roughly £80 a kitchen is the price of that decision, and changing it means
+  re-drawing the master and every unit derived from it.
+- **If it was a default nobody picked**, now — before the library is populated — is the only cheap
+  moment to switch to confirmat.
+
+Everything below is the evidence for that, and the numbers to decide with.
 
 ## The thing nobody had joined up
 
@@ -85,16 +95,64 @@ biscuit-joint system** head and an **"OVVO" connector system** head. Whether eit
 to this machine **is not recorded** — worth establishing, since one of them is made by Cabineo's
 manufacturer.
 
-## What the master unit currently uses — neither
+## What the master unit is actually drawn for — a face-inserted connector
 
-`03-BOTTOM.TCN` was decoded in full. Its seven holes are all **Ø5 mm, 12 mm deep, in the panel face**
-(`#1002=5`, `#3=-12.0`) — *reading `#1002` as diameter is mine and undocumented, as recorded in the
-library article*. Ø5 × 12 deep in a face is a **dowel** pattern. It is neither a confirmat (which
-wants a stepped hole and an edge core hole) nor a Cabineo X (which wants Ø15 and a routed recess).
+`01-SIDE-LEFT.TCN` and `08-DOOR-1.TCN` were decoded in full alongside `03-BOTTOM.TCN`. Three things
+came out of it, and together they settle more than the fixing question.
 
-**So choosing either fixing is a change to the master, and therefore to every unit derived from it.**
-That is the strongest practical reason to settle this now rather than after the library is populated —
-the same argument as T016, arriving from a different direction.
+### `#1002` is the diameter — now evidenced, not inferred
+
+The door carries two workings at **`#1002=35`, 13 mm deep**, 100 mm from each end at 22.5 mm from the
+edge, each flanked by **two `#1002=3` holes 5 mm deep, 45 mm apart and centred on it**.
+
+A Ø35 × 13 cup at 22.5 mm from the edge, with Ø3 pilots at 45 mm centres, is a **concealed hinge** and
+nothing else. **So `#1002` is the hole diameter.** That reading has been labelled an inference
+throughout this KB since 2026-09-18; it can now be recorded as established.
+
+*It also answers the hinge-cup question the owner asked this morning.* The door file **already
+programs the 35 mm cup as a Ø35 bore** (`W#81 ::WTp`), not as a routed pocket. The design side is not
+asking for a 12 mm cutter to be swept round a circle — it is asking for a **35 mm bit the shop does
+not appear to have**. That is a different, and much cheaper, problem than re-programming the working:
+a 35 mm hinge-cup bit is a standard item and the Vitap has the boring head for it.
+
+### The sides are machined **face-only** — there is no edge drilling in the master at all
+
+Every part file has six `SIDE#n` blocks. In both files decoded, **only `SIDE#1` has any content;
+`SIDE#2`–`SIDE#6` are present and completely empty.** Whatever those faces are, nothing is machined on
+them.
+
+### And the carcase joint is a routed pocket plus a mating face hole
+
+The side panel carries, at **twelve positions**, a routed operation run at two depths (−6.5 then
+−13.0), each made of three overlapping 15 mm slots on an 11.2 mm pitch — **a pocket roughly 37 × 15 mm
+and 13 mm deep**. The twelve positions are three-slot clusters at **Y = 230 and Y = 40**, at both ends
+of the panel: **two pockets per carcase joint.**
+
+`03-BOTTOM.TCN` carries **Ø5 × 12 mm holes at exactly the same Y values — 230 and 40 — two per joint.**
+
+So the joint is: **a routed pocket in one panel, a Ø5 screw hole in the face of the mating panel, and
+no edge machining anywhere.** That is the geometry of a face-inserted connector. **Cabineo X is
+33.8 × 16.5 × 10.8 mm** — which sits inside a 37 × 15 × 13 pocket.
+
+**It is not a confirmat pattern.** Confirmat needs a stepped hole through one panel and a core hole in
+the *edge* of the other, and the master contains neither.
+
+*Stated at the right strength: the pocket dimensions and the Cabineo X body dimensions are compatible,
+and SmartCABINET holds a Cabineo X profile. That is strong circumstantial agreement, not a
+part number read off a drawing. Somebody who knows what was ordered can confirm it in a sentence.*
+
+### What that means for the decision
+
+**Going Cabineo X is continuing; going confirmat is changing.** Switching would mean removing the
+pockets from every part, adding stepped holes and edge holes, and starting to use horizontal spindles
+the master currently never touches. That is design work plus a machining operation that does not exist
+today — and it must happen **before** the library is populated or it happens once per unit instead of
+once.
+
+The side panel also carries, via an external macro `..\custom\mcr\fittingx.tmcr`, four **Ø5 × 12 mm
+hole rows on a 32 mm pitch** — shelf-pin rows, two per shelf position. **Shelf supports are already
+ordinary Ø5 pins**, not connectors, which is the right and cheap answer and needs no change under
+either option.
 
 ## Prices
 
@@ -121,9 +179,10 @@ housing alone really cost £0.77 in volume. **Challenge it at 2,000.**
 
 ### What it costs per unit and per kitchen
 
-The master's `03-BOTTOM` carries **2 fixings per carcase corner**. Four corners gives **8 carcase
-fixings per box** — *that is arithmetic from one decoded part, not a count of the whole unit; the
-sides and top have not been decoded, and back fixings and shelf supports are extra.*
+**Eight carcase fixings per box** — and this is now counted, not estimated: the side panel carries two
+pockets per joint at two joints, so four per side, eight per unit, and `03-BOTTOM`'s Ø5 holes agree
+position for position. *Back fixings are extra and not yet identified; shelf supports are ordinary Ø5
+pins and cost pennies either way.*
 
 | At 8 carcase fixings | Per unit | Per 12-unit kitchen |
 |---|---|---|
@@ -164,12 +223,17 @@ shelves — the master already drills Ø5.
 
 ## Recommendation
 
-**Default to confirmat for the low-cost range, and hold Cabineo X for anything that needs to come
-apart or be seen.** The price gap is large, recurring, and lands squarely on the one attribute the
-range is being built around; and the argument that would normally justify Cabineo — no edge drilling —
-is cancelled by the Vitap's horizontal spindles.
+**Answer one question first: did somebody choose Cabineo X?** The master is drawn for it and
+SmartCABINET is configured for it. If that was a deliberate decision, take it as made — the £80 a
+kitchen is what it costs, and re-drawing the range to save it is not obviously worth the design work
+and the new machining operation.
 
-**Two things could overturn that, and both are cheap to check:**
+**If nobody chose it — if it came with the software or with a demo file — then switch to confirmat
+now.** The price gap is large, recurring, and lands squarely on the one attribute the range is being
+built around; the Vitap's horizontal spindles mean the edge hole is not an obstacle here; and this is
+the last moment when changing it costs one redraw instead of one per unit.
+
+**Two further things bear on it, and both are cheap to check:**
 
 1. **A trade quote on the Cabineo X housing at 2,000.** If it comes in nearer £0.30 than £0.77, the
    per-kitchen difference falls to roughly £30 and the labour and appearance advantages start to pay
@@ -178,9 +242,13 @@ is cancelled by the Vitap's horizontal spindles.
    poor demountability is a warranty problem rather than a preference, and Cabineo X is worth the
    money. If they are assembled and delivered rigid, it is not.
 
-**A mixed spec is legitimate and probably right:** confirmat throughout the carcase, Cabineo X on
-visible end panels and on anything built to be dismantled. It costs one extra line in the unit spec
-and saves the difference everywhere it does not matter.
+**A mixed spec remains legitimate** — confirmat through the carcase, Cabineo X on visible end panels
+and on anything built to be dismantled — but it is worth less here than it first looked, because
+Cabineo X leaves nothing visible anyway and the master is already drawn for it throughout. Mixing
+would mean maintaining two joint geometries in one library for a saving of a few pounds a unit.
+
+**Separately, and cheaply: buy a 35 mm hinge-cup bit.** The door file already asks for one. That is
+unrelated to the connector choice and unblocks a job that is live now.
 
 ## Costing — the wider point
 
@@ -205,7 +273,12 @@ nesting files already carry the sheet size — and because of the contradiction 
   in the machine article; neither is confirmed present. One is made by Cabineo's manufacturer.
 - **What Ø are the Vitap's horizontal spindles?** Needed to confirm confirmat's edge core hole is
   drillable without new tooling.
-- **Who configured the SmartCABINET "Cabineo X" drill-head profile, and why?** If a decision was already
-  taken, it is not recorded anywhere in this KB.
+- **Who chose Cabineo X — and was it a choice?** The master is drawn for a face-inserted connector and
+  SmartCABINET holds a Cabineo X profile, but **nothing in this KB records a decision, a purchase or a
+  trial.** This is now the question the whole comparison turns on, ahead of price.
+- **Is the pocket actually a Cabineo X pocket?** 37 × 15 × 13 fits a 33.8 × 16.5 × 10.8 body, but that
+  is compatibility, not identification. Anyone who knows what was ordered can settle it in a sentence.
+- **What are the Ø10 × 13 holes** on the side panel — three at 32 mm pitch, 11 mm in from the back edge?
+  Not identified. Possibly back-panel or cam fixings.
 - **The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.
 - **How many fixings does a whole unit actually take?** Eight is arithmetic from one decoded panel.
