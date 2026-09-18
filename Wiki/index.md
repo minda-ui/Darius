@@ -36,6 +36,7 @@ _(no articles yet)_
 - [Process: TpaCAD tool-type auto-resolution ambiguity ("Tool for this working not found")](Processes/tpacad-tool-type-optimizer-ambiguity.md) - a real shop-floor fault on the Vitap K2-2.0 (`FA2304`): Blind bore drill operations fail to optimize when multiple spindles share the same diameter+type with no explicit Tool ID set; workaround found, permanent fix identified but not yet tried (Task T016)
 
 ## Software
+- [Kitchen unit library (low-cost range)](Software/kitchen-unit-library.md) - draft, started 2026-09-18: the `AMFA Wall Unit 600 RH` master read out of its own files (cutting list, derived 600 x 900 x 300 nominal, 19 mm throughout), the structure and unit-code convention proposed but **not created**, and the finding that every hole exports with no tool named - making Task T016 a library-wide blocker rather than a one-off
 - [SmartCabinet & the furniture production workflow](Software/smartcabinet-and-production-workflow.md) - draft: the order-to-delivery process from the BP-scheme map and how SmartCabinet (design + 3D visuals + CRM) drives the F45/Vitap/Hebrock machines; product specifics flagged [confirm]; seed for the design→production→Sales processes + tracker
 
 ## Suppliers
