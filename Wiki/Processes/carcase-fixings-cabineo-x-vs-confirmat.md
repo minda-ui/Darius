@@ -281,4 +281,7 @@ nesting files already carry the sheet size — and because of the contradiction 
 - **What are the Ø10 × 13 holes** on the side panel — three at 32 mm pitch, 11 mm in from the back edge?
   Not identified. Possibly back-panel or cam fixings.
 - **The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.
-- **How many fixings does a whole unit actually take?** Eight is arithmetic from one decoded panel.
+- **How many fixings does a whole unit actually take?** The eight carcase fixings are counted, from the
+  side panel and confirmed against the bottom. **Back fixings are not identified** — the back is 19 mm
+  and housed inside all four panels, and nothing decoded so far shows what holds it. Shelf pins are
+  known (Ø5 at 32 mm pitch).
