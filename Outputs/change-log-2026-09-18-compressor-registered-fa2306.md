@@ -369,3 +369,103 @@ not a workaround. And on the `HOLE` working: *"Tool — sets the tool number **a
 programming per diameter**"*, with `Tool type` driving *"a validity check of the tool"*. That is the
 mechanism this task inferred from the shop floor, in the manufacturer's own words. **Still untested end
 to end.**
+
+---
+
+## Later still — the kitchen unit library started, and the fixings question answered
+
+Two owner requests in the evening: *"we need to create library for low cost kitchen units"* and, once
+the master was named, *"which fixings are better cabineo x or comformat screws"*. Neither is finished;
+both produced findings that were not on anybody's list.
+
+### The master read out of its own files
+
+The owner named **`AMFA Wall Unit 600 RH`** (Drive `1HHPym8Y04_s2VUYYwVy89hBQ4boabZxv`) as the master
+design. Its `worklist.xmlst` decodes to an eleven-row cutting list — **19 mm throughout including the
+back and the door** — and **no file anywhere states the finished unit size.**
+
+So it was derived from the part sizes with the arithmetic shown line by line: side 862 = 900 − 2×19,
+back 562 = 600 − 2×19, shelf = back − 1 mm, door 896 × 597 in a 900 × 600 face. **600 wide × 900 high ×
+300 deep, two shelves, one overlay door, right-hand hung** — and labelled as a derivation, not a figure
+read off a document.
+
+### Comparing three units found what reading one could not
+
+The `300mm` and `600mm Wall unit` worklists were decoded and compared byte for byte against the master.
+They are **genuinely different files** (eight cell values differing on six rows), so the earlier folders
+are a real attempt at a family rather than copies.
+
+**That corroborated the derivation independently** — the same width rules hold across all three — and
+**turned up a real defect: shelf depth is 266 mm on the 300, 256 on the 600 and 255 on the master**, on
+three carcases that are all 300 deep. **All three values recorded; not resolved by preferring the
+master's**, because preferring the one labelled "master" is a guess wearing a title. New §3 lesson:
+*comparing siblings finds what reading one cannot.*
+
+Also found: **`07-BACK-1` and `07-BACK-1B` are the same blank with substantially different programs**
+(60,458 vs 11,994 bytes), both in the cut list, and **neither earlier unit has a second back at all.**
+Open, not guessed. Tasks **T023** (owner decisions) and **T024** (the two defects) raised.
+
+**Nothing was created, moved or renamed on Drive.** The range and the carcase spec are commercial
+decisions, and the two `ANVAR_KITCHEN_*` folders were **not opened** — a customer name on a folder is
+enough to treat it as client data.
+
+### T016 stopped being a one-off
+
+Every hole in `03-BOTTOM.TCN` carries a diameter and **no tool number** — the exact condition behind
+the live "Tool for this working not found" fault. *That reading of the parameter indices was labelled
+as mine and undocumented.* If right, **T016 fails every unit in the library identically**, so it became
+a precondition for populating the library rather than one machine's fault.
+
+### The fixings question — and the thing nobody had joined up
+
+Confirmat wins on price by roughly **29×**: **£0.0297** each against **≈£0.87** per Cabineo X joint
+(housing ≈£0.77 plus a £0.10 screw — the X housing ships *without* one). At eight carcase fixings per
+unit that is **+£6.72 a unit, +£80.67 on a 12-unit kitchen**. All UK retail listings found by search,
+**not trade quotes**, and the housing figure flagged as the weakest and the one to challenge at 2,000.
+
+**Checking the machine before answering changed the answer.** The usual case for Cabineo is that it
+needs no edge drilling — but the Vitap's own article records *"12 vertical spindles on Face 1, plus
+horizontal spindle pairs on Faces 3-6"*, so this shop drills edges in the same machine. **The generic
+argument is cancelled by a machine the shop already owns.**
+
+**And checking the KB changed the question.** The Vitap article's T016 write-up mentions, in passing,
+*"no Dia. 5mm entry in a 'Cabineo X' drill-head profile"* — so **SmartCABINET is already configured
+toward this connector**, and Cabineo X's published tooling need is Ø5 + Ø15 drills and a ≤Ø12 cutter,
+making the missing Ø5 one of its two drills. **T016 is the Cabineo X tooling being half-defined.**
+
+### A correction inside the same session
+
+The first version of the fixings article said **the master used neither fixing** — that its holes were
+a dowel pattern. That was read off **one** decoded panel and it was wrong. Decoding `01-SIDE-LEFT` and
+`08-DOOR-1` showed:
+
+- **No edge machining anywhere.** All six `SIDE#n` blocks exist in every part; only `SIDE#1` has content.
+- **A routed pocket ≈37 × 15 × 13 deep, two per carcase joint**, at Y = 230 and Y = 40 — and
+  `03-BOTTOM`'s Ø5 × 12 holes sit at exactly those Y values. So the joint is **a pocket in one panel
+  and a screw hole in the mating panel's face**. Cabineo X's body is 33.8 × 16.5 × 10.8.
+- **`#1002` is the hole diameter** — evidenced, not inferred: the door carries a Ø35 × 13 working at
+  22.5 mm from the edge flanked by Ø3 pilots at 45 mm centres, which is a concealed hinge and nothing
+  else.
+
+**So going Cabineo X is continuing and going confirmat is changing**, and the real question became
+whether anyone chose it. Corrected visibly in the article and in the Smartsheet note. Tasks **T025**
+(the decision), **T026** (a nesting-width contradiction) and **T027** (the 35 mm bit) raised.
+
+### `CLAUDE.md` → v17, and the file's own counts recounted again
+
+v17 records the library, the derived nominal, the shelf-depth defect and T016's new status, and adds
+the siblings lesson to §3. It also **recounts the article figures the file had got wrong for a third
+time**: v12 said "four", v13 "fifteen", v16 "seven" — it is **nine** in the mirror and **twenty-seven**
+in total. The eighteen Drive-only figure was correct and unchanged.
+
+### Written in this block
+
+| File | Bytes |
+|---|---|
+| `Wiki/Software/kitchen-unit-library.md` | 15,569 |
+| `Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md` | 18,734 |
+| `CLAUDE.md` v17 | 69,960 |
+| `Wiki/index.md` | 10,311 |
+
+Smartsheet: **T023–T027** added, **T023** updated when the owner answered the range (wall, base, sink,
+appliance housing, tall) and defined `RH` as right hand side.

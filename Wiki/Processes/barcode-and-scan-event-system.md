@@ -4,7 +4,7 @@ category: Processes
 status: draft
 sensitive: false
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 sources: []
 related:
  - ../Machinery/brother-td-4420dn-label-printer.md
@@ -47,7 +47,7 @@ value untouched, and `Asset / Machine ID` holds the resolved `FA` code. Two colu
 
 | Label | Asset |
 |---|---|
-| `0017` | ABAC GENESIS 15 500L compressor — **not registered, no code** |
+| `0017` | `FA2306` ABAC GENESIS compressor — *unregistered when this table was first written; **registered 2026-09-18** once dated purchase paperwork arrived* |
 | `0018` | `FA2301` Hebrock F4 |
 | `0019` | `FA2402` AES SAF 10,000 STK |
 | `0020` | `FA2303` Altendorf F45 |
@@ -205,6 +205,8 @@ carried the marking `12M`, whose meaning is unknown.
 | 2026-09-17 | **Phase 0 built** — `Scan Events` sheet created (`4828191892047748`) with its RYGB `Health` column formula, and `Asset Label No.` added to the Machinery Register | Session 14, same entry |
 | 2026-09-17 | Pre-printed group asset labels received and mapped to machines (`0017`–`0021`); two-namespace rule recorded; handoff prepared for Alex's group-wide register | Session 14, same entry |
 | 2026-09-17 | Article created | Session 14, same entry |
+| 2026-09-18 | **QR payload answered** — a bare four-digit label number as plain text (`Text: 0027`), which discharges Phase 1's precondition and vindicates the two-namespace design; labels `0025`–`0027` recorded as existing on an unapplied sheet; the three constraints that follow (payload not self-describing, a disambiguation rule needed, leading zeros never stripped) added | Session 15, entry "The compressor's purchase paperwork arrived" |
+| 2026-09-18 | Label `0017`'s machine **registered as `FA2306`**, so the mapping table no longer carries an unregistered row | Session 15, same entry |
 
 ## Sources
 
