@@ -140,7 +140,7 @@ advice**; each needs a qualified answer.
 
 ## 6. Known debts — recorded, deliberately not fixed
 
-- **The git mirror is partial.** **18 of 29** Wiki articles are on Drive only. **It cannot be back-filled
+- **The git mirror is partial.** **18 of 30** Wiki articles are on Drive only — *counted with `git ls-files` on 2026-09-19, not carried forward.* **It cannot be back-filled
   by copying** — the connector's read tool doesn't round-trip (a 2 KB test file came back 4 bytes out,
   silently). Closing it needs an owner-side folder download or a real Drive-to-git sync.
 - **`related:` front-matter links are not bidirectional.** The fix means re-authoring three 21–30 KB
@@ -160,6 +160,13 @@ advice**; each needs a qualified answer.
   have never been assessed. **Nothing inside the KB can tell us what else is missing.**
 - **`AMF` vs `FA` asset-code inconsistency** in AMFA's own Property Register — flagged only.
 - **Duplicate manual PDFs** found in a Drive folder outside this KB's tree — not touched.
+- **`CLAUDE.md` carries an article count that goes stale every time an article is written.** v12 said
+  "four", v13 "fifteen", v16 "seven", and v17's "nine / twenty-seven" was already **twelve / thirty** by
+  the time this list was drafted the same day. The count keeps being corrected and keeps re-breaking,
+  because the charter is the wrong place for a number that changes weekly. **Proposed for the next
+  charter revision: drop the figures from `CLAUDE.md` and have it point here instead**, with the count
+  recomputed by `git ls-files` whenever it is quoted. The *eighteen Drive-only* figure has been stable
+  throughout, because articles have been added to both stores in step.
 
 ---
 
