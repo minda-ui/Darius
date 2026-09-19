@@ -1,9 +1,32 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 22 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 23 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v23 — the mirror is complete, and the debt v22 closed in argument is now closed in fact.**
+v22 established that `download_file_content` returns stored bytes and said plainly that **nothing had
+been back-filled yet** — a capability, not an outcome. The back-fill ran the same day. **Every Wiki
+article that lived on Drive only is now in git**, fetched as exact bytes, decoded straight to disk and
+checked against Drive's own `fileSize`; all matched. Nothing was re-typed and nothing passed through a
+rendering.
+
+**The one that matters most is the smallest.** `Suppliers/altendorf-gmbh.md` is the 2,007-byte article
+the v12 fidelity test rebuilt **four bytes short, silently** — the failure that made the mirror partial
+in the first place and kept it that way for eleven versions. It now lands **exact**. *The obstacle was
+never the file; it was the tool being used to read it.*
+
+**One check before anything was committed**, because the F45 article is the one carrying a security
+decision: the **ElmoDrive remote-maintenance access code** was removed from it on 2026-09-17, and the
+Drive copy was verified to still be without it — the article states the code is *"deliberately not
+reproduced here"* and its Changes table records the removal. A scan of all eighteen for credentials
+found nothing else. **A back-fill copies whatever the source holds, so the source gets checked first.**
+
+**§1 and §7 are rewritten accordingly, and the count is deliberately not repeated here** (§3): run
+`git ls-files 'Wiki/**/*.md' | wc -l` and read the registers. **What replaces the debt is an upkeep
+rule** — an article written to one store and not the other re-opens the gap. v22
+(`1FZA7ZjuICub_4ZwC32PJopldXLv0k09r`) is archived.
 
 **Changed in v22 — the tool this file called "the single most useful tool this KB does not have" was
 in the connector all along.** §7 has carried since v20 a debt saying a read path that returns bytes would
@@ -348,9 +371,10 @@ immediate fix, which is entirely inside TpaCAD's own outfit (§7).*
 **Where it lives.** Google Drive, folder `Workshop of Furniture Making - Knowledge Base`, primary
 copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
 
-**The git mirror `minda-ui/Darius` is partial, and that is a deliberate, recorded state — not an
-oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and every
-Wiki article written from 2026-09-17 onwards. The articles that predate the mirror live on Drive only.
+**The git mirror `minda-ui/Darius` is complete as of 2026-09-19.** It holds this charter, `README.md`,
+`Wiki/index.md`, everything in `Outputs/`, and **every Wiki article** — the ones that predated the
+mirror were back-filled on 2026-09-19 with `download_file_content`, each checked against Drive's own
+reported size. *This paragraph read "partial" from v12 to v22, and was true then.*
 
 **This file deliberately does not say how many of each there are.** It said so four times and was wrong
 four times (v12 *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"*) — a count goes
@@ -364,12 +388,14 @@ is not an article. `_templates/article.md` is not tracked in git; if it ever is,
 excluding.)*
 
 Anything authored in a session is written to both stores and verified with `wc -c` against Drive's
-reported size. **The articles that predate the mirror can now be back-filled**: `download_file_content`
-returns the stored bytes rather than a rendering (§3, proved 2026-09-19), so a copy can be *verified*
-against its source instead of trusted. **Nothing has been back-filled yet**, so the mirror is still
-partial today — what changed is that it is now a backlog rather than something the connector prevented.
+reported size, and **the back-fill of everything older is done** (2026-09-19): each Drive-only article
+was fetched with `download_file_content`, which returns the stored bytes rather than a rendering (§3),
+decoded straight to disk and checked against Drive's `fileSize`. **Keeping it complete is now the
+standing job**, and it is the ordinary rule doing the work — an article written to one store and not
+the other puts the mirror straight back where it was.
 *v8–v11 of this file claimed the mirror "is kept in step". That was never true; corrected in v12.
-v12–v21 said back-filling was impossible: true of `read_file_content`, false of the connector — v22.*
+v12–v21 said back-filling was impossible: true of `read_file_content`, false of the connector — v22.
+v23 records it actually done.*
 
 **Folders.**
 ```
@@ -1058,21 +1084,23 @@ the owner/Victoria; only the cover page has been seen.
   belong to `read_file_content`, a *different* tool (§3). **What it unblocks is now work rather than
   capability** — back-filling the mirror (below), and running the §3 order check on exact bytes at any
   size. *Whoever spends the afternoon now spends it copying files, not looking for a mechanism.*
-- **The git mirror is still partial — but from 2026-09-19 that is a backlog, not a blocker** (§1, §3).
-  The articles that predate the mirror exist on Drive only; **how many that is lives in
-  `Outputs/kb-registers.md`, not here** — see §1 for why, and for the command to count the mirror side.
-  The obstacle named since v12 is gone: each article can be downloaded as exact bytes, decoded,
-  committed, and **diffed against its source to prove the copy**. **Nothing has been back-filled yet**,
-  so the mirror is a partial mirror today and this file still says so — what changed is that finishing
-  it is an afternoon's work with a verification step at the end.
+- ~~**The git mirror is partial and cannot be back-filled**~~ — **done 2026-09-19; the mirror is
+  complete.** Every article that lived on Drive only was downloaded as exact bytes, decoded and
+  committed, each one checked against Drive's reported size. **`Suppliers/altendorf-gmbh.md` is the
+  proof**: the 2,007-byte article the v12 test rebuilt four bytes short now lands exact. **The count is
+  not repeated here** (§1, §3) — run `git ls-files 'Wiki/**/*.md' | wc -l` and read the registers.
+  *The debt is replaced by an upkeep rule*, not by nothing: an article written to one store and not the
+  other re-opens the gap, so both stores get it in the same session. **This bullet stood for eleven
+  versions and took one afternoon once the right tool was found**, which is the §3 lesson's real cost.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
   `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
   link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:
   the fix meant re-authoring three 21–30 KB articles through a lossy read to change one metadata field,
   which risked more than it repaired (§3). **That objection is much weaker since 2026-09-19**: those
   articles can now be downloaded as exact bytes, edited locally, and re-uploaded with a byte-level diff
-  proving nothing else moved. Still not urgent — but no longer risky. Do it when one of those articles
-  is next opened, or as part of the mirror back-fill.
+  proving nothing else moved — **and since the back-fill all three are in git**, so the edit is an
+  ordinary local one. Still not urgent; **no longer risky, and no longer awkward**. Whoever next opens
+  one of those articles should simply fix it.
 - `AMF` vs `FA` property/asset-code inconsistency in AMFA's own Property Register — still just flagged.
 - ~~Exact price on the Hebrock invoice unconfirmed~~ — **resolved 2026-09-15** by the 70%-balance
   cross-check confirmed on three invoices (Task T005, closed Done).

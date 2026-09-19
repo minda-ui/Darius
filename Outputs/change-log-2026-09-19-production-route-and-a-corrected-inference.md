@@ -577,6 +577,70 @@ and the `related:` back-link fix is still not done — both are now ordinary wor
 which is a different thing from being finished. **The mirror is partial today and the charter still says
 so.**
 
+## The mirror back-fill — done, and the file that proves it
+
+The owner: **"Start the mirror back-fill."** v22 had just established the capability and said plainly
+that **nothing had been back-filled yet**. This closes that gap.
+
+**What was missing.** Drive holds **31** Wiki articles; git held **13**. The other **18** had existed on
+Drive only since the mirror was created on 2026-09-16.
+
+**How they were copied — the part that matters.** Each article was fetched with
+`download_file_content`, which returns the stored bytes base64-encoded, then decoded **straight to
+disk** by a script. **Nothing was re-typed and nothing passed through a rendering.** Each file's length
+was then checked against Drive's own `fileSize`. **All 18 matched exactly.**
+
+| | bytes |
+|---|---|
+| `Machinery/altendorf-f45-panel-saw.md` | 30,694 |
+| `Machinery/vitap-k2-panel-saw.md` | 23,062 |
+| `Machinery/hebrock-f4-next-edge-bander.md` | 21,325 |
+| `Processes/tpacad-tool-type-optimizer-ambiguity.md` | 9,845 |
+| `Software/smartcabinet-and-production-workflow.md` | 9,219 |
+| `Processes/smartcabinet-wall-support-cam-table-reference.md` | 8,738 |
+| `Troubleshooting/troubleshooting-altendorf-f45.md` | 6,769 |
+| `Decisions/2026-09-14-kb-scope-and-structure-adopted.md` | 5,625 |
+| `Processes/machinery-maintenance-system.md` | 4,648 |
+| `Processes/maintenance-schedule-altendorf-f45.md` | 4,601 |
+| `Troubleshooting/troubleshooting-hebrock-f4.md` | 3,934 |
+| `Troubleshooting/troubleshooting-and-fault-log-system.md` | 3,642 |
+| `Processes/maintenance-schedule-hebrock-f4.md` | 3,535 |
+| `Processes/maintenance-schedule-vitap-k2.md` | 3,207 |
+| `Troubleshooting/troubleshooting-vitap-k2.md` | 3,000 |
+| `Decisions/2026-09-15-operational-systems-scope-extension.md` | 2,979 |
+| `Processes/f45-monthly-safety-device-check.md` | 2,506 |
+| `Suppliers/altendorf-gmbh.md` | 2,007 |
+
+**The smallest one is the point.** `altendorf-gmbh.md` at **2,007 bytes** is the article the v12
+fidelity test rebuilt at **2,003 — four bytes short, silently.** That single result is what made the
+mirror partial, and it is why eleven versions of the charter said back-filling would corrupt what it
+copied. Through the byte path the same file lands **exact**. **The obstacle was never the file. It was
+the tool being used to read it.**
+
+**A security gate before anything was committed.** The F45 article is the one carrying a decision: the
+**ElmoDrive remote-maintenance access code** was stripped from it on 2026-09-17, *before the mirror
+existed*. A back-fill copies whatever the source holds, so the source was checked first — the Drive
+copy still states the code is *"deliberately not reproduced here"* and its Changes table records the
+removal. A scan of all eighteen for passwords, keys, tokens and access codes found nothing else. **The
+one thing a bulk copy must not do is quietly re-import something a previous session deliberately took
+out.**
+
+**`git ls-files 'Wiki/**/*.md' | wc -l` now returns 31**, equal to Drive: Decisions 2, Machinery 6,
+Processes 13, Software 2, Suppliers 4, Troubleshooting 4. **Drive-only is zero.** Committed as
+`cb5e846`.
+
+**What v23 does to the charter.** §1's *the mirror is partial* and §7's *cannot be back-filled* — the
+claim carried from v12 to v22 — are struck through. **The debt is replaced by an upkeep rule rather
+than by nothing**: an article written to one store and not the other re-opens the gap, so both stores
+get it in the same session, which is what §1 asked for all along. The `related:` back-link debt also
+gets easier and says so: all three machinery articles are now in git, so that fix is an ordinary local
+edit. **The count is deliberately not written into the charter** — v18 moved it to the registers for
+exactly this reason, and a completed mirror is no excuse to put it back.
+
+**Worth stating plainly:** this took one afternoon. The bullet it closes stood for eleven versions. The
+gap was never the work; it was **not having looked at what else the connector offered** — which is the
+§3 lesson added hours earlier, arriving with a price tag attached.
+
 ## Still open at session end
 
 - **T016** — **the fix is two steps at the Vitap**, not a SmartCABINET catalog row; that reframing was
@@ -589,8 +653,10 @@ so.**
 - **Four of the five unit types have no master at all.** The owner's range is wall, base, sink,
   appliance housing and tall; only the wall unit exists.
 - **`Outputs/kb-registers.md`** processed-items rows and this file's index entry — done in this session.
-- **The mirror back-fill has not been started.** `download_file_content` makes it possible and proves
-  each copy; the Drive-only articles are still Drive-only. Same for the `related:` back-links, which
-  were deferred purely because the read was lossy and no longer are.
+- ~~**The mirror back-fill has not been started.**~~ **Done this session** — all 18 Drive-only articles
+  are in git, byte-checked; the mirror is complete and `CLAUDE.md` is at **v23**. What remains is
+  upkeep, not a debt.
+- **The `related:` back-links are still not fixed** — now an ordinary local edit, since all three
+  machinery articles are in git. Not urgent; just no longer awkward.
 - **The bracket where `read_file_content` returns empty (58–82 KB) was never measured**, and now never
   needs to be — but nothing else should be assumed about that tool from the download tool's behaviour.
