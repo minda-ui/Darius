@@ -8,6 +8,7 @@ updated: 2026-09-19
 sources:
  - "Owner (Minda), 2026-09-19: \"SmartCabinet optimization module create panel cutting list for F45; after cutting panels go through F4 for edging and then to Vitp. After it is on assembly desk to assembly\""
  - "Owner (Minda), 2026-09-19 (earlier): panels are cut on the F45 and then drilled on the Vitap"
+ - "Owner (Minda), 2026-09-19: \"Cutting list for F45 is producing finished size panels. F4 before applying edging trimming panel on the thickness of edging before attaching edging itself\""
  - "`AMFA Wall Unit 600 RH/worklist.xmlst` (Drive `1uJ3LlrN6yWe9USvPIvJTa50SehARoTFh`), decoded 2026-09-18"
 related:
  - ../Software/kitchen-unit-library.md
@@ -49,34 +50,41 @@ produces a panel cutting list for the saw.** So the saw works from a cutting lis
 Vitap's format, and on this route nothing consumes them. They may be a by-product, or the cutting list
 may be generated from them. Not guessed — see Open questions.*
 
-## What this opens — edging happens **before** drilling
+## Edging: the cut size **is** the finished size
 
-This is the part the KB had no idea about, and it is the one with teeth.
+Edging sits between cutting and drilling, which raises an obvious question — does a panel grow by the
+tape thickness before it is drilled? **It does not, and the answer is better than a convention:**
 
-**Edgebanding adds material to a panel edge.** A panel cut at stage 2 is wider by the tape thickness
-after stage 3, and it is drilled at stage 4 **after** that has happened. So every dimension in a
-cutting list is either a **cut size** (before tape) or a **finished size** (after tape), and
-**`worklist.xmlst` does not say which.**
+> **The cutting list produces finished-size panels. The F4 trims the panel by the thickness of the
+> edging before applying the edging itself.** — owner, 2026-09-19
 
-The order itself is right and standard — drilling after edging avoids holes full of glue and tape —
-but it means the ambiguity is unavoidable rather than academic.
+So the bander is **dimension-neutral**. A panel arrives at the F4 at size *S*, is trimmed to *S − t*,
+receives tape of thickness *t*, and leaves at *S*. **There is no allowance to carry anywhere** — not in
+the cutting list, not in the library, not in the part files. The Vitap therefore drills a panel that is
+the size the design says it is.
 
-**Why it is not academic.** Take the master's door: `896.0 × 597.0` in a 900 × 600 opening, so 4 mm
-and 3 mm of total gap as drawn. Edge a door on all four sides with 1 mm tape and it becomes
-898 × 599 — **1 mm of total gap on the width**, which is a door that binds. With 0.4 mm tape it
-becomes 897.8 × 597.8 and the gap is 2.2 mm, which is tight but usable. *So the numbers are
-consistent with 896 × 597 being the finished size, and inconsistent with it being a cut size under
-1 mm tape — but that is arithmetic about plausibility, not a fact read off anything.* **One tape
-measure across a door that has already been made settles it.**
+**Three consequences, and the second is the useful one.**
 
-The same question applies to every edged part, and **getting it wrong is systematic**: every unit in
-the library comes out oversize, or every door comes out tight, in exactly the same way.
+1. **It confirms the derived nominal.** The master's door is `896.0 × 597.0` in a 900 × 600 opening, and
+   those being finished sizes means the gaps are real: **4 mm on height, 3 mm on width.** Sensible door
+   gaps, and the 600 × 900 × 300 derivation stands.
+2. **The cutting list does not need to know which edges are edged.** Trim-then-tape nets to zero on
+   every edge independently, so a part edged on one edge and a part edged on four both come out at their
+   listed size. **That is a real simplification for the library**: part dimensions are independent of the
+   edging pattern, so a unit can be defined without it. *(The edging pattern is still needed for tape
+   metres and F4 cycle time — see costing. It is just not needed for dimensions.)*
+3. **It makes the F4 dimension-critical, and that is a standing caution.** The scheme only nets to zero
+   while **the trim depth matches the tape thickness**. Change to thicker or thinner tape without
+   re-setting the pre-mill and every panel comes out wrong — by twice the difference on a part edged on
+   two opposite edges, and in the same direction on every part, so it would show up as a whole batch
+   that does not fit rather than as one bad panel. **Tape thickness and trim setting are one decision,
+   not two.** Worth knowing on a machine with a history of setup-sensitive faults (the corner-rounding
+   incident, FL-001).
 
-**A related field, noted not interpreted.** Every row of `worklist.xmlst` carries a column
-**`LASERCORR`**, value **`0`** throughout. The name reads as a correction applied for laser
-edgebanding — a zero-glue-line technique — which would be exactly the kind of per-part allowance this
-question is about. **Whether that is what it means is unverified**, and it is `0` on all eleven rows
-either way, so nothing in the master exercises it.
+**A related field, now explained.** Every row of `worklist.xmlst` carries a column **`LASERCORR`**,
+value **`0`** throughout. Whatever it corrects for, **zero is consistent with what the owner
+describes**: trim-then-tape needs no per-part correction. *That the field relates to laser edgebanding
+is a reading of its name and remains unverified — but nothing in the master exercises it either way.*
 
 ## What this sharpens — the shop is a serial line with no redundancy
 
@@ -113,6 +121,9 @@ connector and re-drawing it is work.*
 
 The route is the cost model's skeleton: **five stages, each with its own rate and its own consumable.**
 
+*The edging stage is dimension-neutral but not cost-neutral: it consumes tape by the metre and F4
+minutes by the edge.*
+
 | Stage | Consumable | Time driver |
 |---|---|---|
 | Optimisation | — | design time per unit (once per library unit, not per job) |
@@ -131,10 +142,14 @@ existing: stage 1 is paid once per unit type rather than once per kitchen.
 
 ## Open questions
 
-- **Do the cutting-list dimensions include edging, or not?** Applies to every edged part; getting it
-  wrong is systematic. One measurement of a finished door answers it.
-- **Which edges are edged, on each part?** Needed for the tape metres, and for the fixings geometry
-  above. The carcase convention (front edges only) is the obvious reading but is **not recorded**.
+- ~~**Do the cutting-list dimensions include edging, or not?**~~ — **answered by the owner 2026-09-19:
+  the cutting list is finished sizes, and the F4 trims by the tape thickness before applying it.** No
+  allowance anywhere. See above.
+- **Which edges are edged, on each part?** **No longer needed for dimensions** (see consequence 2
+  above), but still needed for the **tape metres** in a cost model and for F4 cycle time. The carcase
+  convention (front edges only) is the obvious reading but is **not recorded**.
+- **What is the pre-mill trim set to, and what tape is it set for?** The two must match. Nothing records
+  either, and they are one decision rather than two.
 - **What consumes the two `NESTING` `.TCN` files?** Nothing on this route appears to. Are they a
   by-product of the optimiser, the source the cutting list is generated from, or vestigial?
 - **What form does the cutting list take** — printed, on screen, a CSV? The SmartCABINET release notes

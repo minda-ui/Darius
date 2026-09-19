@@ -113,6 +113,11 @@ checkable against the table above:
 right-hand hung.** *This is my arithmetic, not a figure read off a document* — if the owner's intended
 nominal is anything other than 600 × 900 × 300, the derivation is wrong and everything below moves.
 
+**One thing that could have broken it does not.** The owner confirmed on 2026-09-19 that **the cutting
+list is finished sizes**, and that the F4 trims a panel by the tape thickness before applying the tape —
+so the bander is dimension-neutral and no edging allowance is hiding in any of these figures. The door's
+4 mm and 3 mm gaps are real gaps. See `../Processes/panel-production-route.md`.
+
 ### Corroborated against the two earlier units
 
 The `300mm` and `600mm Wall unit` worklists were decoded the same way and compared byte for byte.
