@@ -7,6 +7,7 @@ created: 2026-09-18
 updated: 2026-09-18
 sources:
  - "Owner (Minda), 2026-09-18: range will contain wall, base, sink, appliance housing and tall units; asks which fixing is better for a low-cost range"
+ - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
  - "`Wiki/Machinery/vitap-k2-panel-saw.md` (Drive `1z41BjgLjOglkPSRD8vjigs6fypHqVGkm`), read 2026-09-18 — machine capability and the T016 incident record"
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (Drive `1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m`), decoded 2026-09-18"
  - "`AMFA Wall Unit 600 RH/01-SIDE-LEFT.TCN` (Drive `1ZWciFvdK2rkKbeWvRpNQ825UWJsnnPe1`) and `08-DOOR-1.TCN` (Drive `1FfGBMAP4XfjJeCBwM5hvEVraRnhIWzHL`), decoded 2026-09-18"
@@ -71,6 +72,17 @@ Either way the decision should be taken **before** more time goes into T016, bec
 connector was bought, trialled, or chosen — a configured profile is not a decision, and this KB has
 been caught before treating something written down as something that happened.*
 
+## The production route
+
+**Panels are cut on the F45 and then drilled on the Vitap** — owner, 2026-09-19. This KB had no record
+of it, and it matters to everything below:
+
+- The Vitap is the **drilling station**, and it receives **individual panels**, not sheets. Every part
+  in the master is well inside its 150–1250 mm width (the largest is the 862 × 300 side).
+- So the Vitap's capacity is not a limit on the nesting, and **the panel is handled at the Vitap
+  anyway** — which means an edge-drilling pass there is a step in a cycle the part already goes
+  through, not an extra handling.
+
 ## The machine can do both — the edge-drilling argument does not apply here
 
 The usual case for Cabineo is that it needs **no edge drilling**: it is machined entirely from the
@@ -81,9 +93,10 @@ mating panel, which on many shops means a second machine or a second handling.
 
 > *"12 vertical spindles on Face 1, plus **horizontal spindle pairs on Faces 3-6**"*
 
-So `FA2304` drills panel edges as well as faces, in the same machine. **Confirmat's edge hole is not a
-second operation here.** The strongest generic argument for Cabineo is neutralised by the machine the
-shop already owns — which is exactly why it was worth checking the machine before answering.
+So `FA2304` drills panel edges as well as faces, in the same machine — and, now that the route is
+known, **on a panel that is already loaded there to be drilled**. **Confirmat's edge hole is not a
+second operation here, and not even a second handling.** The strongest generic argument for Cabineo is
+neutralised by the machine the shop already owns and the way the shop already works.
 
 *What the article does not say: how many horizontal spindles per face, their diameters, or their
 pitch. A Ø5 core hole in the edge is the usual confirmat requirement and is a common horizontal drill
@@ -262,13 +275,13 @@ nesting files already carry the sheet size — and because of the contradiction 
 
 ## Open questions
 
-- **The nesting sheet does not fit the machine.** The master's nesting files are **2800 × 2070**
-  (`09-NESTING01-SP19-W1100`, `10-NESTING02-SP19-U963`), but the Vitap's recorded panel capacity is
-  *"length 270/400-3000mm … **width 150-1250mm**"*. **2070 is 820 mm wider than the stated maximum.**
-  Either the nesting is cut somewhere else, or the capacity figure is wrong, or "nesting" here means
-  something other than what it looks like. **Recorded as a contradiction, not resolved** — but it bears
-  directly on costing, because it decides which machine cuts the sheet and therefore what a unit costs
-  to make.
+- ~~**The nesting sheet does not fit the machine.**~~ — **answered by the owner 2026-09-19: panels are
+  cut on the F45 and then drilled on the Vitap.** So the 2800 × 2070 sheet never goes near the Vitap,
+  and its 1250 mm width limit was never a constraint: the Vitap only ever sees individual panels, the
+  largest of which is the 862 × 300 side. **There was no contradiction — only a missing process fact.**
+  See "The production route" above. *What it leaves open is a different question: the nesting files are
+  **TpaCAD `.TCN`**, the Vitap's own format, and this KB's working answer is that the F45 takes
+  dimensions rather than job files. So what the saw operator actually works from is unrecorded.*
 - **Is a "LAMELLO" or "OVVO" aggregated head actually fitted to `FA2304`?** Both are listed as optional
   in the machine article; neither is confirmed present. One is made by Cabineo's manufacturer.
 - **What Ø are the Vitap's horizontal spindles?** Needed to confirm confirmat's edge core hole is

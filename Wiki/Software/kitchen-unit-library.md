@@ -11,6 +11,7 @@ sources:
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m), decoded 2026-09-18"
  - "`300mm Wall unit/worklist.xmlst` (1pBz_N2ty5_0UVuCVSpYx-smioTbD5W3u) and `600mm Wall unit/worklist.xmlst` (1k98zBX7Safi_foFnYsyD5ZznJX2QefXD), decoded and compared 2026-09-18"
  - "Owner (Minda), 2026-09-18: the AMFA unit is the master design for basic kitchen units"
+ - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
 related:
  - ../Software/smartcabinet-and-production-workflow.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
@@ -89,6 +90,12 @@ per part carrying `LENGTH`, `HEIGHT`, `THICKNESS`, `MIRROR` and `REPETITIONS`. A
 `LENGTH` and `HEIGHT` are the blank's X and Y **as it lies on the machine**, not "height" and "width"
 in the assembled unit. Rows 10 and 11 are not parts: they are 2800 × 2070 nested sheets, the standard
 board size, and they are job output rather than unit definition.
+
+**The production route, confirmed by the owner 2026-09-19: panels are cut on the F45, then drilled on
+the Vitap.** Two things follow. It **confirms that the nesting files are saw-side artefacts**, produced
+per job against the boards actually in stock — which is the argument for keeping them out of a library
+unit, now evidenced rather than asserted. And it explains why the 2800 × 2070 sheet is no problem
+despite exceeding the Vitap's 1250 mm width: the Vitap only ever sees single panels.
 
 ### The nominal size, derived
 
@@ -221,7 +228,9 @@ codes are **not** retro-fitted, the same rule the `FA` asset codes follow.
 
 **Nesting files do not belong in a library unit.** `09-NESTING01-SP19-W1100` and
 `10-NESTING02-SP19-U963` are the output of optimising *this* cut against *these* boards. They are job
-artefacts; a library unit holds parts, and nesting is re-run per job. (`SP19` reads as 19 mm
+artefacts; a library unit holds parts, and nesting is re-run per job. **The owner's confirmation that
+cutting happens on the F45 and drilling on the Vitap settles this**: the nesting belongs to the saw
+stage of a job, not to the definition of a unit. (`SP19` reads as 19 mm
 thickness and `W1100`/`U963` as material codes — *inference from the filename, not confirmed*.)
 
 **One `unit.md` per library unit**, holding what no `.TCN` records: nominal W × H × D, the cutting
