@@ -1,9 +1,21 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 24 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 25 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v25 — the lesson v24 proposed is now a lesson.** v24 closed the `related:` back-link
+debt and ended by *proposing* what it had learned rather than writing it in: **a description of a gap
+is not a measurement of it.** The owner's word came back the same day (*"Add that §3 lesson at v25"*),
+so it is now a §3 bullet in its own right, carrying the incident that produced it — **four files
+described, fifteen measured, 52 missing back-links** — and the reason the description read as a
+specification of the work. **That route is the point, not a formality.** This is the third lesson to
+take it (v18's count fix, v19's order clause, now this): a charter that rewrote itself every time a
+session thought it had learned something would be a record of sessions' opinions, not a charter.
+**Nothing else changed.** §7's back-link bullet drops its *"proposed, not added here"* clause, which
+is now false, and the v24 note below says where the lesson went. v24
+(`1aQb34nTdKJHwoLW4LOCDGqVBHXmMO7_d`) is archived.
 
 **Changed in v24 — the last metadata debt closed, and the bullet describing it had undercounted by
 eleven files.** §7 has carried since 2026-09-17 that `related:` front matter is one-way, described as
@@ -20,8 +32,8 @@ articles, so those three stood out. **The other eleven were invisible from insid
 the way the unregistered compressor was: nothing in a one-way link announces itself from the side that
 is missing. *Proposed for the owner rather than added here, the same route the v18 and v19 changes
 took:* a §3 lesson that **a description of a gap is not a measurement of it** — where a gap can be
-computed, compute it before trusting the count somebody wrote down. v23
-(`1RqHSDRGxXgbOCBwPI4rV7QRafRV_h9We`) is archived.
+computed, compute it before trusting the count somebody wrote down. *Approved and added to §3 at
+v25.* v23 (`1RqHSDRGxXgbOCBwPI4rV7QRafRV_h9We`) is archived.
 
 **Changed in v23 — the mirror is complete, and the debt v22 closed in argument is now closed in fact.**
 v22 established that `download_file_content` returns stored bytes and said plainly that **nothing had
@@ -724,6 +736,23 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   came off within the hour, making mislabelling the third entry of its kind in §3.
   **The price is now measurable**: the mirror debt stood for eleven versions and the back-fill it
   blocked took one afternoon (§1, §7, v23).
+- **A description of a gap is not a measurement of it.** §7 recorded the one-way `related:` front
+  matter as *"the three machinery articles"* plus one empty list — four files. On 2026-09-19 the graph
+  was **computed** rather than read off the bullet: **fifteen files, 52 missing back-links.** The
+  bullet was not careless. It named the articles somebody had **noticed**, because the two 2024 assets
+  had been written last and linked out to the three older machinery articles, so those three stood out
+  *from the side that had the links*. **The other eleven were invisible from inside the KB** — nothing
+  in a one-way link announces itself from the end that is missing, which is the unregistered
+  compressor's shape exactly: *a register only contains what somebody thought to put in it.* **Where a
+  gap can be computed, compute it before trusting the count somebody wrote down** — including a count
+  in this file. The danger is not the wrong number, it is that **a written-down description of a defect
+  reads as a specification of it**, so the fix gets scoped to the description and closes tidily against
+  the wrong four. Cheap form: a dozen lines that walk the files and build the set, run *before* the fix
+  is planned, so the plan is sized against the measurement. And the description had stood unexamined
+  since 2026-09-17 — **an inaccurate account of a gap is more durable than the gap**, because closing
+  the gap feels like closing the account of it. Owner's decision to add this, 2026-09-19 (*"Add that §3
+  lesson at v25"*), after v24 proposed rather than added it — the same route the v18 count fix and the
+  v19 order clause took.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -1127,9 +1156,10 @@ the owner/Victoria; only the cover page has been seen.
   **What the bullet named were the articles somebody had noticed**, because the two 2024 assets had
   linked out to them; the other eleven were invisible from inside the KB, the same way the unregistered
   compressor was — nothing in a one-way link announces itself from the side that is missing.
-  *Proposed for the owner, not added here:* a §3 lesson that **a description of a gap is not a
-  measurement of it** — where a gap can be computed, compute it before believing the count somebody
-  wrote down. **One consequence recorded rather than tidied:** archive-then-create gives a re-uploaded
+  *Proposed for the owner rather than added unilaterally, and approved the same day* (*"Add that §3
+  lesson at v25"*): a §3 lesson that **a description of a gap is not a measurement of it** — where a
+  gap can be computed, compute it before believing the count somebody wrote down. **It is now in §3**,
+  added at v25. **One consequence recorded rather than tidied:** archive-then-create gives a re-uploaded
   article a new Drive id, so the ids cited in `tpacad-blind-bore-tool-id-fix.md` and
   `carcase-fixings-cabineo-x-vs-confirmat.md` now point into `Archive/`. **They were not rewritten** —
   they resolve to exactly the bytes that were read and quoted, which is what a source citation is for;
