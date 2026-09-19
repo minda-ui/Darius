@@ -12,6 +12,7 @@ sources:
  - "`300mm Wall unit/worklist.xmlst` (1pBz_N2ty5_0UVuCVSpYx-smioTbD5W3u) and `600mm Wall unit/worklist.xmlst` (1k98zBX7Safi_foFnYsyD5ZznJX2QefXD), decoded and compared 2026-09-18"
  - "Owner (Minda), 2026-09-18: the AMFA unit is the master design for basic kitchen units"
  - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
+ - "Owner (Minda), 2026-09-19: the earlier folders are a different, earlier design; `AMFA 600mm wall unit RH` is the latest release; 10 mm step-back for the shelf front and 16 mm step-back for the back panel to accommodate a Häfele concealed wall mount"
 related:
  - ../Software/smartcabinet-and-production-workflow.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
@@ -40,9 +41,10 @@ is the owner's.
   consequence for a range whose selling point is price; recorded here as a fact, not a criticism.
 - **The unit's nominal size is not stated in any file.** It is derived below from the part sizes, and
   the derivation is shown so it can be checked rather than believed.
-- **Shelf depth disagrees across the three units built so far** — 255, 256 and 266 mm for the same
-  300 mm-deep carcase. A real inconsistency, found by comparing the three cutting lists, and worth
-  settling before it is copied into a range.
+- **Shelf depth is explained, and the two set-backs behind it are specification.** The 255 mm shelf is
+  `300 − 16 − 19 − 10`: a **16 mm back-panel step-back** (for the Häfele concealed wall mount), the
+  19 mm back itself, and a **10 mm shelf-front step-back**. The 256 and 266 on the earlier folders belong
+  to **an earlier, different design**, not to a defect — owner, 2026-09-19.
 - **Every hole in the master exports with no tool specified.** This is the same condition behind the
   live TpaCAD "Tool for this working not found" fault (Task **T016**) — see the risk section. It is
   the one finding here that could stop the whole library at the machine.
@@ -144,17 +146,63 @@ width − 3 mm and 896 high against a 900 nominal. The sides never change, becau
 and depth do not change with its width. So the family is **600 or 300 wide × 900 high × 300 deep**,
 and the master is the 600.
 
-**And it turns up one thing that does not hold.** Shelf depth is **266.0** on the 300 mm unit,
-**256.0** on the 600 mm unit and **255.0** on the master — three values for what should be one
-number, since all three carcases are 300 deep and a shelf's depth has nothing to do with the unit's
-width. One of them is right and two are wrong, or they encode a set-back that changed between
-16 September 10:22 and 13:45 and was never written down. **This is exactly the kind of drift a
-library exists to prevent**, and it is already present in four folders made in one morning.
+**And it turned up one thing that did not hold — since explained.** Shelf depth is **266.0** on the
+300 mm unit, **256.0** on the 600 mm unit and **255.0** on the master: three values for what should be
+one number, since all three carcases are 300 deep and a shelf's depth has nothing to do with the unit's
+width. Recorded as a defect with all three values kept rather than resolved by preferring the master's.
+
+**The owner answered it on 2026-09-19: the earlier folders are a different, earlier design, and
+`AMFA 600mm wall unit RH` is the latest release.** So there is no defect — there is a design that moved,
+and four folders left behind at an earlier point in it. See the next section for why that answer is
+better than a ruling.
+
+### The depth chain, and why 255 is right
+
+The owner gave the two figures the shelf depth is built from:
+
+> **a 10 mm step-back for the shelf front, and a 16 mm step-back for the back panel to accommodate a
+> Häfele concealed wall mount.**
+
+That makes the master's shelf depth arithmetic rather than assertion:
+
+| | mm |
+|---|---|
+| Carcase depth | **300** |
+| − back-panel step-back (the void the concealed wall mount sits in) | −16 |
+| − back panel thickness | −19 |
+| − shelf-front step-back | −10 |
+| **= shelf depth** | **255** ✓ |
+
+**Which is exactly what `05-SHELF-1` and `06-SHELF-2` carry.** The chain closes to the millimetre, so the
+master's figure is not just the newest — it is the one that can be checked.
+
+**The two step-backs are specification, not incidental**, and they belong in any unit's spec card:
+
+- **16 mm at the back** exists to leave a void between the back panel and the wall for the **Häfele
+  concealed wall mount**. That is a hardware decision driving a panel dimension, which is precisely the
+  sort of thing that has to be written down or it gets "tidied up" by someone later.
+- **10 mm at the shelf front** sets the shelf back from the carcase front edge.
+
+*This also ties the geometry to work already in this KB.* The Häfele Concealed Cabinet Hanger is one of
+the two hardware items added to SmartCabinet's own Wall Support Cam Table on 2026-09-16, documented in
+`../Processes/smartcabinet-wall-support-cam-table-reference.md` — the session that raised **T017**, the
+unresolved X-sign discrepancy between those two items. **The 16 mm set-back is that hardware choice
+showing up as a panel dimension.**
+
+**What the earlier two folders were doing** — *this part is my arithmetic from the same chain, not
+something the owner stated.* Running it backwards: the 300 mm unit's 266 needs the back and shelf
+step-backs to total 15 mm, and the 600 mm unit's 256 needs them to total 25. Both fit a **15 mm** back
+step-back with the shelf step-back going **0 → 10 → 10** and the back step-back later **15 → 16**. That
+reads as a design being iterated rather than three inconsistent files, which is what the owner described.
+**Offered as a reading, because it affects nothing**: the master is the release, and the earlier folders
+are superseded either way.
 
 ### Two backs, not one
 
 `07-BACK-1` and `07-BACK-1B` are the **same blank** (862 × 562 × 19) and both are listed once in the
-worklist, so both get cut. Their programs differ substantially in size — 60,458 bytes against 11,994 —
+worklist, so both get cut. *Worth re-asking now that the back panel is known to sit in a 16 mm void for a
+concealed wall mount — a hanger usually wants the back notched or cut, so two back programs on one blank
+may be exactly that. **Not asserted**, and the owner has not said.* Their programs differ substantially in size — 60,458 bytes against 11,994 —
 so they are not duplicates. **Neither earlier unit has a `07-BACK-1B` at all**, so the second back is
 something the master gained, not something the family always had. Either the unit genuinely takes two
 backs, or one is an alternative that should not be in the cut list. **Open — not guessed.**
@@ -246,12 +294,14 @@ was derived from. Without it a library unit cannot be quoted, costed or checked 
 
 - Is the derived nominal **600 × 900 × 300** right? Everything above rests on it.
 - **Two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank — deliberate, or a stray file in the cut list?
-- **Which shelf depth is right — 255, 256 or 266?** Three units, three answers, all 300 mm deep. This
-  one should be settled before anything is copied, because a library propagates whichever value it is
-  built on.
-- Are the four `300`–`600mm Wall unit` folders to be kept, regenerated from the master, or archived?
-  They predate the master by three hours, differ from it in shelf depth, lack the second back and the
-  nesting files, and nothing records what changed between them.
+- ~~**Which shelf depth is right — 255, 256 or 266?**~~ — **answered 2026-09-19: 255, and it is
+  derivable** as `300 − 16 − 19 − 10`. The earlier folders are an earlier design, not a defect.
+- **The four `300`–`600mm Wall unit` folders are a superseded design** (owner, 2026-09-19). Keep or
+  archive is still a filing call, but they should **not** be used as the basis for anything, and they are
+  not candidates for regeneration — the range is regenerated from the master.
+- **Do the other widths need the same two step-backs?** 16 mm at the back and 10 mm at the shelf front
+  are depth-side figures, and depth does not change with width — so they should carry across unchanged.
+  Worth confirming once rather than assuming across five unit types.
 - Is the **19 mm back and 19 mm door** intended for a low-cost range, or inherited from the master
   being drawn as a one-off?
 - Does SmartCABINET generate a unit's parts **parametrically** from a width? If it does, the library

@@ -87,10 +87,14 @@ advice**; each needs a qualified answer.
   *"low cost"* is a defined carcase spec or a range name; whether hand belongs in the unit code or is
   mirrored at job time; and whether library units get separated from customer jobs on Drive.
   **Four of your five unit types have no master at all** — only the wall unit exists.
-- **Shelf depth: 255, 256 or 266?** (**T024**) Three units, three answers, all 300 mm deep. Settle it
-  before anything is copied, because a library propagates whichever value it is built on. **And the two
-  backs** — `07-BACK-1` and `07-BACK-1B`, same blank, different programs, both in the cut list, and
-  neither earlier unit has a second back at all.
+- ~~**Shelf depth: 255, 256 or 266?**~~ (**T024, half answered**) — **255, and it is derivable**:
+  `300 − 16 (back-panel step-back) − 19 (back) − 10 (shelf-front step-back)`. The 16 mm exists to leave a
+  void for the **Häfele concealed wall mount**. The earlier folders are **an earlier design**, not a
+  defect. **Both step-backs are specification** and belong on every unit's spec card — a hardware choice
+  driving a panel dimension is exactly what gets "tidied up" later if it is not written down.
+  **Still open: the two backs** — `07-BACK-1` and `07-BACK-1B`, same blank, different programs, both in
+  the cut list, and neither earlier unit has a second back at all. *Worth re-asking now the back is known
+  to sit in a 16 mm void for a hanger, since a hanger usually wants the back notched — but not asserted.*
 - **Tape thickness and the F4's pre-mill trim are one decision, not two** (**T029's remainder**). The
   finished-size scheme only nets to zero while they match. Change tape without re-setting the pre-mill
   and every panel is wrong by twice the difference on a two-edge part — failing as **a whole batch that
