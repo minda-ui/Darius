@@ -463,7 +463,7 @@ steps are needed: step 1 alone still resolves by diameter, step 2 alone has noth
 the Through-bore workaround, which clears the error by picking a category that happens to have one bush
 and silently drills with the wrong one.
 
-**Written up as `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`** (9,599 bytes) — a new article
+**Written up as `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`** (9,610 bytes) — a new article
 rather than an edit to the 2026-09-15 one, per §3: that article is Drive-only and re-authoring it
 through a lossy read would risk the 95% nobody meant to touch.
 
@@ -488,9 +488,10 @@ next export, and a fix that looks like it failed.
 Corrected in **Smartsheet T016** (title and note — the store that gives directions at the machine),
 **`Wiki/index.md`** (whose carcase-fixings entry asserted the same thing), and **`CLAUDE.md` → v21**
 (§7's T016 bullet rewritten; §1's CAM/CN Tools paragraph narrowed to the *systemic* half, since the
-immediate fix is entirely inside TpaCAD's own outfit). v21 is **90,169 bytes**: **size verified, order
-not verified** — above the ceiling, assembled from one contiguous source, exactly as v20's clause
-requires.
+immediate fix is entirely inside TpaCAD's own outfit). v21 went up at **90,475 bytes** against **90,169**
+local, and was recorded only as an **unexplained size mismatch** — which is what v20's clause allowed
+for, and is not the same as a verification. *Resolved later in the same session, and it was not
+corruption: see the v22 section below.* v21 is now archived and superseded by **v22**.
 
 **The CN Tools row is still worth adding**, and the article says what for: the **systemic** fix, getting
 SmartCABINET's post-processor to *emit* a Tool ID on export, so step two is not repeated by hand on
@@ -542,6 +543,17 @@ KB's history.**
   worth knowing in its own right, because the whole contiguous-source argument was built on the fear that
   it might. The bullet belonged in the charter, so it was added locally and v22 built on top.
 
+**And on its third use the new check caught something the byte count could not — the exact blind spot
+§3 has been circling since v19.** This change log was uploaded at **39,167 bytes, matching local
+exactly**, and the `diff` still came back with a hunk: one paragraph wrapped across four lines
+differently on the two sides. **A re-wrap trades a space for a newline one-for-one, so the byte total
+does not move** — the same shape as the transposed table rows that started this whole thread, arriving
+from a new direction. Under the old regime it would have passed as *"size verified"* and gone
+unrecorded. *The defect was local's*, from a scripted edit that left a 110-character line; local was
+brought into line with the hand-wrapped upload and both sides now diff clean. **Cosmetic in this
+instance, and that is rather the point: the check does not know it is cosmetic, and next time it will
+not be.**
+
 **A label I put on and took off.** I archived the v21 copy as `DO NOT CITE` on suspicion alone, before
 running the diff. Once the diff showed a single clean hunk the label came off — the file was correct. §3
 already warns twice that a mislabelled file advertises nothing; **suspicion is not grounds for the
@@ -567,8 +579,10 @@ so.**
 
 ## Still open at session end
 
-- **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the
-  library's one remaining blocker, though a less severe one than it looked, because Plan B exists.
+- **T016** — **the fix is two steps at the Vitap**, not a SmartCABINET catalog row; that reframing was
+  made and withdrawn within this session (see the T016 section). Still the library's one remaining
+  blocker, and still less severe than it looked, because Plan B is in stock. **It closes at the machine,
+  not here**: steps 1 and 2 done and `03-BOTTOM.TCN` solving clean.
 - **T024's remainder — the two backs** on one blank in the master.
 - **T027 — what was the problem with the 35 mm head?**
 - **T029's remainder** — which edges are edged; the pre-mill setting and the tape it is set for.
