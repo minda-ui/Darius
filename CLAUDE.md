@@ -667,6 +667,7 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   article (byte-identical bar one real content difference) and on `CLAUDE.md` at 90,475 bytes. *The
   lesson that survives is the narrower one:* **the connector has two read paths and they are not
   interchangeable.** Never copy a file with the natural-language one; use the byte one, and diff.
+  *The mirror was back-filled through the byte one on 2026-09-19 and every file matched (§1).*
 - **Put a fact where its own update cycle lives.** This file carried a count of Wiki articles through
   four versions and was wrong in all four — *"four"*, *"fifteen"*, *"seven"*, *"nine / twenty-seven"* —
   not through carelessness but because **the figure changes every time an article is written and this
@@ -703,6 +704,8 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   defect; each was one `diff` away.** A discrepancy you cannot explain is usually a diff you have not
   run — and *suspicion* is not grounds for a **DO NOT CITE** label: that went onto v21 of this file and
   came off within the hour, making mislabelling the third entry of its kind in §3.
+  **The price is now measurable**: the mirror debt stood for eleven versions and the back-fill it
+  blocked took one afternoon (§1, §7, v23).
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -746,6 +749,10 @@ and the omission is recorded in the `FA2402` note so it reads as a decision, not
 2026-09-18: **bank sort code and account number, and a personal mobile number, on proforma invoice 208027
 were deliberately not copied** into the Machinery Register, the Document Register, either Wiki article or
 the change log — the same decision made for the MWM quotation, and recorded so it reads as a decision.
+2026-09-19: **the git mirror was back-filled, and the source was checked before it was copied.** The F45
+article carries the 2026-09-17 removal of the **ElmoDrive remote-maintenance access code**; the Drive copy
+was verified to still be without it, and all eighteen back-filled articles were scanned for credentials
+before anything was committed. **A bulk copy must not quietly re-import what an earlier session removed.**
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions

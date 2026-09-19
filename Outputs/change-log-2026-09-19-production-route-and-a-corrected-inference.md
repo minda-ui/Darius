@@ -572,10 +572,11 @@ argument demoted from substitute-for-a-check to good practice. And a new §3 les
 > re-examined for nine versions, **because a debt that is written down reads as settled.** And its cheap
 > half: *a discrepancy you cannot explain is usually a diff you have not run.*
 
-**What this does not mean.** Nothing has been back-filled. The Drive-only articles are still Drive-only,
-and the `related:` back-link fix is still not done — both are now ordinary work with a verification step,
-which is a different thing from being finished. **The mirror is partial today and the charter still says
-so.**
+**What this did not mean, as written at the time.** Nothing had been back-filled; the Drive-only articles
+were still Drive-only, and v22 said so rather than claiming the outcome from the capability. *That
+sentence held for about an hour — the back-fill is the next section.* **The distinction was still worth
+drawing**: a capability is not an outcome, and a charter that blurs the two is how the mirror came to
+claim it was "kept in step" for four versions while it was not.
 
 ## The mirror back-fill — done, and the file that proves it
 
