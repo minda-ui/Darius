@@ -150,6 +150,13 @@ other direction.
 than local, because the Processes entries had been re-ordered alphabetically while pasting — which the
 file's own rule requires. Local was synced **up** to Drive rather than Drive down to local.
 
+**And the article counts were wrong a fourth time.** This session's own registers and outstanding-items
+list were drafted with 29 and 27 when `git ls-files` says **30**, twelve of them in the mirror. Both
+corrected before upload, and the outstanding-items list now proposes the structural fix — **drop the
+figure from `CLAUDE.md` and point at the registers instead** — because a number that changes every time
+an article is written does not belong in a document revised weekly. *The eighteen Drive-only figure has
+never drifted, because articles go to both stores in step; it is only the totals that rot.*
+
 ---
 
 ## Still open at session end
