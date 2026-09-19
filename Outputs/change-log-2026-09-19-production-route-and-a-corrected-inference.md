@@ -743,3 +743,52 @@ the live article, which is an inconvenience rather than a falsehood.
 *version*, not to an article, because the archive-then-create convention guarantees that any edit
 moves the id. Cite the path when you mean the article; cite the id when you mean the bytes; and say
 which you meant.
+
+## `CLAUDE.md` v25 — the proposed lesson approved, and written into §3
+
+v24 closed the back-link debt and then did the thing this KB has done twice before: it **proposed** the
+lesson rather than writing it in. The owner's answer came back the same day — *"Add that §3 lesson at
+v25"* — so §3 now carries it as a bullet of its own:
+
+> **A description of a gap is not a measurement of it.**
+
+**What the bullet says, beyond the slogan.** §7 had described the one-way `related:` front matter as
+*"the three machinery articles"* plus one empty list — **four files**. Computing the graph found
+**fifteen files and 52 missing back-links**. The bullet was not careless: it named the articles
+somebody had *noticed*, because the two 2024 assets had been written last and linked out to the three
+older machinery articles, so those three stood out **from the side that had the links**. The other
+eleven were invisible from inside the KB, exactly as the unregistered compressor was — *nothing in a
+one-way link announces itself from the end that is missing.*
+
+**The generalising clause is the part that will earn its keep.** The danger is not the wrong number.
+It is that **a written-down description of a defect reads as a specification of it**, so the work gets
+scoped to the description and then closes tidily against the wrong four — with nothing anywhere
+reporting a failure. The cheap countermeasure is a dozen lines that walk the files and build the set,
+run *before* the fix is planned, so the plan is sized against the measurement rather than against
+somebody's note. And the note had stood unexamined since 2026-09-17: **an inaccurate account of a gap
+is more durable than the gap**, because closing the gap feels like closing the account of it.
+
+**Three sweeps, nothing else touched.** §7's back-link bullet dropped its now-false *"proposed, not
+added here"* clause and points at §3; the v24 note records that its proposal was approved and says
+where the lesson went; the header became v25 with a note block of its own. No other content changed.
+
+**The route is worth naming as a route.** This is the third lesson to take it — v18's count fix, v19's
+order clause, this — and it exists because a charter that rewrote itself every time a session thought
+it had learned something would be a record of sessions' opinions rather than a charter. Proposing costs
+one sentence at the end of a version note; the owner's word costs four words back.
+
+**Flushed and verified.** git `c4cafc9` on `claude/vigilant-bell-olevtr`. Drive
+`1l8zDEhQDAk9YPaKCfANmkqgqwpWzxVl7`, **103,791 bytes**, matching local exactly — and then **downloaded,
+decoded and `diff`ed against the local copy: byte-identical, no differences.** v24
+(`1aQb34nTdKJHwoLW4LOCDGqVBHXmMO7_d`) archived as `Archive/ARCHIVED-2026-09-19g-CLAUDE-v24.md`.
+
+**The order of operations was deliberate**, as it was for v24: the new charter was **created first and
+verified, then** the old one archived, so a truncated emission could never leave the KB with no live
+`CLAUDE.md`. That inverts the ordinary archive-then-create convention and is worth doing for this one
+file, which is the only file whose absence would leave a session with no instructions.
+
+**And the check that ran here was impossible four versions ago.** At 103,791 bytes this file sits well
+above the bracket where `read_file_content` returns an empty string, which is why v19 and v20 had to
+report *"size matched, order not verified"* and say plainly that this was an argument rather than a
+verification. Since v22 the order check runs on exact bytes at any size. It has now been run in full on
+the largest file in the KB, twice in one session.
