@@ -394,6 +394,41 @@ debt alone.
 
 *Recorded because a rule with a known gap is worth less than a rule whose gap is written down next to it.*
 
+## `CLAUDE.md` v20 — both gaps written down, and the tool that would close them named
+
+The owner: **"Add both v20 items now."** Neither was a new finding; both were things v19 had discovered
+about itself and left as proposals.
+
+**Item 1 — §3's order check now states its own limits.** v19 told a future reader to verify order by
+reading the file back, and that instruction **silently fails above a size**: the connector returns an
+**empty** `fileContent` rather than an error. **A rule that cannot run on the most important file in the
+KB, and says nothing about it, is worse than no rule** — the reader assumes it ran. §3 now carries:
+
+- **the bracket** — `kb-registers.md` read back fine at **58,410 bytes**, `CLAUDE.md` came back empty at
+  **82,310**; *two points, so a bracket between roughly 58 KB and 82 KB, not a measured threshold;*
+- **what stands in for the check above it** — build the upload from one contiguous source rather than by
+  moving blocks about, so the pick-up-and-put-down failure has no opportunity to occur, **and say plainly
+  that order was not verified.** *That is an argument about how the file was produced, not a verification
+  of it, and must never be reported as one;*
+- **anchors must be plain text.** The read tool escapes backticks and asterisks, so an anchor containing
+  them is not found and the check reports a failure that is not there. **This KB produced exactly that
+  false alarm on the check's first run and nearly believed it** — two landmarks came back NOT FOUND
+  because they contained `` ` `` and `*`. Re-run with prose anchors: nine landmarks, all in order, 109
+  table rows both sides.
+
+**Item 2 — the byte-returning read path is now a named §7 debt, listed above the mirror bullet.** The
+empty read and the partial git mirror have been carried as separate problems since 2026-09-17. **They are
+one missing capability wearing two faces**: the read tool re-formats (so the mirror cannot be back-filled)
+*and* gives up on size (so the order check cannot run). Candidates, none tried — an owner-side folder
+download, a Drive-to-git sync outside this connector, or any API path that returns the stored bytes.
+**Whoever goes looking should know it pays twice**, which is a better reason to spend an afternoon on it
+than either debt alone, and neither bullet said so before v20.
+
+**v20 itself could not have its order verified** — 85,763 bytes, well above the ceiling. Recorded here in
+the form the new clause requires: **size matched, order not verified, assembled from one contiguous
+source.** The rule's first application is to the file that introduced it, and it applies honestly rather
+than conveniently.
+
 ## Still open at session end
 
 - **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the

@@ -1,9 +1,29 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 19 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 20 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v20 — the rule added in v19 gets its own limits written next to it, and the tool that
+would lift them is named as a debt.** Two items, both proposed at v19 and approved by the owner
+(*"Add both v20 items now"*).
+
+**First: the order check has a size ceiling, and §3 now says so.** v19 told a future reader to verify
+order by reading the file back. That instruction silently fails on large files — `CLAUDE.md` itself
+returned an **empty** `fileContent` at 82,310 bytes where `kb-registers.md` read fine at 58,410.
+**A rule that cannot be followed on the most important file in the KB, and says nothing about it, is
+worse than no rule**, because the reader assumes it ran. §3 now carries the bracket, what stands in
+for the check above it, and **one practical trap found by running it**: the connector escapes backticks
+and asterisks on read, so **order anchors must be plain text** — markdown ones produce a false failure,
+which this KB saw once and nearly believed.
+
+**Second: a read path that returns bytes is now a named debt in §7, not an implied one.** The empty
+read and the partial git mirror are **the same missing capability wearing two faces** — the mirror
+cannot be back-filled because the read tool re-formats, and the order check cannot run because the read
+tool gives up on size. **One mechanism closes both**, which is a better reason to go looking than either
+debt on its own, and neither bullet said so until now. v19 (`18_O7X7D8HK5wDH37g7JWRB4PdXYTGrqK`) is
+archived.
 
 **Changed in v19 — the upload check that has protected this KB for three days turns out to have a
 blind spot, and it was found the hard way.** §3's *verify like with like* rule — compare `wc -c` both
@@ -536,6 +556,19 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   failed is not a check that cannot fail; know what yours is blind to.
   *`ARCHIVED-2026-09-19c-kb-registers.md` is labelled **DO NOT CITE** for this reason: correct content,
   wrong order. A mislabelled file advertises nothing, which is the same trap as the wrongly-named serial.*
+  **Two limits on the check itself, both found by running it.** *(a)* **It has a size ceiling.** The
+  connector's read returns an **empty** `fileContent` above some size rather than an error:
+  `kb-registers.md` read back fine at **58,410 bytes**, `CLAUDE.md` came back empty at **82,310** —
+  *two points, so a bracket between roughly 58 KB and 82 KB, not a measured threshold.* **So the order
+  check cannot be run on this file**, the largest in the KB. What stands in for it above the ceiling:
+  **build the upload from one contiguous source** rather than by moving blocks about, so the
+  pick-up-and-put-down failure has no opportunity to occur, **and say plainly that order was not
+  verified** — *that is an argument about how the file was produced, not a verification of it, and must
+  never be reported as one.* Below the ceiling, run the real check. *(b)* **Anchors must be plain
+  text.** The read tool escapes backticks and asterisks, so an anchor containing them is not found and
+  the check reports a failure that is not there. This KB produced exactly that false alarm on its first
+  run and nearly believed it. Pick anchors from ordinary prose — one per table, first row and last —
+  and compare the sequence of their positions plus the row count per table.
 - **The connector's read tool does not round-trip, so never "copy" a file with it.** It returns a
   re-formatted rendering — leading punctuation escaped, two-space hard breaks appended — not the bytes
   on disk. A 2 KB article reconstructed from it came back **4 bytes out, silently**. This is why the
@@ -916,11 +949,19 @@ the owner/Victoria; only the cover page has been seen.
   inside the KB could tell us, and nothing inside it can tell us whether it is missing others.** Hand
   tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
   rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
+- **A read path that returns bytes would close two debts at once, and is the single most useful tool
+  this KB does not have.** The connector's read **re-formats** what it returns (so the mirror cannot be
+  back-filled) **and returns empty above roughly 58–82 KB** (so the §3 order check cannot be run on the
+  largest files, this one included). *Those look like two problems and are one missing capability.*
+  Candidates, none tried: an owner-side folder download, a Drive-to-git sync outside this connector, or
+  any API path that hands back the stored bytes. **Whoever goes looking should know it pays twice** —
+  that is a better reason to spend an afternoon on it than either debt alone, and neither bullet said so
+  before v20.
 - **The git mirror is partial and cannot be back-filled by copying** (§1, §3). The articles that
   predate the mirror exist on Drive only; **how many that is lives in `Outputs/kb-registers.md`, not
-  here** — see §1 for why, and for the command to count the mirror side. Closing the gap needs a
-  mechanism that returns bytes — an owner-side folder download, or a Drive-to-git sync outside this
-  connector — not a read-and-re-emit. Until then the mirror is a *partial* mirror and this file says so.
+  here** — see §1 for why, and for the command to count the mirror side. Closing the gap needs the
+  byte-returning read path above — not a read-and-re-emit. Until then the mirror is a *partial* mirror
+  and this file says so.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
   `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
   link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:
