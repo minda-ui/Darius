@@ -18,6 +18,14 @@ related:
  - ../Machinery/altendorf-f45-panel-saw.md
  - ../Processes/f45-monthly-safety-device-check.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
+ - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
+ - ../Processes/maintenance-schedule-vitap-k2.md
+ - ../Processes/panel-production-route.md
+ - ../Processes/tpacad-interpolated-holes.md
+ - ../Software/kitchen-unit-library.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - ../Troubleshooting/troubleshooting-vitap-k2.md
 ---
 
 # Vitap K2-2.0 — CNC Boring, Drilling and Routing Centre

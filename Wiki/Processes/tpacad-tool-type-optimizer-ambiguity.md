@@ -10,6 +10,11 @@ sources:
   - ../../Raw/TPA CAD part 2.pdf
 related:
   - ../Machinery/vitap-k2-panel-saw.md
+  - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
+  - ../Processes/smartcabinet-wall-support-cam-table-reference.md
+  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+  - ../Processes/tpacad-interpolated-holes.md
+  - ../Software/kitchen-unit-library.md
 ---
 
 # Process: TpaCAD tool-type auto-resolution ambiguity ("Tool for this working not found")

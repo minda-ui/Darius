@@ -14,6 +14,10 @@ related:
  - maintenance-schedule-altendorf-f45.md
  - f45-monthly-safety-device-check.md
  - ../Troubleshooting/troubleshooting-and-fault-log-system.md
+ - ../Decisions/2026-09-15-operational-systems-scope-extension.md
+ - barcode-and-scan-event-system.md
+ - maintenance-schedule-vitap-k2.md
+ - ../Software/smartcabinet-and-production-workflow.md
 ---
 
 # Machinery maintenance system (routine maintenance)

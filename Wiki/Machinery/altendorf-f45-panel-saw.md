@@ -23,6 +23,12 @@ related:
  - ../Machinery/hebrock-f4-next-edge-bander.md
  - ../Processes/f45-monthly-safety-device-check.md
  - ../Suppliers/altendorf-gmbh.md
+ - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/maintenance-schedule-altendorf-f45.md
+ - ../Processes/panel-production-route.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - ../Troubleshooting/troubleshooting-altendorf-f45.md
 ---
 
 # Altendorf F45 ElmoDrive — Sliding Table Saw

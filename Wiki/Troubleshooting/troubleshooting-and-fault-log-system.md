@@ -11,6 +11,10 @@ related:
  - troubleshooting-hebrock-f4.md
  - troubleshooting-altendorf-f45.md
  - ../Processes/machinery-maintenance-system.md
+ - ../Decisions/2026-09-15-operational-systems-scope-extension.md
+ - ../Processes/barcode-and-scan-event-system.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - troubleshooting-vitap-k2.md
 ---
 
 # Troubleshooting & fault-log system

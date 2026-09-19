@@ -11,6 +11,8 @@ related:
  - ../Software/smartcabinet-and-production-workflow.md
  - ../Processes/machinery-maintenance-system.md
  - ../Troubleshooting/troubleshooting-and-fault-log-system.md
+ - ../Machinery/abac-genesis-screw-air-compressor.md
+ - ../Software/kitchen-unit-library.md
 ---
 
 # Barcode and scan-event system

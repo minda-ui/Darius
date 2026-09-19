@@ -16,6 +16,7 @@ related:
  - ../Machinery/hebrock-f4-next-edge-bander.md
  - ../Machinery/altendorf-f45-panel-saw.md
  - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/tpacad-interpolated-holes.md
 ---
 
 # The panel production route

@@ -15,6 +15,9 @@ related:
  - ../Machinery/hebrock-f4-next-edge-bander.md
  - ../Processes/machinery-maintenance-system.md
  - ../Troubleshooting/troubleshooting-and-fault-log-system.md
+ - ../Decisions/2026-09-15-operational-systems-scope-extension.md
+ - ../Processes/barcode-and-scan-event-system.md
+ - ../Software/kitchen-unit-library.md
 ---
 
 # Design → Production → Sales workflow, and the Job Tracker

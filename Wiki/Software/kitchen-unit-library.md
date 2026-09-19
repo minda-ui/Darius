@@ -18,6 +18,9 @@ related:
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
  - ../Processes/barcode-and-scan-event-system.md
  - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
+ - ../Processes/panel-production-route.md
+ - ../Processes/tpacad-blind-bore-tool-id-fix.md
 ---
 
 # Kitchen unit library (low-cost range)

@@ -10,6 +10,7 @@ sources:
  - ../../Raw/Fishbone Drylining - AES 10,000.pdf
 related:
  - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Suppliers/aes-group.md
 ---
 
 # Markfield Woodworking Machinery Ltd (supplier)

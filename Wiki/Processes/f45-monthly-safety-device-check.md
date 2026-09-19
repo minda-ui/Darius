@@ -9,6 +9,10 @@ sources:
   - ../../Raw/F45 part 1.pdf
 related:
   - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Machinery/vitap-k2-panel-saw.md
+  - ../Processes/f45-electrical-schematics-reference.md
+  - ../Processes/machinery-maintenance-system.md
+  - ../Processes/maintenance-schedule-altendorf-f45.md
 ---
 
 # Process: Altendorf F45 monthly safety-device check

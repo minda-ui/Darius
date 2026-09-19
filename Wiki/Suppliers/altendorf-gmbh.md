@@ -10,6 +10,7 @@ sources:
   - ../../Raw/F45 Spare parts manual part 1.pdf
 related:
   - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Processes/f45-electrical-schematics-reference.md
 ---
 
 # Altendorf GmbH (manufacturer)

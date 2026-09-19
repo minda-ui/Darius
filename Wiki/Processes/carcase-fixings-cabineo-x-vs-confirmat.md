@@ -18,6 +18,8 @@ related:
  - ../Software/kitchen-unit-library.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
  - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/panel-production-route.md
+ - ../Processes/tpacad-blind-bore-tool-id-fix.md
 ---
 
 # Carcase fixings: Cabineo X vs confirmat screws

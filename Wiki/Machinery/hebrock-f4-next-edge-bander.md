@@ -18,7 +18,14 @@ sources:
  - ../../Raw/2026-09-15_fault-photo_edge-bander-hmi-corner-rounding-icon.jpg
  - ../../Raw/2026-09-15_fault-photo_edge-bander-corner-marks-no-rounding.jpg
  - ../../Raw/2026-09-15_fault-photo_edge-bander-corner-rounding-fixed.jpg
-related: []
+related:
+ - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Machinery/altendorf-f45-panel-saw.md
+ - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/maintenance-schedule-hebrock-f4.md
+ - ../Processes/panel-production-route.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - ../Troubleshooting/troubleshooting-hebrock-f4.md
 ---
 
 # Hebrock F4 — Edge Banding Machine
