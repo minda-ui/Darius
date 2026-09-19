@@ -355,6 +355,45 @@ known positions before uploading, and read them back after.
 
 *Stated here rather than quietly fixed, because an upload I announced as verified was not.*
 
+## `CLAUDE.md` v19 — the clause is in, and applying it immediately found its own limit
+
+The owner approved the proposed clause (*"Yes, add that clause at v19"*), so §3's *verify like with like*
+now carries: **a size match is necessary and not sufficient, and proves nothing about order.** With the
+practical form — before uploading, note which rows should sit first and last in each table; after
+uploading, read those positions back, not just the size — and the general shape, which is *trust the
+API's response, not its status code* one level up: **the number in the response was true and the
+inference drawn from it was false.** Plus the line worth keeping: *a check that has never failed is not a
+check that cannot fail; know what yours is blind to.*
+
+**And then the new rule could not be applied to the file that carries it.** v19 uploaded at **82,310
+bytes, matching local**; the read-back to check order **returned empty**. Not an error — an empty
+`fileContent`, the same failure mode as the 2.9 MB air-receiver photograph on 2026-09-18.
+
+**That brackets the connector's read limit usefully**, which nothing in this KB had done before:
+
+| File | Size | Read-back |
+|---|---|---|
+| `kb-registers.md` | **56,265 B** | **worked** — 60,323 characters returned |
+| `CLAUDE.md` v19 | **82,310 B** | **empty** |
+
+So the ceiling sits somewhere between **56 KB and 82 KB**, *two data points, not a measured threshold —
+this is a bracket, not a limit.* **The consequence is specific and awkward: the order check cannot be
+performed on `CLAUDE.md`, the largest and most important file in the KB.** The rule written into v19
+therefore has a hole in it at exactly the place it is written.
+
+**What can still be said about v19's upload:** the size matches, and it was assembled from one contiguous
+source rather than by moving blocks about, so the failure mode that hit the registers — a row picked up
+and put down elsewhere — did not have an opportunity to occur. **That is an argument about how the file
+was produced, not a verification of the file**, and it is recorded as such rather than dressed up as one.
+
+**Proposed for v20, not added unilaterally:** either state plainly in §3 that the order check is
+unavailable above roughly 60 KB and say what stands in for it, or find a read path that returns large
+files (the same mechanism the partial git mirror has been waiting for — something that returns bytes).
+**The second would close two debts with one tool**, which is the better reason to look for it than either
+debt alone.
+
+*Recorded because a rule with a known gap is worth less than a rule whose gap is written down next to it.*
+
 ## Still open at session end
 
 - **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the

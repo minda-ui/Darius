@@ -1,9 +1,27 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 18 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 19 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v19 — the upload check that has protected this KB for three days turns out to have a
+blind spot, and it was found the hard way.** §3's *verify like with like* rule — compare `wc -c` both
+sides — has caught every upload error since 2026-09-17. On 2026-09-19 it passed a file that was wrong.
+`Outputs/kb-registers.md` went to Drive with **two Outputs rows in the wrong order**, because I moved one
+while pasting; the byte count came back **56,265, exactly matching local**, and I reported it as
+byte-exact. **It was byte-exact. The file was still wrong.** Moving two rows of a table changes nothing
+about the total, so **the check is blind to any error that permutes content rather than changing it** —
+a reordering, or a swap of two equal-length values. Caught by reading the row order back instead of
+trusting the number, which is §3's *trust the API's response, not its status code* arriving from a new
+direction: **the number in the response was true and the conclusion drawn from it was false.** Fixed by
+re-uploading in the right order; the wrong-order copy is archived as
+`ARCHIVED-2026-09-19c-kb-registers.md` and **labelled DO NOT CITE**, because its content is correct and
+only its order is not — exactly the file someone would otherwise cite in good faith. §3's *verify like
+with like* now carries the clause: **a size match is necessary and not sufficient, and proves nothing
+about order.** Owner's decision to add it, 2026-09-19 (*"Yes, add that clause at v19"*), after it was
+proposed rather than added unilaterally — the same route the v18 count fix took.
+v18 (`1wS22TUTeWjYX8RkQIkkrrQq98ZqJnpHy`) is archived.
 
 **Changed in v18 — this file stopped carrying a number it kept getting wrong.** Four times now — v12
 said *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"* — this charter has stated how
@@ -505,6 +523,19 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   **characters**. Comparing one against the other on a file full of `—`, `≥`, `³` and `Ø` showed a
   329-"byte" gap that did not exist, and cost a full withdraw-re-read-re-upload cycle plus a wrong
   "do not cite" label on an archived file that had nothing wrong with it. **Use `wc -c` both sides.**
+  **And a size match is necessary, not sufficient — it proves nothing about order.** On 2026-09-19
+  `kb-registers.md` went up with two Outputs rows transposed; `wc -c` matched exactly, at 56,265 both
+  sides, and the upload was reported as verified. It was verified, and it was wrong. **A permutation
+  does not change a byte count**, so reordering — and a swap of two equal-length values — passes
+  silently. Every table in this KB is append-only and order-carrying, so **where order means something,
+  check the order too**: before uploading, note which rows should sit first and last in each table; after
+  uploading, read those positions back, not just the size. Cheap form: hash the lines at known positions,
+  or count rows per table and compare the sequence of a few distinctive row keys. The general shape is
+  §3's other standing warning — *trust the API's response, not its status code* — one level up: **here the
+  number in the response was true and the inference drawn from it was false.** A check that has never
+  failed is not a check that cannot fail; know what yours is blind to.
+  *`ARCHIVED-2026-09-19c-kb-registers.md` is labelled **DO NOT CITE** for this reason: correct content,
+  wrong order. A mislabelled file advertises nothing, which is the same trap as the wrongly-named serial.*
 - **The connector's read tool does not round-trip, so never "copy" a file with it.** It returns a
   re-formatted rendering — leading punctuation escaped, two-space hard breaks appended — not the bytes
   on disk. A 2 KB article reconstructed from it came back **4 bytes out, silently**. This is why the
