@@ -1,9 +1,60 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 20 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 22 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v22 — the tool this file called "the single most useful tool this KB does not have" was
+in the connector all along.** §7 has carried since v20 a debt saying a read path that returns bytes would
+close two problems at once: the git mirror that cannot be back-filled, and the order check that cannot run
+above about 82 KB. **The Drive connector has one — `download_file_content`, which returns the stored bytes
+base64-encoded — and it had never been called.** The re-formatting and the empty-above-82 KB behaviour both
+belong to `read_file_content`, a *different tool*; the KB measured one read path and wrote the limitation
+down against the connector.
+
+**Both debts are closed by measurement, not argument.** `tpacad-blind-bore-tool-id-fix.md` was downloaded,
+decoded and diffed against its local copy: **byte-identical apart from one real eight-character
+difference** — no escaped punctuation, no appended hard breaks, no drift. And **`CLAUDE.md` v21 came back
+whole at 90,475 bytes**, well past the bracket where `read_file_content` returns an empty string. **So the
+order check has no ceiling any more**: download, decode, `diff` against local, on any file in this KB. The
+check stops being an argument about how a file was produced and becomes a verification of what it contains.
+
+**Two corrections fall out of the same test, and both are mine.** The new article's unexplained **−8 bytes**
+was never a connector defect: local read *"five of them"*, the Drive paste read *"five"*. I had bounded it
+at three attempts and written it down as unresolved when **one diff would have named it.** And this file's
+**+306 bytes** was not corruption either — the diff is a single hunk, the Operational-systems bullet that
+was in the Drive paste and missing from local. **The 90 KB paste carried no drift at all.** I had archived
+that copy **DO NOT CITE** on suspicion alone; the label came off within the hour, because a wrongly-labelled
+file is the trap §3 already names twice. New §3 lesson: *check whether the tool you are blaming is the tool
+you used.* v21 (`1Nzs26QcEIVMDa8px2jU4Eq7xGCp2h_bR`) is archived.
+
+**Changed in v21 — the fix this file gave for T016 pointed at the wrong computer, and the source
+that says so was already in the KB.** §7 has said since v18 that *"the gap is a missing Ø5 entry in
+SmartCABINET's Cabineo X drill-head profile"* and that T016 is *"a catalog entry and a test run"*.
+**Reading `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md` in full — the contemporaneous
+record written at the machine on 2026-09-15, Technology dialog open, two positions checked by hand —
+shows that is wrong.** That article carries both findings and separates them in terms: the catalog gap
+is *"**unrelated** to the TpaCAD optimizer ambiguity — a gap in SmartCabinet's own head/tool catalog,
+**not** the Vitap's tool archive (which does have 5mm tools, both Blind and Through)"*.
+
+**The Vitap is not missing a Ø5 tool. It has five.** Blind Ø5 mm sits on **bushes 6–10**, every one at
+**ID 0**, so resolving by diameter + type offers five equally valid candidates and no documented
+tie-break; Through Ø5 resolves cleanly because it has exactly one bush. **The fix is two steps, both at
+the Vitap** — give one Blind Ø5 bush a real ID, then set the failing operation's `Tool` field to it,
+which per the manual *"prevails over the programming per diameter"*. Written up as
+`Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`, with the verification test and the reason the
+Through-bore workaround must not be used to close it.
+
+**How the error was made, because the shape is the point.** I connected two facts sitting in the same
+article — a head profile named *"Cabineo X"* and a missing `Dia. 5mm` row — and asserted the second
+caused the first's failure, **without re-reading the article that says they are unrelated.** §3's *a
+fact recorded without a source hardens into an assumption* has a sharper sibling: **the source existed
+and was not consulted.** A KB is only as good as the habit of going back to it, and the risk grows with
+its size — this file now summarises articles it no longer quotes. New §3 lesson: *re-read the primary
+record before reframing what a task is.* Swept through §7, Smartsheet T016 (title and note) and
+`Wiki/index.md`, whose carcase-fixings entry asserted the same thing. v20
+(`1xi9GGr1H0VfkoHag8kEBOG9dVH3bgAg2`) is archived.
 
 **Changed in v20 — the rule added in v19 gets its own limits written next to it, and the tool that
 would lift them is named as a debt.** Two items, both proposed at v19 and approved by the owner
@@ -290,8 +341,9 @@ v8 and earlier asserted the opposite.*
 **Still open, and not to be assumed either way:** a shared network does not merge two programs'
 internal catalogs. SmartCabinet's **CAM Tools** table and TpaCAD's **CN Tools** catalog are separate
 application databases, and whether an entry added in one reaches the other automatically is
-**unverified**. This bears directly on Task T016 and must be checked, not inferred from the fact of a
-network.
+**unverified**. This bears on the **systemic half** of Task T016 — getting SmartCABINET to emit a Tool
+ID on export — and must be checked, not inferred from the fact of a network. *It does not bear on the
+immediate fix, which is entirely inside TpaCAD's own outfit (§7).*
 
 **Where it lives.** Google Drive, folder `Workshop of Furniture Making - Knowledge Base`, primary
 copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
@@ -312,9 +364,12 @@ is not an article. `_templates/article.md` is not tracked in git; if it ever is,
 excluding.)*
 
 Anything authored in a session is written to both stores and verified with `wc -c` against Drive's
-reported size; anything that predates the mirror stays on Drive, because **the connector's read tool
-cannot return a file byte-for-byte** (§3), so back-filling would silently corrupt what it copied.
-*v8–v11 of this file claimed the mirror "is kept in step". That was never true; corrected in v12.*
+reported size. **The articles that predate the mirror can now be back-filled**: `download_file_content`
+returns the stored bytes rather than a rendering (§3, proved 2026-09-19), so a copy can be *verified*
+against its source instead of trusted. **Nothing has been back-filled yet**, so the mirror is still
+partial today — what changed is that it is now a backlog rather than something the connector prevented.
+*v8–v11 of this file claimed the mirror "is kept in step". That was never true; corrected in v12.
+v12–v21 said back-filling was impossible: true of `read_file_content`, false of the connector — v22.*
 
 **Folders.**
 ```
@@ -564,7 +619,12 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   **build the upload from one contiguous source** rather than by moving blocks about, so the
   pick-up-and-put-down failure has no opportunity to occur, **and say plainly that order was not
   verified** — *that is an argument about how the file was produced, not a verification of it, and must
-  never be reported as one.* Below the ceiling, run the real check. *(b)* **Anchors must be plain
+  never be reported as one.* Below the ceiling, run the real check.
+  **The ceiling was lifted 2026-09-19**: it belongs to `read_file_content`, and
+  `download_file_content` returned this file whole at **90,475 bytes**. **The order check now runs at any
+  size, on exact bytes** — download, decode, `diff` against the local copy. Building the upload from one
+  contiguous source stays good practice; it is no longer a *substitute* for a check, because the check
+  is available. *(b)* **Anchors must be plain
   text.** The read tool escapes backticks and asterisks, so an anchor containing them is not found and
   the check reports a failure that is not there. This KB produced exactly that false alarm on its first
   run and nearly believed it. Pick anchors from ordinary prose — one per table, first row and last —
@@ -576,6 +636,11 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   rewritten just to change one metadata field: **every rewrite through a lossy read risks drift in the
   99% you did not mean to touch.** Write new content to both stores from the same local copy and check
   `wc -c`; do not treat Drive as a source you can read back and re-emit.
+  **Corrected 2026-09-19: that is true of `read_file_content` and false of `download_file_content`**,
+  which hands back the stored bytes base64-encoded and round-trips exactly — verified on a 9,602-byte
+  article (byte-identical bar one real content difference) and on `CLAUDE.md` at 90,475 bytes. *The
+  lesson that survives is the narrower one:* **the connector has two read paths and they are not
+  interchangeable.** Never copy a file with the natural-language one; use the byte one, and diff.
 - **Put a fact where its own update cycle lives.** This file carried a count of Wiki articles through
   four versions and was wrong in all four — *"four"*, *"fifteen"*, *"seven"*, *"nine / twenty-seven"* —
   not through carelessness but because **the figure changes every time an article is written and this
@@ -588,6 +653,30 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   answer is "more often than this document is edited", it belongs somewhere else with a pointer left
   behind.** The same test flags the Drive file ids, the Smartsheet sheet ids and the machine
   specifications here — all of which change rarely or never, which is why they stay.
+- **Re-read the primary record before reframing what a task is.** On 2026-09-19 T016 was recast from
+  a generic TpaCAD fault into *"the Cabineo X tooling half-defined in SmartCABINET"*, and the charter,
+  the task note and `Wiki/index.md` all took it up. **The article that records the incident says, in
+  terms, that the two findings are unrelated** — and it had been written at the machine with the
+  dialog open, which makes it better evidence than anything written about it since. **I did not
+  re-read it before reframing.** The cost would have been a wasted trip to the wrong computer and a
+  fix that appeared to fail. This is §3's *a fact recorded without a source* turned inside out: **the
+  source existed and was not consulted.** *The risk scales with the KB's size* — this charter now
+  summarises articles it no longer quotes, and a summary of a summary drifts. Before rewriting what a
+  task **is** (as opposed to adding to it), open the primary record. Reframing is not a small edit; it
+  redirects everyone who reads it next.
+- **Check whether the tool you are blaming is the tool you used.** For nine versions this KB recorded
+  that *"the connector's read tool cannot return a file byte-for-byte"* and built two standing debts on
+  it — a mirror that could not be back-filled, and an order check with a size ceiling. **The connector
+  has a second read tool that does exactly what was wanted, and it had never been called.** The claim was
+  true of `read_file_content` and was written down as true of *the connector*: a quiet widening of scope
+  that nothing later re-examined, because a debt that is written down reads as settled. **A limitation is
+  a property of the call you made, not of the system**, until you have looked at what else the system
+  offers — *list the tools before concluding the capability is missing.* **And the cheap half of the same
+  lesson:** two byte discrepancies that day — **−8** on a new article and **+306** on this file — were
+  both recorded as unexplained, one after being deliberately bounded at three attempts. **Neither was a
+  defect; each was one `diff` away.** A discrepancy you cannot explain is usually a diff you have not
+  run — and *suspicion* is not grounds for a **DO NOT CITE** label: that went onto v21 of this file and
+  came off within the hour, making mislabelling the third entry of its kind in §3.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -776,6 +865,10 @@ the owner/Victoria; only the cover page has been seen.
   hole Ø − cutter Ø**, written for a live job with the 10 mm and 12 mm drills on order. Also the
   cheapest case in which to settle the unresolved `Diameter`-field convention, because a wrong reading
   gives 22 mm rather than 12 — unmistakable on scrap.
+- **Closing T016 (2026-09-19)** — `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`: the two-step fix
+  at the **Vitap**, the verification test on `03-BOTTOM.TCN`, why the Through-bore workaround must not
+  be used to close it, and **the correction to what T016 was said to be** — see the T016 bullet below
+  and the v21 note at the top of this file.
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
   Machinery Register's `Asset Label No.` column, documented in
   `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
@@ -918,17 +1011,26 @@ the owner/Victoria; only the cover page has been seen.
   suggestion, not a reading*. Also unestablished: whether SmartCABINET generates a unit's parts
   **parametrically** from a width, which would make the whole folder question smaller than it looks.
   See `Wiki/Software/kitchen-unit-library.md`.
-- **`T016` is the library's remaining blocker, and it is software only.** Every hole in the master
-  exports with a diameter and no tool number, so a Ø5 that does not resolve in the CN Tools catalog
-  fails every unit identically. Fixing one catalog entry once is cheap; re-cutting a range is not.
-  **Nothing needs buying**: Cabineo X's published Ø15 drill is the *alternative* to routing and the
-  master routes the pocket, so the Ø5 the master already drills plus a ≤Ø12 cutter (the shop has 12 mm
-  and 10 mm) covers it — the gap is a missing Ø5 entry in SmartCABINET's Cabineo X drill-head profile.
+- **`T016` is the library's remaining blocker — and the fix is at the Vitap, not on the design
+  computer.** *v18–v20 of this file said the opposite and were wrong; see the v21 note.* **The Vitap is
+  not missing a Ø5 tool: it has five.** Blind Ø5 mm sits on bushes 6–10, all at **ID 0**, so
+  diameter + type resolution has five candidates and no tie-break — which is the whole fault. **Two
+  steps close it**, both in TpaCAD's per-position Technology dialog and the failing program: give one
+  Blind Ø5 bush a real unused ID, then set that operation's `Tool` field to it, which *"prevails over
+  the programming per diameter"*. **Verify by reproducing the failure first, then re-Solving, then
+  running `03-BOTTOM.TCN`** — and **not** by switching Tool type to Through bore, which clears the
+  error by picking a category that happens to have one bush and silently drills with the wrong one.
+  Full procedure: `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`.
+  **Nothing needs buying** — that part stands: Cabineo X's published Ø15 drill is the *alternative* to
+  routing and the master routes the pocket, so the Ø5 the master already drills plus a ≤Ø12 cutter
+  covers it. **The missing SmartCABINET `Dia. 5mm` row is still worth adding, but it is a different
+  job**: it belongs to the *systemic* fix — getting the post-processor to **emit** a Tool ID on export,
+  so step two is not repeated by hand on every operation of every unit, since every hole in the master
+  exports with `#1001=0`. *Whether SmartCABINET's IDs reach TpaCAD at all is unverified; the one data
+  point is that position 101 is ID 1001 in both, for positions 101–104 only.*
   **Severity revised down 2026-09-19, priority unchanged:** with confirmat in stock as Plan B, and the
   connector pockets routed into the carcase's *inside* faces where an empty one is hidden, **a job is
-  not stopped by T016** — only made more slowly and with a visible screw head. *Whether a catalog entry
-  added on one machine reaches the other is still unverified; a shared network does not merge two
-  applications' internal databases.*
+  not stopped by T016** — only made more slowly and with a visible screw head.
 - **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
@@ -949,25 +1051,28 @@ the owner/Victoria; only the cover page has been seen.
   inside the KB could tell us, and nothing inside it can tell us whether it is missing others.** Hand
   tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
   rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
-- **A read path that returns bytes would close two debts at once, and is the single most useful tool
-  this KB does not have.** The connector's read **re-formats** what it returns (so the mirror cannot be
-  back-filled) **and returns empty above roughly 58–82 KB** (so the §3 order check cannot be run on the
-  largest files, this one included). *Those look like two problems and are one missing capability.*
-  Candidates, none tried: an owner-side folder download, a Drive-to-git sync outside this connector, or
-  any API path that hands back the stored bytes. **Whoever goes looking should know it pays twice** —
-  that is a better reason to spend an afternoon on it than either debt alone, and neither bullet said so
-  before v20.
-- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). The articles that
-  predate the mirror exist on Drive only; **how many that is lives in `Outputs/kb-registers.md`, not
-  here** — see §1 for why, and for the command to count the mirror side. Closing the gap needs the
-  byte-returning read path above — not a read-and-re-emit. Until then the mirror is a *partial* mirror
-  and this file says so.
+- ~~**A read path that returns bytes would close two debts at once**~~ — **closed 2026-09-19, and the
+  tool was in the connector the whole time.** `download_file_content` returns a file's stored bytes,
+  base64-encoded, at every size this KB contains: **byte-identical** on a 9,602-byte article, and
+  `CLAUDE.md` returned **whole at 90,475 bytes**. The re-formatting and the empty-above-82 KB behaviour
+  belong to `read_file_content`, a *different* tool (§3). **What it unblocks is now work rather than
+  capability** — back-filling the mirror (below), and running the §3 order check on exact bytes at any
+  size. *Whoever spends the afternoon now spends it copying files, not looking for a mechanism.*
+- **The git mirror is still partial — but from 2026-09-19 that is a backlog, not a blocker** (§1, §3).
+  The articles that predate the mirror exist on Drive only; **how many that is lives in
+  `Outputs/kb-registers.md`, not here** — see §1 for why, and for the command to count the mirror side.
+  The obstacle named since v12 is gone: each article can be downloaded as exact bytes, decoded,
+  committed, and **diffed against its source to prove the copy**. **Nothing has been back-filled yet**,
+  so the mirror is a partial mirror today and this file still says so — what changed is that finishing
+  it is an afternoon's work with a verification step at the end.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
   `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
   link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:
-  the fix means re-authoring three 21–30 KB articles through a lossy read to change one metadata
-  field, which risks more than it repairs (§3). Fix it the next time one of those articles is being
-  rewritten for a substantive reason anyway.
+  the fix meant re-authoring three 21–30 KB articles through a lossy read to change one metadata field,
+  which risked more than it repaired (§3). **That objection is much weaker since 2026-09-19**: those
+  articles can now be downloaded as exact bytes, edited locally, and re-uploaded with a byte-level diff
+  proving nothing else moved. Still not urgent — but no longer risky. Do it when one of those articles
+  is next opened, or as part of the mirror back-fill.
 - `AMF` vs `FA` property/asset-code inconsistency in AMFA's own Property Register — still just flagged.
 - ~~Exact price on the Hebrock invoice unconfirmed~~ — **resolved 2026-09-15** by the 70%-balance
   cross-check confirmed on three invoices (Task T005, closed Done).

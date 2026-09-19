@@ -429,6 +429,142 @@ the form the new clause requires: **size matched, order not verified, assembled 
 source.** The rule's first application is to the file that introduced it, and it applies honestly rather
 than conveniently.
 
+## T016 — and the fix this KB was recommending was the wrong one
+
+The owner: **"Close T016 next."** It cannot be closed from here — it closes at the TpaCAD station with
+the outfit open — so the work was to produce the procedure. **Producing it found that the procedure
+this KB has been giving since v18 points at the wrong computer.**
+
+**What we were saying.** Smartsheet T016 (reframed earlier the same day), `CLAUDE.md` §7 and
+`Wiki/index.md` all carried: *the gap is a missing Ø5 entry in SmartCABINET's Cabineo X drill-head
+profile*, so T016 is *"a catalog entry and a test run"*.
+
+**What the primary record says.** `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md` was written
+on 2026-09-15 **at the machine**, with TpaCAD's Technology dialog open and two positions read off by
+hand. It records both findings and then separates them in terms:
+
+> *"This is **unrelated** to the TpaCAD optimizer ambiguity above — it's a gap in SmartCabinet's own
+> head/tool catalog, **not** the Vitap's tool archive (which does have 5mm tools, both Blind and
+> Through)."*
+
+and, of the catalog row itself, *"the new row's ID number doesn't need to match anything
+machine-side."*
+
+**The Vitap is not missing a Ø5 tool. It has five.** Blind Ø5 mm is assigned to **bushes 6, 7, 8, 9
+and 10**, every one at **ID 0**, so diameter + type resolution has five equally valid candidates and no
+documented tie-break. Through Ø5 resolves cleanly for the opposite reason — one bush. **That is the
+entire fault**, and nothing about it changes if a row is added on the design computer.
+
+**The actual fix, two steps, both at the Vitap:** give one Blind Ø5 bush a real unused ID in the
+per-position Technology dialog, then set the failing operation's `Tool` field to it — which the manual
+says *"prevails over the programming per diameter"*, turning `Tool type` into a validity check. Both
+steps are needed: step 1 alone still resolves by diameter, step 2 alone has nothing to point at.
+**Verify** by reproducing the failure first, re-Solving, then running `03-BOTTOM.TCN` — and **not** by
+the Through-bore workaround, which clears the error by picking a category that happens to have one bush
+and silently drills with the wrong one.
+
+**Written up as `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`** (9,599 bytes) — a new article
+rather than an edit to the 2026-09-15 one, per §3: that article is Drive-only and re-authoring it
+through a lossy read would risk the 95% nobody meant to touch.
+
+### How the error was made
+
+I connected two facts sitting in the same article — a head profile named *"Cabineo X"* and a missing
+`Dia. 5mm` row — and asserted the second caused the Ø5 failure. **I did not re-read the article that
+says they are unrelated before reframing the task.**
+
+**This is §3's *a fact recorded without a source* turned inside out: the source existed and was not
+consulted.** New §3 lesson at v21: ***re-read the primary record before reframing what a task is***,
+with the reason it will keep happening — *the risk scales with the KB's size.* The charter now
+summarises articles it no longer quotes, and a summary of a summary drifts. Adding to a task is a small
+edit; **saying what a task *is* redirects everyone who reads it next**, and deserves the primary
+source open.
+
+**What it would have cost:** a trip to the design computer, a row added, the identical error on the
+next export, and a fix that looks like it failed.
+
+### Swept, and what is still owed
+
+Corrected in **Smartsheet T016** (title and note — the store that gives directions at the machine),
+**`Wiki/index.md`** (whose carcase-fixings entry asserted the same thing), and **`CLAUDE.md` → v21**
+(§7's T016 bullet rewritten; §1's CAM/CN Tools paragraph narrowed to the *systemic* half, since the
+immediate fix is entirely inside TpaCAD's own outfit). v21 is **90,169 bytes**: **size verified, order
+not verified** — above the ceiling, assembled from one contiguous source, exactly as v20's clause
+requires.
+
+**The CN Tools row is still worth adding**, and the article says what for: the **systemic** fix, getting
+SmartCABINET's post-processor to *emit* a Tool ID on export, so step two is not repeated by hand on
+every operation of every unit — which matters because **every hole in the master exports with
+`#1001=0`**. The hinge is whether the two ID schemes correspond beyond positions 101–104; the single
+data point is that position 101 is ID 1001 in TpaCAD and `Dia. 10mm` is 1001 in SmartCABINET.
+
+**One loose thread found while reading, not resolved:** the article lists `1001/1002/1006/1011/1012` as
+IDs taken by positions **101–104** — *five IDs for four positions*. Either a position holds more than
+one tool or it is a slip in the original note. **The procedure says to read the live values off the
+dialog rather than trust the list**, which costs nothing and settles it.
+
+**T016 stays Open.** It closes when both steps are done and `03-BOTTOM.TCN` solves clean, and Darius
+can record that the moment there is an outcome.
+
+## `CLAUDE.md` v22 — the tool this KB called missing was in the connector all along
+
+**The debt.** v20 named, on the owner's approval, the single most useful thing this KB did not have: *a
+read path that returns bytes*. It would close two problems at once — a git mirror that could not be
+back-filled because the read tool re-formats, and an order check that could not run above roughly 82 KB
+because the read tool returns an empty string. v20 listed three candidates, none tried: an owner-side
+folder download, a Drive-to-git sync outside the connector, or any API path handing back stored bytes.
+
+**It took one call to find.** The Drive connector has **two** read tools. `read_file_content` — the one
+every session has used, and the one the debt was measured against — returns a natural-language rendering.
+`download_file_content` returns the stored bytes, base64-encoded. **It had never been called in the
+KB's history.**
+
+**Both halves verified, not assumed.**
+
+- `tpacad-blind-bore-tool-id-fix.md` was downloaded, decoded and `diff`ed against its local copy:
+  **byte-identical apart from one real eight-character difference.** No escaped punctuation, no appended
+  hard breaks, no silent drift. **So the mirror can be back-filled**, and each copy can be *proved*
+  rather than trusted.
+- `CLAUDE.md` v21 came back **whole at 90,475 bytes** — well past the 58–82 KB bracket where
+  `read_file_content` gives up. **The order check has no ceiling any more.** v22 was then uploaded and
+  verified the real way: download, decode, diff — **byte-identical to local at 95,668 bytes**, the first
+  time that check has ever actually run on this file rather than being argued for.
+
+**Two unexplained numbers turned out to be one diff each, and both were mine.**
+
+- The new article's **−8 bytes**. I had ruled out backslash escapes and nested blockquotes, found the
+  gap constant and file-specific, **deliberately bounded it at three attempts and recorded it as
+  unresolved.** It was local reading *"It has five of them."* against a Drive paste reading *"It has
+  five."* — eight characters, one hunk. The article has been re-uploaded from local and now matches at
+  9,610 bytes both sides; the stale copy is archived.
+- This file's **+306 bytes**. Also not corruption: a single hunk, the Operational-systems bullet that was
+  in the Drive paste and missing from local. **The 90 KB paste carried no drift whatsoever** — which is
+  worth knowing in its own right, because the whole contiguous-source argument was built on the fear that
+  it might. The bullet belonged in the charter, so it was added locally and v22 built on top.
+
+**A label I put on and took off.** I archived the v21 copy as `DO NOT CITE` on suspicion alone, before
+running the diff. Once the diff showed a single clean hunk the label came off — the file was correct. §3
+already warns twice that a mislabelled file advertises nothing; **suspicion is not grounds for the
+label**, and this is the third entry of that kind.
+
+**What went into v22.** §7's debt bullet struck through and closed, naming what it unblocks as *work*
+rather than *capability*. §1 and §7's *cannot be back-filled* downgraded to **not back-filled yet** —
+the mirror is still partial today, and saying otherwise would be the stale-claim failure this file keeps
+correcting. §3's *the read tool does not round-trip* narrowed to `read_file_content`, with the
+round-trip evidence for the other. §3's order-check ceiling **lifted**, with the contiguous-source
+argument demoted from substitute-for-a-check to good practice. And a new §3 lesson:
+
+> **Check whether the tool you are blaming is the tool you used.** A limitation is a property of the
+> call you made, not of the system, until you have looked at what else the system offers. The claim was
+> true of one tool and was written down against *the connector* — a quiet widening of scope that nothing
+> re-examined for nine versions, **because a debt that is written down reads as settled.** And its cheap
+> half: *a discrepancy you cannot explain is usually a diff you have not run.*
+
+**What this does not mean.** Nothing has been back-filled. The Drive-only articles are still Drive-only,
+and the `related:` back-link fix is still not done — both are now ordinary work with a verification step,
+which is a different thing from being finished. **The mirror is partial today and the charter still says
+so.**
+
 ## Still open at session end
 
 - **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the
@@ -439,3 +575,8 @@ than conveniently.
 - **Four of the five unit types have no master at all.** The owner's range is wall, base, sink,
   appliance housing and tall; only the wall unit exists.
 - **`Outputs/kb-registers.md`** processed-items rows and this file's index entry — done in this session.
+- **The mirror back-fill has not been started.** `download_file_content` makes it possible and proves
+  each copy; the Drive-only articles are still Drive-only. Same for the `related:` back-links, which
+  were deferred purely because the read was lossy and no longer are.
+- **The bracket where `read_file_content` returns empty (58–82 KB) was never measured**, and now never
+  needs to be — but nothing else should be assumed about that tool from the download tool's behaviour.
