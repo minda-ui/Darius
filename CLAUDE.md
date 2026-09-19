@@ -1,9 +1,27 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 23 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
+**Version 24 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v24 — the last metadata debt closed, and the bullet describing it had undercounted by
+eleven files.** §7 has carried since 2026-09-17 that `related:` front matter is one-way, described as
+*"the three machinery articles"* plus one empty list. On the owner's instruction (*"Fix the related:
+back-links now"*) the graph was **computed rather than read off the bullet**, and the real gap was
+**15 files and 52 missing back-links**. The Wiki now holds **134 directed edges — 67 symmetric pairs,
+nothing asymmetric, dangling or duplicated** — with every article **body hash-identical** before and
+after, and all 15 Drive copies re-uploaded and **verified byte-identical by download–decode–`diff`**.
+That is the §7 upkeep rule added in v23 obeyed for the first time: both stores, same session.
+
+**Why the bullet undercounted is the part worth keeping.** It named the articles somebody had
+*noticed* — the two 2024 assets had been written last and linked out to the three older machinery
+articles, so those three stood out. **The other eleven were invisible from inside the KB**, in exactly
+the way the unregistered compressor was: nothing in a one-way link announces itself from the side that
+is missing. *Proposed for the owner rather than added here, the same route the v18 and v19 changes
+took:* a §3 lesson that **a description of a gap is not a measurement of it** — where a gap can be
+computed, compute it before trusting the count somebody wrote down. v23
+(`1RqHSDRGxXgbOCBwPI4rV7QRafRV_h9We`) is archived.
 
 **Changed in v23 — the mirror is complete, and the debt v22 closed in argument is now closed in fact.**
 v22 established that `download_file_content` returns stored bytes and said plainly that **nothing had
@@ -1099,15 +1117,24 @@ the owner/Victoria; only the cover page has been seen.
   *The debt is replaced by an upkeep rule*, not by nothing: an article written to one store and not the
   other re-opens the gap, so both stores get it in the same session. **This bullet stood for eleven
   versions and took one afternoon once the right tool was found**, which is the §3 lesson's real cost.
-- **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
-  `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
-  link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:
-  the fix meant re-authoring three 21–30 KB articles through a lossy read to change one metadata field,
-  which risked more than it repaired (§3). **That objection is much weaker since 2026-09-19**: those
-  articles can now be downloaded as exact bytes, edited locally, and re-uploaded with a byte-level diff
-  proving nothing else moved — **and since the back-fill all three are in git**, so the edit is an
-  ordinary local one. Still not urgent; **no longer risky, and no longer awkward**. Whoever next opens
-  one of those articles should simply fix it.
+- ~~**`related:` front-matter links are not bidirectional.**~~ — **fixed 2026-09-19, in both stores,
+  and the bullet that described it was itself wrong.** It had said the gap was the three machinery
+  articles plus `hebrock-f4-next-edge-bander.md`'s empty list. **Computing the graph instead of reading
+  the bullet found 15 files and 52 missing back-links.** The Wiki now holds **134 directed edges = 67
+  symmetric pairs, nothing asymmetric, dangling or duplicated**, with every one of the 15 article
+  **bodies hash-identical** before and after — only front matter moved. Flushed to Drive the same
+  session per the upkeep rule above, each copy **verified byte-identical by download–decode–`diff`**.
+  **What the bullet named were the articles somebody had noticed**, because the two 2024 assets had
+  linked out to them; the other eleven were invisible from inside the KB, the same way the unregistered
+  compressor was — nothing in a one-way link announces itself from the side that is missing.
+  *Proposed for the owner, not added here:* a §3 lesson that **a description of a gap is not a
+  measurement of it** — where a gap can be computed, compute it before believing the count somebody
+  wrote down. **One consequence recorded rather than tidied:** archive-then-create gives a re-uploaded
+  article a new Drive id, so the ids cited in `tpacad-blind-bore-tool-id-fix.md` and
+  `carcase-fixings-cabineo-x-vs-confirmat.md` now point into `Archive/`. **They were not rewritten** —
+  they resolve to exactly the bytes that were read and quoted, which is what a source citation is for;
+  repointing them would make them cite bytes nobody read. **A Drive id in an article is a pointer to a
+  version, not to an article.** Cite the path for the article, the id for the bytes, and say which.
 - `AMF` vs `FA` property/asset-code inconsistency in AMFA's own Property Register — still just flagged.
 - ~~Exact price on the Hebrock invoice unconfirmed~~ — **resolved 2026-09-15** by the 70%-balance
   cross-check confirmed on three invoices (Task T005, closed Done).

@@ -657,7 +657,89 @@ gap was never the work; it was **not having looked at what else the connector of
 - ~~**The mirror back-fill has not been started.**~~ **Done this session** — all 18 Drive-only articles
   are in git, byte-checked; the mirror is complete and `CLAUDE.md` is at **v23**. What remains is
   upkeep, not a debt.
-- **The `related:` back-links are still not fixed** — now an ordinary local edit, since all three
-  machinery articles are in git. Not urgent; just no longer awkward.
+- ~~**The `related:` back-links are still not fixed**~~ — **done this session**, and the description
+  of the gap turned out to be wrong; see the section below.
 - **The bracket where `read_file_content` returns empty (58–82 KB) was never measured**, and now never
   needs to be — but nothing else should be assumed about that tool from the download tool's behaviour.
+
+## The `related:` back-links — and a gap that was bigger than its own description
+
+The owner's instruction was short: *"Fix the related: back-links now."* `CLAUDE.md` §7 had carried the
+item since 2026-09-17, described like this:
+
+> *"`aes-saf-10000-stk-extractor.md` and `brother-td-4420dn-label-printer.md` link out to the three
+> machinery articles; those three do not link back, and `hebrock-f4-next-edge-bander.md` carries
+> `related: []`."*
+
+**That is not what was wrong with the Wiki.** Rather than work from the bullet, the whole graph was
+computed from the front matter of every article: parse each `related:` block, build the directed edge
+set, and list every edge with no reverse. The answer was **15 files and 52 missing back-links**, not
+four files and a handful.
+
+**Why the bullet undercounted, which is the part worth keeping.** It named the articles somebody had
+*noticed* — the three machinery articles, because the two 2024 assets had been written last and had
+linked out to them, and `hebrock-f4`'s conspicuously empty list. The other eleven were invisible from
+inside the KB in exactly the way the unregistered compressor was: nothing in a one-way link announces
+itself from the side that is missing. **A description of a gap is not a measurement of it** — and this
+one had been carried, unchallenged, through five versions of the charter.
+
+### What was done
+
+A script parsed the front matter, found each file's `related:` block, detected its own indentation
+(this KB has both one-space and two-space styles) and its own path convention, and appended only the
+missing reverse links. Two details were settled explicitly rather than by accident:
+
+- **Path style per file.** `Processes/` turned out to have a genuine **7–7 tie** between bare
+  filenames and the `../Processes/` form, which the first run broke by dictionary insertion order.
+  That is the kind of thing that reads as deliberate later and is not, so the tie-break was made a
+  stated rule: **prefer the explicit `../Category/` form.**
+- **Bodies must not move.** Every file's body was hashed before and after. **All 15 are identical** —
+  the only change anywhere is inside the front matter.
+
+**The result:** 134 directed edges, forming **67 symmetric pairs**, with **0 asymmetric, 0 dangling,
+0 duplicated and 0 self-referencing** links. Git commit `85cea36`.
+
+*One self-correction while verifying:* the grep pattern written to check the new entries rejected
+two-space indents and filenames beginning with a digit, and printed valid lines as though they had
+failed. The pattern was wrong, not the data — fixed and re-run rather than left looking like a defect.
+
+### The Drive flush, and the upkeep rule being obeyed for the first time
+
+`CLAUDE.md` §7 gained an upkeep rule earlier the same session: *an article written to one store and
+not the other re-opens the gap.* This is its first test, and it says all 15 go to Drive in the same
+session — about **187 KB** of re-emission, because Drive has no patch API and a content change means
+re-sending the whole file.
+
+Each one: archive the existing copy (renamed `ARCHIVED-2026-09-19e-<name>-pre-backlinks.md` and moved
+to `Archive/`), `create_file` the new content, then **download the result, decode it and `diff` it
+against local**. **All 15 came back byte-identical**, from `altendorf-gmbh.md` at 2,063 bytes to
+`altendorf-f45-panel-saw.md` at 30,985.
+
+**Three of the fifteen have no trailing newline** — the machinery articles — and the emission had to
+preserve that exactly. It did, first time, on all three; the byte counts say so and the diffs confirm
+it. Worth recording because it is the sort of one-byte difference that a size check would have caught
+but a "looks right" check never would.
+
+### Two things flagged rather than tidied away
+
+**The archive now holds 15 entries for a front-matter-only change.** That is the convention working as
+designed — every superseded Drive copy is kept with a dated reason — but it is 15 near-duplicates of
+articles whose text did not change, and the owner may want them pruned. **Not pruned here**: deleting
+from `Archive/` is not something to do unasked.
+
+**Two articles cite a source by Drive file id, and those ids are now in `Archive/`.**
+`tpacad-blind-bore-tool-id-fix.md` cites `1eEGlEAeEfLQFUMrmNHF2ySZSjy5W1IeC` for the at-the-machine
+record, and `carcase-fixings-cabineo-x-vs-confirmat.md` cites `1z41BjgLjOglkPSRD8vjigs6fypHqVGkm` for
+the Vitap article. Archive-then-create gives the live article a *new* id and leaves the cited one
+pointing at the archived copy.
+
+**The citations were not rewritten**, and the reasoning is worth stating: those ids resolve to
+**exactly the bytes that were read and quoted**, which is arguably what a source citation is *for*.
+Repointing them at the current version would make them cite bytes nobody has read — the same class of
+error as a mislabelled file. The cost is that a reader following one lands in `Archive/` rather than on
+the live article, which is an inconvenience rather than a falsehood.
+
+**The general point for this KB:** a Drive file id written into an article is a pointer to a
+*version*, not to an article, because the archive-then-create convention guarantees that any edit
+moves the id. Cite the path when you mean the article; cite the id when you mean the bytes; and say
+which you meant.
