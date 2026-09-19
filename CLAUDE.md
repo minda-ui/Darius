@@ -1,9 +1,50 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 17 — 2026-09-18.** Structure and conventions modelled on the Fishbone Commercial
+**Version 18 — 2026-09-19.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
+
+**Changed in v18 — this file stopped carrying a number it kept getting wrong.** Four times now — v12
+said *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"* — this charter has stated how
+many Wiki articles exist and how many are mirrored, and **four times the figure was stale by the time
+anyone read it**, because an article written in any session invalidates it. v17 even made recounting a
+standing rule and then went stale the same day it was written. **A rule that has to be obeyed on every
+edit of a weekly document is not a rule, it is a trap.** So the figures are **gone from this file**: §1
+and §7 now say the mirror is partial and **point at `Outputs/kb-registers.md`**, whose Wiki-structure
+rows carry the count at the moment each article was added, with the command that produced it. Anyone
+quoting a number runs `git ls-files 'Wiki/**/*.md' | wc -l` and reads the registers for the Drive-only
+side. **The counting discipline is unchanged and the instruction to recount is unchanged** — only the
+place the answer lives has moved, from a document revised weekly to one revised every session. Owner's
+decision, 2026-09-19: *"I agree with dropping figures from Claude.md and pointing to registers. That
+makes process a bit lighter."* New §3 lesson: *put a fact where its own update cycle lives.* v17
+(`1XseIOKRWe7rMgnxU88FkHbpPJBxhV5Jy`) is archived.
+
+**Also in v18 — three tasks closed and one half closed, all from the owner describing how the shop
+works.** **The production route was recorded for the first time**: SmartCABINET optimisation → panel
+cutting list → **F45 cut** → **F4 edging** → **Vitap drill** → assembly desk. Five sessions had
+documented three machines in detail without ever recording the order they are used in — the same shape
+of gap as the unregistered compressor, and it closed **T026** (the 2800 × 2070 nesting sheet was never
+in conflict with the Vitap's 1250 mm width; the sheet is cut on the saw and the Vitap only sees single
+panels) and **T028** (the saw works from a cutting list). **T029 was raised and closed the same
+morning**: the cutting list is **finished sizes**, and the F4 trims each panel by the tape thickness
+*before* applying the tape, so **the bander is dimension-neutral and there is no allowance anywhere** —
+which confirms the derived nominal and means a library unit can be defined without its edging pattern.
+It also makes the F4 dimension-critical: **tape thickness and pre-mill trim are one decision**, and
+changing one without the other fails a whole batch rather than one panel. **T025 closed — Cabineo X
+chosen and ordered, with confirmat kept as Plan B and held in stock**; three things followed that were
+not visible before the decision (**no Ø15 drill is needed**, since drilled and routed are alternatives
+and the master routes the pocket; **T016 is therefore purely a software problem** with nothing to buy;
+and **a Cabineo-machined unit assembles with confirmat without re-drawing anything**, because the
+pockets are in the carcase's inside faces and an empty one is hidden — so T016 drops from blocker to
+priority). **T024 half closed**: shelf depth **255 = 300 − 16 − 19 − 10**, the chain closing to the
+millimetre, with the **16 mm back-panel step-back for the Häfele concealed wall mount** and the **10 mm
+shelf-front step-back** both now recorded as **specification**; the 266 and 256 on the earlier folders
+are **an earlier design, not the defect v17 recorded**. **And a correction of mine**: **T027** had said
+the shop appeared to lack a 35 mm hinge-cup bit. **It has one, fitted to the Vitap.** I had read *"how
+do I cut a 35 mm hole with a 12 mm cutter"* as evidence the tool was absent, when the owner had said
+there was a *problem* — **asking how to do something another way is not evidence the ordinary way is
+unavailable.**
 
 **Changed in v17 — the kitchen unit library started, and comparing three units found what reading
 one could not.** The owner asked for a library of low-cost kitchen units and named **`AMFA Wall Unit
@@ -23,9 +64,10 @@ and **no tool number** — the exact condition behind the live "Tool for this wo
 *That reading of the parameter indices is mine and is not documented in the manual extract this KB
 holds*, but if it is right, **T016 fails every unit in the library identically**, so it is now a
 precondition for populating the library rather than a single machine's fault. **Counts recounted, as
-§1 requires and as this file has twice failed to do:** the git mirror holds **nine** Wiki articles, not
-seven, and there are **twenty-seven** in total, not twenty-five. The eighteen Drive-only figure was
-correct and is unchanged. v16 (`1V6aSqeW7Lrj9wNNPjsxEj_cPDbcPS3mO`) is archived.
+§1 requires and as this file has twice failed to do** — *and stale again within the day, which is what
+finally moved them out of this file in v18; the figures v17 quoted here are deliberately not repeated,
+because a superseded count is exactly the thing that misleads a future reader.*
+v16 (`1V6aSqeW7Lrj9wNNPjsxEj_cPDbcPS3mO`) is archived.
 
 **Changed in v16 — a walk round the floor closed two tasks that documents could not, and one of them
 had been answered in this KB all along under the wrong name.** The owner photographed four type plates.
@@ -217,15 +259,24 @@ network.
 copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
 
 **The git mirror `minda-ui/Darius` is partial, and that is a deliberate, recorded state — not an
-oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and the
-**nine** Wiki articles created on 2026-09-17 and 2026-09-18. The other **eighteen** live on Drive only
-— *recounted on 2026-09-18 with `git ls-files`, not carried forward: v12 and v13 said "four" and
-"fifteen", and v16 said "seven", each having quietly gone stale as articles were added. The habit is
-the point, not the number.* Anything
-authored in a session is written to both and verified with `wc -c` against Drive's reported size;
-anything that predates the mirror stays on Drive, because **the connector's read tool cannot return a
-file byte-for-byte** (§3), so back-filling would silently corrupt what it copied. *v8–v11 of this file
-claimed the mirror "is kept in step". That was never true; corrected in v12.*
+oversight.** It holds this charter, `README.md`, `Wiki/index.md`, everything in `Outputs/`, and every
+Wiki article written from 2026-09-17 onwards. The articles that predate the mirror live on Drive only.
+
+**This file deliberately does not say how many of each there are.** It said so four times and was wrong
+four times (v12 *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"*) — a count goes
+stale the moment an article is written, and this document is revised weekly at best. **The count lives
+in `Outputs/kb-registers.md`**, in the Wiki-structure rows, recorded at the moment each article was
+added and with the command that produced it. To quote a current figure, run
+`git ls-files 'Wiki/**/*.md' | wc -l` for the mirror side and read the registers for the Drive-only
+side; **do not carry a number forward from anywhere, including from here.** *(That pathspec counts the
+articles in the topic folders and correctly leaves out `Wiki/index.md`, which sits at the top level and
+is not an article. `_templates/article.md` is not tracked in git; if it ever is, it would need
+excluding.)*
+
+Anything authored in a session is written to both stores and verified with `wc -c` against Drive's
+reported size; anything that predates the mirror stays on Drive, because **the connector's read tool
+cannot return a file byte-for-byte** (§3), so back-filling would silently corrupt what it copied.
+*v8–v11 of this file claimed the mirror "is kept in step". That was never true; corrected in v12.*
 
 **Folders.**
 ```
@@ -461,6 +512,18 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   rewritten just to change one metadata field: **every rewrite through a lossy read risks drift in the
   99% you did not mean to touch.** Write new content to both stores from the same local copy and check
   `wc -c`; do not treat Drive as a source you can read back and re-emit.
+- **Put a fact where its own update cycle lives.** This file carried a count of Wiki articles through
+  four versions and was wrong in all four — *"four"*, *"fifteen"*, *"seven"*, *"nine / twenty-seven"* —
+  not through carelessness but because **the figure changes every time an article is written and this
+  document is revised weekly at best.** v17 responded by making recounting a standing rule, and went
+  stale the same day it was written. **A rule that must be obeyed on every edit of a slow-moving
+  document will be missed, and the miss is silent**, because a wrong number reads exactly like a right
+  one. The fix is not more discipline, it is moving the fact: the count now lives in
+  `Outputs/kb-registers.md`, which is touched every session, alongside the command that produces it.
+  **Ask of any figure written into a durable document: what invalidates this, and how often? If the
+  answer is "more often than this document is edited", it belongs somewhere else with a pointer left
+  behind.** The same test flags the Drive file ids, the Smartsheet sheet ids and the machine
+  specifications here — all of which change rarely or never, which is why they stay.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -631,10 +694,24 @@ the owner/Victoria; only the cover page has been seen.
   examples that exposed the X-sign discrepancy (Task T017).
 - **Kitchen unit library (started 2026-09-18)** — `Wiki/Software/kitchen-unit-library.md`
   (**draft, nothing built**): the `AMFA Wall Unit 600 RH` master read out of its own files, the derived
-  nominal, the three-unit comparison, and a folder/unit-code convention **proposed for approval, not
-  created**. The owner's Drive `Furniture` folder was listed but **not reorganised**, and the two
-  `ANVAR_KITCHEN_*` folders were **not opened** — a customer name on a folder is enough to treat it as
-  client data.
+  nominal, the three-unit comparison, the depth chain behind the 255 mm shelf, and a folder/unit-code
+  convention **proposed for approval, not created**. The owner's Drive `Furniture` folder was listed but
+  **not reorganised**, and the two `ANVAR_KITCHEN_*` folders were **not opened** — a customer name on a
+  folder is enough to treat it as client data.
+- **The production route (recorded 2026-09-19)** — `Wiki/Processes/panel-production-route.md`: the
+  order parts actually move through the shop, **SmartCABINET optimisation → panel cutting list → F45 cut
+  → F4 edging → Vitap drill → assembly desk**, with the finished-size/trim-then-tape answer and the
+  serial-line argument (no second saw, bander or borer, so any one stoppage stops the shop — and all
+  three are fed by `FA2306`). *Five sessions documented three machines without recording the order they
+  are used in;* the gap was invisible from inside the KB, exactly like the unregistered compressor.
+- **Carcase fixings** — `Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md`: **Cabineo X decided
+  and ordered** (owner, 2026-09-19), confirmat retained as **Plan B and held in stock**. Records what the
+  choice costs (**+£6.72 a unit, +£80.67 a twelve-unit kitchen** at UK retail listings, which still want
+  a trade quote at 2,000) and why the master needs no re-drawing.
+- **Making holes with a cutter** — `Wiki/Processes/tpacad-interpolated-holes.md`: **toolpath circle Ø =
+  hole Ø − cutter Ø**, written for a live job with the 10 mm and 12 mm drills on order. Also the
+  cheapest case in which to settle the unresolved `Diameter`-field convention, because a wrong reading
+  gives 22 mm rather than 12 — unmistakable on scrap.
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
   Machinery Register's `Asset Label No.` column, documented in
   `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
@@ -666,7 +743,13 @@ the owner/Victoria; only the cover page has been seen.
   2026-09-18 to answer a live 35 mm hinge-cup question and could not be. *The extract we hold gives the
   right working — `CIRCULAR INTERNAL WINDOW`, "a circle with internal emptying", under `CUSTOM WORKINGS:
   PROFILES` — but never says whether its `Diameter` is the finished hole or the tool path, which on a
-  12 mm cutter is 35 mm versus 47 mm. Settle it with a test cut in scrap.*
+  12 mm cutter is 35 mm versus 47 mm. Settle it with a test cut in scrap* — **cheapest as a Ø12 hole from
+  the 10 mm cutter, where a wrong reading gives 22 mm rather than a ruined door.**
+  **A correction that belongs here:** this KB briefly recorded that the shop appeared to lack a 35 mm
+  hinge-cup bit. **It has one, fitted to the Vitap** (owner, 2026-09-19); what is open is **what went
+  wrong with it** (Task T027), and T016 is the obvious candidate — the door programs each cup as a Ø35
+  bore with no tool assigned — but that is **not asserted**. *Asking how to do something another way is
+  not evidence the ordinary way is unavailable.*
 - **Were the machines re-commissioned after the move to Unit 31?** The KB holds no record that a move
   happened at all, yet the lease is dated 25 June 2026. The F45's own manual requires, after installation:
   a flat, level, load-bearing floor (~1100 kg, centre of gravity ~100 mm below the blade axis); swing-arm
@@ -756,17 +839,32 @@ the owner/Victoria; only the cover page has been seen.
   actually is. One photograph of its own plate turns the whole question from inference into fact. **This
   KB does not give regulatory advice**; it records that the question is open and that absence of a record
   is not evidence of absence.
-- **The kitchen unit library — four owner decisions and two defects.** The decisions: the range
-  (types and widths), whether *"low cost"* denotes a defined carcase spec or is only a range name,
-  whether hand belongs in the unit code or is mirrored at job time, and whether library units are
-  separated from customer jobs on Drive. The defects already visible: **shelf depth 266 / 256 / 255 mm**
-  across three 300 mm-deep carcases, and **two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank in the
-  master where neither earlier unit has a second back at all. Also unestablished: whether SmartCABINET
-  generates a unit's parts **parametrically** from a width, which would make the whole folder question
-  smaller than it looks. See `Wiki/Software/kitchen-unit-library.md`.
-- **`T016` is a precondition for the library, not just a Vitap fault.** Every hole in the master
+- **The kitchen unit library — four owner decisions and one remaining defect.** The decisions (T023):
+  the range (types and widths), whether *"low cost"* denotes a defined carcase spec or is only a range
+  name, whether hand belongs in the unit code or is mirrored at job time, and whether library units are
+  separated from customer jobs on Drive. **Four of the five unit types still have no master at all** —
+  only the wall unit exists. ~~Shelf depth 266 / 256 / 255 mm~~ — **answered 2026-09-19 and it was never
+  a defect**: the master's **255 = 300 − 16 − 19 − 10**, a **16 mm back-panel step-back** for the Häfele
+  concealed wall mount, the 19 mm back, and a **10 mm shelf-front step-back**; the earlier folders are an
+  **earlier design**, and **both step-backs are specification** that belongs on every unit's spec card
+  (the 16 mm is the same Häfele hanger added to the Wall Support Cam Table in the T017 session, showing
+  up as a panel dimension). **Still open: two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank in the
+  master where neither earlier unit has a second back at all — worth re-asking now the back is known to
+  sit in a void for a hanger, since a hanger usually wants the back notched, *though that is a
+  suggestion, not a reading*. Also unestablished: whether SmartCABINET generates a unit's parts
+  **parametrically** from a width, which would make the whole folder question smaller than it looks.
+  See `Wiki/Software/kitchen-unit-library.md`.
+- **`T016` is the library's remaining blocker, and it is software only.** Every hole in the master
   exports with a diameter and no tool number, so a Ø5 that does not resolve in the CN Tools catalog
   fails every unit identically. Fixing one catalog entry once is cheap; re-cutting a range is not.
+  **Nothing needs buying**: Cabineo X's published Ø15 drill is the *alternative* to routing and the
+  master routes the pocket, so the Ø5 the master already drills plus a ≤Ø12 cutter (the shop has 12 mm
+  and 10 mm) covers it — the gap is a missing Ø5 entry in SmartCABINET's Cabineo X drill-head profile.
+  **Severity revised down 2026-09-19, priority unchanged:** with confirmat in stock as Plan B, and the
+  connector pockets routed into the carcase's *inside* faces where an empty one is hidden, **a job is
+  not stopped by T016** — only made more slowly and with a visible screw head. *Whether a catalog entry
+  added on one machine reaches the other is still unverified; a shared network does not merge two
+  applications' internal databases.*
 - **Disposal dates and sale proceeds for `FA2302` and `FA2305`** — both carry purchase prices, so both
   disposals have a book consequence this KB cannot compute.
 - **Vitap `FA2304` §6.8 safety check** — does it need a dated, logged record like the F45's, or is a
@@ -787,10 +885,11 @@ the owner/Victoria; only the cover page has been seen.
   inside the KB could tell us, and nothing inside it can tell us whether it is missing others.** Hand
   tools, extraction ductwork, **the air receiver** (now a real question of its own, T021) and the server
   rack itself have never been assessed. Closing it needs a walk round the floor, not a document (see §3).
-- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). **Eighteen** of the
-  twenty-seven Wiki articles exist on Drive only (recounted 2026-09-18). Closing it needs a mechanism that returns bytes — an owner-side folder download,
-  or a Drive-to-git sync outside this connector — not a read-and-re-emit. Until then the mirror is a
-  *partial* mirror and this file says so.
+- **The git mirror is partial and cannot be back-filled by copying** (§1, §3). The articles that
+  predate the mirror exist on Drive only; **how many that is lives in `Outputs/kb-registers.md`, not
+  here** — see §1 for why, and for the command to count the mirror side. Closing the gap needs a
+  mechanism that returns bytes — an owner-side folder download, or a Drive-to-git sync outside this
+  connector — not a read-and-re-emit. Until then the mirror is a *partial* mirror and this file says so.
 - **`related:` front-matter links are not bidirectional.** `aes-saf-10000-stk-extractor.md` and
   `brother-td-4420dn-label-printer.md` link out to the three machinery articles; those three do not
   link back, and `hebrock-f4-next-edge-bander.md` carries `related: []`. Deliberately **not** fixed:

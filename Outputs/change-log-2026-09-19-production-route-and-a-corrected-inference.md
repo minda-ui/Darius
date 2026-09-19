@@ -290,6 +290,71 @@ both in the cut list, with programs of 60,458 and 11,994 bytes — and **neither
 back at all**. Worth re-asking now that the back is known to sit in a 16 mm void for a hanger, since a
 hanger usually wants the back notched or cut. **Not asserted**, and the owner has not said.
 
+## `CLAUDE.md` v18 — the article count left the charter
+
+The owner, on being shown that v17's *"nine / twenty-seven"* was already twelve / thirty on the day it
+was written:
+
+> **"I agree with dropping figures from Claude.md and pointing to registers. That makes process a bit
+> lighter."**
+
+**So v18 drops them.** §1 and §7 now say the mirror is partial, name what it holds by date rather than by
+number, and **point at `Outputs/kb-registers.md`** — whose Wiki-structure rows carry the count at the
+moment each article was added, with the command that produced it. To quote a live figure, run
+`git ls-files 'Wiki/**/*.md' | wc -l`.
+
+**Why this is a fix and not a shrug.** The count was wrong in v12, v13, v16 and v17 — four for four —
+and not through carelessness: **an article written in any session invalidates it, and the charter is
+revised weekly at best.** v17's response was to make recounting a standing rule, which is the obvious
+answer and the wrong one: it went stale the same day it was written. **A rule that has to be obeyed on
+every edit of a slow-moving document will be missed, and the miss is silent**, because a wrong number
+reads exactly like a right one. Moving the fact to the file that is touched every session removes the
+opportunity for error rather than asking harder for vigilance.
+
+**New §3 lesson: *put a fact where its own update cycle lives.*** With the test that generalises it —
+**ask what invalidates a figure and how often; if the answer is "more often than this document is
+edited", it belongs elsewhere with a pointer left behind.** Applied back to the charter's other numbers,
+the same test *keeps* the Drive file ids, the Smartsheet sheet ids and the machine specifications, which
+change rarely or never. It is not an argument against figures in durable documents, only against
+fast-moving ones.
+
+*The figures v17 quoted are deliberately not repeated in v18's account of them.* A superseded count sitting
+in a version note is exactly the thing that misleads a future reader, and the v16 note's wording is the
+proof — it read as current until someone checked.
+
+**Three claims elsewhere in §7 were swept in the same pass**, because a charter bump is the moment the
+correction rule (§3) applies to the charter itself: the kitchen-library bullet no longer calls the shelf
+depth a defect, the T016 bullet carries the software-only finding and the Plan B severity revision, and
+the TpaCAD bullet records that the shop **has** the 35 mm head. Three new operational-systems entries
+were added for the articles written on 2026-09-19. **v17 (`1XseIOKRWe7rMgnxU88FkHbpPJBxhV5Jy`) is
+archived; v18 is live at `1wS22TUTeWjYX8RkQIkkrrQq98ZqJnpHy`, 79,337 bytes, byte-verified.**
+
+## A verification failure worth recording: `wc -c` cannot see a reordering
+
+While uploading this file and the registers, **the registers went up with two Outputs rows in the wrong
+order** — I moved the *"Drive sync debt cleared"* row from before the v18 row to after it while pasting.
+**The byte count came back 56,265, exactly matching local, and I reported it as byte-exact.**
+
+It was. **And the file was still wrong**, because moving two rows of a table changes nothing about the
+total. The check that has caught every other upload error in this KB — `wc -c` both sides, per §3's
+*verify like with like* — **is blind to any error that permutes content rather than changing it.**
+Reordering, and a swap of two equal-length values, both pass.
+
+Caught by reading the row order back rather than trusting the number, which is §3's *trust the API's
+response, not its status code* arriving from a new direction: the number in the response was true and
+the conclusion drawn from it was not. Fixed by re-uploading in the right order; the wrong-order copy is
+archived **`ARCHIVED-2026-09-19c-kb-registers.md`, labelled DO NOT CITE** with the reason, because its
+content is correct and only its order is not — exactly the kind of file someone would otherwise cite in
+good faith.
+
+**Proposed for the next charter revision, not added unilaterally** (the same route the count fix took):
+a §3 clause that **a size match is necessary and not sufficient — it proves nothing about order.** Where
+order carries meaning, as it does in every append-only table in this KB, verify the order of the first and
+last few rows as well as the byte count. The practical form is cheap: hash the lines that should be at
+known positions before uploading, and read them back after.
+
+*Stated here rather than quietly fixed, because an upload I announced as verified was not.*
+
 ## Still open at session end
 
 - **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the
