@@ -1,15 +1,15 @@
 # Outstanding items — Workshop KB, as at 2026-09-19
 
 Prepared for Minda. Sourced from the Smartsheet **Tasks** sheet (`4087584374523780`, T001–T029) and
-`CLAUDE.md` §7. **29 tasks raised, 10 closed, 19 open.**
+`CLAUDE.md` §7. **29 tasks raised, 11 closed, 18 open.**
 
 Supersedes `2026-09-18-outstanding-items.md`. Ordered by *what it takes to close it*, not by task
 number — because most of these do not need a decision, they need somebody to look at something.
 
-**Six closed since yesterday's list**, four of them by the owner simply saying how the shop works:
-**T009** and **T012** from type plates, **T026** and **T028** from the production route, **T029** from
-the edging answer, and **T010** on instruction. **One was corrected**: T027 said the shop lacked a 35 mm
-hinge-cup bit; it has one.
+**Seven closed since yesterday's list**, five of them by the owner simply saying how the shop works or
+what was decided: **T009** and **T012** from type plates, **T026** and **T028** from the production
+route, **T029** from the edging answer, **T025** from the fixing decision, and **T010** on instruction.
+**One was corrected**: T027 said the shop lacked a 35 mm hinge-cup bit; it has one.
 
 ---
 
@@ -46,6 +46,7 @@ Items 1, 2, 4 and 6 are all within a few metres of each other.
 | **Unit 31 lease body** | Only the cover page seen. Alterations / repair / nuisance clauses bear on ducting, three-phase runs and bolting machines to the slab | — |
 | **R&J Machinery confirmation** | A dealer sticker on the Vitap is the only evidence of who sold `FA2301`/`FA2303`/`FA2304` | — |
 | **A better scan of the F45 schematics** | The two that arrived lost every circuit line to OCR; no wire is traceable end to end. *Worth more than another document* | T011, T018 |
+| **The Cabineo X order paperwork** | Settles **which variant and which screw** were bought — the housing takes a Cabineo 8 or 12 screw or a shelf pin, and that affects the mating hole. Would also confirm **by part number** that the master's pocket is a Cabineo X pocket rather than merely a compatible one | — |
 
 ---
 
@@ -78,12 +79,10 @@ advice**; each needs a qualified answer.
 
 ## 4. Decisions only you can make
 
-- **The fixing for the range** (**T025**) — *the one that gates the library.* Confirmat is ~29× cheaper
-  per joint (**+£80 a kitchen** for Cabineo X at retail figures), **but the master is already drawn for a
-  face-inserted connector** and SmartCABINET already holds a "Cabineo X" drill-head profile. So the real
-  question is **whether Cabineo X was chosen or arrived by default.** If chosen, take it as made. If not,
-  now is the last cheap moment to switch. **Also worth a trade quote on the housing at 2,000** — £0.77 is
-  a single-unit retail price and it drives the whole comparison.
+- ~~**The fixing for the range**~~ (**T025, closed**) — **Cabineo X, chosen and ordered; confirmat kept
+  as Plan B and held in stock.** What remains is not a decision: **get a trade quote on the housing at
+  2,000**, since £0.77 is a single-unit retail listing and the gap between that and ~£0.30 is real money
+  on every kitchen. *A purchase, so yours.*
 - **The library's remaining four questions** (**T023**) — widths for each of the five types; whether
   *"low cost"* is a defined carcase spec or a range name; whether hand belongs in the unit code or is
   mirrored at job time; and whether library units get separated from customer jobs on Drive.
@@ -112,12 +111,17 @@ advice**; each needs a qualified answer.
 
 ## 5. Software and CAD
 
-- **TpaCAD Blind-bore-drill fix** (**T016**) — *now understood more sharply: it is the **Cabineo X**
-  tooling being half-defined in SmartCABINET, not a generic tool-not-found fault.* Every hole in the
-  master exports with a diameter and **no tool number**, so if the reading is right it fails **every unit
-  in the library identically**. **Close it before populating the library**, not after. *Note: whether a
-  catalog entry added on one machine reaches the other is **unverified** — a shared network does not
-  merge two applications' internal databases.*
+- **Commission the Cabineo X tooling** (**T016**) — **the library's one remaining blocker, and it is
+  software only.** Not a generic tool-not-found fault: it is the Cabineo X tooling half-defined in
+  SmartCABINET, and the missing Ø5 is one of the two drills Cabineo X names. **Nothing to buy.** The Ø15
+  in Cabineo X's published requirement is the *alternative* to routing, and the master routes the pocket
+  — so the Ø5 the master already drills plus a ≤Ø12 cutter (you have 12 mm and 10 mm) covers it. A catalog
+  entry and a test run. **Close it before populating the library**, because every hole exports with no
+  tool number, so a Ø5 that does not resolve fails every unit identically. *Whether a catalog entry added
+  on one machine reaches the other is **unverified** — a shared network does not merge two applications'
+  internal databases.*
+  **Severity revised down, priority unchanged:** with confirmat in stock as Plan B, a job is not
+  *stopped* by this — only made more slowly and with a visible screw head.
 - **What was the problem with the 35 mm drilling head?** (**T027**) The shop has one. The door programs
   each cup as a Ø35 bore with **no tool assigned**, which would fail exactly as "Tool for this working
   not found" — so T016 is the obvious candidate, but **you haven't said**, and this KB was just caught
@@ -157,6 +161,13 @@ advice**; each needs a qualified answer.
 - **The register is known to be incomplete.** A 15 kW compressor feeding all three machines was missing
   until you photographed its label. Hand tools, extraction ductwork, the air receiver and the server rack
   have never been assessed. **Nothing inside the KB can tell us what else is missing.**
+- **What confirmat size is in stock, and how many?** Plan B depends on it and the stepped pilot differs
+  between 7 × 50 and 7 × 70. Not recorded anywhere.
+- **Which cutter diameter does the Cabineo pocket assume?** The pocket's arc parameter reads as a 7.5 mm
+  radius, implying a 15 mm width — which a 12 mm cutter cannot cut in one pass. One pass or two is a
+  cycle-time and a fit question; confirm before the first production run.
+- **Does a Cabineo-drilled panel assembled with confirmat behave the same?** The pocket removes material
+  from the side's inside face near the joint. Untested, and only matters if Plan B is used in anger.
 - **`AMF` vs `FA` asset-code inconsistency** in AMFA's own Property Register — flagged only.
 - **Duplicate manual PDFs** found in a Drive folder outside this KB's tree — not touched.
 - **`CLAUDE.md` carries an article count that goes stale every time an article is written.** v12 said
@@ -196,6 +207,11 @@ manual arrives"*, and both Inventairs turned out to be sold while the centralise
 machine the register did not contain. **Its 2026-09-15 note had recorded the supersession idea as
 plausible and not confirmed**, so nothing had to be unpicked when the answer came back "neither" — that
 row is where `CLAUDE.md` §3's restraint lesson was earned. *`FA2302`'s disposal date and sale proceeds
-are still unknown and sit under documents wanted, not here.*
+are still unknown and sit under documents wanted, not here.* · **T025** the carcase fixing decided,
+2026-09-19 — **Cabineo X, chosen and ordered, with confirmat retained as Plan B and held in stock.** The
+master was already drawn for it, so nothing needed re-drawing; and because the connector pockets are
+routed into the carcase's *inside* faces, **a Cabineo-machined unit can be assembled with confirmat
+instead without re-drawing anything** — an empty pocket is hidden in the finished unit. That fallback is
+what turns T016 from a blocker into a priority.
 
 *`FA2301`–`FA2306`, `FA2401`, `FA2402` — eight assets, two sold, one with no label.*
