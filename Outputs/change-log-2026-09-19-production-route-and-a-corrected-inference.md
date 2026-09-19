@@ -159,6 +159,32 @@ never drifted, because articles go to both stores in step; it is only the totals
 
 ---
 
+## T010 closed on instruction
+
+The owner: **"T010 yes"** — closing the task the outstanding-items lists of both 2026-09-18 and
+2026-09-19 had flagged as answered and ready.
+
+T010 was *"review `FA2302` (Inventair MK1 MTFA) status once the new centralised extraction unit's manual
+arrives"*. It closes because **both Inventairs were sold** (owner, 2026-09-17), so there is no status
+left to review — and because the premise was wrong in a more interesting way: the centralised unit is
+neither of them, it is **`FA2402`**, a third machine this KB had never heard of.
+
+**The row is worth keeping for what its own note did right.** On 2026-09-15 it recorded the
+"`FA2305` supersedes `FA2302`" idea as *plausible and NOT confirmed either way* rather than asserting
+it. The answer turned out to be **neither** — both sold, both replaced by a machine not on the register
+— so **nothing had to be unpicked**: no status, no date and no relationship had been set on a guess.
+That is the §3 lesson *don't assume one finding resolves another just because they're related*, and
+this is the row that earned it. The original wording is preserved verbatim inside the closing note so
+the close can be checked rather than taken on trust.
+
+**Nothing about `FA2302`'s own open items changes:** its **disposal date and sale proceeds are still
+unknown**, and it carries a purchase price, so the disposal has a book consequence this KB cannot
+compute. That stays in the outstanding-items list under documents wanted.
+
+*`Outputs/kb-registers.md`'s one-line summary row for this session lists T026, T028, T029 and the T027
+correction but not T010 — it goes in the next time that 51 KB file is touched, rather than earning an
+archive entry of its own for one clause. Stated here so it is a recorded deferral, not drift.*
+
 ## Still open at session end
 
 - **T025 — the fixing decision.** Was Cabineo X chosen, or did it arrive by default? Nothing records a

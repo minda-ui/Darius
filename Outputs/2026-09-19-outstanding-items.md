@@ -1,14 +1,15 @@
 # Outstanding items — Workshop KB, as at 2026-09-19
 
 Prepared for Minda. Sourced from the Smartsheet **Tasks** sheet (`4087584374523780`, T001–T029) and
-`CLAUDE.md` §7. **29 tasks raised, 9 closed, 20 open.**
+`CLAUDE.md` §7. **29 tasks raised, 10 closed, 19 open.**
 
 Supersedes `2026-09-18-outstanding-items.md`. Ordered by *what it takes to close it*, not by task
 number — because most of these do not need a decision, they need somebody to look at something.
 
-**Five closed since yesterday's list**, four of them by the owner simply saying how the shop works:
+**Six closed since yesterday's list**, four of them by the owner simply saying how the shop works:
 **T009** and **T012** from type plates, **T026** and **T028** from the production route, **T029** from
-the edging answer. **One was corrected**: T027 said the shop lacked a 35 mm hinge-cup bit; it has one.
+the edging answer, and **T010** on instruction. **One was corrected**: T027 said the shop lacked a 35 mm
+hinge-cup bit; it has one.
 
 ---
 
@@ -106,8 +107,6 @@ advice**; each needs a qualified answer.
   sits at `Document No.` = `pending`. **Ten and counting.**
 - **Who legally owns the machines** (**T004**) — **seven for seven** billed to Fishbone Drylining Ltd,
   never AMFA Furniture Ltd, and AMFA holds the Unit 31 lease. Needs the intercompany side, outside this KB.
-- **T010 should be closed** — "review `FA2302` once the new extractor's manual arrives". `FA2302` is Sold
-  and T014 settled it. *Offered yesterday, still waiting on a one-word yes.*
 
 ---
 
@@ -192,6 +191,11 @@ from the type plate, 2026-09-18 — *the number the KB had held since Session 6 
 registered as `FA2306`, 2026-09-18 · **T026** the nesting sheet / Vitap width question — *never a
 contradiction, only a missing process fact*, 2026-09-19 · **T028** the F45 works from the optimiser's
 cutting list, 2026-09-19 · **T029** the cutting list is finished sizes and the F4 trims before it tapes,
-2026-09-19.
+2026-09-19 · **T010** closed on instruction, 2026-09-19 — *"review `FA2302` once the new extractor's
+manual arrives"*, and both Inventairs turned out to be sold while the centralised unit was a third
+machine the register did not contain. **Its 2026-09-15 note had recorded the supersession idea as
+plausible and not confirmed**, so nothing had to be unpicked when the answer came back "neither" — that
+row is where `CLAUDE.md` §3's restraint lesson was earned. *`FA2302`'s disposal date and sale proceeds
+are still unknown and sit under documents wanted, not here.*
 
 *`FA2301`–`FA2306`, `FA2401`, `FA2402` — eight assets, two sold, one with no label.*
