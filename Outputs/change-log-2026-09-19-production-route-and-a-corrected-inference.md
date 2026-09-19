@@ -157,6 +157,13 @@ figure from `CLAUDE.md` and point at the registers instead** — because a numbe
 an article is written does not belong in a document revised weekly. *The eighteen Drive-only figure has
 never drifted, because articles go to both stores in step; it is only the totals that rot.*
 
+**Flushed a second time at session end**, after the T025 and T024 answers had moved three files again:
+`carcase-fixings-cabineo-x-vs-confirmat.md` (**23,154**), `kitchen-unit-library.md` (**19,380**) and
+`2026-09-19-outstanding-items.md` (**17,922**) — archive-then-create each, every upload byte-exact.
+**The 60 KB of re-uploads were deliberately held** while the owner was mid-flow answering questions,
+and stated as held rather than done quietly; a batched flush on request beats interrupting a run of
+answers three times.
+
 ---
 
 ## T010 closed on instruction
@@ -181,17 +188,113 @@ the close can be checked rather than taken on trust.
 unknown**, and it carries a purchase price, so the disposal has a book consequence this KB cannot
 compute. That stays in the outstanding-items list under documents wanted.
 
-*`Outputs/kb-registers.md`'s one-line summary row for this session lists T026, T028, T029 and the T027
-correction but not T010 — it goes in the next time that 51 KB file is touched, rather than earning an
-archive entry of its own for one clause. Stated here so it is a recorded deferral, not drift.*
+*`Outputs/kb-registers.md`'s one-line summary row for this session listed T026, T028, T029 and the T027
+correction but not T010, and that gap was recorded here as a deliberate deferral rather than left as
+drift — one clause did not justify an archive cycle on a 51 KB file. **It was discharged the same
+session**, once T025 and T024 gave that file three closures to carry rather than one: the summary row,
+the processed-items row and the Changes table all now name T010 alongside them. Worth noting because
+this is the §3 lesson *a correction has to be swept through every store the claim reached* working as
+intended — the deferral was written down, so it could be closed instead of forgotten.*
+
+## T025 closed — Cabineo X chosen, confirmat kept as Plan B
+
+The owner, in two statements a minute apart:
+
+> **"Cabineo X was chosen, we ordered them."**
+>
+> **"But leave conformant as Plan B, we have them in stock too."**
+
+**The first settles the specification; the second is the one that changes the plan.** I had written that
+confirmat was *"no longer a candidate"* and that a mixed spec was *"no longer worth pursuing"* — too
+absolute on both counts, and corrected mid-turn. A fallback that is already in stock is not a discarded
+option, it is a second route that costs nothing to keep.
+
+**What the decision costs, stated plainly:** ≈£0.87 per joint against confirmat's £0.03, eight carcase
+fixings per unit, so **+£6.72 a unit and +£80.67 on a twelve-unit kitchen**. That is now settled cost
+rather than an open question — bought for the hidden fixing, the demountability and the single-action
+assembly. The one thing still worth doing is a **trade quote on the housing at 2,000**: £0.77 is a
+single-unit retail listing and it is the weakest figure in the whole comparison. *A purchase, so the
+owner's* (§6a).
+
+**Three things fell out of the decision that were not obvious before it.**
+
+**No Ø15 drill is needed.** Cabineo X's published tooling reads *"Ø5 and Ø15 drills, cutter Ø12 or
+smaller"*, and the Ø15 was the one item this KB could not account for. But the housing fits *"a drilled
+**or** routed recess"* — the two are **alternatives**, and **the master routes it**. There is no Ø15 hole
+anywhere in the decoded parts. So everything Cabineo X needs is already on the machine: the Ø5 the master
+already drills, and a cutter of 12 mm or less, of which the shop has two.
+
+**Which makes T016 purely a software problem.** Nothing to buy, no head to fit, no lead time — the
+missing Ø5 in SmartCABINET's Cabineo X drill-head profile is a catalog entry, and closing it is the whole
+job.
+
+**And Plan B is viable without re-drawing anything.** The connector pockets are routed into the *inside*
+faces of the carcase, so **a pocket left empty is hidden in the finished unit**. Parts do not change size,
+the cutting list is unaffected, and confirmat's extra requirement — a core hole in the panel edge — can be
+drilled on the Vitap's horizontal spindles or at the bench. That edge is a side's **end** edge, which sits
+inside the joint and is not taped, so there is no edging to drill through either.
+
+**That last point revises T016's severity downward while leaving its priority alone.** T016 had been
+recorded as a precondition for populating the library — *"a Ø5 that does not resolve fails every unit
+identically"*. With confirmat in stock, **a job is not stopped by T016**; it is made more slowly and with
+a visible screw head. Still the thing to fix first; no longer the thing that must be fixed before anything
+can be cut.
+
+*One caveat stated rather than assumed: this establishes that the **carcase** can be assembled either way.
+It does not establish that a Cabineo-drilled panel and a confirmat-screwed joint reach the same rigidity —
+the pocket removes material from the side's inside face near the joint, and nobody has tested a
+mixed-history panel. Worth looking at the first one if Plan B is ever used in anger.*
+
+---
+
+## T024 half closed — the shelf depth is arithmetic, and two step-backs are specification
+
+Yesterday's three-unit comparison found shelf depths of **266 / 256 / 255 mm** on three carcases that are
+all 300 mm deep, and recorded all three values rather than preferring the master's. The owner explained it:
+
+> **"I was working on a different design of a 600 mm wall unit. Amfa 600mm wall unit RH is the latest
+> release. It's got a 10 mm step back for the shelf front, and we have a 16 mm step back for the back
+> panel to accommodate Hafele conceal wall mount."**
+
+**So there was no defect — there was a design that moved**, and four folders left behind at an earlier
+point in it. And the master's figure is not merely the newest; it is the one that can be checked:
+
+| | mm |
+|---|---|
+| Carcase depth | **300** |
+| − back-panel step-back (the void the concealed wall mount sits in) | −16 |
+| − back panel thickness | −19 |
+| − shelf-front step-back | −10 |
+| **= shelf depth** | **255** ✓ |
+
+**Exactly what `05-SHELF-1` and `06-SHELF-2` carry.** The chain closes to the millimetre.
+
+**The two step-backs are specification, not incidental, and they belong on every unit's spec card.** The
+16 mm exists to leave a void between the back panel and the wall for the **Häfele concealed wall mount** —
+a hardware decision driving a panel dimension, which is precisely the sort of figure that gets "tidied up"
+by someone later if it is not written down anywhere.
+
+**It also ties this geometry to work already in the KB.** The Häfele Concealed Cabinet Hanger is one of
+the two hardware items added to SmartCabinet's Wall Support Cam Table on 2026-09-16 — the session that
+raised **T017**, the unresolved X-sign discrepancy between those two items. The 16 mm set-back is that
+hardware choice showing up as a panel dimension.
+
+*Recorded as a labelled reading, because it affects nothing:* running the chain backwards, the 300 mm
+unit's 266 needs the two step-backs to total 15 mm and the 600 mm unit's 256 needs 25, which both fit a
+15 mm back step-back with the shelf step-back going **0 → 10 → 10** and the back step-back later
+**15 → 16**. That is my arithmetic, not something the owner stated — offered because it reads as iteration
+rather than inconsistency, and ignorable either way.
+
+**T024 stays open on its other half.** `07-BACK-1` and `07-BACK-1B` are the same blank (862 × 562 × 19),
+both in the cut list, with programs of 60,458 and 11,994 bytes — and **neither earlier unit has a second
+back at all**. Worth re-asking now that the back is known to sit in a 16 mm void for a hanger, since a
+hanger usually wants the back notched or cut. **Not asserted**, and the owner has not said.
 
 ## Still open at session end
 
-- **T025 — the fixing decision.** Was Cabineo X chosen, or did it arrive by default? Nothing records a
-  decision, a purchase or a trial. Everything else about the library waits behind this and T016.
-- **T016** — now understood as the Cabineo X tooling being half-defined, and a precondition for the
-  library rather than one machine's fault.
-- **T024 — shelf depth 255 / 256 / 266 mm** across three 300 mm-deep carcases.
+- **T016** — now understood as the Cabineo X tooling being half-defined, and **software-only**: the
+  library's one remaining blocker, though a less severe one than it looked, because Plan B exists.
+- **T024's remainder — the two backs** on one blank in the master.
 - **T027 — what was the problem with the 35 mm head?**
 - **T029's remainder** — which edges are edged; the pre-mill setting and the tape it is set for.
 - **Four of the five unit types have no master at all.** The owner's range is wall, base, sink,
