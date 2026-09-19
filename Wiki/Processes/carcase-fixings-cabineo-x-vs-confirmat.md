@@ -271,7 +271,9 @@ the range needs, at minimum: **board** (by sheet, with a real waste factor from 
 units), **machine time** and **assembly labour**. None of those are in this KB yet.
 
 **The board line is the one to build first**, because it dominates and because the master's own
-nesting files already carry the sheet size — and because of the contradiction in the next section.
+nesting files already carry the sheet size — **2800 × 2070 × 19**, cut on the F45. What is still
+missing for it is the **yield**: how many units come off a sheet in practice, which depends on what the
+saw operator actually works from (see Open questions).
 
 ## Open questions
 
