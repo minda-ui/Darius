@@ -16,6 +16,12 @@ git alone for a day while that was *judged* rather than tested, three times, by 
 moved **verbatim** — nothing was rewritten, re-ordered or summarised on the way, and the file is newest
 first like every other index here. **This file keeps the rules; that file keeps how they got here.**
 
+**The split broke four references, and they were found by looking rather than by reading the plan.** §7 cited
+*"the v21 note at the top of this file"* and the v13, v15 and v21 notes by name — pointers that resolved before
+the move and dangled after it. All four now name `Outputs/charter-version-history.md`. **A move is not finished
+when the bytes arrive; it is finished when everything that pointed at them still resolves** — §3's *sweep a
+correction through every store* applied to a file's own internal citations. Nothing else in §7 changed.
+
 **The standing rule from here: the charter carries the current version's note only.** When v28 lands,
 this v27 note moves to the history file. That keeps the charter bounded instead of growing by about
 1.5 KB a version forever, and it is §3's *put a fact where its own update cycle lives* turned on the
@@ -634,7 +640,7 @@ the owner/Victoria; only the cover page has been seen.
   Tools & Compressors Ltd (Long Eaton, Nottingham), **14/11/2023**, **£9,696.00 net / £11,635.20 inc
   VAT**, billed to Fishbone Drylining Ltd. **Delivered to Unit 32**, with the three machines it feeds —
   *not* Unit 31, although the proforma prints "delivery as per inv address" against a Unit 31 address;
-  that is the billing address, and the owner corrected the point on 2026-09-18 (see the v15 note).
+  that is the billing address, and the owner corrected the point on 2026-09-18 (see the v15 note in `Outputs/charter-version-history.md`).
   **Two model designations, not
   reconciled:** the plate reads `GENESIS 15 500L`, the proforma reads `GENESIS C67` — the *product
   number* is identical on both and is what identifies the machine; every figure agrees, only the string
@@ -645,7 +651,7 @@ the owner/Victoria; only the cover page has been seen.
   **air receiver's pressure-system position is unestablished** (Task T021). **The 5.4 bar gauge reading
   is not a concern and never was** — the compressor was switched off when photographed (owner,
   2026-09-17), so that was residual receiver pressure, not line pressure; *v11 and v12 of this file
-  presented it as a finding, which was wrong (see the v13 note)*. The plate rates 10 bar against a
+  presented it as a finding, which was wrong (see the v13 note in `Outputs/charter-version-history.md`)*. The plate rates 10 bar against a
   highest stated demand of 8 bar, so the compressor is not the limitation; what each machine receives
   under load is simply unmeasured — routine verification, **not** the follow-up to a suspected fault.
   F-Gas: 0.32 tonnes CO₂e is far below the 5-tonne leak-check threshold, so charge size triggers no
@@ -690,7 +696,7 @@ the owner/Victoria; only the cover page has been seen.
 - **Closing T016 (2026-09-19)** — `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`: the two-step fix
   at the **Vitap**, the verification test on `03-BOTTOM.TCN`, why the Through-bore workaround must not
   be used to close it, and **the correction to what T016 was said to be** — see the T016 bullet below
-  and the v21 note at the top of this file.
+  and the v21 note in `Outputs/charter-version-history.md`.
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
   Machinery Register's `Asset Label No.` column, documented in
   `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
@@ -834,7 +840,8 @@ the owner/Victoria; only the cover page has been seen.
   **parametrically** from a width, which would make the whole folder question smaller than it looks.
   See `Wiki/Software/kitchen-unit-library.md`.
 - **`T016` is the library's remaining blocker — and the fix is at the Vitap, not on the design
-  computer.** *v18–v20 of this file said the opposite and were wrong; see the v21 note.* **The Vitap is
+  computer.** *v18–v20 of this file said the opposite and were wrong; see the v21 note in
+  `Outputs/charter-version-history.md`.* **The Vitap is
   not missing a Ø5 tool: it has five.** Blind Ø5 mm sits on bushes 6–10, all at **ID 0**, so
   diameter + type resolution has five candidates and no tie-break — which is the whole fault. **Two
   steps close it**, both in TpaCAD's per-position Technology dialog and the failing program: give one
