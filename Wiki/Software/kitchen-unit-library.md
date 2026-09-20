@@ -4,7 +4,7 @@ category: Software
 status: draft
 sensitive: false
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-20
 sources:
  - "Google Drive folder `Furniture` (1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1), listed 2026-09-18"
  - "`AMFA Wall Unit 600 RH/worklist.xmlst` (1uJ3LlrN6yWe9USvPIvJTa50SehARoTFh), decoded 2026-09-18"
@@ -12,6 +12,10 @@ sources:
  - "`300mm Wall unit/worklist.xmlst` (1pBz_N2ty5_0UVuCVSpYx-smioTbD5W3u) and `600mm Wall unit/worklist.xmlst` (1k98zBX7Safi_foFnYsyD5ZznJX2QefXD), decoded and compared 2026-09-18"
  - "Owner (Minda), 2026-09-18: the AMFA unit is the master design for basic kitchen units"
  - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
+ - "Owner (Minda), 2026-09-20: the furniture library has been updated"
+ - "Google Drive folder `Furniture` (1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1), re-listed 2026-09-20 - 18 subfolders"
+ - "`AMFA Wall Unit 300 LH/worklist.xmlst` (15nS-7JwyJLlQvKs4rgXLky4wYkhJjWvu), `AMFA Wall Unit 300 LH 900/worklist.xmlst` (1uoicHChsfMCSPQW0FWWnM9ngKCA6XYDB) and `AMFA Wall Unit 500 LH 900 high/worklist.xmlst` (1MHpMdj_LJG3oP7SSwiq5gqxZ6Clcr-QY), decoded 2026-09-20"
+ - "`AMFA Wall Unit 300 LH/03-BOTTOM.TCN` (1wU6ema5eXeDSEEtvbm0kHsge0Cg7u32C), decoded 2026-09-20"
  - "Owner (Minda), 2026-09-19: the earlier folders are a different, earlier design; `AMFA 600mm wall unit RH` is the latest release; 10 mm step-back for the shelf front and 16 mm step-back for the back panel to accommodate a Häfele concealed wall mount"
 related:
  - ../Software/smartcabinet-and-production-workflow.md
@@ -25,16 +29,29 @@ related:
 
 # Kitchen unit library (low-cost range)
 
-**Status: started, nothing built.** The owner asked on 2026-09-18 for a library of low-cost kitchen
-units, having already made one unit by hand on Drive, and confirmed that **`AMFA Wall Unit 600 RH`
-is the master design**. This article records what exists today, what the master actually contains
-(read out of the files, not assumed), what has to be decided before a second unit is cut, and the
-one library-wide risk that is already visible. It does not create anything: no folder on Drive has
-been moved, renamed or added, because the shape of the range is a commercial decision and the filing
-is the owner's.
+**Status: sixteen wall units now exist, in two heights — built by the owner, not by this KB.** The
+owner asked on 2026-09-18 for a library of low-cost kitchen units, having already made one by hand on
+Drive, and confirmed that **`AMFA Wall Unit 600 RH` is the master design**. **On 2026-09-19 and
+2026-09-20 the owner built the range out**: the `Furniture` folder went from seven subfolders to
+**eighteen**, sixteen of them library units. This article records what exists today, what the files
+actually contain — **measured from the part sizes, not read off the folder names** — what has to be
+decided, and the one library-wide risk that is still unresolved. **This KB has created, moved and
+renamed nothing on Drive**: the shape of the range is a commercial decision and the filing is the
+owner's.
 
 ## Key facts
 
+- **Sixteen library units exist as of 2026-09-20**, in two height families — **seven at 720 mm** and
+  **eight at 900 mm** (the master being one of the 900s). Both heights were **measured**, not inferred
+  from the folder names; §3's *a model name is not a specification* applies to a folder name too.
+- **The two families are not distinguishable by name.** An unsuffixed `AMFA Wall Unit <width> <hand>`
+  means **720** in seven folders and **900** in the master. That collision is the one thing here that
+  can put the wrong carcase on the saw — see "The two height families" below.
+- **The new units carry no nesting sheets.** Nine part files each, against the master's eleven rows:
+  the two 2800 × 2070 `NESTING` rows are gone. That is the separation this article argued for on
+  2026-09-18 and the production route evidenced on 2026-09-19, now done in the files themselves.
+- **The 255 mm shelf holds across every width and height measured**, so the `300 − 16 − 19 − 10` depth
+  chain and both step-backs are confirmed as **range specification**, not one unit's quirk.
 - **The master is `AMFA Wall Unit 600 RH`** (Drive `1HHPym8Y04_s2VUYYwVy89hBQ4boabZxv`, created
   2026-09-16 13:45). Owner's decision, 2026-09-18. Four earlier folders — `300mm`, `400mm`, `500mm`
   and `600mm Wall unit`, all created 2026-09-16 around 10:22 — are **not** the master, and the
@@ -54,23 +71,76 @@ is the owner's.
 
 ## What is on Drive today
 
-The `Furniture` folder sits at the root of the owner's Drive (not inside this KB's folder tree) and
-holds seven subfolders. Listed 2026-09-18:
+The `Furniture` folder sits at the root of the owner's Drive (not inside this KB's folder tree). It
+held **seven** subfolders when this article was written; re-listed 2026-09-20 it holds **eighteen**.
 
-| Folder | Created | Contents | Read as |
+| Folders | Created | Contents | Read as |
 |---|---|---|---|
-| `AMFA Wall Unit 600 RH` | 16 Sep 13:45 | 11 `.TCN` + `.fnm` + `worklist.xmlst` | **the master** |
-| `600mm Wall unit` | 16 Sep 10:23 | 8 `.TCN` + `.fnm` + `worklist.xmlst` | earlier attempt |
-| `500mm Wall unit` | 16 Sep 10:22 | 8 `.TCN` + `.fnm` + `worklist.xmlst` | earlier attempt |
-| `400mm Wall unit` | 16 Sep 10:22 | 8 `.TCN` + `.fnm` + `worklist.xmlst` | earlier attempt |
-| `300mm Wall unit` | 16 Sep 10:21 | 8 `.TCN` + `.fnm` + `worklist.xmlst` | earlier attempt |
-| `ANVAR_KITCHEN_V2` | 15 Sep 10:22 | not opened | customer job |
-| `ANVAR_KITCHEN_V3` | 16 Sep 08:47 | not opened | customer job |
+| `AMFA Wall Unit 300/400/500 LH+RH`, `600 LH` — **7** | 19 Sep 11:50–11:53 | 9 `.TCN` + `.fnm` + `worklist.xmlst` | library units, **720 high** |
+| `AMFA Wall Unit 300/400 LH+RH`, `500 RH`, `600 LH+RH` **+ 900** — **7** | 20 Sep 05:49–05:51 | 9 `.TCN` + `.fnm` + `worklist.xmlst` | library units, **900 high** |
+| `AMFA Wall Unit 500 LH 900 high` — **1** | 19 Sep 14:43 | 9 `.TCN` + `.fnm` + `worklist.xmlst` | library unit, **900 high**; the odd name out |
+| `AMFA Wall Unit 600 RH` — **1** | 16 Sep 13:45 | 11 `.TCN` + `.fnm` + `worklist.xmlst` | **the master**, 900 high, still carries nesting |
+| `ANVAR_KITCHEN_V2`, `ANVAR_KITCHEN_V3` — **2** | 15/16 Sep | not opened | customer jobs |
+
+**The four `300mm`/`400mm`/`500mm`/`600mm Wall unit` folders are gone** — they are no longer children
+of `Furniture`. The replacement folders carry **fresh creation times**, so the four were removed rather
+than renamed. *Recorded, not queried:* they were the evidence base for the 266 / 256 / 255 shelf-depth
+comparison below, which is why that comparison is kept here in full. **This article is now the only
+record of what those files contained.**
 
 **The two `ANVAR_KITCHEN_*` folders were deliberately not opened.** A customer name on a folder is
 enough to treat the contents as client data, and this KB's rule is **cite, never copy client data**.
 They are listed here because their presence in the same folder as the library units is itself the
 problem described under "What has to be decided".
+
+## The two height families, and a naming collision
+
+**Heights are not stated in any file, and were not taken from the folder names.** They fall out of the
+same arithmetic the master's nominal was derived from: a side's `LENGTH` is the overall height minus
+two 19 mm panels, and the door is the overall height minus a 4 mm gap. Three worklists were decoded in
+full on 2026-09-20:
+
+| Unit | Side | Bottom | Shelf | Back | Door | → nominal |
+|---|---|---|---|---|---|---|
+| `AMFA Wall Unit 300 LH` | 682 × 300 | 300 × 300 | 261 × 255 | 682 × 262 | 716 × 297 | **300 × 720 × 300** |
+| `AMFA Wall Unit 300 LH 900` | 862 × 300 | 300 × 300 | 261 × 255 | 862 × 262 | 896 × 297 | **300 × 900 × 300** |
+| `AMFA Wall Unit 500 LH 900 high` | 862 × 300 | 500 × 300 | 461 × 255 | 862 × 462 | 896 × 497 | **500 × 900 × 300** |
+
+682 + 38 = **720**; 862 + 38 = **900**. Every other rule from the master reproduces unchanged — back =
+width − 38, shelf = back − 1, door = (height − 4) × (width − 3), shelf depth 255 throughout. **Four
+widths and two heights now agree with one piece of arithmetic**, which is considerably better evidence
+for the derivation than the three-unit comparison that first supported it.
+
+**And that is where the problem is.** The seven folders built on 19 September are **720** high and
+carry no height in their names. The master, `AMFA Wall Unit 600 RH`, is **900** high and also carries
+no height in its name. So an unsuffixed name means two different things in the same folder:
+
+- `AMFA Wall Unit 600 LH` → **720 high**
+- `AMFA Wall Unit 600 RH` → **900 high**
+
+**180 mm apart, same naming pattern, nothing to tell them apart but the hand.** Picking "600 RH" for a
+720 kitchen yields a 900 carcase, and because nothing upstream of the saw states a unit's height, the
+error surfaces as cut board rather than as a warning. *This is the shape §3 keeps naming — a fact that
+exists in the files and nowhere in the label.* **Two further consequences of the same scheme:**
+
+- **`AMFA Wall Unit 600 RH 900` now also exists**, describing the same nominal unit as the master.
+  Two folders for one unit invites the wrong one being copied.
+- **`AMFA Wall Unit 500 LH 900 high`** is the only folder using ` high`; its seven siblings say `900`.
+  Measured, it is an ordinary 500-wide 900-high LH unit — **a name to tidy, not a unit to re-cut.**
+
+**Proposed, not done** (the filing is the owner's): put the height on **every** folder, including the
+720s, and retire or rename the unsuffixed master. That is one renaming pass now against an open-ended
+risk of cutting the wrong height later.
+
+### Coverage
+
+| Height | 300 | 400 | 500 | 600 | |
+|---|---|---|---|---|---|
+| **720** | LH RH | LH RH | LH RH | LH — | **7 of 8** |
+| **900** | LH RH | LH RH | LH RH | LH RH | **8 of 8** |
+
+The **720 set has no `600 RH`**. Deliberate, or an oversight? One folder either way, and worth knowing
+before someone quotes a range that cannot be cut.
 
 ## What the master contains
 
@@ -233,6 +303,15 @@ fixing one catalog entry once is cheap; re-cutting a range is not.
 with the shop's **tool ID 1002** (the 12 mm cutter) in the 2026-09-18 hinge-cup question. Same four
 digits, unrelated things.
 
+**Re-checked 2026-09-20 against a unit built after this was written — unchanged, and now sixteenfold.**
+`03-BOTTOM.TCN` from `AMFA Wall Unit 300 LH` was decoded in full: six Ø5 holes, every one reading
+`#1002=5 … #1001=0`, the same diameter-without-tool export as the master. **The prediction above was
+tested on files that did not exist when it was made, and held.** What changes is arithmetic, not
+diagnosis — the fix is still the two steps at the Vitap in
+`../Processes/tpacad-blind-bore-tool-id-fix.md`, still done once, and it now stands between the shop
+and **sixteen** units rather than one. *The severity revision of 2026-09-19 also still stands: with
+confirmat in stock as Plan B, T016 slows a job rather than stopping it.*
+
 ## What is worth keeping
 
 The part-file convention in the master is the strongest thing here and should survive into whatever
@@ -250,21 +329,30 @@ structure is chosen:
 These are the owner's calls, not Darius's, and the library should not be built on a guess about any
 of them.
 
-1. **The range.** Which unit types (wall, base, tall), which widths, and whether the earlier
-   `300`/`400`/`500`/`600mm Wall unit` folders are to be regenerated from the master or kept.
+1. **The range.** ~~Which widths~~ — **answered in the files 2026-09-20: 300, 400, 500 and 600, both
+   hands, at 720 and 900.** What is still open is **which unit types beyond the wall unit** (base,
+   sink, appliance housing, tall), and **whether both heights are the range** or one of them is a
+   trial. The earlier `300`–`600mm Wall unit` folders are no longer on Drive, so that part is moot.
 2. **"Low cost" — a name or a specification?** If it denotes a defined carcase spec (board grade,
    back thickness, edging, hinge and fixing type), that spec belongs in this article and every unit
    is checked against it. If it is just a range name, say so and nothing further is needed.
-3. **Hand.** The master is `RH`. If hand is part of the unit's identity it goes in the unit code; if
-   a unit is mirrored at job time (`MIRROR` is a column in the worklist and is `0` throughout the
-   master), it does not.
+3. **Hand.** ~~If hand is part of the unit's identity…~~ — **answered in practice 2026-09-20**: both
+   hands exist as separate folders and `MIRROR` is `0` in every row of every worklist decoded, so
+   nothing is being mirrored at job time. **Hand is part of the unit's identity.** *Recorded as what
+   the files do, not as a decision the owner has stated* — Task **T023** still wants it confirmed,
+   because the alternative (one folder per width, mirrored on demand) would halve the library.
 4. **Where the library lives.** Library units and customer jobs currently share one folder. A library
    unit that is edited for a job stops being a library unit. Separating them is the single change with
    the most value and the least cost.
 
 ## Proposed structure
 
-Offered for approval; **not created.**
+Offered for approval; **not created — and partly overtaken by events.** The owner's own convention,
+visible in the folders since 2026-09-19, is `AMFA Wall Unit <width> <hand> [height]` rather than the
+`W600-RH` code proposed below. **That is a decision, and this article follows it**; what survives from
+the proposal is its *content* — a `unit.md` per unit, and library separated from jobs — not its naming.
+The one change still worth making to the owner's scheme is putting the height on **every** folder, for
+the reason given under "The two height families".
 
 ```
 Furniture/
@@ -295,16 +383,23 @@ was derived from. Without it a library unit cannot be quoted, costed or checked 
 
 ## Open questions
 
-- Is the derived nominal **600 × 900 × 300** right? Everything above rests on it.
+- Is the derived nominal **600 × 900 × 300** right? Everything above rests on it. *Corroborated again
+  2026-09-20*: the same arithmetic reproduces 300 × 720 × 300, 300 × 900 × 300 and 500 × 900 × 300 from
+  three independently built units — four widths and two heights now agreeing with one derivation.
 - **Two backs** (`07-BACK-1`, `07-BACK-1B`) on one blank — deliberate, or a stray file in the cut list?
+  **Still open, and now replicated in all sixteen units**, so it is worth one question rather than
+  sixteen corrections.
+- **The 720 set has no `600 RH`** — seven of eight, where the 900 set has all eight.
+- **Is the master now redundant?** `AMFA Wall Unit 600 RH` and `AMFA Wall Unit 600 RH 900` describe the
+  same nominal unit.
 - ~~**Which shelf depth is right — 255, 256 or 266?**~~ — **answered 2026-09-19: 255, and it is
   derivable** as `300 − 16 − 19 − 10`. The earlier folders are an earlier design, not a defect.
-- **The four `300`–`600mm Wall unit` folders are a superseded design** (owner, 2026-09-19). Keep or
-  archive is still a filing call, but they should **not** be used as the basis for anything, and they are
-  not candidates for regeneration — the range is regenerated from the master.
-- **Do the other widths need the same two step-backs?** 16 mm at the back and 10 mm at the shelf front
-  are depth-side figures, and depth does not change with width — so they should carry across unchanged.
-  Worth confirming once rather than assuming across five unit types.
+- ~~**The four `300`–`600mm Wall unit` folders are a superseded design**~~ (owner, 2026-09-19) —
+  **they are no longer in the `Furniture` folder as of 2026-09-20**, removed rather than renamed.
+- ~~**Do the other widths need the same two step-backs?**~~ — **answered by measurement 2026-09-20**:
+  every unit decoded carries a **255 mm** shelf at 300 deep, across two widths and both heights. The
+  depth-side figures do carry across unchanged, as predicted. *Still untested on any unit type other
+  than a wall unit, because none exists yet.*
 - Is the **19 mm back and 19 mm door** intended for a low-cost range, or inherited from the master
   being drawn as a one-off?
 - Does SmartCABINET generate a unit's parts **parametrically** from a width? If it does, the library
