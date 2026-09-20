@@ -17,6 +17,7 @@ related:
  - ../Machinery/altendorf-f45-panel-saw.md
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Processes/tpacad-interpolated-holes.md
+ - ../Processes/library-batch-production.md
 ---
 
 # The panel production route

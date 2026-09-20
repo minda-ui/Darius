@@ -16,6 +16,8 @@ sources:
  - "Google Drive folder `Furniture` (1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1), re-listed 2026-09-20 - 18 subfolders"
  - "`AMFA Wall Unit 300 LH/worklist.xmlst` (15nS-7JwyJLlQvKs4rgXLky4wYkhJjWvu), `AMFA Wall Unit 300 LH 900/worklist.xmlst` (1uoicHChsfMCSPQW0FWWnM9ngKCA6XYDB) and `AMFA Wall Unit 500 LH 900 high/worklist.xmlst` (1MHpMdj_LJG3oP7SSwiq5gqxZ6Clcr-QY), decoded 2026-09-20"
  - "`AMFA Wall Unit 300 LH/03-BOTTOM.TCN` (1wU6ema5eXeDSEEtvbm0kHsge0Cg7u32C), decoded 2026-09-20"
+ - "Owner (Minda), 2026-09-20: the side elements are the same through all units; only up, bottom and back are width-specific"
+ - "Side programs diffed as exact bytes 2026-09-20 - see `../Processes/library-batch-production.md` for the measurement and what it makes possible"
  - "Owner (Minda), 2026-09-19: the earlier folders are a different, earlier design; `AMFA 600mm wall unit RH` is the latest release; 10 mm step-back for the shelf front and 16 mm step-back for the back panel to accommodate a Häfele concealed wall mount"
 related:
  - ../Software/smartcabinet-and-production-workflow.md
@@ -25,6 +27,7 @@ related:
  - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
  - ../Processes/panel-production-route.md
  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+ - ../Processes/library-batch-production.md
 ---
 
 # Kitchen unit library (low-cost range)
@@ -44,6 +47,12 @@ owner's.
 - **Sixteen library units exist as of 2026-09-20**, in two height families — **seven at 720 mm** and
   **eight at 900 mm** (the master being one of the 900s). Both heights were **measured**, not inferred
   from the folder names; §3's *a model name is not a specification* applies to a folder name too.
+- **The side is the only width-invariant part, and it is identical down to the byte.** Measured
+  2026-09-20 on the owner's observation: `01-SIDE-LEFT.TCN` from the 300-wide and the 500-wide 900-high
+  units are **byte-identical**, same sha256. Hand is a **mirror about the panel centre**, differing by
+  one character. **Two blanks — 862 × 300 and 682 × 300 — cover every side in the library**, and the
+  side is the *most machined* part while the seven that vary are plain panels. What that makes possible
+  is set out in `../Processes/library-batch-production.md`.
 - **The two families are not distinguishable by name.** An unsuffixed `AMFA Wall Unit <width> <hand>`
   means **720** in seven folders and **900** in the master. That collision is the one thing here that
   can put the wrong carcase on the saw — see "The two height families" below.
@@ -406,4 +415,8 @@ was derived from. Without it a library unit cannot be quoted, costed or checked 
   is a list of parameters and this whole folder question is smaller than it looks. Nothing seen so far
   answers it, and it bears on the SmartCABINET-ERP question already open in `CLAUDE.md` §7.
 - **T016 first.** See the risk section — the library should not be populated over an unresolved
-  tool-resolution fault.
+  tool-resolution fault. *Batching makes this sharper, not softer* — see
+  `../Processes/library-batch-production.md`.
+- **Does the Vitap apply `MIRROR` from the worklist?** Every worklist decoded carries `MIRROR = 0` while
+  SmartCABINET emits pre-mirrored files for the opposite hand. If the machine honours the column, the
+  four side programs per height collapse to two. **Unverified**; a ten-minute test at the machine.

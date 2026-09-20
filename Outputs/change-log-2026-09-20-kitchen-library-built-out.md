@@ -152,3 +152,82 @@ what it found.
 - **Whether SmartCABINET generates parts parametrically from a width** — sixteen folders that differ
   only by width and height is either sixteen hand-built units or one parametric definition exported
   sixteen times, and which it is decides whether a library is a folder tree or a parameter list.
+
+---
+
+## The owner's observation, measured — and what it opens up
+
+Later the same day: *"Mostly side elements are same through all units, it's only up, bottom and back
+which are specific to width. Would that make a help for us to cope with bigger load on workshop?"*
+
+**Measured rather than accepted, and it turned out to be stronger than stated.**
+
+### The side is width-invariant to the byte
+
+`01-SIDE-LEFT.TCN` was downloaded as exact bytes from `AMFA Wall Unit 300 LH 900` and from
+`AMFA Wall Unit 500 LH 900 high` and diffed:
+
+```
+IDENTICAL - byte for byte     sha256 ac79530d4aa8ba14…   (both 20,400 B)
+```
+
+**Not the same blank — the same program.** Same Ø10 row, same Ø5 row, same routed pockets. Every
+coordinate in the file is referenced to the side's own 862 × 300 face, so nothing in it *can* depend on
+carcase width. *A size match would have proved nothing (§3); this is a diff of decoded bytes.*
+
+**One correction to the observation, and it matters for the arithmetic:** shelves and the door are
+width-specific too. **Two parts of nine are constant; seven vary.**
+
+### Hand is a mirror, not a redesign
+
+`300 LH`'s left side against `300 RH`'s right side — 172 lines each, same operations, every X reflected
+about 431:
+
+| Feature | LH left | RH right | check |
+|---|---|---|---|
+| Ø10 row | 71, 103, 135 | 791, 759, 727 | 862 − 71 = 791 |
+| fitting macro 1 | 676.2 → 484.2 | 185.8 → 377.8 | 862 − 676.2 = 185.8 |
+| fitting macro 2 | 382.6 → 190.6 | 479.4 → 671.4 | 862 − 382.6 = 479.4 |
+| Ø5 row | 50, 304, 558, 812 | 50, 304, 558, 812 | already symmetric |
+
+The Ø5 row mirrors onto itself. **The whole two-byte file-size difference is `71.0` becoming `791.0`.**
+
+So per height: **four side programs, two geometries, each with its mirror** — and the mirror is being
+baked in at export. Every worklist carries `MIRROR = 0` while SmartCABINET emits pre-mirrored files.
+**If the Vitap honours that column, four programs become two.** Unverified; ten minutes at the machine.
+
+### One more reading, offered as a reading
+
+Every routed setup carries **`#205=1002`** — a tool actually named, and 1002 is the shop's 12 mm cutter.
+Every drilled hole carries **`#1001=0`**. Consistent across three files. *The parameter indices are my
+reading and are not documented in the extract this KB holds*, but if it is right, **T016 is a
+drilling-only fault** — which would explain why the routed pockets have never been what failed.
+
+### The proposal
+
+Written up as **`Wiki/Processes/library-batch-production.md`** — *measured findings, proposed method,
+nothing adopted.* The shape of it: **the constant part is the most machined one, and the seven that
+vary are plain panels**, which is precisely the condition that lets the expensive half be pre-built and
+the cheap half made to order.
+
+- **Two blanks cover every side in the library** — 862 × 300 and 682 × 300. At 18 and 24 per sheet
+  respectively (*my arithmetic, 4 mm kerf, before trim*), **one sheet of sides is nine to twelve units'
+  worth of the hard part.**
+- **Batching by part type instead of by unit** takes a 12-unit kitchen across four widths from
+  **108 program loads to 32**, and needs **no change to any file** — only to the order of work.
+- It **adds no capacity**: one saw, one bander, one borer, in series. It removes changeover and enables
+  a buffer.
+- Risks recorded rather than glossed: **stock obsolescence** (the back step-back has already moved
+  15 → 16 mm once), **WIP storage**, **labelling** (barcode Phase 1, waiting on T022), and the fact that
+  **batch errors scale** — a wrong setup ruins 24 parts, not 2, so a first-off check stops being
+  optional.
+- **T016 gets sharper under batching, not softer**, and the systemic half matters more.
+
+### A rule obeyed on its author
+
+The new article's `related:` block initially pointed at six articles; the link-graph check reported
+**five asymmetric edges** — the exact debt closed on 2026-09-19. Rather than leave them or silently
+edit five more articles, the block was **trimmed to the two that are genuinely bidirectional**
+(`kitchen-unit-library`, `panel-production-route`, the latter given its back-link), with the rest kept
+as ordinary body citations. Graph re-checked: **138 directed edges = 69 symmetric pairs, 0 asymmetric,
+0 dangling, 0 self.** 32 articles.
