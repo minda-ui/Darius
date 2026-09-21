@@ -10,10 +10,38 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v26 (2026-09-20)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v27 (2026-09-21)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 ---
+
+**Changed in v27 — the version history moved out, because this file had outgrown its own upkeep rule.**
+At v26 the charter reached **110,025 bytes**, and Drive has no patch API: every version is a full
+re-emission of the whole file. The largest transfer this KB has ever verified is **88,778 bytes**, so the
+charter could no longer be reliably written to the store §1 calls the source of truth — and v26 sat in
+git alone for a day while that was *judged* rather than tested, three times, by a file that carries
+*a limitation is a property of the call you made* in its own §3.
+
+**The `Changed in vNN` notes, v8 through v26, now live in `Outputs/charter-version-history.md`.** They
+moved **verbatim** — nothing was rewritten, re-ordered or summarised on the way, and the file is newest
+first like every other index here. **This file keeps the rules; that file keeps how they got here.**
+
+**The split broke four references, and they were found by looking rather than by reading the plan.** §7 cited
+*"the v21 note at the top of this file"* and the v13, v15 and v21 notes by name — pointers that resolved before
+the move and dangled after it. All four now name `Outputs/charter-version-history.md`. **A move is not finished
+when the bytes arrive; it is finished when everything that pointed at them still resolves** — §3's *sweep a
+correction through every store* applied to a file's own internal citations. Nothing else in §7 changed.
+
+**The standing rule from here: the charter carries the current version's note only.** When v28 lands,
+this v27 note moves to the history file. That keeps the charter bounded instead of growing by about
+1.5 KB a version forever, and it is §3's *put a fact where its own update cycle lives* turned on the
+charter's own history — the same move v18 made with the article counts. Owner's instruction, 2026-09-21.
+
+**Raised on the Hub rather than only solved here** — `HL-0030`, Help & Lessons. The split fixes this KB;
+it is not an estate answer. Every seat's charter grows the same way and Drive's missing patch API is not
+a Darius problem, so the question of what the estate should actually do is open and assigned to nobody
+yet. v26 (git `b066777`) never reached Drive, so **v27 is the first version of this file to be published
+since v25.**
 
 **Changed in v26 — two estate-wide rules arrive, and they arrive by the route they describe.** A
 hand-off note from **Alex** (Housekeeping & Operations Steward) appeared in `Raw/` on 2026-09-20 at

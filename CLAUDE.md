@@ -1,37 +1,39 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 27 — 2026-09-21.** Structure and conventions modelled on the Fishbone Commercial
+**Version 28 — 2026-09-21.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
 
-**Changed in v27 — the version history moved out, because this file had outgrown its own upkeep rule.**
-At v26 the charter reached **110,025 bytes**, and Drive has no patch API: every version is a full
-re-emission of the whole file. The largest transfer this KB has ever verified is **88,778 bytes**, so the
-charter could no longer be reliably written to the store §1 calls the source of truth — and v26 sat in
-git alone for a day while that was *judged* rather than tested, three times, by a file that carries
-*a limitation is a property of the call you made* in its own §3.
+**Changed in v28 — a lesson about tense, and the registers split the way this file did one day ago.**
+Two owner instructions in one line (*"Yes split registers and add that §3 lesson"*), and the second one is
+**the v27 rule working for the first time**: this note is here because v27's moved out to
+`Outputs/charter-version-history.md` on its own terms, not because anyone remembered to do it.
 
-**The `Changed in vNN` notes, v8 through v26, now live in `Outputs/charter-version-history.md`.** They
-moved **verbatim** — nothing was rewritten, re-ordered or summarised on the way, and the file is newest
-first like every other index here. **This file keeps the rules; that file keeps how they got here.**
+**First: §3 gains *an absence is only an absence as of a timestamp*.** v26 checked the Workforce Hub for
+Darius-assigned rows, found none, and wrote that into this charter as a standing fact. **`AWT-0045` was
+created four minutes after the commit** — so the sentence was true when written and false before anyone
+could read it. **The mistake was never the checking**; it was recording a point-in-time observation in a
+durable document with no timestamp on it. *Proposed at v27 rather than added, approved at v28 — the fourth
+lesson to take that route*, after v18's count fix, v19's order clause and v25's measurement clause.
 
-**The split broke four references, and they were found by looking rather than by reading the plan.** §7 cited
-*"the v21 note at the top of this file"* and the v13, v15 and v21 notes by name — pointers that resolved before
-the move and dangled after it. All four now name `Outputs/charter-version-history.md`. **A move is not finished
-when the bytes arrive; it is finished when everything that pointed at them still resolves** — §3's *sweep a
-correction through every store* applied to a file's own internal citations. Nothing else in §7 changed.
+**Second: `Outputs/kb-registers.md` is 99,517 → 64,231 bytes.** Its **Change-log entries** section —
+35,701 bytes, eighteen rows, append-only and never revised — now lives in `Outputs/change-log-index.md`,
+**moved verbatim, newest first**. The registers keep the three tables still worked on: Processed items,
+Wiki structure changes, Outputs produced. **Same diagnosis as v27, one file along**: pure history riding
+along with live rows inside a file Drive can only be written whole.
 
-**The standing rule from here: the charter carries the current version's note only.** When v28 lands,
-this v27 note moves to the history file. That keeps the charter bounded instead of growing by about
-1.5 KB a version forever, and it is §3's *put a fact where its own update cycle lives* turned on the
-charter's own history — the same move v18 made with the article counts. Owner's instruction, 2026-09-21.
+**The reference sweep ran first this time, and it is the only part of v27 worth copying.** `CLAUDE.md` §0
+and §4 and `README.md` all named `kb-registers.md` as where change logs are indexed; all three now name
+the new file. **One reference was deliberately left alone**: `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md`
+describes the *Fishbone house style as adopted on 2026-09-14* — it is a dated record of a decision, not a
+pointer to our current filing, and repointing it would misreport what was decided. *Cite the path for the
+thing; leave the record of what was true then alone.*
 
-**Raised on the Hub rather than only solved here** — `HL-0030`, Help & Lessons. The split fixes this KB;
-it is not an estate answer. Every seat's charter grows the same way and Drive's missing patch API is not
-a Darius problem, so the question of what the estate should actually do is open and assigned to nobody
-yet. v26 (git `b066777`) never reached Drive, so **v27 is the first version of this file to be published
-since v25.**
+**Two seats, two control files, two days — so the pattern is on the Hub, not just in here.** `HL-0030`
+carries both data points. **What is learnable is the shape**: append-only history inside a
+re-emitted-whole file is a size problem waiting to happen, and it is visible **before** the wall is hit by
+asking which sections of a file are ever revised.
 
 ## 0a. Who owns this KB — Darius
 
@@ -88,8 +90,8 @@ its Request asks for were still outstanding. *A receipt says the task landed; it
 
 Before doing anything — including a one-off question — read, in order:
 1. **The Workforce Hub** — Tasks & Requests, Darius's own Open / In Progress rows (§0b, Rule A).
-2. The newest entries in `Outputs/change-log-*.md` (newest-first index: `Outputs/kb-registers.md`,
-   section "Change-log entries").
+2. The newest entries in `Outputs/change-log-*.md` (newest-first index:
+   `Outputs/change-log-index.md`).
 3. The `pending` and `partial` rows of `Outputs/kb-registers.md`, section "Processed items".
 4. `Wiki/index.md` for what's already known.
 
@@ -176,6 +178,7 @@ Workshop of Furniture Making - Knowledge Base/
 │ └── Decisions/ — why this KB is shaped this way; numbers must be recounted, not trusted
 ├── Outputs/
 │ ├── kb-registers.md, change-log-YYYY-MM-DD-<slug>.md
+│ ├── change-log-index.md — every session's change log, newest first (v28)
 │ ├── charter-version-history.md — this file's own superseded version notes (v27)
 │ └── Correspondence/ — filed copy of every numbered document in scope
 └── Archive/ — superseded files, renamed with reason and date
@@ -485,6 +488,23 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
   the gap feels like closing the account of it. Owner's decision to add this, 2026-09-19 (*"Add that §3
   lesson at v25"*), after v24 proposed rather than added it — the same route the v18 count fix and the
   v19 order clause took.
+- **An absence is only an absence as of a timestamp.** v26 of this file stated that **no Tasks &
+  Requests row was assigned to Darius**. The check was real — the Hub was read between **21:01 and
+  21:25** on 2026-09-20 against `AWT-0036`, `AWT-0040` and `HL-0023` — and v26 was committed at
+  **21:25:14**. **`AWT-0045` was created at 21:29:36**, four minutes later. So the sentence was **true
+  when written and false before anybody could read it**, and it was sitting in a charter revised weekly.
+  **The mistake is not the checking, it is the tense**: a point-in-time observation was written down as
+  a standing fact. *And the first correction was wrong too* — it blamed Smartsheet's eventually
+  consistent search, when the timestamps show there was nothing yet to find; that claim was superseded
+  visibly on the row rather than quietly replaced. **This is *put a fact where its own update cycle
+  lives* arriving from the other side**: that lesson asks what invalidates a figure and how often, and
+  the answer for "nothing is assigned to me" is *at any moment, by somebody else, without telling you*.
+  **A negative finding is a measurement, so date it or do not write it down** — *"as of 21:25 on
+  2026-09-20, no row was assigned"* is durable and true forever; *"no row is assigned"* has a shelf life
+  of minutes. The same test catches *"no manual exists"*, *"nothing is in `Raw/`"* and *"the sheet is
+  empty"* — all of which this KB has written. Owner's decision to add it, 2026-09-21 (*"add that §3
+  lesson"*), after v27 proposed rather than added it: **the fourth lesson to take that route**, after
+  v18's count fix, v19's order clause and v25's measurement clause.
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
@@ -492,7 +512,12 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
 ## 4. Change log
 
 One file per session in `Outputs/`, named `change-log-YYYY-MM-DD-<slug>.md`, indexed newest-first in
-`Outputs/kb-registers.md`. Never a single growing `CHANGELOG.md`.
+`Outputs/change-log-index.md`. Never a single growing `CHANGELOG.md`.
+
+**That index was part of `kb-registers.md` until v28**, when it was split out for the same reason the
+charter's version history was split at v27: 35,701 bytes of append-only history riding along with rows
+that change, in a file re-emitted whole every session. `kb-registers.md` keeps Processed items, Wiki
+structure changes and Outputs produced — the three tables still worked on.
 
 ## 5. Automated processes
 

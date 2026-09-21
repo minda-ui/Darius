@@ -12,7 +12,8 @@ it is a separate, narrower KB rather than a folder inside the AMFA KB.
 
 - **Standing context and all rules:** `CLAUDE.md`. Read it before working here.
 - **Session memory:** the dated `change-log-*.md` entries in `Outputs/`, indexed newest-first in
-  `Outputs/kb-registers.md`. Read the newest entry and the pending rows of `Processed items` first.
+  `Outputs/change-log-index.md`. Read the newest entry, then the `pending` and `partial` rows of
+  `Processed items` in `Outputs/kb-registers.md`.
 - **Knowledge:** `Wiki/index.md` lists every article.
 - **Inputs:** `Raw/` (immutable source material). **Deliverables:** `Outputs/`.
   **History of replaced files:** `Archive/`.
