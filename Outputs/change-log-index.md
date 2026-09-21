@@ -45,4 +45,3 @@ Newest first.
 | 2026-09-15 | Session 3 - Invoice 100155 and the Hebrock F4's EC Declaration of Conformity processed: serial number and CE compliance confirmed, purchase details learned, asset code corrected FA2601 -> FA2301, second asset FA2302 (Inventair MK1 MTFA) registered, owning-entity question raised | `Outputs/change-log-2026-09-15-invoice-and-ce-declaration-processed.md` |
 | 2026-09-14 | Session 2 - Hebrock F4 next manual processed | `Outputs/change-log-2026-09-14-hebrock-f4-manual-processed.md` |
 | 2026-09-14 | Session 1 - Workshop of Furniture Making KB and Smartsheet workspace created | `Outputs/change-log-2026-09-14-initial-kb-setup.md` |
-
