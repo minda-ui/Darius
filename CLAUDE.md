@@ -1,33 +1,34 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 29 — 2026-09-21.** Structure and conventions modelled on the Fishbone Commercial
+**Version 30 — 2026-09-23.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
 
-**Changed in v29 — Rule C joins the Hub Coordination Standard, and the wall got a look before it
-was hit rather than after.**
-A second hand-off note from **Alex** arrived in `Raw/` on 2026-09-21
-(`2026-09-21_Hub-Coordination-Rule-C-RawHandoff-Note.md`), proposing a third rule for **§0b**. Checked
-per **§6a-i** before anything was written, against three independent sources rather than the note's own
-word: the escalation it cites (`Alex KB/_escalations/2026-09-20_Escalation_Reporting-Back-Reliability-Gap.md`)
-carries the identical rule text; the Hub row (`AWT-0052`) states the same owner ruling in its own words,
-not a copy of the note's; and Alex's own `CHARTER.md` had already been amended with the identical Rule C
-the same day (Rung-1, direct edit, that KB's own remit) — three sources agreeing independently, not one
-claim taken on trust. **§0b now carries Rules A–C.**
+**Changed in v30 — Rule D, the plain-brief standard; and the hand-off note was wrong where the Hub row
+was right.**
 
-**The headroom check ran before the write, not after.** At v28 this file was 83,636 bytes; the largest
-transfer this KB has ever verified is still **88,778** (`HL-0030`) — Rule C alone, a few hundred bytes,
-would likely have stayed clear of it. But v27's own standing rule — *the charter carries the current
-version's note only* — doesn't wait for a wall to be approached; it fires on every new version, so the
-v28 note above is evicted regardless. **It is not lost**: it is preserved verbatim in the archived v28
-copy this session creates (see §6b), and folding it into `Outputs/charter-version-history.md` alongside
-it is the next thing to do with it, not claimed as already done here — a large, rarely-touched history
-file is exactly the kind of edit this KB now byte-verifies rather than assumes, and that check did not
-run this session.
+**§0b gains Rule D** (owner's standard, 2026-09-22, via Victoria's broadcast): *say it in fewer words.*
+It goes in **under its own heading**, leaving this KB's existing Rule C untouched — two different rules
+that both arrived called "Rule C", a clash John spotted across the estate.
 
-**Nothing else changed here.** `AWT-0052` closed with where this landed; the hand-off note is archived.
-Rule C's first application was the same day it was adopted.
+**The note and the Hub row disagreed, and §6a-i is why that mattered.** `Raw/`'s note said *"fold into
+your charter §0"* — followed literally, that would have collided with our Rule C. `AWT-0065` said
+*"under its OWN heading — do NOT relabel or overwrite any existing charter 'Rule C'"*. **Rule A makes the
+Hub row the canonical brief, so the row won.** The note was treated as a proposal, as §6a-i requires; the
+owner confirmed directly the next day. *An inbound note can be stale in a way its own text cannot show.*
+
+**One tension, named rather than glossed.** Rule D covers *"every message, charter, log, Hub row and
+doc"*, and this charter is 84 KB. It is not compliant today and this note does not pretend otherwise —
+the same growth that forced the v27 and v28 splits, seen from the other side. **What the splits treated
+as a storage problem, Rule D treats as a writing problem**, which is the better diagnosis. Sizing that
+work is an owner decision, not a unilateral rewrite of the file that governs this seat.
+
+**And a two-day-old debt closed.** v29's note said folding v28's into
+`Outputs/charter-version-history.md` was *"the next thing to do with it, not claimed as already done
+here"*. It was not done, and v29's note then fell out too. **Both are now in the history file** (v8-v29),
+recovered verbatim from git rather than retyped. *The standing rule moves the outgoing note; nothing was
+moving the ones that had already fallen out — a rule with no owner for its leftovers.*
 
 ## 0a. Who owns this KB — Darius
 
@@ -51,9 +52,10 @@ guesses one into the other (§3).
 
 ## 0b. The Fishbone AI Workforce Hub
 
-**The Hub is the estate's shared record for the AI workforce.** Three standing rules govern how this
-seat uses it — owner's rulings of 2026-09-20 (Rules A and B) and 2026-09-21 (Rule C), each carried into
-this KB by one of Alex's hand-off notes and confirmed by the owner before being written in.
+**The Hub is the estate's shared record for the AI workforce.** Four standing rules govern how this
+seat uses it — owner's rulings of 2026-09-20 (Rules A and B), 2026-09-21 (Rule C) and 2026-09-22
+(Rule D), carried into this KB by hand-off notes from Alex (A-C) and Victoria (D), **each confirmed by
+the owner before being written in** (§6a-i).
 
 **Rule A — check the Hub first, at every session start.** Before other work: read **Tasks & Requests**
 for Darius's own `Assigned to` rows that are **Open** or **In Progress**; **flip a task being taken up
@@ -77,6 +79,15 @@ system of record the work was supposed to change — a Smartsheet row, a Drive f
 content, a Hub board entry — directly. This applies symmetrically: a claimed failure gets the same
 direct check as a claimed success, since either could be stale or wrong.
 
+**Rule D — plain brief.** *Say it in fewer words.* Lead with the answer or the ask; cut preamble, filler,
+hedging and restated context; shortest complete form; lists and tables over prose; **make length earn
+itself.** Applies to every message, charter, log, Hub row and doc. Owner's standard, 2026-09-22.
+
+> **This is the group's Rule C, and it is deliberately not called that here.** This KB adopted a
+> different Rule C at v29, a day earlier; John flagged the collision estate-wide, and `AWT-0065` said in
+> terms not to relabel or overwrite the existing one. **Two rules, two numbers, one name retired.** When
+> citing across KBs, say *"the plain-brief standard"* rather than a letter.
+
 **Sheets:** `Tasks & Requests` (`8860839228606340`), `Help & Lessons` (`7780569054316420`).
 
 **What this changes here, stated plainly.** This KB already has its own task and lesson machinery — the
@@ -88,7 +99,9 @@ has been surfaced to the Hub**, so the rule opens a backlog rather than closing 
 **In Progress** with the state of the work written onto it, **not closed**, because two of the four things
 its Request asks for were still outstanding. *A receipt says the task landed; it does not say it is done.*
 **Rule C's first application was the same day it was adopted** — `AWT-0052`, Alex's second hand-off row,
-closed here rather than left as a receipt.
+closed here rather than left as a receipt. **Rule D's first application is the note that carries it**:
+`AWT-0065`'s own entry, and this version's note, are shorter than their predecessors on purpose. *A
+brevity rule adopted in a long paragraph would not have been adopted.*
 
 ## 0. Start every session here
 
@@ -584,6 +597,15 @@ checked against three sources rather than taken from the note — the escalation
 own independent wording (`AWT-0052`), and Alex's own `CHARTER.md`, already amended with the identical
 Rule C the same day — before anything was written here. `AWT-0052` closed same session; the note
 archived.
+2026-09-23: **a third hand-off note, from Victoria for the owner**, proposing the group's plain-brief
+standard (`2026-09-22_amendment_group-Rule-C-plain-brief.md`, `1kuJDlkP5WUud3qwUedH4V0CDIZN_9IAH`,
+617 B, arrived 2026-09-22 14:41). Handled per §6a-i. **Its instruction was wrong**: *"fold into your
+charter §0"* would have collided with the Rule C adopted here at v29. Its own Hub row (`AWT-0065`,
+Victoria for Minda) said *"under its OWN heading — do NOT relabel or overwrite"*, and **Rule A makes the
+row the canonical brief**, so the row governed. **The owner confirmed directly** the same day
+(*"Go ahead with both"*) before anything was written. Adopted as **Rule D**; note archived, row closed.
+*Second time an inbound note has been taken as a proposal rather than an instruction, and the first time
+that stopped a real error.*
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions

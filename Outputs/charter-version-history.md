@@ -10,10 +10,71 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v27 (2026-09-21)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v29 (2026-09-21)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
+**v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
+folding v28's in here *"is the next thing to do with it, not claimed as already done here"* — an honest
+flag that then sat unactioned for two days, and v29's note joined it. Both were appended on 2026-09-23
+when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29 from the live charter)
+rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
+already fallen out.*
+
 ---
+
+**Changed in v29 — Rule C joins the Hub Coordination Standard, and the wall got a look before it
+was hit rather than after.**
+A second hand-off note from **Alex** arrived in `Raw/` on 2026-09-21
+(`2026-09-21_Hub-Coordination-Rule-C-RawHandoff-Note.md`), proposing a third rule for **§0b**. Checked
+per **§6a-i** before anything was written, against three independent sources rather than the note's own
+word: the escalation it cites (`Alex KB/_escalations/2026-09-20_Escalation_Reporting-Back-Reliability-Gap.md`)
+carries the identical rule text; the Hub row (`AWT-0052`) states the same owner ruling in its own words,
+not a copy of the note's; and Alex's own `CHARTER.md` had already been amended with the identical Rule C
+the same day (Rung-1, direct edit, that KB's own remit) — three sources agreeing independently, not one
+claim taken on trust. **§0b now carries Rules A–C.**
+
+**The headroom check ran before the write, not after.** At v28 this file was 83,636 bytes; the largest
+transfer this KB has ever verified is still **88,778** (`HL-0030`) — Rule C alone, a few hundred bytes,
+would likely have stayed clear of it. But v27's own standing rule — *the charter carries the current
+version's note only* — doesn't wait for a wall to be approached; it fires on every new version, so the
+v28 note above is evicted regardless. **It is not lost**: it is preserved verbatim in the archived v28
+copy this session creates (see §6b), and folding it into `Outputs/charter-version-history.md` alongside
+it is the next thing to do with it, not claimed as already done here — a large, rarely-touched history
+file is exactly the kind of edit this KB now byte-verifies rather than assumes, and that check did not
+run this session.
+
+**Nothing else changed here.** `AWT-0052` closed with where this landed; the hand-off note is archived.
+Rule C's first application was the same day it was adopted.
+
+**Changed in v28 — a lesson about tense, and the registers split the way this file did one day ago.**
+Two owner instructions in one line (*"Yes split registers and add that §3 lesson"*), and the second one is
+**the v27 rule working for the first time**: this note is here because v27's moved out to
+`Outputs/charter-version-history.md` on its own terms, not because anyone remembered to do it.
+
+**First: §3 gains *an absence is only an absence as of a timestamp*.** v26 checked the Workforce Hub for
+Darius-assigned rows, found none, and wrote that into this charter as a standing fact. **`AWT-0045` was
+created four minutes after the commit** — so the sentence was true when written and false before anyone
+could read it. **The mistake was never the checking**; it was recording a point-in-time observation in a
+durable document with no timestamp on it. *Proposed at v27 rather than added, approved at v28 — the fourth
+lesson to take that route*, after v18's count fix, v19's order clause and v25's measurement clause.
+
+**Second: `Outputs/kb-registers.md` is 99,517 → 64,231 bytes.** Its **Change-log entries** section —
+35,701 bytes, eighteen rows, append-only and never revised — now lives in `Outputs/change-log-index.md`,
+**moved verbatim, newest first**. The registers keep the three tables still worked on: Processed items,
+Wiki structure changes, Outputs produced. **Same diagnosis as v27, one file along**: pure history riding
+along with live rows inside a file Drive can only be written whole.
+
+**The reference sweep ran first this time, and it is the only part of v27 worth copying.** `CLAUDE.md` §0
+and §4 and `README.md` all named `kb-registers.md` as where change logs are indexed; all three now name
+the new file. **One reference was deliberately left alone**: `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md`
+describes the *Fishbone house style as adopted on 2026-09-14* — it is a dated record of a decision, not a
+pointer to our current filing, and repointing it would misreport what was decided. *Cite the path for the
+thing; leave the record of what was true then alone.*
+
+**Two seats, two control files, two days — so the pattern is on the Hub, not just in here.** `HL-0030`
+carries both data points. **What is learnable is the shape**: append-only history inside a
+re-emitted-whole file is a size problem waiting to happen, and it is visible **before** the wall is hit by
+asking which sections of a file are ever revised.
 
 **Changed in v27 — the version history moved out, because this file had outgrown its own upkeep rule.**
 At v26 the charter reached **110,025 bytes**, and Drive has no patch API: every version is a full

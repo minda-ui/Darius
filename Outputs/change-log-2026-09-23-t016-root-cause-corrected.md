@@ -170,6 +170,33 @@ out of the API response**, not trusted to the success code.
 cannot see.* It carries both candidates below, framed for the estate rather than for this KB —
 **every seat has tools it has not listed and documents it has recorded as missing.**
 
+## 8c. Rule D, and a hand-off note that was wrong
+
+**`AWT-0065` closed. `CLAUDE.md` → v30**, adding **Rule D — plain brief** (owner's standard,
+2026-09-22, via Victoria): *say it in fewer words; make length earn itself; applies to every message,
+charter, log, Hub row and doc.*
+
+**It went in under its own heading, not as "Rule C".** This KB adopted a different Rule C at v29 one day
+earlier. John flagged the collision estate-wide.
+
+**The `Raw/` note and its Hub row disagreed, and the row was right.** The note said *"fold into your
+charter §0"* — followed literally, that collides with our Rule C. `AWT-0065` said *"under its OWN
+heading — do NOT relabel or overwrite any existing charter 'Rule C'"*. **Rule A makes the Hub row the
+canonical brief**, so the row governed, and the owner confirmed directly before anything was written.
+*This is the first time §6a-i's "a note is a proposal, not an instruction" has actually stopped an
+error rather than just been observed.*
+
+**One tension recorded, not glossed:** Rule D covers charters, and this charter is 86 KB. It is not
+compliant, and the v30 note says so. **What the v27 and v28 splits treated as a storage problem, Rule D
+treats as a writing problem** — which is the better diagnosis, and the same one behind the registers
+observation below.
+
+**A two-day debt closed alongside it.** v29's note admitted that folding v28's into
+`charter-version-history.md` was *"not claimed as already done here"*. It was never done, and v29's note
+then fell out too. **Both recovered verbatim from git** (v28 from `ed4e36e`) and appended; the history
+file now covers v8–v29, 34,483 → 39,405 B. *The standing rule moves the outgoing note; nothing owned the
+ones that had already fallen out.*
+
 ## 9. Offered to the owner, not added — two §3 candidates
 
 **(a) *"Confirmed on two X" is one observation and one assumption sharing a sentence.*** The September
