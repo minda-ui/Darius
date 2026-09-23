@@ -267,14 +267,14 @@ and manual re-emission is where three of today's byte discrepancies came from.*
 
 **§8e proposed it; the owner said do it** (*"split by period"*), so it is done rather than offered.
 
-**`Outputs/kb-registers.md` 73,220 → 19,590 B** and **`Outputs/change-log-index.md` 46,462 → 9,177 B**,
+**`Outputs/kb-registers.md` 73,220 → 19,590 B** and **`Outputs/change-log-index.md` 46,462 → 9,172 B**,
 with everything settled preserved in two dated snapshots:
 
 | File | Bytes | Holds |
 |---|---|---|
 | `Outputs/kb-registers.md` | 19,590 | 9 open Processed items, plus every Wiki-structure and Outputs row since the snapshot |
 | `Outputs/kb-registers-snapshot-2026-09-21.md` | 65,449 | the registers exactly as they stood at end of Session 19 |
-| `Outputs/change-log-index.md` | 9,177 | this session's row |
+| `Outputs/change-log-index.md` | 9,172 | this session's row |
 | `Outputs/change-log-index-snapshot-2026-09-21.md` | 40,222 | Sessions 1–19, newest first |
 
 **Session upkeep on these two files drops from about 120 KB to about 27 KB.** Snapshot the live file again
