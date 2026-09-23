@@ -128,4 +128,14 @@ row the canonical brief**, so the row governed. **The owner confirmed directly**
 closed once v30 reached Drive — **not before**, because Rule C makes the store, not the edit, the thing
 that says the work is done. *Third inbound note handled as a proposal rather than an instruction, and
 the first where doing so caught a real error rather than merely confirming a correct one.*
+2026-09-23 (second entry): **the owner ruled that the Workshop Machinery Register is an asset register, not a
+financial document.** `Raw/2026-09-22_estate-law_financial-documents-v1.4-7b.md` — binding estate law,
+arrived as an inbound note and **not adopted here** — says financial documents live only in the Financial
+Archive (`1BVk_RfuJ3rBRujZUMC98KMlil4AkICL4`), never in the Collaboration Space, never on OneDrive and
+**never in git**. The Machinery Register carries purchase prices and invoice numbers and is mirrored to
+git, so the question was put rather than answered by assumption. **Ruling: the rule does not reach it** —
+it records assets, not accounts, and **the register stays in the mirror as it is.** The invoices and
+quotations themselves remain out of git, as do bank details and the other §6b omissions above. *The
+question was raised because a rule that plainly bites elsewhere should not be left to a reading of mine;
+asked 2026-09-23, answered the same day.*
 **6c — revisit cadence:** none set yet.

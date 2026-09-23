@@ -36,6 +36,25 @@ Register, the Tasks sheet, the Wiki articles. §3's own *put a fact where its ow
 the v21 lesson about summaries of summaries both point at it. **Whether §7 should shrink is an owner
 decision and a separate measurement**, not something to fold into a reorganisation.
 
+**Amended the same session, and not bumped to v32 — the registers were split too.** Closing the charter
+split exposed the next file along: `Outputs/kb-registers.md` at **73,220 B** had become the most
+expensive file in the KB, larger than any charter file, and `change-log-index.md` was **46,462**. Both
+are now **period-split** on the owner's instruction (*"split by period"*): a live file holding what
+still moves, and frozen `-<period>.md` files holding what is settled. **Splitting them by table would
+not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
+and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
+settled rows, so the live file starts near 15 KB.*
+
+**Why this is v31 amended rather than v32.** It is the same session, the same instruction and the same
+diagnosis — and a version bump would move this note to the history file and re-emit 41 KB to record a
+continuation of what the note already describes. **Recorded here so the choice is visible** rather than
+inferred from a version number that did not change.
+
+**Two owner rulings carried in with it, 2026-09-23.** The split above, and — separately — that the
+**Workshop Machinery Register is an asset register, not a financial document**, so the estate-law note's
+never-git rule does not reach it and it stays in the git mirror. That second one is in §6b of
+`CLAUDE-Rules.md`, where the access decisions live.
+
 ## Where the rest of the charter is
 
 This file holds the parts that rarely change. The rest:
@@ -76,7 +95,7 @@ Before doing anything — including a one-off question — read, in order:
 1. **The Workforce Hub** — Tasks & Requests, Darius's own Open / In Progress rows (§0b, Rule A).
 2. The newest entries in `Outputs/change-log-*.md` (newest-first index:
    `Outputs/change-log-index.md`).
-3. The `pending` and `partial` rows of `Outputs/kb-registers.md`, section "Processed items".
+3. The open `Processed items` rows of `Outputs/kb-registers.md` — the live file holds only those.
 4. `Wiki/index.md` for what's already known.
 
 **The charter is four files** (see the map above): this one, `CLAUDE-Rules.md`, `CLAUDE-Lessons.md`
@@ -132,8 +151,9 @@ reported size. *This paragraph read "partial" from v12 to v22, and was true then
 **This file deliberately does not say how many of each there are.** It said so four times and was wrong
 four times (v12 *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"*) — a count goes
 stale the moment an article is written, and this document is revised weekly at best. **The count lives
-in `Outputs/kb-registers.md`**, in the Wiki-structure rows, recorded at the moment each article was
-added and with the command that produced it. To quote a current figure, run
+in the registers**, in the Wiki-structure rows, recorded at the moment each article was
+added and with the command that produced it — `Outputs/kb-registers.md` for the current period and the
+`kb-registers-<period>.md` files for earlier ones. To quote a current figure, run
 `git ls-files 'Wiki/**/*.md' | wc -l` for the mirror side and read the registers for the Drive-only
 side; **do not carry a number forward from anywhere, including from here.** *(That pathspec counts the
 articles in the topic folders and correctly leaves out `Wiki/index.md`, which sits at the top level and
@@ -171,8 +191,9 @@ Workshop of Furniture Making - Knowledge Base/
 │ ├── Software/ — SmartCabinet and the design→machine production workflow
 │ └── Decisions/ — why this KB is shaped this way; numbers must be recounted, not trusted
 ├── Outputs/
-│ ├── kb-registers.md, change-log-YYYY-MM-DD-<slug>.md
-│ ├── change-log-index.md — every session's change log, newest first (v28)
+│ ├── kb-registers.md — live rows only; kb-registers-<period>.md — settled rows (v31)
+│ ├── change-log-YYYY-MM-DD-<slug>.md — one per session
+│ ├── change-log-index.md — newest first (v28); change-log-index-<period>.md — frozen (v31)
 │ ├── charter-version-history.md — the charter's superseded version notes (v27)
 │ └── Correspondence/ — filed copy of every numbered document in scope
 └── Archive/ — superseded files, renamed with reason and date
@@ -262,8 +283,16 @@ One file per session in `Outputs/`, named `change-log-YYYY-MM-DD-<slug>.md`, ind
 
 **That index was part of `kb-registers.md` until v28**, when it was split out for the same reason the
 charter's version history was split at v27: 35,701 bytes of append-only history riding along with rows
-that change, in a file re-emitted whole every session. `kb-registers.md` keeps Processed items, Wiki
-structure changes and Outputs produced — the three tables still worked on.
+that change, in a file re-emitted whole every session.
+
+**Both are period-split as of 2026-09-23** (owner's instruction, *"split by period"*), because the same
+problem came back one file along: `kb-registers.md` had reached 73,220 bytes and the index 46,462, and
+Drive re-emits a whole file for one new row. **Splitting them by table would not have helped** — every
+table in them is append-only and every session touches at least one. **Splitting by period does**,
+because a settled row is never touched again. So `kb-registers.md` keeps the open `Processed items` and
+the current period's Wiki-structure and Outputs rows; `change-log-index.md` keeps the current period's
+sessions; and the `-<period>.md` files hold what is settled and are never re-emitted. **Freeze the live
+file as a new period when it passes roughly 25 KB.**
 
 ## 5. Automated processes
 

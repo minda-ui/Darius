@@ -241,6 +241,76 @@ most-churned file, because §7 largely summarises live data that already sits in
 second mechanical split would not help. **Shrinking it means deciding what §7 should stop duplicating** —
 an owner decision, and one that needs its own measurement rather than a guess.
 
+## 8e. The registers observation — the biggest re-emitted file is no longer the charter
+
+**§8c's forward reference was dangling until now**, and the thing it pointed at is worth stating
+plainly. After the split, **`Outputs/kb-registers.md` at 73,220 B is the largest file this KB re-emits**
+— twice `CLAUDE-Workshop.md`, and every session touches it.
+
+**But it will not split the way the charter did.** The charter had sections with different cadences;
+these three tables have the *same* cadence — all three are **append-only**, every session adds a row to
+at least one. Splitting by topic just gives three files that all still get re-emitted.
+
+**What would work is splitting by period** (`kb-registers-2026-09.md`, and so on), because an
+append-only table's old rows are never touched again. That is the same argument that moved the charter's
+version notes at v27 and the change-log index at v28 — *history riding along with rows that change* —
+one level further out: **here it is history riding along with history, and only the newest part is
+live.**
+
+**Not done.** It is a change to a control file `CLAUDE.md` §0 sends every session to, and this KB has an
+owner decision open already (what §7 should stop duplicating). **Offered, with the measurement
+attached**, which is the route the v18, v19, v25 and v27 items took. *The honest version of the cost:
+until something changes here, every session's upkeep re-emits about 140 KB across four Outputs files,
+and manual re-emission is where three of today's byte discrepancies came from.*
+
+## 8f. The registers split, and a ruling on the never-git rule
+
+**§8e proposed it; the owner said do it** (*"split by period"*), so it is done rather than offered.
+
+**`Outputs/kb-registers.md` 73,220 → 15,236 B** and **`Outputs/change-log-index.md` 46,462 → 7,337 B**,
+with the settled parts moved verbatim into two frozen period files:
+
+| File | Bytes | Holds |
+|---|---|---|
+| `Outputs/kb-registers.md` | 15,236 | 9 open Processed items, plus Wiki-structure and Outputs rows from 2026-09-23 |
+| `Outputs/kb-registers-2026-09-14-to-09-21.md` | 61,233 | 21 settled Processed items, 33 Wiki-structure, 51 Outputs |
+| `Outputs/change-log-index.md` | 7,337 | this session's row |
+| `Outputs/change-log-index-2026-09-14-to-09-21.md` | 39,832 | Sessions 1–19, newest first |
+
+**Session upkeep on these two files drops from about 120 KB to about 23 KB.** Freeze the live file again
+when it passes roughly 25 KB — that rule is written into both files and into `CLAUDE.md` §4, rather than
+left as a habit.
+
+**The boundary is "settled", not merely "old", and that distinction did the work.** Processed items split
+by **status**: a `done` or `skipped` row never changes again, a `pending` or `partial` row still moves. The
+other two tables split by **date**. The two boundaries land on the same line because every settled row was
+settled on or before 2026-09-21 — *checked, not assumed; the script asserts it.*
+
+**Integrity checked the way §3 now demands.** Both splits were done by script with no text retyped:
+**119 register rows in, 119 out, multiset identical, nothing lost or duplicated**; 20 index rows in, 20
+out, with the frozen file's order compared row-for-row. *A total byte count could not have caught a row
+that moved between the two files — only the row-level comparison can, which is the v19 lesson applied to a
+split rather than an upload.*
+
+**The reference sweep ran first, and it found less than expected.** Four places in `CLAUDE.md` name these
+files — §0's reading order, §1's count pointer, §1's folder tree and §4 — and `README.md` two more.
+**§0 and `README.md` needed no change**, because Processed items' open rows and the index's newest row are
+exactly what stays in the live files. The two historical mentions in `CLAUDE-Lessons.md` and the one in
+`Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md` were **deliberately left alone** — dated
+records of what was true then, the same call v28 made.
+
+**`CLAUDE.md` is v31 amended, not v32.** Same session, same instruction, same diagnosis — and a bump would
+move the v31 note to the history file and re-emit 41 KB to record a continuation of what that note already
+describes. **The choice is written into the note** rather than left to be inferred from a version number
+that did not move.
+
+**And a governance question answered rather than assumed.** `Raw/2026-09-22_estate-law_financial-documents-v1.4-7b.md`
+— binding estate law, arrived as an inbound note, **not adopted here** — says financial documents live only
+in the Financial Archive and **never in git**. The Machinery Register carries purchase prices and invoice
+numbers and is mirrored to git. **Owner's ruling: it is an asset register, not a financial document, so the
+rule does not reach it and the register stays in the mirror.** Recorded in `CLAUDE-Rules.md` §6b. *It was
+put as a question because a rule that plainly bites elsewhere should not be settled by a reading of mine.*
+
 ## 9. Offered to the owner, not added — two §3 candidates
 
 **(a) *"Confirmed on two X" is one observation and one assumption sharing a sentence.*** The September
