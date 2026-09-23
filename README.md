@@ -10,7 +10,10 @@ company (that already exists as its own "AMFA Furniture Ltd - Knowledge Base") a
 Fishbone group entity — see `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md` for why
 it is a separate, narrower KB rather than a folder inside the AMFA KB.
 
-- **Standing context and all rules:** `CLAUDE.md`. Read it before working here.
+- **Standing context and all rules:** the charter, which is **four files** since v31 —
+  `CLAUDE.md` (core), `CLAUDE-Rules.md` (Hub rules + governance), `CLAUDE-Lessons.md` (how to
+  process new material) and `CLAUDE-Workshop.md` (the machines and open questions). Start with
+  `CLAUDE.md`; it carries the map. **All four are governed and all four win over this file.**
 - **Session memory:** the dated `change-log-*.md` entries in `Outputs/`, indexed newest-first in
   `Outputs/change-log-index.md`. Read the newest entry, then the `pending` and `partial` rows of
   `Processed items` in `Outputs/kb-registers.md`.

@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v29 (2026-09-21)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v30 (2026-09-23)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -21,6 +21,31 @@ rather than retyped. *The standing rule moves the outgoing note; nothing was mov
 already fallen out.*
 
 ---
+
+**Changed in v30 — Rule D, the plain-brief standard; and the hand-off note was wrong where the Hub row
+was right.**
+
+**§0b gains Rule D** (owner's standard, 2026-09-22, via Victoria's broadcast): *say it in fewer words.*
+It goes in **under its own heading**, leaving this KB's existing Rule C untouched — two different rules
+that both arrived called "Rule C", a clash John spotted across the estate.
+
+**The note and the Hub row disagreed, and §6a-i is why that mattered.** `Raw/`'s note said *"fold into
+your charter §0"* — followed literally, that would have collided with our Rule C. `AWT-0065` said
+*"under its OWN heading — do NOT relabel or overwrite any existing charter 'Rule C'"*. **Rule A makes the
+Hub row the canonical brief, so the row won.** The note was treated as a proposal, as §6a-i requires; the
+owner confirmed directly the next day. *An inbound note can be stale in a way its own text cannot show.*
+
+**One tension, named rather than glossed.** Rule D covers *"every message, charter, log, Hub row and
+doc"*, and this charter is 86 KB. It is not compliant today and this note does not pretend otherwise —
+the same growth that forced the v27 and v28 splits, seen from the other side. **What the splits treated
+as a storage problem, Rule D treats as a writing problem**, which is the better diagnosis. Sizing that
+work is an owner decision, not a unilateral rewrite of the file that governs this seat.
+
+**And a two-day-old debt closed.** v29's note said folding v28's into
+`Outputs/charter-version-history.md` was *"the next thing to do with it, not claimed as already done
+here"*. It was not done, and v29's note then fell out too. **Both are now in the history file** (v8-v29),
+recovered verbatim from git rather than retyped. *The standing rule moves the outgoing note; nothing was
+moving the ones that had already fallen out — a rule with no owner for its leftovers.*
 
 **Changed in v29 — Rule C joins the Hub Coordination Standard, and the wall got a look before it
 was hit rather than after.**
