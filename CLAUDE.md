@@ -19,7 +19,7 @@ Hub row the canonical brief, so the row won.** The note was treated as a proposa
 owner confirmed directly the next day. *An inbound note can be stale in a way its own text cannot show.*
 
 **One tension, named rather than glossed.** Rule D covers *"every message, charter, log, Hub row and
-doc"*, and this charter is 84 KB. It is not compliant today and this note does not pretend otherwise —
+doc"*, and this charter is 86 KB. It is not compliant today and this note does not pretend otherwise —
 the same growth that forced the v27 and v28 splits, seen from the other side. **What the splits treated
 as a storage problem, Rule D treats as a writing problem**, which is the better diagnosis. Sizing that
 work is an owner decision, not a unilateral rewrite of the file that governs this seat.
@@ -92,8 +92,11 @@ itself.** Applies to every message, charter, log, Hub row and doc. Owner's stand
 
 **What this changes here, stated plainly.** This KB already has its own task and lesson machinery — the
 Workshop **Tasks** sheet (`4087584374523780`, T001–T029) and **§3** of this file. Rule B does not
-replace either; it means **neither is the end of the line any more.** As of v26 **nothing from this KB
-has been surfaced to the Hub**, so the rule opens a backlog rather than closing one.
+replace either; it means **neither is the end of the line any more.** At v26 nothing from this KB had
+been surfaced, so the rule opened a backlog rather than closing one. **Three rows since**, all Help &
+Lessons: `HL-0030` (charters outgrow whole-file re-emission), `HL-0032` (*an absence is only an absence
+as of a timestamp*), `HL-0042` (*a limitation is a property of the call you made*, second instance).
+*The backlog is being worked, not cleared — no count belongs here (§3); read the Hub.*
 
 **Rule A's first application was 2026-09-21, on `AWT-0045`** — Alex's hand-off row. It was flipped to
 **In Progress** with the state of the work written onto it, **not closed**, because two of the four things
@@ -603,9 +606,10 @@ standard (`2026-09-22_amendment_group-Rule-C-plain-brief.md`, `1kuJDlkP5WUud3qwU
 charter §0"* would have collided with the Rule C adopted here at v29. Its own Hub row (`AWT-0065`,
 Victoria for Minda) said *"under its OWN heading — do NOT relabel or overwrite"*, and **Rule A makes the
 row the canonical brief**, so the row governed. **The owner confirmed directly** the same day
-(*"Go ahead with both"*) before anything was written. Adopted as **Rule D**; note archived, row closed.
-*Second time an inbound note has been taken as a proposal rather than an instruction, and the first time
-that stopped a real error.*
+(*"Go ahead with both"*) before anything was written. Adopted as **Rule D**; note archived, `AWT-0065`
+closed once v30 reached Drive — **not before**, because Rule C makes the store, not the edit, the thing
+that says the work is done. *Third inbound note handled as a proposal rather than an instruction, and
+the first where doing so caught a real error rather than merely confirming a correct one.*
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions
