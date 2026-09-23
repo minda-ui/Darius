@@ -150,6 +150,25 @@ moves nothing physical. Corrected to the owner at the time.*
 believed, and why, is worth more than a tidy file. `related:` graph re-checked symmetric after the
 edits.
 
+## 8b. Smartsheet and the Hub
+
+**Tasks (`4087584374523780`)** — `T015` **closed Done**. `T016`'s note replaced with the corrected
+root cause, the five criteria, the −25 trap and p.63; **its Title also corrected**, because it read
+*"it is an ID-0 tie in the Vitap outfit, NOT the missing SmartCabinet catalog row"* — a title that was
+itself a diagnosis, and a wrong one. `T027` updated: Ø35 confirmed at bush 5 from the machine, and its
+*"the obvious candidate is T016"* reasoning re-based on the corrected mechanism rather than left
+pointing at a cause that no longer exists.
+
+*The old T016 note was replaced rather than appended to, because the cell has a **4,000-character
+silent truncation** (§3) and the combined text would have exceeded it. Its full text survives in
+`tpacad-blind-bore-tool-id-fix.md` and in git, and the new note says so.* **Every cell was read back
+out of the API response**, not trusted to the success code.
+
+**Workforce Hub — `HL-0042`** (Help & Lessons, rowId `6144652783257476`, Open, High). Raised under
+§0b Rule B: *nothing that is a task, a lesson or a gap may live only in a local log the coordinator
+cannot see.* It carries both candidates below, framed for the estate rather than for this KB —
+**every seat has tools it has not listed and documents it has recorded as missing.**
+
 ## 9. Offered to the owner, not added — two §3 candidates
 
 **(a) *"Confirmed on two X" is one observation and one assumption sharing a sentence.*** The September
