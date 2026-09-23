@@ -43,7 +43,7 @@ are now **period-split** on the owner's instruction (*"split by period"*): a liv
 still moves, and dated `-snapshot-<date>.md` files holding what is settled. **Splitting them by table would
 not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
 and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
-settled rows, so the live file starts near 15 KB.*
+settled rows, and the live file lands just under 20 KB.*
 
 **Why this is v31 amended rather than v32.** It is the same session, the same instruction and the same
 diagnosis — and a version bump would move this note to the history file and re-emit 41 KB to record a
