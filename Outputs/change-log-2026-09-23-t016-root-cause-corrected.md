@@ -197,6 +197,50 @@ then fell out too. **Both recovered verbatim from git** (v28 from `ed4e36e`) and
 file now covers v8–v29, 34,483 → 39,405 B. *The standing rule moves the outgoing note; nothing owned the
 ones that had already fallen out.*
 
+## 8d. The charter split — `CLAUDE.md` → v31, four files
+
+**`AWT-0082` (Alex) adopted and closed.** The proposal was *core / rules / history*, the pattern Alex,
+Rachel, Eugene and the group KB took. **The cut lines here are different, and the row says why.**
+
+**Measured before planning**, because §3 says to size a plan against a measurement rather than a
+description. Of the 86,856 B monolith, **§7 was 34,789 (40%) and §3 was 23,651 (27%)** — 67% between
+them, and **neither is a rule**. A mechanical three-way split would have left ~58 KB in "core" and saved
+little. *That is the part worth passing back: any seat whose file is shaped like this one gets the same
+result.*
+
+**The principle adopted instead — split by update cadence:**
+
+| File | Cadence | Holds | Bytes |
+|---|---|---|---|
+| `CLAUDE.md` | rarely | header, §0a, §0, §1, §2, §4, §5 | 19,468 |
+| `CLAUDE-Rules.md` | on a rule | §0b Hub rules A–D, §6 governance | 11,118 |
+| `CLAUDE-Lessons.md` | append-only | §3 | 24,221 |
+| `CLAUDE-Workshop.md` | highest churn | §7 | 35,378 |
+
+90,185 B against 86,856 — **+3,329 for four headers and four file maps, paid once.** A rule change now
+touches 10.5 KB instead of 86.9 (8× cheaper); a new lesson 23.7 KB (3.7×); a machine finding 34.8 KB
+(2.5×). **Section numbers were kept** (§0b, §3, §6, §7) so every existing citation still resolves, and
+`CLAUDE.md` carries the map.
+
+**Done by script, not by retyping** — a reconstruction `assert` that the concatenated sections equal the
+original byte-for-byte, then **per-section sha256** compared before and after. Only two edits were
+intended (§0's reading order, §1's folder tree) and a targeted diff confirmed they were the only ones.
+*A total byte count cannot see a section that moved; only the per-section hash can.*
+
+**Each file published and verified by download → decode → `diff`**, all four clean, `README.md` (1,716 B)
+re-issued and verified with them. The monolith is archived intact at 86,856 B, the superseded README
+beside it.
+
+**One error caught, and it is the §3 lesson running in reverse.** The first publish of `CLAUDE.md` came
+back **one byte short**. The diff showed the spare byte was in my **local** copy — a blank line inherited
+from where two sections abutted in the monolith. **A size check alone would have read that as a transfer
+loss and sent me re-uploading a file that was already right.**
+
+**What is not solved, stated rather than left implied.** `CLAUDE-Workshop.md` is still 35 KB and still the
+most-churned file, because §7 largely summarises live data that already sits in Smartsheet and the Wiki. A
+second mechanical split would not help. **Shrinking it means deciding what §7 should stop duplicating** —
+an owner decision, and one that needs its own measurement rather than a guess.
+
 ## 9. Offered to the owner, not added — two §3 candidates
 
 **(a) *"Confirmed on two X" is one observation and one assumption sharing a sentence.*** The September
