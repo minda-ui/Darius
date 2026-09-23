@@ -271,4 +271,3 @@ None are live. The Maintenance Schedule / Safety Check Log / Fault Log RYGB `Hea
 self-updating **column formulas** (maintain via the connector, not by hand) — but there is no routine
 that reads them and chases due dates yet; that's a future proposal, and a natural early candidate for
 one of Darius's own scheduled routines.
-

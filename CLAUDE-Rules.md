@@ -129,4 +129,3 @@ closed once v30 reached Drive — **not before**, because Rule C makes the store
 that says the work is done. *Third inbound note handled as a proposal rather than an instruction, and
 the first where doing so caught a real error rather than merely confirming a correct one.*
 **6c — revisit cadence:** none set yet.
-

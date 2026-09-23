@@ -255,4 +255,3 @@ Lessons from Sessions 2–15, all on real incidents rather than invented ahead o
 - **Don't run two sessions on this KB at once, and re-read the live index/registers before recreating
   a control file.** The 2026-09-15/16 fork (this file, `index.md`, `kb-registers.md` all split across
   two parallel lines) is the reason Darius now owns the KB as a single seat.
-
