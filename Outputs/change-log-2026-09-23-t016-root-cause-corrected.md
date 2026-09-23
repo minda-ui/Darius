@@ -148,7 +148,8 @@ moves nothing physical. Corrected to the owner at the time.*
 
 **Both superseded articles are kept, not deleted or quietly rewritten.** The record of what this KB
 believed, and why, is worth more than a tidy file. `related:` graph re-checked symmetric after the
-edits.
+edits, and **both corrected bodies verified hash-identical below their banners** — the "nothing below
+this line has been edited" claim is checked, not asserted.
 
 ## 8b. Smartsheet and the Hub
 
