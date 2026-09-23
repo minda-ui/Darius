@@ -4,19 +4,32 @@ Standing index for the Workshop of Furniture Making Knowledge Base. Read `../CLA
 using this file.
 
 **This file holds only what is still live** — the open Processed items, and every row from 2026-09-23
-onwards. **Settled rows live in period files** and are never re-emitted:
+onwards. **Everything settled is in a dated snapshot** and is never re-emitted:
 
-| Period file | Holds |
-|---|---|
-| `Outputs/kb-registers-2026-09-14-to-09-21.md` | 21 settled Processed items, 33 Wiki structure changes, 51 Outputs produced |
+| Snapshot | Holds | Provenance |
+|---|---|---|
+| `Outputs/kb-registers-snapshot-2026-09-21.md` | the registers exactly as they stood at the end of Session 19 — 30 Processed items, 33 Wiki structure changes, 51 Outputs produced | the bytes that were on Drive, 65,449 B, byte-identical to git `d4cd712`; **not retyped and not rebuilt** |
+
+**It is a snapshot, not a partition, and the difference matters for nine rows.** Settled Processed items,
+and every Wiki-structure and Outputs row up to 2026-09-21, live **only** in the snapshot. **Eight of the
+nine open Processed items appear in both** — in the snapshot with their 2026-09-21 status, here with their
+current one; the ninth was opened on 2026-09-23 and is here alone. **This file is authoritative for all
+nine.** Nothing else overlaps — *measured by comparing the row sets, not counted by eye, which is how the
+overlap turned out to be eight rather than the nine I first wrote.*
 
 **Why it is split this way** (owner's instruction, 2026-09-23, *"split by period"*). Drive has no patch
-API, so a whole file is re-emitted for one new row, and at 73,220 bytes this had become the most
-expensive file in the KB — larger than any charter file after the v31 split. **Splitting by table would
-not have helped**: all three tables are append-only and every session touches at least one. Splitting by
-period does, because a settled row is never touched again. **Measured before planning**, per §3: the
-settled rows were 59,255 bytes of the 73,220, so the live file starts at about 14 KB and the saving is
-about 5×. **When this file passes roughly 25 KB, freeze it as the next period.**
+API, so a whole file is re-emitted for one new row, and at 73,220 bytes this had become the most expensive
+file in the KB — larger than any charter file after the v31 split. **Splitting by table would not have
+helped**: all three tables are append-only and every session touches at least one. Splitting by period
+does, because a settled row is never touched again. **Measured before planning**, per §3: the settled rows
+were 59,255 bytes of the 73,220. **When this file passes roughly 25 KB, snapshot it again.**
+
+**The snapshot was made by renaming, not by rewriting**, because the alternative was retyping 65 KB of
+dense table rows by hand — and manual re-emission is where this KB's byte discrepancies come from (§3).
+The rows on Drive were already byte-verified; renaming preserves them exactly. *The cost is that the
+snapshot keeps the header it had when it was live, so it still describes itself as the file `CLAUDE.md`
+§0 sends you to. It is not. The filename and this table are authoritative — recorded here rather than
+left to be discovered, because a file that misdescribes itself is the trap §3 names three times.*
 
 **2026-09-16 — reconciled.** Two parallel session-lines (an operational-systems line and a CAD-day
 line) had each kept their own copy of this file; they are merged here into one timeline. Sessions are
@@ -35,8 +48,8 @@ point there.
 Status legend: `pending` = registered, not started · `partial` = started, work remains ·
 `done` = fully reflected in the wiki · `skipped` = deliberately not processed.
 
-**Open items only — 9 rows.** A row settles here and moves to a period file at the next freeze.
-Settled rows are in `Outputs/kb-registers-2026-09-14-to-09-21.md`.
+**Open items only — 9 rows.** A row settles here and leaves at the next snapshot.
+Settled rows are in `Outputs/kb-registers-snapshot-2026-09-21.md`.
 
 | Raw path | Processed (date) | Status | Wiki articles created / updated | Notes |
 |---|---|---|---|---|
@@ -52,7 +65,7 @@ Settled rows are in `Outputs/kb-registers-2026-09-14-to-09-21.md`.
 
 ## Wiki structure changes
 
-**2026-09-23 onwards.** Earlier rows are in the period file above.
+**Everything since the 2026-09-21 snapshot.** Earlier rows are in the snapshot above.
 
 | Date | Change | Reason |
 |---|---|---|
@@ -60,12 +73,13 @@ Settled rows are in `Outputs/kb-registers-2026-09-14-to-09-21.md`.
 
 ## Outputs produced
 
-**2026-09-23 onwards.** Earlier rows are in the period file above.
+**Everything since the 2026-09-21 snapshot.** Earlier rows are in the snapshot above.
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
+| **`HL-0032` raised on the Workforce Hub** (Help & Lessons, rowId `8331304708474756`, Status **Baked into charter**) - the §3 lesson **an absence is only an absence as of a timestamp** surfaced under §0b Rule B, with the `AWT-0045` timestamps, the admission that the *first* correction was wrong too, and the cheap test: **ask who could make this false, and whether they would tell you.** Raised and **assigned to nobody** - it is already actioned in this KB, and is shared because the shape is estate-wide | 2026-09-21 | `CLAUDE.md` v28's new §3 bullet | §0b Rule B - *nothing that is a lesson may live only in a local log the coordinator cannot see* |
 | `Outputs/change-log-2026-09-23-t016-root-cause-corrected.md`; `Wiki/Processes/tpacad-tool-match-criteria.md`; `Wiki/Machinery/vitap-k2-drill-head-tooling.md`; `CLAUDE.md` v29 back-filled from Drive (84,568 B, byte-identical) | 2026-09-23 | tpacad-tool-match-criteria.md; vitap-k2-drill-head-tooling.md; tpacad-tool-type-optimizer-ambiguity.md (re-read in full first) | Owner (*"Yes, do the write-up"*), after two live workshop sessions on 21 and 23 September |
 | **Smartsheet Tasks updated** (`4087584374523780`): **T015 closed Done**; **T016 root-cause note replaced and its Title corrected** - it had read *"it is an ID-0 tie in the Vitap outfit"*, which is now known false; **T027 updated** with O35 confirmed at bush 5 and its T016-candidate reasoning re-based on the corrected mechanism. **`HL-0042` raised on the Workforce Hub** (Help & Lessons, rowId `6144652783257476`, Status **Open**, Priority **High**) - *a limitation is a property of the call you made*, **second confirmed instance in five days and the first outside my own tooling**, plus the narrower *"confirmed on two X" can be one observation and one assumption sharing a sentence*. Raised under §0b Rule B because both are estate-wide; **offered to the owner as §3 candidates, not added unilaterally**. **Every cell read back from the API response rather than trusted to the status code** (§3, the 4,000-character silent truncation) | 2026-09-23 | tpacad-tool-match-criteria.md; vitap-k2-drill-head-tooling.md | §0b Rule B (lessons) and ordinary task maintenance |
 | `CLAUDE.md` **v30** (**86,856 B** - this row first said *86,380*, which was the pre-correction draft; the file that reached Drive was 86,856, verified byte-identical. Corrected 2026-09-23 rather than overwritten, because a size nothing ever stored is exactly the kind of figure §3 warns reads as true) - **Rule D, the plain-brief standard**, added to §0b under its own heading; §6b records the handling; **`Outputs/charter-version-history.md` 34,483 -> 39,405 B**, gaining the **v28 and v29 notes that had never been moved** (recovered verbatim from git commit `ed4e36e` and the live charter, not retyped). **`AWT-0065` flipped to In Progress then closed**; the `Raw/` note archived | 2026-09-23 | none (charter + Hub) | `AWT-0065` (Victoria for Minda), owner confirmed in chat 2026-09-23 |
 | `CLAUDE.md` **v31 - the charter split into four files** (`AWT-0082`, Alex, closed Done). **Measured before planning**, per §3: of the 86,856 B monolith, **§7 was 34,789 B (40%)** and **§3 23,651 B (27%)** - 67% between them and **neither is a rule**, so the proposed *core/rules/history* cut would have left ~58 KB in "core". Adopted the principle instead - **split by update cadence**: `CLAUDE.md` **19,468** (header, §0a, §0, §1, §2, §4, §5), `CLAUDE-Rules.md` **11,118** (§0b Hub rules A-D, §6), `CLAUDE-Lessons.md` **24,221** (§3), `CLAUDE-Workshop.md` **35,378** (§7) = **90,185 B**, the **+3,329 being four headers and four file maps, paid once**. A rule change now re-emits 10.5 KB instead of 86.9 (8x); a lesson 23.7 KB (3.7x); a machine finding 34.8 KB (2.5x). **Section numbers kept** (§0b, §3, §6, §7) so every existing citation still resolves, and `CLAUDE.md` carries the map. **Done by script**: a reconstruction `assert` that the concatenated sections equal the original byte-for-byte, plus **per-section sha256** before and after - *a total byte count cannot see a section that moved, only the per-section hash can*. Two edits intended (§0 reading order, §1 folder tree) and a targeted diff confirmed they were the only ones. **All four verified on Drive by download-decode-diff**: `1orBU1frzuhHNQtkQ0BCMsSbZSLWpQroz`, `1ETRORiPMDdkde2MRDLhHRjooFhnLPw4m`, `1VQ1xtIRdCdiJMywkKBRkxG_jlmUF4Xv8`, `12jelS_TSMdCZt88B-djeP-p23LzzBVQm`. **`README.md` re-issued** 1,424 -> **1,716 B** (`1Rk2iS2ZDwmem0N916S4ywwwFqfGWWYD2`, verified) to name the four files; **the v30 monolith archived intact at 86,856 B** (`ARCHIVED-2026-09-23-CLAUDE-v30-monolith.md`) and the superseded README beside it. **One error caught and worth keeping**: the first publish of `CLAUDE.md` came back **one byte short**, and the diff showed the spare byte was in the **local** copy - a blank line inherited from where two sections abutted in the monolith. *A size check alone would have read that as a transfer loss and sent me re-uploading a file that was already right.* **Left unsolved, and said so on the row**: `CLAUDE-Workshop.md` is still 35 KB and still the most-churned file, because §7 largely summarises live data already held in Smartsheet and the Wiki; a second mechanical split would not help, and shrinking it means deciding what §7 should stop duplicating - an owner decision needing its own measurement | 2026-09-23 | no article; the charter and `README.md` themselves | Alex (`AWT-0082`), on the owner's instruction *"Adopt Alex proposal"* |
-| **`Outputs/kb-registers.md` and `Outputs/change-log-index.md` period-split** — 73,220 -> **15,236** and 46,462 -> **7,337**, with the settled parts moved verbatim into `kb-registers-2026-09-14-to-09-21.md` (61,233) and `change-log-index-2026-09-14-to-09-21.md` (39,832). **Session upkeep on these two files drops from ~120 KB to ~23 KB.** Owner's instruction after §8e of the change log proposed it rather than acted on it. **The boundary is *settled*, not merely old**: Processed items split by **status** (a `done` row never changes again; a `pending`/`partial` row still moves), the other two tables by **date** — and the script asserts that every settled row was settled on or before 2026-09-21 rather than assuming it. **119 register rows in, 119 out, multiset identical**; 20 index rows in, 20 out, frozen order compared row-for-row. *A byte count cannot catch a row that moved between two files.* **Reference sweep ran first** (the v28 rule): four `CLAUDE.md` mentions and two in `README.md`; **§0 and `README.md` needed no change**, because the open Processed items and the newest index row are exactly what stays live. Two historical mentions in `CLAUDE-Lessons.md` and one in `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md` **left alone** as dated records. **Freeze rule written in**: when a live file passes ~25 KB, freeze it as the next period | 2026-09-23 | no article; the registers themselves | Owner (Minda): *"split by period"* |
+| **`Outputs/kb-registers.md` and `Outputs/change-log-index.md` period-split** — 73,220 -> **19,590** and 46,462 -> **9,177**, with everything settled preserved in `kb-registers-snapshot-2026-09-21.md` (65,449) and `change-log-index-snapshot-2026-09-21.md` (40,222) - **made by renaming the Drive files, not rewriting them**, byte-identical to git `d4cd712`, because publishing hand-built partition files would have meant retyping 101 KB of dense table rows in a session that had already produced three byte discrepancies that way. **Session upkeep on these two files drops from ~120 KB to ~27 KB.** *Two artefacts recorded rather than left to be found: each snapshot keeps the header it had when it was live, and the registers snapshot repeats eight of the nine open Processed items with their 2026-09-21 status, which the live file supersedes.* **The row-set comparison also caught a real gap**: the Drive copy predated **one** Outputs row added later on 2026-09-21 (`HL-0032`), which sat in neither the snapshot nor the live file and would have been lost silently - *the check was worth running, and "the snapshot is just yesterday's file" was not quite true.* Added to the live file; re-checked, 119 pre-split rows, 0 in neither. Owner's instruction after §8e of the change log proposed it rather than acted on it. **The boundary is *settled*, not merely old**: Processed items split by **status** (a `done` row never changes again; a `pending`/`partial` row still moves), the other two tables by **date** — and the script asserts that every settled row was settled on or before 2026-09-21 rather than assuming it. **119 register rows in, 119 out, multiset identical**; 20 index rows in, 20 out, frozen order compared row-for-row. *A byte count cannot catch a row that moved between two files.* **Reference sweep ran first** (the v28 rule): four `CLAUDE.md` mentions and two in `README.md`; **§0 and `README.md` needed no change**, because the open Processed items and the newest index row are exactly what stays live. Two historical mentions in `CLAUDE-Lessons.md` and one in `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md` **left alone** as dated records. **Rule written in**: when a live file passes ~25 KB, snapshot it again | 2026-09-23 | no article; the registers themselves | Owner (Minda): *"split by period"* |

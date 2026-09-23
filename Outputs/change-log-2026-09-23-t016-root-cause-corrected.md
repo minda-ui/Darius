@@ -267,30 +267,57 @@ and manual re-emission is where three of today's byte discrepancies came from.*
 
 **§8e proposed it; the owner said do it** (*"split by period"*), so it is done rather than offered.
 
-**`Outputs/kb-registers.md` 73,220 → 15,236 B** and **`Outputs/change-log-index.md` 46,462 → 7,337 B**,
-with the settled parts moved verbatim into two frozen period files:
+**`Outputs/kb-registers.md` 73,220 → 19,590 B** and **`Outputs/change-log-index.md` 46,462 → 9,177 B**,
+with everything settled preserved in two dated snapshots:
 
 | File | Bytes | Holds |
 |---|---|---|
-| `Outputs/kb-registers.md` | 15,236 | 9 open Processed items, plus Wiki-structure and Outputs rows from 2026-09-23 |
-| `Outputs/kb-registers-2026-09-14-to-09-21.md` | 61,233 | 21 settled Processed items, 33 Wiki-structure, 51 Outputs |
-| `Outputs/change-log-index.md` | 7,337 | this session's row |
-| `Outputs/change-log-index-2026-09-14-to-09-21.md` | 39,832 | Sessions 1–19, newest first |
+| `Outputs/kb-registers.md` | 19,590 | 9 open Processed items, plus every Wiki-structure and Outputs row since the snapshot |
+| `Outputs/kb-registers-snapshot-2026-09-21.md` | 65,449 | the registers exactly as they stood at end of Session 19 |
+| `Outputs/change-log-index.md` | 9,177 | this session's row |
+| `Outputs/change-log-index-snapshot-2026-09-21.md` | 40,222 | Sessions 1–19, newest first |
 
-**Session upkeep on these two files drops from about 120 KB to about 23 KB.** Freeze the live file again
+**Session upkeep on these two files drops from about 120 KB to about 27 KB.** Snapshot the live file again
 when it passes roughly 25 KB — that rule is written into both files and into `CLAUDE.md` §4, rather than
 left as a habit.
+
+**The snapshots were made by renaming the Drive files, not by rewriting them, and that was a deliberate
+reversal.** I first built clean partition files by script — 61,233 and 39,832 bytes with accurate new
+headers — and then looked at what publishing them cost: **101 KB of dense table rows retyped by hand**, in
+a session that had already produced three byte discrepancies from exactly that. *One frozen index row is
+over 5 KB of unbroken markdown; nineteen of them is the riskiest transcription this KB has attempted.* The
+bytes on Drive were **already verified**, and `update_file` can rename without touching content, so
+renaming preserves them exactly and costs nothing. **Both snapshots are byte-identical to git `d4cd712`**,
+checked by `diff` against the downloaded Drive bytes before anything was renamed.
+
+**What renaming costs, stated rather than discovered later.** A snapshot keeps the header it had when it
+was live, so each one still describes itself as a file `CLAUDE.md` §0 sends you to. **It is not**, and the
+filename plus the live file's pointer table say so. And the registers snapshot is a **snapshot, not a
+partition**: **eight of the nine** open Processed items appear in it with their 2026-09-21 status as well
+as in the live file with their current one, and **the live file is authoritative for all nine** (the ninth
+was opened on 2026-09-23). Nothing else overlaps; the index snapshot is fully disjoint. *Two known artefacts, both written into both files — because a file that
+misdescribes itself is the trap §3 already names three times, and the answer to it is a label, not a
+rewrite.*
 
 **The boundary is "settled", not merely "old", and that distinction did the work.** Processed items split
 by **status**: a `done` or `skipped` row never changes again, a `pending` or `partial` row still moves. The
 other two tables split by **date**. The two boundaries land on the same line because every settled row was
 settled on or before 2026-09-21 — *checked, not assumed; the script asserts it.*
 
-**Integrity checked the way §3 now demands.** Both splits were done by script with no text retyped:
-**119 register rows in, 119 out, multiset identical, nothing lost or duplicated**; 20 index rows in, 20
-out, with the frozen file's order compared row-for-row. *A total byte count could not have caught a row
-that moved between the two files — only the row-level comparison can, which is the v19 lesson applied to a
-split rather than an upload.*
+**Integrity checked the way §3 now demands.** The live files were built by script with no text retyped,
+and the split was verified against the pre-split file before the plan changed: **119 register rows in, 119
+out, multiset identical, nothing lost or duplicated**; 20 index rows in, 20 out, order compared row-for-row.
+*A total byte count could not have caught a row that moved between two files — only the row-level
+comparison can, which is the v19 lesson applied to a split rather than an upload.*
+
+**Then running the same check against the snapshots caught a real gap, and that is the part worth
+keeping.** *"The snapshot is just yesterday's file"* was almost true and not quite: the Drive copies
+predate the last commits of 2026-09-21, so one Outputs row — `HL-0032` — sat in **neither** the snapshot
+nor the live file. It would have vanished silently, because both files are internally consistent and both
+byte-verify. **Only comparing the row sets against the pre-split file found it.** Added to the live file;
+re-checked at 119 rows in and none missing. The snapshots themselves needed no row check — they are the
+same bytes under a different name, `diff`ed against both Drive and git — **but the seam between them and
+the live files did, and that is exactly where the row went.** *Two clean halves do not make a whole.*
 
 **The reference sweep ran first, and it found less than expected.** Four places in `CLAUDE.md` name these
 files — §0's reading order, §1's count pointer, §1's folder tree and §4 — and `README.md` two more.

@@ -1,19 +1,26 @@
-# Change-log index — 2026-09-14 to 2026-09-21 (frozen)
+# Change-log index — Workshop of Furniture Making KB
 
-**Frozen period file. Nothing here changes again.** Nineteen sessions, newest first — Sessions 1 to 19.
-Split out of `Outputs/change-log-index.md` on 2026-09-23 (owner's instruction, *"split by period"*),
-because that file had reached 46,462 bytes of pure append-only history and Drive re-emits a whole file
-for one new row. **The same diagnosis that split this index out of `kb-registers.md` at v28, applied to
-the index itself.**
+**Every session's `change-log-*.md` file, newest first.** Split out of `Outputs/kb-registers.md` at
+**v28** (2026-09-21) for the reason the charter's own version history was split one day earlier: the
+registers had reached **99,517 bytes** and Drive has no patch API, so every session cost a full
+re-emission of the whole file. The Change-log section was **35,701 bytes of it** and is pure history —
+it is appended to and never revised, which is exactly the content that should not ride along with rows
+that change. `kb-registers.md` keeps the three tables that are still worked on; this file keeps the
+narrative of how they got there.
 
-**Live file:** `Outputs/change-log-index.md` — 2026-09-23 onwards. `CLAUDE.md` §0 sends every session
-there for the newest entry, not here.
+**Nothing here was rewritten.** The rows below are the bytes that were in `kb-registers.md`, moved
+unchanged and in the same order.
 
-**Nothing was rewritten.** The rows below are the bytes that were in `change-log-index.md`, moved
-unchanged and in the same order, by script rather than by retyping, and checked row-for-row before and
-after.
+**This is the file `CLAUDE.md` §0 sends you to**, second in the session-start reading order: read the
+newest row, then the `pending` and `partial` rows of `kb-registers.md`.
 
-## Change-log entries — Sessions 1 to 19
+**Owner's instruction, 2026-09-21** (*"Yes split registers"*), after the same question was put rather
+than acted on. `HL-0030` on the Workforce Hub carries the estate-wide version: two control files in two
+days, and every seat's will do the same.
+
+---
+
+## Change-log entries
 
 Newest first.
 

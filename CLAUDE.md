@@ -40,7 +40,7 @@ decision and a separate measurement**, not something to fold into a reorganisati
 split exposed the next file along: `Outputs/kb-registers.md` at **73,220 B** had become the most
 expensive file in the KB, larger than any charter file, and `change-log-index.md` was **46,462**. Both
 are now **period-split** on the owner's instruction (*"split by period"*): a live file holding what
-still moves, and frozen `-<period>.md` files holding what is settled. **Splitting them by table would
+still moves, and dated `-snapshot-<date>.md` files holding what is settled. **Splitting them by table would
 not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
 and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
 settled rows, so the live file starts near 15 KB.*
@@ -153,7 +153,7 @@ four times (v12 *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-se
 stale the moment an article is written, and this document is revised weekly at best. **The count lives
 in the registers**, in the Wiki-structure rows, recorded at the moment each article was
 added and with the command that produced it — `Outputs/kb-registers.md` for the current period and the
-`kb-registers-<period>.md` files for earlier ones. To quote a current figure, run
+`kb-registers-snapshot-<date>.md` files for earlier ones. To quote a current figure, run
 `git ls-files 'Wiki/**/*.md' | wc -l` for the mirror side and read the registers for the Drive-only
 side; **do not carry a number forward from anywhere, including from here.** *(That pathspec counts the
 articles in the topic folders and correctly leaves out `Wiki/index.md`, which sits at the top level and
@@ -191,9 +191,9 @@ Workshop of Furniture Making - Knowledge Base/
 │ ├── Software/ — SmartCabinet and the design→machine production workflow
 │ └── Decisions/ — why this KB is shaped this way; numbers must be recounted, not trusted
 ├── Outputs/
-│ ├── kb-registers.md — live rows only; kb-registers-<period>.md — settled rows (v31)
+│ ├── kb-registers.md — live rows only; kb-registers-snapshot-<date>.md — settled (v31)
 │ ├── change-log-YYYY-MM-DD-<slug>.md — one per session
-│ ├── change-log-index.md — newest first (v28); change-log-index-<period>.md — frozen (v31)
+│ ├── change-log-index.md — newest first (v28); change-log-index-snapshot-<date>.md (v31)
 │ ├── charter-version-history.md — the charter's superseded version notes (v27)
 │ └── Correspondence/ — filed copy of every numbered document in scope
 └── Archive/ — superseded files, renamed with reason and date
@@ -291,8 +291,15 @@ Drive re-emits a whole file for one new row. **Splitting them by table would not
 table in them is append-only and every session touches at least one. **Splitting by period does**,
 because a settled row is never touched again. So `kb-registers.md` keeps the open `Processed items` and
 the current period's Wiki-structure and Outputs rows; `change-log-index.md` keeps the current period's
-sessions; and the `-<period>.md` files hold what is settled and are never re-emitted. **Freeze the live
-file as a new period when it passes roughly 25 KB.**
+sessions; and the `-snapshot-<date>.md` files hold what is settled and are never re-emitted. **Snapshot
+the live file again when it passes roughly 25 KB.**
+
+**The snapshots were made by renaming the Drive copies, not by rewriting them** — byte-identical to git
+`d4cd712`, nothing retyped, because manual re-emission is where this KB's byte discrepancies come from
+(§3). The cost is that each snapshot keeps the header it had when it was live and so still describes
+itself as a file §0 sends you to. **It does not**; the filename and the live file's own pointer table are
+authoritative, and the registers snapshot also repeats **eight** of the nine open Processed items with
+their 2026-09-21 status, which the live file supersedes — the ninth was opened after the snapshot. *Recorded rather than left to be discovered.*
 
 ## 5. Automated processes
 
