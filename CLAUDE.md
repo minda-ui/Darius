@@ -1,39 +1,33 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 28 — 2026-09-21.** Structure and conventions modelled on the Fishbone Commercial
+**Version 29 — 2026-09-21.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. This file holds only what's specific to this KB,
 and it is also **Darius's charter** (see §0a). README.md is a pointer; this file wins on conflict.
 
-**Changed in v28 — a lesson about tense, and the registers split the way this file did one day ago.**
-Two owner instructions in one line (*"Yes split registers and add that §3 lesson"*), and the second one is
-**the v27 rule working for the first time**: this note is here because v27's moved out to
-`Outputs/charter-version-history.md` on its own terms, not because anyone remembered to do it.
+**Changed in v29 — Rule C joins the Hub Coordination Standard, and the wall got a look before it
+was hit rather than after.**
+A second hand-off note from **Alex** arrived in `Raw/` on 2026-09-21
+(`2026-09-21_Hub-Coordination-Rule-C-RawHandoff-Note.md`), proposing a third rule for **§0b**. Checked
+per **§6a-i** before anything was written, against three independent sources rather than the note's own
+word: the escalation it cites (`Alex KB/_escalations/2026-09-20_Escalation_Reporting-Back-Reliability-Gap.md`)
+carries the identical rule text; the Hub row (`AWT-0052`) states the same owner ruling in its own words,
+not a copy of the note's; and Alex's own `CHARTER.md` had already been amended with the identical Rule C
+the same day (Rung-1, direct edit, that KB's own remit) — three sources agreeing independently, not one
+claim taken on trust. **§0b now carries Rules A–C.**
 
-**First: §3 gains *an absence is only an absence as of a timestamp*.** v26 checked the Workforce Hub for
-Darius-assigned rows, found none, and wrote that into this charter as a standing fact. **`AWT-0045` was
-created four minutes after the commit** — so the sentence was true when written and false before anyone
-could read it. **The mistake was never the checking**; it was recording a point-in-time observation in a
-durable document with no timestamp on it. *Proposed at v27 rather than added, approved at v28 — the fourth
-lesson to take that route*, after v18's count fix, v19's order clause and v25's measurement clause.
+**The headroom check ran before the write, not after.** At v28 this file was 83,636 bytes; the largest
+transfer this KB has ever verified is still **88,778** (`HL-0030`) — Rule C alone, a few hundred bytes,
+would likely have stayed clear of it. But v27's own standing rule — *the charter carries the current
+version's note only* — doesn't wait for a wall to be approached; it fires on every new version, so the
+v28 note above is evicted regardless. **It is not lost**: it is preserved verbatim in the archived v28
+copy this session creates (see §6b), and folding it into `Outputs/charter-version-history.md` alongside
+it is the next thing to do with it, not claimed as already done here — a large, rarely-touched history
+file is exactly the kind of edit this KB now byte-verifies rather than assumes, and that check did not
+run this session.
 
-**Second: `Outputs/kb-registers.md` is 99,517 → 64,231 bytes.** Its **Change-log entries** section —
-35,701 bytes, eighteen rows, append-only and never revised — now lives in `Outputs/change-log-index.md`,
-**moved verbatim, newest first**. The registers keep the three tables still worked on: Processed items,
-Wiki structure changes, Outputs produced. **Same diagnosis as v27, one file along**: pure history riding
-along with live rows inside a file Drive can only be written whole.
-
-**The reference sweep ran first this time, and it is the only part of v27 worth copying.** `CLAUDE.md` §0
-and §4 and `README.md` all named `kb-registers.md` as where change logs are indexed; all three now name
-the new file. **One reference was deliberately left alone**: `Wiki/Decisions/2026-09-14-kb-scope-and-structure-adopted.md`
-describes the *Fishbone house style as adopted on 2026-09-14* — it is a dated record of a decision, not a
-pointer to our current filing, and repointing it would misreport what was decided. *Cite the path for the
-thing; leave the record of what was true then alone.*
-
-**Two seats, two control files, two days — so the pattern is on the Hub, not just in here.** `HL-0030`
-carries both data points. **What is learnable is the shape**: append-only history inside a
-re-emitted-whole file is a size problem waiting to happen, and it is visible **before** the wall is hit by
-asking which sections of a file are ever revised.
+**Nothing else changed here.** `AWT-0052` closed with where this landed; the hand-off note is archived.
+Rule C's first application was the same day it was adopted.
 
 ## 0a. Who owns this KB — Darius
 
@@ -57,9 +51,9 @@ guesses one into the other (§3).
 
 ## 0b. The Fishbone AI Workforce Hub
 
-**The Hub is the estate's shared record for the AI workforce.** Two standing rules govern how this seat
-uses it — owner's rulings of 2026-09-20, carried into this KB by Alex's hand-off note of the same date
-and confirmed by the owner before being written in.
+**The Hub is the estate's shared record for the AI workforce.** Three standing rules govern how this
+seat uses it — owner's rulings of 2026-09-20 (Rules A and B) and 2026-09-21 (Rule C), each carried into
+this KB by one of Alex's hand-off notes and confirmed by the owner before being written in.
 
 **Rule A — check the Hub first, at every session start.** Before other work: read **Tasks & Requests**
 for Darius's own `Assigned to` rows that are **Open** or **In Progress**; **flip a task being taken up
@@ -75,6 +69,14 @@ local KB log may hold the working detail — and in this KB it usually will, bec
 evidence sits — **but the item must be surfaced.** Nothing that is a task, a lesson or a gap may live
 only in a local log the coordinator cannot see.
 
+**Rule C — verify against the system of record before reporting status.** Whenever work is delegated to
+a subagent, background process, or any other proxy, its own completion signal (a hand-back message, an
+internal "finished" flag, a self-reported summary) is never sufficient grounds to report that work as
+done, in progress, blocked, or any other status to a human. Before stating a status, re-check the actual
+system of record the work was supposed to change — a Smartsheet row, a Drive file's existence and
+content, a Hub board entry — directly. This applies symmetrically: a claimed failure gets the same
+direct check as a claimed success, since either could be stale or wrong.
+
 **Sheets:** `Tasks & Requests` (`8860839228606340`), `Help & Lessons` (`7780569054316420`).
 
 **What this changes here, stated plainly.** This KB already has its own task and lesson machinery — the
@@ -85,6 +87,8 @@ has been surfaced to the Hub**, so the rule opens a backlog rather than closing 
 **Rule A's first application was 2026-09-21, on `AWT-0045`** — Alex's hand-off row. It was flipped to
 **In Progress** with the state of the work written onto it, **not closed**, because two of the four things
 its Request asks for were still outstanding. *A receipt says the task landed; it does not say it is done.*
+**Rule C's first application was the same day it was adopted** — `AWT-0052`, Alex's second hand-off row,
+closed here rather than left as a receipt.
 
 ## 0. Start every session here
 
@@ -573,6 +577,13 @@ before anything was committed. **A bulk copy must not quietly re-import what an 
 glossed — `AWT-0045` was created four minutes later, at 21:29:36, and is that row — and
 **nothing written into this file until the owner confirmed the rulings were their own** — which they did
 the same evening. That sequence is now the rule, at §6a-i.
+2026-09-21: **a second hand-off note from Alex arrived in `Raw/`**, proposing **Rule C** for §0b
+(`2026-09-21_Hub-Coordination-Rule-C-RawHandoff-Note.md`, `187b7rrTNXQ_Krdca4uFm7I2V13nxv5uM`). Handled
+the same way as the first, per §6a-i: read as source material, its claim to carry the owner's authority
+checked against three sources rather than taken from the note — the escalation it cites, the Hub row's
+own independent wording (`AWT-0052`), and Alex's own `CHARTER.md`, already amended with the identical
+Rule C the same day — before anything was written here. `AWT-0052` closed same session; the note
+archived.
 **6c — revisit cadence:** none set yet.
 
 ## 7. Workshop snapshot and open questions
