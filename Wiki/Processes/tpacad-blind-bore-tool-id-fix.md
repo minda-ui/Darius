@@ -1,10 +1,10 @@
 ---
 title: "Closing T016: the Blind-bore tool-ID fix, and a correction to what T016 was said to be"
 category: Processes
-status: active
+status: superseded
 sensitive: false
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-23
 sources:
  - "`Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md` (Drive `1eEGlEAeEfLQFUMrmNHF2ySZSjy5W1IeC`), read in full 2026-09-19 — the contemporaneous at-the-machine record of 2026-09-15"
  - "Smartsheet Tasks T016 (row `3054339713795972`), note read 2026-09-19"
@@ -13,9 +13,35 @@ related:
  - ./tpacad-tool-type-optimizer-ambiguity.md
  - ./carcase-fixings-cabineo-x-vs-confirmat.md
  - ../Software/kitchen-unit-library.md
+ - ../Machinery/vitap-k2-drill-head-tooling.md
+ - ./tpacad-tool-match-criteria.md
 ---
 
 # Closing T016: the Blind-bore tool-ID fix
+
+> # SUPERSEDED 2026-09-23 — DO NOT FOLLOW THIS PROCEDURE
+>
+> **Its premise is false.** This article rests on the claim that
+> *"Tool for this working not found"* is raised when several tools match and the optimiser cannot
+> choose. **TPA's own documentation for the optimiser module says the error is raised when
+> *nothing* matches** — error **−27**, *"Working: tool match not possible"*, and the module
+> explicitly expects multiple candidates. See
+> [`tpacad-tool-match-criteria.md`](./tpacad-tool-match-criteria.md), which replaces this one.
+>
+> **Two of its instructions are actively harmful:**
+> 1. *"Leave `Tool type` alone"* while setting an explicit `Tool` — this triggers error **−25** if
+>    the type does not match the tool, so the fix appears to fail when it has not been tried.
+> 2. The whole article is silent on **manual chapter 5 p.63** — through-drills belong in the
+>    indicated spindles, black ring right-hand, red ring left-hand, wrong placement damaging bits
+>    and rollers. Any procedure that has someone re-tool a head must say so. *(Editing a bush's ID
+>    moves nothing physical and is not affected by this.)*
+>
+> **What survives.** Everything this article says about *programming per tool overriding
+> programming per diameter* is correct and confirmed by the Workings manual. Its correction of the
+> **2026-09-19 reframing** — that T016 is at the Vitap, not the SmartCABINET catalog — also stands.
+> It is kept, uncorrected below this line, because the record of what the KB believed and why is
+> worth more than a tidy file. *This is the second time a T016 document has had to correct its
+> predecessor; the first correction was right about the place and wrong about the mechanism.*
 
 **Read the next section before going to the machine.** The fix this KB has been carrying in its task
 note and in `CLAUDE.md` §7 since 2026-09-19 points at the wrong computer.

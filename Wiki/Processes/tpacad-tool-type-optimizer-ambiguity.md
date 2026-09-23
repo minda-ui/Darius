@@ -4,7 +4,7 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-23
 sources:
   - ../../Raw/TPA CAD part 1.pdf
   - ../../Raw/TPA CAD part 2.pdf
@@ -15,6 +15,8 @@ related:
   - ../Processes/tpacad-blind-bore-tool-id-fix.md
   - ../Processes/tpacad-interpolated-holes.md
   - ../Software/kitchen-unit-library.md
+  - ../Machinery/vitap-k2-drill-head-tooling.md
+  - ../Processes/tpacad-tool-match-criteria.md
 ---
 
 # Process: TpaCAD tool-type auto-resolution ambiguity ("Tool for this working not found")
@@ -44,6 +46,34 @@ or "CN Tools" appear anywhere in this extract — that material almost certainly
 those three un-supplied files. **Open action: track down `Workings.pdf` and the complete
 `TpaCad.pdf` from the shop's own Albatros PC** (`Albatros\Help\`) rather than treating this extract
 as the full picture.
+
+> ## Correction, 2026-09-23 — the root cause below is wrong
+>
+> **The observations in this article are sound and are still the best record of what happened on
+> 2026-09-15.** What is wrong is the *mechanism* invented to explain them.
+>
+> This article concludes that the optimiser fails when several tools match a diameter + type and
+> nothing breaks the tie. **TPA's `CnCadOpti_eng.pdf` — obtained 2026-09-23 from the shop's own
+> `Albatros\help\en-GB\` folder, closing T015 — documents the opposite.** Error **−27** is
+> *"Working: tool match not possible — No tool can be used"*, and §1.5 says the optimiser checks
+> *"if there is **at least one** tool which can work working"*. Several candidates are normal; §1.6
+> aggregates across them deliberately.
+>
+> **Two specific claims below are now known false:**
+> - *"Confirmed on two different diameters on the same file (3mm and 5mm), **both times with the
+>   Blind category assigned to multiple bushes**"* — **there is no blind Ø3 on this head at all**
+>   (owner, from the archive, 2026-09-23). That half was assumed from its neighbour, not checked.
+> - *"five equally valid candidates and no documented tie-break"* — there is no tie-break because
+>   there is no ambiguity failure. Bushes 6-10 **are** five blind Ø5, confirmed 2026-09-23; why the
+>   Ø5 operation failed is now **unexplained**, with tool useful-length the leading hypothesis.
+>
+> **This article's own last open question was the right one** — *"whether the ambiguity has a
+> documented tie-break after all … `Workings.pdf` and the complete `TpaCad.pdf` would settle it
+> (Task T015)"*. It did. The KB acted on the mechanism for eight days instead of waiting on the
+> answer it had already identified as missing.
+>
+> Read [`tpacad-tool-match-criteria.md`](./tpacad-tool-match-criteria.md) for the five criteria that
+> actually govern tool matching. **Nothing below this line has been edited.**
 
 ## The fault
 

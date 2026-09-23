@@ -26,6 +26,8 @@ related:
  - ../Software/kitchen-unit-library.md
  - ../Software/smartcabinet-and-production-workflow.md
  - ../Troubleshooting/troubleshooting-vitap-k2.md
+ - ../Machinery/vitap-k2-drill-head-tooling.md
+ - ../Processes/tpacad-tool-match-criteria.md
 ---
 
 # Vitap K2-2.0 — CNC Boring, Drilling and Routing Centre

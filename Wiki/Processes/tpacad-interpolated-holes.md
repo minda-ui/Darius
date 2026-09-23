@@ -13,6 +13,7 @@ related:
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
  - ../Processes/panel-production-route.md
  - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/tpacad-tool-match-criteria.md
 ---
 
 # Making holes with a cutter instead of a drill
