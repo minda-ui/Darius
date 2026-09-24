@@ -1,4 +1,12 @@
-# Change log — 2026-09-24 — AWT-0087: the rename cannot be done from here, the proposed name is wrong, and the charter line already exists
+# Change log — 2026-09-24 — AWT-0087: the rename needed the owner's hand, the proposed name was wrong, and the charter line already existed
+
+> **Closed the same day, and this file was written before that.** §§1–7 were written while the task
+> stood **Blocked**; within the hour the owner renamed the sheet to **`Workshop Document Log (local
+> mirror)`** — the name proposed in §2 — and **§8 carries the close and the sweep.** Nothing in §§1–7
+> is edited: they are the record of what was known when the row went red. **This file was called
+> `change-log-2026-09-24-awt-0087-rename-blocked.md` until the close**; renamed because a filename
+> asserting *blocked* about a task that closed the same day is the trap §3 names three times. The two
+> archived Drive copies keep the old name.
 
 **A short session with three findings, none of them the one the task expected.** `AWT-0087` (Alex,
 2026-09-23) asked for two things: rename this KB's Workshop `Document Register` Smartsheet away from
@@ -97,6 +105,7 @@ believed.**
 | `Outputs/change-log-index.md` | this session's row, newest first |
 | `Outputs/change-log-2026-09-24-awt-0087-rename-blocked.md` | this file |
 | Smartsheet `Help & Lessons` (`7780569054316420`), row `7664378374129540` | **`HL-0050` raised** — see §7 |
+| `CLAUDE.md` §0a and §1, `CLAUDE-Rules.md` §6a, Smartsheet `Tasks` `T003` | swept to the new sheet name once the owner renamed it — see §8 |
 
 ## 7. Surfaced on the Hub, per §0b Rule B
 
@@ -113,3 +122,57 @@ refusal (**do not manufacture the capability**: rebuilding a sheet under the wan
 `HL-0042`, *a limitation is a property of the call you made*.
 
 **Nothing was renamed, and nothing was written to the charter beyond §6a's capability note.**
+*True when written. §8 supersedes it.*
+
+## 8. Closed — the owner renamed it, and the sweep ran
+
+**Verified first, per Rule C**, before anything was written: `get_sheet_path` on `838802392352644`
+returns `name: "Workshop Document Log (local mirror)"`, `path: /Workshop/Workshop Document Log (local
+mirror)`, `accessLevel: OWNER`. **Same sheet, same id** — so every citation of the id still resolves and
+nothing had to be re-pointed. The name proposed in §2 was taken as it stood.
+
+**The sweep drew one line and applied it everywhere: a pointer is updated, a dated record is not.**
+A pointer tells the next session which sheet to write to and must be current; a note saying what was
+done, or deliberately not done, on a date is true as written and stays. *Stated here because it is the
+rule that decided every mention, taken one at a time. **No total is given on purpose**: the count
+depends entirely on where you draw the edge of "live", and a number here would be quoted back as if it
+were a fact (§3).*
+
+**Found by searching across line breaks, not for the phrase.** A plain `grep` for `Document Register`
+**misses §6a's own allowed-sheets list**, where the name wraps as `Machinery Register, Document` /
+`Register, Tasks` — the one entry that actually grants the write. *A sweep that had trusted the obvious
+search would have left the permission clause naming a sheet that no longer exists.*
+
+**Updated — four pointers:**
+
+| Where | Was | Now |
+|---|---|---|
+| `CLAUDE.md` §0a Reach | `Document Register` in the writes-unattended list | `Workshop Document Log` |
+| `CLAUDE.md` §1 Live data sources | `**Document Register** (838802392352644)` | the new name, the id, and the old name with its date — so a search for either finds it |
+| `CLAUDE-Rules.md` §6a allowed sheets | `Machinery Register, Document`/`Register, Tasks` (wrapped) | `Machinery Register, Workshop`/`Document Log, Tasks` |
+| Smartsheet **Tasks** `T003` notes (`4087584374523780`, row `284073728280452`) | *"the local Document Register row's Document No."* | the new name, plus the id and the rename date in parentheses |
+
+**Left alone, deliberately:**
+
+- **Seven are not this sheet at all.** `CLAUDE.md` §0a and §1 and `CLAUDE-Rules.md` §6a/§6b say *shared
+  group* Document Register (sheet `7352854736144260`, which keeps its name); §6a also names *AMFA
+  Furniture Ltd's own*; `CLAUDE-Workshop.md` names the **Construction** one; `T003`'s own task line is
+  about the group register. **Renaming any of these would have been the error the task was raised to
+  prevent** — the collision is between separately-owned sheets, and only ours moved.
+- **Two are dated records of a decision.** `Wiki/Machinery/abac-genesis-screw-air-compressor.md` and
+  `Wiki/Suppliers/pneumatic-tools-and-compressors.md` record that bank details were *not* copied into
+  "the Document Register" — true as written, on a date, under that name. §6b's own 2026-09-17 and
+  2026-09-18 entries are the same shape and stay too. *Also 19 KB of re-emission for a phrase that is
+  not wrong, which is the trade `AWT-0089` is parked on.*
+- **One is ambiguous and reads correctly either way.**
+  `Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md`: *"it is a Document Register item"* — a
+  document to be registered, which is the group register's job. Left as is rather than guessed into one
+  reading; 23,291 B besides.
+
+**Change logs, snapshots and archived copies are untouched**, including yesterday's registers row that
+says the task was left Blocked. It was. A new row records the close rather than editing that one.
+
+**`AWT-0087` closed Done**, both halves answered: the rename is the owner's doing and is verified; the
+charter line **needed nothing added**, because §6a and §6b already said it. *The hold on writing a new
+line still stands and costs nothing — no line was written, so no ruling had to be confirmed. If
+different wording is wanted, that is a fresh ask.*

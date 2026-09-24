@@ -72,8 +72,8 @@ visits, the electrician's PTC check); never reply on either company's behalf to 
 inspector/manufacturer; never edit or delete a row on the shared group Document Register (append-only,
 in-scope documents only, and only once write access is confirmed — not yet done); never touch AMFA
 Furniture Ltd's own KB/Property Register/Document Register from this KB; never hold, type or request a
-secret/credential. Appending to the Workshop workspace's own sheets (Machinery Register, Document
-Register, Tasks, Maintenance Schedule, Fault Log, Safety Check Log, Scan Events) and creating Wiki
+secret/credential. Appending to the Workshop workspace's own sheets (Machinery Register, Workshop
+Document Log, Tasks, Maintenance Schedule, Fault Log, Safety Check Log, Scan Events) and creating Wiki
 articles here is normal KB work and allowed. Deleting whole Smartsheet sheets is a UI action the owner takes (the
 connector has no delete-sheet tool); the 2026-09-15 duplicate cleanup was done that way.
 **Renaming a sheet is the same** — checked 2026-09-24 for `AWT-0087`, not assumed: the connector's

@@ -80,9 +80,9 @@ Smartsheet + Web (read)** — no Gmail (Darius logs and tracks, it does not send
 
 **Reach.** Darius **reads** its own KB and the estate it needs (the AMFA Furniture Ltd and Fishbone
 Construction Ltd KBs — the asset-ownership question, §7); **writes, unattended,** its own KB and its
-own Workshop Smartsheet sheets (Machinery Register, Document Register, Tasks, Safety Check Log,
-Maintenance Schedule, Fault Log), **and its own rows on the Workforce Hub** (§0b — own rows only, never
-another seat's); and **needs a human** for everything in §6a — appending to the
+own Workshop Smartsheet sheets (Machinery Register, Workshop Document Log, Tasks, Safety Check Log,
+Maintenance Schedule, Fault Log), **and its own rows on the Workforce Hub** (§0b — own rows only,
+never another seat's); and **needs a human** for everything in §6a — appending to the
 shared group Document Register (confirmed access only), committing AMFA or Construction to any
 purchase/contract/payment, replying to a supplier/insurer/inspector, filing with any regulator, or
 touching another KB. The boundaries were already written into this KB's §6a; Darius just puts a name
@@ -202,7 +202,10 @@ No `Properties`/`Tenants`/`Contracts` folders: not applicable to this KB's scope
 
 **Live data sources.** Smartsheet workspace `Workshop`, one sheet of each after the 2026-09-15
 duplicate cleanup: **Machinery Register - Database** (`1754351980906372`, `FA2301`–`FA2306`,
-`FA2401`, `FA2402`), **Document Register** (`838802392352644`), **Tasks** (`4087584374523780`), **Safety Check Log**
+`FA2401`, `FA2402`), **Workshop Document Log (local mirror)**
+(`838802392352644` — called **Document Register** until 2026-09-24, renamed by the owner under
+`AWT-0087` to end an estate-wide collision of that name; same sheet, same id, and dated records keep
+the old name), **Tasks** (`4087584374523780`), **Safety Check Log**
 (`913380204480388`, F45 monthly safety check), **Maintenance Schedule** (`6753985971226500`, all
 recurring maintenance tasks, RYGB by due date), **Fault Log** (`414932606781316`, faults & fixes,
 RYGB by status) and **Scan Events** (`4828191892047748`, the append-only barcode scan log, RYGB by
