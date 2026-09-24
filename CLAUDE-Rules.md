@@ -76,6 +76,12 @@ secret/credential. Appending to the Workshop workspace's own sheets (Machinery R
 Register, Tasks, Maintenance Schedule, Fault Log, Safety Check Log, Scan Events) and creating Wiki
 articles here is normal KB work and allowed. Deleting whole Smartsheet sheets is a UI action the owner takes (the
 connector has no delete-sheet tool); the 2026-09-15 duplicate cleanup was done that way.
+**Renaming a sheet is the same** — checked 2026-09-24 for `AWT-0087`, not assumed: the connector's
+`update_column` renames columns only, and none of the six hidden toolsets (`portfolio`,
+`ai_solutions`, `legacy_workapps`, `scenario_planning`, `automations`, `smart_skills`) renames a
+sheet. *Owner-level access on the sheet does not help; the capability is missing, not the
+permission.* Rebuilding the sheet under a new name is **not** the workaround — a new sheet ID breaks
+every citation of the old one and loses the cell history.
 **6a-i — cross-KB amendments go through `Raw/`, never a direct edit** (owner's ruling, 2026-09-20; Hub
 `HL-0023` / `AWT-0036`). **Outbound:** where an estate-wide rule, policy or amendment needs to land in
 another employee's governed file — a `CHARTER.md`, a `CLAUDE.md`, any standing control file — this KB
