@@ -151,10 +151,11 @@ the owner/Victoria; only the cover page has been seen.
   hole Ø − cutter Ø**, written for a live job with the 10 mm and 12 mm drills on order. Also the
   cheapest case in which to settle the unresolved `Diameter`-field convention, because a wrong reading
   gives 22 mm rather than 12 — unmistakable on scrap.
-- **Closing T016 (2026-09-19)** — `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`: the two-step fix
-  at the **Vitap**, the verification test on `03-BOTTOM.TCN`, why the Through-bore workaround must not
-  be used to close it, and **the correction to what T016 was said to be** — see the T016 bullet below
-  and the v21 note in `Outputs/charter-version-history.md`.
+- **T016's corrected root cause (2026-09-23)** — `Wiki/Processes/tpacad-tool-match-criteria.md`: error
+  **-27** fires when *nothing* matches, the **five criteria** a diameter-programmed hole must satisfy,
+  and why the message never says which one failed. Its predecessor
+  `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md` is **`status: superseded`, DO NOT FOLLOW** — kept as
+  the record of what was believed on 2026-09-19. See the T016 bullet below.
 - **Barcode system, Phase 0 (2026-09-17)** — the **Scan Events** sheet (`4828191892047748`) and the
   Machinery Register's `Asset Label No.` column, documented in
   `Wiki/Processes/barcode-and-scan-event-system.md`. Phases 1–4 (part labels, stage tracking, the
@@ -175,11 +176,12 @@ the owner/Victoria; only the cover page has been seen.
 - **SmartCabinet Wall Support hardware X-sign discrepancy** — two items both "measured from the back
   edge" needed opposite X signs (−15 vs +5); needs visual confirmation in SmartCabinet's own preview
   on a real job (Task T017).
-- **TpaCAD Blind-bore-drill tool-ambiguity fix** refined but not fully tested — likely needs a real CN
-  Tools "Dia. 5mm" entry created on the SmartCabinet computer, exported and transferred, then
-  referenced in the failing operation's Tool [T] field (Task T016) — *the manual now supports this: the
-  setup's `Tool type` "is automatically assigned by selecting the tool", and on `HOLE` an explicit `Tool`
-  "prevails over the programming per diameter" with `Tool type` driving "a validity check of the tool".*
+- ~~**TpaCAD Blind-bore-drill tool-ambiguity fix** needs a CN Tools "Dia. 5mm" entry created on the
+  SmartCabinet computer, exported and transferred~~ — **withdrawn 2026-09-27, twice over.** The
+  ambiguity mechanism does not exist (2026-09-23, error -27), and SmartCabinet has **no tool ID to
+  create or export**: its tool record is six fields with `Nome` as the identifier, and for drilling it
+  names no tool at all by design (`Wiki/Software/smartcabinet-online-manual.md`). *Kept struck through
+  rather than deleted: it stood in this list for eight days and someone may have started on it.*
   **TpaCAD complete manual / `Workings.pdf`** not yet obtained — at `Albatros\Help\` on the shop's
   Albatros PC (Task T015), and **no longer housekeeping**: it holds the compensation semantics, the
   entry/exit segments and the `THREE HOLES HINGE` parameter table, three of which were needed on
@@ -297,24 +299,38 @@ the owner/Victoria; only the cover page has been seen.
   suggestion, not a reading*. Also unestablished: whether SmartCABINET generates a unit's parts
   **parametrically** from a width, which would make the whole folder question smaller than it looks.
   See `Wiki/Software/kitchen-unit-library.md`.
-- **`T016` is the library's remaining blocker — and the fix is at the Vitap, not on the design
-  computer.** *v18–v20 of this file said the opposite and were wrong; see the v21 note in
-  `Outputs/charter-version-history.md`.* **The Vitap is
-  not missing a Ø5 tool: it has five.** Blind Ø5 mm sits on bushes 6–10, all at **ID 0**, so
-  diameter + type resolution has five candidates and no tie-break — which is the whole fault. **Two
-  steps close it**, both in TpaCAD's per-position Technology dialog and the failing program: give one
-  Blind Ø5 bush a real unused ID, then set that operation's `Tool` field to it, which *"prevails over
-  the programming per diameter"*. **Verify by reproducing the failure first, then re-Solving, then
-  running `03-BOTTOM.TCN`** — and **not** by switching Tool type to Through bore, which clears the
-  error by picking a category that happens to have one bush and silently drills with the wrong one.
-  Full procedure: `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`.
-  **Nothing needs buying** — that part stands: Cabineo X's published Ø15 drill is the *alternative* to
-  routing and the master routes the pocket, so the Ø5 the master already drills plus a ≤Ø12 cutter
-  covers it. **The missing SmartCABINET `Dia. 5mm` row is still worth adding, but it is a different
-  job**: it belongs to the *systemic* fix — getting the post-processor to **emit** a Tool ID on export,
-  so step two is not repeated by hand on every operation of every unit, since every hole in the master
-  exports with `#1001=0`. *Whether SmartCABINET's IDs reach TpaCAD at all is unverified; the one data
-  point is that position 101 is ID 1001 in both, for positions 101–104 only.*
+- **`T016` is the library's remaining blocker, and it is an owner decision, not a bug.**
+  *Corrected 2026-09-23 and swept into this file 2026-09-27 — this bullet described a mechanism now
+  known false for four days after the correction landed everywhere else. See the note at the end.*
+  **Error -27 fires when NOTHING matches, never when several do**: TPA's `CnCadOpti_eng.pdf` §1.5
+  checks for *"at least one tool which can work working"* and §1.6 deliberately aggregates across
+  candidates. **The five criteria** — diameter; tool type *(checked only if the working sets type > 0)*;
+  face; **useful length ≥ programmed depth**; axis limits — and failing one, for every tool on the head,
+  gives -27 without saying which. **On the live file**: `03-BOTTOMB.TCN` face 1 working 11 is `TD3 TP0`,
+  `Z-13.0` in 19 mm, so blind and programmed by diameter, and **Ø3 on this head is only `passante`** —
+  criterion 2 fails for every tool. **A tooling/design mismatch: SmartCABINET exports a hole the machine
+  cannot drill blind.** Either the master stops specifying blind Ø3, or a blind Ø3 bit goes on the head,
+  **and the second is a purchase**. The Ø5 case is **unexplained**, useful length the leading hypothesis,
+  recorded as one. Current reference: `Wiki/Processes/tpacad-tool-match-criteria.md` and
+  `Wiki/Machinery/vitap-k2-drill-head-tooling.md`.
+  **`Wiki/Processes/tpacad-blind-bore-tool-id-fix.md` is `status: superseded` and carries a
+  DO-NOT-FOLLOW banner — it is kept as the record of what was believed, and its procedure must not be
+  run.** This bullet pointed at it as *"Full procedure"* until 2026-09-27.
+  **Nothing needs buying for the Cabineo route** — that part stands: Cabineo X's published Ø15 drill is
+  the *alternative* to routing and the master routes the pocket, so the Ø5 the master already drills
+  plus a ≤Ø12 cutter covers it.
+  **The "systemic fix" as this file framed it does not exist, established 2026-09-27 from SmartCabinet's
+  own manual** (`Wiki/Software/smartcabinet-online-manual.md`). This bullet called for *getting the
+  post-processor to emit a Tool ID on export*. SmartCabinet's tool record has **six fields and no ID at
+  all** — `Nome` is the identifier *"utilizzato dalla macchina per richiamare quello specifico
+  utensile"* — and for drilling the program is built to name no tool: *"le punte a forare vengono
+  normalmente selezionate automaticamente"*, repeated five times in the joints page as *"qualora non sia
+  impostato alcun utensile verrà selezionata automaticamente una punta"*. **So `#1001=0` on every hole in
+  the master is the intended output, not a defect.** Still open, and labelled: drilling tools *can* be
+  named explicitly, but only *"solo … alcune particolari configurazioni cn"* — whether the Vitap's
+  postprocessor exposes that table is unchecked, and its `tipo di foro` field **might** let the
+  blind/through distinction be declared at the design side. *That last is my inference from one
+  sentence. Look at the dialog before acting on it.*
   **Severity revised down 2026-09-19, priority unchanged:** with confirmat in stock as Plan B, and the
   connector pockets routed into the carcase's *inside* faces where an empty one is hidden, **a job is
   not stopped by T016** — only made more slowly and with a visible screw head.
