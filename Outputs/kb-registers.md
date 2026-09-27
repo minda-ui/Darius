@@ -26,7 +26,7 @@ API, so a whole file is re-emitted for one new row. Splitting by table would not
 are append-only and every session touches at least one. Splitting by period does, because a settled row
 is never touched again. **When this file passes roughly 25 KB, snapshot it again.**
 
-**It is now PAST that threshold: 28,568 B as published on 2026-09-27**, after three bodies of work in one day. **The next session must snapshot this file before adding anything** - and it will need a name other than `-snapshot-2026-09-27.md`, which is taken. *Carried past the limit deliberately rather than snapshotted twice in a day: the registers being complete matters more than three kilobytes, and a half-done second snapshot on the same date would have cost more than it saved.*
+**It is now PAST that threshold: 29,143 B as published on 2026-09-27**, after three bodies of work in one day. **The next session must snapshot this file before adding anything** - and it will need a name other than `-snapshot-2026-09-27.md`, which is taken. *Carried past the limit deliberately rather than snapshotted twice in a day: the registers being complete matters more than three kilobytes, and a half-done second snapshot on the same date would have cost more than it saved.*
 
 *The cost of renaming rather than rewriting is that each snapshot keeps the header it had when it was
 live, so it still describes itself as the file `CLAUDE.md` §0 sends you to. It does not. The filename and
@@ -100,7 +100,9 @@ subject of the 37 KB in-place-update test.*
 | `Outputs/2026-09-27-smartcabinet-manual-capture-cn-chain.md` | 17,972 | `1ynfp-qiuCUviyfRHT5I64ZRJzAmPoGK6` — *the 17,971 B copy was trashed, see the change log* |
 | `Outputs/2026-09-27-proposal-drive-in-place-update.md` | 5,974 | `1JGDRJbliAXrAYkvcob2uIz3SpihoOMAK` |
 | `Outputs/2026-09-27-handoff-alex-composio-rollout-findings.md` | 6,053 | `1t9kmNqo4ypSAvd0jheosLvc7pSSt2di5` |
-| `Outputs/change-log-2026-09-27-smartcabinet-manual-and-the-t016-premise.md` | 22,476 | `1x8Ep5qVkIfD1ch-zODA1AOf8sAXT3WCu` |
+| `Outputs/change-log-2026-09-27-smartcabinet-manual-composio-and-a-reverted-mirror.md` | **36,014** | `1g3C7Xh4W63G9QtExWTekzqAyYm2YBnRz` — *renamed and extended twice since; the 22,476 B copy at `1x8Ep5qVkIfD1ch-zODA1AOf8sAXT3WCu` was the first publish, under the old slug* |
+
+*One defect of my own, caught on the byte-check and recorded rather than quietly fixed: the rename was applied to the two citing files with a **global `sed`**, which correctly changed the path in this row and **left its byte count and id untouched** — so for one publish this table claimed the new filename at the old size and the old id. A rename is a three-field change in a table like this, not a one-field change.*
 | `Outputs/kb-registers-snapshot-2026-09-27.md` | 23,678 | `1t1h3hsZpc6Qw-fAAJ_RTNn8c2tIhazJi` — renamed, not rewritten |
 | `Outputs/2026-09-27-proposal-drive-in-place-update.md` | **6,917** | `1KNvAx1a0Ob7LMRhF4-i9m3aa3PxymwHq` — *supersedes the 5,974 B id above* |
 | `Outputs/2026-09-27_Darius-to-Alex_Composio-rollout-report.md` | 9,977 | `1WIakKYJ8Q41-n0Jll7Ygt5-bRml0M300` — **in Alex's `Raw/`, not this KB's tree** |

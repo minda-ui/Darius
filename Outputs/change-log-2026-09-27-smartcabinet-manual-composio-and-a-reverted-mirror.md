@@ -1,4 +1,11 @@
-# Change log — 2026-09-27 — SmartCabinet has an online manual, and it says T016's "systemic half" was never a real job
+# Change log — 2026-09-27 — a manual that retired a job, Composio adopted, and a mirror a merge had reverted
+
+*Three bodies of work in one session, in the order they happened: §1–§9 the SmartCabinet manual and the
+T016 premise; §10–§12 the Composio rollout; §13 the git mirror; §14 the report to Alex and the correction
+it forced; §15 the documentation pass that closed the day. **Renamed from
+`change-log-2026-09-27-smartcabinet-manual-and-the-t016-premise.md`** once it was clear the original slug
+described only the first third — the same reason the 2026-09-24 log was renamed at its close. Two files
+cited the old name and both were updated; the superseded copies in `Archive/` keep their own dated names.*
 
 **The owner sent one URL to test.** It resolved, and behind it was the thing this KB has never had: a
 complete manual for the **design** side. Every TpaCAD fact here was won from PDFs on the machine's own
@@ -422,3 +429,52 @@ and costs one call.
 **And one thing that is not mine to fix:** the same group-by shows **`AWT-0135` standing at count 2** — a
 live duplicate on two rows, someone else's. **Flagged to Alex on `AWT-0141` and to the owner, not touched**
 (Rule A, own rows only).
+
+## 15. Closing the day's record — what this pass found still owed
+
+*Asked for: "document today's work". The narrative was already here; three things were not.*
+
+**1. The §6b entry the morning's ruling was owed.** `CLAUDE-Rules.md` §6b — where this KB's access
+decisions live — now carries the 2026-09-27 Composio entry: the owner's **Drive and Smartsheet only, never
+Gmail** ruling, that it matches §0a's reach rather than extending it, the one linked Drive connection, the
+missing Smartsheet toolkit, and **the limit of the ruling stated plainly** — the shared organisation means
+no-Gmail is a policy observed, not a boundary enforced. *12,646 → 14,520 B.*
+
+**The deferral is recorded in the entry itself rather than quietly dropped.** It was owed this morning and
+is late by one pass, because a plain read of §6b was refused then as `[Code from External]` — a false
+positive on our own charter — and **a governed file is not edited blind**. *The read succeeded on the next
+attempt with no change to the command.* So the honest account is not "the classifier blocked it" but
+"the classifier blocked it once, and I did not retry before writing the day up": the ruling was live in the
+KB for several hours while the file that holds access decisions did not mention it.
+
+**2. This file was named after a third of its contents.** The slug said
+*smartcabinet-manual-and-the-t016-premise* while the session had also adopted Composio, found the mirror
+reverted, and sent a report to Alex. **One file per session is the rule (§4) and was followed; the name was
+the defect** — a future session scanning `Outputs/` by filename would have seen none of the second or third
+body of work. Renamed, with the two citing files updated. *Precedent, not improvisation: the 2026-09-24 log
+was renamed from `-rename-blocked` once its scope changed.*
+
+**3. Today's lessons were in a narrative and nowhere findable.** Rule B makes the Hub the single home for
+lessons, and four of today's are worth the next session's time — not one of them had a row. Raised as
+`HL-0058` to `HL-0061`:
+
+| Ref | The lesson |
+|---|---|
+| `HL-0058` | **A stale *mirror* copy is more dangerous than a stale *source* copy.** §1's rule imagines one direction; the working tree is what the next session re-emits, so a regression there becomes authoritative |
+| `HL-0059` | **A write-proof is not a durability proof.** `keepForever: false` — revisions 1 → 2 proves a write happened and says nothing about how long the superseded bytes last |
+| `HL-0060` | **A search that reports zero may not have looked.** `find_in_sheet` searches a 100-row window and ignores `offset`; the authoritative read is a group-by on the key column |
+| `HL-0061` | **A commit message is not a verification** — *"Sync git mirror to Drive"* named 73 files and missed the one that mattered |
+
+*`HL-0060` is the third instance today of the v25 lesson **a limitation is a property of the call you
+made**, which is the argument for a sibling row rather than another citation of the original: a lesson that
+keeps recurring in new clothes is not yet written narrowly enough to catch.*
+
+**Two things found on the Hub and not touched**, both someone else's: **`HL-0051` stands at count 2**, a
+live duplicate, and **two rows carry no `Ref` at all** (61 rows in the sheet, 59 with a Ref). Flagged to the
+owner, per own-rows-only. *Found by the group-by from `HL-0060`, on its first use.*
+
+**What was deliberately not done.** No registers rows for this pass — the file is already past its
+snapshot threshold, a charter amendment belongs in the change log and the version history rather than the
+Outputs table, and adding bytes to a file that needs snapshotting would make the next session's job worse.
+*`CLAUDE.md` itself is untouched: nothing here changes §1 or §4, and the in-place-update proposal is still
+the owner's to rule on.*

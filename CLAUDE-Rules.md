@@ -144,4 +144,24 @@ it records assets, not accounts, and **the register stays in the mirror as it is
 quotations themselves remain out of git, as do bank details and the other §6b omissions above. *The
 question was raised because a rule that plainly bites elsewhere should not be left to a reading of mine;
 asked 2026-09-23, answered the same day.*
+2026-09-27: **Composio adopted as a fallback connector layer, and the owner ruled its scope — Drive and
+Smartsheet toolkits only, never Gmail** (`AWT-0136`; Minda, verbatim: *"no gmail, drive and smartsheet
+only"*). That **matches §0a's existing reach rather than extending it** — Drive + Smartsheet + Web (read),
+and no Gmail because *"Darius logs and tracks, it does not send"* — so the rollout note's headline gain,
+`GMAIL_GET_ATTACHMENT`, is deliberately out of scope and **no Gmail toolkit is to be linked by this or any
+later session.** One Drive connection is linked, aliased `darius-googledrive`, and every call carries an
+explicit `--account`. **Smartsheet could not be linked at all: there is no Smartsheet toolkit**
+(`Invalid toolkit slugs: smartsheet`, code 4305), so the fallback covers half this seat's reach and not
+the half holding the Hub, the Machinery Register, Tasks or the Fault Log.
+**The limit of this ruling, stated rather than implied:** the Composio organisation
+(`minda_workspace`) is **shared across the estate**, `permission_group` is `null` on every connection, and
+any session signed into it can execute against any connection in it — three live Gmail connections
+included. **So no-Gmail is a policy this assistant observes, not a boundary the tooling enforces.** Raised
+for an owner decision and handed to Alex, who owns the rollout, rather than worked around.
+*This entry was owed the same day the ruling was made and is late by one pass: a plain read of this section
+was refused then by the environment's safety classifier as `[Code from External]` — a false positive on our
+own charter — and a governed file is not edited blind. The read succeeded on the next attempt; the delay is
+recorded rather than hidden, because the ruling was live in the KB for several hours before the file that
+holds the access decisions said so.*
+
 **6c — revisit cadence:** none set yet.
