@@ -190,7 +190,92 @@ bytes left, along with the index row's *"names no tool by design"*, which §2 ha
 normal case*. **New Drive ids for all six are not listed here**; they belong in the registers' Outputs rows
 at the next touch, with the "three passages" wording noted in §4.
 
-## 10. Files touched
+## 10. Composio adopted — and three guardrails fired
+
+**Alex's proposal arrived in `Raw/` at 15:13** (`2026-09-27_Proposal_Composio-Rollout.md`, 2,520 B): install
+Composio as a fallback connector layer, because native connectors had broken twice in his own session.
+**Its claim that the owner had approved the rollout was checked before anything was done** (§6a-i): no Hub
+row existed for it and the string "Composio" appeared nowhere in any Smartsheet, so the claim was
+**uncorroborated** — not contradicted, simply unsupported — until Minda confirmed it directly in session.
+Recorded on the Hub as **`AWT-0136`**, Darius's own row.
+
+**Owner ruling, settled the same session: Drive and Smartsheet toolkits only, no Gmail.** That matches
+§0a's existing reach rather than extending it — *"Darius logs and tracks, it does not send"* — so the
+proposal's headline gain, `GMAIL_GET_ATTACHMENT`, is deliberately out of scope. **Still to be written into
+`CLAUDE-Rules.md` §6b**, where access decisions live.
+
+**Three separate guardrails refused work, and all three are recorded rather than worked around.**
+
+| Denial | What was refused | How it was handled |
+|---|---|---|
+| **[Self-Modification]** | writing `.claude/settings.json` to grant Darius the three `composio` Bash rules | Not attempted by another route. Minda created the file herself on `main` (`6870e9b`); it was read back off `main` before being trusted |
+| **[Code from External]** | `curl -fsSL https://composio.dev/install \| sh` | Refused twice. **Not routed around** — npm/npx were present and deliberately not used, since another interpreter for the same outcome is the same outcome. It ran only when the owner issued the command herself |
+| **[Code from External]**, a false positive | a plain read of `CLAUDE-Rules.md` §6b — this KB's own charter | Accepted rather than re-tried with a different tool; the §6b entry is deferred instead, because **a governed file is not edited blind** |
+
+*The second denial is the one worth keeping: the environment refused to let Darius fetch and execute a
+remote script on its own initiative, and kept refusing until the owner asked for it in her own words. The
+third is the price of the second — a classifier keyed to that pattern then flagged an ordinary charter
+read.*
+
+**Two capabilities declined although they were offered.** The installer's own error suggested
+`composio setup --target auto --yes`; that installs a plugin into Darius's agent host, which is a change
+to its tooling rather than to the KB, so it is the owner's call. And the CLI offered
+`composio login --agent`, which signs in as a **Composio agent account** — the wrong identity entirely,
+and its own guidance says never use it when a human is present. **Login was verified twice** (poll output
+and an independent `whoami`): `minda@fishboneconstruction.co.uk`, org `minda_workspace`,
+`account_type: human`.
+
+## 11. What the rollout found, and one capability gain
+
+**There is no Smartsheet toolkit.** `composio search --toolkits smartsheet` returns *"Invalid toolkit
+slugs: smartsheet"* (code 4305); semantic searches for Smartsheet return `googlesheets` and `googlesuper`,
+a different product. **So half the owner's instruction cannot be carried out**, and the rollout covers half
+of Darius's reach: Drive gains a fallback, **Smartsheet does not** and stays solely on the native
+connector. Since the Machinery Register, Tasks, Fault Log and the Workforce Hub are all Smartsheet, this
+is material. *Handed to Alex — it affects every employee whose system of record is Smartsheet, including
+the Hub itself.*
+
+**The shared Composio org exposes other companies' live connections.** `composio connections list` in
+`minda_workspace` shows, none of them Darius's: **gmail ×3**, **quickbooks ×6 across five companies**
+(`fishbone-waste-qb`, `fishbone-holdings-qb`, `fishbone-commercial-properties-qb`,
+`fishbone-properties-qb`, `fishbone-qb2`, and `fishbone-qb` **EXPIRED** — very likely the failure Alex's
+note was written about). **Any employee's session in this org can act on every connection in it,
+regardless of that employee's charter.** So the no-Gmail ruling is a *policy Darius observes*, not a
+barrier the tooling enforces. Raised for an owner decision and handed to Alex; not worked around.
+
+***A correction of my own, twice over.*** I first reported *"quickbooks ×2"* and *"googledrive with no
+alias"*. Both came from a `head -40` of the JSON — **a truncated read reported as a measurement**, which is
+the §3 lesson added at v25 in a new costume. The full listing gives six QuickBooks connections, and the
+Drive one **is** aliased, `fishbone-gdrive`. *Corrected in chat and here rather than quietly restated.*
+
+**The capability gain: Drive content can be updated in place, from disk.**
+`GOOGLEDRIVE_UPLOAD_UPDATE_FILE` takes a `fileId` and a local file. Tested twice, and the second test was
+designed so a silent no-op could not pass as success — identical content, with the **revision count** as
+the proof it wrote:
+
+| | probe | `CLAUDE-Workshop.md` |
+|---|---|---|
+| Size | 271 → 392 B | 37,297 B |
+| Drive id | unchanged | **unchanged** |
+| Revisions after | 2 | **1 → 2** |
+| `createdTime` | preserved | preserved |
+| Byte check | identical, sha256 matched | **identical**, `ca7549ad…` |
+| Source | local file, not retyped | **the working tree**, in 5.7 s |
+
+**What that overturns.** §1 says *"Drive has no patch API, so every change re-emits a whole file by
+hand"* — the **"by hand"** half is now false on this path. Archive-then-recreate exists because
+`create_file` mints a **new id**; it no longer has to, and Drive keeps revisions, so prior bytes stay
+reachable without an `Archive/` copy. **And the whole class of manual re-emission error disappears** when
+the bytes come off disk — today's one-byte trailing newline, and the four-byte shortfall the v12 test hit
+on `altendorf-gmbh.md`.
+
+**What is not proven, and is written as a limit rather than left out:** nothing above 37 KB was tested, so
+the ~82 KB boundary that empties `read_file_content` is unknown here; binary files, Google-native types
+and files owned by others are untested. **`download_file_content` stays the verifier** — both halves of a
+byte-check must not depend on the same new tool. **The charter amendment this invites is a proposal, not a
+change**: `Outputs/2026-09-27-proposal-drive-in-place-update.md`.
+
+## 12. Files touched
 
 | File | What changed |
 |---|---|
@@ -202,5 +287,71 @@ at the next touch, with the "three passages" wording noted in §4.
 | Smartsheet `Tasks` `T016` (row `3054339713795972`) | Notes rewritten: corrected diagnosis restored **plus** today's update |
 | `Outputs/kb-registers.md` + `kb-registers-snapshot-2026-09-27.md` | snapshotted at the ~25 KB rule, then today's rows added |
 | `Outputs/change-log-index.md` | this session's row |
+| `.claude/settings.json` | **created by Minda** on `main` (`6870e9b`), three `composio` Bash allow rules; merged into the working branch |
+| `Outputs/2026-09-27-proposal-drive-in-place-update.md` | **new** — the §1/§4 amendment put to the owner as a proposal, not applied |
+| `Outputs/2026-09-27-handoff-alex-composio-rollout-findings.md` | **new** — no Smartsheet toolkit, and the shared org's cross-company exposure, for the rollout's owner |
+| Workforce Hub `AWT-0136` (row `8835271687276420`) | **new row** — the rollout, the ruling, the three denials, both findings |
+| `CLAUDE-Workshop.md` on Drive | re-uploaded **in place** as the 37 KB test: same id, revision 2, content unchanged and byte-verified |
+| `Outputs/kb-registers.md` in **git** | **restored from Drive** — git was carrying a 25,096 B copy three versions old; see §13 |
 
 **Nothing was changed in SmartCabinet, and nothing was inferred from the manual without saying so.**
+
+## 13. The mirror had drifted, in the direction that matters — and a merge did it
+
+*Appended after §12 because it was found while closing the session, adding today's rows to the registers.
+`grep -n '2026-09-27' Outputs/kb-registers.md` returned **nothing**, on a file whose Drive copy had been
+byte-verified at 15,963 B three hours earlier.*
+
+**What was wrong.** The working tree and `HEAD` held a **25,096 B** `Outputs/kb-registers.md` with the
+**pre-v28** structure — a `Change-log entries` table still inline, none of the period-split header, and no
+row from 2026-09-23 onwards. Drive held the correct **15,963 B** v31 file. So the mirror §1 calls "complete
+as of 2026-09-19" was, for this file, **eight days and three structural versions out of step**.
+
+**The direction is the finding.** §1's standing rule imagines the other case — an article written to Drive
+and not to git. *A stale **git** copy is the more dangerous of the two*, because the working tree is what a
+session edits from and re-emits: one more session adding a row from that file would have published the
+2026-09-17 text back over Drive, and the regression would have become the source of truth. **The loss would
+then have been unrecoverable by this KB's own methods** — Drive keeps revisions, but nothing here reads them
+as a matter of course.
+
+**How it happened, and it is in the record rather than a guess.** `Outputs/kb-registers.md` by commit:
+
+| Commit | Bytes | What it is |
+|---|---|---|
+| `a21f3e2` (2026-09-17) | 25,096 | the mirror catch-up — correct on the day |
+| `82db4ae` … `0283bee` (09-23/24) | period-split | the v31 work, on the working branch |
+| `8319fa0`, `aab900c` (09-27) | **15,963** | today's snapshot and the Drive-authoritative restore |
+| **`a333f52`** (09-27 14:03) | **25,096** | **merge of `a21f3e2` + `8319fa0` — resolved to the 2026-09-17 side** |
+| `a020f5f` (09-27 14:42) | 25,096 | *"Sync git mirror to Darius's live Drive KB"* — 73 files, **not this one** |
+
+**A merge reverted it, silently, and nothing failed.** The merge on `main` had the correct file on one parent
+and a superseded file on the other, and took the superseded one; both parents' content is intact in the
+object store, so nothing was destroyed — it was **deselected**. *And the commit that ran next claims in its
+own subject line to have synced the mirror to Drive. It did not sync this file*, which is worth saying
+plainly: **a commit message is not a verification**, and "sync" was the word used for a pass that left the
+single most-cited file in `Outputs/` nine kilobytes wrong.
+
+**Fixed per §1** — Drive is the source of truth, so Drive's bytes were fetched with `download_file_content`,
+decoded straight to disk and confirmed byte-identical at 15,963 B. **Nothing was retyped and nothing was
+reconciled by hand**, which is the same rule that governed the snapshot renames. The stale copy was kept
+outside git for comparison, not deleted. Every other control file — the four charter files, `README.md`,
+`Wiki/index.md`, `change-log-index.md` — was checked against Drive and is clean, *so this is one file, not a
+pattern; that is a measurement, not a reassurance.*
+
+**One correction to my own working in this session.** I reported the git history as *inconclusive*, on the
+strength of `git log -- Outputs/kb-registers.md`, which returned **two** commits. `git log --follow` on the
+same path returns **ten**, and the table above came out of it in a minute. Default history simplification
+had pruned the very merge that caused the drift. *This is the v25 lesson for the third time today —
+**a limitation is a property of the call you made**, and "the history doesn't show it" was a statement about
+my command, not about the repository.*
+
+**What has no answer yet, and is not being invented.** Whether the merge was resolved by a session, by a
+tooling default, or by the mirror job; whether any other path took the same side of `a333f52` **has been
+checked for the control files and not for the 73 Wiki articles in `a020f5f`**. That check belongs in a
+session with the budget for it, and it is on the Hub, not here.
+
+**The check that caught this was an accident** — a grep for today's date, run for another purpose. There is
+no standing check that compares the mirror to Drive, and §1 assumes the ordinary write rule is enough.
+*Today it wasn't, because the divergence was not introduced by a write.* A `wc -c`-against-Drive pass over
+the control files is cheap and belongs in the session-start routine; **proposed, not adopted** — §0 is the
+owner's.
