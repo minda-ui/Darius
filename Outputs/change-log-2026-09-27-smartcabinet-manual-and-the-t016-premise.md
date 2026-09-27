@@ -355,3 +355,70 @@ no standing check that compares the mirror to Drive, and §1 assumes the ordinar
 *Today it wasn't, because the divergence was not introduced by a write.* A `wc -c`-against-Drive pass over
 the control files is cheap and belongs in the session-start routine; **proposed, not adopted** — §0 is the
 owner's.
+
+## 14. The report to Alex — and a check that came back against my own proposal
+
+**Asked for by the owner: a report on Composio, sent to Alex.** `Outputs/2026-09-27_Darius-to-Alex_Composio-rollout-report.md`,
+9,977 B, **delivered into Alex's own `Raw/`** (`1khvHcmK-x2IE9L7NAv-wWammuDQtvuq3`, file
+`1WIakKYJ8Q41-n0Jll7Ygt5-bRml0M300`), uploaded from disk and byte-verified. Hub row **`AWT-0141`**.
+
+**Darius cannot email, and this is not a workaround for that.** §0a gives this seat no Gmail — *"Darius
+logs and tracks, it does not send"* — and the estate's own channel for reaching another employee is
+§6a-i: the note goes into that KB's `Raw/` with a Hub row naming what it is, and **that KB's owner
+decides what to do with it**. That is the same route Alex's proposal took inbound. Nothing of Alex's was
+edited.
+
+*This also closes a gap rather than just following a rule:* the **2026-09-17 asset-label hand-off
+"to Alex" was written into this KB's own `Outputs/` and never delivered anywhere**. It has sat there ten
+days. The report is on the Hub row so the next one cannot quietly do the same.
+
+### The finding that cost me a claim
+
+Resolving the path to Alex's `Raw/`, a Drive search surfaced a **Finance-seat report already sitting
+there**, covering the same rollout. *Its existence is a fact; its contents are another seat's data and are
+not treated here as verified.* One line of it said that seat now uses in-place update **instead of**
+archive-then-recreate. That prompted a check I had not thought to run:
+
+```
+GET /drive/v3/files/19z9y6Pte9_rRiFQwh0eoDGWVYdAoYkKd/revisions
+    ?fields=revisions(id,keepForever,modifiedTime,size)
+→ both revisions, the superseded one included:  "keepForever": false
+```
+
+**`keepForever` defaults to `false`, so Drive may purge the superseded revision.** My proposal to the
+owner this morning said the in-place path leaves Drive *"holding the previous bytes as a revision"* — which
+reads as a guarantee and is not one. The proposal's §5 already said a revision is not an archive, but only
+on the weaker ground that it is not **findable by name**. Durability is the stronger half and I had missed
+it.
+
+**Corrected in the proposal, not just here** (5,974 → 6,917 B, superseded copy archived by rename, new
+copy byte-verified): §3 item 1 now marks the non-durability, §5 carries the measurement, and the
+recommendation makes archive-then-recreate mandatory for **anything whose superseded bytes must survive**.
+*The recommendation is still "adopt with limits" — the gain was never durability, it was removing the
+retyping error class. But the reason to think archiving had become redundant is gone.*
+
+*Worth noting where this came from: not from my own testing, which had stopped at "revisions 1 → 2 proves
+it wrote". **A revision count proves a write happened; it says nothing about how long the old bytes last.**
+Two adjacent properties, and I had let one stand in for the other.*
+
+### Three tooling facts established while allocating one Task ID
+
+The row was first saved as `AWT-0140` and **the Hub's own duplicate guard caught it** —
+`=IF(COUNTIF([Task ID]:[Task ID], [Task ID]@row) > 1, "⚠ DUPLICATE …", "")`, added 2026-09-19 after three
+same-day collisions. Renumbered to `AWT-0141` at once. **How it got past my pre-check is the useful part:**
+
+| Method | Said | Truth |
+|---|---|---|
+| `Smartsheet search` (global) for `AWT-0140` | **0 results** | the ID was in use |
+| `find_in_sheet` for `AWT-0140` | **0 occurrences** | searches a **100-row window** and **ignores `offset`**; the sheet has **141 rows** |
+| The sheet's `COUNTIF` guard | **duplicate** | correct |
+| `get_sheet_aggregates` group-by on Task ID | 141 rows, highest `AWT-0141`, `AWT-0005` never issued | correct, and cheap |
+
+**Neither search tool is a safe allocator on this sheet**, and `find_in_sheet` is the worse of the two
+because it reports a confident zero. *This is why `AWT-0136` "could not be found" earlier today on a sheet
+that contains it at row 135 — the same window.* **A group-by on the ID column is the authoritative read**
+and costs one call.
+
+**And one thing that is not mine to fix:** the same group-by shows **`AWT-0135` standing at count 2** — a
+live duplicate on two rows, someone else's. **Flagged to Alex on `AWT-0141` and to the owner, not touched**
+(Rule A, own rows only).

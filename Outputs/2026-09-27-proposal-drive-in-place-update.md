@@ -51,8 +51,8 @@ test that cannot fail proves nothing.*
 
 1. **§1** — replace *"so every change re-emits a whole file by hand"* with: Drive has no partial-patch
    API, so a change replaces a file's whole content; **it does not have to be retyped** — content already
-   on disk can be uploaded in place, keeping the file's id, with Drive holding the previous bytes as a
-   revision.
+   on disk can be uploaded in place, keeping the file's id. *Drive retains the previous bytes as a
+   revision, but **not durably** — see the correction in §5.*
 2. **§4** — archive-then-recreate becomes the **fallback**, not the default. Default: update in place and
    byte-verify. Archive-then-recreate stays required where the in-place path is untested (below) or where a
    superseded copy must be **findable by name**, which a revision is not — the period snapshots
@@ -80,17 +80,30 @@ test that cannot fail proves nothing.*
   an ephemeral container. If either is unavailable, the fallback is the current rule — so the rule must
   stay documented, not deleted.
 - **It is one day old.** Two tests, one session, one file size decade.
-- **Revisions are not an archive.** A named `Archive/` copy is findable by a human reading a folder; a
-  revision is not. Where the point of archiving was *visibility of what was superseded* — the charter's own
-  version history, the DO-NOT-FOLLOW articles — the named copy is still the right answer.
+- **Revisions are not an archive, and this is stronger than it was when this proposal was written.**
+  *Corrected the same day, after a Finance-seat report reaching Alex prompted the check.* The original text
+  said only that a revision is not **findable by name**, which is true and was the weaker half. Measured
+  since, on the 37 KB test file itself:
+
+  ```
+  GET /drive/v3/files/<id>/revisions?fields=revisions(id,keepForever,modifiedTime,size)
+  → both revisions, including the superseded one: "keepForever": false
+  ```
+
+  **`keepForever` defaults to `false`, so Drive may purge the superseded revision.** The previous bytes are
+  therefore retained at Drive's discretion, not guaranteed. **A named `Archive/` copy does something a
+  revision does not**, on durability as well as visibility. Setting `keepForever` is a separate PATCH per
+  revision — possible, but one more step that must not be forgotten, and not something this KB does today.
+  *This does not overturn the proposal; it removes the reason to think archiving is now redundant.*
 - **It does not reduce the token cost of composing** an edit, only of transmitting it. The 37 KB still has
   to be *written*; it no longer has to be *typed twice*.
 
 ## 6. Recommendation
 
-**Adopt with the limits clause** — items 1, 3 and 4 in full, and item 2 worded so archive-then-recreate
-remains mandatory for the snapshot files and for anything where a superseded copy must be findable by
-name. The measured gain is not speed but **the removal of a known error class**, and this KB has now
+**Adopt with the limits clause, and item 2 narrowed by the §5 correction** — items 1, 3 and 4 in full,
+and item 2 worded so archive-then-recreate remains mandatory for the snapshot files, for anything where a
+superseded copy must be findable by name, **and now for anything whose superseded bytes must survive**,
+since `keepForever` is `false` by default. The measured gain is not speed but **the removal of a known error class**, and this KB has now
 shipped a byte-wrong file twice by hand.
 
 *If adopted, §1 and §4 both change, so `CLAUDE.md` is re-emitted once — which is exactly the operation the
