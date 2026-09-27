@@ -104,6 +104,17 @@ rotazione`, `Numero di giri`, `Avanzamento`, `Diametro`, `Descrizione`. And the 
 **There is no numeric tool ID, code or position field, and the page says nothing about where tool data
 comes from or whether it is shared with, imported from or exported to the machine's own catalogue.**
 
+**And the page's own first sentence says what goes in the table — including the exception that matters:**
+
+> *"In questa finestra vanno inseriti gli utensili, tipicamente le frese e le lame **ma per alcune
+> macchine anche le punte**, che è necessario specificare perchè non selezionati automaticamente."*
+> — this window takes the tools, typically cutters and blades **but for some machines the drill bits
+> too**, which have to be specified because they are *not* selected automatically.
+
+**So naming a drill is machine-dependent, not impossible.** This is the same exception `cn.html` states
+from the other side (§5) — and **whether the Vitap is one of those machines is precisely the open
+question**, not something either page answers.
+
 ## 5. What the CN chain actually does
 
 `cn.html` is the machine-configuration page. Three passages matter.
@@ -185,12 +196,19 @@ has described a systemic fix as *"getting the post-processor to emit a Tool ID o
 not repeated by hand on every operation of every unit, since every hole in the master exports with
 `#1001=0`."*
 
-- SmartCabinet's tool record **has no ID field to emit** (§4).
-- For **drilling specifically**, the software is built to name no tool and let the machine choose (§5),
-  and says so in two independent places.
-- So **`#1001=0` on every hole in the master is the intended output, not a defect** — and "get
-  SmartCABINET to emit a Tool ID" is not a missing feature request; for drills it is contrary to how the
-  program is designed to work.
+- SmartCabinet's tool record **has no ID field to emit** (§4). The identifier is the **name**.
+- For drilling, the **normal** case is that the program names no tool and the machine chooses (§5),
+  stated in two independent places.
+- So **`#1001=0` on every hole in the master is the expected output of the normal case, not a defect** —
+  and "get SmartCABINET to emit a Tool ID" asks for a field that does not exist.
+
+**Stated carefully, because the manual states the exception twice.** *"per alcune macchine anche le
+punte … non selezionati automaticamente"* (§4) and the drilling-tool table that appears for *"alcune
+particolari configurazioni cn"* (§5) both say drill bits **can** be named where the machine needs it. So
+the correct claim is **not** "SmartCabinet cannot name a drill" — it is that **it names none by default,
+there is no ID to name it by, and whether our machine is one of the exceptions is unchecked.** *An
+earlier draft of this article said "contrary to how the program is designed to work". That was too
+strong, and was corrected the same day from the page's own first sentence.*
 
 **That does not make T016 smaller. It relocates it**, and it agrees with where the 2026-09-23 correction
 already put it: the blind-Ø3 failure is a **tooling/design mismatch**, not a software fault, and the

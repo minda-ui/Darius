@@ -36,13 +36,23 @@ di rotazione`, `Numero di giri`, `Avanzamento`, `Diametro`, `Descrizione`. No ID
 `Nome` *is* the identifier — *"sarà poi l'identificativo utilizzato dalla macchina per richiamare quello
 specifico utensile"*.
 
-**And for drilling the program names no tool at all, by design.** `cn.html`: the tool settings are
-*"tipicamente frese e lame in quanto **le punte a forare vengono normalmente selezionate
+**And for drilling, the normal case is that the program names no tool.** `cn.html`: the tool settings
+are *"tipicamente frese e lame in quanto **le punte a forare vengono normalmente selezionate
 automaticamente**"*. `giunzioni.html` says it five more times, once per joint family: *"qualora non sia
 impostato alcun utensile verrà selezionata automaticamente una punta"*.
 
-**So `#1001=0` on every hole in the master is the intended output, not a defect** — and "get SmartCABINET
-to emit a Tool ID" was never a missing feature; for drills it runs against how the program works.
+**So `#1001=0` on every hole in the master is the expected output of the normal case, not a defect** —
+and "get SmartCABINET to emit a Tool ID" asks for a field that does not exist.
+
+**One correction to my own first draft, made the same day.** I wrote that naming a drill is *"contrary to
+how the program is designed to work"*. **Too strong.** Re-reading the captured source — not the fetch
+tool's summary of it — the tool table's own opening sentence says the table takes *"tipicamente le frese
+e le lame **ma per alcune macchine anche le punte**, che è necessario specificare perchè non selezionati
+automaticamente"*: for some machines the drill bits **must** be named. That is the same exception
+`cn.html` states from the other side, and it makes the honest claim narrower: **SmartCabinet names no
+drill by default, has no ID to name one by, and whether our machine is one of the exceptions is
+unchecked.** *Caught before anyone read it, and recorded rather than silently tightened — the point of
+capturing a page is being able to re-read it.*
 
 **This does not shrink T016. It confirms where 2026-09-23 already put it**: a tooling/design mismatch and
 an owner decision — the master stops specifying blind Ø3, or a blind Ø3 bit goes on the head, and the
