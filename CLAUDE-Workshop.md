@@ -51,11 +51,16 @@ the owner/Victoria; only the cover page has been seen.
   with the 1030 kg this KB carried from the manual** (355 kg apart; floor loading and levelling both
   scale with it, so prefer the plate until someone reconciles them — recorded, not resolved).
   **Open incident:**
-  TpaCAD "Tool for this working not found" on Blind bore drill operations — root cause refined (fix
-  likely lives in the operation's own Tool [T] field referencing a real CN Tools catalog entry, not
-  the outfit's per-bush ID), not yet tested end-to-end (Task T016). Maintenance schedule (MT-030…036)
-  + troubleshooting reference built. See `Wiki/Machinery/vitap-k2-panel-saw.md`,
-  `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md`.
+  TpaCAD "Tool for this working not found" on Blind bore drill operations — **error -27, raised when
+  NOTHING matches** (Task T016; corrected 2026-09-23, and this bullet swept 2026-09-27, which is the
+  fourth place the superseded diagnosis was found). *It read "fix likely lives in the operation's own
+  Tool [T] field referencing a real CN Tools catalog entry" until then — a fix for a fault that does not
+  exist.* The live failure is blind Ø3 against a head whose only Ø3 is `passante`: a tooling/design
+  mismatch and an **owner decision**, not a bug. Maintenance schedule (MT-030…036) + troubleshooting
+  reference built. See `Wiki/Machinery/vitap-k2-panel-saw.md`,
+  `Wiki/Processes/tpacad-tool-match-criteria.md` (current) and
+  `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md` (the contemporaneous record, corrected in
+  place).
 - `FA2305` — Inventair MK2 MTFA dust/fume extractor, bought alongside `FA2304` on invoice 100154.
   **Sold** (owner, 2026-09-17). The promised manual never arrived and now never will. **Disposal date
   and sale proceeds unknown**, same book consequence as `FA2302`. *The long-running question of whether

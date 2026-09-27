@@ -7,7 +7,7 @@ and one sentence in them retires a job that has sat in §7 for eight days.
 
 ## 1. The map
 
-`Wiki/Software/smartcabinet-online-manual.md`, new, 14,962 B. Root `smartcabinet.eu/manuale/it_index.html`
+`Wiki/Software/smartcabinet-online-manual.md`, new, 16,382 B as published (the 14,962 B first draft was archived — §2). Root `smartcabinet.eu/manuale/it_index.html`
 is **not a table of contents** — it is a picture of the application's main menu with hotspots, so the
 structure had to be read off the links. Three sections: `mainit/smartcabinet/` (the CAD, **no index page
 at all**), `mainit/render/`, `mainit/crm/`.
@@ -102,15 +102,34 @@ touches a machine or a task. Three passages fixed:
 | The article inventory | *"Closing T016 (2026-09-19) — the two-step fix"* | T016's corrected root cause, with its predecessor marked superseded |
 | The open-items list | *"needs a CN Tools 'Dia. 5mm' entry created on the SmartCabinet computer, exported and transferred"* | **struck through and withdrawn, wrong twice over** — and kept struck rather than deleted, because it stood there for eight days and someone may have started on it |
 
+**A fourth copy, found while publishing.** The `FA2304` machine bullet in the same file said the fix
+*"likely lives in the operation's own Tool [T] field referencing a real CN Tools catalog entry"* — a fix
+for a fault that does not exist. Swept the same way.
+
+**And a fifth, outside the charter and worse, because it is an instruction.**
+`Outputs/2026-09-21-workshop-test-plan.md` opens with **"TEST 1 — T016, the Blind Ø5 tool-ID fix — 30 min
+— MUST"**, pointing at the DO-NOT-FOLLOW article, with a step 1b that raises error −25 if followed. **That
+is a document someone picks up and carries to the machine.** Test 1 is now struck through and banner-
+withdrawn, `1a` (reproduce the failure) kept as still worth doing, and **Test 4 marked done** — the
+Albatros manuals were fetched on the 23rd and are what produced the correction in the first place. *Left
+in place rather than rewritten: it is what the plan said that morning, and Test 1 stood in it as a MUST
+for six days.*
+
 *The 2026-09-23 sweep checked `CLAUDE.md`, `README.md`, `CLAUDE-Lessons.md` and a Decisions article. It
-did not check `CLAUDE-Workshop.md`, which is where §7 lives.*
+did not check `CLAUDE-Workshop.md`, where §7 lives, and it did not check `Outputs/`.* **Five copies in
+total, and the two most dangerous were the two that instruct.**
+
+*One bookkeeping consequence, stated rather than hidden: the registers Outputs row published earlier
+today says "three passages fixed". It is four in `CLAUDE-Workshop.md` plus the test plan. The registers
+were byte-verified at 15,963 B before these two were found; the count is corrected here and will be
+corrected in the registers at the next touch, rather than re-emitting 16 KB for one word.*
 
 ## 5. A cell overwritten, and put back
 
 Updating T016's Notes I **replaced** the cell rather than appending, dropping the 2026-09-23 diagnosis —
 the five criteria, the −25 trap, the p.63 spindle warning, the Ø5 hypothesis — out of the live task.
 Noticed on re-reading, and restored: the cell now carries **(A)** the corrected diagnosis and **(B)**
-today's update, 3,978 characters against the 4,000 limit, read back from the API in full. *Nothing was
+today's update, 3,989 characters against the 4,000 limit, read back from the API in full. *Nothing was
 lost — the text was in this session, the Wiki and git — but a task note is the thing a person opens at
 the machine, and for about a minute it was the only place that had stopped saying the five criteria.*
 
@@ -120,8 +139,9 @@ the machine, and for about a minute it was the only place that had stopped sayin
 CN/tool-chain pages — `cn`, `cnc`, `tabelle_cam_accessori_utensili`, `lavorazioni` — built **by script
 from the stored HTML**, not retyped and **not a model's summary of the page**. That distinction is the
 web version of §3's `read_file_content` lesson: the first pass at these pages was a fetch tool's
-*rendering*, and re-reading the source turned up two passages it had dropped — the two-scope trap and
-*"consultare il produttore della macchina"*.
+*rendering*, and re-reading the source turned up **three** passages it had dropped — the two-scope trap,
+*"consultare il produttore della macchina"*, and the *"ma per alcune macchine anche le punte"* sentence
+that forced §2's narrowing. **Two of the three changed what this KB now says.**
 
 All ten pages carry their **byte count and sha256 of the HTML as served** in the article's provenance
 table, so a future session can re-fetch and see at once whether the vendor has changed a page. **The HTML
@@ -149,13 +169,35 @@ is native in TpaCAD. **Not worked today** — `giunzioni.html` is 62,404 B and d
 the lines means re-emitting ~80 KB to Drive for front matter, which is the trade `AWT-0089` is already
 parked on. They ride the next push that changes each article's body, and `AWT-0089`'s row now says so.
 
-## 9. Files touched
+## 9. The publish itself — one byte, and a file trashed
+
+**Six files went to Drive**, each superseded copy renamed into `Archive/` first (verbatim, `update_file`,
+nothing re-emitted) and each new copy verified by download→decode→`diff`. **All six are byte-identical to
+git.**
+
+**The capture file came back one byte short** — 17,971 against 17,972 — and the difference was a **trailing
+blank line present locally and not on Drive**. *Second instance of this class in five days: on 2026-09-23 a
+charter file came back one byte short and the spare byte was also in the **local** copy. A size check would
+have read both as transfer loss; `diff` named the line in both.* The file's byte count is quoted in two
+documents already published today, so the cheaper honest fix was to correct the **one** file rather than
+re-emit two others for a digit: **the 17,971 B copy was trashed** (`1bNU6h1pOI4LdMZBU6Ma1mn076OnaOo1i`, three
+minutes old, nothing citing it, never in git) and republished at 17,972 B. *Recorded because it is a Drive
+deletion, small as it was.*
+
+**Two figures were corrected while publishing, not after.** This file said the article was 14,962 B — the
+first draft's size, superseded by §2's narrowing — and §9 said "three passages"; both were fixed before the
+bytes left, along with the index row's *"names no tool by design"*, which §2 had already narrowed to *in the
+normal case*. **New Drive ids for all six are not listed here**; they belong in the registers' Outputs rows
+at the next touch, with the "three passages" wording noted in §4.
+
+## 10. Files touched
 
 | File | What changed |
 |---|---|
-| `Wiki/Software/smartcabinet-online-manual.md` | **new**, 14,962 B — the map, the provenance table, the findings |
+| `Wiki/Software/smartcabinet-online-manual.md` | **new**, 16,382 B — the map, the provenance table, the findings |
 | `Outputs/2026-09-27-smartcabinet-manual-capture-cn-chain.md` | **new**, 17,972 B — captured text of the four CN/tool-chain pages |
-| `CLAUDE-Workshop.md` | §7: three stale T016 passages corrected or withdrawn |
+| `CLAUDE-Workshop.md` | §7: **four** stale T016 passages corrected or withdrawn (the fourth found while publishing) |
+| `Outputs/2026-09-21-workshop-test-plan.md` | TEST 1 banner-withdrawn — the fifth stale copy, and the one that instructs |
 | `Wiki/index.md` | the new article, with what it settles and what it leaves open |
 | Smartsheet `Tasks` `T016` (row `3054339713795972`) | Notes rewritten: corrected diagnosis restored **plus** today's update |
 | `Outputs/kb-registers.md` + `kb-registers-snapshot-2026-09-27.md` | snapshotted at the ~25 KB rule, then today's rows added |

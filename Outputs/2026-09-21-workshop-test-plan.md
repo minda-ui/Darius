@@ -1,5 +1,24 @@
 # Workshop test plan — 2026-09-21 morning, 2 to 2½ hours
 
+> # PARTLY SUPERSEDED — read this before using the plan (added 2026-09-27)
+>
+> **TEST 1 — "the Blind Ø5 tool-ID fix" — IS WITHDRAWN. DO NOT RUN IT.** Its whole premise died on
+> 2026-09-23: error **-27** fires when **nothing** matches, never when several do, so there is no
+> five-way ID-0 tie to break and nothing for a per-bush ID to fix. The procedure it points at,
+> `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`, now carries `status: superseded` and a
+> **DO-NOT-FOLLOW** banner — and step 1b's instruction to leave `Tool type` alone raises a **new**
+> error (-25), so it can look like the fix failed when it was never tried. What T016 actually is:
+> `Wiki/Processes/tpacad-tool-match-criteria.md`, and it is now an **owner decision**, not a bug.
+>
+> **Test 1a — reproducing the failure — is still worth doing**, and so is **Test 2**: what would settle
+> the Ø5 case is bushes 6-10's *useful length* against the programmed Z, which is the same dialog.
+>
+> **TEST 4 is done** — the Albatros manuals were obtained 2026-09-23 and **T015 is closed**; that is how
+> the correction above was found. **Tests 2, 3, 5, 6 and 7 stand as written.**
+>
+> *Left in place rather than deleted or rewritten: this is what the plan said on the morning it was
+> written, and Test 1 stood in it as a MUST for six days.*
+
 **Seven items that need someone standing at the machine, plus three if there is time.** None of them
 can be done from the KB side. Every one closes something that has been open for days.
 
@@ -11,10 +30,10 @@ design computer.
 
 | | Where | Time | |
 |---|---|---|---|
-| 1 · T016, the Blind Ø5 tool-ID fix | Vitap / TpaCAD | 30 | **MUST** |
+| 1 · ~~T016, the Blind Ø5 tool-ID fix~~ | Vitap / TpaCAD | 30 | **WITHDRAWN — see banner** |
 | 2 · Three free glances in the same dialog | Vitap / TpaCAD | 5 | **MUST** |
 | 3 · Ø12 hole from the 10 mm cutter | Vitap | 10 | **MUST** |
-| 4 · `TpaCad.pdf` + `Workings.pdf` off the Albatros PC | Vitap / Albatros | 5 | SHOULD |
+| 4 · ~~`TpaCad.pdf` + `Workings.pdf` off the Albatros PC~~ | Vitap / Albatros | 5 | **DONE 2026-09-23** |
 | 5 · **F45 monthly safety-device check** | F45 | 25 | **MUST** |
 | 6 · Two photographs | compressor | 5 | **MUST** |
 | 7 · Name the shared job folder | design computer | 2 | SHOULD |
@@ -42,11 +61,17 @@ the optional list. Said plainly rather than quietly reordered.
 
 ---
 
-# TEST 1 — T016, the Blind Ø5 tool-ID fix — 30 min — **MUST**
+# TEST 1 — ~~T016, the Blind Ø5 tool-ID fix~~ — **WITHDRAWN 2026-09-27, DO NOT RUN**
+
+> **The premise is false.** Error -27 means nothing matched, not that several did. `1a` below is still
+> worth doing; everything from `1b` on is not, and `1b` raises a new error (-25) if followed. See the
+> banner at the top of this file and `Wiki/Processes/tpacad-tool-match-criteria.md`.
 
 **Where:** the TpaCAD station at the Vitap.
 **Why:** every hole in every library unit exports as a diameter with no tool. One fix, sixteen units.
-**Full procedure:** `Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`.
+*— and that "one fix" is the part that was wrong: there is no Tool ID in SmartCabinet to emit, and for
+drilling it names no tool in the normal case (`Wiki/Software/smartcabinet-online-manual.md`, 2026-09-27).*
+**Full procedure:** ~~`Wiki/Processes/tpacad-blind-bore-tool-id-fix.md`~~ — **superseded, DO NOT FOLLOW.**
 
 ### 1a — Reproduce the failure first, before touching anything
 
