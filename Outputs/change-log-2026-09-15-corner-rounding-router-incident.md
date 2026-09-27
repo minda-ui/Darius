@@ -45,20 +45,20 @@ say this explicitly, rather than leave the earlier, less precise attribution sta
 ## Smartsheet
 
 - Machinery Register: `FA2301` Status changed to **"Under repair"**; Note updated with the
- in-progress fault summary.
+  in-progress fault summary.
 - Tasks: **T006** raised, Status "In Progress" — full diagnosis and next steps in the Notes field,
- cross-referenced to the Wiki article's Incidents section.
+  cross-referenced to the Wiki article's Incidents section.
 
 ## Judgement calls made, flagged for the owner
 
 - **Reported the overcorrection as an open discrepancy rather than inventing an explanation for
- it.** The fault table's stated mechanism (backing the screw out should increase engagement) does
- not obviously predict what was observed (backing it out further reduced engagement to zero). Two
- plausible explanations exist (simple overshoot, or the adjustment went the wrong way) but neither
- is confirmed — the advice given (reverse and iterate in small steps) works either way, so this
- was not resolved by picking one theory and asserting it as fact.
+  it.** The fault table's stated mechanism (backing the screw out should increase engagement) does
+  not obviously predict what was observed (backing it out further reduced engagement to zero). Two
+  plausible explanations exist (simple overshoot, or the adjustment went the wrong way) but neither
+  is confirmed — the advice given (reverse and iterate in small steps) works either way, so this
+  was not resolved by picking one theory and asserting it as fact.
 - **Did not mark T006 as resolved** — the corner still isn't rounding correctly as of this
- session's end. Left "In Progress" for whoever picks this up next.
+  session's end. Left "In Progress" for whoever picks this up next.
 
 ## Open questions carried forward
 

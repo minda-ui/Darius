@@ -6,9 +6,13 @@ sensitive: false
 created: 2026-09-15
 updated: 2026-09-15
 sources:
- - ../../Raw/F45 part 1.pdf
+  - ../../Raw/F45 part 1.pdf
 related:
- - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Machinery/vitap-k2-panel-saw.md
+  - ../Processes/f45-electrical-schematics-reference.md
+  - ../Processes/machinery-maintenance-system.md
+  - ../Processes/maintenance-schedule-altendorf-f45.md
 ---
 
 # Process: Altendorf F45 monthly safety-device check
@@ -23,7 +27,7 @@ recommendation. Its exact words: **"Carry out and document this check 1x month!"
 3. **Chip-duct / plate limit switch** — functions correctly.
 4. **ON/OFF switch cleanliness** — switch is clean and undamaged.
 5. **Protective hood condition** — hood is intact, correctly fitted, and its interlock (if
- equipped) functions.
+   equipped) functions.
 
 Each item is a Pass/Fail/N-A entry.
 
@@ -32,15 +36,15 @@ Each item is a Pass/Fail/N-A entry.
 Smartsheet workspace **Workshop**, sheet **"Safety Check Log"**. One row per check:
 
 - `Machine ID`: the asset code (`FA2303` for this machine — the sheet can log checks for any
- machine that needs one, not just this one).
+  machine that needs one, not just this one).
 - `Check Date`, `Checked By`.
 - The five Pass/Fail/N-A columns above.
 - `Evidence Link`: a Drive link to photo evidence, or attach the photo(s) directly to the
- Smartsheet row (Smartsheet supports row-level attachments).
+  Smartsheet row (Smartsheet supports row-level attachments).
 - `Notes`: anything found, even if it didn't affect the Pass/Fail result.
 - `Health` computes automatically (green if every item is Pass, red if any item is Fail, yellow
- if anything is left blank or N/A) and `Next Check Due` computes automatically as 30 days after
- `Check Date`.
+  if anything is left blank or N/A) and `Next Check Due` computes automatically as 30 days after
+  `Check Date`.
 
 ## If something fails
 

@@ -4,12 +4,19 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-23
 sources:
- - ../../Raw/TPA CAD part 1.pdf
- - ../../Raw/TPA CAD part 2.pdf
+  - ../../Raw/TPA CAD part 1.pdf
+  - ../../Raw/TPA CAD part 2.pdf
 related:
- - ../Machinery/vitap-k2-panel-saw.md
+  - ../Machinery/vitap-k2-panel-saw.md
+  - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
+  - ../Processes/smartcabinet-wall-support-cam-table-reference.md
+  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+  - ../Processes/tpacad-interpolated-holes.md
+  - ../Software/kitchen-unit-library.md
+  - ../Machinery/vitap-k2-drill-head-tooling.md
+  - ../Processes/tpacad-tool-match-criteria.md
 ---
 
 # Process: TpaCAD tool-type auto-resolution ambiguity ("Tool for this working not found")
@@ -31,14 +38,42 @@ fittings, sawings, milling, etc.) → set optimisation (Automatic Sorting or man
 
 **This 2-part scan is explicitly an abridged extract, not the complete manual.** Its own first page
 says so directly: it's "a generic manual with a description of the TpaCAD standard composition,"
-an extract of the complete manual every installation has locally at `Albatros\\Help\\TpaCad.pdf`,
+an extract of the complete manual every installation has locally at `Albatros\Help\TpaCad.pdf`,
 and it repeatedly defers to three sibling manuals not present in `Raw/`: **`Workings.pdf`** (fuller
 detail on every working command's parameters — most likely to cover exactly what's missing below),
 `DxfCAD.pdf`, and `DxfToTPA.pdf`.[^1][^2] None of "Solve," "Group together," "Outfit Parameters,"
 or "CN Tools" appear anywhere in this extract — that material almost certainly lives in one of
 those three un-supplied files. **Open action: track down `Workings.pdf` and the complete
-`TpaCad.pdf` from the shop's own Albatros PC** (`Albatros\\Help\\`) rather than treating this extract
+`TpaCad.pdf` from the shop's own Albatros PC** (`Albatros\Help\`) rather than treating this extract
 as the full picture.
+
+> ## Correction, 2026-09-23 — the root cause below is wrong
+>
+> **The observations in this article are sound and are still the best record of what happened on
+> 2026-09-15.** What is wrong is the *mechanism* invented to explain them.
+>
+> This article concludes that the optimiser fails when several tools match a diameter + type and
+> nothing breaks the tie. **TPA's `CnCadOpti_eng.pdf` — obtained 2026-09-23 from the shop's own
+> `Albatros\help\en-GB\` folder, closing T015 — documents the opposite.** Error **−27** is
+> *"Working: tool match not possible — No tool can be used"*, and §1.5 says the optimiser checks
+> *"if there is **at least one** tool which can work working"*. Several candidates are normal; §1.6
+> aggregates across them deliberately.
+>
+> **Two specific claims below are now known false:**
+> - *"Confirmed on two different diameters on the same file (3mm and 5mm), **both times with the
+>   Blind category assigned to multiple bushes**"* — **there is no blind Ø3 on this head at all**
+>   (owner, from the archive, 2026-09-23). That half was assumed from its neighbour, not checked.
+> - *"five equally valid candidates and no documented tie-break"* — there is no tie-break because
+>   there is no ambiguity failure. Bushes 6-10 **are** five blind Ø5, confirmed 2026-09-23; why the
+>   Ø5 operation failed is now **unexplained**, with tool useful-length the leading hypothesis.
+>
+> **This article's own last open question was the right one** — *"whether the ambiguity has a
+> documented tie-break after all … `Workings.pdf` and the complete `TpaCad.pdf` would settle it
+> (Task T015)"*. It did. The KB acted on the mechanism for eight days instead of waiting on the
+> answer it had already identified as missing.
+>
+> Read [`tpacad-tool-match-criteria.md`](./tpacad-tool-match-criteria.md) for the five criteria that
+> actually govern tool matching. **Nothing below this line has been edited.**
 
 ## The fault
 
@@ -66,12 +101,12 @@ The HOLE working's own parameter documentation explains the mechanism directly:
 
 So there are two distinct ways to tell TpaCAD which physical tool/bush to use:
 1. **Programming per diameter** (what SmartCabinet's export does by default): set Diameter + Tool
- type, and the optimizer auto-picks a matching tool from the archive. **No tie-breaking rule for
- multiple equally-valid candidates is documented anywhere in this extract.** This is the ambiguous
- path — when 5 bushes all match, auto-resolution apparently can't commit to one.
+   type, and the optimizer auto-picks a matching tool from the archive. **No tie-breaking rule for
+   multiple equally-valid candidates is documented anywhere in this extract.** This is the ambiguous
+   path — when 5 bushes all match, auto-resolution apparently can't commit to one.
 2. **Programming per tool**: set the **Tool** (ID) field explicitly. This **overrides diameter-based
- auto-selection outright** ("prevails over"), and Tool type becomes a validity check rather than
- a selector — removing the ambiguity entirely.
+   auto-selection outright** ("prevails over"), and Tool type becomes a validity check rather than
+   a selector — removing the ambiguity entirely.
 
 This is strong documentary support for what was observed: Through bore drill worked because it only
 ever had one candidate bush, so auto-resolution never had to choose between several.
@@ -82,12 +117,12 @@ TpaCAD's own per-position "Technology" dialog (Outfit `0`, Group `1` — opened 
 outfit view) has an explicit numeric **ID** field, separate from Position and Tool. Checked two
 positions directly:
 - **Position 101** (one of the four special/aggregated tool-holder positions, 101-104) → **ID
- 1001**, Comment "Fresa Ø10mm." This is the *same numbering* as SmartCabinet's own "CN Tools"
- database (1001 = Dia. 10mm there too) — confirming the two systems' ID numbers genuinely
- correspond, at least for positions 101-104, rather than being independent internal references as
- first assumed.
+  1001**, Comment "Fresa Ø10mm." This is the *same numbering* as SmartCabinet's own "CN Tools"
+  database (1001 = Dia. 10mm there too) — confirming the two systems' ID numbers genuinely
+  correspond, at least for positions 101-104, rather than being independent internal references as
+  first assumed.
 - **Position 4** (part of the main vertical-spindle bank, 1-12/41-44/51-54 — the same bank the
- ambiguous Blind Ø5mm bushes 6-10 and Through Ø5mm bush 2 belong to) → **ID 0**. I.e. unassigned.
+  ambiguous Blind Ø5mm bushes 6-10 and Through Ø5mm bush 2 belong to) → **ID 0**. I.e. unassigned.
 
 This is very likely true of every position in the main bank, not just position 4 — meaning **none**
 of the main-bank tools (Blind or Through, any diameter) are currently set up for "programming per
@@ -98,24 +133,24 @@ tool"; they're all resolved purely by diameter + type. That's consistent with th
 ## Fix
 
 - **Immediate, per-file**: as found today, switching the ambiguous operation's Tool type to
- whichever category has only one assigned bush (e.g. Through bore drill) clears the error. This is
- a workaround, not the documented correct mechanism — see next point.
+  whichever category has only one assigned bush (e.g. Through bore drill) clears the error. This is
+  a workaround, not the documented correct mechanism — see next point.
 - **Correct fix per the manual, not yet tried on the shop floor (Task T016)**: since the whole main
- bank sits at ID 0, the fix has two parts, not one —
- 1. Open the Technology dialog for **one** of the Blind Ø5mm bushes (e.g. bush 6) and give it a
- real, unused ID number (1001/1002/1006/1011/1012 are taken by positions 101-104, so pick
- outside that range).
- 2. Then, on the specific failing `HOLE`/`FITTINGX` operation in the TCN program, set its **Tool**
- field explicitly to that new ID instead of leaving Tool type = "Blind bore drill" to
- auto-resolve by diameter. Per the manual, an explicit Tool ID "prevails over" diameter-based
- matching — this should remove the ambiguity outright once both steps are done.
- Neither step has been done yet — planned for the next time the owner is back at the machine.
+  bank sits at ID 0, the fix has two parts, not one —
+  1. Open the Technology dialog for **one** of the Blind Ø5mm bushes (e.g. bush 6) and give it a
+     real, unused ID number (1001/1002/1006/1011/1012 are taken by positions 101-104, so pick
+     outside that range).
+  2. Then, on the specific failing `HOLE`/`FITTINGX` operation in the TCN program, set its **Tool**
+     field explicitly to that new ID instead of leaving Tool type = "Blind bore drill" to
+     auto-resolve by diameter. Per the manual, an explicit Tool ID "prevails over" diameter-based
+     matching — this should remove the ambiguity outright once both steps are done.
+  Neither step has been done yet — planned for the next time the owner is back at the machine.
 - **Systemic fix** (affects every future job, not just one file): once step 1 above is done for each
- ambiguous Blind diameter, every future SmartCabinet-exported program still needs its Blind
- operations pointed at that explicit ID rather than left on diameter+type — which likely means
- either manually setting the Tool field per job, or (better, longer-term) getting SmartCabinet's
- post-processor to populate it on export automatically. Not yet actioned — raised for the owner and
- whoever maintains the SmartCabinet post-processor profile.
+  ambiguous Blind diameter, every future SmartCabinet-exported program still needs its Blind
+  operations pointed at that explicit ID rather than left on diameter+type — which likely means
+  either manually setting the Tool field per job, or (better, longer-term) getting SmartCabinet's
+  post-processor to populate it on export automatically. Not yet actioned — raised for the owner and
+  whoever maintains the SmartCabinet post-processor profile.
 
 ## Separately found: SmartCabinet's own tool database gap
 
@@ -133,14 +168,14 @@ match anything machine-side.
 ## Open questions
 
 - Complete `TpaCad.pdf` and `Workings.pdf` manuals not yet obtained — would likely confirm the
- auto-resolution tie-breaking behaviour (if any) and give fuller Outfit Parameters/CN Tools
- documentation, and would confirm whether the ID-1000-series correspondence between TpaCAD and
- SmartCabinet's CN Tools holds beyond positions 101-104 (Task T015).
+  auto-resolution tie-breaking behaviour (if any) and give fuller Outfit Parameters/CN Tools
+  documentation, and would confirm whether the ID-1000-series correspondence between TpaCAD and
+  SmartCabinet's CN Tools holds beyond positions 101-104 (Task T015).
 - The two-step fix above (assign a real ID to one Blind Ø5mm bush, then reference it explicitly on
- the failing operation) is planned but not yet tried on the shop floor — the owner was away from
- the machine when this was worked out (Task T016).
+  the failing operation) is planned but not yet tried on the shop floor — the owner was away from
+  the machine when this was worked out (Task T016).
 - No software version/edition number or vendor contact could be confirmed from this extract (the
- cover page carrying that information wasn't part of either scanned part).
+  cover page carrying that information wasn't part of either scanned part).
 
 ## Sources
 

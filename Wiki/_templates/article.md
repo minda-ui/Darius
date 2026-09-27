@@ -6,9 +6,9 @@ sensitive: false # true if the topic involves personal or confidential data
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 sources:
- - ../../Raw/<file> # every Raw file cited in this article
+  - ../../Raw/<file> # every Raw file cited in this article
 related:
- - ../<Category>/<file>.md # every wiki article this one links to (keep bidirectional)
+  - ../<Category>/<file>.md # every wiki article this one links to (keep bidirectional)
 ---
 
 # <Article title>

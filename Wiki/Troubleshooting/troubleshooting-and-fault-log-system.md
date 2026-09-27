@@ -11,6 +11,10 @@ related:
  - troubleshooting-hebrock-f4.md
  - troubleshooting-altendorf-f45.md
  - ../Processes/machinery-maintenance-system.md
+ - ../Decisions/2026-09-15-operational-systems-scope-extension.md
+ - ../Processes/barcode-and-scan-event-system.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - troubleshooting-vitap-k2.md
 ---
 
 # Troubleshooting & fault-log system
@@ -37,17 +41,17 @@ have actually diagnosed here:
 
 - `troubleshooting-hebrock-f4.md` — the F4 fault table plus the resolved corner-rounding incident.
 - `troubleshooting-altendorf-f45.md` — the F45 mechanical fault table and the full ElmoDrive
- error-code list.
+  error-code list.
 
 ## The loop
 
 1. A fault occurs → raise a **Fault Log** row (Status Open). Photograph the defect and the machine
- state; attach or link the photos.
+   state; attach or link the photos.
 2. Diagnose using the machine's troubleshooting article first (its fault table usually names the
- symptom). Record `Probable cause` and the fix tried; move Status to In Progress.
+   symptom). Record `Probable cause` and the fix tried; move Status to In Progress.
 3. When fixed, set Status Resolved + `Date Resolved`. If the fix or the diagnosis **differed from the
- manual**, add that lesson to the machine's troubleshooting article — that is how the reference gets
- better than the manual over time (the corner-rounding incident is the first example).
+   manual**, add that lesson to the machine's troubleshooting article — that is how the reference gets
+   better than the manual over time (the corner-rounding incident is the first example).
 4. If a fault recurs or points at a maintenance gap, add/adjust a task on the **Maintenance Schedule**.
 
 ## Safety first, always

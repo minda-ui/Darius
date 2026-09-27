@@ -23,6 +23,12 @@ related:
  - ../Machinery/hebrock-f4-next-edge-bander.md
  - ../Processes/f45-monthly-safety-device-check.md
  - ../Suppliers/altendorf-gmbh.md
+ - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/maintenance-schedule-altendorf-f45.md
+ - ../Processes/panel-production-route.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - ../Troubleshooting/troubleshooting-altendorf-f45.md
 ---
 
 # Altendorf F45 ElmoDrive — Sliding Table Saw
@@ -36,14 +42,14 @@ Manufacturer contact and ordering details: `Wiki/Suppliers/altendorf-gmbh.md`.
 
 **Three documents, one machine.** The 12 PDF parts in `Raw/` are three distinct documents:
 - **Main machine manual** (parts 1-6): doc 0000010074-011-2023 GB, "Version 03/2023". Three
- duplex-scan pairs (odd-ascending + even-descending), reconstructing pages 1-74, 75-124, 125-183.
+  duplex-scan pairs (odd-ascending + even-descending), reconstructing pages 1-74, 75-124, 125-183.
 - **ElmoDrive control-unit manual** (parts 7-8): doc 0000010077-001, "Version 09/2019" cover /
- "0000010077-001-2020GB" footer.
+  "0000010077-001-2020GB" footer.
 - **Spare parts manual** (Spare parts manual parts 1-4): doc 0000010101-006-2023 DE, "Version
- 08/2023," titled "Beidseitige Schwenkung / Two-way tilt" — confirms this machine's tilt variant.
- Parts 1-2 are a duplex pair (pages 2-98); parts 3-4 are very likely a second duplex pair covering
- pages ~99-147, though which of the two carries the odd vs. even sequence couldn't be confirmed
- from OCR alone — the content itself is fully captured either way.
+  08/2023," titled "Beidseitige Schwenkung / Two-way tilt" — confirms this machine's tilt variant.
+  Parts 1-2 are a duplex pair (pages 2-98); parts 3-4 are very likely a second duplex pair covering
+  pages ~99-147, though which of the two carries the odd vs. even sequence couldn't be confirmed
+  from OCR alone — the content itself is fully captured either way.
 
 ## Key facts
 
@@ -159,34 +165,34 @@ From the main manual and the ElmoDrive manual. Key points beyond the standard "l
 maintenance, PPE required, E-stop secures against restart" baseline shared with `FA2301`:
 
 - **Mandatory monthly documented safety-device check** — not optional. The manual states outright:
- *"Carry out and document this check 1x month!"* Covers: E-stop response, sliding-table limit
- switch, plate/chip-duct limit switch, ON/OFF switch cleanliness, protective hood condition. See
- `Wiki/Processes/f45-monthly-safety-device-check.md` for how this is logged in this KB (Smartsheet
- "Safety Check Log" sheet).
+  *"Carry out and document this check 1x month!"* Covers: E-stop response, sliding-table limit
+  switch, plate/chip-duct limit switch, ON/OFF switch cleanliness, protective hood condition. See
+  `Wiki/Processes/f45-monthly-safety-device-check.md` for how this is logged in this KB (Smartsheet
+  "Safety Check Log" sheet).
 - **Annual electrical check**: PTC winding-shield resistors in the motor terminal box must be
- checked by an electrician at least once a year, cold motor, expected reading 150-1000 Ω. **Note:
- the spare parts manual does not list a "PTC" component anywhere** — the closest matches are a
- "Bremswiderstand" (brake resistor) in the switch cabinet and a "Permanentmagnetbremse" (permanent
- magnet brake) on CNC-fence drive motors. The PTC resistor's exact part identity remains
- unconfirmed; this doesn't change the requirement to have it checked annually.
+  checked by an electrician at least once a year, cold motor, expected reading 150-1000 Ω. **Note:
+  the spare parts manual does not list a "PTC" component anywhere** — the closest matches are a
+  "Bremswiderstand" (brake resistor) in the switch cabinet and a "Permanentmagnetbremse" (permanent
+  magnet brake) on CNC-fence drive motors. The PTC resistor's exact part identity remains
+  unconfirmed; this doesn't change the requirement to have it checked annually.
 - **Riving knife**: must be re-checked every time the saw blade is changed (event-based, not
- calendar-based); thickness must be ≥ the main blade's thickness. The riving-knife holder itself
- is rated for blades up to Ø450mm.
+  calendar-based); thickness must be ≥ the main blade's thickness. The riving-knife holder itself
+  is rated for blades up to Ø450mm.
 - **Laser cutting-line display** (if fitted): never view the beam with optical aids; never fit
- mirrors in the laser area; never modify the optics; warning labels must stay legible; only
- Altendorf may repair a defective unit.
+  mirrors in the laser area; never modify the optics; warning labels must stay legible; only
+  Altendorf may repair a defective unit.
 - **Electro-pneumatic hold-down**: crushing risk — never reach under the pressure plate; clamping
- force up to 1000N at 6 bar.
+  force up to 1000N at 6 bar.
 - **Tilting the saw blade**: use the wide safety hood, laterally adjust the guard for negative
- tilt angles, clear the table of workpieces in the tilt area, watch for collision with
- double-roller-carriage attachments at negative angles.
+  tilt angles, clear the table of workpieces in the tilt area, watch for collision with
+  double-roller-carriage attachments at negative angles.
 - **Machine diagnosis function groups**: Group 1 (motor temp, machine door, lower blade cover,
- E-stop, sliding-table limit switch) stops drives / prevents start. Group 2 (brake unit) prevents
- start and calls for a service technician.
+  E-stop, sliding-table limit switch) stops drives / prevents start. Group 2 (brake unit) prevents
+  start and calls for a service technician.
 - Residual risks called out: blade/scoring-blade contact (especially at -45° tilt), contact from
- beneath the table at sliding-table extremes, kickback, tooth ejection/blade breakage, crushing at
- the motor-driven sliding table/tilt/crosscut fence, live parts when the cabinet is open, hearing
- damage, dust exposure.
+  beneath the table at sliding-table extremes, kickback, tooth ejection/blade breakage, crushing at
+  the motor-driven sliding table/tilt/crosscut fence, live parts when the cabinet is open, hearing
+  damage, dust exposure.
 
 ## Maintenance schedule
 
@@ -201,10 +207,10 @@ own page 155 table before treating any one pairing as authoritative.
 - Sliding table: clean guide/underside with a spirit-soaked cloth; clean sub-rollers.
 - Round rod (rip fence): spray, then move the block up/down.
 - Pivot arm: open the compartment, clean the roller (top and underneath). **Do not oil the pivot
- arm — clean dry only.**
+  arm — clean dry only.**
 - Cleaning agents by soiling type: chips/dust → vacuum/brush/cloth; resin → nitro thinner (general)
- or petroleum/spirit (on the sliding-table guide specifically); rust prevention → universal oil
- after cleaning. **Never apply resin remover to anodised surfaces.**
+  or petroleum/spirit (on the sliding-table guide specifically); rust prevention → universal oil
+  after cleaning. **Never apply resin remover to anodised surfaces.**
 
 **Lubrication — trigger-based, not purely calendar:**
 
@@ -230,16 +236,16 @@ noted, confirm against the physical part or the online shop before ordering):
 - CNC-Winkelanschlag DUO Flex drive: toothed belt "10T5/330mm" (66 teeth), part K3500.0076.
 - Riving-knife holder: part B1480.0051, rated for saw blades up to Ø450mm.
 - Saw shaft assembly: "Sägewelle F45," part B1480.0044; quick-change flange "Schnellwechselflansch
- F45-2006."
+  F45-2006."
 - Scorer blades (RAPIDO): Ø180mm front and rear — exact article numbers not reliably captured.
 - HM main-drive belt and scorer drive belt are both listed "on request" (no fixed article number
- printed) — must be specially requested from Altendorf.
+  printed) — must be specially requested from Altendorf.
 - Sub-rollers/guide rollers: swivel-arm support/guide rollers (Standard B1408.0010 / Compact
- B1408.0020M), sliding-table middle-carriage double roller B1419.0022.
+  B1408.0020M), sliding-table middle-carriage double roller B1419.0022.
 - Ordering: quote the part's article number and, where relevant, the machine's model/variant —
- see `Wiki/Suppliers/altendorf-gmbh.md` for the shop/phone/email contact. **No PTC resistor and
- no F1/F2/F8/F9/F15/F16 fuse cross-reference exists in the spare parts manual** — these remain
- unidentified by part number.
+  see `Wiki/Suppliers/altendorf-gmbh.md` for the shop/phone/email contact. **No PTC resistor and
+  no F1/F2/F8/F9/F15/F16 fuse cross-reference exists in the spare parts manual** — these remain
+  unidentified by part number.
 
 ## Fault diagnosis
 
@@ -313,33 +319,33 @@ is most likely consumed by an operator on screen or paper, not imported.
 ## Open questions
 
 - **Was this machine re-commissioned after the move to Unit 31?** No record of the move exists in
- this KB, yet the lease is dated 25 June 2026. Of the three machines this one has the most to
- re-establish — see "The 2026 move" above for the full tolerance list, including the **< 0.2 mm**
- angle-cut calibration and the extraction interlock. Ask, then either log the checks or schedule
- them. Raised 2026-09-17.
+  this KB, yet the lease is dated 25 June 2026. Of the three machines this one has the most to
+  re-establish — see "The 2026 move" above for the full tolerance list, including the **< 0.2 mm**
+  angle-cut calibration and the extraction interlock. Ask, then either log the checks or schedule
+  them. Raised 2026-09-17.
 - **Compliance certificates have expired.** DGUV/GS/machine-safety certificates (HM 220023-25) were
- valid only until 22.02.2024. Needs checking with Altendorf/the supplier whether renewal,
- re-inspection, or re-certification is required before continued use.
+  valid only until 22.02.2024. Needs checking with Altendorf/the supplier whether renewal,
+  re-inspection, or re-certification is required before continued use.
 - **Owning entity unconfirmed** — same question as `FA2301`/`FA2302`: invoiced to Fishbone
- Drylining Limited (now Fishbone Construction Ltd), not AMFA Furniture Ltd. *Sharpened 2026-09-17:*
- AMFA Furniture Ltd holds the Unit 31 lease, so this is one company's machine in another's premises.
+  Drylining Limited (now Fishbone Construction Ltd), not AMFA Furniture Ltd. *Sharpened 2026-09-17:*
+  AMFA Furniture Ltd holds the Unit 31 lease, so this is one company's machine in another's premises.
 - **`FA2302` (Inventair MK1 MTFA) status needs review** once the new centralised extraction unit's
- manual arrives — likely superseded, not confirmed.
+  manual arrives — likely superseded, not confirmed.
 - **No serial number confirmed anywhere** — not in either operating manual, and not in the spare
- parts manual either (it's a generic model/variant catalogue, not machine-specific). Check the
- machine's physical type plate directly.
+  parts manual either (it's a generic model/variant catalogue, not machine-specific). Check the
+  machine's physical type plate directly.
 - **Supplier (the actual UK seller on invoice 100153) not identified** — `Wiki/Suppliers/altendorf-gmbh.md`
- covers the manufacturer only, which may or may not be who this workshop actually bought from.
+  covers the manufacturer only, which may or may not be who this workshop actually bought from.
 - **PTC resistor and F1/F2/F8/F9/F15/F16 fuses have no part-number cross-reference** anywhere
- across all three documents (operating, ElmoDrive, spare parts) — doesn't block the annual PTC
- check requirement, just means the physical part still needs identifying on-site if it ever fails.
+  across all three documents (operating, ElmoDrive, spare parts) — doesn't block the annual PTC
+  check requirement, just means the physical part still needs identifying on-site if it ever fails.
 - **Dust-extraction volume figure inconsistency**: 1150 m³/h (parts 1-4) vs. 1110 m³/h (parts 5-6)
- — not reconciled by any of the three documents. **The move compounds this**: new duct runs change
- the velocity actually delivered, whichever figure is right.
+  — not reconciled by any of the three documents. **The move compounds this**: new duct runs change
+  the velocity actually delivered, whichever figure is right.
 - **Weight figures not reconciled**: ~1100kg (parts 5-6) vs. a 114-385kg range in a parts 1-4 table
- that may actually describe accessories/components rather than the whole machine.
+  that may actually describe accessories/components rather than the whole machine.
 - **First monthly safety-device check not yet logged** — see
- `Wiki/Processes/f45-monthly-safety-device-check.md` and the Smartsheet "Safety Check Log" sheet.
+  `Wiki/Processes/f45-monthly-safety-device-check.md` and the Smartsheet "Safety Check Log" sheet.
 
 ## Changes
 

@@ -4,11 +4,7 @@ _Prepared by Darius (Workshop Operations Assistant) on 2026-09-17, at the owner'
 **Alex** to seed the group-wide asset/label register. This KB does not write to that register — see
 `CLAUDE.md` §6a. This file is the record of what was handed over._
 
----
-
-## Why this exists
-
-The workshop received pre-printed asset labels reading *"PROPERTY OF FISHBONE
+**Why this exists.** The workshop received pre-printed asset labels reading *"PROPERTY OF FISHBONE
 GROUP / TEL: 0191 605 2945"*, each carrying a QR code and a four-digit number (the two seen were
 `0017` and `0018`). The owner decided on 2026-09-17 to hold **one group-wide register** of these
 labels, built by Alex, rather than a per-KB list.
@@ -104,17 +100,17 @@ rather than AMFA — see the Fishbone Construction KB, `Wiki/Suppliers/kosmosoft
 ## Row-level caveats
 
 - **`FA2302`** — status under review. It may be superseded by `FA2305`, but that is **suspected, not
- confirmed** (Task T014). Do not mark it disposed on this KB's say-so.
+  confirmed** (Task T014). Do not mark it disposed on this KB's say-so.
 - **`FA2303`** — no serial number appears in the operating manual, the ElmoDrive manual or the spare
- parts manual; it must be read off the physical type plate (Task T009). It also carries a live
- compliance issue — DGUV/GS/machine-safety certificates HM 220023-25 **expired 22.02.2024** (Task
- T007). That detail stays in the Workshop KB; noted here only so nobody is surprised by it.
+  parts manual; it must be read off the physical type plate (Task T009). It also carries a live
+  compliance issue — DGUV/GS/machine-safety certificates HM 220023-25 **expired 22.02.2024** (Task
+  T007). That detail stays in the Workshop KB; noted here only so nobody is surprised by it.
 - **`FA2304`** — serial is invoice-derived; confirm against the type plate (Task T012).
 - **`FA2305`** — no manual received yet, so it is not in the maintenance or troubleshooting systems.
 - **All five machines** — the workshop moved units in 2026 and **no record exists of any
- re-commissioning afterwards** (levelling, phase direction, extraction velocity, and for the F45 a
- set of sub-millimetre calibrations). Raised in the Workshop KB; not a group-register concern, but
- it is why "In service" should not be read as "verified since the move".
+  re-commissioning afterwards** (levelling, phase direction, extraction velocity, and for the F45 a
+  set of sub-millimetre calibrations). Raised in the Workshop KB; not a group-register concern, but
+  it is why "In service" should not be read as "verified since the move".
 
 ## The sixth asset — Brother TD-4420DN label printer, registered as `FA2401`
 
@@ -175,12 +171,12 @@ points at a dead line. Not this KB's scope; flagged because the labels depend on
 - `Wiki/Machinery/vitap-k2-panel-saw.md` — `FA2304`/`FA2305`, invoice 100154.
 - `Wiki/Machinery/hebrock-f4-next-edge-bander.md` — `FA2301`/`FA2302`, invoice 100155.
 - `Raw/Fishbone Drylining Ltd Mail - Order Receipt SOA2606351.pdf` — the Brother TD-4420DN order
- receipt, Printerland, 9 May 2024; the source for every printer figure and address above.
+  receipt, Printerland, 9 May 2024; the source for every printer figure and address above.
 - Owner's photograph of the **Unit 31 lease cover page** (Forth England Limited / Furniture by
- Fishbone Limited, dated 25 June 2026), 2026-09-17 — the source for the address, the landlord and
- the move date.
+  Fishbone Limited, dated 25 June 2026), 2026-09-17 — the source for the address, the landlord and
+  the move date.
 - Fishbone Construction KB, archived `furniture-by-fishbone-ltd.md` and `Wiki/Suppliers/amfa-furniture-ltd.md`
- (CH overview `FH0000019`) — the 13 July 2026 rename. Read-only to this KB; cited, not copied.
+  (CH overview `FH0000019`) — the 13 July 2026 rename. Read-only to this KB; cited, not copied.
 - Fishbone Construction KB, `Wiki/Suppliers/kosmosoft-smartcabinet.md` — the SmartCABINET purchase
- (read-only to this KB; cited, not copied).
+  (read-only to this KB; cited, not copied).
 - Owner's photograph of the asset labels, 2026-09-17.

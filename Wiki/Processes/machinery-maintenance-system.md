@@ -14,6 +14,10 @@ related:
  - maintenance-schedule-altendorf-f45.md
  - f45-monthly-safety-device-check.md
  - ../Troubleshooting/troubleshooting-and-fault-log-system.md
+ - ../Decisions/2026-09-15-operational-systems-scope-extension.md
+ - barcode-and-scan-event-system.md
+ - maintenance-schedule-vitap-k2.md
+ - ../Software/smartcabinet-and-production-workflow.md
 ---
 
 # Machinery maintenance system (routine maintenance)
@@ -39,10 +43,10 @@ Hours-based / Condition-based), an **Interval (days)** where the cadence is cale
 Two columns are **automatic** (column formulas — maintain them via the connector, never by hand):
 
 - **Next Due** = `Last Done + Interval (days)` (blank until a task is first logged, or where no fixed
- interval applies).
+  interval applies).
 - **Health** (RYGB): **Blue** = no due date yet (a Daily/Weekly habitual task, a Condition-/Hours-based
- task, or one never logged); **Green** = due more than 14 days away; **Yellow** = due within 14 days;
- **Red** = overdue.
+  task, or one never logged); **Green** = due more than 14 days away; **Yellow** = due within 14 days;
+  **Red** = overdue.
 
 **To use it:** when a task is done, put the date in **Last Done** (and initials in Assigned To). Next
 Due and Health recompute. That is the whole loop. Daily/Weekly cleaning tasks are listed for
@@ -76,7 +80,7 @@ section).
 
 - Smartsheet **Workshop / Maintenance Schedule**, sheet `6753985971226500` — the live schedule.
 - `../Machinery/hebrock-f4-next-edge-bander.md` and `../Machinery/altendorf-f45-panel-saw.md` —
- manual-derived maintenance content, with per-source citations.
+  manual-derived maintenance content, with per-source citations.
 
 ## Changes
 

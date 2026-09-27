@@ -1,4 +1,4 @@
-# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, and the charter taken to v11
+# Change log — 2026-09-17 — Two documented facts corrected (networking, and the workshop's address); barcode Phase 0 built; SmartCABINET vendor identified; asset labels applied, two disposals, `FA2401`/`FA2402` registered, an unregistered compressor found, the charter taken to v13, the owed Wiki articles written, an AES manual assessed and not accepted, and the compressor's "low pressure" corrected — it was switched off
 
 _Append-only dated session file (Fishbone Group). See `CLAUDE.md` §4._
 
@@ -21,19 +21,19 @@ the network.
 
 Consequences recorded:
 - `CLAUDE.md` **v8 → v9**. §1 rewritten; v8 (`1teaQsa5DRuZGbtvSSSRjmpAo6p6Uu0Gp`) archived, not
- trashed. New Drive id `1STw2KS1Ny7GKeDRMC_UbLxZtkjPtCr8z`.
+  trashed. New Drive id `1STw2KS1Ny7GKeDRMC_UbLxZtkjPtCr8z`.
 - **Downstream sweep done, and it found nothing to fix.** `Wiki/Processes/tpacad-tool-type-optimizer-ambiguity.md`
- and `Wiki/Software/smartcabinet-and-production-workflow.md` were both read in full: **neither repeats
- the networking claim.** It had not propagated out of the control file.
+  and `Wiki/Software/smartcabinet-and-production-workflow.md` were both read in full: **neither repeats
+  the networking claim.** It had not propagated out of the control file.
 - **A nuance kept rather than dropped:** a shared network does *not* merge two programs' internal
- catalogs. SmartCabinet's **CAM Tools** table and TpaCAD's **CN Tools** catalog remain separate
- application databases; whether an entry in one reaches the other is **unverified** and still bears on
- Task T016. Recorded in §1 as unverified rather than asserted either way.
+  catalogs. SmartCabinet's **CAM Tools** table and TpaCAD's **CN Tools** catalog remain separate
+  application databases; whether an entry in one reaches the other is **unverified** and still bears on
+  Task T016. Recorded in §1 as unverified rather than asserted either way.
 - **New §3 lesson:** *a fact recorded without a source hardens into an assumption nobody revisits.* The
- claim carried no citation and no `[confirm]` marker, survived six versions, and shaped real advice —
- an entire barcode-system design was built around an air gap that does not exist — before anyone
- questioned it. Infrastructure and environment facts now get a source or a marker, like any figure off
- an invoice.
+  claim carried no citation and no `[confirm]` marker, survived six versions, and shaped real advice —
+  an entire barcode-system design was built around an air gap that does not exist — before anyone
+  questioned it. Infrastructure and environment facts now get a source or a marker, like any figure off
+  an invoice.
 
 ### SmartCABINET — vendor and product identified (cross-KB, cited not copied)
 
@@ -43,30 +43,30 @@ Italy — "CRM/CAD/CAM/ERP software for cabinet making". Offer/contract **22910*
 paid**, registered `FCD0000024` in the *Construction* Document Register.
 
 - **Billed to Fishbone Drylining Ltd, not AMFA Furniture Ltd** — the same pattern as every machine.
- **New evidence for Task T004** (owning entity): it is not only the machinery, it is the software too.
+  **New evidence for Task T004** (owning entity): it is not only the machinery, it is the software too.
 - **It has an ERP module.** Raised as an open question: building a Smartsheet production tracker
- without knowing what the purchased software already does risks duplicating it. Owner has chosen
- Smartsheet as the tracking layer regardless (decision, 2026-09-17).
+  without knowing what the purchased software already does risks duplicating it. Owner has chosen
+  Smartsheet as the tracking layer regardless (decision, 2026-09-17).
 - The Construction KB carries an open question — *"has installation happened?"* — which this morning's
- screens answer outright. **Not actioned: that KB is read-only from here** (§6a). Flagged for the
- owner/Victoria.
+  screens answer outright. **Not actioned: that KB is read-only from here** (§6a). Flagged for the
+  owner/Victoria.
 
 ### Learned from the owner's live screens (not yet a Raw item)
 
 - **`releasenote_SC.txt`** — latest released version **3.2.0.9** (07/07/2026); **3.2.0.8** (05/05/2026)
- added the custom CSV split by material, a **description column on the CAM Tools table**, **ZPL
- barcode label printing**, a Felder postprocessor and **"Legrabox mill for TCN post"**. Bilingual
- ITA/ENG. *Which version is actually installed is still `[confirm]`* — a release-note file ships the
- whole history.
+  added the custom CSV split by material, a **description column on the CAM Tools table**, **ZPL
+  barcode label printing**, a Felder postprocessor and **"Legrabox mill for TCN post"**. Bilingual
+  ITA/ENG. *Which version is actually installed is still `[confirm]`* — a release-note file ships the
+  whole history.
 - **Panel Optimization** — real job `AMFA Wall Unit 600 RH` across two 19mm materials on 2800×2070
- sheets (`W1100 ST9`, `U963 ST9 DIAMOND…` — read as Egger decors `[confirm]`). Parts carry unit name +
- number + role (`01 SIDE LEFT`, `07 BACK 1`, `13 BOTTOM`, `15 SHELF 1`…). **Utilisation 28.4% and
- 9.2%**, with only **0.8% true waste** and **70.8% recoverable offcut**; 11 cuts / 11.1 m on the sheet.
+  sheets (`W1100 ST9`, `U963 ST9 DIAMOND…` — read as Egger decors `[confirm]`). Parts carry unit name +
+  number + role (`01 SIDE LEFT`, `07 BACK 1`, `13 BOTTOM`, `15 SHELF 1`…). **Utilisation 28.4% and
+  9.2%**, with only **0.8% true waste** and **70.8% recoverable offcut**; 11 cuts / 11.1 m on the sheet.
 - **Offcut library exists and is unused.** `Remaining cutouts` listed seven offcuts (largest 2800×1469
- and 2800×1200; smallest a 1330×41 sliver); `Load cutouts` read *"There are no items to show."* The
- loop is available but has never been closed. Recommendations recorded for the process article: a
- minimum keep size, fill the `Vein` (grain) field, and label the physical offcut so the rack matches
- the library.
+  and 2800×1200; smallest a 1330×41 sliver); `Load cutouts` read *"There are no items to show."* The
+  loop is available but has never been closed. Recommendations recorded for the process article: a
+  minimum keep size, fill the `Vein` (grain) field, and label the physical offcut so the rack matches
+  the library.
 
 ### `FA2303` (F45) — does it take a digital cut list?
 
@@ -85,22 +85,22 @@ Owner uploaded `td-4210d_4410d_4420dn_4520dn_uke_ug_a.pdf` to `Raw/`. **Read cov
 Troubleshooting. Stated rather than glossed.
 
 - **A contradiction recorded, not resolved.** Reseller and vendor listings say the TD-4420DN supports
- **ZPL II / EPL2 / DPL emulation**; **Brother's own user guide for this exact model never mentions
- ZPL**, and Brother's published *ZPL II Emulation Guide* is branded for the **TD-4420TN/4520TN** —
- the thermal-*transfer* siblings. The manual documents only Brother's own stack (P-touch Editor,
- P-touch Template, Transfer Manager, mass-storage `.BIN`/`.BLF` command files, an SDK). **Decisive
- test: look for an emulation/`FBPL` tab in the Printer Setting Tool, or print one ZPL label.** Open.
+  **ZPL II / EPL2 / DPL emulation**; **Brother's own user guide for this exact model never mentions
+  ZPL**, and Brother's published *ZPL II Emulation Guide* is branded for the **TD-4420TN/4520TN** —
+  the thermal-*transfer* siblings. The manual documents only Brother's own stack (P-touch Editor,
+  P-touch Template, Transfer Manager, mass-storage `.BIN`/`.BLF` command files, an SDK). **Decisive
+  test: look for an emulation/`FBPL` tab in the Printer Setting Tool, or print one ZPL label.** Open.
 - **Confirmed from the manual:** LAN port is on the `4420DN`/`4520DN` only (10BASE-T/100BASE-TX); max
- image width **832 dots** (vs 1280 on the 4520DN), consistent with 203 dpi / ~104 mm; barcode **Crop
- Print is `TD-4520DN` only**; non-Brother roll media explicitly permitted; mass-storage mode prints
- without a driver.
+  image width **832 dots** (vs 1280 on the 4520DN), consistent with 203 dpi / ~104 mm; barcode **Crop
+  Print is `TD-4520DN` only**; non-Brother roll media explicitly permitted; mass-storage mode prints
+  without a driver.
 - **Durability, in Brother's own words** — *"Do not expose the RD Roll to direct sunlight, high
- temperature, high humidity, wind, or dust as it may cause labels to peel off or discolour"*;
- *"Scratching the printed surface … can cause the colour to change or fade."* Direct thermal suits
- short-life part labels; long-dwell offcut and machine-asset labels need a different answer.
+  temperature, high humidity, wind, or dust as it may cause labels to peel off or discolour"*;
+  *"Scratching the printed surface … can cause the colour to change or fade."* Direct thermal suits
+  short-life part labels; long-dwell offcut and machine-asset labels need a different answer.
 - **Not registered as an asset at this point.** Deliberate: per the `FA2601`→`FA2301` lesson, no code
- is assigned until the acquisition year is evidenced. Invoice requested from the owner — it arrived
- later the same session, and the printer was registered as `FA2401`; see below.
+  is assigned until the acquisition year is evidenced. Invoice requested from the owner — it arrived
+  later the same session, and the printer was registered as `FA2401`; see below.
 
 ### Barcode system — scoped, not yet built
 
@@ -116,14 +116,14 @@ never update them. The BP-scheme stage list in
 **Phase 0 built (later the same session, on the owner's go-ahead):**
 
 - **Smartsheet `Scan Events`** created (`4828191892047748`) — the append-only scan log. `Health` (RYGB
- column formula off `Actioned`, matching the Fault Log and Maintenance Schedule convention),
- `Code Scanned` (primary — the raw value, untidied), `Event No.` (auto `SE-00001`),
- `Logged At`/`Logged By` (set automatically on row creation), `Asset / Machine ID`, `Event Type`,
- `Detail`, `Linked Record`, `Actioned`, `Notes`. Production and offcut options were included in
- `Event Type` now so the sheet needs no restructuring at Phase 2.
- *Build notes: column formulas are rejected at sheet-creation time (error 1032) and had to be added
- afterwards; `CREATED_DATE` requires column type `DATETIME`, not `ABSTRACT_DATETIME` (error 1079);
- column descriptions cap at 250 characters (error 1041).*
+  column formula off `Actioned`, matching the Fault Log and Maintenance Schedule convention),
+  `Code Scanned` (primary — the raw value, untidied), `Event No.` (auto `SE-00001`),
+  `Logged At`/`Logged By` (set automatically on row creation), `Asset / Machine ID`, `Event Type`,
+  `Detail`, `Linked Record`, `Actioned`, `Notes`. Production and offcut options were included in
+  `Event Type` now so the sheet needs no restructuring at Phase 2.
+  *Build notes: column formulas are rejected at sheet-creation time (error 1032) and had to be added
+  afterwards; `CREATED_DATE` requires column type `DATETIME`, not `ABSTRACT_DATETIME` (error 1079);
+  column descriptions cap at 250 characters (error 1041).*
 - **`Asset Label No.` column** added to the Machinery Register.
 
 **The labels arrived mid-session and changed the design for the better.** They are pre-printed
@@ -131,36 +131,36 @@ never update them. The BP-scheme stage list in
 (`0017`, `0018` seen). Durable printed stock, so the direct-thermal fade problem does not apply to
 machine labels at all. Consequences recorded:
 - **Two ID systems now, deliberately not merged.** The label number is the physical tag; the `FA` code
- is the register ID. Written into the new column's description, with *never renumber assets to match
- labels*. `Scan Events` already separates `Code Scanned` from `Asset / Machine ID` for the same reason.
+  is the register ID. Written into the new column's description, with *never renumber assets to match
+  labels*. `Scan Events` already separates `Code Scanned` from `Asset / Machine ID` for the same reason.
 - **The series starts at 0017**, so `0001`-`0016` exist elsewhere — this is a **group-wide** series.
 - **Owner decision:** one group-wide asset/label register, to be built by **Alex**, not per-KB. The
- boundary agreed: that register holds the index (label no., what it is, whose it is, where); this KB
- keeps the detail; **the join key is the label number**. Recorded in
- `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`, the handoff prepared for Alex.
+  boundary agreed: that register holds the index (label no., what it is, whose it is, where); this KB
+  keeps the detail; **the join key is the label number**. Recorded in
+  `Outputs/2026-09-17-handoff-workshop-assets-for-group-register.md`, the handoff prepared for Alex.
 - **"PROPERTY OF FISHBONE GROUP" is deterrent labelling, not evidence of title** — flagged so the
- wording does not get copied into the group register's owning-entity column and bake T004's ambiguity
- in estate-wide.
+  wording does not get copied into the group register's owning-entity column and bake T004's ambiguity
+  in estate-wide.
 
 **Brother TD-4420DN — order receipt processed.**
 `Raw/Fishbone Drylining Ltd Mail - Order Receipt SOA2606351.pdf`: Printerland order **SOA2606351**,
 **9 May 2024** — printer £211.58 ex VAT plus two direct-thermal die-cut rolls (102x50mm £14.45,
 102x152mm £5.57); £231.60 + £46.32 VAT = **£277.92**.
 - **Acquisition year 2024 evidenced**, so the code is **`FA2401`** — the first 2024 asset here. Had it
- been numbered when it first came to notice it would have been `FA26xx`, repeating `FA2601` exactly.
- The discipline of waiting for the document worked.
+  been numbered when it first came to notice it would have been `FA26xx`, repeating `FA2601` exactly.
+  The discipline of waiting for the document worked.
 - **Billing trail**: ordered from the Fishbone Drylining mailbox; **invoiced to Mindaugas Gaudiesius
- by name at 6 Beverley Place** — which this session first described as "a residential address" purely
- from its format, and which the owner then confirmed is **the companies' registered office**. That was
- the third unsourced inference of the day, and it is corrected everywhere it was written. No company
- is named on the billing line, so the owning entity is unconfirmed — the T004 question again.
- **Shipped to Fishbone Waste at Unit 31**, then that unit's occupant; Unit 31 is now the workshop.
+  by name at 6 Beverley Place** — which this session first described as "a residential address" purely
+  from its format, and which the owner then confirmed is **the companies' registered office**. That was
+  the third unsourced inference of the day, and it is corrected everywhere it was written. No company
+  is named on the billing line, so the owning entity is unconfirmed — the T004 question again.
+  **Shipped to Fishbone Waste at Unit 31**, then that unit's occupant; Unit 31 is now the workshop.
 - It is an **order receipt, not the invoice** ("an invoice will also follow"); that invoice has not
- been seen.
+  been seen.
 - **Registration was held** pending confirmation of where the printer physically sits, because the
- paperwork pointed at Unit 31/Fishbone Waste while the KB still believed the workshop was Unit 32.
- The owner then confirmed the workshop *is* Unit 31 and the printer is there — so **`FA2401` was
- registered**, with the full billing trail in the register's Note field rather than tidied away.
+  paperwork pointed at Unit 31/Fishbone Waste while the KB still believed the workshop was Unit 32.
+  The owner then confirmed the workshop *is* Unit 31 and the printer is there — so **`FA2401` was
+  registered**, with the full billing trail in the register's Note field rather than tidied away.
 - Useful by-product: the shop already owns **102x50mm** die-cut stock, a workable part-label size.
 
 ### The second correction of the day — the workshop is at Unit 31, not Unit 32
@@ -171,42 +171,42 @@ page** — *Forth England Limited* (landlord) and *Furniture by Fishbone Limited
 25 June 2026**, NE28 6HA.
 
 - **"Furniture by Fishbone Limited" is not a new company.** Companies House confirms it renamed to
- **AMFA Furniture Ltd on 13 July 2026**, three weeks after the lease was signed — already documented
- in the Fishbone Construction KB (archived `furniture-by-fishbone-ltd.md` → `amfa-furniture-ltd.md`,
- CH overview `FH0000019`). Found by following §0's own rule to check the sister KB rather than
- assume this one is silent. Nothing to reconcile.
+  **AMFA Furniture Ltd on 13 July 2026**, three weeks after the lease was signed — already documented
+  in the Fishbone Construction KB (archived `furniture-by-fishbone-ltd.md` → `amfa-furniture-ltd.md`,
+  CH overview `FH0000019`). Found by following §0's own rule to check the sister KB rather than
+  assume this one is silent. Nothing to reconcile.
 - **Unit 31's previous occupant was Fishbone Waste**, who have moved out — which is why the 2024
- Brother order receipt shows "Fishbone Waste, Unit 31" for what is now the workshop's address. The
- two are recorded as the same unit under different occupants, not collapsed into one.
+  Brother order receipt shows "Fishbone Waste, Unit 31" for what is now the workshop's address. The
+  two are recorded as the same unit under different occupants, not collapsed into one.
 - **`CLAUDE.md` v9 → v10**; v9 (`1STw2KS1Ny7GKeDRMC_UbLxZtkjPtCr8z`) archived. New id
- `1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`.
+  `1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`.
 - **All six Machinery Register rows** updated to Unit 31.
 - **All three machinery articles swept** — and this one was *not* a find-and-replace. Each cited Unit
- 32 as the **delivery/invoice address**, which remains historically true. Each now carries two rows:
- *Location — current* (Unit 31, owner-sourced) and *Location — as invoiced 2023* (Unit 32, retained
- because it is what the invoice says). Predecessors archived, not overwritten.
+  32 as the **delivery/invoice address**, which remains historically true. Each now carries two rows:
+  *Location — current* (Unit 31, owner-sourced) and *Location — as invoiced 2023* (Unit 32, retained
+  because it is what the invoice says). Predecessors archived, not overwritten.
 - **The handoff to Alex was reissued** with the correction, the lease/entity evidence, and the printer
- now registered. The superseded draft is archived.
+  now registered. The superseded draft is archived.
 
 **The finding that matters more than the address: the machines were moved, and nothing records it.**
 A move is a re-commissioning event. Each article now carries a "The 2026 move" section drawn from its
 own manual, and a matching open question:
 
 - **`FA2301` Hebrock** — phase sequence (chain-bed feed motor direction), the separate 10 mm² PE bond,
- floor-anchoring or castor locking, ≥500 mm infeed/outfeed clearance, extraction at **≥25 m/s**
- through ø140 mm with the ducting earthed.
+  floor-anchoring or castor locking, ≥500 mm infeed/outfeed clearance, extraction at **≥25 m/s**
+  through ø140 mm with the ducting earthed.
 - **`FA2303` Altendorf F45** — the heaviest set: a floor flat, level and able to bear ~1100 kg (centre
- of gravity ~100 mm *below* the blade axis); swing-arm 0.5 mm; main-table height **0.1–0.2 mm**;
- cross-slide height; free-cut both sides; **angle-cut calibration by test cut, < 0.2 mm**; 0° blade
- tilt; motor rotation direction verified by an electrician; extraction interlocked via a
- potential-free contact or current transformer at **≥20 m/s**. Its own fault table already lists the
- two symptoms a bad re-install produces — *"cut size ≠ fence setting"* and *"blade burns on
- sliding-table side / rip-fence side"*.
+  of gravity ~100 mm *below* the blade axis); swing-arm 0.5 mm; main-table height **0.1–0.2 mm**;
+  cross-slide height; free-cut both sides; **angle-cut calibration by test cut, < 0.2 mm**; 0° blade
+  tilt; motor rotation direction verified by an electrician; extraction interlocked via a
+  potential-free contact or current transformer at **≥20 m/s**. Its own fault table already lists the
+  two symptoms a bad re-install produces — *"cut size ≠ fence setting"* and *"blade burns on
+  sliding-table side / rip-fence side"*.
 - **`FA2304` Vitap** — 1030 kg: levelling on threaded feet against a spirit level, auxiliary floor
- screws, ≥1000 mm clearance, ≥500 lux, vibration-free floor, **spindle rotation direction**
- re-verified, suction reconnected and the drilling unit run through full stroke to check for hose
- fouling. Its troubleshooting table's *"spindles rotate the wrong way — inverted phases"* is exactly
- the failure a move can introduce.
+  screws, ≥1000 mm clearance, ≥500 lux, vibration-free floor, **spindle rotation direction**
+  re-verified, suction reconnected and the drilling unit run through full stroke to check for hose
+  fouling. Its troubleshooting table's *"spindles rotate the wrong way — inverted phases"* is exactly
+  the failure a move can introduce.
 
 **Not assumed skipped — simply unrecorded.** New duct runs also change the extraction velocity
 actually delivered, which compounds the open sizing question for the Vitap (≈2000 m³/h, T014).
@@ -246,11 +246,11 @@ to be a third option the register did not contain at all.
 AES"*. `FA2302` and `FA2305` marked **Sold**.
 
 - This closes the T014 question that had stood since Session 8 — *does `FA2305` supersede `FA2302`?*
- The answer is **neither**: both were sold and replaced by a single centralised unit that was never
- registered. The suspicion had been recorded as unconfirmed rather than asserted (§3's "don't assume
- one finding resolves another"), so nothing had to be unpicked.
+  The answer is **neither**: both were sold and replaced by a single centralised unit that was never
+  registered. The suspicion had been recorded as unconfirmed rather than asserted (§3's "don't assume
+  one finding resolves another"), so nothing had to be unpicked.
 - **Disposal dates and sale proceeds are not known** and are recorded as missing, not glossed. Both
- assets have a purchase price on the register, so the disposals have a book consequence.
+  assets have a purchase price on the register, so the disposals have a book consequence.
 
 **`FA2402` registered — AES SAF 10,000 STK fine dust extractor.** From `Raw/Invoice 22473.pdf`:
 invoice **22473**, **08/10/2024**, *"1 X NEW AES STK 10000 DUST EXTRACTOR"*, **serial A-077**, stock
@@ -260,9 +260,9 @@ own retention-of-title clause. Acquisition year **2024 evidenced before the code
 same discipline as `FA2401`.
 
 - **Delivered to Unit 31 in October 2024** — *nearly two years before AMFA's Unit 31 lease of
- 25/06/2026*. That is evidence about the shape of the "2026 move": it looks less like a relocation
- into new premises than like AMFA taking a lease on a unit the group already occupied. Recorded as
- evidence for T004, not as a conclusion.
+  25/06/2026*. That is evidence about the shape of the "2026 move": it looks less like a relocation
+  into new premises than like AMFA taking a lease on a unit the group already occupied. Recorded as
+  evidence for T004, not as a conclusion.
 - **Billed to Fishbone Drylining Ltd** — the same pattern as every machine and the software.
 
 **The quotation arrived later and turned a model name into a specification.**
@@ -275,41 +275,41 @@ blades ≥3 mm, dynamically and statically balanced; a **Part Holder** stopping 
 reaching the propeller (protects the balance, reduces fire risk).
 
 - **T014's standing caveat is discharged.** The task had said for days that *"the '10000' in STK 10000
- is PROBABLY airflow in m³/h but that is a reading of the model name, NOT a specification — do not
- rely on it."* It is now sourced.
+  is PROBABLY airflow in m³/h but that is a reading of the model name, NOT a specification — do not
+  rely on it."* It is now sourced.
 - **On paper the unit is comfortably large**: known demand is the Vitap's ~2000 m³/h plus roughly
- 1,110 m³/h for the F45 (**my own arithmetic from ≥20 m/s through ø140 mm, labelled as such in the
- task, not a manufacturer figure**) plus the Hebrock, whose duct diameter the KB does not hold, so
- its ≥25 m/s cannot be converted. Call it ≥3,100 m³/h against 10,000 rated.
+  1,110 m³/h for the F45 (**my own arithmetic from ≥20 m/s through ø140 mm, labelled as such in the
+  task, not a manufacturer figure**) plus the Hebrock, whose duct diameter the KB does not hold, so
+  its ≥25 m/s cannot be converted. Call it ≥3,100 m³/h against 10,000 rated.
 - **But the vendor supplied none of the installation.** Two clauses recorded verbatim because they
- decide who owns the risk: *"Our machinery is not supplied with electrical cabling, extraction hose
- or blades"* and *"You are responsible for the electrical connection of your machinery, we do not
- electrically connect machinery on-site."* The ductwork and electrics were the group's own work and
- **nothing about that installation is recorded anywhere** — a rated fan capacity is a test-condition
- number; what each machine actually receives is decided by pipework nobody documented, and the
- machines have since been moved.
+  decide who owns the risk: *"Our machinery is not supplied with electrical cabling, extraction hose
+  or blades"* and *"You are responsible for the electrical connection of your machinery, we do not
+  electrically connect machinery on-site."* The ductwork and electrics were the group's own work and
+  **nothing about that installation is recorded anywhere** — a rated fan capacity is a test-condition
+  number; what each machine actually receives is decided by pipework nobody documented, and the
+  machines have since been moved.
 - **T014 retitled and narrowed** to *"Verify installed extraction performance at each machine against
- FA2402 — capacity now sourced, installation never recorded"*. The closing action is an **anemometer
- velocity reading at each machine's connection**, which also answers the extraction half of T018.
+  FA2402 — capacity now sourced, installation never recorded"*. The closing action is an **anemometer
+  velocity reading at each machine's connection**, which also answers the extraction half of T018.
 - **One figure left unreconciled rather than interpreted:** *"Dust absorption rate 40 m/min"* matches
- neither the inlet velocity (355 mm at 10,000 m³/h ≈ 28 m/s) nor the filter face velocity
- (10,000 ÷ 30.22 ≈ 5.5 m/min). Recorded verbatim with an instruction not to use it until a vendor or
- a real manual explains it.
+  neither the inlet velocity (355 mm at 10,000 m³/h ≈ 28 m/s) nor the filter face velocity
+  (10,000 ÷ 30.22 ≈ 5.5 m/min). Recorded verbatim with an instruction not to use it until a vendor or
+  a real manual explains it.
 - **"SAF" resolved.** The quotation names the machine **"AES SAF 10,000 STK"** — which is why
- `Raw/AES Extractor.pdf`, the control-panel schematic, was drawn for *SAF Technical Ltd*. AES
- Elektronik Makina is the OEM; SAF is part of the product designation, not an unrelated third party.
- Recorded because the alternative reading (an unknown third company in the chain) would have been a
- false lead.
+  `Raw/AES Extractor.pdf`, the control-panel schematic, was drawn for *SAF Technical Ltd*. AES
+  Elektronik Makina is the OEM; SAF is part of the product designation, not an unrelated third party.
+  Recorded because the alternative reading (an unknown third company in the chain) would have been a
+  false lead.
 - **Still not an operating manual.** Neither document carries maintenance intervals, filter-change
- criteria, safety instructions or a fault table, so `FA2402` **cannot yet join the Maintenance
- Schedule or the Fault Log**. Consumables are now known (64 filters, three buckets), so a schedule
- can be built the moment intervals arrive.
+  criteria, safety instructions or a fault table, so `FA2402` **cannot yet join the Maintenance
+  Schedule or the Fault Log**. Consumables are now known (64 filters, three buckets), so a schedule
+  can be built the moment intervals arrive.
 - **Banking details (HSBC sort code and account number) appear on the quotation and were deliberately
- not copied into the KB** — recorded as a statement of what was omitted and why, so nobody later
- assumes the extract was incomplete by accident.
+  not copied into the KB** — recorded as a statement of what was omitted and why, so nobody later
+  assumes the extract was incomplete by accident.
 - **Oddity flagged, not silently dropped:** the quotation's extracted text opens with the line
- *"Breitbandschleifmaschine KÜNDIG Topiq-2 1100"* — almost certainly a leftover template title from
- an unrelated wide-belt sander, but it is on the document, so it is on the record.
+  *"Breitbandschleifmaschine KÜNDIG Topiq-2 1100"* — almost certainly a leftover template title from
+  an unrelated wide-belt sander, but it is on the document, so it is on the record.
 
 **A machine nobody had registered — and it feeds all the others.** Label `0017` went on an **ABAC
 GENESIS 15 500L rotary screw compressor with integrated dryer**, which was not in the Machinery
@@ -317,23 +317,22 @@ Register at all. From its type plate: serial **ITJ717909**, product 4152025548, 
 **15 kW three-phase**, 0.58 kW dryer, max **10 bar**, refrigerant **R513A, 0.5 kg = 316 kg CO₂e**.
 
 - **No code assigned.** The plate year is *manufacture*, and this KB's convention needs *acquisition*
- — the `FA2601` lesson applied for the third time in one day. **`FA23xx` would probably be right and
- is still not good enough.** Purchase paperwork requested; **T019** raised to register it once the
- year is evidenced.
-- **The gauge read 5.4 bar.** The Hebrock wants a minimum of 7 bar, the F45 8 bar to ISO 8573-1:2010
- [7:4:-], the Vitap 6–8 bar. That is **below what all three machines ask for** — recorded as a
- reading from one photograph at one moment, not as a diagnosis, but it is the kind of reading that
- explains intermittent pneumatic faults.
+  — the `FA2601` lesson applied for the third time in one day. **`FA23xx` would probably be right and
+  is still not good enough.** Purchase paperwork requested; **T019** raised to register it once the
+  year is evidenced.
+- **The gauge read 5.4 bar.** *Recorded at the time as being below what all three machines ask for —
+  see the correction at the end of this log: the compressor was switched off when photographed, so
+  this was residual receiver pressure and never a finding.*
 - **The service log on the manufacturer's yellow label is blank** — printed columns for *Official
- Specialist / Latest Service / Running Hours / Type of Service*, all empty in the photograph. Either
- the machine has never been serviced or the servicing was never logged on it. **T020** raised for
- service history and the F-Gas position.
+  Specialist / Latest Service / Running Hours / Type of Service*, all empty in the photograph. Either
+  the machine has never been serviced or the servicing was never logged on it. **T020** raised for
+  service history and the F-Gas position.
 - **F-Gas: 316 kg CO₂e is 0.32 tonnes, far below the 5-tonne leak-check threshold**, so no periodic
- leak checking is triggered by charge size. Worked through and recorded so the question does not get
- re-asked.
+  leak checking is triggered by charge size. Worked through and recorded so the question does not get
+  re-asked.
 - **The point that outranks all of it:** this one machine supplies the pneumatics of the Hebrock, the
- F45 and the Vitap. It is a **single point of failure for the entire workshop**, and it was not in
- the register.
+  F45 and the Vitap. It is a **single point of failure for the entire workshop**, and it was not in
+  the register.
 
 **First real supplier lead in the whole KB.** The Vitap photograph caught an **R&J Machinery** dealer
 sticker (`01455`, Hinckley) beside the machine's own QR code. Invoice 100154 names the customer and
@@ -365,31 +364,201 @@ each one. **v10 (`1l4lgxmy5LJNdQQnTPIVVSC0YbY7mbcf4`) archived; v11 live at
 `1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`.** What it takes on:
 
 - **§0** — the billing pattern was scoped to `FA2301`–`FA2305`; it now names `FA2402` and the
- SmartCABINET software too, and records that `FA2401` names no company at all.
+  SmartCABINET software too, and records that `FA2401` names no company at all.
 - **§1** — `FA2402` added to the live-sources list and to *Assigned so far*; `FA2302`/`FA2305` marked
- Sold; the label map written in; and **two new standing rules**. *Codes are never retired or reused* —
- a sold asset keeps its row and its history, because a disposal changes status, not existence.
- *Registered ≠ complete* — with the compressor as the worked example of why.
+  Sold; the label map written in; and **two new standing rules**. *Codes are never retired or reused* —
+  a sold asset keeps its row and its history, because a disposal changes status, not existence.
+  *Registered ≠ complete* — with the compressor as the worked example of why.
 - **§3 — four new lessons**, all from things that actually happened today:
- - **A register only contains what somebody thought to put in it.** Five sessions of detailed machine
- documentation, and the machine feeding all three sat unregistered. **The gap was invisible from
- inside the KB.** Completeness is not something a knowledge base can check about itself.
- - **A model name is not a specification.** `STK 10000` was labelled as an unsourced reading for days
- before the quotation confirmed it. *Label the inference, not just the conclusion.*
- - **What a document excludes can matter more than what it states** — the AES quotation's exclusion
- clauses moved an entire installation into the undocumented column.
- - **Trust the API's response, not its status code** — the silent 4,000-character truncation.
- - The existing "don't assume one finding resolves another" lesson was **closed rather than deleted**:
- the answer to "did `FA2305` supersede `FA2302`?" was *neither*, and the restraint is recorded as
- having paid off.
+  - **A register only contains what somebody thought to put in it.** Five sessions of detailed machine
+    documentation, and the machine feeding all three sat unregistered. **The gap was invisible from
+    inside the KB.** Completeness is not something a knowledge base can check about itself.
+  - **A model name is not a specification.** `STK 10000` was labelled as an unsourced reading for days
+    before the quotation confirmed it. *Label the inference, not just the conclusion.*
+  - **What a document excludes can matter more than what it states** — the AES quotation's exclusion
+    clauses moved an entire installation into the undocumented column.
+  - **Trust the API's response, not its status code** — the silent 4,000-character truncation.
+  - The existing "don't assume one finding resolves another" lesson was **closed rather than deleted**:
+    the answer to "did `FA2305` supersede `FA2302`?" was *neither*, and the restraint is recorded as
+    having paid off.
 - **§6b** — the AnyDesk/PuTTY binaries and the uncopied banking details joined the SIP credential
- incident, so all three of the day's security events sit in one place.
+  incident, so all three of the day's security events sit in one place.
 - **§7** — Unit 30's postcode confirmed and its `[confirm]` dropped; `FA2402` and the unregistered
- compressor written up in full; T014 rewritten around the installation question; T018/T019/T020 and
- the supplier question added; the re-commissioning question marked **partly** answered.
+  compressor written up in full; T014 rewritten around the installation question; T018/T019/T020 and
+  the supplier question added; the re-commissioning question marked **partly** answered.
 - **The inventory question was rewritten from soft to hard.** It used to read "not necessarily
- complete". It now reads: the register is *known* to be missing at least one machine class, and
- nothing inside the KB can say whether it is missing others.
+  complete". It now reads: the register is *known* to be missing at least one machine class, and
+  nothing inside the KB can say whether it is missing others.
+
+### Four Wiki articles written — the documentation debt cleared
+
+The whole day's work had gone into Smartsheet and the control files; **not one Wiki article had been
+created or changed.** Four were owed, and all four are now written:
+
+| Article | Covers |
+|---|---|
+| `Wiki/Machinery/aes-saf-10000-stk-extractor.md` | `FA2402` — the full sourced specification, and the installation nobody documented |
+| `Wiki/Machinery/brother-td-4420dn-label-printer.md` | `FA2401` — suitability, the ZPL contradiction, the four-party billing trail |
+| `Wiki/Suppliers/markfield-woodworking-machinery.md` | The first supplier in this KB evidenced by a purchase rather than a manual |
+| `Wiki/Processes/barcode-and-scan-event-system.md` | Phase 0 as built, and what each later phase is waiting on |
+
+`Wiki/index.md` updated with all four; the predecessor is archived.
+
+**Three things worth noting about how they were written:**
+
+- **The AES article leads with what the KB does *not* have.** For the three production machines
+  there are full manufacturer's manuals. For `FA2402` there is a quotation, an invoice and a
+  control-panel drawing — commercial documents, not engineering ones. The article says so in its
+  second paragraph rather than letting a confident-looking specification table imply otherwise, and
+  the arithmetic comparing rated capacity against demand is labelled as *mine*, not a manufacturer's.
+- **The barcode article records the settled design decisions explicitly**, under a heading that says
+  not to re-litigate them: 2D over Code 128 and why, the three-level `Order → Unit → Part` scheme,
+  the append-only design forced by Smartsheet forms being unable to update rows, and the four
+  Smartsheet API constraints found the hard way. A design written down only as a conclusion gets
+  re-argued; written down with its reasoning, it holds.
+- **The Markfield article ends by warning against a merge.** The R&J Machinery sticker on the Vitap
+  is a *different* lead about a *different* supplier, and the two are easy to conflate now that one
+  of them finally has a name. Recorded as "do not merge the two leads".
+
+**A self-inflicted false alarm, recorded because the lesson is cheap and the mistake was not.**
+After uploading the change log to Drive I compared Drive's reported `fileSize` (37070) against a
+character count from Python's `len()` (36741), concluded the hand-copy had drifted by 329 bytes,
+withdrew the Drive copy with a "do not cite" label, re-read the whole file and re-uploaded it. The
+re-upload came back at 37070 again — because **`fileSize` is bytes and `len()` is characters, and
+this file holds 329 bytes of multibyte characters** (`—`, `≥`, `³`, `Ø`). Nothing had drifted. The
+withdrawn copy's label was wrong and has been corrected in place rather than left to mislead.
+**Verify like with like: `wc -c`, not a character count.** The earlier verifications in this session
+used `wc -c` and were sound.
+
+**One convention gap found and not silently fixed:** the article template says `related:` links
+should be kept bidirectional. The new articles link out to the three machinery articles; those three
+do not link back (`hebrock-f4-next-edge-bander.md` carries `related: []`). Rewriting three large
+articles for a metadata field was judged not worth it today — flagged here so it is a known debt
+rather than a surprise.
+
+### `CLAUDE.md` v12 — a claim in the charter was not true
+
+The last act of the session was an attempt to close the git-mirror gap flagged earlier. It failed, and
+**the failure was more useful than the fix would have been.**
+
+**§1 said the mirror "is kept in step" with Drive. It never was.** The mirror holds the charter,
+`README.md`, `Wiki/index.md`, everything in `Outputs/`, and the four articles written today — not the
+other fifteen Wiki articles, which exist on Drive only. That claim had stood since v8 and nobody had
+checked it. **The fourth unsourced statement corrected in a single day**, after the networking claim,
+the Unit 32 address and the "residential" billing address.
+
+**And it cannot be made true by copying.** Before attempting fifteen article transfers I tested the
+method on the smallest one — `Suppliers/altendorf-gmbh.md`, 2,007 bytes. The Drive connector's read
+tool does not return a file's bytes; it returns a *rendering* with leading punctuation escaped and
+two-space hard breaks appended. The reconstruction came back at **2,003 bytes — four out, silently.**
+
+Scaled to fifteen articles that method would have produced a mirror that looked complete and differed
+from the source in ways nobody would ever notice. **An honestly incomplete mirror beats a quietly
+corrupted one**, so the mirror stays partial, §1 now says so precisely, and §7 records what closing it
+would actually need: a mechanism that returns bytes — an owner-side folder download or a proper
+Drive-to-git sync — not a read-and-re-emit.
+
+**The same finding settles the `related:` link debt.** Making those links bidirectional means
+re-authoring three 21–30 KB machinery articles through that same lossy read, to change one metadata
+field. Recorded in §7 as deliberately not fixed, with the reason and the condition under which it
+should be: the next time one of those articles is rewritten for a substantive reason anyway.
+
+**Also into §3, from this session's own mistakes:** *verify like with like* (a byte count is not a
+character count), and *the connector's read tool does not round-trip, so never "copy" a file with it* —
+with the working rule that replaces it: **write new content to both stores from the same local copy
+and check `wc -c` on both sides.** Every file written this session was verified that way.
+
+v11 (`1edazoWoadKnX-pz2vy-bEE0lCCOd1Gga`) archived; **v12 live at
+`1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`**, 47,496 bytes on both sides.
+
+### An AES manual arrived — and was not accepted as this machine's
+
+Late in the session the owner uploaded **`AES GROUP S Series Mobile Units User Manual`** (18.6 MB,
+covering S-2000 / S-3500 / S-4000 / S-5000 / S-6500 / S-10000), in response to the standing request
+for an AES operating manual for `FA2402`. **It was not accepted as closing that request**, and the
+reasoning is the point of this entry.
+
+**One arithmetic check did real work.** The quotation lists *64 filters, Ø160 × 940 mm, total
+surface 30.22 m²*. The lateral surface of a cylinder that size is π × 0.160 × 0.940 = 0.4725 m²;
+**× 64 = 30.240 m² against the quoted 30.22 — 0.07 % apart.** That establishes two things that no
+document states outright: `FA2402`'s "filters" are **cylindrical sleeves**, not cartridges; and the
+quotation is **internally consistent**, which raises confidence in the rest of its spec table. The
+sleeve finding matters because it makes this bag-type manual a *plausible family match* where the
+word "bag" would otherwise have looked like a mismatch.
+
+**But the evidence does not close.** Against it: the manual is titled **"MOBILE UNITS"** and
+describes **plug-connected** machines (*"Plug in the unit's power plug"*, *"Do not use an extension
+cord"*, `H05 RN-F 3×2.5+1.5 mm²`, G16 fuse) — while `FA2402` is a **fixed, hard-wired, star-delta,
+720 kg** unit whose vendor supplied no cabling at all. It describes emptying **a dust bag**;
+`FA2402` has **three metal waste buckets**. The designation is **`STK`, not `S-`**. And the
+extracted technical table **stops at S-6500** (7.5 kW, 6,500 m³/h, 420 kg) — the S-10000 row was
+never seen, though 11 kW / 10,000 m³/h / 720 kg extends that progression neatly. That absence may
+simply be extraction loss from an 18.6 MB PDF; **it has not been checked against the original.**
+
+**So: right manufacturer, probably right family, not confirmed as this model's manual.** No interval
+from it goes into the Maintenance Schedule against `FA2402`. Two things would settle it — read the
+S-10000 column off the original PDF, and ask whether `STK 10000` and `S-10000` are the same machine.
+
+**It was still worth processing, because it is not empty-handed:**
+
+- **`Wiki/Suppliers/aes-group.md` created** — the manufacturer, with real contact details for the
+  first time. **AES Europe BVBA, Genk, Belgium** is the practically useful one: far nearer than
+  Bursa, and the obvious first approach for a manual confirmed for `STK 10000`.
+- **Warranty: 12 months from completion of assembly** — on an October 2024 install, long expired.
+  Worth knowing before anyone assumes a warranty claim is available.
+- **Stated service life 10 years**; ambient limits −25 to +55 °C, < 95 % RH, max 1,000 m; supply
+  380–400 V ±10 % to DIN VDE 0100.
+- A generic daily/periodic check list and an **eleven-row fault table**, including *electric shock on
+  touching the housing → grounding circuit rusted, broken or loose*.
+- **Fire precautions are explicit**, with ABC or BC extinguishers recommended near the unit — which
+  makes sense of the quotation's Part Holder guard, sold partly as a fire measure.
+
+**What it does not carry, and what `FA2402` still needs:** a filter-change interval or
+differential-pressure trigger for those 64 sleeves, the star-delta starting procedure, anything on
+the Part Holder, and any hours-based servicing. The `FA2402` Machinery Register note still reads
+"still no operating manual" and **that remains true as written** — no manual confirmed for this
+model — so it was left alone; the Wiki article carries the full assessment.
+
+**Registered** in the Document Register (`Document No.` = `pending`, row 13) with the full for/against
+reasoning in its Description, so the next person does not have to re-derive it.
+
+### The compressor's "low pressure" was not low pressure — corrected at the end of the day
+
+After the session had been closed out, the owner corrected one more thing: **the compressor was
+switched off when it was photographed.**
+
+So the **5.4 bar** on its gauge was **residual pressure standing in the receiver**, not delivered line
+pressure. It says nothing about what the machines get when running. **There is no low-pressure finding,
+and there never was one** — and the sign-off message above had put it forward as "the one I'd not leave
+sitting", which was wrong.
+
+**The error is of a specific kind and worth naming.** I read a number off a gauge in a photograph and
+inferred an *operating* condition from it, without establishing whether the machine was running. That
+is the **fifth unsourced inference corrected in a single day**, after the networking claim, the Unit 32
+address, the "residential" billing address and §1's own git-mirror claim.
+
+**Task T019's note had partly protected itself** — it already said *"a single reading proves nothing —
+compressors cycle between cut-in and cut-out and the photo may catch a refill — so this is to VERIFY,
+not a fault."* That hedge was right as far as it went, and it is why nothing downstream was built on
+the reading. But it offered the wrong explanation: the machine was not mid-cycle, it was **off**. The
+hedge saved the conclusion; it did not supply the reason.
+
+Corrected in:
+- **`CLAUDE.md` → v13.** §7's compressor entry drops from "two live concerns" to one — the blank
+  service log — and states the plate's **10 bar** rating, so the compressor is not the limitation. The
+  open-questions bullet now says the purchase paperwork (T019) is the **only blocking item**. §3's
+  lesson gains a second clause: ***a reading is only a reading of the state the thing was actually
+  in.*** A photograph shows a number; it does not show whether the machine was running, warm, loaded or
+  mid-cycle. Establish the state, or record the number as uninterpreted. v12
+  (`1qB1lDeGiEKKVTwoOlRvc9suMtFobXQ4j`) archived.
+- **Task T019** rewritten: the pressure paragraph now leads with the correction and marks it *not a
+  finding*, while keeping the three machines' genuine requirements, which are unaffected. A stale line
+  was fixed in passing — it said the next 2024 code would be `FA2402`, which the AES extractor has
+  since taken, so it is **`FA2403`**.
+
+**What survives unchanged:** the compressor is still unregistered and still has no `FA` code, still
+feeds the pneumatics of all three production machines, and its yellow-label service log is still blank.
+Those were never contingent on the gauge.
 
 ## Governance
 
@@ -401,16 +570,16 @@ access is still unconfirmed, so all five new document rows carry `Document No.` 
 **Three credential/security events, none of them recorded in the KB:**
 
 1. A supplier support ticket containing **live SIP trunk credentials** was shown in a screenshot.
- Refused to record it anywhere, advised the owner to have the password rotated, and deleted the
- local image on the owner's instruction — while saying plainly that deleting a copy does not
- un-expose a credential that has already been shown. Logged in `CLAUDE.md` §6b as an access-review
- event, without the credential.
+   Refused to record it anywhere, advised the owner to have the password rotated, and deleted the
+   local image on the owner's instruction — while saying plainly that deleting a copy does not
+   un-expose a credential that has already been shown. Logged in `CLAUDE.md` §6b as an access-review
+   event, without the credential.
 2. **`AnyDesk.exe` and `putty-64bit-0.85-installer.msi` were sitting in `Raw/`** — a remote-access
- client and an SSH client in a document inbox. Flagged neutrally to the owner and **never opened,
- run or moved**; the owner has since removed them, confirmed by a folder listing.
+   client and an SSH client in a document inbox. Flagged neutrally to the owner and **never opened,
+   run or moved**; the owner has since removed them, confirmed by a folder listing.
 3. **Banking details (HSBC sort code and account number) on the MWM quotation were deliberately not
- copied** into the register, the Document Register or this log. Noted in the `FA2402` register note
- so the omission reads as a decision rather than an oversight.
+   copied** into the register, the Document Register or this log. Noted in the `FA2402` register note
+   so the omission reads as a decision rather than an oversight.
 
 **The ElmoDrive remote-maintenance access code** was removed from the F45 article before the Wiki
 mirror was pushed to git (§6a, never hold a secret) — it is printed in the published manual, but it
@@ -420,36 +589,46 @@ still logs a technician into the saw.
 
 - **Which SmartCabinet version is installed**; what its label designer can place in a barcode field.
 - **The shared Google Drive job folder** — not yet identified or examined (may hold CRM/customer data:
- cite, never copy).
+  cite, never copy).
 - **The ZPL test** on the TD-4420DN.
 - Does SmartCABINET's ERP already track production?
 - **The Brother TD-4420DN's actual invoice** (as opposed to the order receipt) has not been seen.
- *Resolved during the session:* the printer is at Unit 31 and is now registered as `FA2401`.
+  *Resolved during the session:* the printer is at Unit 31 and is now registered as `FA2401`.
 - **What the asset labels' QR codes decode to.** *Which label goes on which machine is now answered*
- (`0017`-`0021` mapped above), but the QR payload is still unknown and **Phase 1 cannot start until
- it is**: a scanner needs to know what it will receive.
+  (`0017`-`0021` mapped above), but the QR payload is still unknown and **Phase 1 cannot start until
+  it is**: a scanner needs to know what it will receive.
 - **Were the machines re-commissioned after the move to Unit 31?** The single biggest open item to
- come out of this session (Task T018). See the per-machine lists above. *The owner has confirmed the
- machines are "up and running"* — which answers whether they work, **not** whether the manuals' own
- post-installation checks were carried out (the F45 alone calls for a levelled floor, swing-arm and
- table-height settings, an angle-cut test cut under 0.2 mm, and an electrician on rotation
- direction). Recorded as partially answered rather than closed.
+  come out of this session (Task T018). See the per-machine lists above. *The owner has confirmed the
+  machines are "up and running"* — which answers whether they work, **not** whether the manuals' own
+  post-installation checks were carried out (the F45 alone calls for a levelled floor, swing-arm and
+  table-height settings, an angle-cut test cut under 0.2 mm, and an electrician on rotation
+  direction). Recorded as partially answered rather than closed.
 - **Installed extraction performance** — `FA2402` is rated 10,000 m³/h, but the vendor supplied no
- ducting, no cabling and no on-site connection, and nothing records what was installed. One
- anemometer reading per machine closes this and the extraction half of T018 (Task T014).
-- **A real AES operating manual** — until one arrives `FA2402` cannot join the Maintenance Schedule
- or the Fault Log, whatever else is known about it.
-- **The ABAC compressor's purchase paperwork** — needed before a code can be assigned (T019); its
- service history and F-Gas position are open too (T020). **Its gauge read 5.4 bar against machines
- asking 6-8 bar**, which wants checking on its own account.
+  ducting, no cabling and no on-site connection, and nothing records what was installed. One
+  anemometer reading per machine closes this and the extraction half of T018 (Task T014).
+- **A manual confirmed for `STK 10000`** — an AES S-series manual arrived and is from the right
+  manufacturer, but is titled for *mobile* units and its S-10000 row was not visible in the extract.
+  Settle it by reading the S-10000 column off the original PDF and asking AES Europe or Markfield
+  whether `STK 10000` and `S-10000` are the same machine. Until then `FA2402` stays out of the
+  Maintenance Schedule and Fault Log.
+- **The ABAC compressor's purchase paperwork** — needed before a code can be assigned (T019), and the
+  **only blocking item**; its service history and F-Gas position are open too (T020). *The 5.4 bar
+  gauge reading is closed — the machine was switched off. Never a finding.*
 - **Disposal dates and sale proceeds for both Inventairs** (`FA2302`, `FA2305`) — both carry a
- purchase price on the register, so the disposals have a book consequence.
-- **`FA2401` has no asset label applied**, and no Wiki article; nor does `FA2402`.
-- **`Wiki/Suppliers/` entries owed** — Markfield Woodworking Machinery Ltd (fully evidenced by invoice
- 22473) and, once confirmed, R&J Machinery (a dealer sticker on the Vitap, not yet a document).
+  purchase price on the register, so the disposals have a book consequence.
+- **`FA2401` has no asset label applied** — it is now the only registered asset without a physical
+  tag. *(Its Wiki article, and `FA2402`'s, were written later the same day.)*
+- **`Wiki/Suppliers/` entry still owed for R&J Machinery**, once the dealer sticker on the Vitap is
+  confirmed against a document. *(Markfield's was written later the same day.)*
+- **`related:` links are not bidirectional** — the new articles point at the three machinery
+  articles, which do not point back. *Deliberately left: the fix needs a lossy re-author of three
+  large articles (see v12 above). Recorded in `CLAUDE.md` §7.*
+- **The git mirror is partial** — fifteen Wiki articles are on Drive only, and the connector cannot
+  copy them faithfully. Closing it needs an owner-side folder download or a real Drive-to-git sync.
+  *`CLAUDE.md` §1 claimed the mirror was in step; that claim was wrong and is corrected in v12.*
 - ~~**Unit 30's postcode**~~ — **answered by the owner: NE28 6HA**, the same postcode as Unit 31.
- Owed to `CLAUDE.md` §7, which still carries a `[confirm]` marker against it.
+  Owed to `CLAUDE.md` §7, which still carries a `[confirm]` marker against it.
 - **The Unit 31 lease body** — only the cover page has been seen. Alterations, repair/reinstatement
- and nuisance clauses bear on extraction ducting, three-phase runs and fixing machines to the slab.
- The lease belongs in the AMFA KB, not this one.
+  and nuisance clauses bear on extraction ducting, three-phase runs and fixing machines to the slab.
+  The lease belongs in the AMFA KB, not this one.
 - **Who holds labels `0001`-`0016`**, and where that list lives - group-level, so not this KB's to own.

@@ -42,27 +42,27 @@ questions dropped the two closed items (serial number, CE Declaration) and gaine
 
 **Smartsheet:**
 - Machinery Register: `FA2301` row updated (ID, Serial Number, Location, Purchase Date, Purchase
- price, Note); new `FA2302` row added.
+  price, Note); new `FA2302` row added.
 - Document Register: two new rows — invoice 100155, and the CE Declaration — both `Document No.`
- `pending` (same reasoning as Session 2: this KB isn't entitled to self-assign a group document
- number, and appending to the shared cross-company register hasn't been confirmed as this KB's to
- do yet).
+  `pending` (same reasoning as Session 2: this KB isn't entitled to self-assign a group document
+  number, and appending to the shared cross-company register hasn't been confirmed as this KB's to
+  do yet).
 - Tasks: **T002 marked Done** (CE Declaration found). **T001 updated** — partly resolved (serial,
- purchase date/price now known) but left Open, since the ownership question isn't settled. **Two
- new tasks raised**: T004 (confirm which entity legally owns `FA2301`/`FA2302` — invoiced to
- Fishbone Drylining Limited, not AMFA Furniture Ltd) and T005 (locate invoice 100141 and confirm
- whether £42,000/£3,410 are full prices or just the 70% balance).
+  purchase date/price now known) but left Open, since the ownership question isn't settled. **Two
+  new tasks raised**: T004 (confirm which entity legally owns `FA2301`/`FA2302` — invoiced to
+  Fishbone Drylining Limited, not AMFA Furniture Ltd) and T005 (locate invoice 100141 and confirm
+  whether £42,000/£3,410 are full prices or just the 70% balance).
 
 ## Judgement calls made, flagged for the owner
 
 - **Did not assume AMFA Furniture Ltd owns either machine** just because they sit in its workshop.
- The invoice says otherwise, and getting this wrong would misstate whose balance sheet these
- assets belong on. Raised as T004 rather than guessed.
+  The invoice says otherwise, and getting this wrong would misstate whose balance sheet these
+  assets belong on. Raised as T004 rather than guessed.
 - **Did not treat £42,000 as a confirmed full price** — the invoice's own wording ("70% Balance",
- referencing a separate VAT invoice 100141) makes that a real, not hypothetical, ambiguity.
+  referencing a separate VAT invoice 100141) makes that a real, not hypothetical, ambiguity.
 - **Corrected the asset code rather than leaving `FA2601` as a "retired" stub** — it was one day
- old, nothing else referenced it outside this KB, and leaving two codes for one machine would be
- more confusing than fixing the one that was wrong.
+  old, nothing else referenced it outside this KB, and leaving two codes for one machine would be
+  more confusing than fixing the one that was wrong.
 
 ## Open questions carried forward
 

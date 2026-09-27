@@ -6,9 +6,10 @@ sensitive: false
 created: 2026-09-14
 updated: 2026-09-14
 sources:
- - ../../CLAUDE.md
- - ../../Outputs/change-log-2026-09-14-initial-kb-setup.md
-related: []
+  - ../../CLAUDE.md
+  - ../../Outputs/change-log-2026-09-14-initial-kb-setup.md
+related:
+  - 2026-09-15-operational-systems-scope-extension.md
 ---
 
 # Decision: KB scope and structure adopted

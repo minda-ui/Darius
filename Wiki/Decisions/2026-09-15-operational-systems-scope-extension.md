@@ -28,20 +28,20 @@ because the owner asked for it here.
 Choices confirmed with the owner via AskUserQuestion (2026-09-15):
 - SmartCabinet = cabinet-design/CNC software **+ 3D visuals + CRM**.
 - Tracking = **Smartsheet-backed + Wiki** (matches the KB's existing "Smartsheet is the live record"
- rule).
+  rule).
 - Build = **framework + real content mined from the machine manuals** now; SmartCabinet left a draft
- skeleton until its product specifics are confirmed.
+  skeleton until its product specifics are confirmed.
 
 ## Structure added
 
 - Two new Wiki categories: **Troubleshooting** and **Software** (alongside Machinery, Suppliers, People,
- Finance, Processes, Decisions). Added with real content, not as empty placeholders.
+  Finance, Processes, Decisions). Added with real content, not as empty placeholders.
 - Two new Smartsheet sheets in the **Workshop** workspace: **Maintenance Schedule** (`6753985971226500`)
- and **Fault Log** (`414932606781316`), both with the group RYGB `Health` column formula. They sit
- alongside the existing **Safety Check Log** (which stays separate because a legal safety check is not
- general upkeep).
+  and **Fault Log** (`414932606781316`), both with the group RYGB `Health` column formula. They sit
+  alongside the existing **Safety Check Log** (which stays separate because a legal safety check is not
+  general upkeep).
 - Seven Wiki articles (maintenance system + 2 per-machine schedules; troubleshooting system + 2
- per-machine references; SmartCabinet workflow draft).
+  per-machine references; SmartCabinet workflow draft).
 
 ## Why not put this in the AMFA Furniture Ltd KB
 

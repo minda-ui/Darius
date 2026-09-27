@@ -18,7 +18,14 @@ sources:
  - ../../Raw/2026-09-15_fault-photo_edge-bander-hmi-corner-rounding-icon.jpg
  - ../../Raw/2026-09-15_fault-photo_edge-bander-corner-marks-no-rounding.jpg
  - ../../Raw/2026-09-15_fault-photo_edge-bander-corner-rounding-fixed.jpg
-related: []
+related:
+ - ../Machinery/aes-saf-10000-stk-extractor.md
+ - ../Machinery/altendorf-f45-panel-saw.md
+ - ../Machinery/vitap-k2-panel-saw.md
+ - ../Processes/maintenance-schedule-hebrock-f4.md
+ - ../Processes/panel-production-route.md
+ - ../Software/smartcabinet-and-production-workflow.md
+ - ../Troubleshooting/troubleshooting-hebrock-f4.md
 ---
 
 # Hebrock F4 — Edge Banding Machine
@@ -109,9 +116,9 @@ for this — confirm it's actually plumbed to this machine's port.
 3. Confirm both E-stop buttons are released (HMI screen and outfeed end).
 4. Main switch to "I", then "ON" at the control panel.
 5. Switch on heating; set glue melt temperature (~3.5 min to reach temperature — 170°C for EVA,
- 110°C for PUR). The applicator roller then engages and dosing rods open.
+   110°C for PUR). The applicator roller then engages and dosing rods open.
 6. Bring units online in sequence per the edge material recipe selected (joint cutter → trim saw →
- router → start → feed → radius scraper → face scraper → buffing → corner router).
+   router → start → feed → radius scraper → face scraper → buffing → corner router).
 
 **Calibration points to work through on setup**: edge channel height, edge guide clearance (edge
 should sit ~4-5 mm proud of the workpiece), top pressure beam height (~2.5 mm roller pre-load,
@@ -129,29 +136,29 @@ GEFAHR (imminent danger) > WARNUNG (possible danger) > VORSICHT (minor injury) >
 damage / general tip).
 
 - Only trained, authorised people may operate, set up or maintain it; anyone doing so should have
- read and signed off on the manual.
+  read and signed off on the manual.
 - **Lockout before any setup/maintenance/fault-clearing work** — switch off and secure against
- unexpected restart. E-stop is explicitly **not** a normal stop: it brakes all drives except the
- glue-pot applicator roller motor (kept running on purpose so the glue doesn't set inside it).
+  unexpected restart. E-stop is explicitly **not** a normal stop: it brakes all drives except the
+  glue-pot applicator roller motor (kept running on purpose so the glue doesn't set inside it).
 - The joint-cutter guard is interlocked — removing it while running trips an E-stop; drives coast
- down in ~10 s; a tool is needed to remove the guard; there's a manual override lever behind the
- rear panel for interlock failure only.
+  down in ~10 s; a tool is needed to remove the guard; there's a manual override lever behind the
+  rear panel for interlock failure only.
 - Entanglement/crush risk at all rotating and moving parts — no loose clothing, hair or jewellery,
- never reach into moving parts.
+  never reach into moving parts.
 - Fire risk from the hot-melt adhesive — follow the adhesive's own safety data sheet, no ignition
- sources nearby, keep containers closed, no combustibles near the pot's protective grille.
+  sources nearby, keep containers closed, no combustibles near the pot's protective grille.
 - Hot surfaces (glue pot, motors) — let cool before maintenance, never touch draining hot glue.
 - Pneumatic lines — depressurise before opening; qualified personnel only; find leaks with spray or
- cardboard, never by hand.
+  cardboard, never by hand.
 - Never run a workpiece wider than 1200 mm on the table-widening extension without an extra roller
- conveyor for support (tip-over risk).
+  conveyor for support (tip-over risk).
 - Dust (oak/beech flagged as health-hazardous) — vacuum only, never blow or sweep.
 - Workpieces with through-holes over 8 mm are not to be processed except via the dedicated Nesting
- function.
+  function.
 - PPE required: protective clothing, safety shoes, hearing protection, gloves (specifically for
- blade/knife changes).
+  blade/knife changes).
 - **All adjustment/setting work must be done with the machine switched off** — stated as a
- precondition throughout Chapter 6.5 "Rüsten und Einstellungen".
+  precondition throughout Chapter 6.5 "Rüsten und Einstellungen".
 
 **Compliance:** a genuine EC Declaration of Conformity exists for this exact machine (Machine no.
 F3809), covering the Machinery, Low Voltage and EMC Directives with a full list of harmonised
@@ -223,9 +230,9 @@ Eckenabrundfräse station, not the radius scraper).
 
 **Timeline:**
 1. First adjustment: backed the stop screw out per the manual's Abhilfe wording. **Result:
- overcorrected** — station stopped rounding entirely, just left rub/scuff marks (photo 3).
+   overcorrected** — station stopped rounding entirely, just left rub/scuff marks (photo 3).
 2. Second adjustment: reversed direction, turned the stop screw back **in** partway from the
- overcorrected position, in a small increment, and retested.
+   overcorrected position, in a small increment, and retested.
 3. **Result: fixed.** Clean, properly rounded corner on both edges, no marks (photo 4).
 
 **Lesson for next time, recorded because it doesn't match the manual at face value:** the fault
@@ -249,27 +256,27 @@ overcorrected, marks, no rounding), [^12] (after second adjustment — fixed, cl
 ## Open questions
 
 - **Was this machine re-commissioned after the move to Unit 31?** No record of the move exists in
- this KB, let alone of the checks that follow one — phase-sequence confirmation, the 10 mm² PE
- bond, floor-anchoring or castor locking, ≥500 mm infeed/outfeed clearance, and extraction
- re-established at ≥25 m/s through the ø140 mm port with the ducting earthed. Ask, then either log
- the checks or schedule them. Raised 2026-09-17.
+  this KB, let alone of the checks that follow one — phase-sequence confirmation, the 10 mm² PE
+  bond, floor-anchoring or castor locking, ≥500 mm infeed/outfeed clearance, and extraction
+  re-established at ≥25 m/s through the ø140 mm port with the ducting earthed. Ask, then either log
+  the checks or schedule them. Raised 2026-09-17.
 - **Owning entity unconfirmed.** Invoice 100155 bills this machine (and `FA2302`) to **Fishbone
- Drylining Limited** (now Fishbone Construction Ltd), delivered to its Wallsend unit — not to
- AMFA Furniture Ltd. Don't assume AMFA Furniture Ltd is the legal owner without checking.
- *Sharpened 2026-09-17:* AMFA Furniture Ltd holds the Unit 31 lease, so the machine is one
- company's asset operating in another's leased premises.
+  Drylining Limited** (now Fishbone Construction Ltd), delivered to its Wallsend unit — not to
+  AMFA Furniture Ltd. Don't assume AMFA Furniture Ltd is the legal owner without checking.
+  *Sharpened 2026-09-17:* AMFA Furniture Ltd holds the Unit 31 lease, so the machine is one
+  company's asset operating in another's leased premises.
 - **Exact price unconfirmed.** Invoice 100155 is a "70% Balance" invoice; the referenced invoice
- 100141 (which carried the VAT) is not in `Raw/`.
+  100141 (which carried the VAT) is not in `Raw/`.
 - **Purchase date vs. order date.** 09/11/2023 is the balance invoice's date; the CE Declaration
- is dated 16.01.2023, ~10 months earlier, which may be closer to the true order/build date.
+  is dated 16.01.2023, ~10 months earlier, which may be closer to the true order/build date.
 - **Dimensions/weight table ambiguity** (from the manual). Three parallel columns of
- dimensions/weight (930 kg / 640 kg / 840 kg) without clearly labelling which belongs to F2, F4 or
- F5 — don't guess which figure applies.
+  dimensions/weight (930 kg / 640 kg / 840 kg) without clearly labelling which belongs to F2, F4 or
+  F5 — don't guess which figure applies.
 - **Electrical table gap.** F2's max-power figure is illegible in the source scan; F4 and F5 both
- read 7.44 kW. F4's rated current (20.2 A) is legible and used above.
+  read 7.44 kW. F4's rated current (20.2 A) is legible and used above.
 - **Dust-extraction required volume figure is illegible** in the source scan.
 - **PLC battery part-name mismatch:** called "MV-BAT" in one place, "LibatH" in the spares list —
- probably the same part, not confirmed.
+  probably the same part, not confirmed.
 
 ## Changes
 

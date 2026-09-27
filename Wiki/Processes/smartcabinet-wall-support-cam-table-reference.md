@@ -7,7 +7,7 @@ created: 2026-09-16
 updated: 2026-09-16
 sources: []
 related:
- - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
+  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
 ---
 
 # Process: SmartCabinet Wall Support Cam Table — column reference and worked example
@@ -112,17 +112,17 @@ wasn't flagged as inconsistent with anything else observed so far.
 ## Open questions
 
 - **Side-panel X sign convention is unresolved — see the discrepancy note above.** Two hardware
- items, both described as "measured from the back edge," needed opposite signs (-15 vs +5). Not
- safe to generalise a rule from either one alone.
+  items, both described as "measured from the back edge," needed opposite signs (-15 vs +5). Not
+  safe to generalise a rule from either one alone.
 - Min H/Max H were left at 0 because the supplier's datasheet didn't state a rated cabinet height
- range for this specific part — not confirmed that 0 is the "no restriction" value in this
- software rather than "invalid/unset"; worth checking behaviour once this hardware is actually
- used on a job.
+  range for this specific part — not confirmed that 0 is the "no restriction" value in this
+  software rather than "invalid/unset"; worth checking behaviour once this hardware is actually
+  used on a job.
 - Not confirmed whether `WallSupportDrillFromInternalBackpanel` (the separate CAM-section setting
- referenced in the X column's own definition) is set to 0 or 1 in this shop's SmartCabinet install
- — this could plausibly be *why* the two worked examples above disagree on sign, but that's a
- guess, not confirmed.
+  referenced in the X column's own definition) is set to 0 or 1 in this shop's SmartCabinet install
+  — this could plausibly be *why* the two worked examples above disagree on sign, but that's a
+  guess, not confirmed.
 - The Häfele hanger's X = -15 has not yet been visually verified against a real preview in
- SmartCabinet (added first, before the sign discrepancy was noticed); the second item's X = +5 was
- the one actually confirmed. Worth re-checking the Häfele entry's hole placement next time it's
- used on a job.
+  SmartCabinet (added first, before the sign discrepancy was noticed); the second item's X = +5 was
+  the one actually confirmed. Worth re-checking the Häfele entry's hole placement next time it's
+  used on a job.

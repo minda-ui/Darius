@@ -25,31 +25,31 @@ snapshot in §7 now names this machine instead of reading "no machinery inventor
 
 **Smartsheet — workspace `Workshop`:**
 - `Machinery Register - Database`: one row added, ID `FA2601`, Machine Name "Hebrock F4 next —
- Edge Bander", Manufacturer/Model/Machine type filled from the manual, Status `In service` (setup
- in progress). Purchase date/price, ownership, supplier, serial number and all compliance due-dates
- left **blank** rather than guessed — see Open questions in the Wiki article.
+  Edge Bander", Manufacturer/Model/Machine type filled from the manual, Status `In service` (setup
+  in progress). Purchase date/price, ownership, supplier, serial number and all compliance due-dates
+  left **blank** rather than guessed — see Open questions in the Wiki article.
 - `Document Register`: one row added for the manual itself, `Document No.` left `pending` — this
- KB is not entitled to self-assign a group document number (see `CLAUDE.md` §1); it needs
- registering on the shared Fishbone Group Document Register under AMFA Furniture Ltd's `FA` prefix,
- which this session did not attempt without the owner's go-ahead (that register is a shared,
- cross-company resource).
+  KB is not entitled to self-assign a group document number (see `CLAUDE.md` §1); it needs
+  registering on the shared Fishbone Group Document Register under AMFA Furniture Ltd's `FA` prefix,
+  which this session did not attempt without the owner's go-ahead (that register is a shared,
+  cross-company resource).
 - `Tasks`: three rows added — (1) confirm the machine's real serial number, purchase date/price and
- ownership/finance terms from purchase paperwork or the data plate; (2) request a CE Declaration of
- Conformity from the supplier/Hebrock, since none was found in the 6-part scan; (3) register the
- manual on the shared group Document Register once access is confirmed, then update the local
- Document Register row.
+  ownership/finance terms from purchase paperwork or the data plate; (2) request a CE Declaration of
+  Conformity from the supplier/Hebrock, since none was found in the 6-part scan; (3) register the
+  manual on the shared group Document Register once access is confirmed, then update the local
+  Document Register row.
 
 ## Judgement calls made, flagged for the owner
 
 - **Asset code `FA2601`** assumes acquisition year 2026 (today's date) since no purchase date was
- supplied. If the machine was actually bought earlier, this code should be corrected before more
- data is built on top of it — asset codes aren't meant to be renumbered casually once in use.
+  supplied. If the machine was actually bought earlier, this code should be corrected before more
+  data is built on top of it — asset codes aren't meant to be renumbered casually once in use.
 - **Status set to `In service`** on the assumption that "setting the machine up" means it has
- arrived and installation is starting, not that it's still on order. Correct if wrong.
+  arrived and installation is starting, not that it's still on order. Correct if wrong.
 - **Did not push a row to the shared group Document Register** (sheet `7352854736144260`) — that
- register is shared across the whole Fishbone group, this KB's write access to it hasn't been
- confirmed, and appending to it is the kind of shared-system write `CLAUDE.md` §6a says should be
- deliberate, not routine. Logged locally instead, with a Task to complete the real registration.
+  register is shared across the whole Fishbone group, this KB's write access to it hasn't been
+  confirmed, and appending to it is the kind of shared-system write `CLAUDE.md` §6a says should be
+  deliberate, not routine. Logged locally instead, with a Task to complete the real registration.
 
 ## Open questions carried forward
 

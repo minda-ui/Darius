@@ -45,10 +45,10 @@ station (HMI icon: two rollers converging on a corner). Photo `…corner-gouge-d
 
 **What actually worked (and why it's recorded):**
 1. First adjustment backed the stop screw *out* per the manual's wording → **overcorrected**: the
- station stopped rounding and left rub/scuff marks.
+   station stopped rounding and left rub/scuff marks.
 2. Second adjustment reversed direction — turned the stop screw back *in* a small increment from the
- overcorrected position, and re-tested → **fixed**, clean radius on both edges
- (`…corner-rounding-fixed.jpg`).
+   overcorrected position, and re-tested → **fixed**, clean radius on both edges
+   (`…corner-rounding-fixed.jpg`).
 
 **Lesson:** the fault table's stated direction (back the screw *out* to add engagement) did **not**
 match what worked in practice — the correct setting sat between the original mis-set position and the

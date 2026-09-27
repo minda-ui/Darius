@@ -6,10 +6,11 @@ sensitive: false
 created: 2026-09-15
 updated: 2026-09-15
 sources:
- - ../../Raw/F45 part 1.pdf
- - ../../Raw/F45 Spare parts manual part 1.pdf
+  - ../../Raw/F45 part 1.pdf
+  - ../../Raw/F45 Spare parts manual part 1.pdf
 related:
- - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Machinery/altendorf-f45-panel-saw.md
+  - ../Processes/f45-electrical-schematics-reference.md
 ---
 
 # Altendorf GmbH (manufacturer)
@@ -38,7 +39,7 @@ or account manager is recorded here yet — add one if a direct relationship is 
 ## Open questions
 
 - The actual UK supplier who sold/delivered `FA2301`, `FA2302` and `FA2303` (invoices 100155/100153)
- is not identified — this article is the manufacturer, not necessarily the seller.
+  is not identified — this article is the manufacturer, not necessarily the seller.
 
 ## Changes
 
