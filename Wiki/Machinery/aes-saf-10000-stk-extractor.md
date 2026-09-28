@@ -16,6 +16,7 @@ related:
  - ../Machinery/hebrock-f4-next-edge-bander.md
  - ../Machinery/altendorf-f45-panel-saw.md
  - ../Machinery/vitap-k2-panel-saw.md
+ - ../Troubleshooting/troubleshooting-aes-saf-10000.md
 ---
 
 # AES SAF 10,000 STK — Fine Dust Extractor (centralised)
@@ -86,6 +87,37 @@ explained.
 differential-pressure trigger** for 64 sleeves, the **star-delta starting procedure**, anything
 about the **Part Holder** guard, and any **hours-based** servicing. Those are the gaps that keep
 this machine out of the maintenance system.
+
+## The control system — read from the panel schematic, 2026-09-28
+
+***This section corrects the article below.*** Working fault `FL-002` meant tracing
+`Raw/AES Extractor.pdf`, the machine's own AES control-panel drawing, properly for the first time. It
+contradicts the table that follows in two places and adds several facts that were simply absent.
+
+- **There are TWO motors, not one.** `M1` is the 11 kW main fan on a star-delta starter. **`M2` is a
+  0.55 kW `SİLKELEME` (shaking) motor** driving the filter shaker, on its own contactor `K4`, its own
+  overload `T2` and its own timer `ZR2`. *The Key facts table below says "direct drive" and names only
+  the 11 kW motor.*
+- **`STK` most likely denotes `SİLKELEME` — shaking.** The panel is titled *"Toz Toplama Panosu
+  (Shaking Dust Collection Board)"* and the shaker contactor is labelled `SİLKELEME MOTOR KONTAKTÖRÜ`.
+  *An inference from the letters, not a vendor statement — but it **strengthens the case against the
+  S-series manual**, which describes hand-shaken mobile units. This machine shakes its filters with a
+  motor.*
+- **There is a cover interlock** (`KAPAK SW`) wired in series in the control circuit. Recorded nowhere
+  in this KB before 2026-09-28.
+- **Protection:** `F1` 32 A main, `F2` shaker, `F3` 6 A control, plus **`MKR1`, an ENTES MKS-03 phase
+  failure / phase sequence relay** — which in `FL-002` was the device standing between the shop and an
+  11 kW fan running backwards.
+- **The control circuit as drawn has NO remote or interlock input.** This bears directly on the open
+  question below about whether extraction is interlocked to the machines: **as drawn, it is not.** The
+  installation was undocumented, so as-built may differ.
+
+**Two discrepancies between the panel and its own drawing**, both open: `T1` is an `LRE22` (16–24 A)
+where the schematic specifies 9–13 A for the delta-leg position; and the STOP pushbutton carries two
+wired contact blocks where the drawing gives it one.
+
+**Full detail, the chain wire by wire, and the test sequences:**
+`../Troubleshooting/troubleshooting-aes-saf-10000.md`.
 
 ## Key facts
 

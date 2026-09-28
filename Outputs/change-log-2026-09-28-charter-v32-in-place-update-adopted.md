@@ -812,3 +812,101 @@ v18, v19, v25, v27 — is that this KB proposes and waits.
 > measurements in one day is worth a remark of its own: the number in §4 has been behind the evidence every
 > single time it has been tested, and the clause telling you to measure has done more work today than the
 > figure it qualifies.*
+
+---
+
+## 19. A live fault on `FA2402` — solved, and I sent the owner the wrong way for most of it
+
+**The owner's message, verbatim, with a photograph of the control panel:** *"I have problem with aes
+extractor. It doesn't want to start. I press Start and nothing is happening. Emergency stop is off"* — the
+**AES SAF 10,000 STK fine dust extractor**, `FA2402`, the shop's main extraction. Fault `FL-002` on the Fault
+Log (`414932606781316`, row `7426153583871876`).
+
+**It is fixed. The cause was a phase crossover** — two phases transposed when an electrician reconnected the
+main supply cable on 2026-09-26. The machine had not run since. **Nothing was bought, nothing was replaced,
+and the relay was never bypassed.** The owner's closing message: *"Machine is working! Phase crossover"*.
+
+### What the panel actually is
+
+`Raw/AES Extractor.pdf` (`1rEVVjFjlP98fGS5aDPAPkz5sQtwyIAjQ`, 1,454,062 B, five scanned pages, drawn for SAF
+Technical Ltd) was read and the 230 V control chain traced end to end:
+
+```
+L1 —(7)— F3 6A —(26)— MKR1 (EPR1) —(27)— KAPAK SW (cover, 13/14 NO) —(28)— ES1 ACIL STOP (11/12)
+   —(29)— T1 (95/96) —(30)— S1E STOP (21/22 NC) —(31)— S2E START (13/14 NO) ∥ K1 13/14 —(32)— K1 coil — N
+```
+
+**`MKR1` is an ENTES MKS-03 phase failure and phase sequence relay**, and it is the first thing in the chain
+after the 6 A control fuse. That is the whole story: **it measured 240 V in and 0 V out, and it was right
+to.** An 11 kW centrifugal fan on a reversed supply runs backwards.
+
+### Six things this KB did not know about its own machine
+
+| Finding | Why it matters |
+|---|---|
+| **Two motors**, not one — `M1` 11 kW star-delta fan, **`M2` 0.55 kW `SİLKELEME`** | The article described one motor |
+| **`STK` ≈ `SİLKELEME`** (Turkish, *shaking*) — the filter-shaker motor | Weakens the S-series-manual reading further |
+| A **cover interlock** (`KAPAK SW`, normally open) in series in the control chain | It is why the machine is dead with the cover open, and why a continuity test across it means nothing unless the cover is shut |
+| **No remote or interlock input in the control circuit as drawn** | Bears directly on the long-open question of whether extraction is interlocked to the F45 and the bander — *as drawn, it is not* |
+| **`T1` is an `LRE22` (16–24 A)** where the drawing specifies 9–13 A for the delta leg | A panel-versus-drawing discrepancy, recorded for the next person inside it |
+| The **STOP button carries three blocks** where the drawing gives it one contact | The second wired contact's destination is **not established** — recorded as open, not guessed |
+
+### What I got wrong, in the order I got it wrong
+
+***This is the part worth keeping.*** The relay's output terminals were accessible from the first minute. One
+measurement there would have ended it.
+
+1. **I eliminated `MKR1` at step one, from a misread schematic.** I argued the lit STOP lamp proved the phase
+   relay was passing, because I read the lamp as fed from **wire 27**, downstream of the relay. It is fed from
+   **wire 26**, *upstream*. **I had the two lamp branches the wrong way round** — and then built five further
+   eliminations on top of it, touring every contact, wire, coil and neutral in a completely healthy panel.
+2. **Wrong diagnosis #1: "K1 coil open circuit."** Built on one reported figure — *"574 kohms"* — without
+   checking the prefix or which terminals it was across. The meter photograph showed **0.611 kΩ**, and the
+   owner corrected me plainly: *"That was K1"*. **611 Ω is a healthy LAEN11 coil.**
+3. **Wrong diagnosis #2: "`MKR1` has failed" — and I recorded it as *cause established*.** It rested entirely
+   on the owner's opening *"nothing was touched, it was working yesterday"*. It was overturned by **their own
+   question**, not my analysis: *"Can reconnecting main cable cause failure of this unit?"*, then *"Cable was
+   reconnected 2 days ago, hasn't run since"*.
+4. **I overstated the LED evidence.** I said a dark output LED *"points hard at"* relay failure. On the common
+   convention — LED lit when the output is energised — **a dark LED is exactly what a correct sequence trip
+   looks like.** The evidence I called damning was the machine working properly.
+5. **I gave the end-to-end continuity test without saying the cover must be closed.** The cover switch is
+   **normally open**, so *"no path"* was the expected reading and meant nothing. It sent the owner hunting a
+   non-existent break in wires 27/28.
+6. **I tried to read ferrule numbers off photographs and got one wrong** — read 31/32 as the START button
+   while the owner was on the STOP button. **Switching to *press the button and tell me which block moves*
+   worked every time after that**, and should have been the method from the start.
+7. **I asked the history question far too late.** *"Has anything been worked on?"* came at roughly the tenth
+   exchange, and only after the owner raised the cable themselves. **On a machine that was fine yesterday and
+   is dead today, that question comes first** — before a single measurement.
+
+*The owner's measurements were faultless throughout and every one of them came back healthy: K1 coil 611 Ω,
+all five series contacts good, all wiring continuous, neutral sound, supply balanced at 412/405/410 V
+line-line and 238/238/234 V line-neutral, about 1% asymmetry. **A panel full of good readings was the
+signal**, and I kept reading it as "not found yet" instead of "you are looking in the wrong place."*
+
+### What was published
+
+| File | Bytes | Route | Verified |
+|---|---|---|---|
+| `Wiki/Troubleshooting/troubleshooting-aes-saf-10000.md` | **11,956** — new | placeholder in `Wiki/Troubleshooting/` to mint the id (`1p6fM3mEWB3vcmfmOxtf_spC2w2OMUSkf`), then in place from disk | **byte-identical** |
+| `Wiki/Machinery/aes-saf-10000-stk-extractor.md` | 18,628 -> **20,799** | **in place** | **byte-identical** |
+| `Wiki/index.md` | 16,233 -> **17,242** | **in place** | **byte-identical** |
+
+The new article leads with **§1 *Ask this first: what has been worked on?*** and **§5 *Start here when it will
+not start: measure `MKR1`'s output*** — the two steps that would have cut today's fault to one exchange —
+with **§2 *What the lamps prove, and what they do not*** written from the measurement rather than the drawing,
+**§7** carrying the two panel-versus-drawing discrepancies, and **§8** the worked example. *Drive's pre-edit
+copy of the machinery article was 18,628 B, matching local exactly, so nothing unrecorded was overwritten.*
+**`FL-002`'s `Reference` column pointed at an article that did not exist until today.**
+
+**`FL-002` closed** — `Resolved`, Health auto-`Green`, `Date Resolved` 2026-09-28, downtime *"About 2 days"* —
+carrying the confirmed cause, the remedy, **and both of my retracted diagnoses**, because a fault log that
+records only the right answer teaches nobody how the wrong ones looked at the time.
+
+### One thing left open, and it is not paperwork
+
+**Nobody has yet confirmed the fan is moving air**, only that the machine starts and the phases are the right
+way round. **A centrifugal fan runs backwards quite happily while moving almost no air**, and it ran that way
+for however long it took to press START. Recorded in `FL-002`'s remedy: **check suction at the machine ports
+before trusting the extraction.**
