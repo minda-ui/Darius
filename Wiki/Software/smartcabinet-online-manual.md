@@ -1,14 +1,16 @@
 ---
 title: "SmartCabinet's online manual — map, and what it settles about T016"
 category: Software
-status: draft
+status: active
 sensitive: false
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 sources:
  - "`https://www.smartcabinet.eu/manuale/it_index.html` and nine pages beneath it, fetched 2026-09-27 over HTTPS, all HTTP 200 — sizes and sha256 in the provenance table below"
  - "Extracted text of the four CN/tool-chain pages captured verbatim in `../../Outputs/2026-09-27-smartcabinet-manual-capture-cn-chain.md`"
  - "Owner (Minda), 2026-09-27: the URL to check, and the instruction to map the manual and go at T016"
+ - "`giunzioni.html` re-fetched 2026-09-28, HTTP 200, 62,404 B, sha256 unchanged at `111d4bb50659765b` — text captured and §7 written from it"
+ - "Owner (Minda), 2026-09-28: how to joint a vertical divider into the top and bottom panels, with a SmartCabinet 3D wireframe"
  - "`Wiki/Processes/tpacad-tool-match-criteria.md` — the five criteria and error -27, from TPA's `CnCadOpti_eng.pdf`"
  - "Smartsheet Tasks `T016` (row `3054339713795972`), note read 2026-09-27"
 related:
@@ -229,14 +231,104 @@ head, and the second is a purchase.
 3. **Which postprocessor the shop is running**, and whether the CN module is licensed at all. One look
    at the dropdown answers both: only `Gen 1` means no CN module.
 
-## 7. Cabineo is a first-class joint in SmartCabinet
+## 7. Cabineo is a first-class joint — and the `giunzioni` pass, done 2026-09-28
 
-`giunzioni.html` has a category *"Giunzioni eccentriche e Cabineo"*, configured element by element:
-diameter and effective length per element, tool and number of passes for the first two, the central
-screw's diameter with **different hole lengths depending on whether it mounts in the carcase, a divider
-or the back**, and the length, width and thickness of the joint's support base. This bears directly on
-`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`, and sits beside the 2026-09-23 finding that
-`CABINEO` is a **native** working in TpaCAD. **Not worked here** — it deserves its own pass.
+*This section said **"Not worked here — it deserves its own pass"** for a day. The pass was made on
+2026-09-28, prompted by the owner asking how to joint a vertical divider into the top and bottom panels.
+The page was re-fetched and **its hash is unchanged** (62,404 B, `111d4bb50659765b`), so everything below
+is the same document the 2026-09-27 map was built from — only read properly this time.*
+
+### 7.1 Joints are configured per cabinet part, and a vertical divider is one of them
+
+**This is the finding the owner's question turned on.** The page states plainly that the way joints are
+inserted is **differentiated for each part of the cabinet**, and lists them:
+
+`struttura` ➊ · **`divisori verticali` ➋** · `divisori orizzontali` ➌ · `catene` for the top or bottom ➍ ·
+`traverse` ➎ · `zoccolo` ➏ · `cornice` ➐ · `pilastro` ➑ · `ripiani` ➒ · `schienale` ➓ · `griglia` ⓫
+
+**A vertical divider is not an improvisation on the carcase case — it has its own configuration.** The
+back ➓ is split further into *the part joined to the structure* and *the part joined to any dividers*;
+the grille ⓫ likewise splits vertical from horizontal dividers. *The software's model of "what meets
+what" is finer than this KB had assumed.*
+
+### 7.2 Three ways in, and they differ in scope — this is the answer to "how do I add them"
+
+| Opened from | What it changes |
+|---|---|
+| the **CAM** button, top right | the **default** joint configuration for all cabinets |
+| the **Giunzioni** button, left, in the **Settaggi cabinet** menu | **only the cabinet currently open** |
+| **Personalizza Giunzioni**, from the **Intagli** window | **individual pieces** of the open cabinet |
+
+*Three scopes, one page. Reading `cam.html` alone — which is where the 2026-09-27 pass stopped — shows
+only the first and makes the feature look global.*
+
+### 7.3 What is set per part
+
+Distance of the joint from the cabinet's **front** ⓬ and **back** ⓭; the **number of joints to insert**
+⓮; an **offset to avoid conflicts between opposing joints** ⓯; the **joint type** ⓰ and the specific
+joint from the dropdown ⓱.
+
+***That offset is not a detail for this shop's case.*** A divider joints into the same top and bottom
+panels that already carry the two carcase sides' Cabineo holes. **⓯ exists precisely so those two sets of
+holes do not collide**, and it is the parameter to reach for if a divider's joints land on top of the
+structure's.
+
+**Five joint types**, selected by buttons — **and if none is selected, only dowels (`spine`) are
+inserted:**
+
+1. **Tiranti e Minifix** — for `catene`, `traverse`, `cornice`, `zoccolo` and `pilastro` a **minimum
+   piece length** can be set, below which no joint is inserted.
+2. **Giunzioni eccentriche e Cabineo** — *"in questa categoria rientrano anche le giunzioni laterali e i
+   supporti per i ripiani Lamello, Clamex e Divario"*: the category also carries lateral joints and the
+   Lamello / Clamex / Divario shelf supports.
+3. **Binari per Giunzioni a Coda di rondine** — dovetail rail.
+4. **Giunzione a incastro** — interlocking.
+5. **Dado** — nut.
+
+### 7.4 The Cabineo configuration itself
+
+*"Giunzioni eccentriche, Cabineo e supporti per ripiani"*, with add ➊ / delete ➋ buttons at the bottom:
+
+- **The three elements**, coloured **blue, orange and green**, counted **from the end opposite where the
+  central screw exits**: per element a **diameter** ➌ and an **effective length relative to the next
+  element** ➍; for the first two, a **tool and number of passes** ➎.
+- **The internal screw**: **diameter** ➏, then ***different hole lengths depending on whether it mounts
+  in the structure ➐, in the dividers ➑, or in the back ➒*** — each with its own tool. **This is the
+  divider case, named by the software itself.**
+- **Thickness of each element** ➓, identified by colour; last, in black, the **central pin's distance
+  from the top**.
+- The **support base**: length, width, thickness ⓫, with its tool.
+- An optional **Database** ⓬ the joint belongs to — *must already exist in **Anagrafica Accessori**,
+  group **Giunzioni e Tiranti***; used in printouts and the CRM module.
+
+**An alternative layout exists: `Forature di testa` ⓭** (end boring), ticked at the top. The elements lie
+**horizontally** and are orange, green and black; diameters ⓮, tool and passes for the first two ⓯, and
+**again different hole lengths for structure ⓰ / dividers ⓱ / back ⓲**. Lengths ⓳ are then set for the
+green element, for orange-plus-green, and for the black element's distance from the top.
+
+*Two notes the page repeats:* **if no tool is set, a drill bit is selected automatically**; and if a joint
+has fewer than three elements, set the unused parameters so they are ignored.
+
+### 7.5 Centring a joint in the panel thickness
+
+The page carries an explicit note: **to place a joint exactly at the centre of the panel's thickness,
+tick `Aggiungi metà spessore pannello` and set the offsets to 0.** *Recorded here because a divider is the
+case where "centre of the thickness" stops being automatic in one's head — it has material on both sides.*
+*Read in a general note on the page rather than inside the Cabineo block, so **which joint families it
+governs is not established** — check it against the dialogue before relying on it.*
+
+### 7.6 What this does not settle
+
+- **It is the vendor's manual, not this shop's settings.** Everything above is what SmartCabinet *can* be
+  configured to do. **What the shop's installation actually has in `Configurazione Giunzioni` is unread**,
+  and the only way to know is to open it.
+- **No dimension here is the shop's.** The master's measured geometry — pocket ≈37 × 15 × 13 mm, `Ø5 × 12`
+  face hole, `Y = 230` and `Y = 40` — comes from the decoded `.TCN` files, not from this page, and the two
+  have **not** been reconciled. *That reconciliation is the obvious next pass and is deliberately not
+  claimed here.*
+- **Dowels are the silent default.** *"nel caso che nessun tipo di giunzione sia selezionato saranno
+  inserite solo le spine"* — a divider configured with no joint type will still produce a part, with
+  dowels. **Silence is a setting, not an error**, which makes it exactly the kind of thing to check.
 
 ## 8. Two predictions of mine that were wrong
 
@@ -261,9 +353,25 @@ Ten pages, fetched 2026-09-27, all HTTP 200. `sha256` of the HTML as served, fir
 | `tabelle_cam_accessori_utensili.html` | 7,180 | `113fb21f3567c1dc` | **yes** |
 | `lavorazioni.html` | 5,430 | `83ca5e731a08db15` | **yes** |
 | `cnc.html` | 6,382 | `2f146991afe3a5c0` | **yes** |
-| `giunzioni.html` | 62,404 | `111d4bb50659765b` | no |
+| `giunzioni.html` | 62,404 | `111d4bb50659765b` | **yes — 2026-09-28** |
 | `release_note.html` | 4,607 | `9b8bb9519984d73e` | no |
 
 `release_note.html` is only a wrapper that displays a text file, so **it cannot tell us the shop's
-version from here** — that has to be read off the installation. Six pages are cited without their text
-being captured; if one of them later matters, re-fetch it, check the hash, and capture it then.
+version from here** — that has to be read off the installation. Five pages are still cited without their
+text being captured; if one of them later matters, re-fetch it, check the hash, and capture it then.
+
+***That instruction was followed on 2026-09-28 and it worked exactly as written*** — `giunzioni.html`
+re-fetched, **hash identical**, text captured, §7 rewritten from it. *The hash is what made the re-fetch
+safe to build on: without it, a year-old page and a silently-revised one look the same.*
+
+**Two corrections from that re-fetch, both mine and both worth keeping.**
+
+1. ***"Blocked by the egress proxy" was wrong.*** On 2026-09-28 this KB recorded that `smartcabinet.eu`
+   had become unreachable and that `giunzioni.html` was therefore lost. **It had not.** Two faults were
+   mistaken for one: the URL being requested was `/manuale/giunzioni.html`, which returns **HTTP 404** —
+   and **this article's own §2 already says every path is relative to `mainit/smartcabinet/`** — while the
+   connection itself is **intermittent**, one attempt resetting mid-exchange and the next returning 200.
+   *A 404 and a refused tunnel are different failures; neither is a block, and I reported both as one.*
+2. **A failure diagnosed once became a standing fact.** *"Unreachable"* was written without a timestamp
+   and then relied on for the rest of the day, which is `HL-0032`'s lesson — **an absence is only an
+   absence as of a timestamp** — arriving from the other side. **Re-test before repeating a negative.**

@@ -557,3 +557,96 @@ three charter versions already published since this morning.*
 **What documenting the day cost, since it is the argument for doing it as you go:** §12–§15 were written
 after the work rather than during it, and **two of the four turned up an error in something already
 published.** *The sections written alongside the work — §1 to §11 — turned up none.*
+
+## 16. The `giunzioni` pass, done — and a negative I reported that was two faults, neither of them a block
+
+**The owner asked one question and it turned out to be the day's most useful one:** *"check connection to
+`https://www.smartcabinet.eu/manuale/it_index.html`"*. **It connected.**
+
+### 16.1 What I had told them, and why it was wrong twice over
+
+Earlier today this KB recorded that `smartcabinet.eu` had **become unreachable behind the egress proxy**,
+and that `giunzioni.html` — the page §10 had named as the next thing to read — was therefore lost.
+**Two separate faults, merged into one confident negative:**
+
+1. **The URL was wrong.** I was requesting `/manuale/giunzioni.html`, which returns **HTTP 404**. The real
+   path is `/manuale/mainit/smartcabinet/giunzioni.html` — **and `Wiki/Software/smartcabinet-online-manual.md`
+   already said so, in its own §2: *"All paths relative to `mainit/smartcabinet/`."*** I wrote that line on
+   2026-09-27 and did not read it on 2026-09-28. *A 404 is the server answering. It proves the tunnel works,
+   so it can never be evidence of a block.*
+2. **The connection is intermittent, not blocked.** The first attempt reset mid-exchange
+   (`ws_closed_mid_exchange`); the second returned **200**. One sample, reported as a policy.
+
+**Cost: the owner waited most of a day for an answer this KB could have given at any point.** Filed as
+**`HL-0067`** (row 71, *"a 404 and a refused tunnel are different failures"*), a sibling to `HL-0064`, and
+carrying `HL-0032`'s clause from the other side — ***I wrote "unreachable" with no timestamp and then relied
+on it.*** **Re-test before repeating a negative.**
+
+### 16.2 And a sixth instance of `HL-0064`, in the same half hour
+
+Asked whether the page's content was already in the KB, I said **its text had never been captured**. I had
+read that off the article's **provenance table** — the `Text captured? | no` column — rather than the article
+body, **which carried substantive §7 extracts including the divider finding itself.** *`HL-0064` is "an index
+is not the thing it indexes", and the provenance table is an index. Sixth instance in a week, filed this
+morning, repeated this afternoon.*
+
+### 16.3 The pass itself — `giunzioni.html` re-fetched, hash unchanged, text captured
+
+**62,404 B, sha256 `111d4bb50659765b` — identical to 2026-09-27.** *That is what made the re-fetch safe to
+build on: without the hash, a year-old page and a silently-revised one look the same.* §7 of the manual
+article was rewritten from the page, replacing the placeholder that had said *"Not worked here — it deserves
+its own pass"* since yesterday.
+
+**What it settles, and it answers the owner's question directly:**
+
+- **Joints are configured per cabinet part**, and **`divisori verticali` is one of eleven parts** with its own
+  configuration. *A vertical divider is not an improvisation on the carcase case — the software's model of
+  "what meets what" is finer than this KB had assumed.*
+- Inside the Cabineo configuration, the internal screw carries **different hole lengths for the structure,
+  the dividers and the back**, each with its own tool. **The divider case is named by the software itself.**
+- There is an **offset to avoid conflicts between opposing joints** — which is exactly this shop's problem,
+  because a divider joints into the same top and bottom panels that already carry both carcase sides' Cabineo
+  holes.
+- **Three scopes, not interchangeable:** the `CAM` button (default for **all** cabinets), the `Giunzioni`
+  button under `Settaggi cabinet` (**this cabinet only**), and `Personalizza Giunzioni` from the `Intagli`
+  window (**individual pieces**). *Reading `cam.html` alone — where the 2026-09-27 pass stopped — shows only
+  the first and makes the feature look global.*
+- **Dowels are the silent default:** *"nel caso che nessun tipo di giunzione sia selezionato saranno inserite
+  solo le spine"*. A divider with no joint type configured still produces a part, with dowels and no error.
+  **Silence is a setting, not an error.**
+
+### 16.4 Two files published, both in place, both verified
+
+| File | Was | Now | Method |
+|---|---|---|---|
+| `Wiki/Software/smartcabinet-online-manual.md` (`1TpWwS1gNfcfscBlsyex4V57Fn0TGhc54`) | 16,382 B | **23,735 B** | in place, rev 1→2 |
+| `Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md` (`1d260Ed3tcBVcWh4igSeVkB5uFULbXtjB`) | 27,739 B | **31,886 B** | in place, rev +1 |
+
+**§4's default applied to both and limit 1 did not reach either** — neither is a charter file or a snapshot,
+and both are **extended, not superseded**, so there is no superseded version that has to be findable by name.
+Both verified `download_file_content` → decode → `diff`: **byte-identical**, ids and `createdTime` unchanged.
+*Before publishing, each Drive copy's size was checked against `git show HEAD:<path>` — 16,382 and 27,739,
+matching exactly — so nothing unrecorded was overwritten.*
+
+### 16.5 The divider's cost, and the one number in it that is mine
+
+The fixings article gains a divider section. **Twelve joints on a unit with one full-height divider** against
+eight without: **£3.45 against £2.30**, at the £0.2871 measured this morning.
+
+***The 12 is an inference and is labelled one in the article.*** The eight-per-box figure was counted from
+`01-SIDE-LEFT.TCN` — two pockets per joint line, two joint lines per side. A divider meets the top and the
+bottom, so **at the same two-per-end pattern it adds four**. *But the master unit this KB has decoded has no
+divider in it, so the pattern is read across from the sides rather than measured on a divider.* **Nothing in
+the manual gives a count either** — the number of joints is a parameter the shop sets, not a constant.
+
+### 16.6 A Hub finding I am not fixing, because it is not my row
+
+Allocating `HL-0067` meant grouping the Help & Lessons sheet on `Ref` rather than assuming the next number —
+`HL-0064`'s own lesson. The grouping showed two things beyond the answer:
+
+- **`HL-0051` appears on two rows.** A ref collision.
+- **Two rows carry no `Ref` at all** (68 refs across 70 rows before today's).
+
+**Neither is touched.** Whether those rows are another seat's is not established, and §0b is explicit —
+**own rows only, never another seat's.** *Recorded here for the owner and for whoever owns those rows;
+the allocation of `HL-0067` itself is unaffected, because the highest ref is unambiguous either way.*

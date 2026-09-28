@@ -4,7 +4,7 @@ category: Processes
 status: draft
 sensitive: false
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-28
 sources:
  - "Owner (Minda), 2026-09-18: range will contain wall, base, sink, appliance housing and tall units; asks which fixing is better for a low-cost range"
  - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
@@ -14,12 +14,17 @@ sources:
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (Drive `1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m`), decoded 2026-09-18"
  - "`AMFA Wall Unit 600 RH/01-SIDE-LEFT.TCN` (Drive `1ZWciFvdK2rkKbeWvRpNQ825UWJsnnPe1`) and `08-DOOR-1.TCN` (Drive `1FfGBMAP4XfjJeCBwM5hvEVraRnhIWzHL`), decoded 2026-09-18"
  - "Lamello product pages and UK reseller listings, searched 2026-09-18 — see Prices, and read the caveat there"
+ - "Trade listings photographed by the owner 2026-09-28: Lamello Cabineo X SKU 186361, Box of 2000, £379.03 ex VAT; Cabineo X Screws SKU 186381, Cabineo 12, Box of 2000, £195.13 ex VAT — supplier not legible, see the caveat"
+ - "Owner (Minda), 2026-09-28: \"Yes, Cabineo is chosen for fixing\" — re-confirming the 2026-09-19 decision"
+ - "Owner (Minda), 2026-09-28: how to joint a vertical divider into the top and bottom panels, with a SmartCabinet 3D wireframe of a carcase with a full-height divider"
+ - "`../Software/smartcabinet-online-manual.md` §7 — SmartCabinet's `giunzioni` page, captured 2026-09-28: joints are configured per cabinet part and `divisori verticali` is one of them"
 related:
  - ../Software/kitchen-unit-library.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Processes/panel-production-route.md
  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+ - ../Software/smartcabinet-online-manual.md
 ---
 
 # Carcase fixings: Cabineo X vs confirmat screws
@@ -326,6 +331,57 @@ real money on a low-cost range, and it still recurs on every kitchen — but a t
 used as shelf supports too, that is another 8 housings a unit against shelf pins costing pennies. If
 Cabineo X is adopted, it should probably be **for carcase joints only**, with ordinary Ø5 pins for
 shelves — the master already drills Ø5.
+
+## 2026-09-28 — a vertical divider is the same joint, with its own hole length
+
+**The owner asked how to joint a vertical divider into the top and bottom panels**, with a SmartCabinet
+3D wireframe of a carcase carrying one full-height divider. This article had counted carcase joints only.
+
+**The answer is not a new fixing — it is the same Cabineo joint, and the software already knows about
+dividers.** From SmartCabinet's own `giunzioni` page, captured the same day
+(`../Software/smartcabinet-online-manual.md` §7):
+
+- **Joints are configured per cabinet part**, and **`divisori verticali` is one of the eleven parts** with
+  its own configuration. A divider is not an improvisation on the carcase case.
+- Inside the Cabineo configuration, the internal screw carries ***different hole lengths depending on
+  whether it mounts in the structure, in the dividers, or in the back*** — each with its own tool.
+  **The divider case is named by the software itself**, which is as close to a direct answer as a vendor
+  manual gets.
+- There is an **offset to avoid conflicts between opposing joints**. That is the parameter that matters
+  here: a divider joints into **the same top and bottom panels that already carry both carcase sides'
+  Cabineo holes**, so the offset exists precisely so the two sets do not collide.
+- **Three scopes to set it in**, and they are not interchangeable: the `CAM` button (default for all
+  cabinets), the `Giunzioni` button under `Settaggi cabinet` (**this cabinet only**), and
+  `Personalizza Giunzioni` from the `Intagli` window (**individual pieces**).
+
+### What a divider costs
+
+**Four more fixings, and the count is an inference — flagged as one.** The master's sides take **two
+pockets per joint line**, which is how the eight-per-box figure above was counted. A full-height divider
+meets the top panel and the bottom panel, so **at the same two-per-end pattern it adds four**: 8 + 4 =
+**12 per unit**. *That pattern is read across from the sides, not measured on a divider — the master unit
+this KB has decoded has no divider in it.*
+
+| On a unit with one full-height divider | Per unit | vs no divider |
+|---|---|---|
+| **Cabineo X**, 12 joints at £0.2871 | **£3.45** | +£1.15 *(was £2.30)* |
+| Confirmat, 12 joints at ~£0.03 | **£0.36** | +£0.12 |
+
+*My arithmetic from the measured £0.2871 joint above, not a quoted figure.* **The premium a divider adds
+is about £1.15 a unit** — on the same order as the £2.06 the whole carcase costs, because a divider is
+half a carcase's worth of joints.
+
+### What this does not settle
+
+- **The manual is the vendor's, not this shop's.** What the shop's installation actually has in
+  `Configurazione Giunzioni` is **unread**, and the only way to know is to open it.
+- **No dimension in §7 is reconciled with the master's measured geometry** — the pocket ≈37 × 15 × 13 mm
+  and the `Ø5 × 12` face hole at `Y = 230` and `Y = 40` come from the decoded `.TCN` files. *That
+  reconciliation is the obvious next pass and is deliberately not claimed.*
+- **Dowels are the silent default.** *"nel caso che nessun tipo di giunzione sia selezionato saranno
+  inserite solo le spine"* — a divider configured with **no** joint type still produces a part, with
+  dowels and no error. **Silence is a setting**, so the divider's own configuration has to be checked,
+  not assumed to inherit the structure's.
 
 ## What each one actually buys you
 
