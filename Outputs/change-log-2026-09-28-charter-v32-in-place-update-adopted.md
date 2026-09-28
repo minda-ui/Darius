@@ -211,8 +211,21 @@ schema told me more than the documentation did, because I made a mistake in fron
   must now group-by across **both** sheets; `HL-0060` describes one.
 - **Three Open Hub rows** as canonical briefs: `AWT-0089` (the `related:` back-links, still riding the next
   push that changes each body), `AWT-0127`, `AWT-0147`.
-- **The Composio CLI install line** for the environment setup script — the owner's, and it needs a fresh
-  session to take effect.
+- ~~**The Composio CLI install line** for the environment setup script — the owner's, and it needs a fresh
+  session to take effect.~~ **Pasted in by the owner, 2026-09-28.** *Not verifiable from this session:* the
+  setup script runs at session start, and this container has carried the CLI since yesterday's manual
+  install, so **the first genuinely fresh session is the test.** Two checks named for it — `composio
+  --version` must return **0.4.1** (a second, older **0.2.4** ships as a Claude plugin at
+  `~/.claude/plugins/cache/composio/composio/0.2.4/bin` and is also on `PATH`, behind `~/.local/bin`), and
+  `composio connections list` must show `darius-googledrive` **without prompting a login**. *That second
+  one settles the open question below.*
+- **Does Composio auth survive a cold start?** **Untested and not assumed either way.** The CLI binary and
+  the auth directory are the same place — `~/.local/bin/composio` is a symlink to `~/.composio/composio`,
+  and `~/.composio/user_data.json` sits beside it at mode `600` (*noted by listing names only; not read,
+  per §6a's never-hold-a-credential rule*). **So they persist or vanish together**, which is the useful
+  shape of it: if the directory survives, the setup line is a harmless no-op; if it does not, a fresh
+  session has the CLI but needs `composio login` before any Drive call. *This session has been continuous
+  since the install, so it cannot answer the question.*
 - **§4's limit 2 wording** — the `keepRevisionForever` nuance in §8, for the owner to fold in or decline.
 - **`giunzioni.html`/Cabineo** still left for its own pass (62,404 B).
 - **Two rows on Help & Lessons carry no `Ref`** (61 rows, 59 with one).
