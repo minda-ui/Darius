@@ -342,3 +342,73 @@ archived without ever having been written down. *Both ids are in the table now, 
 superseded.* The same table's change-log row still read **15,364 B** after two later in-place updates had
 taken that file to **21,025**; corrected. *A table of current ids is only useful if its sizes are current
 too, and in-place updates change a size without changing the id that would otherwise prompt an edit.*
+
+## 13. v33 — the size thresholds go, and the one real ceiling gets measured
+
+**Owner's instruction, in full:** *"we don't have anymore size restrictions."* Said in answer to my closing
+line that `kb-registers.md` was at 24,326 B and would need snapshotting soon.
+
+**It overrules something I published this morning, and the overruled text is kept rather than deleted.**
+§5 above records the question the cheaper write raised and the answer I gave it: *the ~25 KB threshold
+stands, because it is about a file being readable and a row being findable, not about the cost of a write.*
+The owner has decided otherwise. **Both live-file headers now carry the instruction and a note of what it
+supersedes**, because the reasoning was published under my name and a silent deletion would read as though
+it had never been held.
+
+**Three "size" numbers existed, and they are not the same kind of thing.** Separating them was the whole of
+the work:
+
+| Number | What it was | What happened to it |
+|---|---|---|
+| **~25 KB** snapshot threshold | **our own policy** | **Removed on the instruction.** It was ours to drop |
+| **37 KB** in-place ceiling (limit 3) | **a measurement** — the largest in-place write proven | **Re-measured to 92 KB.** An instruction cannot move this; only a probe can |
+| **~82 KB** `read_file_content` cliff | **a claim about a tool** | **Did not reproduce.** Retired |
+
+*A tooling limit is not the owner's to waive and was not treated as though it were. §4's own words say to
+extend limit 3 **by measuring, not by assuming**, so that is what was done.*
+
+**The probes.** Two scratch files in `Raw/`, each created and then replaced in place **with same-size,
+different-content bytes** — so a no-op would fail the byte check and a partial write would fail the size
+check:
+
+| Probe | Size | Revisions after | Bytes | Elapsed |
+|---|---|---|---|---|
+| 46 KB | **46,035 B** | **1 → 2** | **identical** | 6 s |
+| 92 KB | **92,070 B** | **1 → 2** | **identical** | 5 s |
+
+Both ids unchanged; both titles unchanged, confirming an in-place update does not touch the filename. **Both
+probes were trashed after measuring** — nothing stays in `Raw/` once filed (§1).
+
+**And the 82 KB cliff did not reproduce.** `read_file_content` on the 92,070 B probe returned **92,069
+characters** — not empty. One character short, with trailing whitespace altered, which is §3's existing point
+that **it renders rather than returns bytes**; it is not a failure at size. *Stated carefully: the empty reads
+this KB actually has on record are **images at 2.9 MB** (`Raw/20260918_070518.jpg`, still an open Processed
+item). The 82 KB text boundary is the claim that did not survive contact, and it never bound the publish path
+anyway, which uses `download_file_content`.*
+
+**A new boundary turned up in its place, and it belongs to the session, not to Drive.** From about 46 KB a
+download's result exceeds this session's context budget and is **spilled to a file on disk** instead of
+returned inline. **Verification still works** — the decode step reads from disk, which is what it always did —
+but a large file cannot be eyeballed inline. *That is a change in how a big file is verified, not in whether
+it can be. It is written into limit 3 so the next session does not read the spill as a failure.*
+
+**Published.** `CLAUDE.md` **23,171 → 24,213 B**, v32 archived as
+`Archive/ARCHIVED-2026-09-28-CLAUDE-v32-superseded-by-v33-size-thresholds-removed.md` and recreated at
+`1RKDUyPVK2tEDdPehrFqLyP_EYws7luX_` — **still the fallback, and correctly so: limit 1 is about findability,
+not size, so removing the size thresholds does not touch it.** The Drive copy was verified byte-identical to
+git `HEAD` before the rename, as on every archive today.
+
+***And `charter-version-history.md` went in place, at 46,597 B.*** The v32 note moved into it verbatim
+(1,662 B), and **the file that this morning took the fallback on limit 3 at 44,930 B now qualifies under the
+default** — id `15H9mZ...` unchanged. *The first thing the re-measurement paid for, an hour after it was
+made, and the cleanest possible demonstration that the old 37 KB figure was a floor on knowledge rather than
+on capability.*
+
+*What was not done, and is offered rather than assumed: **the three existing snapshots were left alone.** The
+instruction is forward-looking — no further snapshot on byte count — and un-splitting settled history would
+destroy three copies that are cited and findable by name for no gain. Say the word if they should be merged
+back.*
+
+*One thing no instruction can remove, noted once so it is not discovered the hard way: **Smartsheet still
+truncates a cell at 4,000 characters.** That is the platform's limit, not this KB's policy, and it is why
+`AWT-0136` was closed by row comment (§7).*

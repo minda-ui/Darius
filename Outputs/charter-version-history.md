@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v31 (2026-09-23)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v32 (2026-09-28)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -19,6 +19,29 @@ flag that then sat unactioned for two days, and v29's note joined it. Both were 
 when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29 from the live charter)
 rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
 already fallen out.*
+
+---
+
+**Changed in v32 — Drive content can be updated in place, so "by hand" is no longer the only way.**
+
+**Adopted on the owner's instruction, 2026-09-28**, from `Outputs/2026-09-27-proposal-drive-in-place-update.md`
+(measured under `AWT-0136`): *adopt with the limits clause.* §1 and §4 both change.
+
+**What was measured, not argued.** `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` takes a `fileId` and a **local file**
+and replaces the content **in place, keeping the id** — proved at **392 B** and at **37,297 B** on
+`CLAUDE-Workshop.md` itself: id unchanged, `createdTime` preserved, **revision count 1 → 2** as the proof a
+write happened, byte-identical on download-decode-diff, 5.7 s, uploaded straight from the working tree.
+**What it removes is an error class, not a keystroke** — the one-byte shortfall of 2026-09-27 and the
+four-byte one of v12 both came from re-emitting text by hand.
+
+**And the limit that came with it, found the same day.** `keepForever` is **`false` by default** on Drive
+revisions, the superseded one included, so **Drive may purge the previous bytes**. *An id that stays stable
+and an old version that survives are two independent properties, and the proposal's first draft let one
+stand in for the other.* So archive-then-recreate is **demoted, not deleted**, and stays mandatory for the
+cases §4 now names. **The first real use of the new default was this file — and the clause bit immediately:
+a charter version bump is exactly a case where the superseded copy must be findable by name, so v31 was
+archived by rename and v32 recreated.** *Recorded because a rule whose own adoption is an exception to it
+is worth seeing stated.*
 
 ---
 

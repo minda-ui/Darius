@@ -1,30 +1,31 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 32 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
+**Version 33 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. **This file is one of four that together form Darius's
 charter** (see §0a and the map below). README.md is a pointer; these files win on conflict.
 
-**Changed in v32 — Drive content can be updated in place, so "by hand" is no longer the only way.**
+**Changed in v33 — the size thresholds are gone, and the one real ceiling was measured instead of guessed.**
 
-**Adopted on the owner's instruction, 2026-09-28**, from `Outputs/2026-09-27-proposal-drive-in-place-update.md`
-(measured under `AWT-0136`): *adopt with the limits clause.* §1 and §4 both change.
+**Owner's instruction, 2026-09-28: *"we don't have anymore size restrictions."*** So §4 loses the **~25 KB
+snapshot threshold** on `kb-registers.md` and `change-log-index.md`, and limit 3's **37 KB** ceiling is
+replaced by a measured figure. *This overrules a position taken in this KB earlier the same day — that the
+threshold was about readability and findability rather than the cost of a write, and so survived v32. The
+owner's call settles it; the argument is kept in the change log rather than quietly dropped.*
 
-**What was measured, not argued.** `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` takes a `fileId` and a **local file**
-and replaces the content **in place, keeping the id** — proved at **392 B** and at **37,297 B** on
-`CLAUDE-Workshop.md` itself: id unchanged, `createdTime` preserved, **revision count 1 → 2** as the proof a
-write happened, byte-identical on download-decode-diff, 5.7 s, uploaded straight from the working tree.
-**What it removes is an error class, not a keystroke** — the one-byte shortfall of 2026-09-27 and the
-four-byte one of v12 both came from re-emitting text by hand.
+**What was measured, because a tooling limit is not the owner's to waive.** Two scratch probes in `Raw/`,
+each created and then replaced **in place with same-size, different-content bytes** so that neither a no-op
+nor a partial write could pass: **46,035 B and 92,070 B**. Both came back id unchanged, **revisions 1 → 2**,
+**byte-identical** on download-decode-diff, in 5–6 s. **In-place update is therefore proven to 92 KB**, and
+the probes were trashed after measuring.
 
-**And the limit that came with it, found the same day.** `keepForever` is **`false` by default** on Drive
-revisions, the superseded one included, so **Drive may purge the previous bytes**. *An id that stays stable
-and an old version that survives are two independent properties, and the proposal's first draft let one
-stand in for the other.* So archive-then-recreate is **demoted, not deleted**, and stays mandatory for the
-cases §4 now names. **The first real use of the new default was this file — and the clause bit immediately:
-a charter version bump is exactly a case where the superseded copy must be findable by name, so v31 was
-archived by rename and v32 recreated.** *Recorded because a rule whose own adoption is an exception to it
-is worth seeing stated.*
+**Two corrections to limit 3 fell out of it.** The **~82 KB `read_file_content` cliff did not reproduce** —
+at 92,070 B it returned 92,069 characters, one short and with trailing whitespace altered, which is §3's
+existing point that *it renders rather than returns bytes*, not an empty read. **The empty reads on record
+are images at 2.9 MB, not text at 82 KB.** And a **new** boundary turned up that belongs to this session and
+not to Drive: from about 46 KB a download's result exceeds the context budget and is spilled to a file on
+disk. **Verification still works** — the bytes are on disk, which is what the decode step reads — but it
+cannot be eyeballed inline. *That changes how a large file is verified, not whether it can be.*
 
 ## Where the rest of the charter is
 
@@ -271,8 +272,13 @@ Drive re-emits a whole file for one new row. **Splitting them by table would not
 table in them is append-only and every session touches at least one. **Splitting by period does**,
 because a settled row is never touched again. So `kb-registers.md` keeps the open `Processed items` and
 the current period's Wiki-structure and Outputs rows; `change-log-index.md` keeps the current period's
-sessions; and the `-snapshot-<date>.md` files hold what is settled and are never re-emitted. **Snapshot
-the live file again when it passes roughly 25 KB.**
+sessions; and the `-snapshot-<date>.md` files hold what is settled and are never re-emitted.
+
+**There is no size threshold any more** (owner's instruction, 2026-09-28, v33: *"we don't have anymore size
+restrictions"*). The three existing snapshots stand — they are cited, and §4's limit 1 keeps them findable
+by name — but **no further snapshot is taken on size grounds.** A future split needs a reason of its own:
+the owner asking for one, or a file becoming genuinely hard to navigate. *Byte count is no longer that
+reason, and v32 is why: the re-emission it used to pay for no longer involves retyping anything.*
 
 **The snapshots were made by renaming the Drive copies, not by rewriting them** — byte-identical to git
 `d4cd712`, nothing retyped, because manual re-emission is where this KB's byte discrepancies come from
@@ -300,9 +306,13 @@ date, then create a new file, then verify). **Still mandatory for:**
    the `-snapshot-<date>.md` files, a superseded Wiki article that other work cites.
 2. **Anything whose superseded bytes must survive.** `keepForever` is **`false` by default** on Drive
    revisions, so Drive may purge them. Setting it is a separate PATCH per revision and is not done here.
-3. **Anything outside what has been proven:** above **37 KB**, across the ~82 KB boundary where
-   `read_file_content` returns empty, and on binary files, Google-native types and files this account does
-   not own. *Written in as a limit rather than discovered later; extend it by measuring, not by assuming.*
+3. **Anything outside what has been proven:** above **92 KB** — measured at v33 on two same-size,
+   different-content probes, one at 46,035 B and one at 92,070 B, both id-stable, revision-incremented and
+   byte-identical — and on binary files, Google-native types and files this account does not own. *The
+   earlier 37 KB figure and the ~82 KB `read_file_content` cliff were both retired by measurement, not by
+   instruction: extend this the same way, and never by assuming.* **From ~46 KB the verification download is
+   spilled to a file rather than returned inline** — decode it from there; it is a limit of the session, not
+   of Drive, and it does not make the write unprovable.
 
 *The in-place path runs through a third-party service and a CLI in an ephemeral container. If either is
 unavailable the fallback is the whole rule, which is why it stays documented rather than deleted.*
