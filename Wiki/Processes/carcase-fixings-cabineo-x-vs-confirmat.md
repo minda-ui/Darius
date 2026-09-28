@@ -24,6 +24,7 @@ related:
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Processes/panel-production-route.md
  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+ - ../Processes/cabineo-joint-geometry-reconciled.md
  - ../Software/smartcabinet-online-manual.md
 ---
 
@@ -347,9 +348,11 @@ dividers.** From SmartCabinet's own `giunzioni` page, captured the same day
   whether it mounts in the structure, in the dividers, or in the back*** — each with its own tool.
   **The divider case is named by the software itself**, which is as close to a direct answer as a vendor
   manual gets.
-- There is an **offset to avoid conflicts between opposing joints**. That is the parameter that matters
-  here: a divider joints into **the same top and bottom panels that already carry both carcase sides'
-  Cabineo holes**, so the offset exists precisely so the two sets do not collide.
+- There is an **offset to avoid conflicts between opposing joints** ⓯. ***Measured the same day, and it
+  matters less here than this bullet first said*** (`./cabineo-joint-geometry-reconciled.md` §5): the sides'
+  screw holes sit at **X = 11.9 and 588.1** of a 600 mm panel, so **a centre divider collides with nothing**
+  and ⓯ stays at 0. **The real constraint is the thickness** — 13.0 mm of pocket in a 19.0 mm panel leaves
+  **6.0 mm**, and two opposing pockets do not fit.
 - **Three scopes to set it in**, and they are not interchangeable: the `CAM` button (default for all
   cabinets), the `Giunzioni` button under `Settaggi cabinet` (**this cabinet only**), and
   `Personalizza Giunzioni` from the `Intagli` window (**individual pieces**).
@@ -375,9 +378,11 @@ half a carcase's worth of joints.
 
 - **The manual is the vendor's, not this shop's.** What the shop's installation actually has in
   `Configurazione Giunzioni` is **unread**, and the only way to know is to open it.
-- **No dimension in §7 is reconciled with the master's measured geometry** — the pocket ≈37 × 15 × 13 mm
-  and the `Ø5 × 12` face hole at `Y = 230` and `Y = 40` come from the decoded `.TCN` files. *That
-  reconciliation is the obvious next pass and is deliberately not claimed.*
+- ~~**No dimension in §7 is reconciled with the master's measured geometry** … *the obvious next pass and
+  deliberately not claimed.*~~ **Done the same day** — `./cabineo-joint-geometry-reconciled.md`. It confirms
+  the 37 × 15 × 13 pocket, adds a **45.0 × 18.9 × 2.1 support-base recess no article here had recorded**, and
+  puts the screw axis **7.1 mm from the machined face** — *2.4 mm off centre, so the "tick to centre" note
+  does not describe this master.*
 - **Dowels are the silent default.** *"nel caso che nessun tipo di giunzione sia selezionato saranno
   inserite solo le spine"* — a divider configured with **no** joint type still produces a part, with
   dowels and no error. **Silence is a setting**, so the divider's own configuration has to be checked,

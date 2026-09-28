@@ -18,6 +18,7 @@ related:
  - ../Software/kitchen-unit-library.md
  - ../Processes/tpacad-tool-match-criteria.md
  - ../Processes/carcase-fixings-cabineo-x-vs-confirmat.md
+ - ../Processes/cabineo-joint-geometry-reconciled.md
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Machinery/vitap-k2-drill-head-tooling.md
 ---
@@ -268,10 +269,14 @@ Distance of the joint from the cabinet's **front** ⓬ and **back** ⓭; the **n
 ⓮; an **offset to avoid conflicts between opposing joints** ⓯; the **joint type** ⓰ and the specific
 joint from the dropdown ⓱.
 
-***That offset is not a detail for this shop's case.*** A divider joints into the same top and bottom
-panels that already carry the two carcase sides' Cabineo holes. **⓯ exists precisely so those two sets of
-holes do not collide**, and it is the parameter to reach for if a divider's joints land on top of the
-structure's.
+***That offset is not a detail for this shop's case*** — ***but it is narrower than this sentence first
+claimed.*** ⓯ is for **opposing** joints, and the master was measured the same day
+(`../Processes/cabineo-joint-geometry-reconciled.md` §5): the sides' screw holes sit at **X = 11.9 and 588.1**
+of a 600 mm panel, so **a centre divider lands nowhere near them and probably collides with nothing** — ⓯
+stays at 0. **The constraint that does bite is the panel thickness**: every pocket is **13.0 deep in a 19.0
+panel, leaving 6.0 mm**, so a divider taking shelf supports on *both* faces at the same height cannot have
+them. *Corrected against my own text of a few hours earlier: the parameter was right, the reason I gave for
+reaching for it was not.*
 
 **Five joint types**, selected by buttons — **and if none is selected, only dowels (`spine`) are
 inserted:**
@@ -322,10 +327,12 @@ governs is not established** — check it against the dialogue before relying on
 - **It is the vendor's manual, not this shop's settings.** Everything above is what SmartCabinet *can* be
   configured to do. **What the shop's installation actually has in `Configurazione Giunzioni` is unread**,
   and the only way to know is to open it.
-- **No dimension here is the shop's.** The master's measured geometry — pocket ≈37 × 15 × 13 mm, `Ø5 × 12`
-  face hole, `Y = 230` and `Y = 40` — comes from the decoded `.TCN` files, not from this page, and the two
-  have **not** been reconciled. *That reconciliation is the obvious next pass and is deliberately not
-  claimed here.*
+- ~~**No dimension here is the shop's.** … *That reconciliation is the obvious next pass and is deliberately
+  not claimed here.*~~ **Done the same day, on the owner's instruction** — see
+  `../Processes/cabineo-joint-geometry-reconciled.md`. **Eleven parameters reconcile, one contradicts, and the
+  three-element block above does not describe the master's geometry at all**: the master's pocket is three
+  Ø15 circles at 11.2 pitch, not a stepped bore. *Kept struck rather than deleted, because the reason it was
+  worth doing is in the sentence.*
 - **Dowels are the silent default.** *"nel caso che nessun tipo di giunzione sia selezionato saranno
   inserite solo le spine"* — a divider configured with no joint type will still produce a part, with
   dowels. **Silence is a setting, not an error**, which makes it exactly the kind of thing to check.

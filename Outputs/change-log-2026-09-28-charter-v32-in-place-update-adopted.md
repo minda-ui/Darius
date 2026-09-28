@@ -650,3 +650,165 @@ Allocating `HL-0067` meant grouping the Help & Lessons sheet on `Ref` rather tha
 **Neither is touched.** Whether those rows are another seat's is not established, and §0b is explicit —
 **own rows only, never another seat's.** *Recorded here for the owner and for whoever owns those rows;
 the allocation of `HL-0067` itself is unaffected, because the highest ref is unambiguous either way.*
+
+## 17. The reconciliation — eleven parameters agree, one contradicts, and the manual's central block describes a different joint
+
+**Owner's instruction: *"reconcile the manual's Cabineo parameters with the TCN geometry."*** This is the
+pass §7.6 of the manual article and §16.5 of this log both named as the obvious next one and deliberately
+did not claim. **New article: `Wiki/Processes/cabineo-joint-geometry-reconciled.md`, 17,557 B.**
+
+### 17.1 Measured, not quoted
+
+**Both `.TCN` files were re-fetched from Drive and re-decoded** — `01-SIDE-LEFT.TCN` (21,020 B) and
+`03-BOTTOM.TCN` (2,036 B), UTF-16LE — and **every working parsed by script**: 127 in the side, 7 in the
+bottom. *Nothing was taken from the articles that already describe these files, which matters because one of
+those descriptions turned out to rest on a misreading (§17.3).*
+
+### 17.2 What reconciles
+
+| Manual parameter | Measured |
+|---|---|
+| number of joints ⓮ | **2** per joint line |
+| distance from front ⓬ / back ⓭ | **40.0 / 70.0** — *and they differ, which is why there are two fields* |
+| offset to avoid opposing-joint conflicts ⓯ | **0**, unexercised |
+| internal screw Ø ➏ | **Ø5** |
+| hole length, structure ➐ | **12.0** |
+| hole length, back ➒ | **12.0** — *equal to the structure's, though the software keeps them separate* |
+| hole length, dividers ➑ | **absent** — the master has no divider |
+| number of passes ➎ | **2**, at −6.5 then −13.0 |
+| support base L × W × T ⓫ | **45.0 × 18.9 × 2.1** |
+| central pin from the top | **7.1** mm from the machined face |
+| `Aggiungi metà spessore pannello` | **off** — 7.1 against a 9.5 half-thickness |
+
+**Y = 0 is the front, and that was cross-checked rather than assumed**: the Ø3 hinge pilots sit at Y = 37,
+the back-fixing row at Y = 276.9. *Front hardware forward, back hardware aft — two independent readings
+agreeing.*
+
+### 17.3 The three findings worth having
+
+**First — the manual's claim about tools is confirmed by the shop's own output.** The manual says cutters
+must be named in CAM Tools while drill bits are chosen by the machine. **Every routed operation in the
+master carries a tool field (`#205=1002`); every bore carries `#1001=0`.** ***This is the first time this KB
+has checked the manual against the shop's files rather than against another page of the manual***, and it
+closes T016's *systemic half* a second time, from the evidence side. *`#205`'s meaning is flagged as
+unestablished — `#1002` is the **diameter** parameter on a bore, so the number 1002 means two different
+things in this KB, and that is a trap rather than a confirmation.*
+
+**Second — the manual's Cabineo block does not describe this pocket.** The manual configures **three
+elements of different diameters and effective lengths, stacked** — a stepped bore. The master's pocket is
+**three circles of the same Ø15 at 11.2 mm pitch, side by side** — a routed pocket. *Three elements and
+three circles is a coincidence of the number three, and it would have been easy to write a reconciliation
+that pretended otherwise.* Two explanations are recorded and **neither is chosen**: the shop may have
+configured a different member of the *"Giunzioni eccentriche e Cabineo"* category (which the manual says
+also carries lateral joints and Lamello/Clamex/Divario shelf supports), or a page beyond the ten captured
+describes the routed form. **One look at `Configurazione Giunzioni` settles it.**
+
+**Third — a feature no previous decode had recorded.** A **2.1 mm deep stadium, 45.0 × 18.9**, one per
+pocket, wider than the pocket and reaching 2.1 mm further into the panel, **not concentric with it** (centre
+1.7 mm nearer the end). It maps cleanly onto the manual's **support base: length, width, thickness** — the
+best single match in the table. *The 2026-09-18 decode recorded the pocket and missed this entirely.*
+
+### 17.4 A reading re-derived, and a figure confirmed rather than corrected
+
+**The arcs are closed Ø15 circles, not slots.** Each pocket element is two semicircular arcs sharing a
+diameter (`#8017=7.50`). *Read as slots — the natural reading, and the one behind this KB's existing
+description — the pocket would measure 52 mm long. Read correctly it is 37.4, which is what the KB has said
+since 2026-09-18.* **So re-deriving changed the reasoning and confirmed the number**, and the earlier
+"37 × 15 × 13" stands. *Recorded because the temptation was to "correct" a figure that was right.*
+
+### 17.5 Two corrections of my own text from earlier today
+
+1. ***I named ⓯ as "the parameter that matters here" for the divider, and it probably is not.*** ⓯ is for
+   **opposing** joints. The sides' screw holes sit at **X = 11.9 and 588.1** of a 600 mm panel, so **a centre
+   divider lands nowhere near them and collides with nothing.** **The real constraint is the thickness**:
+   13.0 mm of pocket in a 19.0 mm panel leaves **6.0 mm**, so a divider taking shelf supports on *both* faces
+   at the same height cannot have them — two 13 mm pockets need 26 mm of a 19 mm panel. *No article in this KB
+   had stated the 6 mm.* Corrected in both the manual article (§7.3) and the fixings article.
+2. **A working count of 63 in the first draft of the new article was wrong — it is 127.** *Caught on
+   re-reading before publishing, which is `HL-0066` doing its job in the same session it was filed.*
+
+### 17.6 Three long-standing gaps narrowed
+
+- **T016's blind Ø3 holes are located and counted at last**: **four Ø3 × 5 at Y = 37, X = 67 · 99 and
+  763 · 795** — two pairs at 32 mm centres, a hinge mounting-plate pattern. *Discussed since 2026-09-15
+  without anyone ever saying where they are or how many. **Eight per unit**, so the owner's blind-Ø3 decision
+  is not an incidental one.*
+- **A candidate for the back fixings**, open since 2026-09-18: **Ø5 × 12 at Y = 276.9**, four on the side and
+  three on the bottom, same spec as the carcase screw hole. ***Flagged as a reading, with its own objection
+  recorded***: 23.1 mm from the back edge does not put it on the mid-thickness of a 19 mm back at any obvious
+  position. **The back panel's `.TCN` settles it and has not been decoded.**
+- **The three Ø10 × 13 bores stay unidentified — but with new evidence**: they are at **one end only**
+  (X = 71 · 103 · 135). *Back-panel or cam fixings would be at both ends, so they are not that.*
+
+### 17.7 Published
+
+| File | Was | Now | Method |
+|---|---|---|---|
+| **`Wiki/Processes/cabineo-joint-geometry-reconciled.md`** | — | **17,557 B** | **new**, id `19yeRkAW35JD9Ms6AZzrNaSUKS6Xyj-Sm` |
+| `Wiki/Software/smartcabinet-online-manual.md` | 23,735 | **24,437** | in place |
+| `Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md` | 31,886 | **32,327** | in place |
+| `Wiki/index.md` | 15,167 | **16,233** | in place |
+
+**All four verified byte-identical**, ids and `createdTime` unchanged on the three in-place writes.
+
+***A new method, worth recording because §4 did not cover it.*** §4's in-place default is written for files
+that already exist; a **new** file still had to be created, and the obvious route would have passed 17 KB of
+content through the model — *exactly the hand re-emission §4 exists to prevent.* Instead: **create an
+11-byte placeholder in the right folder with the native connector to mint an id, then upload the real bytes
+in place from disk.** Two calls, nothing retyped. *Offered as a §4 addition for the owner, not written into
+the charter.*
+
+*Also found in passing: `GOOGLEDRIVE_CREATE_FILE` accepts only `name` and `file_to_upload` — **it takes no
+parent folder**, so it cannot create a file anywhere but the root. That is why the placeholder came from the
+native connector.*
+
+*The index entry was placed **alphabetically by filename** (`barcode-` < `cabineo-` < `carcase-`) rather than
+appended, because `Wiki/index.md`'s own header says the entries are alphabetical. It first landed at the end
+of the section; moved before publishing.*
+
+**Article count, recounted rather than carried: `git ls-files 'Wiki/**/*.md' | wc -l` returns 36 with the new
+article still untracked, so 37 once committed.** *Per §1, which says never to carry a count forward from
+anywhere, including from the charter.*
+
+## 18. Limit 3 measured a fourth time — 145 KB — and this one is a proposal, not an amendment
+
+**Writing §17's rows pushed `kb-registers.md` to 132,488 B, past the 130,005 B proven this morning.** §4's
+limit 3 says anything above the proven ceiling takes the archive-then-recreate fallback, *and its own next
+sentence says to extend it by measuring rather than assuming.* **So it was measured, for the fourth time
+today.**
+
+**Probe at 145,000 B**, in `Raw/`, built the same way as the earlier three so that no weak result can pass:
+
+| Check | Result |
+|---|---|
+| id after two in-place writes | **unchanged** (`1mwANAKcRnxMMYqtQlaWdJ69qgpEmi-hP`) |
+| `createdTime` | **preserved** |
+| revision count | **1 → 2 → 3** |
+| size after each write | **145,000 B** |
+| **same-size, different-content** (v1 → v2) | **round-trip matches v2, differs from v1** |
+| elapsed | **6 s** per write |
+
+***The same-size/different-content design is the point.*** A byte-check alone cannot tell a write from a
+no-op, and a size check alone cannot tell a full write from a truncated one. **Two files of identical length
+and different bytes fail both ways if anything went wrong**, and the download came back matching v2 and
+differing from v1. **Probe trashed after measuring**, as the earlier three were.
+
+*It was created by the same placeholder-then-upload route as §17's new article, which is how 145 KB of filler
+reached Drive without passing through the model.*
+
+### What this does and does not authorise
+
+**The measurement stands on its own, and `kb-registers.md` was published in place at 132,488 B on the
+strength of it** — inside proven territory, not outside it.
+
+***But the charter still says 130 KB, and I am not changing it.*** v33 and v34 each moved that number
+**because the owner gave an instruction that required it**. Today's instruction was to reconcile two
+descriptions of a joint; it says nothing about §4. **Charter wording is the owner's**, and §3's own record —
+v18, v19, v25, v27 — is that this KB proposes and waits.
+
+> **Proposed §4 change, for the owner to take or decline:** limit 3's figure goes from **130 KB to 145 KB**,
+> measured 2026-09-28 at **145,000 B** by the same same-size/different-content probe as the 46,035 B,
+> 92,070 B and 130,005 B measurements, id-stable, revision-incremented and byte-identical. *Four
+> measurements in one day is worth a remark of its own: the number in §4 has been behind the evidence every
+> single time it has been tested, and the clause telling you to measure has done more work today than the
+> figure it qualifies.*
