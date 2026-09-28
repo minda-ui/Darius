@@ -412,3 +412,62 @@ back.*
 *One thing no instruction can remove, noted once so it is not discovered the hard way: **Smartsheet still
 truncates a cell at 4,000 characters.** That is the platform's limit, not this KB's policy, and it is why
 `AWT-0136` was closed by row comment (§7).*
+
+## 14. v34 — the snapshots merged back, and a third ceiling measured
+
+**Owner's instruction: *"merge the snapshots back."*** The direct consequence of v33: with no size threshold,
+a period split has nothing left to serve. Offered at the end of §13 and answered.
+
+**Five snapshots, not the three I said.** *§13 and the v33 note both said three. That was the registers'
+own header table, which lists only its own three — the index had two more. Counting the files gave five.
+A count read off a pointer table instead of the thing itself, which is this KB's oldest recurring error.*
+
+| File | Bytes | New name in `Archive/` |
+|---|---|---|
+| `kb-registers-snapshot-2026-09-21.md` | 65,449 | `ARCHIVED-2026-09-28-kb-registers-snapshot-2026-09-21-merged-back-into-the-live-file.md` |
+| `kb-registers-snapshot-2026-09-27.md` | 23,678 | …`-2026-09-27-merged-back-into-the-live-file.md` |
+| `kb-registers-snapshot-2026-09-28.md` | 29,143 | …`-2026-09-28-merged-back-into-the-live-file.md` |
+| `change-log-index-snapshot-2026-09-21.md` | 40,222 | `ARCHIVED-2026-09-28-change-log-index-snapshot-2026-09-21-merged-back-into-the-live-file.md` |
+| `change-log-index-snapshot-2026-09-28.md` | 25,043 | …`-2026-09-28-merged-back-into-the-live-file.md` |
+
+**Merged, not deleted.** Each was verified byte-identical to git `HEAD` first, then **renamed into `Archive/`
+with its id preserved.** *"Merge the snapshots back" does not say destroy them, and the bytes cost nothing
+to keep. They also leave the git mirror's working tree, because `Archive/` is not mirrored — their bytes
+remain in git history.*
+
+**Nothing was retyped; every row was copied byte-for-byte by script.** And the duplication the old headers
+had warned about was the whole difficulty:
+
+- **Processed items needed real care.** The nine open rows appeared in **all three** registers snapshots
+  *and* the live file — a plain concatenation would have emitted them **four times**. Instead the
+  2026-09-21 order was walked row by row and **the live version substituted wherever it was the authority
+  (eight rows)**, the ninth appended, and the 2026-09-27 and 2026-09-28 Processed tables **dropped as exact
+  duplicates — verified 9 of 9 each, not assumed.** **29 + 1 = 30, nothing lost and nothing doubled.**
+- **Wiki (36) and Outputs (74) needed none** — disjoint by construction, each snapshot holding only what was
+  new. *Checked anyway. The check threw a false alarm worth recording: the Wiki table's first column is a
+  **date**, so six rows "collided" on it. They are different rows sharing a date, not duplicates — a
+  reminder that a de-duplication key has to be a key.*
+- **The index was clean**: 1 + 3 + 19 = **23 sessions**, and the newest-first order was **re-verified after
+  assembly** rather than trusted.
+- **Two Drive-id tables, and they share no path at all** (checked). So both are kept under one heading,
+  labelled by date, with the later winning where it ever matters. *The older one carries two rows for the
+  same proposal file, the second saying it supersedes the first — a pre-existing pair, preserved rather
+  than tidied.*
+
+**Then the merge broke v33's own ceiling.** `kb-registers.md` came out at **115,582 B**, past the 92 KB
+proven an hour earlier — so rather than fall back, **a third probe ran at 130,005 B**: same-size,
+different-content, id stable, revisions 1 → 2, byte-identical, 6 s. **Limit 3 is now 130 KB**, and the
+registers went **in place**, id unchanged. *Twice in one day the rule's own instruction — extend it by
+measuring — was what let the work proceed on the fast path.*
+
+**Published.** `kb-registers.md` **28,088 → 115,582 B** and `change-log-index.md` **11,275 → 72,817 B**,
+both in place, both byte-verified from the spilled download. `CLAUDE.md` **24,213 → 24,449 B** as **v34**
+(archive-then-recreate, v33 archived, new id `1RAkYf-sW72icNn8Nl7C4mTYOjpt5O9-y`), and the v33 note moved
+verbatim into `charter-version-history.md` **46,597 → 48,457 B**, in place.
+
+***One correction inside v34, caught by reading the published file back.*** The first v34 publish still had
+§0 telling a session that `kb-registers.md` *"holds only"* the open Processed items — untrue the moment the
+merge landed, and in the one paragraph every session reads first. **Corrected in place, same version, no
+archive** — there is no superseded *version* to make findable, so limit 1 is not engaged. *That is the
+second stale line this session that only surfaced on read-back, after the registers' own update history in
+§12. Publishing and then reading is catching things that writing and then publishing does not.*

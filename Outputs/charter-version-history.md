@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v32 (2026-09-28)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v33 (2026-09-28)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -19,6 +19,30 @@ flag that then sat unactioned for two days, and v29's note joined it. Both were 
 when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29 from the live charter)
 rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
 already fallen out.*
+
+---
+
+**Changed in v33 — the size thresholds are gone, and the one real ceiling was measured instead of guessed.**
+
+**Owner's instruction, 2026-09-28: *"we don't have anymore size restrictions."*** So §4 loses the **~25 KB
+snapshot threshold** on `kb-registers.md` and `change-log-index.md`, and limit 3's **37 KB** ceiling is
+replaced by a measured figure. *This overrules a position taken in this KB earlier the same day — that the
+threshold was about readability and findability rather than the cost of a write, and so survived v32. The
+owner's call settles it; the argument is kept in the change log rather than quietly dropped.*
+
+**What was measured, because a tooling limit is not the owner's to waive.** Two scratch probes in `Raw/`,
+each created and then replaced **in place with same-size, different-content bytes** so that neither a no-op
+nor a partial write could pass: **46,035 B and 92,070 B**. Both came back id unchanged, **revisions 1 → 2**,
+**byte-identical** on download-decode-diff, in 5–6 s. **In-place update is therefore proven to 92 KB**, and
+the probes were trashed after measuring.
+
+**Two corrections to limit 3 fell out of it.** The **~82 KB `read_file_content` cliff did not reproduce** —
+at 92,070 B it returned 92,069 characters, one short and with trailing whitespace altered, which is §3's
+existing point that *it renders rather than returns bytes*, not an empty read. **The empty reads on record
+are images at 2.9 MB, not text at 82 KB.** And a **new** boundary turned up that belongs to this session and
+not to Drive: from about 46 KB a download's result exceeds the context budget and is spilled to a file on
+disk. **Verification still works** — the bytes are on disk, which is what the decode step reads — but it
+cannot be eyeballed inline. *That changes how a large file is verified, not whether it can be.*
 
 ---
 

@@ -1,31 +1,37 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 33 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
+**Version 34 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. **This file is one of four that together form Darius's
 charter** (see §0a and the map below). README.md is a pointer; these files win on conflict.
 
-**Changed in v33 — the size thresholds are gone, and the one real ceiling was measured instead of guessed.**
+**Changed in v34 — the period split is over: the snapshots are merged back and the two live files hold
+everything.**
 
-**Owner's instruction, 2026-09-28: *"we don't have anymore size restrictions."*** So §4 loses the **~25 KB
-snapshot threshold** on `kb-registers.md` and `change-log-index.md`, and limit 3's **37 KB** ceiling is
-replaced by a measured figure. *This overrules a position taken in this KB earlier the same day — that the
-threshold was about readability and findability rather than the cost of a write, and so survived v32. The
-owner's call settles it; the argument is kept in the change log rather than quietly dropped.*
+**Owner's instruction, 2026-09-28: *"merge the snapshots back."*** The direct consequence of v33 — with no
+size threshold there is nothing for a period split to serve. `kb-registers.md` **28,088 → 115,582 B** and
+`change-log-index.md` **11,275 → 72,817 B**; §1's folder map and §4 lose the `-snapshot-<date>.md` files,
+and **`kb-registers.md` is no longer "live rows only" — it is all 30 Processed items, all 36 Wiki-structure
+changes, all 74 Outputs rows and both Drive-id tables.** The index holds **all 23 sessions**.
 
-**What was measured, because a tooling limit is not the owner's to waive.** Two scratch probes in `Raw/`,
-each created and then replaced **in place with same-size, different-content bytes** so that neither a no-op
-nor a partial write could pass: **46,035 B and 92,070 B**. Both came back id unchanged, **revisions 1 → 2**,
-**byte-identical** on download-decode-diff, in 5–6 s. **In-place update is therefore proven to 92 KB**, and
-the probes were trashed after measuring.
+**Five snapshots, not the three v33 said.** *That figure was read off the registers' own header table, which
+lists only its own three; the index had two more. Corrected by counting the files.* All five were verified
+byte-identical to git `HEAD`, then **archived by rename into `Archive/`, ids preserved — merged, not
+deleted.**
 
-**Two corrections to limit 3 fell out of it.** The **~82 KB `read_file_content` cliff did not reproduce** —
-at 92,070 B it returned 92,069 characters, one short and with trailing whitespace altered, which is §3's
-existing point that *it renders rather than returns bytes*, not an empty read. **The empty reads on record
-are images at 2.9 MB, not text at 82 KB.** And a **new** boundary turned up that belongs to this session and
-not to Drive: from about 46 KB a download's result exceeds the context budget and is spilled to a file on
-disk. **Verification still works** — the bytes are on disk, which is what the decode step reads — but it
-cannot be eyeballed inline. *That changes how a large file is verified, not whether it can be.*
+**Nothing was retyped, and the duplication the old headers warned about was handled rather than inherited.**
+Every row was copied byte-for-byte by script. The nine open Processed items appeared in *all three* registers
+snapshots as well as the live file, so a plain concatenation would have produced them four times: instead the
+2026-09-21 order was walked and **the live row substituted wherever it was the authority (eight of them)**,
+the ninth appended, and the two later Processed tables **dropped as exact duplicates — verified 9 of 9 each.**
+*The Wiki, Outputs and session tables needed no such care, being disjoint by construction; that was checked,
+not assumed, and the merged ordering was re-verified afterwards.*
+
+**And the merge pushed straight past v33's own new ceiling, so it was measured again.** At 115,582 B the
+registers exceeded the 92 KB proven an hour earlier, so a third probe ran at **130,005 B** — same-size,
+different-content, id stable, revisions 1 → 2, byte-identical, 6 s. **Limit 3 is now 130 KB.** *Twice in one
+day the rule's own words — extend it by measuring — were what let the work proceed, and both times the
+alternative was a slower path rather than a blocked one.*
 
 ## Where the rest of the charter is
 
@@ -67,7 +73,8 @@ Before doing anything — including a one-off question — read, in order:
 1. **The Workforce Hub** — Tasks & Requests, Darius's own Open / In Progress rows (§0b, Rule A).
 2. The newest entries in `Outputs/change-log-*.md` (newest-first index:
    `Outputs/change-log-index.md`).
-3. The open `Processed items` rows of `Outputs/kb-registers.md` — the live file holds only those.
+3. The open `Processed items` rows of `Outputs/kb-registers.md` — **read those; the file holds all 30, the
+   settled ones included, since v34 merged the snapshots back.**
 4. `Wiki/index.md` for what's already known.
 
 **The charter is four files** (see the map above): this one, `CLAUDE-Rules.md`, `CLAUDE-Lessons.md`
@@ -130,8 +137,8 @@ reported size. *This paragraph read "partial" from v12 to v22, and was true then
 four times (v12 *"four"*, v13 *"fifteen"*, v16 *"seven"*, v17 *"nine / twenty-seven"*) — a count goes
 stale the moment an article is written, and this document is revised weekly at best. **The count lives
 in the registers**, in the Wiki-structure rows, recorded at the moment each article was
-added and with the command that produced it — `Outputs/kb-registers.md` for the current period and the
-`kb-registers-snapshot-<date>.md` files for earlier ones. To quote a current figure, run
+added and with the command that produced it — all of it in `Outputs/kb-registers.md`, which since **v34**
+holds every row this KB has recorded. To quote a current figure, run
 `git ls-files 'Wiki/**/*.md' | wc -l` for the mirror side and read the registers for the Drive-only
 side; **do not carry a number forward from anywhere, including from here.** *(That pathspec counts the
 articles in the topic folders and correctly leaves out `Wiki/index.md`, which sits at the top level and
@@ -169,9 +176,9 @@ Workshop of Furniture Making - Knowledge Base/
 │ ├── Software/ — SmartCabinet and the design→machine production workflow
 │ └── Decisions/ — why this KB is shaped this way; numbers must be recounted, not trusted
 ├── Outputs/
-│ ├── kb-registers.md — live rows only; kb-registers-snapshot-<date>.md — settled (v31)
+│ ├── kb-registers.md — every row, all three tables plus the Drive-id tables (v34)
 │ ├── change-log-YYYY-MM-DD-<slug>.md — one per session
-│ ├── change-log-index.md — newest first (v28); change-log-index-snapshot-<date>.md (v31)
+│ ├── change-log-index.md — every session, newest first (v28; un-split v34)
 │ ├── charter-version-history.md — the charter's superseded version notes (v27)
 │ └── Correspondence/ — filed copy of every numbered document in scope
 └── Archive/ — superseded files, renamed with reason and date
@@ -266,26 +273,23 @@ One file per session in `Outputs/`, named `change-log-YYYY-MM-DD-<slug>.md`, ind
 charter's version history was split at v27: 35,701 bytes of append-only history riding along with rows
 that change, in a file re-emitted whole every session.
 
-**Both are period-split as of 2026-09-23** (owner's instruction, *"split by period"*), because the same
-problem came back one file along: `kb-registers.md` had reached 73,220 bytes and the index 46,462, and
-Drive re-emits a whole file for one new row. **Splitting them by table would not have helped** — every
-table in them is append-only and every session touches at least one. **Splitting by period does**,
-because a settled row is never touched again. So `kb-registers.md` keeps the open `Processed items` and
-the current period's Wiki-structure and Outputs rows; `change-log-index.md` keeps the current period's
-sessions; and the `-snapshot-<date>.md` files hold what is settled and are never re-emitted.
+**They were period-split from 2026-09-23 to 2026-09-28, and are not any more.** The split was the owner's
+instruction (*"split by period"*) when `kb-registers.md` had reached 73,220 bytes and the index 46,462 and
+Drive re-emitted a whole file for one new row. Splitting by table would not have helped — every table in
+them is append-only and every session touches at least one — whereas a settled row is never touched again.
+**v33 removed the size threshold that justified it and v34 undid it**, on the owner's instruction *"merge the
+snapshots back"*: five snapshots verified against git `HEAD`, merged back by script with **nothing retyped**,
+and **archived by rename into `Archive/` with ids preserved.**
 
-**There is no size threshold any more** (owner's instruction, 2026-09-28, v33: *"we don't have anymore size
-restrictions"*). The three existing snapshots stand — they are cited, and §4's limit 1 keeps them findable
-by name — but **no further snapshot is taken on size grounds.** A future split needs a reason of its own:
-the owner asking for one, or a file becoming genuinely hard to navigate. *Byte count is no longer that
-reason, and v32 is why: the re-emission it used to pay for no longer involves retyping anything.*
+**So both files now hold everything, and neither is snapshotted on byte count again.** A future split needs a
+reason of its own — the owner asking, or a file becoming genuinely hard to navigate. *Byte count is not that
+reason: v32 removed the retyping the old re-emission cost, and v34's own merge then wrote 115,582 B in one
+in-place call.*
 
-**The snapshots were made by renaming the Drive copies, not by rewriting them** — byte-identical to git
-`d4cd712`, nothing retyped, because manual re-emission is where this KB's byte discrepancies come from
-(§3). The cost is that each snapshot keeps the header it had when it was live and so still describes
-itself as a file §0 sends you to. **It does not**; the filename and the live file's own pointer table are
-authoritative, and the registers snapshot also repeats **eight** of the nine open Processed items with
-their 2026-09-21 status, which the live file supersedes — the ninth was opened after the snapshot. *Recorded rather than left to be discovered.*
+*Two things the split leaves behind, worth knowing if the archived copies are ever read: each keeps the
+header it had while it was live, so it still describes itself as a file §0 sends you to — **it does not**,
+the filename says what it is — and the registers snapshots repeat the open `Processed items` that the live
+file was always authoritative for. That overlap is exactly what the merge had to de-duplicate.*
 
 **How a change reaches Drive** (v32, owner's instruction 2026-09-28; proposal
 `Outputs/2026-09-27-proposal-drive-in-place-update.md`).
@@ -303,14 +307,17 @@ check the **revision count** as well.
 date, then create a new file, then verify). **Still mandatory for:**
 
 1. **Anything whose superseded copy must be findable by name** — the charter files and their version bumps,
-   the `-snapshot-<date>.md` files, a superseded Wiki article that other work cites.
+   a superseded Wiki article that other work cites, and any file being retired from the live tree. *The
+   `-snapshot-<date>.md` files were this clause's other example until v34 merged them back; the five archived
+   copies are named for what they were and why they went.*
 2. **Anything whose superseded bytes must survive.** `keepForever` is **`false` by default** on Drive
    revisions, so Drive may purge them. Setting it is a separate PATCH per revision and is not done here.
-3. **Anything outside what has been proven:** above **92 KB** — measured at v33 on two same-size,
-   different-content probes, one at 46,035 B and one at 92,070 B, both id-stable, revision-incremented and
-   byte-identical — and on binary files, Google-native types and files this account does not own. *The
-   earlier 37 KB figure and the ~82 KB `read_file_content` cliff were both retired by measurement, not by
-   instruction: extend this the same way, and never by assuming.* **From ~46 KB the verification download is
+3. **Anything outside what has been proven:** above **130 KB** — measured at v34 at **130,005 B**, after
+   v33's probes at 46,035 B and 92,070 B, every one of them same-size/different-content so that neither a
+   no-op nor a partial write could pass, and every one id-stable, revision-incremented and byte-identical —
+   and on binary files, Google-native types and files this account does not own. *The 37 KB figure, the
+   ~82 KB `read_file_content` cliff and then 92 KB were each retired by measurement, not by instruction:
+   extend this the same way, and never by assuming.* **From ~46 KB the verification download is
    spilled to a file rather than returned inline** — decode it from there; it is a limit of the session, not
    of Drive, and it does not make the write unprovable.
 
