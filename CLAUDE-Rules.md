@@ -164,4 +164,24 @@ own charter — and a governed file is not edited blind. The read succeeded on t
 recorded rather than hidden, because the ruling was live in the KB for several hours before the file that
 holds the access decisions said so.*
 
+2026-09-28: **a Gmail MCP server was present in the session, and the owner ruled it out of use.** Thirty
+Gmail tools including `send_message` were available to this session — **not** through Composio, whose scope
+was already ruled Drive-and-Smartsheet-only the day before, but as a connector in the environment itself.
+**The contradiction was recorded and put to the owner rather than resolved either way** (§0a: *when two
+facts that should agree don't, Darius records the contradiction and asks — it never guesses one into the
+other*). **Ruling, Minda, verbatim: *"Don't use Gmail as per your Claude.md."*** So the charter stands and
+the environment does not amend it.
+
+**What this settles that the 2026-09-27 entry did not.** That one scoped **Composio's toolkits**. This one
+covers **any Gmail capability reaching this seat by any route** — MCP connector, toolkit, or something not
+yet invented. *The earlier wording would have read as silent on a Gmail server that arrived some other way;
+it is not silent now.* **No Gmail tool was loaded or called in that session or any before it**, and a
+session-start prompt suggesting app tools be resolved through Composio was **followed only within the Drive
+and Smartsheet scope**.
+
+*The pattern to keep: the charter is not amended to fit the environment, and the environment is not used
+against the charter. A capability being present is not a permission — that distinction is the whole of §6a,
+and the 2026-09-27 entry's own closing point that no-Gmail is a policy this assistant observes rather than
+a boundary the tooling enforces is now demonstrated rather than predicted.*
+
 **6c — revisit cadence:** none set yet.

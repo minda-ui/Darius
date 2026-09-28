@@ -136,6 +136,20 @@ contradiction and asks; it never guesses one into the other.* **The charter is n
 the environment, and the environment is not being used against the charter.** It is the owner's ruling to
 make.
 
+**RULED, same session.** Minda, verbatim: ***"Don't use Gmail as per your Claude.md."*** **The charter
+stands.** Written into `CLAUDE-Rules.md` §6b (14,520 → **16,155 B**), where the access decisions live —
+**archive-then-recreate under §4 limit 1**, since it is a charter file, with the Drive copy verified
+byte-identical to git `HEAD` before the rename.
+
+**The new entry deliberately widens the 2026-09-27 one.** That ruling scoped **Composio's toolkits**;
+this one covers **any Gmail capability reaching this seat by any route** — MCP connector, toolkit, or
+otherwise. *The earlier wording would have read as silent on a Gmail server arriving some other way.*
+
+*And the point the 2026-09-27 entry closed on — that no-Gmail is a policy this assistant observes, not a
+boundary the tooling enforces — stopped being a prediction today. Thirty Gmail tools were reachable; the
+count that matters is that **none was loaded or called**. A session-start prompt suggesting app tools be
+resolved through Composio was followed only within the Drive and Smartsheet scope.*
+
 ## 7. `AWT-0136` closed out — and the new default's first real use
 
 The row that carried yesterday's measurements ended: *"STILL FOR THE OWNER ... rule on the
@@ -191,6 +205,7 @@ schema told me more than the documentation did, because I made a mistake in fron
 
 ## 9. Still open
 
+- ~~**The Gmail MCP contradiction**, for an owner ruling.~~ **Ruled and recorded the same session; see §6.**
 - **`HL-0060` needs widening.** The Hub gained an **Archive sheet** (`1037721118312324`), named in
   `AWT-0146`'s own Response, which also warns of a both-sheets Task-ID search caveat. Task ID allocation
   must now group-by across **both** sheets; `HL-0060` describes one.
