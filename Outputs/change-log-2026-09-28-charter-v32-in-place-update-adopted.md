@@ -301,3 +301,44 @@ a sentence, not an action. It is recorded because the next one might not be.*
 **What was held back, all of it the owner's** (§6a): the supplier is **not named** (page header cut off in
 the photograph), the 2,000 price is **to be confirmed at checkout**, and **nothing was ordered and no
 supplier contacted**. £574.16 ex VAT for both boxes is ≈250 carcases, ≈21 kitchens — a stocking decision.
+
+## 12. §6a gains its third capability limit — the setup script
+
+**Owner's word, asked for and given:** *"yes, record it in §6a."* The offer was made at the end of the
+setup-script work and is now carried out.
+
+**What it says.** `CLAUDE-Rules.md` §6a already held two entries of one shape — *deleting* a Smartsheet sheet
+and *renaming* one are UI actions the owner takes, because the connector has no tool for either, and in both
+cases **the capability is missing, not the permission**. The environment's **setup script** is the third: it
+runs at session start, it is edited in the cloud UI, and **no connector, no CLI and no file in the working
+tree reaches it.**
+
+**One detail was checked rather than asserted.** The draft said only "the cloud UI". Where in the UI is a
+fact the next session would otherwise re-derive, so it was read off the product documentation before
+publishing: **the environment menu in the session title bar → *Edit* → *Setup script*.** *Recorded with the
+note that it was confirmed, because an unsourced UI path ages badly.*
+
+**And the edge the two sheet entries do not have.** A sheet delete takes effect when the owner does it. A
+setup-script change takes effect **only on a fresh session** — so it cannot be verified in the session that
+asked for it, which is exactly the position this session is in (§9). The entry points at §9's two named
+checks rather than repeating them, so there is one copy of them to keep correct.
+
+**Published the long way, and the rule says why.** A charter file is **§4 limit 1** — the superseded copy
+must be findable by name — so this took **archive-then-recreate**, not the v32 default:
+
+| Step | Result |
+|---|---|
+| Archive | `1wWq_-6Xs8CDgwjs1wGXROGM7-svir_Yq` renamed to `Archive/ARCHIVED-2026-09-28-CLAUDE-Rules-before-the-setup-script-capability-limit.md`, **id preserved**, reported back at **16,155 B** — the exact pre-edit size |
+| Recreate | uploaded **from disk**, new id `1JrirbnvLYCmLDDrynsBdUMI8s9kChXwY`, **16,155 → 17,146 B** |
+| Verify | `download_file_content` → decode → `diff`: **byte-identical**, and the native connector did the checking |
+
+*The half of v32 that still applies here: the recreate uploaded the working copy rather than retyping it, so
+limit 1 costs an id and an archive entry — it no longer costs a hand re-emission.* **Second charter publish
+of the day to take the fallback, and the third file overall.**
+
+**A gap closed on the way past.** The Drive-ids table in `kb-registers.md` had **no `CLAUDE-Rules.md` row at
+all** — this morning's Gmail-ruling publish minted `1wWq_...` and never recorded it, so the id has now been
+archived without ever having been written down. *Both ids are in the table now, the superseded one named as
+superseded.* The same table's change-log row still read **15,364 B** after two later in-place updates had
+taken that file to **21,025**; corrected. *A table of current ids is only useful if its sizes are current
+too, and in-place updates change a size without changing the id that would otherwise prompt an edit.*

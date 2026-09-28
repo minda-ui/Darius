@@ -82,6 +82,16 @@ connector has no delete-sheet tool); the 2026-09-15 duplicate cleanup was done t
 sheet. *Owner-level access on the sheet does not help; the capability is missing, not the
 permission.* Rebuilding the sheet under a new name is **not** the workaround — a new sheet ID breaks
 every citation of the old one and loses the cell history.
+**The environment's setup script is the third one of these** — recorded 2026-09-28, on the owner's
+instruction, after the Composio CLI install line was needed in it. The script runs at **session start** and
+is edited in the **cloud UI** — the environment menu in the session title bar, then *Edit*, under *Setup
+script* (location confirmed against the product documentation, not assumed). No connector, no CLI and no
+file in the working tree reaches it, and the container's own copy of what the script already installed is
+not the script. So the line was drafted here,
+guarded and version-pinned, and **the owner pasted it in.** *Same shape as the two above — the capability is
+missing, not the permission — with one edge the sheet cases do not have: the change takes effect only on a
+**fresh** session, so it cannot be verified in the session that asked for it.* The two checks that settle it
+are named in `Outputs/change-log-2026-09-28-charter-v32-in-place-update-adopted.md` §9.
 **6a-i — cross-KB amendments go through `Raw/`, never a direct edit** (owner's ruling, 2026-09-20; Hub
 `HL-0023` / `AWT-0036`). **Outbound:** where an estate-wide rule, policy or amendment needs to land in
 another employee's governed file — a `CHARTER.md`, a `CLAUDE.md`, any standing control file — this KB
