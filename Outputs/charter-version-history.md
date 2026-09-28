@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v30 (2026-09-23)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v31 (2026-09-23)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -19,6 +19,58 @@ flag that then sat unactioned for two days, and v29's note joined it. Both were 
 when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29 from the live charter)
 rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
 already fallen out.*
+
+---
+
+**Changed in v31 — the charter is four files, split by how often each part changes.**
+
+**Adopted from Alex's proposal** (`AWT-0082`, owner's instruction 2026-09-23), **with different cut
+lines, measured rather than assumed.** The proposal's core/rules/history shape assumes a governed file
+is mostly rules plus a dated log. **This one was not**: §7 (workshop snapshot) was **34,789 B** and §3
+(lessons) **23,651 B** — **67% of the file between them, and neither is a rule.** A mechanical
+three-way split would have left ~58 KB in "core" and saved little.
+
+| File | Holds | Changes when |
+|---|---|---|
+| `CLAUDE.md` | §0a, §0, §1, §2, §4, §5 | the KB's shape changes — rarely |
+| `CLAUDE-Rules.md` | §0b Hub rules A–D, §6 governance | a rule changes |
+| `CLAUDE-Lessons.md` | §3 | a lesson is learned — append-only |
+| `CLAUDE-Workshop.md` | §7 | any machine, task or open question moves — most sessions |
+| `Outputs/charter-version-history.md` | superseded `Changed in vNN` notes | every version |
+
+**What it buys.** Drive has no patch API, so every change re-emits a whole file by hand. Against
+86,856 B: a rule change now touches **~8× less**, a new lesson **~3.7×**, a workshop finding **~2.5×**,
+a structure change **~4.9×**.
+
+**The split moved no text.** It was done by script from the v30 file, with every section's sha256
+compared before and after, and the monolith archived intact. *This KB has twice shipped a file that
+passed a byte count and was still wrong (§3) — a size check cannot see a section that moved, so the
+check here was per-section hashes, not totals.*
+
+**What it does not solve, said plainly.** `CLAUDE-Workshop.md` is still the largest piece and still the
+one that changes most, because **§7 is largely a summary of things that live elsewhere** — the Machinery
+Register, the Tasks sheet, the Wiki articles. §3's own *put a fact where its own update cycle lives* and
+the v21 lesson about summaries of summaries both point at it. **Whether §7 should shrink is an owner
+decision and a separate measurement**, not something to fold into a reorganisation.
+
+**Amended the same session, and not bumped to v32 — the registers were split too.** Closing the charter
+split exposed the next file along: `Outputs/kb-registers.md` at **73,220 B** had become the most
+expensive file in the KB, larger than any charter file, and `change-log-index.md` was **46,462**. Both
+are now **period-split** on the owner's instruction (*"split by period"*): a live file holding what
+still moves, and dated `-snapshot-<date>.md` files holding what is settled. **Splitting them by table would
+not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
+and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
+settled rows, and the live file lands just under 20 KB.*
+
+**Why this is v31 amended rather than v32.** It is the same session, the same instruction and the same
+diagnosis — and a version bump would move this note to the history file and re-emit 41 KB to record a
+continuation of what the note already describes. **Recorded here so the choice is visible** rather than
+inferred from a version number that did not change.
+
+**Two owner rulings carried in with it, 2026-09-23.** The split above, and — separately — that the
+**Workshop Machinery Register is an asset register, not a financial document**, so the estate-law note's
+never-git rule does not reach it and it stays in the git mirror. That second one is in §6b of
+`CLAUDE-Rules.md`, where the access decisions live.
 
 ---
 

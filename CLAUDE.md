@@ -1,59 +1,30 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 31 — 2026-09-23.** Structure and conventions modelled on the Fishbone Commercial
+**Version 32 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. **This file is one of four that together form Darius's
 charter** (see §0a and the map below). README.md is a pointer; these files win on conflict.
 
-**Changed in v31 — the charter is four files, split by how often each part changes.**
+**Changed in v32 — Drive content can be updated in place, so "by hand" is no longer the only way.**
 
-**Adopted from Alex's proposal** (`AWT-0082`, owner's instruction 2026-09-23), **with different cut
-lines, measured rather than assumed.** The proposal's core/rules/history shape assumes a governed file
-is mostly rules plus a dated log. **This one was not**: §7 (workshop snapshot) was **34,789 B** and §3
-(lessons) **23,651 B** — **67% of the file between them, and neither is a rule.** A mechanical
-three-way split would have left ~58 KB in "core" and saved little.
+**Adopted on the owner's instruction, 2026-09-28**, from `Outputs/2026-09-27-proposal-drive-in-place-update.md`
+(measured under `AWT-0136`): *adopt with the limits clause.* §1 and §4 both change.
 
-| File | Holds | Changes when |
-|---|---|---|
-| `CLAUDE.md` | §0a, §0, §1, §2, §4, §5 | the KB's shape changes — rarely |
-| `CLAUDE-Rules.md` | §0b Hub rules A–D, §6 governance | a rule changes |
-| `CLAUDE-Lessons.md` | §3 | a lesson is learned — append-only |
-| `CLAUDE-Workshop.md` | §7 | any machine, task or open question moves — most sessions |
-| `Outputs/charter-version-history.md` | superseded `Changed in vNN` notes | every version |
+**What was measured, not argued.** `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` takes a `fileId` and a **local file**
+and replaces the content **in place, keeping the id** — proved at **392 B** and at **37,297 B** on
+`CLAUDE-Workshop.md` itself: id unchanged, `createdTime` preserved, **revision count 1 → 2** as the proof a
+write happened, byte-identical on download-decode-diff, 5.7 s, uploaded straight from the working tree.
+**What it removes is an error class, not a keystroke** — the one-byte shortfall of 2026-09-27 and the
+four-byte one of v12 both came from re-emitting text by hand.
 
-**What it buys.** Drive has no patch API, so every change re-emits a whole file by hand. Against
-86,856 B: a rule change now touches **~8× less**, a new lesson **~3.7×**, a workshop finding **~2.5×**,
-a structure change **~4.9×**.
-
-**The split moved no text.** It was done by script from the v30 file, with every section's sha256
-compared before and after, and the monolith archived intact. *This KB has twice shipped a file that
-passed a byte count and was still wrong (§3) — a size check cannot see a section that moved, so the
-check here was per-section hashes, not totals.*
-
-**What it does not solve, said plainly.** `CLAUDE-Workshop.md` is still the largest piece and still the
-one that changes most, because **§7 is largely a summary of things that live elsewhere** — the Machinery
-Register, the Tasks sheet, the Wiki articles. §3's own *put a fact where its own update cycle lives* and
-the v21 lesson about summaries of summaries both point at it. **Whether §7 should shrink is an owner
-decision and a separate measurement**, not something to fold into a reorganisation.
-
-**Amended the same session, and not bumped to v32 — the registers were split too.** Closing the charter
-split exposed the next file along: `Outputs/kb-registers.md` at **73,220 B** had become the most
-expensive file in the KB, larger than any charter file, and `change-log-index.md` was **46,462**. Both
-are now **period-split** on the owner's instruction (*"split by period"*): a live file holding what
-still moves, and dated `-snapshot-<date>.md` files holding what is settled. **Splitting them by table would
-not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
-and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
-settled rows, and the live file lands just under 20 KB.*
-
-**Why this is v31 amended rather than v32.** It is the same session, the same instruction and the same
-diagnosis — and a version bump would move this note to the history file and re-emit 41 KB to record a
-continuation of what the note already describes. **Recorded here so the choice is visible** rather than
-inferred from a version number that did not change.
-
-**Two owner rulings carried in with it, 2026-09-23.** The split above, and — separately — that the
-**Workshop Machinery Register is an asset register, not a financial document**, so the estate-law note's
-never-git rule does not reach it and it stays in the git mirror. That second one is in §6b of
-`CLAUDE-Rules.md`, where the access decisions live.
+**And the limit that came with it, found the same day.** `keepForever` is **`false` by default** on Drive
+revisions, the superseded one included, so **Drive may purge the previous bytes**. *An id that stays stable
+and an old version that survives are two independent properties, and the proposal's first draft let one
+stand in for the other.* So archive-then-recreate is **demoted, not deleted**, and stays mandatory for the
+cases §4 now names. **The first real use of the new default was this file — and the clause bit immediately:
+a charter version bump is exactly a case where the superseded copy must be findable by name, so v31 was
+archived by rename and v32 recreated.** *Recorded because a rule whose own adoption is an exception to it
+is worth seeing stated.*
 
 ## Where the rest of the charter is
 
@@ -142,6 +113,12 @@ immediate fix, which is entirely inside TpaCAD's own outfit (§7).*
 
 **Where it lives.** Google Drive, folder `Workshop of Furniture Making - Knowledge Base`, primary
 copy (`1ykYJERaptUNH0FDvkOVU26jh_x_hRtLz`). **Drive is the source of truth.**
+
+**How a file on Drive is changed** (v32). Drive has **no partial-patch API**, so a change replaces a
+file's whole content — **but it does not have to be retyped.** Content already on disk can be uploaded
+**in place, keeping the file's id**, which is the default from v32; §4 carries the method and the cases
+that still require archive-then-recreate. *Drive retains the previous bytes as a revision, but
+`keepForever` is `false` by default, so that retention is **not** durable — a revision is not an archive.*
 
 **The git mirror `minda-ui/Darius` is complete as of 2026-09-19.** It holds this charter, `README.md`,
 `Wiki/index.md`, everything in `Outputs/`, and **every Wiki article** — the ones that predated the
@@ -303,6 +280,32 @@ the live file again when it passes roughly 25 KB.**
 itself as a file §0 sends you to. **It does not**; the filename and the live file's own pointer table are
 authoritative, and the registers snapshot also repeats **eight** of the nine open Processed items with
 their 2026-09-21 status, which the live file supersedes — the ninth was opened after the snapshot. *Recorded rather than left to be discovered.*
+
+**How a change reaches Drive** (v32, owner's instruction 2026-09-28; proposal
+`Outputs/2026-09-27-proposal-drive-in-place-update.md`).
+
+**Default — update in place, from disk.** Write the file locally, then upload it to its existing `fileId`.
+The id does not change, so citations do not go stale, and **the bytes are never retyped**, which is where
+this KB's byte discrepancies have actually come from (§3).
+
+**Every write is still proved the same way:** `download_file_content` → decode → `diff` against the local
+file. **The verifier stays the native connector** — both halves of a byte-check must not depend on the same
+tool. Where the content is meant to be *identical*, a byte-check alone cannot tell a write from a no-op, so
+check the **revision count** as well.
+
+**Fallback — archive-then-recreate** (rename the superseded Drive copy into `Archive/` with a reason and
+date, then create a new file, then verify). **Still mandatory for:**
+
+1. **Anything whose superseded copy must be findable by name** — the charter files and their version bumps,
+   the `-snapshot-<date>.md` files, a superseded Wiki article that other work cites.
+2. **Anything whose superseded bytes must survive.** `keepForever` is **`false` by default** on Drive
+   revisions, so Drive may purge them. Setting it is a separate PATCH per revision and is not done here.
+3. **Anything outside what has been proven:** above **37 KB**, across the ~82 KB boundary where
+   `read_file_content` returns empty, and on binary files, Google-native types and files this account does
+   not own. *Written in as a limit rather than discovered later; extend it by measuring, not by assuming.*
+
+*The in-place path runs through a third-party service and a CLI in an ephemeral container. If either is
+unavailable the fallback is the whole rule, which is why it stays documented rather than deleted.*
 
 ## 5. Automated processes
 
