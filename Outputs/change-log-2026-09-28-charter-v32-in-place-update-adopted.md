@@ -8,7 +8,8 @@ yesterday; today was carrying it out and recording it.*
 moved. §3 the clause that bit on its own first use. §4 the check that ran before anything was archived.
 §5 three files snapshotted under their own rules. §6 a contradiction put to the owner, not resolved here.
 §7 `AWT-0136` closed out, and the first real use of the new default. §8 a measurement that sharpens
-limit 2, and one imprecise sentence flagged. §9 what is still open.
+limit 2, and one imprecise sentence flagged. §9 what is still open. §10 a live workshop question and an
+egress change. §11 the Cabineo price, and a mistake of mine.
 
 ---
 
@@ -225,3 +226,50 @@ and it was not guessed.*
 **Nothing was inferred from the photograph.** It shows hole clusters on the top and bottom edges; whether
 those are the existing Ø5 pattern was put back to the owner rather than assumed, because adding a second
 fixing system over an existing one is exactly the kind of error that discipline exists to prevent.
+
+## 11. The Cabineo price — the article's own instruction, carried out, and a mistake of mine
+
+**The fixings question of §10 turned into the most valuable number of the day.** The owner confirmed
+Cabineo and then sent two supplier listings.
+
+| | At 2,000 | Per each | This KB carried |
+|---|---|---|---|
+| Housing (SKU 186361) | £379.03 ex VAT | **£0.1895** | £0.77 |
+| Screw, Cabineo 12 (SKU 186381) | £195.13 ex VAT | **£0.0976** | £0.10 |
+| **Per joint** | | **£0.2871** | £0.87 |
+
+**`carcase-fixings-cabineo-x-vs-confirmat.md` has said since 2026-09-18** that *"£0.77 for the housing is
+the number I least trust… Challenge it at 2,000."* **It was challenged, and it was £0.19.** Per unit
+£6.96 → **£2.30**; per 12-unit kitchen £83.52 → **£27.56**; the premium over confirmat **+£80.67 →
++£24.71**. *The article also guessed the direction of the fix — "getting it nearer £0.30 is money for one
+phone call" — and understated it.*
+
+**The half I trusted held; the half I flagged did not.** The £0.10 screw was an estimate I called the
+weaker figure once the housing came down, and a real volume price put it at £0.0976. *Worth recording
+because the instinct that produced the "£0.77 is untrustworthy" note was doing real work, and the same
+instinct about the screw was simply wrong in the safe direction.*
+
+**And it answered "which screw".** Only the Cabineo 12 is sold in a 2,000 box, and `03-BOTTOM.TCN` drills
+**Ø5 × 12 mm** in 19 mm board. *Stated at the strength the article already used for the pocket/body match:
+strong circumstantial agreement, not a part number off a drawing — and it does not replace the order
+paperwork.*
+
+### The mistake, and why it is the same one as always
+
+**I told the owner the Cabineo decision was still open. It was not.** The article records it settled on
+**2026-09-19** — *"Cabineo X was chosen, we ordered them"* — under a heading called `## Decided:
+Cabineo X`. I had run a `grep` for "joint", read the two sections the hits pointed at, and reported on
+the article as a whole.
+
+***That is the v25 lesson wearing new clothes for the fourth time this week***: on 2026-09-27 it was
+`git log` without `--follow`, then `find_in_sheet`'s 100-row window, then a `head -40` of a JSON listing.
+**Here the truncating tool was my own choice of what to read.** A limitation is a property of the call you
+made — *including when the call is "read the parts that matched".*
+
+**Corrected in three places**: to the owner immediately, in the article's own new section, and in the
+registers row. *The decision has stood for nine days and nothing was done on the wrong basis; the cost was
+a sentence, not an action. It is recorded because the next one might not be.*
+
+**What was held back, all of it the owner's** (§6a): the supplier is **not named** (page header cut off in
+the photograph), the 2,000 price is **to be confirmed at checkout**, and **nothing was ordered and no
+supplier contacted**. £574.16 ex VAT for both boxes is ≈250 carcases, ≈21 kitchens — a stocking decision.

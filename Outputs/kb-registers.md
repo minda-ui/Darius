@@ -70,8 +70,12 @@ Status legend: `pending` = registered, not started · `partial` = started, work 
 
 **Everything since the 2026-09-28 snapshot.** Earlier rows are in the snapshots above.
 
-*No Wiki article was created, moved or retired on 2026-09-28. The charter is not a Wiki article; the v32
-amendment is in the Outputs rows below.*
+*No Wiki article was **created, moved or retired** on 2026-09-28 — but one was substantially amended; see
+the row below. The charter is not a Wiki article; the v32 amendment is in the Outputs rows.*
+
+| Date | Change | Reason |
+|---|---|---|
+| 2026-09-28 | **`Processes/carcase-fixings-cabineo-x-vs-confirmat.md` amended** (23,245 -> **27,739 B**), **in place** under §4's new default — it is not a version bump, not a snapshot, under 37 KB, and the article is **extended, not superseded**, so limit 1 does not reach it. Adds the 2026-09-28 section: the owner's re-confirmation of Cabineo, **the volume prices**, and the Cabineo 12 finding. Supersedes three figures in place and **keeps them struck rather than deleted**, per this KB's practice | **The article's own instruction was carried out.** It said, twice, *"£0.77 for the housing is the number I least trust… Challenge it at 2,000"* — the owner did, and it was **£0.19** |
 
 ## Outputs produced
 
@@ -81,6 +85,7 @@ amendment is in the Outputs rows below.*
 |---|---|---|---|
 | **`CLAUDE.md` amended to v32 — in-place Drive update adopted as the default, with the limits clause** (22,734 -> **23,171 B**). §1 gains **"How a file on Drive is changed"**: Drive still has no partial-patch API, *but the replacement bytes no longer have to be retyped*. §4 gains **"How a change reaches Drive"** — the in-place default, the **unchanged** verification rule (`download_file_content` -> decode -> `diff`, **the verifier stays the native connector** so both halves of a byte-check do not depend on one tool, and **the revision count** where content is meant to be identical), and archive-then-recreate **demoted to a fallback but still mandatory** for three named cases: a superseded copy that must be **findable by name**, superseded bytes that **must survive** (`keepForever` is `false` by default), and **anything outside what has been proven** — above 37 KB, across the ~82 KB `read_file_content` cliff, binary, Google-native, or not owned by this account. **The clause bit on its own first use**: a charter version bump is exactly case 1, so **v31 was archived by rename and v32 recreated** — the new default's own adoption took the fallback. *The proposal's recommendation was "adopt with the limits clause" and the limits are the part that earned its keep; the gain was never durability, it was removing the hand-retyping error class that produced this KB's one-byte and four-byte shortfalls.* | 2026-09-28 | no article; §1 and §4 of `CLAUDE.md` | Owner (Minda): *"The in-place-update proposal ... recommendation is adopt with the limits clause. Go ahead"* |
 | **`Outputs/charter-version-history.md`** (41,311 -> **44,930 B**) - the v31 note (3,619 B incl. its separator) moved in **verbatim**, and the coverage line advanced to *"v8 (2026-09-16) to v31 (2026-09-23)"*. **Took the fallback too, on case 3**: at 44,930 B it is above the 37 KB in-place update has actually been proven at, and *the limits clause is worth nothing if the session that wrote it reaches past it on the same day.* | 2026-09-28 | no article; the charter's version history | Follows the v32 bump (§4's own rule) |
+| **`Wiki/Processes/carcase-fixings-cabineo-x-vs-confirmat.md` — the challenged price came back at a quarter** (23,245 -> **27,739 B**). **Housing: £379.03 ex VAT per 2,000 = £0.1895** (SKU 186361). **Screw: £195.13 per 2,000 = £0.0976** (SKU 186381, **Cabineo 12**). **Per joint £0.2871**, against the £0.87 this KB carried since 2026-09-18 — so **£2.30 a unit and £27.56 a kitchen, not £6.96 and £83.52**, and the premium over confirmat falls from **+£80.67 to +£24.71 a kitchen**. *Both halves of the joint are now measured at volume; the £0.10 screw estimate I had flagged as the weak one survived contact with a real price, and the £0.77 housing — the one flagged as untrustworthy — did not.* **Also settled: which screw.** Only the Cabineo 12 comes in a 2,000 box, and `03-BOTTOM.TCN` drills **Ø5 × 12 mm** in 19 mm board — a 12 mm hole for a 12 mm screw, *stated at the same strength the article already used for the pocket/body match.* **Three things held back**: the supplier is **not named** (page header cut off in the photograph); the 2,000 price is **to be confirmed at checkout**; and **nothing was ordered and no supplier contacted** (§6a) — £574.16 ex VAT for both boxes is a stocking decision and the owner's. ***And one correction of mine, recorded in the article itself***: I told the owner the Cabineo decision was still open. **It was not** — it was settled on **2026-09-19** (*"Cabineo X was chosen, we ordered them"*). I had grepped the file and read two of its sections without reading its `## Decided` section, which is §3's sampling lesson in a new costume. *The decision has stood for nine days; today re-confirmed it* | 2026-09-28 | carcase-fixings-cabineo-x-vs-confirmat | Owner (Minda): *"I need to add fixings to top and bottom panel. How to do that?"*, then *"Yes, Cabineo is chosen for fixing"*, then two price screenshots |
 | **`Outputs/kb-registers.md` snapshotted at 29,143 B** to `Outputs/kb-registers-snapshot-2026-09-28.md`, and this live file rebuilt from it by script. **The previous header ordered this** in as many words and the order was carried out before any row was added. *Third time by the same method: rename the Drive copy, rebuild live from the bytes, retype nothing.* | 2026-09-28 | no article; §4 of `CLAUDE.md` | This file's own ~25 KB rule |
 
 ### Drive ids after the 2026-09-28 publishes
@@ -95,11 +100,19 @@ the same path.*
 | `CLAUDE.md` | **23,171** | `1ASSqd9_JWdt5eoCBY02eevVsZbrbLpDg` — v32; *supersedes `1rhOR_BnN1V3JTLmC8FI3n8ykwgC5vWw8`, now `Archive/ARCHIVED-2026-09-28-CLAUDE-v31-superseded-by-v32-drive-in-place-update.md`* |
 | `Outputs/charter-version-history.md` | **44,930** | `15H9mZLcdSjsT6h1MRlSuN_GBg1fO0GGK` — *supersedes `1iKqygJJHEGN0vKsYp53PyBKgepIqjilb`, now `Archive/ARCHIVED-2026-09-28-charter-version-history-before-the-v31-note-was-moved-in.md`* |
 | `Outputs/kb-registers-snapshot-2026-09-28.md` | 29,143 | `1veAsc6qbfQu-XDVsUe1UJ9UhcOEmpTmY` — **id unchanged**, renamed not rewritten; this is the id `kb-registers.md` carried while live |
+| `Outputs/change-log-2026-09-28-charter-v32-in-place-update-adopted.md` | **15,364** | `1b-ow3z3DvlCi_AP8D4EERCZQZmDguosc` — **id unchanged across three in-place updates**, 10,113 -> 11,583 -> 15,364 |
+| `Outputs/change-log-index.md` | **10,195** | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` — **id unchanged across two in-place updates**, 8,979 -> 10,171 -> 10,195 |
+| `Outputs/change-log-index-snapshot-2026-09-28.md` | 25,043 | `1kLqcPy__KAAUDer7glTRWShJwOwXNWdc` — **id unchanged**, renamed not rewritten; this is the id `change-log-index.md` carried while live |
 
 *Both Drive copies were verified byte-identical to git `HEAD` **before** being archived, not after — the
 2026-09-27 session found a charter file that a merge had silently reverted in git, and an archive of the
 wrong bytes is worse than no archive. Both matched.*
 
-*Two files are deliberately absent, for the same reason as last time: **this one** and
-`Outputs/change-log-index.md`. Both are re-emitted after this table is written, so each would have to
-contain an id minted by its own publish. `CLAUDE.md` §0 finds both by name, not by id.*
+***The two change-log rows above could not have been written before v32.*** Every previous session's table ends
+with a note that the change log and this index are *"deliberately absent, because each would have to
+contain an id minted by its own publish"* — true when a content change minted a new id every time. **Under
+the in-place default the id is fixed from the file's first publish**, so it can be recorded here and stays
+correct however many times the file is revised afterwards. *The three sizes on one id are the evidence,
+and they are also this session's only measurements of the new default.*
+
+*Only **this file** is still absent, and now for a different reason: it is the one being written.*

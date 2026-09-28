@@ -236,7 +236,7 @@ formality — it is the single biggest lever in the comparison.
 |---|---|---|
 | **Confirmat 7 × 50** | **£0.0297 each** inc VAT | £29.69 per 1,000, Furnica UK |
 | **Cabineo X housing** | **£0.77 each** | one UK listing (T&D Architectural); pack sizes are 500 and 2,000 |
-| **Cabineo X 12 screw** | **£0.10 each** | £49.98 per 500, Axminster (listed as reduced from £59.98 → £0.12) |
+| **Cabineo X 12 screw** | **£0.10 each** | £49.98 per 500, Axminster (listed as reduced from £59.98 → £0.12). ***Confirmed at volume 2026-09-28: £0.0976*** (£195.13 per 2,000 ex VAT, SKU 186381) |
 | **Cabineo X, per joint** | **≈ £0.87** | housing **plus** screw — the X housing ships **without** a screw |
 
 **Cabineo X is an open housing.** Unlike the original Cabineo, the screw is not integral: you snap the
@@ -244,9 +244,66 @@ housing in and fit whichever Cabineo screw (8 / 12) or shelf pin the application
 genuine flexibility advantage — one housing serves carcase joints *and* shelf supports — but it means
 **two line items, not one**, and any quote must cover both.
 
-**£0.77 for the housing is the number I least trust.** It reads like a single-unit retail price, and
+## 2026-09-28 — the price this article told you to challenge was four times too high
+
+**Not a new decision.** Cabineo X was decided on **2026-09-19** and is recorded above; the owner
+re-confirmed it on 2026-09-28 (*"Yes, Cabineo is chosen for fixing"*) in the course of a live question
+about placing the joints. *Recorded because I briefly told the owner the decision was still open — I had
+grepped this file and read two of its sections rather than its "Decided" section, which is §3's sampling
+lesson in a new place. The decision has stood since the 19th.*
+
+**What is new is the number.** This article says, twice, *"£0.77 for the housing is the number I least
+trust… Challenge it at 2,000."* The owner did. A trade listing for **Lamello Cabineo X, SKU 186361**,
+prices a **Box of 2000 at £379.03 ex VAT** — **£0.19 per housing**, against the £0.77 carried here.
+**Four times too high, and the direction of the suspicion was right.**
+
+| At 8 carcase fixings | Per joint | Per unit | Per 12-unit kitchen |
+|---|---|---|---|
+| Cabineo X — the figure this article carried | £0.87 | £6.96 | £83.52 |
+| **Cabineo X — both at 2,000, measured** | **£0.2871** | **£2.30** | **£27.56** |
+| Confirmat | £0.03 | £0.24 | £2.85 |
+| **Premium over confirmat** | | **+£2.06** | **+£24.71** *(was +£80.67)* |
+
+**So the settled cost of the decision falls from ~£81 a kitchen to ~£25.** The article's own line —
+*"getting it nearer £0.30 is money for one phone call"* — turned out to understate it.
+
+**Three limits on that £0.29, stated rather than buried.**
+
+1. ~~**The screw is not re-priced**~~ — **it was, minutes later, and it confirmed the carried figure.**
+   **Lamello Cabineo X Screws, SKU 186381, Cabineo 12, Box of 2000 at £195.13 ex VAT = £0.0976 each**,
+   against the £0.10 this article already carried. *So the estimate I flagged as the weak half survived
+   contact with a real volume price, and the £0.29 joint now has **both** halves measured rather than one
+   carried.* **Per joint £0.1895 + £0.0976 = £0.2871.**
+2. **£379.03 is a stocking commitment, not a unit price** — 2,000 housings ≈ 250 carcases ≈ 21 kitchens.
+   Whether to hold that much stock is a separate decision from which fixing to use, and both are the
+   owner's. **Nothing was ordered and no supplier was contacted from this KB** (§6a).
+3. **Read from a photograph of a browser, ex VAT, page header cut off.** SKU, price and box size are
+   legible and recorded; **the supplier is not named here because it could not be read**, and the
+   2,000-box price should be confirmed at checkout rather than from the listing panel.
+
+### And the screw listing answers "which screw", on the master's own evidence
+
+**Only the Cabineo 12 is offered in a 2,000 box.** The page's options are **Cabineo 12** (500 / 2000),
+**Cabineo 8** (500) and **Cabineo 8 M6** (500) — so the volume price above is specifically the 12, and the
+8 and M6 are 500-pack items whose prices are not known.
+
+**The master says 12 is the right one.** `03-BOTTOM.TCN` drills its mating holes **Ø5 × 12 mm** in 19 mm
+board, and the Cabineo **12** screw is the 12 mm length (the page states the two lengths are 12 mm and
+8 mm, plus an M6 version). **A 12 mm hole for a 12 mm screw.**
+
+*Stated at the same strength this article already used for the pocket: the hole depth and the screw
+designation agree, which is strong circumstantial support, not a part number read off a drawing. It does
+not close the open question below about **what was actually ordered on 2026-09-19** — a price listing is
+not order paperwork — but it means the expected answer is now specific enough to check in one line.*
+
+**Total outlay if both 2,000 boxes are taken: £574.16 ex VAT** — 2,000 joints, ≈250 carcases, ≈21
+kitchens. *A stocking decision, and the owner's.*
+
+~~**£0.77 for the housing is the number I least trust.** It reads like a single-unit retail price, and
 the original all-in-one Cabineo 12 sells for less than that in 500 packs — which would be odd if the
-housing alone really cost £0.77 in volume. **Challenge it at 2,000.**
+housing alone really cost £0.77 in volume. **Challenge it at 2,000.**~~
+**Challenged 2026-09-28, and it was £0.19 at 2,000** — see the section above. *Kept struck rather than
+deleted: the reasoning was right and is worth leaving visible.*
 
 ### What it costs per unit and per kitchen
 
@@ -261,8 +318,9 @@ pins and cost pennies either way.*
 | Cabineo X | **£6.96** | **£83.52** |
 | **Difference** | **+£6.72** | **+£80.67** |
 
-Halve the housing price on a trade quote and the kitchen difference is still around **£40**. On a
-low-cost range that is real money, and it recurs on every kitchen.
+~~Halve the housing price on a trade quote and the kitchen difference is still around **£40**.~~
+**The real 2,000-price was a quarter, not a half: the kitchen difference is ~£25** (see above). Still
+real money on a low-cost range, and it still recurs on every kitchen — but a third of what this table says.
 
 **Shelf supports would widen the gap further.** The master has two shelves; if Cabineo X housings were
 used as shelf supports too, that is another 8 housings a unit against shelf pins costing pennies. If
@@ -353,7 +411,10 @@ saw operator actually works from (see Open questions).
   from the side's inside face near the joint. Untested, and only matters if Plan B is used in anger.
 - **What are the Ø10 × 13 holes** on the side panel — three at 32 mm pitch, 11 mm in from the back edge?
   Not identified. Possibly back-panel or cam fixings.
-- **The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.
+- ~~**The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.~~
+  **Answered 2026-09-28: £379.03 ex VAT per 2,000 = £0.19 each** (SKU 186361), and the screw too —
+  **£195.13 per 2,000 = £0.0976 each** (SKU 186381, Cabineo 12). Both halves of the joint are now
+  measured at volume: **£0.2871**.
 - **How many fixings does a whole unit actually take?** The eight carcase fixings are counted, from the
   side panel and confirmed against the bottom. **Back fixings are not identified** — the back is 19 mm
   and housed inside all four panels, and nothing decoded so far shows what holds it. Shelf pins are
