@@ -7,7 +7,8 @@ yesterday; today was carrying it out and recording it.*
 **Reader's map.** §1 the owner's instruction and what it changed. §2 the two sections of `CLAUDE.md` that
 moved. §3 the clause that bit on its own first use. §4 the check that ran before anything was archived.
 §5 three files snapshotted under their own rules. §6 a contradiction put to the owner, not resolved here.
-§7 what is still open.
+§7 `AWT-0136` closed out, and the first real use of the new default. §8 a measurement that sharpens
+limit 2, and one imprecise sentence flagged. §9 what is still open.
 
 ---
 
@@ -78,9 +79,8 @@ past it the same day.*
 this file — and the clause bit immediately."* A rule whose own adoption is an exception to it is worth
 seeing stated rather than inferred.
 
-*What the day therefore did **not** produce: a single measurement of the new default in anger. The 392 B
-and 37,297 B runs from 2026-09-27 remain the only evidence, and the 37 KB ceiling in §4 is where it
-honestly sits.*
+*What the charter amendment itself therefore did **not** produce: a measurement of the new default in
+anger. **The first one came later the same session, and it is this file** — see §8.*
 
 ## 4. The check that ran before anything was archived
 
@@ -135,10 +135,61 @@ contradiction and asks; it never guesses one into the other.* **The charter is n
 the environment, and the environment is not being used against the charter.** It is the owner's ruling to
 make.
 
-## 7. Still open
+## 7. `AWT-0136` closed out — and the new default's first real use
 
-- **`AWT-0136`** to be updated with the adoption — the row that carried the measurements now needs the
-  outcome.
+The row that carried yesterday's measurements ended: *"STILL FOR THE OWNER ... rule on the
+in-place-update proposal."* That is now discharged, so the row had to say so.
+
+**It was recorded as a row comment, not by rewriting the Response**, and the reason is the amendment's own
+subject. That cell is near Smartsheet's silent 4,000-character limit; reproducing it to append a paragraph
+would mean **retyping 4,000 characters by hand** — exactly the error class v32 exists to remove. *And I
+overwrote a long cell that way on 2026-09-27, dropping the five criteria out of T016's live notes for about
+a minute.* A comment is append-only and cannot damage the cell. The posted text was verified against what
+came back: untruncated.
+
+**Then this file and the index were republished in place** — `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` against each
+existing `fileId`, ids unchanged, verified by `download_file_content` → decode → `diff`. **Both qualify
+under §4's default**: neither is a version bump, neither is a snapshot, both are well under 37 KB, both are
+ordinary text this account owns.
+
+*So the rule's first real use was not the charter that carried it, but the correction of a sentence in this
+very change log — which is the right shape for it. A cheap in-place write is what makes fixing a stale line
+worth doing at all; under archive-then-recreate, "I will carry it at the next touch" was often the honest
+answer, and this KB has the deferred-figure notes to prove it.*
+
+## 8. A measurement that sharpens limit 2 — and one imprecise sentence, flagged not amended
+
+**Found by a mistyped parameter.** `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` was called with `file_id`; the schema
+error listed the keys it does accept, and among them was **`keepRevisionForever`**. §4's limit 2, written
+hours earlier, says `keepForever` is false by default *"and setting it is a separate PATCH per revision"* —
+so this looked like a sentence I had got wrong.
+
+**Measured rather than assumed**, on a scratch file in `Raw/`, created and then updated in place with
+`keepRevisionForever: true`:
+
+| Revision | Size | `keepForever` |
+|---|---|---|
+| 1 — the superseded bytes | 47 B | **`false`** |
+| 2 — the bytes just written | 65 B | **`true`** |
+
+**The flag pins the revision being created, not the one being replaced.** So it does **not** protect the
+bytes an in-place update is about to supersede: to keep those, the flag would have had to be set on the
+*earlier* write, before anyone knew it would matter — or PATCHed onto that revision afterwards.
+
+***Limit 2 therefore stands, and for a sharper reason than the one I wrote.*** The charter says setting
+`keepForever` is a separate PATCH per revision; strictly it can also be set at upload time, **but only
+forward-looking, which is no use to the case limit 2 exists for.** The sentence is imprecise rather than
+false, and the rule it supports is unaffected.
+
+**Flagged, not amended.** §3 makes charter wording the owner's, and a charter edit is itself a limit-1
+case; a sharper §4 limit 2 is worth having but is not mine to write. *The probe was trashed after
+measuring — nothing stays in `Raw/` once it has been filed (§1).*
+
+*And the finding arrived the way several have this week: from an error message, not from a plan. The
+schema told me more than the documentation did, because I made a mistake in front of it.*
+
+## 9. Still open
+
 - **`HL-0060` needs widening.** The Hub gained an **Archive sheet** (`1037721118312324`), named in
   `AWT-0146`'s own Response, which also warns of a both-sheets Task-ID search caveat. Task ID allocation
   must now group-by across **both** sheets; `HL-0060` describes one.
@@ -146,7 +197,31 @@ make.
   push that changes each body), `AWT-0127`, `AWT-0147`.
 - **The Composio CLI install line** for the environment setup script — the owner's, and it needs a fresh
   session to take effect.
+- **§4's limit 2 wording** — the `keepRevisionForever` nuance in §8, for the owner to fold in or decline.
 - **`giunzioni.html`/Cabineo** still left for its own pass (62,404 B).
 - **Two rows on Help & Lessons carry no `Ref`** (61 rows, 59 with one).
 - **No standing check compares the mirror to Drive.** Proposed on 2026-09-27, **not adopted**. Today's
   pre-archive check was manual and covered two files.
+
+## 10. Late in the session — a live workshop question, and an egress change
+
+The owner asked how to add fixings to the top and bottom panels. **`giunzioni.html` is the page that
+covers it, and both fetch routes failed**: `curl` got `CONNECT tunnel failed, response 403` and `WebFetch`
+returned `EGRESS_BLOCKED`. **Yesterday the same host returned HTTP 200 at 62,404 B.** So the block is new
+today and is in this environment's egress policy, not in the site.
+
+*This is the cost of the one decision from 2026-09-27 that was deferred rather than done.* The page was
+mapped and hashed but **its text was never captured** — the provenance table in
+`Wiki/Software/smartcabinet-online-manual.md` records `Text captured? no` against it — and it is now
+unreachable. **The nine pages whose text was captured are still fully readable; the one left for "its own
+pass" is not.** A hash proves a page has not changed; it does not let you read it.
+
+**Answered from the KB's own evidence instead**, which turned out to be the better source: the decoded
+`01-SIDE-LEFT.TCN` / `03-BOTTOM.TCN` files give the joint geometry directly — pocket in the side, **Ø5 ×
+12 mm face hole in the top/bottom at Y = 230 and 40**, eight per box — and `cam.html` gives the location
+of the configuration (**CAM → Configurazione Giunzioni**). *What could not be answered was the click path,
+and it was not guessed.*
+
+**Nothing was inferred from the photograph.** It shows hole clusters on the top and bottom edges; whether
+those are the existing Ø5 pattern was put back to the owner rather than assumed, because adding a second
+fixing system over an existing one is exactly the kind of error that discipline exists to prevent.
