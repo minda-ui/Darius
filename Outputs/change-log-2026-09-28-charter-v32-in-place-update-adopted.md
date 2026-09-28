@@ -1,15 +1,40 @@
-# Change log — 2026-09-28 — the charter reaches v32, and the new rule's first use was an exception to it
+# Change log — 2026-09-28 — the charter goes v31 → v34 in one day, and every limit it set got measured
 
-**Session 23.** One instruction, one amendment, and three files snapshotted because their own headers said
-to. *Short by this KB's standards, and deliberately so: the work was decided yesterday and measured
-yesterday; today was carrying it out and recording it.*
+**Session 23. Seven owner instructions, three charter versions, and the day's own rules bent twice by the
+day's own work.** v32 adopted in-place Drive update; v33 removed the size thresholds and re-measured the one
+real ceiling; v34 merged the snapshots back and re-measured it again. Plus a live workshop question that
+turned into the most valuable number of the week.
 
-**Reader's map.** §1 the owner's instruction and what it changed. §2 the two sections of `CLAUDE.md` that
-moved. §3 the clause that bit on its own first use. §4 the check that ran before anything was archived.
-§5 three files snapshotted under their own rules. §6 a contradiction put to the owner, not resolved here.
-§7 `AWT-0136` closed out, and the first real use of the new default. §8 a measurement that sharpens
-limit 2, and one imprecise sentence flagged. §9 what is still open. §10 a live workshop question and an
-egress change. §11 the Cabineo price, and a mistake of mine.
+***Two things about this file's own framing, corrected rather than left standing.*** Its opening line read
+*"short by this KB's standards, and deliberately so"* — **written when the day looked like one amendment; it
+became the longest session this KB has recorded**, at fourteen sections and 33 KB. *The line is replaced
+rather than struck, because unlike a superseded figure it was never a fact about the workshop — only a
+prediction about the day, and a wrong one.* **And the filename still says `charter-v32`**: it is kept that
+way deliberately, because `CLAUDE-Rules.md` §6a, the registers' Drive-id table and the index all cite it by
+name, and **renaming a live file to flatter its own title is not worth breaking a charter citation for.**
+
+**Reader's map.**
+
+| § | What is in it |
+|---|---|
+| 1–2 | the v32 instruction, and the two sections of `CLAUDE.md` that moved |
+| 3 | the new rule's limits clause biting on its own first use |
+| 4 | the byte-check that ran *before* anything was archived |
+| 5 | three files snapshotted under their own headers' orders |
+| 6 | a Gmail MCP contradiction put to the owner, not resolved here |
+| 7 | `AWT-0136` closed out, and the first real use of the new default |
+| 8 | `keepRevisionForever` measured — it sharpens limit 2 rather than relaxing it |
+| 9 | what is still open |
+| 10 | a live workshop question, and an egress change that cost a page |
+| 11 | the Cabineo price challenged and answered — **and a mistake of mine** |
+| 12 | §6a gains its third capability limit: the setup script |
+| 13 | **v33** — the size thresholds go; three "size" numbers separated; 92 KB measured |
+| 14 | **v34** — the snapshots merged back; 130 KB measured; five files archived |
+
+**The thread running through 12–14:** each of those three came from a short owner instruction, and each
+turned out to contain a distinction worth making — *a capability missing versus a permission withheld*
+(§12), *our policy versus a tooling measurement versus a claim about a tool* (§13), and *merging content
+versus destroying the copies it came from* (§14).
 
 ---
 
@@ -227,10 +252,20 @@ schema told me more than the documentation did, because I made a mistake in fron
   session has the CLI but needs `composio login` before any Drive call. *This session has been continuous
   since the install, so it cannot answer the question.*
 - **§4's limit 2 wording** — the `keepRevisionForever` nuance in §8, for the owner to fold in or decline.
-- **`giunzioni.html`/Cabineo** still left for its own pass (62,404 B).
+  **Still open at the end of the day**, and now the only charter wording left flagged-but-unamended: v33 and
+  v34 both went past it without touching limit 2. *Deliberate — §8's finding sharpens the rule rather than
+  changing what it requires, and charter wording is the owner's.*
+- **`giunzioni.html`/Cabineo** still left for its own pass (62,404 B) — **and now unreachable** (§10).
 - **Two rows on Help & Lessons carry no `Ref`** (61 rows, 59 with one).
-- **No standing check compares the mirror to Drive.** Proposed on 2026-09-27, **not adopted**. Today's
-  pre-archive check was manual and covered two files.
+- **No standing check compares the mirror to Drive.** Proposed on 2026-09-27, **not adopted**. *Today it was
+  exercised by hand **eight times** — twice for v32's archives, once each for v33's and v34's, and five times
+  for the snapshots before they were archived. Every one matched. Eight manual runs in a day is the strongest
+  argument yet for the standing check, and it is still only a proposal.*
+
+**Closed later the same session, after this list was first written:** the Gmail ruling (§6), the Composio
+install line (§12), §6a's third capability limit (§12), the ~25 KB thresholds and the 37 KB and ~82 KB figures
+(§13), and the period split itself (§14). *The struck items above are left struck rather than deleted, which
+is this KB's practice and the reason this section is readable as a record rather than just a to-do list.*
 
 ## 10. Late in the session — a live workshop question, and an egress change
 
@@ -471,3 +506,54 @@ merge landed, and in the one paragraph every session reads first. **Corrected in
 archive** — there is no superseded *version* to make findable, so limit 1 is not engaged. *That is the
 second stale line this session that only surfaced on read-back, after the registers' own update history in
 §12. Publishing and then reading is catching things that writing and then publishing does not.*
+
+## 15. Documenting the day — three Hub lessons written, one §3 lesson proposed not written
+
+**Owner's instruction: *"document today's work."*** Most of it was already written as it happened, in §1–§14
+and in the registers. Three things were genuinely outstanding.
+
+**First, this file's own framing was stale** — see the corrected header: a title that stopped at v32, an
+opening line predicting a short day, and a reader's map that ended at §11 when there were fourteen sections.
+*Fixed in place. The filename still says `charter-v32` and stays that way: `CLAUDE-Rules.md` §6a, the
+registers' Drive-id table and the index all cite it by name, and renaming a live file to flatter its own
+title is not worth breaking a charter citation.*
+
+**Second, §0b Rule B was owed three rows**, and this is the first time today's work has reached the Hub.
+Rule B says a lesson goes on **Help & Lessons** as the shared record, not only into a local log:
+
+| Ref | Lesson | Status |
+|---|---|---|
+| **`HL-0064`** | **A count read off an index or pointer table is not a count of the thing itself** — the five-versus-three snapshots error, recorded alongside the four earlier instances in the same week (`git log` without `--follow`, `find_in_sheet`'s 100-row window, a `head -40` of JSON, and a `grep` whose hits were reported on as the whole article) | Answered |
+| **`HL-0065`** | **When an owner lifts a "limit", sort it into policy / measurement / claim-about-a-tool first** — only the first is theirs to lift; the second must be measured; the third may simply not reproduce. All three happened in one instruction today | Baked into charter |
+| **`HL-0066`** | **Reading a file back after publishing catches stale lines that writing it never does** — twice today, and both were self-describing figures inside files that update in place, where a stable id removes the prompt to revisit them | Answered |
+
+*`HL-0064` and `HL-0065` are written as estate-wide rather than workshop-specific, because neither depends
+on anything about this KB.* **The refs were allocated after checking the sheet, not from memory** — the
+highest existing was **`HL-0063`**, three higher than the `HL-0060` this KB had on record, so other seats
+have been adding. *That is `HL-0064`'s own lesson applying to the act of filing `HL-0064`.*
+
+**And the write was verified from the server rather than from its own response.** `add_rows` returned
+`displayValue: null` on all three `Date raised` cells, which reads like a failed date. It was not: a
+grouped count filtered to Darius's rows returns **three rows dated 2026-09-28**. *The response not
+rendering a value is not the value being absent — and the check that settles it has to come from somewhere
+other than the call being checked, which is the same principle as §4's "the verifier stays the native
+connector".*
+
+**Third, and deliberately not done: the §3 lesson.** `HL-0064`'s finding — the fifth instance of one error
+in a week — plainly belongs in `CLAUDE-Lessons.md` §3 as well. **It is proposed here, not written.** *§3's
+own text records that this is how §3 grows: v18's count fix, v19's order clause, v25's measurement clause
+and v27's dated-negative-finding clause were each **proposed rather than added**, and each waited for the
+owner (*"add that §3 lesson"*). Four precedents, and no reason today is the exception — the more so with
+three charter versions already published since this morning.*
+
+> **Proposed §3 lesson, for the owner to add or decline:** *A count is only as good as the call that
+> produced it, and an index is not the thing it indexes.* Before stating a count, name the command behind
+> it and check that the command touched the objects — a full listing — rather than a header table, a
+> default page, a filtered read or the subset a search matched. **Five instances in the week to
+> 2026-09-28**, the last of which was reading "three snapshots" off a table that by design lists only its
+> own three. *This is v25's clause — a limitation is a property of the call you made — extended to cover
+> the case where the call was your own choice of what to read.*
+
+**What documenting the day cost, since it is the argument for doing it as you go:** §12–§15 were written
+after the work rather than during it, and **two of the four turned up an error in something already
+published.** *The sections written alongside the work — §1 to §11 — turned up none.*
