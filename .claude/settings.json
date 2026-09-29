@@ -5,5 +5,18 @@
       "Bash(composio connections remove *)",
       "Bash(composio link *)"
     ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '[.prompt, .user_prompt, .message, .text] | map(select(. != null)) | join(\" \")' | grep -qiE '(good ?ni(gh)?te?|night night|signing off|sign(ing)? off|that.?s me (done|for today)|see you tomorrow|document(ed)? today|write up today|^[[:space:]]*(night|nite)[[:punct:][:space:]]*$)' && printf '%s' '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"The owner is signing off. Have you documented today'\\''s work? Run the end-of-day skill (.claude/skills/end-of-day/SKILL.md) before saying good night: check git status first, then the change log, kb-registers.md, change-log-index.md, publish each to Drive and verify byte-identical, any Hub lesson, then commit and push. If the tree is already clean and today is already published, say so and stop - do not invent an entry.\"}}' || true",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
   }
 }
