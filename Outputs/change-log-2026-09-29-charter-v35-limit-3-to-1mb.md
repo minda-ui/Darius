@@ -240,3 +240,117 @@ and a Google or Gmail credential is an unrelated object that will never sign the
 connection** — the Gmail connected account is separate, so a successful `whoami` does not by itself mean a
 fetch will return mail. Anna's routine reporting an empty fetch rather than inventing messages was the
 correct behaviour.*
+
+---
+
+## 11. The owner's idea — "good night" triggers the documenting question
+
+**Owner, verbatim: *"I just got great idea, as soon as i write you 'good night' can we trigger skill
+'Have you documented today's work?'"*** ***Built, and the answer was two pieces rather than one.***
+
+### Why a skill alone would not have done it
+
+**A skill is something the model chooses to invoke when it recognises a phrase.** That is a judgement
+call — and judgement calls get missed at the end of a long session, which is precisely when this one
+matters most. **A `UserPromptSubmit` hook is the harness matching text deterministically**, so it fires
+whether the model is paying attention or not.
+
+So: **`.claude/skills/end-of-day/SKILL.md`** holds the *procedure*, and a hook in
+**`.claude/settings.json`** is the *trigger*. Existing permissions in that file were **merged, not
+replaced**.
+
+### The skill is this KB's own practice written down
+
+Not invented — taken from the two occasions the owner has actually asked for the day to be documented:
+check `git status` **first**, then change log → registers **and their header counts** → change-log index
+→ publish in place → prove byte-identical **with the native connector** → a Hub lesson **only if the day
+taught one** → commit and push → **end by saying what is still open**.
+
+It also carries the traps this KB has actually hit: **do not retype file content** (hand re-emission is
+where the byte discrepancies came from), **do not carry a count forward** (`HL-0064`, five instances),
+**do not smooth over a correction**, and **check Drive's current size against local before overwriting**.
+
+***And one instruction that matters more than the rest:*** if the tree is already clean and the day is
+already published, **say so and stop**. *An empty end-of-day is an honest outcome; a change log invented
+for a day that produced none is worse than no log at all.*
+
+### The matcher was proved, not assumed — twice
+
+**Pipe-tested first**, then tested again **as stored in `settings.json`**, so the JSON escaping was
+demonstrated rather than hoped for:
+
+| | Result |
+|---|---|
+| sign-off phrasings that **fire** | **12 of 12** — including bare `night`, `nite`, and *both* apostrophe characters in *"that's me done"* |
+| near-misses that **do not** | **8 of 8** — among them *"the machine ran all night"*, *"did it run last night?"*, *"night shift"*, *"good morning"* |
+| mismatches | **0** |
+| non-firing prompts | emit nothing, exit 0 |
+
+*The first test run reported a false failure on `nite` — my own harness word-splitting on the apostrophe
+test cases, not the regex. **Checked before changing anything**, then a bare-word alternative anchored to
+the whole message was added so `night` alone fires while "ran all night" does not.*
+
+### What could not be proved, and then was
+
+**The commit message said plainly: *"Not proved: `UserPromptSubmit` fires outside the current turn, so I
+cannot demonstrate it firing from here."*** That was true when written.
+
+***It fired on the first attempt.*** The owner typed *"Good Night, Darius"* and the hook injected the
+reminder — so **the one thing recorded as unproven was settled by the owner using it**, minutes later.
+*Recorded because the honest limitation and its removal are both part of the record; deleting the caveat
+now it has been overtaken would hide that the thing was shipped without proof.*
+
+### Not mirrored to Drive, deliberately
+
+**`.claude/` is git-only.** It is not in §1's folder map, and it is tooling for the working copy rather
+than knowledge — **so there is no Drive id for it and none is invented.** *Noted because a reader of the
+Drive-ids table should not conclude the row is missing.*
+
+## 12. Filed on the Hub — `HL-0069`
+
+**The Composio finding (§10) is estate-wide and another seat is blocked by it today**, so it goes on the
+Hub as the shared record (§0b Rule B). **`HL-0069`**, category *Tooling / how-to*, priority **High**,
+`Applies to`: *every seat whose environment installs the Composio CLI at session start.*
+
+**The ref was allocated by reading the sheet, not from memory** — and that mattered: the highest was
+**`HL-0068`**, *not* the `HL-0067` this KB filed yesterday. **Another seat has filed since.** *Assuming
+0068 was mine would have collided, which is `HL-0064`'s lesson operating on the filing of its own
+successor for the second day running.*
+
+**The row carries the measurement, the fix and both traps** — that `--user-api-key` wants a *Composio*
+key rather than a Google one, and that **login is not connection** — ***and states plainly that the fix
+was not tested here, because running it means holding a credential.***
+
+***Verified server-side, not from the write's own response.*** `add_rows` returned
+**`displayValue: null`** on the `Date raised` cell **again** — the same behaviour recorded on
+2026-09-28's three rows — while a grouped count filtered to Darius's rows returns **one row dated
+2026-09-29**. *A response not rendering a value is not the value being absent; the skill written four
+hours ago warns about exactly this, and it was right.*
+
+**Two Hub findings from yesterday re-confirmed and still not touched**: `HL-0051` remains on **two rows**,
+and **two rows still carry no `Ref`** (73 rows, 71 refs). *§0b is own-rows-only and whose they are is
+still not established.*
+
+## 13. A hole in the verifier itself, found by a false failure
+
+**The final verification of this file reported a difference.** The write was fine; ***the check was wrong.***
+
+`extract.py` — the scratchpad helper used all week — **replays the most recent `download_file_content`
+result from the transcript cache**. On this last publish the change log was checked with
+`get_file_metadata` (which correctly reported `fileSize: 22387`) rather than `download_file_content`, so
+**the helper replayed the previous 20,749 B download** and diffed *that* against the new local file.
+
+**Diagnosed rather than waved away**: the fetched copy was diffed against the earlier one and came back
+**identical**, which proved it was a stale replay and not a bad write. A real download then confirmed
+**byte-identical at 22,387 B**.
+
+***The reason this is worth recording is that it can fail the other way round, silently.*** A false
+*failure* is loud and gets investigated. **A false *pass* would not be**: publish a file, verify it
+against a cached download of the *same* earlier version that happens to match, and the check reports
+success without ever having looked at what is on Drive. *§4 exists precisely to stop a write being
+believed on a tool's say-so, and the helper meant to enforce it has a mode where it does exactly that.*
+
+**Rule, effective now: a byte-check is only valid if a `download_file_content` call for that file was
+made *after* the upload.** *Not fixed in the helper tonight — a change to the verifier deserves its own
+pass with its own test, not a tired edit at the end of a session. Recorded so the next session fixes it
+knowingly rather than rediscovering it.*
