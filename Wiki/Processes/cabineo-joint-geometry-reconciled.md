@@ -17,6 +17,7 @@ related:
  - ../Processes/tpacad-tool-match-criteria.md
  - ../Software/kitchen-unit-library.md
  - ../Machinery/vitap-k2-drill-head-tooling.md
+ - ../Software/tcn-to-smartcabinet-reversibility.md
 ---
 
 # The shop's Cabineo joint, reconciled against SmartCabinet's own parameters

@@ -128,3 +128,115 @@ than started, because starting it badly is worse than saying it is waiting.**
 - **`FL-002`'s one open item, and it is not paperwork:** nobody has confirmed the AES extractor is **moving
   air**, only that it starts and the phases are the right way round.
 - **No standing check compares the git mirror to Drive** — proposed 2026-09-27, not adopted.
+
+---
+
+## 9. The owner's question — can a project be rebuilt in SmartCabinet from its `.TCN` files?
+
+**The owner asked, then said *"write it up"*.** The short answer: **no as a project, yes as a complete set of
+parts.** A `.TCN` is what the postprocessor *emitted* for one panel on one face — downstream,
+machine-specific and lossy by design.
+
+***The evidence is stronger than that analogy, and it is new to this KB.*** Both of the master's files were
+re-fetched and decoded, and their section skeletons enumerated by script:
+
+**The format has named slots for the missing information and the postprocessor writes every one of them
+empty.** `GEO{ ::NF=0 }`, eight zero `OFFS`, eight zero `VARV`, and **`VAR{}`, `SPEC{}`, `OPTI{}`, `LINK{}`,
+`PREV{}` all present and blank** — in *both* files. **An empty `LINK{}` is a deliberate silence, not a format
+limitation**, which is why no cleverness recovers the cabinet from the file.
+
+**`$=SmartCabinet` is the entire provenance record** — it names the *program*. Not the project, cabinet, job,
+customer or date. And **the part names are convention, not data**: the manual records piece and file names as
+settable under Settings → `CN Names`.
+
+***And the files are not even self-contained.*** Four of the side panel's 127 workings call an external macro
+by relative path — **`#8098=..\custom\mcr\fittingx.tmcr`** — which lives on the machine's PC. *So a set of
+`.tcn` files alone does not fully reproduce even the machining, only the machining on a machine whose
+`custom\mcr\` folder holds that macro.* **This KB had never recorded the macro dependency.**
+
+**On import:** the manual's page map lists inbound operations as only `nuovo` and `apri`, and exports as CSV,
+DXF views and OBJ — **no TCN, TpaCAD or ISO import; no import of anything.** ***Recorded as undocumented, not
+as proven absent***, because §1 of the manual article says in as many words that the hub is not a complete
+index and **a menu absence is not evidence that something is undocumented**. *One look at the shop's own File
+menu closes it; another pass over the manual never will.*
+
+**What the files genuinely are good for** is written up rather than dismissed: re-cutting any panel with no
+CAD involved (TCN is TpaCAD's native format), recovering every dimension, inferring the carcase from a full
+set, and reverse-engineering detail — as this KB already did on 2026-09-28. The rebuild cost and the three
+practical cases (damaged panel / lost project / files from elsewhere) are tabulated.
+
+### Published
+
+| File | Bytes | Route | Verified |
+|---|---|---|---|
+| `Wiki/Software/tcn-to-smartcabinet-reversibility.md` | **12,190** — new | placeholder to mint the id (`1Wv0icnyiDz0QZpVytV8xu8b8XmXn0TyB`), then in place | **byte-identical** |
+| `Wiki/Software/smartcabinet-online-manual.md` | 24,437 -> **24,489** | in place | **byte-identical** |
+| `Wiki/Software/smartcabinet-and-production-workflow.md` | 9,373 -> **9,425** | in place | **byte-identical** |
+| `Wiki/Processes/cabineo-joint-geometry-reconciled.md` | 17,557 -> **17,609** | in place | **byte-identical** |
+| `Wiki/index.md` | 17,242 -> **18,606** | in place | **byte-identical** |
+
+**All four pre-edit Drive sizes were checked against local before writing** — 24,437 / 9,373 / 17,557 /
+17,242, all matching — so nothing unrecorded was overwritten.
+
+***The back-links were added this time, and that is a change of practice worth naming.*** On 2026-09-27 the
+manual article deliberately did **not** back-link the six articles it named, because that meant *"~80 KB of
+Drive re-emission for front matter"* — the trade `AWT-0089` is parked on. **That cost was priced before v32.**
+Under the in-place default the bytes are uploaded from disk and never retyped, so three back-links cost three
+uploads and three checks. *The reason for parking the debt was real and is now largely gone; `AWT-0089`'s
+remaining three articles are a separate, older case and stay as they are.*
+
+*A symmetry check on the new article's three edges passed. **My first run of it reported 52 asymmetric edges
+KB-wide, which was my own scratch regex eating each front matter's closing `---`** — checked before repeating
+it, because a number from a tool I wrote five minutes ago is not a measurement of the KB.*
+
+### Two things found in passing, neither actioned
+
+- **Drive returns `.TCN` files with `mimeType: audio/mpeg`** — both files, on every fetch. The bytes come back
+  correctly, so it is harmless to read, but **Drive mis-types the extension**. *Recorded in the article
+  because §4 treats binary and Google-native types as outside what is proven for in-place writes, and a text
+  file reported as audio is how such a rule fires on the wrong file.*
+- **`Wiki/index.md`'s entry for `smartcabinet-and-production-workflow.md` is stale** — it still calls the
+  article *"draft"* and uses its old title, while the file is `status: active` and titled *"Design → Production
+  → Sales workflow, and the Job Tracker"* since 2026-09-17. **Not fixed**: the index line was not what this
+  pass was changing, and rewriting a description I had not verified is how stale text gets replaced with
+  different stale text. *Flagged to the owner.*
+
+## 10. Composio auth does not come with the Composio binary
+
+**The owner showed a screenshot of another seat's session** — Anna, Fishbone Construction Ltd — reporting
+*"Composio is installed (v0.4.1) but isn't signed in"*, with `composio whoami` and a Gmail fetch both
+returning nothing, and asked why adding API keys had not fixed it. ***Another seat's KB is not this KB's to
+touch (§6a), but the CLI question is answerable here, and it was answered by measurement rather than
+recall.***
+
+**Tested on this session's own CLI, same version 0.4.1:**
+
+| Test | Result |
+|---|---|
+| `env \| grep '^COMPOSIO[A-Z_]*'` in a **working, signed-in** session | ***no variables at all*** |
+| `composio whoami` in that session | returns the account JSON |
+| `HOME=<empty dir> composio whoami`, environment untouched | **no account — just a tip line** |
+
+***So the CLI's auth is file-based, not environment-based.*** It reads `~/.composio/user_data.json` — the one
+file in that directory at mode `600` — and **an API key in the environment's secrets is never consulted.**
+*The signed-in session having zero `COMPOSIO_*` variables is the half of that proof that a negative test
+alone could not give.*
+
+**The fix is a login command, not a secret.** `composio login --help` on 0.4.1 documents
+`--user-api-key <text>`, alongside `--no-browser` and `-y, --yes` — the last two mattering specifically
+because such a routine runs **unattended**, where an org picker or browser prompt hangs rather than fails.
+***Not run here***: executing it means holding a credential, which §6a forbids. **The flag is read off the
+help text; the exact invocation is a reading, to be confirmed on first run.**
+
+**And this closes an open question of this KB's own — in the direction that costs something.** The 2026-09-28
+log listed, untested: *"whether Composio auth survives a cold start … they persist or vanish together:
+harmless no-op in one case, a `composio login` step every session in the other."* **Anna's session is the
+second case: the binary arrives, the session does not.** ***Qualified rather than adopted***: that is Anna's
+environment, not Darius's, so it is **strong evidence and not proof for this seat** — the test that settles it
+for Darius is Darius's own next genuinely fresh session, with the two checks already named.
+
+*Two caveats passed to the owner rather than assumed away: **`--user-api-key` wants a Composio user API key**,
+and a Google or Gmail credential is an unrelated object that will never sign the CLI in; and **login is not
+connection** — the Gmail connected account is separate, so a successful `whoami` does not by itself mean a
+fetch will return mail. Anna's routine reporting an empty fetch rather than inventing messages was the
+correct behaviour.*

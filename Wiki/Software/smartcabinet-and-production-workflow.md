@@ -18,6 +18,7 @@ related:
  - ../Decisions/2026-09-15-operational-systems-scope-extension.md
  - ../Processes/barcode-and-scan-event-system.md
  - ../Software/kitchen-unit-library.md
+ - ../Software/tcn-to-smartcabinet-reversibility.md
 ---
 
 # Design → Production → Sales workflow, and the Job Tracker

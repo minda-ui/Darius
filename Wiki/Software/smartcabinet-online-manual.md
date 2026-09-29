@@ -21,6 +21,7 @@ related:
  - ../Processes/cabineo-joint-geometry-reconciled.md
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Machinery/vitap-k2-drill-head-tooling.md
+ - ../Software/tcn-to-smartcabinet-reversibility.md
 ---
 
 # SmartCabinet's online manual — map, and what it settles about T016
