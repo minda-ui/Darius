@@ -4,6 +4,26 @@
       "Bash(composio execute *)",
       "Bash(composio connections remove *)",
       "Bash(composio link *)"
+    ],
+    "deny": [
+      "Bash(composio execute GMAIL_*)",
+      "Bash(composio execute GOOGLEDRIVE_DELETE_*)",
+      "Bash(composio execute GOOGLEDRIVE_GOOGLE_DRIVE_DELETE_FOLDER_OR_FILE_ACTION*)"
     ]
-  }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh\""
+          }
+        ]
+      }
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "composio"
+  ]
 }
