@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v33 (2026-09-28)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v34 (2026-09-28)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -20,6 +20,35 @@ when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29
 rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
 already fallen out.*
 
+---
+
+**Changed in v34 — the period split is over: the snapshots are merged back and the two live files hold
+everything.**
+
+**Owner's instruction, 2026-09-28: *"merge the snapshots back."*** The direct consequence of v33 — with no
+size threshold there is nothing for a period split to serve. `kb-registers.md` **28,088 → 115,582 B** and
+`change-log-index.md` **11,275 → 72,817 B**; §1's folder map and §4 lose the `-snapshot-<date>.md` files,
+and **`kb-registers.md` is no longer "live rows only" — it is all 30 Processed items, all 36 Wiki-structure
+changes, all 74 Outputs rows and both Drive-id tables.** The index holds **all 23 sessions**.
+
+**Five snapshots, not the three v33 said.** *That figure was read off the registers' own header table, which
+lists only its own three; the index had two more. Corrected by counting the files.* All five were verified
+byte-identical to git `HEAD`, then **archived by rename into `Archive/`, ids preserved — merged, not
+deleted.**
+
+**Nothing was retyped, and the duplication the old headers warned about was handled rather than inherited.**
+Every row was copied byte-for-byte by script. The nine open Processed items appeared in *all three* registers
+snapshots as well as the live file, so a plain concatenation would have produced them four times: instead the
+2026-09-21 order was walked and **the live row substituted wherever it was the authority (eight of them)**,
+the ninth appended, and the two later Processed tables **dropped as exact duplicates — verified 9 of 9 each.**
+*The Wiki, Outputs and session tables needed no such care, being disjoint by construction; that was checked,
+not assumed, and the merged ordering was re-verified afterwards.*
+
+**And the merge pushed straight past v33's own new ceiling, so it was measured again.** At 115,582 B the
+registers exceeded the 92 KB proven an hour earlier, so a third probe ran at **130,005 B** — same-size,
+different-content, id stable, revisions 1 → 2, byte-identical, 6 s. **Limit 3 is now 130 KB.** *Twice in one
+day the rule's own words — extend it by measuring — were what let the work proceed, and both times the
+alternative was a slower path rather than a blocked one.*
 ---
 
 **Changed in v33 — the size thresholds are gone, and the one real ceiling was measured instead of guessed.**

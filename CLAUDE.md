@@ -1,37 +1,39 @@
 # CLAUDE.md — Workshop of Furniture Making Knowledge Base
 
-**Version 34 — 2026-09-28.** Structure and conventions modelled on the Fishbone Commercial
+**Version 35 — 2026-09-29.** Structure and conventions modelled on the Fishbone Commercial
 Properties Ltd Knowledge Base, via the shared `Wiki/Process-Fishbone-Systems-House-Rules.md`
 conventions used across all Fishbone group KBs. **This file is one of four that together form Darius's
 charter** (see §0a and the map below). README.md is a pointer; these files win on conflict.
 
-**Changed in v34 — the period split is over: the snapshots are merged back and the two live files hold
-everything.**
+**Changed in v35 — limit 3 goes to 1 MB, on the owner's instruction and on two fresh measurements.**
 
-**Owner's instruction, 2026-09-28: *"merge the snapshots back."*** The direct consequence of v33 — with no
-size threshold there is nothing for a period split to serve. `kb-registers.md` **28,088 → 115,582 B** and
-`change-log-index.md` **11,275 → 72,817 B**; §1's folder map and §4 lose the `-snapshot-<date>.md` files,
-and **`kb-registers.md` is no longer "live rows only" — it is all 30 Processed items, all 36 Wiki-structure
-changes, all 74 Outputs rows and both Drive-id tables.** The index holds **all 23 sessions**.
+**Owner's instruction, 2026-09-29: *"adopt the 500kb limit"*, then *"push it to 1MB"*.** Both were measured
+before either was written down, and **1 MB is what §4 now says** — the later instruction supersedes the
+earlier, and both figures passed.
 
-**Five snapshots, not the three v33 said.** *That figure was read off the registers' own header table, which
-lists only its own three; the index had two more. Corrected by counting the files.* All five were verified
-byte-identical to git `HEAD`, then **archived by rename into `Archive/`, ids preserved — merged, not
-deleted.**
+**Two probes, the same design as the four before them.** A placeholder minted an id in `Raw/`, then the real
+bytes went up **in place** twice per probe: **500,000 B** (A then B) and **1,000,000 B** (C then D), each pair
+**the same size and different content**, so that neither a no-op nor a truncated write could pass unnoticed.
+Every check held: **id stable, `createdTime` preserved, revisions 1 → 2 → 3, round-trip byte-identical to what
+was written and different from what it replaced, 7 s per write.** Both probes **trashed after measuring**.
+*Sizes were confirmed from Drive's own `fileSize`, and the revision count from Drive's revision list — three
+entries each, the placeholder plus the two writes.*
 
-**Nothing was retyped, and the duplication the old headers warned about was handled rather than inherited.**
-Every row was copied byte-for-byte by script. The nine open Processed items appeared in *all three* registers
-snapshots as well as the live file, so a plain concatenation would have produced them four times: instead the
-2026-09-21 order was walked and **the live row substituted wherever it was the authority (eight of them)**,
-the ninth appended, and the two later Processed tables **dropped as exact duplicates — verified 9 of 9 each.**
-*The Wiki, Outputs and session tables needed no such care, being disjoint by construction; that was checked,
-not assumed, and the merged ordering was re-verified afterwards.*
+**This is the fifth and sixth measurement of limit 3, and the figure has been behind the evidence every time.**
+37 KB → 92 KB → 130 KB → 145 KB → **1 MB**. *Yesterday's 145 KB was measured and left as a proposal because
+no instruction required it; today's instruction required a number, so the number was measured rather than
+assumed, and 145 KB is now history rather than a pending proposal.*
 
-**And the merge pushed straight past v33's own new ceiling, so it was measured again.** At 115,582 B the
-registers exceeded the 92 KB proven an hour earlier, so a third probe ran at **130,005 B** — same-size,
-different-content, id stable, revisions 1 → 2, byte-identical, 6 s. **Limit 3 is now 130 KB.** *Twice in one
-day the rule's own words — extend it by measuring — were what let the work proceed, and both times the
-alternative was a slower path rather than a blocked one.*
+**The verification download does not break at 1 MB, and that was the check worth making.** A write that cannot
+be proved is no use to this KB whatever its size: at 1,000,000 B the connector returned **1,333,457 characters**
+of base64, **spilled to a file rather than returned inline** — the same behaviour §4 records from ~46 KB
+upward, and decoding it from there gave a byte-for-byte match. **A bigger ceiling changes where the bytes are
+read from, not whether the write can be proved.**
+
+***One neighbouring claim, recorded as a claim and not a measurement.*** Composio's own guidance names a
+**5 MB cap on `GOOGLEDRIVE_UPLOAD_FILE`** — a *different* tool from the `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` used
+here, and **not tested**. It is a signpost for where the next real ceiling may sit, nothing more; *§4's
+instruction is to extend limit 3 by measuring, and a vendor's note about another tool is not a measurement.*
 
 ## Where the rest of the charter is
 
@@ -312,14 +314,18 @@ date, then create a new file, then verify). **Still mandatory for:**
    copies are named for what they were and why they went.*
 2. **Anything whose superseded bytes must survive.** `keepForever` is **`false` by default** on Drive
    revisions, so Drive may purge them. Setting it is a separate PATCH per revision and is not done here.
-3. **Anything outside what has been proven:** above **130 KB** — measured at v34 at **130,005 B**, after
-   v33's probes at 46,035 B and 92,070 B, every one of them same-size/different-content so that neither a
-   no-op nor a partial write could pass, and every one id-stable, revision-incremented and byte-identical —
-   and on binary files, Google-native types and files this account does not own. *The 37 KB figure, the
-   ~82 KB `read_file_content` cliff and then 92 KB were each retired by measurement, not by instruction:
-   extend this the same way, and never by assuming.* **From ~46 KB the verification download is
-   spilled to a file rather than returned inline** — decode it from there; it is a limit of the session, not
-   of Drive, and it does not make the write unprovable.
+3. **Anything outside what has been proven:** above **1 MB** — measured at v35 at **1,000,000 B**, after a
+   500,000 B probe the same morning and v33/v34's probes at 46,035 B, 92,070 B, 130,005 B and 145,000 B,
+   every one of them same-size/different-content so that neither a no-op nor a partial write could pass, and
+   every one id-stable, revision-incremented and byte-identical — and on binary files, Google-native types
+   and files this account does not own. *The 37 KB figure, the ~82 KB `read_file_content` cliff, then 92 KB,
+   130 KB and 145 KB were each retired by measurement, not by instruction: **extend this the same way, and
+   never by assuming** — six measurements in, the figure here has been behind the evidence every single time
+   it has been tested.* **From ~46 KB the verification download is spilled to a file rather than returned
+   inline** — decode it from there; it is a limit of the session, not of Drive, and it does not make the write
+   unprovable. *Proved at 1 MB, where the spill ran to 1,333,457 characters of base64 and still round-tripped
+   byte-identical.* *A separate 5 MB cap is documented for `GOOGLEDRIVE_UPLOAD_FILE`, a different tool from
+   the one used here, and is **untested** — a signpost, not a proven limit.*
 
 *The in-place path runs through a third-party service and a CLI in an ephemeral container. If either is
 unavailable the fallback is the whole rule, which is why it stays documented rather than deleted.*
