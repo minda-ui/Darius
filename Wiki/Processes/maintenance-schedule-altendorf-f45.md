@@ -4,7 +4,7 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-01
 sources:
  - ../../Raw/F45 part 5.pdf
  - ../../Raw/F45 part 6.pdf
@@ -29,6 +29,7 @@ safety-device check is tracked separately on the **Safety Check Log** — see
 | ID | Task | Interval |
 |---|---|---|
 | MT-021 | Clean-down: machine table, sliding table, extraction; vacuum/brush chips & dust | Daily |
+| MT-029 | Blow out the control-panel buttons with compressed air — yellow START, main-saw and scorer I/0 — machine switched off. **Local addition, not from the manual:** dust in the yellow START raised a misleading E91K on 2026-10-01 (`FL-004`). More often while extraction is out of service | Weekly (proposed) |
 | MT-022 | Deep clean: sliding-table guide/underside (spirit-soaked cloth), sub-rollers, rip-fence round rod, pivot arm (**dry only — do not oil the pivot arm**), tilt segments, interior | ~Every 6 months (see caveat) |
 
 Cleaning agents by soiling type: chips/dust → vacuum/brush/cloth; resin → nitro thinner (general) or
@@ -83,3 +84,4 @@ question tracked as Task **T007**, not part of routine maintenance. See the mach
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-09-15 | Created from the F45 article's manual-derived Chapter 7 schedule + annual electrical check; rows loaded as MT-020…MT-028 | Session — workshop operational systems build |
+| 2026-10-01 | Added MT-029 (blow out control-panel buttons) after fault `FL-004`, on the owner's instruction; row added to the sheet the same day | Session — 2026-10-01 extractor and F45 faults |

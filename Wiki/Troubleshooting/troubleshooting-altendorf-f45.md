@@ -4,7 +4,7 @@ category: Troubleshooting
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-01
 sources:
  - ../../Raw/F45 part 5.pdf
  - ../../Raw/F45 part 7.pdf
@@ -66,7 +66,7 @@ on-screen text. "Request a service technician" means an Altendorf technician, no
 | E59 | Emergency-running block at 3500 rpm | Switch the main blade off and on again |
 | E61 | Drive positioning / current-consumption error | Lubricate the axle |
 | E81 / E82 | Shaft-encoder errors | Service technician if recurring |
-| E91K / E93K | STOP / START button K-contact error | Service technician |
+| E91K / E93K | STOP / START button K-contact error | Service technician — **but see the E91K note below first** |
 | E92 | AC stop-circuit signal missing | Service technician if recurring |
 | E94 | K-free signal missing | — |
 | E99 | Control electronics over-temperature | Switch off, let cool; service technician if recurring |
@@ -76,6 +76,23 @@ on-screen text. "Request a service technician" means an Altendorf technician, no
 | M05 / M06 | Drive positioning error | Return to position with START |
 | M07A / M07E | Collision risk with attachments / rip fence extended | — |
 | M08 | Workpiece not removed | — |
+
+## E91K can mean the yellow START button, not a STOP button
+
+**Found on this machine, 2026-10-01 (Fault Log `FL-004`).** The screen read *"E91K: K-contact of Stop
+button faulty"*. It appeared when the **yellow START** button was pressed to position the fence — and
+the fault was **dust in that START button**, not in a STOP button. Blowing the START button out with
+compressed air cleared it.
+
+**So if E91K appears when pressing the yellow START:**
+1. Switch the machine off and blow out the **yellow START** button first, then the I/0 buttons.
+2. Restart. If E91K returns, call an electrician or Altendorf technician to inspect that button's
+   contact block — tell them the screen says STOP but the trigger is START.
+3. **Never bridge or bypass a button contact** — they are part of the safety circuit.
+
+*Why the control reports a dirty START contact as E91K rather than E93K is not known. It is recorded
+as observed, not explained.* Dust builds up fastest when extraction is off or weak; routine blow-out
+is `MT-029` in the maintenance schedule.
 
 ## Note
 
@@ -94,3 +111,4 @@ edge defect belongs to the Hebrock, not here.
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-09-15 | Created; mechanical fault table + full ElmoDrive error-code list carried over from the machine article's Fault-diagnosis section | Session — workshop operational systems build |
+| 2026-10-01 | Added the E91K / yellow START note from fault `FL-004`, on the owner's instruction | Session — 2026-10-01 extractor and F45 faults |
