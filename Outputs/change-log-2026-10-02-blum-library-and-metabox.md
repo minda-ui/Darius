@@ -136,4 +136,22 @@ screenshot of Anagrafica Accessori.
   `71B3550` / `71B3650` / `71B3750` and the bi-fold `79T8500` — so the hinge table's dowel-hole fields stay empty.
 - `blum-metabox-smartcabinet-input.md` (new §6) and `blum-clip-top-hinges-smartcabinet-input.md` (§8)
   amended in place. Two SmartCabinet manual pages read (*Ferramenta dei Cassetti*, *Scatola Cassetto*).
-- **Still open:** runners (MOVENTO / TANDEM) not yet written up.
+- **Still open:** runners (MOVENTO / TANDEM) not yet written up — done in (9).
+
+## (9) Runners — TANDEM and MOVENTO, for SmartCabinet
+
+Owner, after the afternoon session-start read (Hub: no new Darius rows; `Raw/`: nothing new): *"Start with the
+runners."* **`Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md`** created (**9,190 B**, id
+`11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA`, placeholder then in-place upload). From catalogue PDF pp. 422–423, 452–455,
+470, 718.
+
+- **Both runners share one set of drawer rules**: SKW = LW − 42, SKL = NL − 10, cabinet depth ≥ NL + 3, base
+  recess 12–15 *(drawing)*. Part numbers for every NL, plus the locking devices that have to be ordered separately
+  (T51.1700.04 / T51.7601).
+- **Cabinet-side holes, converted from the hole-spacing drawings to distances from the front edge**: all but one
+  (TANDEM's 275) fall on **37 + 32·n**, so the Vitap's System 32 row can pre-drill them.
+- **These fit SmartCabinet's *Guide Cassetto* table as designed**, unlike METABOX: `LX` = 21 − side thickness,
+  `LY` = 27.5 (TANDEM) / 28.5 (MOVENTO) − base recess, `CX` 0, `LBox` NL − 10, no side holes, and one rear
+  Ø6 × 10 hole. `LX`/`LY` are derived, and whether `LX` is per side or in total is unconfirmed.
+- **Open:** which runner the shop uses and its side thickness; confirm the rear-hole position with template
+  T65.1000.02; whether SmartCabinet drills cabinet-side runner holes at all.

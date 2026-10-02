@@ -138,6 +138,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-02 | **`Wiki/index.md` amended in place** - two entries (Processes, Suppliers); id `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` unchanged. | Same |
 | 2026-10-02 | **`Processes/blum-clip-top-hinges-smartcabinet-input.md` created** (**10,515 B**, id `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY`, placeholder then in-place upload, `cmp`-identical). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"Yes, start with hinges"* |
 | 2026-10-02 | **`blum-metabox-smartcabinet-input.md` (new §6) and `blum-clip-top-hinges-smartcabinet-input.md` (§8) amended in place** - METABOX imported outside `25 GUIDE CASSETTO`, so no runners offered; the shop's hinges are screw-on 71B3550/3650/3750. Ids unchanged. | Owner's screenshot of Anagrafica Accessori |
+| 2026-10-02 | **`Processes/blum-runners-tandem-movento-smartcabinet-input.md` created** (**9,190 B**, id `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA`, placeholder then in-place upload). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"Start with the runners"* |
 
 ## Outputs produced
 
@@ -236,6 +237,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Blum library** - the 758-page Blum catalogue 2022/2023 split by script into **37 family PDFs**, a page-by-page **full-text file** and a **1,627-part index**, all in `Raw/Blum/` (`1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud`); ids in this session's change log. | 2026-10-02 | blum-library | Owner |
 | **METABOX data for SmartCabinet** - `Processes/blum-metabox-smartcabinet-input.md`. | 2026-10-02 | blum-metabox-smartcabinet-input; smartcabinet-online-manual | Owner |
 | **Blum CLIP top 110° hinges for SmartCabinet** - `Processes/blum-clip-top-hinges-smartcabinet-input.md`. | 2026-10-02 | blum-clip-top-hinges-smartcabinet-input; blum-library | Owner |
+| **Blum TANDEM and MOVENTO runners for SmartCabinet** - `Processes/blum-runners-tandem-movento-smartcabinet-input.md`. | 2026-10-02 | blum-runners-tandem-movento-smartcabinet-input; blum-library | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
 ## Drive ids
@@ -259,6 +261,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Processes/blum-metabox-smartcabinet-input.md` | **7,094** | `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W` — **created 2026-10-02** |
 | `Wiki/Suppliers/blum-library.md` | see file | `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679` — **created 2026-10-02** |
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
+| `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |
 | `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
 | `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 

@@ -10,6 +10,7 @@ sources:
 related:
  - ../Processes/blum-metabox-smartcabinet-input.md
  - ../Processes/blum-clip-top-hinges-smartcabinet-input.md
+ - ../Processes/blum-runners-tandem-movento-smartcabinet-input.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -104,7 +105,7 @@ family of each chapter.*
 | Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
 | Soft close for doors | **H3** |
 | Push-to-open | **H4** (doors), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
-| Runners under wooden drawers | **R1** MOVENTO, **R3** TANDEM |
+| Runners under wooden drawers | **R1** MOVENTO, **R3** TANDEM; worked up in `../Processes/blum-runners-tandem-movento-smartcabinet-input.md` |
 | Drilling patterns, overlay, gap and planning rules | **X1** |
 | Blum drilling templates and jigs | **E4**, **E2** |
 
@@ -121,3 +122,4 @@ family of each chapter.*
 |---|---|---|
 | 2026-10-02 | Created: 37 family PDFs, full text, part index, on the owner's instruction | Session 26 |
 | 2026-10-02 | Hinge row points to the new CLIP top 110° article | Session 26 |
+| 2026-10-02 | Runner row points to the new TANDEM/MOVENTO article | Session 26 |
