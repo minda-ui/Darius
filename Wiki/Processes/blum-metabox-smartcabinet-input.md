@@ -113,7 +113,27 @@ lowest **min. 13.5 mm** from the front's bottom edge (+2 with BLUMOTION), **12 m
 
 *No prices — the catalogue carries none. Costs come from invoices or a distributor list.*
 
-## 6. What is still open
+## 6. What was found in the shop's SmartCabinet (2026-10-02)
+
+From the owner's screenshot of **Anagrafica Accessori** after importing METABOX:
+
+- **METABOX came in under its own category `30 METABOX`**, as two entries only — *METABOX H* and *METABOX K* —
+  with **no nominal length**. Nothing METABOX sits under **`25 GUIDE CASSETTO`**, so the drawer's
+  *Ferramenta → Guide* list does not offer it. **That is the "missing rails".**
+- **LEGRABOX, also steel-sided, is set up as runners**: under `25 GUIDE CASSETTO`, **one entry per NL**
+  (270–600). That is the model to copy.
+- **Proposed fix (not yet done):** add METABOX entries under `25 GUIDE CASSETTO`, one per NL, coded with
+  Blum's part number (`320K3500C` … `320K5500C`, `320H3500C` … `320H5500C`; `C15` for quick assembly), then
+  fill each row in *Guide Cassetto* per §2.
+- **Physically nothing extra is bought** — Blum's `320…C` part is *cabinet profiles and drawer sides
+  left/right*, rail and side together.
+- **Asked of the owner:** a photo of the *Guide Cassetto* row for **LEGRABOX 450**, to copy Kosmosoft's `LY`
+  and hole settings for a steel-sided box, and to see whether cabinet-side holes come from that table.
+- SmartCabinet manual (*Ferramenta dei Cassetti*, *Scatola Cassetto*, fetched 2026-10-02): runners (**Guide**)
+  and box systems (**Sistemi scatola**) are separate slots; a box system's **System = metallo** stops CN
+  programs being made for its sides.
+
+## 7. What is still open
 
 - Whether Import Accessori already offers METABOX (**check first** — §1).
 - The runner hole line's **height** and `LY` — drawing-only; confirm on one drawer.
@@ -125,3 +145,4 @@ lowest **min. 13.5 mm** from the front's bottom edge (+2 with BLUMOTION), **12 m
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue METABOX section and three SmartCabinet manual pages, on the owner's request | Session 26 |
+| 2026-10-02 | §6 added: METABOX imported under its own category, not as runners — why the rails are missing, and the proposed fix | Session 26 |

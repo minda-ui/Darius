@@ -179,8 +179,11 @@ elsewhere, not in this table. Not checked yet.*
 - Whether Import Accessori already offers these Blum hinges (**check first**, §7).
 - `Dφ2`: the depth of the Ø8 dowel holes.
 - The screw-on hinge's screw positions: not dimensioned on the pages read.
-- Which hinge and which plate the shop actually stocks. **Read one from the box or an invoice** so the
-  table can be cut down to the shop's own two or three rows.
+- **Which hinges SmartCabinet already holds — answered 2026-10-02** from the owner's screenshot of Anagrafica
+  Accessori (category `35`): **`71B3550`** (overlay), **`71B3650`** (described there as *half overlay* = Blum's
+  *dual*), **`71B3750`** (inset) — the **screw-on** CLIP top BLUMOTION hinges — plus **`79T8500`** (60° bi-fold).
+  **Screw-on means no Ø8 door holes: leave `DX2`, `DY2`, `DØ2`, `Dφ2` empty** and drill only the Ø35 cup.
+  *That is what the database holds, not proof of what is in stock.* Which **mounting plate** is used is still unknown.
 - One test door, drilled and hung, before a batch: TB, MD and the overlay formula.
 
 ## Changes
@@ -188,3 +191,4 @@ elsewhere, not in this table. Not checked yet.*
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue (110° hinge, mounting plates, hinge planning pages) and the SmartCabinet *Cerniere* manual page, on the owner's instruction | Session 26 |
+| 2026-10-02 | The shop's SmartCabinet hinges identified (screw-on 71B3550/3650/3750) | Session 26 |

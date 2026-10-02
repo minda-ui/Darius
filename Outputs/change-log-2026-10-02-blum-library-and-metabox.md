@@ -120,3 +120,20 @@ page (fetched 2026-10-02).
 - **Open:** the Ø8 dowel-hole depth (not printed), screw-on screw positions, and **which hinge and plate the
   shop actually stocks** — one box label or invoice would cut the table to the shop's own rows.
 - `blum-library.md` and `Wiki/index.md` updated to point at it.
+
+## (8) METABOX "missing rails", and the shop's hinges (evening)
+
+Owner: *"I have imported Metabox into SmartCabinet, but I am still missing rails for them?"* — with a
+screenshot of Anagrafica Accessori.
+
+- **Cause found:** METABOX was imported under its own category `30 METABOX` (*METABOX H*, *METABOX K*, no
+  length), **not under `25 GUIDE CASSETTO`**, so drawers cannot be given it as a runner. LEGRABOX — also
+  steel-sided — is set up under `25 GUIDE CASSETTO` per NL, and is the model.
+- **Proposed to the owner, not done:** add METABOX per-NL entries under `25 GUIDE CASSETTO`, coded by Blum part
+  number. **Waiting on** a photo of the LEGRABOX 450 *Guide Cassetto* row. Nothing extra to buy: Blum's
+  `320…C` is rail and side together.
+- **Also from the screenshot:** the shop's SmartCabinet holds the **screw-on** CLIP top BLUMOTION hinges
+  `71B3550` / `71B3650` / `71B3750` and the bi-fold `79T8500` — so the hinge table's dowel-hole fields stay empty.
+- `blum-metabox-smartcabinet-input.md` (new §6) and `blum-clip-top-hinges-smartcabinet-input.md` (§8)
+  amended in place. Two SmartCabinet manual pages read (*Ferramenta dei Cassetti*, *Scatola Cassetto*).
+- **Still open:** runners (MOVENTO / TANDEM) not yet written up.

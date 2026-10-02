@@ -137,6 +137,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-02 | **`Suppliers/blum-library.md` created** (id `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679`, same route) - the index to the Blum library in `Raw/Blum/`. | Owner: *"create library where you can access easy"* |
 | 2026-10-02 | **`Wiki/index.md` amended in place** - two entries (Processes, Suppliers); id `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` unchanged. | Same |
 | 2026-10-02 | **`Processes/blum-clip-top-hinges-smartcabinet-input.md` created** (**10,515 B**, id `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY`, placeholder then in-place upload, `cmp`-identical). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"Yes, start with hinges"* |
+| 2026-10-02 | **`blum-metabox-smartcabinet-input.md` (new §6) and `blum-clip-top-hinges-smartcabinet-input.md` (§8) amended in place** - METABOX imported outside `25 GUIDE CASSETTO`, so no runners offered; the shop's hinges are screw-on 71B3550/3650/3750. Ids unchanged. | Owner's screenshot of Anagrafica Accessori |
 
 ## Outputs produced
 
