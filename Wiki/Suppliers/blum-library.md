@@ -109,6 +109,32 @@ family of each chapter.*
 | Drilling patterns, overlay, gap and planning rules | **X1** |
 | Blum drilling templates and jigs | **E4**, **E2** |
 
+## Every Blum drawer system has its own rail — they do not mix
+
+**Owner, 2026-10-02:** *"Metabox using different rails. It is not TANDEM or MOVENTO."* That is right, and it holds
+for every system in the catalogue. In Blum's terms the rail is the **cabinet profile**, and **each box system has
+its own**. How it is sold decides how it goes into SmartCabinet.
+
+| System | Drawer sides | Rail (cabinet profile) | How it is sold | Load | Extension |
+|---|---|---|---|---|---|
+| **METABOX 320** (B9) | steel, 54/86/118/150 high | its own **320 cabinet profile**, roller | **rail + side in one part**: `320K4500C` = *cabinet profiles and drawer sides left/right* | 25 kg | single |
+| **LEGRABOX** (B1) | steel, 12.8 mm | **750** series, e.g. `750.4501S` | rail **separately** from the side set `770…` | 40 kg | full |
+| **MERIVOBOX** (B3) | steel | **450** series, e.g. `450.4501B` | rail separately from the side set `470…` | 40/70 kg | full |
+| **TANDEMBOX antaro** (B5) | steel | **578** series, e.g. `578.4501M` | rail separately from the side set `378…` | 30/65 kg | full |
+| **TANDEM** (R3) | **wood**, 11–16 (560H) / 17–19 (560F) | **560H / 550H** under the drawer | rail only; the shop makes the box | 30 kg | full / single |
+| **MOVENTO** (R1) | **wood**, max. 16 | **760H / 766H** under the drawer | rail only; the shop makes the box | 40 / 60–70 kg | full |
+
+**What this means in SmartCabinet.** The shop's LEGRABOX entries under `25 GUIDE CASSETTO` are the **750 rails**
+(`75045015` reads as `750.4501S`), one per NL. **For METABOX the entry under `25 GUIDE CASSETTO` is the
+`320…C` part itself**, because Blum does not sell the METABOX rail on its own. **Each system's hole pattern
+differs**:
+
+- METABOX: 37, then a second hole at 192–416 mm depending on NL.
+- TANDEM/MOVENTO: 37/69 plus a rear hole on the 32 grid.
+
+Never copy one system's rail row to another. Detail is in
+`../Processes/blum-metabox-smartcabinet-input.md` and `../Processes/blum-runners-tandem-movento-smartcabinet-input.md`.
+
 ## Limits
 
 - **No prices.** The catalogue carries none; costs come from invoices or a distributor list.
@@ -123,3 +149,4 @@ family of each chapter.*
 | 2026-10-02 | Created: 37 family PDFs, full text, part index, on the owner's instruction | Session 26 |
 | 2026-10-02 | Hinge row points to the new CLIP top 110° article | Session 26 |
 | 2026-10-02 | Runner row points to the new TANDEM/MOVENTO article | Session 26 |
+| 2026-10-02 | *Every Blum drawer system has its own rail*: comparison table, after the owner's correction | Session 26 |

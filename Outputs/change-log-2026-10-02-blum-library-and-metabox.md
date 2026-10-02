@@ -155,3 +155,17 @@ runners."* **`Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md`*
   Ø6 × 10 hole. `LX`/`LY` are derived, and whether `LX` is per side or in total is unconfirmed.
 - **Open:** which runner the shop uses and its side thickness; confirm the rear-hole position with template
   T65.1000.02; whether SmartCabinet drills cabinet-side runner holes at all.
+
+## (10) "METABOX uses different rails" — the systems compared
+
+Owner: *"Metabox using different rails. It is not TANDEM or MOVENTO. That's why I give you this catalogue, so you can
+see difference and become excellent professional."* **Agreed and recorded.** The TANDEM/MOVENTO article (9) is for
+the shop's **wooden** drawers. It is not an answer to the METABOX rail question, and **no Darius document says
+METABOX runs on TANDEM or MOVENTO**. But the distinction was never written down in one place, so it is now
+in `blum-library.md` as *Every Blum drawer system has its own rail*. Checked in the part index and on the order
+pages:
+
+- **METABOX** is the only system whose rail **is not sold separately**: `320…C` = *cabinet profiles and drawer sides
+  left/right*, and the part index has no separate METABOX rail part.
+- LEGRABOX (`750`), MERIVOBOX (`450`) and TANDEMBOX (`578`) rails are sold separately from their side sets.
+- TANDEM and MOVENTO are rails only, under wooden boxes.
