@@ -103,6 +103,20 @@ library's naming — id kept.
 
 ## (6) Also done, and not done
 
-- **Not done: hinges and runners** worked up as articles — the owner's first ask; METABOX jumped the queue on the
-  owner's own message, and the library makes both quick to do next (`H1`, `H2`, `R1`, `R3`, `X1`).
+- **Hinges done later the same session** — see (7). **Runners not done yet** (`R1` MOVENTO, `R3` TANDEM).
 - **Done:** `Wiki/index.md` amended (two entries) and published in place.
+
+## (7) Hinges — CLIP top 110°, for SmartCabinet
+
+Owner: *"Yes, start with hinges."* **`Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md`** created
+(**10,515 B**, id `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY`, placeholder then in-place upload; downloaded back,
+`cmp`-identical). From catalogue PDF pp. 76–79, 148–152 and 710–713, and SmartCabinet's *Cerniere* manual
+page (fetched 2026-10-02).
+
+- **The overlay tables reduce to one formula**, checked against every cell: **FA = TO + TB − MD − crank**
+  (TO 11; crank 0 / 9.5 / 18), i.e. overlay `11 + TB − MD`, dual `1.5 + TB − MD`, inset `−7 + TB − MD`.
+- **SmartCabinet's hinge table maps cleanly**, unlike METABOX's runner table: `DX` = TB + 17.5 *(derived)*,
+  `DØ` 35, `Dφ` 13, `DX2` = DX + 9.5, `DY2` 45, `DØ2` 8 *(drawing)*; `SX` 37, `SY` 32, `SØ` 5.
+- **Open:** the Ø8 dowel-hole depth (not printed), screw-on screw positions, and **which hinge and plate the
+  shop actually stocks** — one box label or invoice would cut the table to the shop's own rows.
+- `blum-library.md` and `Wiki/index.md` updated to point at it.

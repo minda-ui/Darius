@@ -136,6 +136,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-02 | **`Processes/blum-metabox-smartcabinet-input.md` created** (**7,094 B**, id `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W`, placeholder then in-place upload). | Owner: *"i need to input Metabox data into SmartCabinet as soon as we can"* |
 | 2026-10-02 | **`Suppliers/blum-library.md` created** (id `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679`, same route) - the index to the Blum library in `Raw/Blum/`. | Owner: *"create library where you can access easy"* |
 | 2026-10-02 | **`Wiki/index.md` amended in place** - two entries (Processes, Suppliers); id `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` unchanged. | Same |
+| 2026-10-02 | **`Processes/blum-clip-top-hinges-smartcabinet-input.md` created** (**10,515 B**, id `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY`, placeholder then in-place upload, `cmp`-identical). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"Yes, start with hinges"* |
 
 ## Outputs produced
 
@@ -233,6 +234,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **`AWT-0225` raised on the Hub** (own row, Blocked) - git mirror behind Drive (v31 vs v35); the v32-v35 work only on unmerged `claude/vigilant-bell-olevtr`; merge blocked on `.claude/settings.json`. Plus `change-log-2026-10-01-extractor-motor-and-f45-e91k.md` and this row's companions in the index. | 2026-09-30 / 2026-10-02 | none | Darius, §0b Rule B |
 | **Blum library** - the 758-page Blum catalogue 2022/2023 split by script into **37 family PDFs**, a page-by-page **full-text file** and a **1,627-part index**, all in `Raw/Blum/` (`1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud`); ids in this session's change log. | 2026-10-02 | blum-library | Owner |
 | **METABOX data for SmartCabinet** - `Processes/blum-metabox-smartcabinet-input.md`. | 2026-10-02 | blum-metabox-smartcabinet-input; smartcabinet-online-manual | Owner |
+| **Blum CLIP top 110° hinges for SmartCabinet** - `Processes/blum-clip-top-hinges-smartcabinet-input.md`. | 2026-10-02 | blum-clip-top-hinges-smartcabinet-input; blum-library | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
 ## Drive ids
@@ -252,9 +254,10 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Outputs/change-log-2026-10-01-extractor-motor-and-f45-e91k.md` | **7,061** | `1H1Jtd4V60x6id77p2vatYR4EmGKORSiu` — **created 2026-10-02** with `create_file` |
 | `Outputs/change-log-index.md` | see that file | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` — **unchanged**, updated in place 2026-10-02 (Composio) |
 | `Outputs/kb-registers.md` | see header | `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o` — **unchanged**, in place |
-| `Outputs/change-log-2026-10-02-blum-library-and-metabox.md` | see file | created 2026-10-02 — id recorded in the next session's table |
+| `Outputs/change-log-2026-10-02-blum-library-and-metabox.md` | see file | `149Ha9DwAYKcFwv3L3zJmHVyRt0WpkDlv` — created 2026-10-02, amended in place the same day (hinges, section 7) |
 | `Wiki/Processes/blum-metabox-smartcabinet-input.md` | **7,094** | `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W` — **created 2026-10-02** |
 | `Wiki/Suppliers/blum-library.md` | see file | `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679` — **created 2026-10-02** |
+| `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
 | `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
 | `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 

@@ -9,6 +9,7 @@ sources:
  - "`Raw/Blum_publication.pdf` — *Blum catalogue and technical manual 2022/2023*, KA-150, Julius Blum GmbH, 758 pp., 548,904,350 B, Drive id `1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`, uploaded by the owner 2026-10-02"
 related:
  - ../Processes/blum-metabox-smartcabinet-input.md
+ - ../Processes/blum-clip-top-hinges-smartcabinet-input.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -100,7 +101,7 @@ family of each chapter.*
 | Need | Where |
 |---|---|
 | METABOX drawers into SmartCabinet | **B9**; worked up in `../Processes/blum-metabox-smartcabinet-input.md` |
-| Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2** |
+| Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
 | Soft close for doors | **H3** |
 | Push-to-open | **H4** (doors), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
 | Runners under wooden drawers | **R1** MOVENTO, **R3** TANDEM |
@@ -119,3 +120,4 @@ family of each chapter.*
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-02 | Created: 37 family PDFs, full text, part index, on the owner's instruction | Session 26 |
+| 2026-10-02 | Hinge row points to the new CLIP top 110° article | Session 26 |
