@@ -85,7 +85,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Wiki structure changes
 
-**All 43, oldest first.**
+**All 46, oldest first.**
 
 | Date | Change | Reason |
 |---|---|---|
@@ -133,10 +133,13 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-09-29 | **`Software/tcn-to-smartcabinet-reversibility.md` created** (**12,190 B**, id `1Wv0icnyiDz0QZpVytV8xu8b8XmXn0TyB`), answering the owner's question whether a SmartCabinet project can be rebuilt from a set of `.TCN` files. **Both master files re-fetched and decoded, section skeletons enumerated by script.** Records what a CN file carries (blank `DL`/`DH`/`DS`, machined face, every operation exactly) and ***the finding: the format has named slots for everything else and the postprocessor writes them empty*** — `VAR{}`, `SPEC{}`, `OPTI{}`, **`LINK{}`** and `PREV{}` present and blank in both files, so **an empty `LINK{}` is a deliberate silence, not a format limitation**. Also: `$=SmartCabinet` is the whole provenance record (it names the *program*), part names are a settable `CN Names` convention rather than data, and ***the files are not self-contained*** — four workings call **`..\custom\mcr\fittingx.tmcr`**, a macro on the machine's PC, which **no article here had recorded**. Import is recorded as **undocumented, not proven absent**, citing this KB's own rule that a menu absence is not evidence. **Three back-links added and verified symmetric** — `smartcabinet-online-manual.md` 24,437 -> **24,489**, `smartcabinet-and-production-workflow.md` 9,373 -> **9,425**, `cabineo-joint-geometry-reconciled.md` 17,557 -> **17,609**, all **in place** — and `index.md` 17,242 -> **18,606**, the entry placed **alphabetically by filename**. All five verified byte-identical, and all four pre-edit Drive sizes checked against local first | **A reversibility question will recur, and two of its answers were new.** *The back-links are the change of practice worth naming: on 2026-09-27 they were **deliberately skipped** because they meant ~80 KB of Drive re-emission for front matter — **that cost was priced before v32**, and under the in-place default three back-links are three uploads from disk with nothing retyped. `AWT-0089`'s own three articles are an older, separate case and stay parked.* **One incidental finding recorded, not actioned:** Drive returns `.TCN` with `mimeType: audio/mpeg` on every fetch — harmless to read, but §4 treats binary and Google-native types as unproven for in-place writes, and a text file reported as audio is how that rule fires on the wrong file |
 | 2026-10-01 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended** (6,769 -> **8,017 B**): new section *"E91K can mean the yellow START button, not a STOP button"* from fault `FL-004`; the E91K table row points to it. **Archive-then-recreate** (Composio not signed in): new id `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5`, old id `1BrG-COTZWG4bOrzWwrLgZmvRblox3ITz` now in `Archive/`. Verified `cmp`-identical. | Owner: *"Yes, add both"* - a misleading error text the next person needs before they chase the STOP button |
 | 2026-10-01 | **`Processes/maintenance-schedule-altendorf-f45.md` amended** (4,601 -> **5,119 B**): `MT-029` added - blow out control-panel buttons, weekly (proposed, a local addition, not from the manual). Archive-then-recreate: new id `1J0vyP9AEIJqngSE6eLtd-mzhi_nSRauf`, old id `1HSEVzy3o96d7sxrVFHefcM7pLRc2FU6k` now in `Archive/`. Verified `cmp`-identical. | Same instruction; row added to the Maintenance Schedule sheet the same day |
+| 2026-10-02 | **`Processes/blum-metabox-smartcabinet-input.md` created** (**7,094 B**, id `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W`, placeholder then in-place upload). | Owner: *"i need to input Metabox data into SmartCabinet as soon as we can"* |
+| 2026-10-02 | **`Suppliers/blum-library.md` created** (id `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679`, same route) - the index to the Blum library in `Raw/Blum/`. | Owner: *"create library where you can access easy"* |
+| 2026-10-02 | **`Wiki/index.md` amended in place** - two entries (Processes, Suppliers); id `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` unchanged. | Same |
 
 ## Outputs produced
 
-**All 85, oldest first.**
+**All 88, oldest first.**
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
@@ -228,6 +231,9 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **`FL-003` worked to a measured cause - insulation failure in the 11 kW fan motor of `FA2402`** (Fault Log row only; no Wiki article changed yet). Burnt `K1` `T2` terminal; every panel device, cable and lug tested good; **500 V insulation test: winding A 0.169 MOhm via cables, 0.176 MOhm motor alone.** Nameplate recorded (OMEGA 3MAS 160MA2, 11 kW 2-pole, 20/11.6 A, 160M B5, serial 16240008410, 02/2024). `T1` (LRE22, 16-24 A) shown unable to protect an 11.6 A winding. Two wrong turns retracted on the row the same day. | 2026-10-01 | troubleshooting-aes-saf-10000 (read, not amended) | Owner: *"We have new problem with extractor"* |
 | **`FL-004` and its two follow-ups** - `E91K` on the F45 traced by the owner to dust in the yellow START; `MT-029` added to the Maintenance Schedule sheet; two Wiki articles amended (see Wiki structure changes). | 2026-10-01 | troubleshooting-altendorf-f45; maintenance-schedule-altendorf-f45 | Owner: *"Yes, add both"* |
 | **`AWT-0225` raised on the Hub** (own row, Blocked) - git mirror behind Drive (v31 vs v35); the v32-v35 work only on unmerged `claude/vigilant-bell-olevtr`; merge blocked on `.claude/settings.json`. Plus `change-log-2026-10-01-extractor-motor-and-f45-e91k.md` and this row's companions in the index. | 2026-09-30 / 2026-10-02 | none | Darius, §0b Rule B |
+| **Blum library** - the 758-page Blum catalogue 2022/2023 split by script into **37 family PDFs**, a page-by-page **full-text file** and a **1,627-part index**, all in `Raw/Blum/` (`1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud`); ids in this session's change log. | 2026-10-02 | blum-library | Owner |
+| **METABOX data for SmartCabinet** - `Processes/blum-metabox-smartcabinet-input.md`. | 2026-10-02 | blum-metabox-smartcabinet-input; smartcabinet-online-manual | Owner |
+| **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
 ## Drive ids
 
@@ -244,8 +250,13 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Troubleshooting/troubleshooting-altendorf-f45.md` | **8,017** | `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5` — **new id**, archive-then-recreate 2026-10-01 (Composio not signed in); *supersedes `1BrG-COTZWG4bOrzWwrLgZmvRblox3ITz`, now in `Archive/` with that id preserved* |
 | `Wiki/Processes/maintenance-schedule-altendorf-f45.md` | **5,119** | `1J0vyP9AEIJqngSE6eLtd-mzhi_nSRauf` — **new id**, same route; *supersedes `1HSEVzy3o96d7sxrVFHefcM7pLRc2FU6k`, now in `Archive/`* |
 | `Outputs/change-log-2026-10-01-extractor-motor-and-f45-e91k.md` | **7,061** | `1H1Jtd4V60x6id77p2vatYR4EmGKORSiu` — **created 2026-10-02** with `create_file` |
-| `Outputs/change-log-index.md` | see that file | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` — **unchanged if this session's update is made in place**; if it has to be archive-then-recreated, the next session records the new id here |
-| `Outputs/kb-registers.md` | see header | `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o` — same condition |
+| `Outputs/change-log-index.md` | see that file | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` — **unchanged**, updated in place 2026-10-02 (Composio) |
+| `Outputs/kb-registers.md` | see header | `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o` — **unchanged**, in place |
+| `Outputs/change-log-2026-10-02-blum-library-and-metabox.md` | see file | created 2026-10-02 — id recorded in the next session's table |
+| `Wiki/Processes/blum-metabox-smartcabinet-input.md` | **7,094** | `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W` — **created 2026-10-02** |
+| `Wiki/Suppliers/blum-library.md` | see file | `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679` — **created 2026-10-02** |
+| `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
+| `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 
 *Two more files named `kb-registers.md` sit in `Outputs/` on Drive — `1xES9mYXXxoKzn8m-GYY68wUKEW2npxs8` (2026-09-20, 92,318 B) and `1aMUdmhTushgxIrAq6O4KUSKTyxO5lomO` (2026-09-19, 78,396 B) — apparently superseded copies never moved to `Archive/`. **The live one is `1Zw5cRA1…` above.** Flagged to the owner 2026-10-02, not moved.*
 

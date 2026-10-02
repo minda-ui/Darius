@@ -24,6 +24,10 @@ going into production or an order should be checked against Blum's current data.
 
 ## How to use it (for Darius, next time)
 
+**Quick ids:** full text `1UBmfS7dzkLdiBZur_DDlprsw47cFmewS` (1,215,947 B) · part index
+`1uL6ovp1pz-KtJrSJBXmVe0xoVTAocziQ` (59,890 B) · METABOX (B9) `1Z4y4m4fJlzXXHiv90tMRG0ogBEWItX1f` ·
+the whole catalogue `1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`.
+
 1. **A part number?** Look it up in `Blum-2022-23_part-index.csv` — **1,627 parts**, each with its catalogue
    pages, PDF pages and family code. It is Blum's own *Part No. Index* (catalogue p. 728), parsed.
 2. **A product or a dimension?** Search `Blum-2022-23_full-text.txt` (1.2 MB). Every page is headed
