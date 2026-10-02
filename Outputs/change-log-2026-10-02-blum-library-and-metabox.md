@@ -177,3 +177,11 @@ from (8) is closed by the owner.** The import had them all along: the first impo
 `25 GUIDE CASSETTO` entries proposed in (8) are **not needed**, and are kept in the METABOX article only as a
 fallback. **Awaiting tomorrow:** the owner's photo of the imported rail rows. Check them against the catalogue:
 cabinet holes at 37 + the NL-dependent second hole, `LX` 15.5, and no drawer-side holes.
+
+## (12) Check sheet for tomorrow's photo
+
+Owner: *"Go ahead."* `blum-metabox-smartcabinet-input.md` gained **§7, a check sheet for the imported rails**: the
+part-number pattern, LX 15.5, no side holes, cabinet holes per NL, and the **height of the rail hole line**, read
+from the catalogue's space-requirement drawing (PDF p. 399): **≥ side height above the part below (+2 with
+BLUMOTION), ≥ 24 below the part above**. The horizontal positions were re-checked against the fixing-position page
+(PDF p. 417). **The CN-output test** (two Ø5 holes on the side panel) is written as the deciding check.

@@ -135,10 +135,32 @@ From the owner's screenshot of **Anagrafica Accessori** after importing METABOX:
   and box systems (**Sistemi scatola**) are separate slots; a box system's **System = metallo** stops CN
   programs being made for its sides.
 
-## 7. What is still open
+## 7. Check sheet for the imported Kosmosoft rails
+
+Prepared 2026-10-02 so the owner's photo of the imported rows can be checked line by line. Every value is Blum's.
+
+**Rail = cabinet profile `320` + height letter + NL×10 + `C` / `C15`.** It comes with the drawer side, and there is
+**no separate rail part** in the catalogue. Heights: **N 54 · M 86 · K 118 · H 150**. N and M come in NL 270–550;
+K and H in NL 350–550 (there is no 300 in any height).
+
+| What to check in the imported row | Expected (Blum 2022/23) |
+|---|---|
+| Side clearance (`LX` or equivalent) | **15.5 mm per side**: the wooden parts are **LW − 31** wide *(drawing / printed)* |
+| Drawer-side holes | **none**: the sides are steel |
+| Box depth | **NL**; base NL − 2, inner drawer NL − 18 |
+| Cabinet depth needed | ≥ **NL + 3** (inner drawer NL + 5, high front NL + 7; +2 with BLUMOTION) |
+| **Cabinet-side holes from the front edge** (profile set back **2 mm**) | NL 270: **37, 229** · NL 300–350: **37, 261** · NL 400: **37, 357** · NL 450: **37, 389** · NL 500: **37, 453** · NL 550: **37, 165, 517** |
+| Hole type | **Ø5 System 32** for system screws 661.1450.HG (B), or chipboard screws Ø4 × 15 (A); a small Ø3.5 screw (C) at the front lip |
+| **Height of the hole line** | at least the **side height** above the part below it (**min. 54 / 86 / 118 / 150**, +2 with BLUMOTION), and at least **24 mm** below the part above *(drawing, read 2026-10-02)* |
+
+**Then the real test:** draw one cabinet with one METABOX drawer and open the side panel's CN program. Look for
+two Ø5 holes on one line, at 37 and the NL-dependent second position. If they are there, the import is complete.
+If the side panel has no holes, SmartCabinet is not drilling METABOX rails, and that becomes the next question.
+
+## 8. What is still open
 
 - Whether Import Accessori already offers METABOX (**check first** — §1).
-- The runner hole line's **height** and `LY` — drawing-only; confirm on one drawer.
+- The runner hole line's **height**: read from the drawing 2026-10-02 (§7). `LY` is still to confirm on one drawer.
 - The **M inner-drawer front height** printed as 61 mm, the same as N — likely a catalogue reuse; measure.
 - Whether SmartCabinet emits the cabinet-side runner holes from the Guide table — check one CN output.
 
@@ -149,3 +171,4 @@ From the owner's screenshot of **Anagrafica Accessori** after importing METABOX:
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue METABOX section and three SmartCabinet manual pages, on the owner's request | Session 26 |
 | 2026-10-02 | §6 added: METABOX imported under its own category, not as runners — why the rails are missing, and the proposed fix | Session 26 |
 | 2026-10-02 | §6: rails found in Kosmosoft's import and imported by the owner; manual fix superseded | Session 26 |
+| 2026-10-02 | §7 check sheet for the imported rails, incl. hole-line height read from the drawing | Session 26 |
