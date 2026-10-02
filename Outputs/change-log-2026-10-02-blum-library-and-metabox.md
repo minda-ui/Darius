@@ -169,3 +169,11 @@ pages:
   left/right*, and the part index has no separate METABOX rail part.
 - LEGRABOX (`750`), MERIVOBOX (`450`) and TANDEMBOX (`578`) rails are sold separately from their side sets.
 - TANDEM and MOVENTO are rails only, under wooden boxes.
+
+## (11) METABOX rails — imported from Kosmosoft
+
+Owner: *"Kosmosoft has Metabox rails, I have imported them. Tomorrow will send you picture."* **The missing-rails item
+from (8) is closed by the owner.** The import had them all along: the first import brought the box only. The manual
+`25 GUIDE CASSETTO` entries proposed in (8) are **not needed**, and are kept in the METABOX article only as a
+fallback. **Awaiting tomorrow:** the owner's photo of the imported rail rows. Check them against the catalogue:
+cabinet holes at 37 + the NL-dependent second hole, `LX` 15.5, and no drawer-side holes.

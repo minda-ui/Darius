@@ -122,7 +122,9 @@ From the owner's screenshot of **Anagrafica Accessori** after importing METABOX:
   *Ferramenta → Guide* list does not offer it. **That is the "missing rails".**
 - **LEGRABOX, also steel-sided, is set up as runners**: under `25 GUIDE CASSETTO`, **one entry per NL**
   (270–600). That is the model to copy.
-- **Proposed fix (not yet done):** add METABOX entries under `25 GUIDE CASSETTO`, one per NL, coded with
+- **Resolved the same evening by the owner: Kosmosoft's Import Accessori does carry METABOX rails, and they are now
+  imported.** The manual fix below is **not needed**; it is kept only as the fallback. Owner to photograph the
+  imported rail rows. *Superseded fallback:* add METABOX entries under `25 GUIDE CASSETTO`, one per NL, coded with
   Blum's part number (`320K3500C` … `320K5500C`, `320H3500C` … `320H5500C`; `C15` for quick assembly), then
   fill each row in *Guide Cassetto* per §2.
 - **Physically nothing extra is bought** — Blum's `320…C` part is *cabinet profiles and drawer sides
@@ -146,3 +148,4 @@ From the owner's screenshot of **Anagrafica Accessori** after importing METABOX:
 |---|---|---|
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue METABOX section and three SmartCabinet manual pages, on the owner's request | Session 26 |
 | 2026-10-02 | §6 added: METABOX imported under its own category, not as runners — why the rails are missing, and the proposed fix | Session 26 |
+| 2026-10-02 | §6: rails found in Kosmosoft's import and imported by the owner; manual fix superseded | Session 26 |
