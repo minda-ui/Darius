@@ -975,3 +975,17 @@ at £52.40 (£9.04/m²)**. Lathams' June note warns that prices may move with en
 **Already above the classifier's £47 selling price, before hinges, legs and labour.** With only the 14 structural Cabineos
 (shelves on pins, the back not Cabineo-fixed): **£34–37**. *Not included:* hinges and plates, legs (no price in the mail
 read), labour and machine time, and the door (outside the "without doors" price).
+
+## (53) Supplier mail moved to the aliased connection `darius-gmail-info-v2`
+
+**Owner: *"Yes, switch to v2 and update the charter."*** `GMAIL_GET_PROFILE` through `darius-gmail-info-v2`
+(`gmail_codex-smalls`) returned **info@fishboneconstruction.co.uk**, so the new connection reads the same mailbox as the
+one used for (52). **From now on every Gmail call carries `--account darius-gmail-info-v2`.**
+
+**`CLAUDE-Rules.md` §6b, Connection bullet** rewritten to name it (19,908 -> **20,175 B**). **Uploaded in place**, not
+archive-then-recreate: same version (v36), same day, one bullet, and the v36 copy it replaces was itself created this
+session. Downloaded back, `cmp` SAME; native connector reports `fileSize` 20175.
+
+**For the owner:** the unaliased `gmail_rebush-slad` (also info@) and the two expired attempts (`darius-gmail-info`,
+`gmail_hobby-voice`) can now be removed. Darius does not remove connections itself.
+

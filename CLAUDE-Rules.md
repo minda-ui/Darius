@@ -211,9 +211,11 @@ were the whole mailbox read-only, and read-plus-drafts).
   logs and tracks, it does not send" are unchanged.*
 - **Searches are narrowed by sender** (`from:` an approved domain). Anything else a search returns is **not opened
   further, quoted or filed**.
-- **Connection:** Composio `gmail_rebush-slad` (unaliased; **confirmed info@fishboneconstruction.co.uk** by
-  `GMAIL_GET_PROFILE` on 2026-10-03, before this entry was written). The other Gmail connections in the shared
-  Composio workspace — including `victoria-gmail-info` — **belong to other seats and are not used**.
+- **Connection:** Composio **`darius-gmail-info-v2`** (`gmail_codex-smalls`; **confirmed info@fishboneconstruction.co.uk**
+  by `GMAIL_GET_PROFILE`, 2026-10-03), on the owner's instruction *"switch to v2"*, and **every call carries
+  `--account darius-gmail-info-v2`**. *The first read (the Lathams quotes, the same evening) went through the unaliased
+  `gmail_rebush-slad`, also info@; the owner is to remove it and the two expired attempts.* The other Gmail connections in
+  the shared Composio workspace — including `victoria-gmail-info` — **belong to other seats and are not used**.
 
 **Tooling.** The owner narrowed the repo's `.claude/settings.json` herself (commit `e7029e1`, `main`): the blanket
 `GMAIL_*` deny became **per-action denies for every write, list, search and settings action**, plus a deny on
