@@ -746,3 +746,22 @@ Consequence for the standard range: the list says **which units to offer and the
 per unit (board, edging, hardware, machine and labour time) are still to be worked out, and that is where SmartCabinet's
 cutting lists and the hardware lists come in. *What the DIY Kitchens price includes (carcass only, or with a door) is not
 assumed: to be checked on their site or asked.*
+
+## (45) What a DIY Kitchens unit price includes
+
+Owner: *"Yes, check pls diy-kitchens.com."* **The site itself is blocked by this environment's network proxy**
+(`EGRESS_BLOCKED`), so this is **from web-search results quoting diy-kitchens.com pages**. Treat it as second-hand until
+someone opens the pages.
+
+- **Two prices per unit:** a **"cabinet only price"** and a price **with the chosen door range**. The unit price changes
+  with the door style (e.g. curved base CBU30: cabinet only lower than the price with doors).
+- **600 Highline base FD6:** reported at **£73.94 ex VAT with 1 door (715 × 597) and 2 hinges**; **720 carcass + 150 legs
+  = 870**, **560 deep**.
+- **Carcass:** Egger **18 mm** MFC, **8 mm** colour-matched backs with a **42 mm service void** behind, glue-and-dowel,
+  **supplied rigid**; carcass in a range of colours, matched inside and out.
+- **Hardware:** **Blum 110° hinges as standard; soft close +£2.50 per door**; drawers **Blum TANDEMBOX**, factory fitted;
+  **150 mm adjustable legs** (100 optional).
+- **Lead time: usually 2 weeks** from order to delivery (3 for a bespoke paint colour).
+
+**Reading the classifier against this:** its `BU60` figure is well below the FD6-with-door figure. It **probably holds
+cabinet-only prices**, but **this is not confirmed**: to be checked on the site from a normal browser.
