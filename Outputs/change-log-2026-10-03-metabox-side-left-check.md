@@ -119,3 +119,23 @@ back 1012 × 682. All 19 mm.
 4. **Four legs under a 1050 bottom**, all at the ends (X 13–77 and 973–1037). *Judgement, not a spec:* add a middle
    pair.
 5. No cutting list in this folder.
+
+## (7) 350 mm unit, version 2 — `Review folder/350mm Base unit with Metabox K/`
+
+Owner: *"I have updated with new folder for 350mm wide Base unit."* The old *Legrabox C* folder is gone. 15 `.TCN`
++ worklist + `.fnm` (still named *…Legrabox C Drawers.fnm*); **no cutting list**. **Compared byte-for-byte with
+version 1**:
+
+| Part | v2 against v1 | Verdict |
+|---|---|---|
+| Sides | **851 → 701**: the carcass is now **720**, the same as the corner unit | ✓ **question 1 of (6) resolved** |
+| Rail lines (from the top) | 58.8 / 238.5 / 418.3 / 570, both sides mirrored; still 37 · 165 · 261 · 357, Ø5 × 5 | ✓ K, NL 400. Bottom drawer **131** above the bottom panel (≥ 120); top **39.8** below the rails (≥ 24); gaps 179.7 / 179.8 / 151.7 |
+| Back | 832 → **682** × 312; side bores re-placed (70 / 341 / 612 from the bottom) | ✓ consistent |
+| Bottom, top rails, legs | **byte-identical** to v1 | ✓ |
+| Fronts | 214.3 → **176.8** high (4 × 176.8 + 4 × 3.2 = 720); Ø3 pilots 26 from the edges, 64 apart | ✓. Heights reconstruct to **~2 mm** off Blum's 40.5 / 104.5 *consistently on all four*, within the front's height adjustment (or BLUMOTION's +2) |
+| **Drawer bottoms ×4** | **byte-identical to v1**: still **292 × 388 × 10**, still the tool-182 cuts off the panel | **✗ NOT FIXED** |
+| Drawer backs, `FRONTAL` ×4 | still in the `.fnm`, still no program, no cutting list | **✗ still unplanned** |
+| NL | still 400 against ≈ 546 internal depth | **? unanswered** |
+
+Also: a copy of the folder *"Shelf unit for TV unit 30_09"* sits **inside** the 350 folder as well as beside it,
+probably dropped in by accident. Not reviewed yet.
