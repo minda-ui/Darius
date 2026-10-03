@@ -379,3 +379,13 @@ The owner sent *Cam Table: Legs*: **TD130 — Type 3, Scheme 3, 64 / 64, Ø3, de
 underside of the bottom). **This confirms (22): the table sets the hole pattern per leg, not the number of legs or
 their positions.** Asked for the cabinet-side place where the legs are assigned (likely the cabinet's hardware
 panel, near *Wall Support*). Fallback stands: screw the middle pair on at assembly.
+
+## (25) Middle legs — found by the owner
+
+Owner, with a photo of the cabinet's **Legs** panel: *"Blue value is max distance between legs, I have lowered to
+500mm and now have one pair extra in the middle."* **Recorded as the method:** *Legs* panel → **blue dot = maximum
+distance between legs**. Above it SmartCabinet adds intermediate pairs. Other fields read: **45 / 45** in from the sides
+(front and back rows), **85** (back row) and **80** (front row) in from the edges, *Add on Divider* ticked. For the 1050
+unit: end-leg span 1050 − 90 = 960 > 500 → **one middle pair** at ~525 *(derived)*. **Caution given:** *Add on Divider*
+is ticked and the corner unit now has a **0 mm dummy divider**. Check the regenerated `BOTTOMB` for a **second, unwanted
+pair under the divider line** (~528–547 from the left), next to the middle pair; untick it if so.
