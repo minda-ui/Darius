@@ -74,3 +74,17 @@ set 5.2 mm in from the rear edge, so the internal depth is ≈ 546. `03-BOTTOMB`
 bottoms.** Likely cause: the box configuration (`Box Config file` / `.SCS` on the METABOX *Scatola Cassetto* row)
 is still building a wooden-drawer base. The sides are correctly omitted (System = metal); base thickness, width
 and length are not.
+
+## (5) The cutting list — `Cutting list.pdf` in the same folder
+
+Owner: *"check folder for cutting list."* `Cutting list.pdf` (181,121 B, id `1RfN50UrZ1Lljk6lcbOGzkTiEZIUCWwTd`,
+4 pages, optimiser output, 4 mm blade) holds **two boards and 10 parts only**:
+
+- **W1100 ST9, 19 mm** (2800 × 2070, 26 % used): sides 851 × 570 ×2, bottom 350 × 570, top rails 312 × 150 ×2,
+  back 832 × 312. **Matches the programs.**
+- **U963 ST9 Diamond Grey, 19 mm** (5 % used): drawer fronts **347 × 214** ×4. *The programs say 214.3. Most likely
+  the list rounds for display; the saw operator should cut to 214.3, or the gaps change.*
+
+**Not on the cutting list at all: the 4 drawer bottoms, 4 drawer backs and 4 `FRONTAL` parts.** No board is
+planned for the drawer boxes. So the base error in (4) has a second half: even corrected, the drawer parts will
+not be cut unless they are added. Blum K, NL 400: **base 281 × 398 × 16**, **back 281 × 103 × 16**, no inner front.
