@@ -12,6 +12,7 @@ related:
  - ../Suppliers/blum-library.md
  - blum-metabox-smartcabinet-input.md
  - ../Software/smartcabinet-online-manual.md
+ - blum-doors-blumotion-and-tip-on.md
 ---
 
 # Blum CLIP top 110° hinges — drilling, overlay and SmartCabinet input
@@ -196,3 +197,4 @@ elsewhere, not in this table. Not checked yet.*
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue (110° hinge, mounting plates, hinge planning pages) and the SmartCabinet *Cerniere* manual page, on the owner's instruction | Session 26 |
 | 2026-10-02 | The shop's SmartCabinet hinges identified (screw-on 71B3550/3650/3750) | Session 26 |
 | 2026-10-03 | `79T8500` identified from the catalogue: corner-cabinet bi-fold hinge, not AVENTOS | Session 27 (32) |
+| 2026-10-03 | `related:` points to the doors article (sprung/unsprung versions for TIP-ON) | Session 27 (35) |

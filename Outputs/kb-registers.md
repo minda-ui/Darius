@@ -146,6 +146,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-03 | **`Processes/blum-legrabox-smartcabinet-input.md` created** (**8,686 B**, id `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo`, placeholder then in-place upload; Drive reports it `text/plain`, not `text/markdown`). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"please carry on with Blum"* |
 | 2026-10-03 | **`Processes/blum-aventos-lift-systems-smartcabinet-input.md` created** (**9,783 B**, id `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q`, placeholder then in-place upload). `blum-library.md`, `Wiki/index.md` and `blum-clip-top-hinges-smartcabinet-input.md` (`79T8500` identified) amended in place. | Owner: *"Do AVENTOS next"* |
 | 2026-10-03 | **`blum-aventos-lift-systems-smartcabinet-input.md` §4 amended in place** (9,783 -> **11,155 B**, same id): front fixing holes for HS, HL, HK-S and HK-XS. | Owner repeated *"Do AVENTOS next"* |
+| 2026-10-03 | **`Processes/blum-doors-blumotion-and-tip-on.md` created** (**6,722 B**, id `1HMICvxFvLfxy0ooKXvqwES9ifhZjnciG`, placeholder then in-place upload). `blum-library.md`, `Wiki/index.md` and `blum-clip-top-hinges-smartcabinet-input.md` (`related:`) amended in place. | Owner: *"Move to next"* |
 
 ## Outputs produced
 
@@ -247,6 +248,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Blum TANDEM and MOVENTO runners for SmartCabinet** - `Processes/blum-runners-tandem-movento-smartcabinet-input.md`. | 2026-10-02 | blum-runners-tandem-movento-smartcabinet-input; blum-library | Owner |
 | **Blum LEGRABOX for SmartCabinet** - `Processes/blum-legrabox-smartcabinet-input.md`. | 2026-10-03 | blum-legrabox-smartcabinet-input; blum-library | Owner |
 | **Blum AVENTOS lift systems for SmartCabinet** - `Processes/blum-aventos-lift-systems-smartcabinet-input.md`. | 2026-10-03 | blum-aventos-lift-systems-smartcabinet-input; blum-library; blum-clip-top-hinges-smartcabinet-input | Owner |
+| **Blum doors: BLUMOTION and TIP-ON** - `Processes/blum-doors-blumotion-and-tip-on.md`. | 2026-10-03 | blum-doors-blumotion-and-tip-on; blum-library; blum-clip-top-hinges-smartcabinet-input | Owner |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
@@ -274,6 +276,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |
 | `Wiki/Processes/blum-legrabox-smartcabinet-input.md` | **8,686** | `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo` — **created 2026-10-03** |
 | `Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` | **11,678** | `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q` — **created 2026-10-03** (9,783 B), amended in place the same day (§4, §6) |
+| `Wiki/Processes/blum-doors-blumotion-and-tip-on.md` | **6,722** | `1HMICvxFvLfxy0ooKXvqwES9ifhZjnciG` — **created 2026-10-03** |
 | `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
 | `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 

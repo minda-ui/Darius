@@ -517,3 +517,28 @@ Owner: *"It depends from customer about Aventos."* **No house AVENTOS type**: th
 in the AVENTOS article §6 is closed and replaced by a **per-job routine**: type from §1 → LF = KH × FG incl. handles → part
 numbers §2 → holes §3/§4 → SmartCabinet rows §5 → one sample per new type. Still open: whether Import Accessori already
 holds Blum AVENTOS rows.
+
+## (35) AVENTOS import check handed to the owner; Blum doors — BLUMOTION and TIP-ON
+
+**AVENTOS import.** Owner: *"Need to check which Aventos SmartCabinet is already got for import from library."* Darius
+cannot see the shop's SmartCabinet. **Steps given**, from the manual page *Import Accessori*: **+** → *Advanced search* →
+Supplier Blum / AVENTOS → screenshot, without importing. Plus screenshots of the Accessory Register and *Supporto Anta
+(Aventos)*. **Awaiting the owner's screenshots**: Darius will then check Kosmosoft's rows against the AVENTOS article.
+
+**Next topic.** Owner: *"Move to next."* **`Wiki/Processes/blum-doors-blumotion-and-tip-on.md` created** (**6,722 B**, id `1HMICvxFvLfxy0ooKXvqwES9ifhZjnciG`,
+placeholder then in-place upload, downloaded back byte-identical). From PDF p. 78 (CLIP top 110° order page), H3 pp. 160–173
+and H4 pp. 174–177.
+
+- **Soft close: nothing to add.** The shop's `71B3550/3650/3750` are CLIP top BLUMOTION. H3's separate units are only for
+  hinges without it (glass, mini, alu, corner bi-fold `970.1002`).
+- **TIP-ON needs a different hinge.** Blum pairs TIP-ON only with CLIP top **sprung** (`71T…`, with the 956A bumper unit) or
+  **unsprung** (`70T…TL`, with the 956/956A magnet units), not BLUMOTION. Same drilling, different part number.
+- **Units:** `956.1004` short (Ø10 × 50, fronts up to ~1300), `956A1004` long (Ø10 × 76, taller or inset), `956A1006` bumper.
+  Front gap ≥ 1.5 (magnet) / 3.2 (bumper).
+- **Fitting:** a drilled-in unit needs a **Ø10 × 50/76 edge bore**, *probably not possible on the K2 as read on 2026-09-23*:
+  its Ø10 is vertical, and which bushes are horizontal is my inference. **Adapter plates avoid it**: 20/17 `956.1201`,
+  20/32 `956A1201`, **37/32 cruciform `956A1501`** on the hinge-plate line.
+- **SmartCabinet:** TIP-ON is not named on the door-hardware pages read. Route: a handle-less door with the sprung or
+  unsprung hinge row (duplicate of the `71B` row) and an adapter plate; check Import Accessori first.
+- `blum-library.md`, `Wiki/index.md`, `blum-clip-top-hinges-smartcabinet-input.md` (`related:`) and the registers amended
+  in place.

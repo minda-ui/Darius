@@ -13,6 +13,7 @@ related:
  - ../Processes/blum-runners-tandem-movento-smartcabinet-input.md
  - ../Processes/blum-legrabox-smartcabinet-input.md
  - ../Processes/blum-aventos-lift-systems-smartcabinet-input.md
+ - ../Processes/blum-doors-blumotion-and-tip-on.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -107,8 +108,8 @@ family of each chapter.*
 | LEGRABOX drawers into SmartCabinet | **B1**; check sheet in `../Processes/blum-legrabox-smartcabinet-input.md` |
 | Lift-up flaps (AVENTOS) | **L1–L7**; choosing, drilling and the *Supporto Anta* table in `../Processes/blum-aventos-lift-systems-smartcabinet-input.md` |
 | Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
-| Soft close for doors | **H3** |
-| Push-to-open | **H4** (doors), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
+| Soft close for doors | **H3** — *not needed with the shop's CLIP top BLUMOTION hinges*; see `../Processes/blum-doors-blumotion-and-tip-on.md` |
+| Push-to-open | **H4** (doors; worked up in `../Processes/blum-doors-blumotion-and-tip-on.md`), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
 | Runners under wooden drawers | **R1** MOVENTO, **R3** TANDEM; worked up in `../Processes/blum-runners-tandem-movento-smartcabinet-input.md` |
 | Drilling patterns, overlay, gap and planning rules | **X1** |
 | Blum drilling templates and jigs | **E4**, **E2** |
@@ -156,3 +157,4 @@ Never copy one system's rail row to another. Detail is in
 | 2026-10-02 | *Every Blum drawer system has its own rail*: comparison table, after the owner's correction | Session 26 |
 | 2026-10-03 | B1 and the needs table point to the new LEGRABOX article | Session 27 |
 | 2026-10-03 | L1 and the needs table point to the new AVENTOS article | Session 27 |
+| 2026-10-03 | Soft-close and push-to-open rows point to the new doors article | Session 27 |
