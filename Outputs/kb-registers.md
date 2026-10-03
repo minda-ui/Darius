@@ -253,6 +253,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Blum doors: BLUMOTION and TIP-ON** - `Processes/blum-doors-blumotion-and-tip-on.md`. | 2026-10-03 | blum-doors-blumotion-and-tip-on; blum-library; blum-clip-top-hinges-smartcabinet-input | Owner |
 | **Blum drawer add-ons: TIP-ON, SERVO-DRIVE, AMBIA-LINE** - `Processes/blum-drawer-addons-tip-on-servo-drive-ambia-line.md`. | 2026-10-03 | blum-drawer-addons-tip-on-servo-drive-ambia-line; blum-library | Owner |
 | **Pre-production drawing check** - `Processes/pre-production-drawing-check.md` + skill `.claude/skills/pre-production-drawing-check/`. | 2026-10-03 | pre-production-drawing-check; the Blum articles | Owner |
+| **Standard Kitchen Range — catalogue for Sales, DRAFT v0** - `Outputs/standard-kitchen-range-v0-draft.md` (**5,999 B**, Drive id `1kB_iha5XC23LxM_lppRNIhVHJbtf21am`); readable copy published as a private Claude artifact (https://claude.ai/artifact/29S2i4Sg9RpgnRzEz6jQzS). **For the owner's review; not yet given to Sales.** | 2026-10-03 | smartcabinet-and-production-workflow (to be linked once agreed) | Owner: *"Provide to Sales"* → *"Draft a catalogue for Sales"* |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 

@@ -621,3 +621,26 @@ only.**
 
 Darius's response and questions are in the session reply. **Awaiting the owner's answers before anything is written
 into the workflow article.**
+
+## (40) Standard Kitchen Range — catalogue for Sales, draft v0
+
+Owner: *"I think we need to provide library with standardized sizes for kitchen units. Panel and edging and colours should be
+client only choice, if we talking about standard kitchen. It will allow us to give term of delivery clear… Completely
+opposite is bespoke production."* Then *"Provide to Sales"*, clarified as **"Draft a catalogue for Sales"**.
+
+**`Outputs/standard-kitchen-range-v0-draft.md` created** (**5,999 B**, id `1kB_iha5XC23LxM_lppRNIhVHJbtf21am`, placeholder then in-place upload, downloaded
+back byte-identical). It is also published as a **private** Claude artifact page for reading
+(https://claude.ai/artifact/29S2i4Sg9RpgnRzEz6jQzS), which only the owner can open until she shares it. Contents:
+
+1. what "standard" means: client chooses carcass, front and edging colour, handles [TBC]; everything else fixed; anything
+   else is bespoke;
+2. construction: carcass 19; base **720 × 570** *proposed from the current checked build*; wall 720/900 × 320 *proposed*;
+   soft-close hinges; METABOX or LEGRABOX [TBC]; AVENTOS HK top for lift-ups *proposed*;
+3. the coded unit list (B/W/T/P, widths 300–1000);
+4. the palette [TBC, must be stock or quick supply];
+5. what Sales send to release a kitchen;
+6. what is not included [TBC].
+
+**Every owner decision is left as [TBC]**: delivery term, leg height, tall height, gap standard, drawer system, handles,
+palette, the corner width (today's unit is 1050; the catalogue lists 1000 [TBC]), scope. **Not given to Sales: Darius
+does not send it; the owner reviews first.**
