@@ -162,3 +162,10 @@ programs part for part (8 parts).**
 **Verdict: correct as drawn, ready to make.** One recommendation, judgement rather than a defect: **a 1780-tall,
 250-deep unit should be fixed to the wall against tipping**, and the programs carry no wall-fixing provision.
 Fit a bracket or screw through the back on site. The duplicate copy inside the 350 folder can be deleted by the owner.
+
+## (9) Owner's decision — NL 400
+
+Owner: *"Use 400 mm rails, keep as is."* **NL 400 is the owner's choice for the 350 mm METABOX K unit, and the open question
+is closed.** The rail holes (37 · 165 · 261 · 357) and the drawer clearances stay as reviewed in (7). **Still open on
+this unit:** drawer bottoms (need **281 × 398 × 16**; the programs say 292 × 388 × 10) and drawer backs (**281 × 103 × 16**),
+not yet on a cutting list.
