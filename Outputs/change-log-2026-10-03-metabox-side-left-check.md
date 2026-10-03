@@ -989,3 +989,41 @@ session. Downloaded back, `cmp` SAME; native connector reports `fileSize` 20175.
 **For the owner:** the unaliased `gmail_rebush-slad` (also info@) and the two expired attempts (`darius-gmail-info`,
 `gmail_hobby-voice`) can now be removed. Darius does not remove connections itself.
 
+## (54) Panel Price Library: every Lathams board and edging price in one sheet
+
+**Owner: *"Let's back to Steven emails"*, then *"Create a library for panels with price."***
+
+**Mail read under §6b**, connection `darius-gmail-info-v2`, search **`from:steven.elliott@lathams.co.uk`** only:
+**50 messages**, 06/01/2025 to 16/06/2026. **Opened:** the 45 quotes, sales orders and replies. **Not opened:** 4
+auto-replies and **1 cash-sale invoice (323421)**. **Nothing sent, replied to, labelled or changed.** *(52) had read 4
+of these; this read takes in all of them.*
+
+**28 PDFs parsed** (15 quotes, 13 sales orders) by script into **75 priced lines**. **Each document's lines add up to
+its own "Goods" total to the penny, all 28**, so no line was dropped or misread. Then grouped into **37 materials**
+(19 boards, 1 laminate, 17 edgings). The PDFs stay in the scratchpad, **not filed in git** (§6b).
+
+**Built:**
+- **Smartsheet `Panel Price Library`** (`7248546623522692`, workspace `Workshop`), new. 22 columns: material
+  attributes; **Latest £ / date / source**; **First £ / date**; **Ordered**; **Price history**; **Notes**. Two
+  column formulas: **Rate £ per m2 or m** and **Change %**. **37 rows, read back after writing**: the formulas give
+  W980 ST7 £9.04/m² and H1385 +30.6 %, matching the script.
+- **`Wiki/Suppliers/lathams-panel-price-library.md`** (8,372 B, new, Drive `1-vyPWyauoQlzKx-dapw6CLDZ4SePstw_`).
+  Created with a placeholder, then uploaded in place from disk, so the text was not retyped. Byte-identical by
+  download and `cmp`; the native connector reports 8,372 B. Its tables are generated from the same data as the sheet.
+- **`Wiki/index.md`**: a Suppliers entry, in place (23,570 B; same checks).
+
+**Findings:**
+- **The carcass board BU60 is drawn in, 19 mm W1100 ST9 MFC, has never been quoted.** The W1100 that Lathams did
+  quote is **19 mm PerfectSense Gloss MDF at £175.10**, a front board. (52)'s use of 18 mm W980 at £52.40 as the
+  stand-in still stands.
+- **Prices are rising:**
+  - H1385 MFC **+30.6 %** (Dec 2025 → Jun 2026);
+  - W980 MFC **+8.0 %**;
+  - U999 PerfectSense Texture **+11.2 %**;
+  - H1385 edging **+33.3 %**.
+- **W980 ST2 vs ST7** is kept as two rows until someone confirms which it is.
+- The **U999 Feelwood edging** quote of £80 was revised to £40 the next day.
+
+**Owed:** §1 of `CLAUDE.md` lists the Workshop sheets and **does not yet name this one**. That is a charter
+change, held for the next charter version, not made here.
+
