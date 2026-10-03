@@ -127,12 +127,18 @@ LEGRABOX is entered: one accessory per NL under `25 GUIDE CASSETTO`**, coded by 
 | `LY` | bottom of the drawer sides to the cabinet bottom | **27.5 − base recess** → **14.5** with a 13 mm recess | **28.5 − recess** → **15.5** |
 | `CX` | notch width (some runners; 10 mm high) | **0** | **0** |
 | `LBox` | drawer box depth, excluding the front | **NL − 10** | **NL − 10** |
-| Side holes 1–6 (`X`, `Y`, `Ø`, `φ`) | holes in the drawer sides | **empty** | **empty** |
+| Hole groups 1–6 (`X`, `Y`, `Ø`, `φ`) | **the cabinet-side runner holes** (corrected 2026-10-03; see below) | `X` per §3 for the NL (e.g. NL 450: **37, 69, 165, 261**); **`Y` ≈ 37 − `LY` = 22.5** *(derived)*; Ø5 | `X` per §3 (NL 450: **37, 69, 261, 293**); **`Y` ≈ 38 − `LY` = 22.5** *(derived)*; Ø5 |
 | Back holes (`X`, `Y`, `Ø`, `φ`) | holes in the drawer back, symmetric | **X 7, Y 11, Ø 6, φ 10** *(drawing)* | same |
 | `DrawerGuideHoleBackOpposite` (CAM settings) | 0 = drill from inside, 1 = from outside | **1** (the hook enters from behind) — *check* | same |
 
-*`LX` and `LY` are derived from Blum's printed rules (SKW = LW − 42; min. 27.5 / 28.5). **Whether SmartCabinet's
-`LX` is per side or in total is not stated in the manual pages read.** Draw one drawer and check that the inside
+**Corrected 2026-10-03.** This table first said the hole groups were holes in the *drawer* sides and should be left
+empty. **The shop's own Kosmosoft rows show they are the cabinet-side runner holes**: LEGRABOX's rows carry
+LEGRABOX's cabinet-profile positions 37/69/261/293/357, with `Y` measured up from the bottom of the drawer side.
+See `blum-metabox-smartcabinet-input.md` §7.
+
+*`LX` and `LY` are derived from Blum's printed rules (SKW = LW − 42; min. 27.5 / 28.5). **`LX` is per side**: the
+shop's LEGRABOX rows give 5 against Blum's 4.7 a side. ~~Whether SmartCabinet's
+`LX` is per side or in total is not stated in the manual pages read.~~ Draw one drawer and check that the inside
 width comes out at **LW − 42**: if it comes out at LW − 37, enter 10. The base recess is set in the drawer-box
 configuration, not here.*
 
@@ -141,7 +147,7 @@ configuration, not here.*
 - **Whether TANDEM or MOVENTO is already in SmartCabinet**, or in Import Accessori. **Check first** (§5).
 - **Which runner the shop actually uses**, and its drawer side thickness (16 or 18). That decides 560H or 560F, and
   `LX`.
-- `LX` per side or total: check with one drawer (§5).
+- ~~`LX` per side or total~~: **per side**, from the shop's LEGRABOX rows (2026-10-03).
 - The rear Ø6 hole position: confirm with template T65.1000.02 on the first drawer.
 - **Whether SmartCabinet drills the cabinet-side runner holes at all.** The *Guide Cassetto* table only describes
   drawer holes, so check one cabinet's CN output. This is the same open question as for METABOX.
@@ -151,3 +157,4 @@ configuration, not here.*
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue (TANDEM 560H/560F, MOVENTO 760H/766H) and the SmartCabinet *Guide Cassetto* manual page, on the owner's instruction | Session 26 |
+| 2026-10-03 | §5 corrected: hole groups are cabinet-side holes, not drawer-side; `LX` per side | Session 27 |

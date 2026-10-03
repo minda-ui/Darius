@@ -44,7 +44,7 @@ in the **cabinet sides** (runner) and the **front** (front fixing). Map it this 
 | `LY` (under the drawer) | **not printed** — the drawing shows the box on the cabinet profile; the only clearance figure given is **min. 24 mm above** the box | *(drawing)* — measure on a sample |
 | `CX` (groove) | **none** — base sits on the steel side's flange, no groove | |
 | `LBox` | **NL** (nominal length) | 270–550, see §3 |
-| Drawer-side holes | **none** (steel sides) | leave the six side-hole groups empty |
+| ~~Drawer-side holes~~ → **the six hole groups are the CABINET-side rail holes** | `X` = from the cabinet front edge, `Y` = height above the bottom of the drawer side | **corrected 2026-10-03** — see §7, *The shop's imported row*. The 2026-10-02 reading ("leave empty") was wrong |
 | Back holes | **none** for the standard back fixing | back is fixed to the steel sides |
 
 *Whether SmartCabinet then generates the **cabinet-side** runner holes from this table, or needs them set
@@ -146,7 +146,7 @@ K and H in NL 350–550 (there is no 300 in any height).
 | What to check in the imported row | Expected (Blum 2022/23) |
 |---|---|
 | Side clearance (`LX` or equivalent) | **15.5 mm per side**: the wooden parts are **LW − 31** wide *(drawing / printed)* |
-| Drawer-side holes | **none**: the sides are steel |
+| Hole groups (`X`/`Y`/`Ø`/`φ`) | **cabinet-side rail holes** (corrected 2026-10-03): `X` 37 + NL's rear hole; `Y` ≈ side height − 5 *(derived from the imported M row: 81)* |
 | Box depth | **NL**; base NL − 2, inner drawer NL − 18 |
 | Cabinet depth needed | ≥ **NL + 3** (inner drawer NL + 5, high front NL + 7; +2 with BLUMOTION) |
 | **Cabinet-side holes from the front edge** (profile set back **2 mm**) | NL 270: **37, 229** · NL 300–350: **37, 261** · NL 400: **37, 357** · NL 450: **37, 389** · NL 500: **37, 453** · NL 550: **37, 165, 517** |
@@ -168,7 +168,7 @@ drawers. Read against this check sheet:
 | Front hole | **37** from the front edge | **matches** Blum |
 | Further holes on each line | **165 · 261 · 357** from the front edge | **357 is NL 400's rear hole.** 165 and 261 line up with the NL 400 profile's intermediate holes *(drawing, p. 417)*. **No other NL uses 357**, so the rail drawn is **NL 400** |
 | NL against the cabinet | side 570 deep; NL 400 needs ≥ 403 | fits, but **a 570-deep side would usually take NL 500** (≥ 503) — *if* the internal depth is ≥ 503. Is 400 intended? |
-| **Bottom drawer clearance** | lowest line **752**: **99 mm** above the bottom panel (the shop's Cabineo joint puts the sides **on** the bottom panel, `cabineo-joint-geometry-reconciled.md`) | **N (54) and M (86) fit; K (118) and H (150) do not** (+2 with BLUMOTION). The import holds **K and H only** |
+| **Bottom drawer clearance** | lowest line **752**: **99 mm** above the bottom panel (the shop's Cabineo joint puts the sides **on** the bottom panel, `cabineo-joint-geometry-reconciled.md`) | **N (54) and M (86) fit; K (118) and H (150) do not** (+2 with BLUMOTION). **Settled the same morning: the rail is M (`320M4000C`) — fits, 11 mm spare** |
 | Spacing between drawers | 217.25 · 217.25 · 189.25 | fits any height, H included (needs ≥ 152) |
 | Top drawer | line 128.25 → ~109 below the top rails | ≥ 24 ✓ |
 | Hole depth | 5 mm | a pilot for chipboard screws Ø4 × 15 (A). **Too shallow to seat system screws Ø6 × 14.5 (B)**; the shop's own B holes elsewhere on this panel are 5 × 12 |
@@ -176,6 +176,30 @@ drawers. Read against this check sheet:
 **Verdict:** the rails are being drilled at Blum's front position with an NL 400 rear hole. **Two questions for the
 owner:** which height the **bottom** drawer is (K or H will not fit at 99 mm), and whether **NL 400** is the length
 intended.
+
+### The shop's imported row — `320M4000C METABOX`, read 2026-10-03
+
+The owner's photo of *Tabelle CAM Accessori → Guide Cassetto*:
+
+| Field | Imported | Blum | Verdict |
+|---|---|---|---|
+| Name | **320M4000C** — M (86), NL 400, screw-on | — | **the Side Left drawing is this rail**: M, not K/H |
+| `LX` | **5** | 15.5 per side to the wood (LW − 31) | **consistent if SmartCabinet's METABOX box system counts a ~10.5 mm steel side** (5 + 10.5 = 15.5). Kosmosoft's LEGRABOX rows also say 5, and Blum's LEGRABOX base is LW − 35 with 12.8 sides: 4.7 a side. **So `LX` is per side, measured to the side's outer face.** *Check: the cutting list should give the METABOX base as **LW − 31**.* |
+| `LY` | **18** | hole line ≥ 86 (+2 BLUMOTION) above the part below | 18 + `Y` 81 = **99**, exactly the Side Left drawing. **≥ 88 ✓, 11 mm to spare** |
+| `CX` | 0 | no groove | ✓ |
+| `LBox` | **398** | base NL − 2 = 398 | ✓ |
+| Holes 1–4 | **X 37 · 165 · 261 · 357**, all **Y 81, Ø5, φ5** | fixing screws at **37 and 357** for NL 400; 165 and 261 are further profile holes | ✓. 165/261 are extra fixings Blum does not require. **φ5 is a pilot**: fine for chipboard screws Ø4 × 15, too shallow for system screws Ø6 × 14.5 |
+| `Y` 81 | hole height | the screw line sits ~5–6 mm below the top of an 86 side *(drawing)* | ✓ |
+
+**Correction, owned:** on 2026-10-02 this article and the runner article read SmartCabinet's hole columns as holes in
+the **drawer** sides (the manual says *"nei laterali dei cassetti"*) and told the reader to leave them empty for
+steel sides. **The shop's own rows show they hold the cabinet-side runner positions.** Kosmosoft's LEGRABOX rows
+carry exactly LEGRABOX's cabinet-profile holes (37, 69, 261, 293, 357), and the METABOX row produced the Side Left
+holes. *The Italian was ambiguous. The shop's data was not.*
+
+**Only one METABOX row (M, NL 400) is visible in the photo.** Every height and NL the shop builds needs its own
+row: for another NL, the rear hole moves (229 / 261 / 357 / 389 / 453 / 165 + 517). For another height, `Y`
+moves (≈ 49 N, 113 K, 145 H *(derived)*) and `LY` must keep `LY + Y` ≥ side height + 2.
 
 ## 8. What is still open
 
@@ -193,3 +217,4 @@ intended.
 | 2026-10-02 | §6: rails found in Kosmosoft's import and imported by the owner; manual fix superseded | Session 26 |
 | 2026-10-02 | §7 check sheet for the imported rails, incl. hole-line height read from the drawing | Session 26 |
 | 2026-10-03 | §7: first CN output (`Raw/Side Left.pdf`) checked; NL 400 pattern, bottom-drawer clearance 99 mm | Session 27 |
+| 2026-10-03 | §7: the imported `320M4000C` row checked — M not K/H, so the bottom drawer fits. **§2 corrected: the hole groups are cabinet-side holes** | Session 27 |
