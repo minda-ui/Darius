@@ -4,7 +4,7 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 sources:
  - "`Raw/Blum_publication.pdf` — *Blum catalogue and technical manual 2022/2023* (KA-150). 110° hinge: PDF pp. 78–79 (cat. 74–75); overview and number of hinges: PDF pp. 76–77 (cat. 72–73); mounting plates: PDF pp. 148–152 (cat. 144–148); planning and front overlay: PDF pp. 710–713 (cat. 706–709). Extracts: `Raw/Blum/` families **H1** and **H2**"
  - "SmartCabinet online manual, `mainit/smartcabinet/tabelle_cam_accessori_cerniere.html`, fetched 2026-10-02"
@@ -182,6 +182,9 @@ elsewhere, not in this table. Not checked yet.*
 - **Which hinges SmartCabinet already holds — answered 2026-10-02** from the owner's screenshot of Anagrafica
   Accessori (category `35`): **`71B3550`** (overlay), **`71B3650`** (described there as *half overlay* = Blum's
   *dual*), **`71B3750`** (inset) — the **screw-on** CLIP top BLUMOTION hinges — plus **`79T8500`** (60° bi-fold).
+  *Added 2026-10-03: in Blum's catalogue (p. 114) `79T8500` is the **corner-cabinet bi-fold hinge**, used together
+  with a CLIP top 155° hinge for L-shaped corner doors. It is **not** an AVENTOS part (see
+  `blum-aventos-lift-systems-smartcabinet-input.md`).*
   **Screw-on means no Ø8 door holes: leave `DX2`, `DY2`, `DØ2`, `Dφ2` empty** and drill only the Ø35 cup.
   *That is what the database holds, not proof of what is in stock.* Which **mounting plate** is used is still unknown.
 - One test door, drilled and hung, before a batch: TB, MD and the overlay formula.
@@ -192,3 +195,4 @@ elsewhere, not in this table. Not checked yet.*
 |---|---|---|
 | 2026-10-02 | Created from the Blum 2022/2023 catalogue (110° hinge, mounting plates, hinge planning pages) and the SmartCabinet *Cerniere* manual page, on the owner's instruction | Session 26 |
 | 2026-10-02 | The shop's SmartCabinet hinges identified (screw-on 71B3550/3650/3750) | Session 26 |
+| 2026-10-03 | `79T8500` identified from the catalogue: corner-cabinet bi-fold hinge, not AVENTOS | Session 27 (32) |

@@ -473,3 +473,24 @@ byte-identical). From catalogue PDF pp. 196–246 (B1) and the two Kosmosoft she
   AMBIA-LINE not covered.
 - `blum-library.md` (B1 row, needs table, Changes) and `Wiki/index.md` amended in place; registers rows added.
 - Drive reports the new article as `text/plain`, not `text/markdown` like the older ones. The content is identical; noted.
+
+## (32) Blum, continued — AVENTOS written up
+
+Owner: *"Do AVENTOS next."* **`Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` created** (**9,783 B**, id
+`1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q`, placeholder then in-place upload, downloaded back byte-identical). From catalogue PDF pp. 18–71 (L1–L7) and the
+SmartCabinet manual page *Supporto Anta (Aventos)* (`tabelle_cam_accessori_aventos.html`, fetched today).
+
+- **Choosing:** HK top / HK-S / HK-XS (stay lift), HL (lift up), HS (up and over), HF (bi-fold), by how the front opens and
+  KH. **LF = KH × FG incl. handles.** HK top max. 18 kg on two mechanisms; a third mechanism gives +50 % LF.
+- **Cabinet holes** *(drawing)*: HK top **37/69/133/165 at 36 from the top, Ø5 × 11.5**; HS/HL **37/229** at 80/88 + SOB;
+  HF **37/229** at KH × 0.3 − 28 (KH < 550) or − 57; HK-S pegs 37/101 at 74; HK-XS 137 + MD + K + SOB.
+- **Fronts:** HK top brackets at 62 + FAo, +32 ×3, SFA + 12.5 in; HF arm bracket X (70/47) below the lower front's
+  mid-height. HF hinge set `78Z5500T12` (2 × 120° `70T5550.TL` + 2 × centre `78Z5500T`).
+- **SmartCabinet:** one row per hole, S (cabinet: X from the front, Y from the top) or D (front: X from the top/bottom, Y
+  from the sides), drilled both sides; `Min/Max H Anta` limit the rows; on HF the D holes go on the lower front. A
+  worked S-row set for HK top is in §5. The **`Y`-datum (top of the side or underside of the top panel)** is left to check
+  on a sample.
+- **Correction, owned:** my reply after (31) said the shop's `79T8500` goes with AVENTOS HF. **It does not**: Blum p. 114
+  lists it as the **corner-cabinet bi-fold hinge** (with a CLIP top 155° hinge). Recorded in the AVENTOS article and in
+  `blum-clip-top-hinges-smartcabinet-input.md` §8.
+- `blum-library.md`, `Wiki/index.md` and the registers amended in place.

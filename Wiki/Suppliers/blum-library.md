@@ -12,6 +12,7 @@ related:
  - ../Processes/blum-clip-top-hinges-smartcabinet-input.md
  - ../Processes/blum-runners-tandem-movento-smartcabinet-input.md
  - ../Processes/blum-legrabox-smartcabinet-input.md
+ - ../Processes/blum-aventos-lift-systems-smartcabinet-input.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -47,7 +48,7 @@ the whole catalogue `1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`.
 |---|---|---|---|
 | 00 | Cover, contents, product overview | 1–17 | — |
 | **Lift systems** | | | |
-| L1 | AVENTOS HF — bi-fold lift (+ chapter overview) | 18–33 | 14–29 |
+| L1 | AVENTOS HF — bi-fold lift (+ chapter overview) — *L1–L7 worked up in `../Processes/blum-aventos-lift-systems-smartcabinet-input.md`* | 18–33 | 14–29 |
 | L2 | AVENTOS HS — up and over | 34–39 | 30–35 |
 | L3 | AVENTOS HL — lift up | 40–45 | 36–41 |
 | L4 | AVENTOS HK top — stay lift | 46–55 | 42–51 |
@@ -104,6 +105,7 @@ family of each chapter.*
 |---|---|
 | METABOX drawers into SmartCabinet | **B9**; worked up in `../Processes/blum-metabox-smartcabinet-input.md` |
 | LEGRABOX drawers into SmartCabinet | **B1**; check sheet in `../Processes/blum-legrabox-smartcabinet-input.md` |
+| Lift-up flaps (AVENTOS) | **L1–L7**; choosing, drilling and the *Supporto Anta* table in `../Processes/blum-aventos-lift-systems-smartcabinet-input.md` |
 | Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
 | Soft close for doors | **H3** |
 | Push-to-open | **H4** (doors), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
@@ -153,3 +155,4 @@ Never copy one system's rail row to another. Detail is in
 | 2026-10-02 | Runner row points to the new TANDEM/MOVENTO article | Session 26 |
 | 2026-10-02 | *Every Blum drawer system has its own rail*: comparison table, after the owner's correction | Session 26 |
 | 2026-10-03 | B1 and the needs table point to the new LEGRABOX article | Session 27 |
+| 2026-10-03 | L1 and the needs table point to the new AVENTOS article | Session 27 |
