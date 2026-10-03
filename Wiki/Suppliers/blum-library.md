@@ -14,6 +14,7 @@ related:
  - ../Processes/blum-legrabox-smartcabinet-input.md
  - ../Processes/blum-aventos-lift-systems-smartcabinet-input.md
  - ../Processes/blum-doors-blumotion-and-tip-on.md
+ - ../Processes/blum-drawer-addons-tip-on-servo-drive-ambia-line.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -109,7 +110,8 @@ family of each chapter.*
 | Lift-up flaps (AVENTOS) | **L1–L7**; choosing, drilling and the *Supporto Anta* table in `../Processes/blum-aventos-lift-systems-smartcabinet-input.md` |
 | Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
 | Soft close for doors | **H3** — *not needed with the shop's CLIP top BLUMOTION hinges*; see `../Processes/blum-doors-blumotion-and-tip-on.md` |
-| Push-to-open | **H4** (doors; worked up in `../Processes/blum-doors-blumotion-and-tip-on.md`), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
+| Push-to-open | **H4** (doors; worked up in `../Processes/blum-doors-blumotion-and-tip-on.md`), **R2** (MOVENTO), **B2/B4/B7** (boxes); drawers worked up in `../Processes/blum-drawer-addons-tip-on-servo-drive-ambia-line.md` — **none for METABOX** |
+| Electric opening, drawer inserts | **B8/R4** SERVO-DRIVE, **I1** AMBIA-LINE; same article |
 | Runners under wooden drawers | **R1** MOVENTO, **R3** TANDEM; worked up in `../Processes/blum-runners-tandem-movento-smartcabinet-input.md` |
 | Drilling patterns, overlay, gap and planning rules | **X1** |
 | Blum drilling templates and jigs | **E4**, **E2** |
@@ -158,3 +160,4 @@ Never copy one system's rail row to another. Detail is in
 | 2026-10-03 | B1 and the needs table point to the new LEGRABOX article | Session 27 |
 | 2026-10-03 | L1 and the needs table point to the new AVENTOS article | Session 27 |
 | 2026-10-03 | Soft-close and push-to-open rows point to the new doors article | Session 27 |
+| 2026-10-03 | Drawer add-ons (TIP-ON, SERVO-DRIVE, AMBIA-LINE) row added | Session 27 |

@@ -542,3 +542,19 @@ and H4 pp. 174–177.
   unsprung hinge row (duplicate of the `71B` row) and an adapter plate; check Import Accessori first.
 - `blum-library.md`, `Wiki/index.md`, `blum-clip-top-hinges-smartcabinet-input.md` (`related:`) and the registers amended
   in place.
+
+## (36) Blum, one more batch — drawer add-ons
+
+Owner: *"Let's do one more batch."* **`Wiki/Processes/blum-drawer-addons-tip-on-servo-drive-ambia-line.md` created**
+(**6,364 B**, id `1ZVskCHZxTc5kzDMIdlBPfa3ooJM5sC92`, placeholder then in-place upload, downloaded back byte-identical). From B2 (PDF 248–259), R2 (438–449),
+B8 (362–393), R4 (496–529) and I1 (530–543).
+
+- **METABOX has no TIP-ON and no SERVO-DRIVE.** A text search of B9 found neither, so **handle-less drawers mean LEGRABOX
+  or MOVENTO**.
+- **TIP-ON BLUMOTION** (2.5 gap): standard `…S` rails + set `T60L7040/7140/7340/7540/7570` by NL and pull-out weight; sync
+  cut LW − 221 / − 247 (LEGRABOX), − 241 / − 267 (MOVENTO).
+- **Plain TIP-ON** (3.5 gap): **different rails** `750.…T` / `760H…T`; sync `T57.7400.01` + `ZST.1160W`, cut LW − 229 / − 249.
+- **SERVO-DRIVE:** bracket profile cut LH − 10, one drive unit `Z10A3000.03` per pull-out, bumpers, a 24 W supply and **a
+  socket (electrician)**; LEGRABOX LW ≥ 267. The depth behind the drawers is to be read per job (cat. p. 362).
+- **AMBIA-LINE:** inserts for LEGRABOX, chosen per job; no machining.
+- `blum-library.md`, `Wiki/index.md` and the registers amended in place.
