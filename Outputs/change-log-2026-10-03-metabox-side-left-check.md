@@ -419,3 +419,20 @@ both sides; 716 / 2 mm gaps vs the 350 unit's 3.2 mm; no cutting list in the fol
 
 *Lesson for future reviews:* a back set in from the rear on a base unit can be a **service void**; ask before calling it a
 fault.
+
+## (28) Corner unit v2, regenerated 10:41 — door and blank fixed; shelf still split
+
+Same folder, regenerated; **cutting list now present** (3 pages). Sides (`01`/`02` and their `B` faces), back `08-BACK-1`
+and back rail are **byte-identical** to (26); `08-BACK-1B` is **gone**.
+
+| Item | Regenerated | Verdict |
+|---|---|---|
+| **Door** `10-DOOR-2` | **716 × 500**; cups Ø35 × 13 at 100 / 616, **22.5** from the hinge edge | ✓. Right side unchanged → plates still line up |
+| **Blank** `09-DOOR-1` | **716 × 544**; Ø8 dowels at 105.5 … 457.5 | ✓ align with the bottom (107 … 459, the same 1.5 offset as before) and the front rail (924 … 572 mirrored; sum 1031 as before) |
+| **Back** | Y 462.9 | ✓ intentional, pipe void (27) |
+| **Legs** | middle pair moved to X **471–535** (follows the divider) | ✓ one middle pair |
+| **Shelf** | **still split, now 527 + 483**. Each piece: two Cabineo to its side (into the side's Ø5 / 32 rows at 84 / 377) **and two Cabineo at the split end that now meet nothing** — the back fixing went with `08-BACK-1B` | **✗ worse than v2**: each half is held only at its outer end. **Fix: one 1011 shelf.** v1's `06-SHELF-1.TCN` (1011 × 441, Cabineo at both ends, slots at Y 83.5 / 376.4) **still fits**: the sides' rows (84 / 377, 458.4→266.4, pitch 32) are unchanged. Cut it in place of `06` + `07`, or get SmartCabinet to put the shelf across the whole carcass (the split follows the dummy divider) |
+| Side Cabineo on the outer faces | unchanged | ? still to be answered |
+| Front gaps | 716 / 2 mm vs the 350 unit's 3.2 | ? still to be answered |
+
+**Verdict given:** everything except the shelf is ready; **do not cut `06-SHELF-1` / `07-SHELF-2` from this set**.
