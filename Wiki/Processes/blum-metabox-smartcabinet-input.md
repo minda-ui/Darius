@@ -251,6 +251,14 @@ edges = **302**.
 | 5 (⓱) | front-to-box dowels | 0 | **leave 0**: the METABOX front fixes by brackets |
 | foot | *Set as Default* · load · **save** | — | **Save as a named `.SCS` (e.g. `METABOX_K.scs`) and select it in *Box Config file*. Do NOT press *Set as Default*: it would change every wooden drawer too** |
 
+**VERIFIED SET — 2026-10-03, 350 mm unit v9: SmartCabinet produced base 281 × 382 × 16 and back 281 × 103 × 16.**
+In the METABOX `.SCS`, loaded on the METABOX row: `cass01_dist_lat=5.00` · `cass03_dist_sot=18.00` ·
+**`cass05_spess=10.50`** · `cass_sp_sot=16.00` · `cass_sp_die=16.00` · **`cass_sp_fro=0.00`** · **`cass_sot_dy=0.00`** ·
+`cass_sot_dz=0.00` · **`bCassDDIE=1`** · **`bCassDIESOT=0`** · **`bCassDIESOTFILO=1`**. The box is **398 deep overall** (382 base +
+16 back standing behind it), matching Blum's NL − 2. *The base/back corner differs from Blum's drawing (base under
+the back); this is the owner-accepted build.* **Use this set for every METABOX K job; recheck `BH` / heights for other
+side heights (N/M/H).**
+
 **What actually takes effect (proved 2026-10-03 on the 350 unit):** edit the `.SCS` in Notepad, restart SmartCabinet, and **load it through *Box Config file* on the METABOX row** of the drawer-box table. Values typed and saved in the *Drawer Box settings* window did **not** reach the box-system output. The first load fixed the back height (`cass_sot_dy=0`) and exposed that the file still lacked `cass05_spess=10.50`.
 
 **Check after regenerating (METABOX K, NL 400, LW 312):** **base 281 × 398 × 16**, **back 281 × 103 × 16**, **no

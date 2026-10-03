@@ -314,3 +314,15 @@ window earlier never went into this file (the owner's photo of it started below 
 in the same `.SCS`, set `cass05_spess=10.50`, keep `cass_sot_dy=0.00`, save, restart SmartCabinet, regenerate.
 Expected: **base 281 × 382, back 281 × 103**. Also recorded in `blum-metabox-smartcabinet-input.md` §7a: **edit the
 `.SCS` and load it on the METABOX row; the window's own save does not reach the box system.**
+
+## (20) 350 mm unit, version 9 — drawer parts right; job ready
+
+Owner set `cass05_spess=10.50` in the `.SCS` and loaded it on the METABOX row. **Drawer bottoms 281 × 382 × 16 and
+backs 281 × 103 × 16**, on the cutting list and in `28-NESTING02-SP16-U961` (4 + 4 contours, exact sizes).
+**Every carcass and front program is byte-identical to v8.** The **verified `.SCS` set is now written into §7a** as
+the METABOX K standard.
+
+**Verdict given: ready to make, from the nesting programs / cutting list.** Two checks kept:
+- The single `…DRAWER-n-BOTTOM.TCN` files still carry two **tool-182, 8 mm** cuts running mostly off the panel. The
+  nesting has none. **Do not run the single bottom files.**
+- The nesting contours carry no tool number: confirm the cutter in TpaCAD's simulation before the first sheet.
