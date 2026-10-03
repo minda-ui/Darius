@@ -88,3 +88,34 @@ Owner: *"check folder for cutting list."* `Cutting list.pdf` (181,121 B, id `1Rf
 **Not on the cutting list at all: the 4 drawer bottoms, 4 drawer backs and 4 `FRONTAL` parts.** No board is
 planned for the drawer boxes. So the base error in (4) has a second half: even corrected, the drawer parts will
 not be cut unless they are added. Blum K, NL 400: **base 281 × 398 × 16**, **back 281 × 103 × 16**, no inner front.
+
+## (6) Pre-production review — `1050mm Base Corner Unit v1`
+
+Owner: *"Review the 1050 corner unit now."* 8 `.TCN` + worklist + `.fnm`; **no cutting list in this folder**.
+Decoded by script, every bore and pocket checked joint by joint. *Method note, worth keeping: a Cabineo pocket's
+`W#89` X is the circle's **start point**, 7.5 mm (one Ø15 radius) from its centre. Read naively, the back-to-bottom
+joints look 7.5 mm out. They are not: centre 50 + 19 = 69, exactly the bottom's bore.*
+
+**Parts:** sides 701 × 570 ×2, bottom 1050 × 570 (sides stand on it), top rails 1012 × 150 ×2, fixed shelf 1011 × 441,
+back 1012 × 682. All 19 mm.
+
+| Joint / feature | Programs | Verdict |
+|---|---|---|
+| Sides → bottom (Cabineo) | side pockets Y 40 / 285 / 530 ↔ bottom Ø5 × 12 at X 11.9 / 1038.1, same Y | ✓ |
+| Back → bottom (Cabineo ×5) | back pocket centres 50 … 962 (+19) ↔ bottom Ø5 at 69 … 981, Y 462.9 | ✓ |
+| Back → sides (Cabineo ×3 each) | back Y 50 / 341 / 632 ↔ side X 651 / 360 / 69 (left; right mirrored) | ✓ |
+| Top rails → sides | **Ø8 dowels**: rail ends Ø8 × 30 at 15 / 75 / 135; sides Ø8 × 12 at 9.5 | ✓ fits (42 for a 40 dowel). **Differs from the 350 unit, which uses Cabineo for its rails**: glue needed, intended? |
+| Shelf (Cabineo both ends, Y 74 / 367) | sides: two System 32 rows Ø5 × 12 at **84 / 377** from the front, 7 holes each, 32 pitch | ✓ **if the shelf sits 10 mm back**: its screws land in the shelf-pin holes, so the fixed shelf is re-positionable. Shelf 441 + 10 clears the back (455.8) by 4.8 |
+| Width | rails 1012 = 1050 − 38; shelf 1011 | ✓ |
+
+**Questions raised with the owner, none of them errors in the joinery:**
+
+1. **Carcass height.** This unit is **720** (701 + 19); the 350 drawer unit is **870** (851 + 19). Both have the same leg
+   pattern. On the same run they are 150 mm apart. **One of them is probably wrong.**
+2. **No door and no hinge drilling.** No door part, and no 37/32 mounting-plate holes on either side. How is the corner
+   closed: door on a filler, or made separately?
+3. **The back is set 107 mm forward** (side bores at Y 462.9; the 350 unit's at 552.9), leaving a ~95 mm void behind
+   it. Sink/services void, intended?
+4. **Four legs under a 1050 bottom**, all at the ends (X 13–77 and 973–1037). *Judgement, not a spec:* add a middle
+   pair.
+5. No cutting list in this folder.
