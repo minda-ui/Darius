@@ -152,7 +152,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Outputs produced
 
-**All 88, oldest first.**
+**All 99, oldest first** *(recounted 2026-10-03 with awk over the table; the header had said 88 since session 26)*.
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
