@@ -436,3 +436,13 @@ and back rail are **byte-identical** to (26); `08-BACK-1B` is **gone**.
 | Front gaps | 716 / 2 mm vs the 350 unit's 3.2 | ? still to be answered |
 
 **Verdict given:** everything except the shelf is ready; **do not cut `06-SHELF-1` / `07-SHELF-2` from this set**.
+
+## (29) Corner unit — owner's answers to the two open questions
+
+1. **Cabineo pockets on the outer faces of both sides: intended** (owner). Closed.
+2. **Match the front gaps to the 350 unit: yes** (owner). **Correction to my own (26) figure, worked out before asking for
+   a change:** both carcasses are 720 high (701 sides on a 19 bottom). The 350 unit's stack is 4 × 176.8 + 3 × 3.2 = 716.8,
+   so its **top and bottom gaps are 1.6**; the corner unit's are **2.0** (716). **The edges differ by 0.4 mm at the top and
+   0.4 at the bottom, not the "1–2 mm" I gave**: the 3.2 is the gap *between* drawers, which has no counterpart on a
+   single door. To match exactly: set the corner unit's top/bottom front gap to **1.6** → door and blank **716.8** high.
+   Left to the owner whether 0.4 mm is worth the regeneration.
