@@ -286,3 +286,14 @@ asked: scroll up to confirm `cass05_spess=10.50`, `cass01_dist_lat=5.00`, `cass0
 *FP-Inbox-Report-Routine-Prompt* and *Scripts.txt*, so **confirm the open file is the `.SCS` that the METABOX row
 loads**. Rest of the file as read: base 16, back 16, front 0, dz 0, back between the sides (`bCassDDIE=1`), no
 mitre, `szEccCass=CABINEO` (irrelevant with no wooden sides).
+
+## (18) 350 mm unit, version 7 — back still 87
+
+Every program is **byte-identical to v6**. The nesting programs were removed (worklist re-exported). Cutting list
+unchanged: base 281 × 382, **back 281 × 87**. **So the `cass_sot_dy=0` change did not reach the output**: either it
+was not reloaded, or the back height comes from elsewhere. *Two of my three diagnoses on this point have now failed
+in practice, so I stopped inferring.* Mapping read from the screenshots: the window's 4th-row middle group **teal 16 =
+`cass_sot_inc`** and **red 16 = `cass_sot_dy`**, matching the file's `cass_sot_inc=16` / `cass_sot_dy=16`. **Asked of
+the owner:** set the red 16 to 0 **in the window itself**, save, tick, regenerate. If the back is still 87, send the
+METABOX K row of the drawer-box table (H, BH …), because a `BH` of 87 there would explain it. **If that fails too,
+take it to Kosmosoft support** (the shop's contract covers it) rather than iterate further.
