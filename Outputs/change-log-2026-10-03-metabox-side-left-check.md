@@ -405,3 +405,17 @@ pair under the divider line** (~528–547 from the left), next to the middle pai
 | Top rails | now **Cabineo** (back rail 200 wide), sides Ø5 at 15 / 135 / 385 / 555 | ✓ consistent; now matches the 350 unit |
 | **Side ↔ bottom Cabineo** | pockets moved to the **`B` (outer) face** of both sides; bottom bores at **7.1** (v1: inner face, 11.9) | **? pockets now on the outside of both sides**: visible on any exposed end. Intended? |
 | Front heights | door / blank **716** (2 mm top and bottom) vs the 350 unit's **176.8 × 4 with 3.2 gaps** | ? 1–2 mm line difference if the units stand side by side |
+
+## (27) Corner unit — the back position is intentional (owner's ruling)
+
+The owner, replying to (26): **the back is set forward on purpose, so that pipes can run behind the unit.** The "**✗ not
+moved**" row in (26) is therefore **withdrawn**: the back at **Y 462.9** is the design, not a fault, and it is **not** to be
+moved to the rear or copied from the 350 unit.
+
+**Consequences, checked against v2:** the shelf (one 1011 piece, per (26)) and the bottom stay within the depth in front of
+the back, so the void does not affect them. What remains to fix on the corner unit: **door 516 → 500** (blank becomes 544) and
+**one 1011 shelf instead of 511 + 499** (skip `08-BACK-1B`). Questions still open: Cabineo pockets on the outer faces of
+both sides; 716 / 2 mm gaps vs the 350 unit's 3.2 mm; no cutting list in the folder.
+
+*Lesson for future reviews:* a back set in from the rear on a base unit can be a **service void**; ask before calling it a
+fault.
