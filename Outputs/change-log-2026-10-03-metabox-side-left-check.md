@@ -569,3 +569,30 @@ Anta (Aventos)* screenshots. When they arrive, Darius checks Kosmosoft's rows ag
 **Still open from today:** `Raw/Side Left.pdf` can now be filed (the 350 unit is settled); the corner unit's single 1011
 shelf is with the owner; FL-003 and the Hub rows AWT-0089, -0127, -0147, -0194 and -0225 were not touched this session.
 `change-log-index.md`'s session-27 row was extended to cover the whole day.
+
+## (38) The drawing check saved as a skill
+
+Owner: *"Today, we done great job with creating one extra quality control step. This drawings check before we send them to
+production. Save it as your new skill."* Two parts, so that the method has a governed copy and a runnable one:
+
+- **`Wiki/Processes/pre-production-drawing-check.md`** (**9,380 B**, id `1W80CWjMxZzRRDWv9zhU0vEbfMvma_QUi`, placeholder then in-place upload, downloaded back
+  byte-identical). **The checklist**, distilled from sections (4)–(30):
+  - get every file (list, never date-filter; md5 per round);
+  - decode; the three size sources must agree;
+  - check sizes and materials;
+  - check the joints (dowel sums, Cabineo, back, shelves supported);
+  - check the Blum hardware (drawer formulas, NL vs depth, hinge cups ↔ plates, legs);
+  - check the fronts (asked-for sizes, gaps vs neighbours);
+  - check the machining (single vs nesting, unexplained cuts, tool numbers, K2 diameters with date);
+  - check use and safety;
+  - verdict ✓ / ✗ with the exact SmartCabinet fix / ? (**never guess intent**); record.
+  
+  Plus the SmartCabinet lessons of the day (`.SCS` on the row + restart, `cass_sot_dy`, the dummy divider, the legs
+  max distance).
+- **`.claude/skills/pre-production-drawing-check/`** in the git mirror: **`SKILL.md`** (when to use it, how to run it,
+  boundaries) and **`tcn_decode.py`** (the decoder used today, made reusable: worklist, `.fnm`, `W#81`/`W#89`/`W#1001`
+  per face, cutting-list lines, and `--diff` against the previous round by md5). **Tested on the corner unit's two rounds**:
+  it reproduced (28)'s changed / unchanged / removed (`08-BACK-1B`) list. *First version read the `.fnm` as UTF-16. It is
+  plain text, so it was fixed before saving.* **The skill is git-only**: Drive cannot run it, and the article is the
+  governed copy it points to. It loads in future Claude Code sessions on this repository.
+- `Wiki/index.md` and the registers amended in place; the Review-folder Processed item now points at the article.
