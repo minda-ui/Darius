@@ -923,3 +923,25 @@ domain needs the owner's OK.
 retried or worked around it. **No mail has been read. The charter is not yet amended**: the amendment (v36, §0a
 connectors line and a §6b access entry) waits until the connection exists, so that the rule and the access arrive
 together.
+
+## (51) Charter v36: read-only supplier mail, written in before any mail was read
+
+**Sequence, as it happened:**
+
+1. Owner chose the scope **"Read-only, suppliers"** (50).
+2. Creating the connection and editing `.claude/settings.json` were both **refused for Darius by the environment's
+   safety check** (*self-modification*), so **the owner did both**: she completed the Google sign-in (connection
+   `gmail_rebush-slad`; the first attempt, `darius-gmail-info`, expired), and she committed the narrowed deny list on
+   `main` (`e7029e1`). Darius had drafted the list: every Gmail write, list, search and settings action denied, plus
+   `composio execute -p`.
+3. `main` merged into this branch (`469ee8d`), a clean merge.
+4. **One `GMAIL_GET_PROFILE` call: `info@fishboneconstruction.co.uk`** ✓.
+5. **Charter amended**: `CLAUDE.md` **v36** (§0a connectors line; new *Changed in v36* note) and **`CLAUDE-Rules.md` §6b**
+   (2026-10-03 entry: may / approved senders `@lathams.co.uk` / never / searches narrowed by sender / connection).
+   Both by **archive-then-recreate**, the live copies re-checked against their read md5 first. The v35 note moved
+   into `charter-version-history.md` in place. Every write round-tripped byte-identical; the Rules file was also read
+   back through the **native** Drive connector, per §4.
+6. **The git mirror's charter jumped v31 → v36**, copied from Drive's bytes. The AWT-0225 lag is closed for these
+   three files; the rest of that row is untouched.
+
+**No mail has been read yet.** Next: search `from:lathams.co.uk` for Steven Elliott's panel prices.

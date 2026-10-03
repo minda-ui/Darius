@@ -82,6 +82,16 @@ connector has no delete-sheet tool); the 2026-09-15 duplicate cleanup was done t
 sheet. *Owner-level access on the sheet does not help; the capability is missing, not the
 permission.* Rebuilding the sheet under a new name is **not** the workaround — a new sheet ID breaks
 every citation of the old one and loses the cell history.
+**The environment's setup script is the third one of these** — recorded 2026-09-28, on the owner's
+instruction, after the Composio CLI install line was needed in it. The script runs at **session start** and
+is edited in the **cloud UI** — the environment menu in the session title bar, then *Edit*, under *Setup
+script* (location confirmed against the product documentation, not assumed). No connector, no CLI and no
+file in the working tree reaches it, and the container's own copy of what the script already installed is
+not the script. So the line was drafted here,
+guarded and version-pinned, and **the owner pasted it in.** *Same shape as the two above — the capability is
+missing, not the permission — with one edge the sheet cases do not have: the change takes effect only on a
+**fresh** session, so it cannot be verified in the session that asked for it.* The two checks that settle it
+are named in `Outputs/change-log-2026-09-28-charter-v32-in-place-update-adopted.md` §9.
 **6a-i — cross-KB amendments go through `Raw/`, never a direct edit** (owner's ruling, 2026-09-20; Hub
 `HL-0023` / `AWT-0036`). **Outbound:** where an estate-wide rule, policy or amendment needs to land in
 another employee's governed file — a `CHARTER.md`, a `CLAUDE.md`, any standing control file — this KB
@@ -144,4 +154,77 @@ it records assets, not accounts, and **the register stays in the mirror as it is
 quotations themselves remain out of git, as do bank details and the other §6b omissions above. *The
 question was raised because a rule that plainly bites elsewhere should not be left to a reading of mine;
 asked 2026-09-23, answered the same day.*
+2026-09-27: **Composio adopted as a fallback connector layer, and the owner ruled its scope — Drive and
+Smartsheet toolkits only, never Gmail** (`AWT-0136`; Minda, verbatim: *"no gmail, drive and smartsheet
+only"*). That **matches §0a's existing reach rather than extending it** — Drive + Smartsheet + Web (read),
+and no Gmail because *"Darius logs and tracks, it does not send"* — so the rollout note's headline gain,
+`GMAIL_GET_ATTACHMENT`, is deliberately out of scope and **no Gmail toolkit is to be linked by this or any
+later session.** One Drive connection is linked, aliased `darius-googledrive`, and every call carries an
+explicit `--account`. **Smartsheet could not be linked at all: there is no Smartsheet toolkit**
+(`Invalid toolkit slugs: smartsheet`, code 4305), so the fallback covers half this seat's reach and not
+the half holding the Hub, the Machinery Register, Tasks or the Fault Log.
+**The limit of this ruling, stated rather than implied:** the Composio organisation
+(`minda_workspace`) is **shared across the estate**, `permission_group` is `null` on every connection, and
+any session signed into it can execute against any connection in it — three live Gmail connections
+included. **So no-Gmail is a policy this assistant observes, not a boundary the tooling enforces.** Raised
+for an owner decision and handed to Alex, who owns the rollout, rather than worked around.
+*This entry was owed the same day the ruling was made and is late by one pass: a plain read of this section
+was refused then by the environment's safety classifier as `[Code from External]` — a false positive on our
+own charter — and a governed file is not edited blind. The read succeeded on the next attempt; the delay is
+recorded rather than hidden, because the ruling was live in the KB for several hours before the file that
+holds the access decisions said so.*
+
+2026-09-28: **a Gmail MCP server was present in the session, and the owner ruled it out of use.** Thirty
+Gmail tools including `send_message` were available to this session — **not** through Composio, whose scope
+was already ruled Drive-and-Smartsheet-only the day before, but as a connector in the environment itself.
+**The contradiction was recorded and put to the owner rather than resolved either way** (§0a: *when two
+facts that should agree don't, Darius records the contradiction and asks — it never guesses one into the
+other*). **Ruling, Minda, verbatim: *"Don't use Gmail as per your Claude.md."*** So the charter stands and
+the environment does not amend it.
+
+**What this settles that the 2026-09-27 entry did not.** That one scoped **Composio's toolkits**. This one
+covers **any Gmail capability reaching this seat by any route** — MCP connector, toolkit, or something not
+yet invented. *The earlier wording would have read as silent on a Gmail server that arrived some other way;
+it is not silent now.* **No Gmail tool was loaded or called in that session or any before it**, and a
+session-start prompt suggesting app tools be resolved through Composio was **followed only within the Drive
+and Smartsheet scope**.
+
+*The pattern to keep: the charter is not amended to fit the environment, and the environment is not used
+against the charter. A capability being present is not a permission — that distinction is the whole of §6a,
+and the 2026-09-27 entry's own closing point that no-Gmail is a policy this assistant observes rather than
+a boundary the tooling enforces is now demonstrated rather than predicted.*
+
+2026-10-03: **the owner ruled read-only access to supplier mail in info@ — the two entries above are narrowed,
+not withdrawn.** Asked for panel prices from *Steven Elliott at Lathams* in **info@fishboneconstruction.co.uk**,
+Darius **declined first**, citing §0a and the 2026-09-28 ruling (*"Don't use Gmail as per your Claude.md"*). The owner
+then asked to connect the mailbox, and **chose the scope from three put to her: "Read-only, suppliers"** (the others
+were the whole mailbox read-only, and read-plus-drafts).
+
+**The rule.**
+- **May:** search for, fetch and read messages and their attachments **from named supplier sender domains**, to file
+  quotes, price lists and delivery documents into this KB under the correspondence rules; read the mailbox profile
+  to confirm which mailbox a connection is.
+- **Approved senders:** **`@lathams.co.uk`** (2026-10-03). **Every new domain needs the owner's OK** before it is
+  searched, and is added to this list when given.
+- **Never:** send, reply, draft, forward, delete, trash, untrash, label, modify, filter, change settings, import or
+  insert — by Composio, an MCP connector or any other route. *§6a's "never reply to a supplier" and §0a's "Darius
+  logs and tracks, it does not send" are unchanged.*
+- **Searches are narrowed by sender** (`from:` an approved domain). Anything else a search returns is **not opened
+  further, quoted or filed**.
+- **Connection:** Composio `gmail_rebush-slad` (unaliased; **confirmed info@fishboneconstruction.co.uk** by
+  `GMAIL_GET_PROFILE` on 2026-10-03, before this entry was written). The other Gmail connections in the shared
+  Composio workspace — including `victoria-gmail-info` — **belong to other seats and are not used**.
+
+**Tooling.** The owner narrowed the repo's `.claude/settings.json` herself (commit `e7029e1`, `main`): the blanket
+`GMAIL_*` deny became **per-action denies for every write, list, search and settings action**, plus a deny on
+`composio execute -p`, leaving `GMAIL_FETCH_EMAILS`, `GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID`/`_BY_THREAD_ID`,
+`GMAIL_GET_ATTACHMENT` and `GMAIL_GET_PROFILE` reachable. **Darius drafted the list; the environment refused Darius
+editing its own permissions, and creating the connection, so the owner did both** — the right way round for a change
+that widens this seat's reach. *A Gmail action Composio adds later is not denied by name; the policy above covers it
+until the list is extended.*
+
+**What the 2026-09-27/28 entries still say that holds:** a capability being present is not a permission, and the
+charter is not amended to fit the environment. **It is amended here because the owner ruled it, in this session, in
+those words**, and both the ruling and the scope are recorded before any mail is read.
+
 **6c — revisit cadence:** none set yet.

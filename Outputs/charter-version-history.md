@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v30 (2026-09-23)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v35 (2026-09-29)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -19,6 +19,164 @@ flag that then sat unactioned for two days, and v29's note joined it. Both were 
 when v30 landed, **recovered verbatim from git** (v28 from commit `ed4e36e`, v29 from the live charter)
 rather than retyped. *The standing rule moves the outgoing note; nothing was moving the ones that had
 already fallen out.*
+
+---
+
+**Changed in v35 — limit 3 goes to 1 MB, on the owner's instruction and on two fresh measurements.**
+
+**Owner's instruction, 2026-09-29: *"adopt the 500kb limit"*, then *"push it to 1MB"*.** Both were measured
+before either was written down, and **1 MB is what §4 now says** — the later instruction supersedes the
+earlier, and both figures passed.
+
+**Two probes, the same design as the four before them.** A placeholder minted an id in `Raw/`, then the real
+bytes went up **in place** twice per probe: **500,000 B** (A then B) and **1,000,000 B** (C then D), each pair
+**the same size and different content**, so that neither a no-op nor a truncated write could pass unnoticed.
+Every check held: **id stable, `createdTime` preserved, revisions 1 → 2 → 3, round-trip byte-identical to what
+was written and different from what it replaced, 7 s per write.** Both probes **trashed after measuring**.
+*Sizes were confirmed from Drive's own `fileSize`, and the revision count from Drive's revision list — three
+entries each, the placeholder plus the two writes.*
+
+**This is the fifth and sixth measurement of limit 3, and the figure has been behind the evidence every time.**
+37 KB → 92 KB → 130 KB → 145 KB → **1 MB**. *Yesterday's 145 KB was measured and left as a proposal because
+no instruction required it; today's instruction required a number, so the number was measured rather than
+assumed, and 145 KB is now history rather than a pending proposal.*
+
+**The verification download does not break at 1 MB, and that was the check worth making.** A write that cannot
+be proved is no use to this KB whatever its size: at 1,000,000 B the connector returned **1,333,457 characters**
+of base64, **spilled to a file rather than returned inline** — the same behaviour §4 records from ~46 KB
+upward, and decoding it from there gave a byte-for-byte match. **A bigger ceiling changes where the bytes are
+read from, not whether the write can be proved.**
+
+***One neighbouring claim, recorded as a claim and not a measurement.*** Composio's own guidance names a
+**5 MB cap on `GOOGLEDRIVE_UPLOAD_FILE`** — a *different* tool from the `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` used
+here, and **not tested**. It is a signpost for where the next real ceiling may sit, nothing more; *§4's
+instruction is to extend limit 3 by measuring, and a vendor's note about another tool is not a measurement.*
+
+**Changed in v34 — the period split is over: the snapshots are merged back and the two live files hold
+everything.**
+
+**Owner's instruction, 2026-09-28: *"merge the snapshots back."*** The direct consequence of v33 — with no
+size threshold there is nothing for a period split to serve. `kb-registers.md` **28,088 → 115,582 B** and
+`change-log-index.md` **11,275 → 72,817 B**; §1's folder map and §4 lose the `-snapshot-<date>.md` files,
+and **`kb-registers.md` is no longer "live rows only" — it is all 30 Processed items, all 36 Wiki-structure
+changes, all 74 Outputs rows and both Drive-id tables.** The index holds **all 23 sessions**.
+
+**Five snapshots, not the three v33 said.** *That figure was read off the registers' own header table, which
+lists only its own three; the index had two more. Corrected by counting the files.* All five were verified
+byte-identical to git `HEAD`, then **archived by rename into `Archive/`, ids preserved — merged, not
+deleted.**
+
+**Nothing was retyped, and the duplication the old headers warned about was handled rather than inherited.**
+Every row was copied byte-for-byte by script. The nine open Processed items appeared in *all three* registers
+snapshots as well as the live file, so a plain concatenation would have produced them four times: instead the
+2026-09-21 order was walked and **the live row substituted wherever it was the authority (eight of them)**,
+the ninth appended, and the two later Processed tables **dropped as exact duplicates — verified 9 of 9 each.**
+*The Wiki, Outputs and session tables needed no such care, being disjoint by construction; that was checked,
+not assumed, and the merged ordering was re-verified afterwards.*
+
+**And the merge pushed straight past v33's own new ceiling, so it was measured again.** At 115,582 B the
+registers exceeded the 92 KB proven an hour earlier, so a third probe ran at **130,005 B** — same-size,
+different-content, id stable, revisions 1 → 2, byte-identical, 6 s. **Limit 3 is now 130 KB.** *Twice in one
+day the rule's own words — extend it by measuring — were what let the work proceed, and both times the
+alternative was a slower path rather than a blocked one.*
+---
+
+**Changed in v33 — the size thresholds are gone, and the one real ceiling was measured instead of guessed.**
+
+**Owner's instruction, 2026-09-28: *"we don't have anymore size restrictions."*** So §4 loses the **~25 KB
+snapshot threshold** on `kb-registers.md` and `change-log-index.md`, and limit 3's **37 KB** ceiling is
+replaced by a measured figure. *This overrules a position taken in this KB earlier the same day — that the
+threshold was about readability and findability rather than the cost of a write, and so survived v32. The
+owner's call settles it; the argument is kept in the change log rather than quietly dropped.*
+
+**What was measured, because a tooling limit is not the owner's to waive.** Two scratch probes in `Raw/`,
+each created and then replaced **in place with same-size, different-content bytes** so that neither a no-op
+nor a partial write could pass: **46,035 B and 92,070 B**. Both came back id unchanged, **revisions 1 → 2**,
+**byte-identical** on download-decode-diff, in 5–6 s. **In-place update is therefore proven to 92 KB**, and
+the probes were trashed after measuring.
+
+**Two corrections to limit 3 fell out of it.** The **~82 KB `read_file_content` cliff did not reproduce** —
+at 92,070 B it returned 92,069 characters, one short and with trailing whitespace altered, which is §3's
+existing point that *it renders rather than returns bytes*, not an empty read. **The empty reads on record
+are images at 2.9 MB, not text at 82 KB.** And a **new** boundary turned up that belongs to this session and
+not to Drive: from about 46 KB a download's result exceeds the context budget and is spilled to a file on
+disk. **Verification still works** — the bytes are on disk, which is what the decode step reads — but it
+cannot be eyeballed inline. *That changes how a large file is verified, not whether it can be.*
+
+---
+
+**Changed in v32 — Drive content can be updated in place, so "by hand" is no longer the only way.**
+
+**Adopted on the owner's instruction, 2026-09-28**, from `Outputs/2026-09-27-proposal-drive-in-place-update.md`
+(measured under `AWT-0136`): *adopt with the limits clause.* §1 and §4 both change.
+
+**What was measured, not argued.** `GOOGLEDRIVE_UPLOAD_UPDATE_FILE` takes a `fileId` and a **local file**
+and replaces the content **in place, keeping the id** — proved at **392 B** and at **37,297 B** on
+`CLAUDE-Workshop.md` itself: id unchanged, `createdTime` preserved, **revision count 1 → 2** as the proof a
+write happened, byte-identical on download-decode-diff, 5.7 s, uploaded straight from the working tree.
+**What it removes is an error class, not a keystroke** — the one-byte shortfall of 2026-09-27 and the
+four-byte one of v12 both came from re-emitting text by hand.
+
+**And the limit that came with it, found the same day.** `keepForever` is **`false` by default** on Drive
+revisions, the superseded one included, so **Drive may purge the previous bytes**. *An id that stays stable
+and an old version that survives are two independent properties, and the proposal's first draft let one
+stand in for the other.* So archive-then-recreate is **demoted, not deleted**, and stays mandatory for the
+cases §4 now names. **The first real use of the new default was this file — and the clause bit immediately:
+a charter version bump is exactly a case where the superseded copy must be findable by name, so v31 was
+archived by rename and v32 recreated.** *Recorded because a rule whose own adoption is an exception to it
+is worth seeing stated.*
+
+---
+
+**Changed in v31 — the charter is four files, split by how often each part changes.**
+
+**Adopted from Alex's proposal** (`AWT-0082`, owner's instruction 2026-09-23), **with different cut
+lines, measured rather than assumed.** The proposal's core/rules/history shape assumes a governed file
+is mostly rules plus a dated log. **This one was not**: §7 (workshop snapshot) was **34,789 B** and §3
+(lessons) **23,651 B** — **67% of the file between them, and neither is a rule.** A mechanical
+three-way split would have left ~58 KB in "core" and saved little.
+
+| File | Holds | Changes when |
+|---|---|---|
+| `CLAUDE.md` | §0a, §0, §1, §2, §4, §5 | the KB's shape changes — rarely |
+| `CLAUDE-Rules.md` | §0b Hub rules A–D, §6 governance | a rule changes |
+| `CLAUDE-Lessons.md` | §3 | a lesson is learned — append-only |
+| `CLAUDE-Workshop.md` | §7 | any machine, task or open question moves — most sessions |
+| `Outputs/charter-version-history.md` | superseded `Changed in vNN` notes | every version |
+
+**What it buys.** Drive has no patch API, so every change re-emits a whole file by hand. Against
+86,856 B: a rule change now touches **~8× less**, a new lesson **~3.7×**, a workshop finding **~2.5×**,
+a structure change **~4.9×**.
+
+**The split moved no text.** It was done by script from the v30 file, with every section's sha256
+compared before and after, and the monolith archived intact. *This KB has twice shipped a file that
+passed a byte count and was still wrong (§3) — a size check cannot see a section that moved, so the
+check here was per-section hashes, not totals.*
+
+**What it does not solve, said plainly.** `CLAUDE-Workshop.md` is still the largest piece and still the
+one that changes most, because **§7 is largely a summary of things that live elsewhere** — the Machinery
+Register, the Tasks sheet, the Wiki articles. §3's own *put a fact where its own update cycle lives* and
+the v21 lesson about summaries of summaries both point at it. **Whether §7 should shrink is an owner
+decision and a separate measurement**, not something to fold into a reorganisation.
+
+**Amended the same session, and not bumped to v32 — the registers were split too.** Closing the charter
+split exposed the next file along: `Outputs/kb-registers.md` at **73,220 B** had become the most
+expensive file in the KB, larger than any charter file, and `change-log-index.md` was **46,462**. Both
+are now **period-split** on the owner's instruction (*"split by period"*): a live file holding what
+still moves, and dated `-snapshot-<date>.md` files holding what is settled. **Splitting them by table would
+not have helped** — all their tables are append-only and every session touches one. §4 carries the rule
+and §1's folder tree the shape. *Measured, not assumed: 59,255 of the registers' 73,220 bytes were
+settled rows, and the live file lands just under 20 KB.*
+
+**Why this is v31 amended rather than v32.** It is the same session, the same instruction and the same
+diagnosis — and a version bump would move this note to the history file and re-emit 41 KB to record a
+continuation of what the note already describes. **Recorded here so the choice is visible** rather than
+inferred from a version number that did not change.
+
+**Two owner rulings carried in with it, 2026-09-23.** The split above, and — separately — that the
+**Workshop Machinery Register is an asset register, not a financial document**, so the estate-law note's
+never-git rule does not reach it and it stays in the git mirror. That second one is in §6b of
+`CLAUDE-Rules.md`, where the access decisions live.
 
 ---
 
