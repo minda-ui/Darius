@@ -188,7 +188,7 @@ The owner's photo of *Tabelle CAM Accessori → Guide Cassetto*:
 | `LY` | **18** | hole line ≥ 86 (+2 BLUMOTION) above the part below | 18 + `Y` 81 = **99**, exactly the Side Left drawing. **≥ 88 ✓, 11 mm to spare** |
 | `CX` | 0 | no groove | ✓ |
 | `LBox` | **398** | base NL − 2 = 398 | ✓ |
-| Holes 1–4 | **X 37 · 165 · 261 · 357**, all **Y 81, Ø5, φ5** | fixing screws at **37 and 357** for NL 400; 165 and 261 are further profile holes | ✓. 165/261 are extra fixings Blum does not require. **φ5 is a pilot**: fine for chipboard screws Ø4 × 15, too shallow for system screws Ø6 × 14.5 |
+| Holes 1–4 | **X 37 · 165 · 261 · 357**, all **Y 81, Ø5, φ5** | fixing screws at **37 and 357** for NL 400; 165 and 261 are further profile holes | ✓. *Corrected 2026-10-03:* 165/261 are **Blum's own fixing holes** on the height-specific pages (K, PDF p. 403: 37, 165, 261 + the NL's rear hole); the general fixing page (p. 417) shows only the two main screws. **φ5 is a pilot**: fine for chipboard screws Ø4 × 15, too shallow for system screws Ø6 × 14.5 |
 | `Y` 81 | hole height | the screw line sits ~5–6 mm below the top of an 86 side *(drawing)* | ✓ |
 
 **Correction, owned:** on 2026-10-02 this article and the runner article read SmartCabinet's hole columns as holes in
