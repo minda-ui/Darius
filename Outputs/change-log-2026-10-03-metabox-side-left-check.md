@@ -819,3 +819,32 @@ stock held**. **Lead time is not a fixed published figure**: *"select a range on
 delivery date will be displayed"*, and bespoke painted takes longer. **(45)'s "usually 2 weeks" came from a search
 summary and is not confirmed by the pages read: withdrawn.** The lead-times page builds its dates in a script that a
 fetch cannot run.
+
+## (48) How the classifier's base-unit prices were probably made
+
+Owner: *"Compare our BU60 cost with DIY Kitchens. Our price are without doors and try to deduct 30%. This is I am guessing
+that another director done that."* **So the classifier's £ figures are the shop's own prices, without doors**, not DIY
+Kitchens' prices. That corrects (44): the owner's earlier "sales price of diy-kitchens.com" means **derived from** it.
+
+**Test of the 30 % guess** (DIY Kitchens Highline prices of (46), ex VAT):
+
+| Unit | Ours | DIY with door | DIY cabinet-only | 0.7 × cabinet-only | Ours ÷ cabinet-only |
+|---|---|---|---|---|---|
+| BU30 | £38 | £65.86 | £59.27 | £41.49 | 64 % |
+| BU40 | £41 | £70.33 | £63.30 | £44.31 | 65 % |
+| BU50 | £44 | £71.47 | £64.32 | £45.02 | 68 % |
+| **BU60** | **£47** | £73.94 | **£66.55** | **£46.58** | **70.6 %** |
+| BU80 | £53 | £80.33 | £72.30 | £50.61 | 73 % |
+| BU100 | £59 | £83.29 | £74.96 | £52.47 | 79 % |
+
+- **BU60 fits the guess exactly:** DIY Kitchens' cabinet-only price **less 30 % = £46.58 → £47.**
+- **The other widths do not** (64–79 %). **They fit a straight line instead: £29 + £3 per 100 mm of width**, which gives
+  exactly 38 / 41 / 44 / 47 / 53 / 59. DIY Kitchens' own prices do not rise evenly like that.
+- **Most likely method (an inference, not confirmed):** BU60 was anchored at DIY cabinet-only − 30 %, and the other widths
+  were scaled by **£3 per 100 mm**. The result is that **narrow units are priced well below DIY − 30 % and wide ones above
+  it.**
+- DIY Kitchens' prices are **today's**; the classifier's date is unknown. A price change since then would also shift these
+  ratios.
+
+**Still not compared: our *cost*.** These are selling prices. The shop's cost for BU60 (board, edging, hardware, time)
+needs the unit drawn in SmartCabinet first.
