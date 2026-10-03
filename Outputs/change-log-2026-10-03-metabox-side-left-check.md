@@ -389,3 +389,19 @@ distance between legs**. Above it SmartCabinet adds intermediate pairs. Other fi
 unit: end-leg span 1050 − 90 = 960 > 500 → **one middle pair** at ~525 *(derived)*. **Caution given:** *Add on Divider*
 is ticked and the corner unit now has a **0 mm dummy divider**. Check the regenerated `BOTTOMB` for a **second, unwanted
 pair under the divider line** (~528–547 from the left), next to the middle pair; untick it if so.
+
+## (26) Corner unit v2 — `Review folder/1050mm Base Corner Unit v2/`
+
+14 programs + worklist + `.fnm`, decoded by script; **no cutting list**. v1's folder is gone from *Review*.
+
+| Item | v2 | Verdict |
+|---|---|---|
+| **Hinges** | door `10-DOOR-2` 716 × **516**: 2 × **Ø35 × 13** cups **100 from each end**, **22.5** from the hinge edge (TB 5); screw pilots Ø3 × 5, 45 apart, 9.5 behind. Right side: plate pilots **Ø3 × 5 at 37 from the front, 32 apart**, centred at 102 / 618 above the carcass underside | ✓ **cups and plates line up exactly** (side + 19 = door + 2). FA with TB 5 / MD 0 is 16 against the needed 17.5: **within the hinge's ±2 side adjustment** |
+| **Door width** | **516** | **✗ 500 wanted**: reduce space 2 by 16 |
+| **Blank** (`09-DOOR-1`, fixed) | 716 × **528**, Ø8 × 12 dowels on three edges ↔ left side front edge, bottom front edge, front rail edge (Ø8 × 30) | ✓ every dowel aligns (offsets = the 2 mm / 1.5 mm gaps). Becomes **544** when the door is 500 |
+| **Back** | side and bottom bores still at **Y 462.9** | **✗ not moved**: still ~95 mm forward |
+| **Shelf** | **split into 511 + 499** at the dummy divider; each half fixed to its side and, by two Cabineo, to the back (new `08-BACK-1B`: 4 columns × 7 Ø5 × 12) | **✗ as warned**: the two front corners at the split have no support. **Fix:** one 1011 shelf. v1's `06-SHELF-1.TCN` (1011 × 441) still fits the unchanged side pin rows; skip `08-BACK-1B` |
+| **Legs** | 6: ends + **one middle pair** at X 487–551 | ✓, **no extra pair at the divider** |
+| Top rails | now **Cabineo** (back rail 200 wide), sides Ø5 at 15 / 135 / 385 / 555 | ✓ consistent; now matches the 350 unit |
+| **Side ↔ bottom Cabineo** | pockets moved to the **`B` (outer) face** of both sides; bottom bores at **7.1** (v1: inner face, 11.9) | **? pockets now on the outside of both sides**: visible on any exposed end. Intended? |
+| Front heights | door / blank **716** (2 mm top and bottom) vs the 350 unit's **176.8 × 4 with 3.2 gaps** | ? 1–2 mm line difference if the units stand side by side |
