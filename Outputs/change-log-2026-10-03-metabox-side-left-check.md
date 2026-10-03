@@ -254,3 +254,11 @@ on the base and takes the base out of the back's height (103 − 16 = **87**). T
 overall box depth 382 + 16 = **398**, the same as Blum, with only the base/back joint differing from Blum's drawing.
 (B) keep Blum's exact build (398 base, back on it) by raising the back height and box depth. **Not recommended
 until tested**: this KB has no verified setting for it.
+
+## (15) 350 mm unit, version 6 — folder cleaned, drawer sizes unchanged
+
+Owner: *"I have updated the 350 unit folder again."* **The six stale v4 files are gone**: the folder now holds
+exactly the worklist's 18 programs, plus `.fnm` and the cutting list. **Every program is byte-identical to v5**. The
+cutting list was re-exported (new md5) with the **same parts**: base 281 × 382, back 281 × 87. **Still open:** base 16
+short / back 16 short (routes A and B in (14)); tool-182 cuts in the single bottom files (the nesting has none);
+no tool number on the nesting contours.
