@@ -4,13 +4,14 @@ category: Suppliers
 status: active
 sensitive: false
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 sources:
  - "`Raw/Blum_publication.pdf` — *Blum catalogue and technical manual 2022/2023*, KA-150, Julius Blum GmbH, 758 pp., 548,904,350 B, Drive id `1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`, uploaded by the owner 2026-10-02"
 related:
  - ../Processes/blum-metabox-smartcabinet-input.md
  - ../Processes/blum-clip-top-hinges-smartcabinet-input.md
  - ../Processes/blum-runners-tandem-movento-smartcabinet-input.md
+ - ../Processes/blum-legrabox-smartcabinet-input.md
  - ../Software/smartcabinet-online-manual.md
  - ../Machinery/vitap-k2-panel-saw.md
 ---
@@ -60,7 +61,7 @@ the whole catalogue `1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`.
 | H4 | TIP-ON for doors | 174–177 | 170–173 |
 | H5 | MODUL hinges | 178–191 | 174–187 |
 | **Box systems** | | | |
-| B1 | LEGRABOX (+ chapter overview) | 192–247 | 188–243 |
+| **B1** | **LEGRABOX** (+ chapter overview) — *see `../Processes/blum-legrabox-smartcabinet-input.md`* | 192–247 | 188–243 |
 | B2 | TIP-ON BLUMOTION and TIP-ON for LEGRABOX | 248–259 | 244–255 |
 | B3 | MERIVOBOX | 260–299 | 256–295 |
 | B4 | TIP-ON BLUMOTION for MERIVOBOX | 300–305 | 296–301 |
@@ -102,6 +103,7 @@ family of each chapter.*
 | Need | Where |
 |---|---|
 | METABOX drawers into SmartCabinet | **B9**; worked up in `../Processes/blum-metabox-smartcabinet-input.md` |
+| LEGRABOX drawers into SmartCabinet | **B1**; check sheet in `../Processes/blum-legrabox-smartcabinet-input.md` |
 | Hinges — CLIP top, cup drilling, mounting plates | **H1**, **H2**; the 110° hinge worked up in `../Processes/blum-clip-top-hinges-smartcabinet-input.md` |
 | Soft close for doors | **H3** |
 | Push-to-open | **H4** (doors), **R2** (MOVENTO), **B2/B4/B7** (boxes) |
@@ -150,3 +152,4 @@ Never copy one system's rail row to another. Detail is in
 | 2026-10-02 | Hinge row points to the new CLIP top 110° article | Session 26 |
 | 2026-10-02 | Runner row points to the new TANDEM/MOVENTO article | Session 26 |
 | 2026-10-02 | *Every Blum drawer system has its own rail*: comparison table, after the owner's correction | Session 26 |
+| 2026-10-03 | B1 and the needs table point to the new LEGRABOX article | Session 27 |

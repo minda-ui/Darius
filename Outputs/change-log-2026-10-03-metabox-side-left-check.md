@@ -453,3 +453,23 @@ Owner: *"all good and noted about shelves"*. Read as: the regenerated set (28) i
 stay** (0.4 mm difference accepted, (29)), and the owner will handle the shelf themselves (one 1011 shelf, **not**
 `06-SHELF-1` + `07-SHELF-2` from this set, (28)). **Corner unit review closed.** All three Review-folder units now
 reviewed: 350 METABOX K (v9 ✓), TV shelf unit (✓), 1050 corner unit (✓ with the shelf caveat).
+
+## (31) Blum, continued — LEGRABOX written up
+
+Owner: *"please carry on with Blum."* **Next system chosen: LEGRABOX**, because the shop already has Kosmosoft's LEGRABOX
+rows under `25 GUIDE CASSETTO` and Kosmosoft's `legrabox_default.scs`. **`Wiki/Processes/blum-legrabox-smartcabinet-input.md`
+created** (**8,686 B**, id `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo`, placeholder then in-place upload, downloaded back
+byte-identical). From catalogue PDF pp. 196–246 (B1) and the two Kosmosoft sheets.
+
+- **Heights** N/M/K/C/F: sides 66.5 / 90.5 / 128.5 / 177 / 241; chipboard backs **39 / 63 / 101 / 148 / 212**; space above
+  the hole line 42 / 68 / 106 / 155 / 219 incl. 2 mm tilt *(drawing)*; hole line ≥ 38 above the part below.
+- **Cutting:** base **LW − 35 × NL − 10** (NL − 21 with the steel back), back **LW − 38**, 16 mm chipboard. Cabinet depth ≥ NL + 3.
+- **750 cabinet-profile holes** read off p. 242 per NL *(drawing)*. **The shop's Kosmosoft rows (37 · 69 · 261 · 293 · 357)
+  agree** with the NL 550–600 pattern.
+- **Kosmosoft's `.SCS` defaults against Blum:** widths come out right as shipped. `cass05_spess` 14 is a **notional** side
+  (real 12.8), chosen so that 5 + 14 − 1.5 gives LW − 35. **Not to be "corrected".** Back thickness 19 vs Blum's 16 is an
+  owner choice. **Depth and back height are unproven until the first LEGRABOX job's cutting list.** The check sheet is §5.
+- **Open:** the base rebate (16 · 8 · 38) and whether SmartCabinet machines it; the 753 (70 kg) pattern; TIP-ON / SERVO-DRIVE /
+  AMBIA-LINE not covered.
+- `blum-library.md` (B1 row, needs table, Changes) and `Wiki/index.md` amended in place; registers rows added.
+- Drive reports the new article as `text/plain`, not `text/markdown` like the older ones. The content is identical; noted.
