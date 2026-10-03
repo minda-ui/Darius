@@ -372,3 +372,10 @@ left; 0 = automatic). **Start at ~484** *(derived: 500 door − 17.5 overlay on 
 by the difference shown. Then **right space: single door, hinges right, 71B3550**; **left space: fixed door**;
 shortening values back to **0**. **Check on regeneration:** the shelf must still come out as **one 1011 piece**. A
 divider may split it into two.
+
+## (24) Legs CAM table photographed
+
+The owner sent *Cam Table: Legs*: **TD130 — Type 3, Scheme 3, 64 / 64, Ø3, depth 13** (four Ø3 × 13 holes at 64 × 64 in the
+underside of the bottom). **This confirms (22): the table sets the hole pattern per leg, not the number of legs or
+their positions.** Asked for the cabinet-side place where the legs are assigned (likely the cabinet's hardware
+panel, near *Wall Support*). Fallback stands: screw the middle pair on at assembly.
