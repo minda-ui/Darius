@@ -558,3 +558,14 @@ B8 (362–393), R4 (496–529) and I1 (530–543).
   socket (electrician)**; LEGRABOX LW ≥ 267. The depth behind the drawers is to be read per job (cat. p. 362).
 - **AMBIA-LINE:** inserts for LEGRABOX, chosen per job; no machining.
 - `blum-library.md`, `Wiki/index.md` and the registers amended in place.
+
+## (37) End of the day — handover
+
+Owner: *"Tomorrow morning I am in office and will do a screenshots."* **Waiting on, for the morning of 2026-10-04:** the
+Import Accessori list filtered to Blum AVENTOS (and, if convenient, TIP-ON), plus the *Accessory Register* and *Supporto
+Anta (Aventos)* screenshots. When they arrive, Darius checks Kosmosoft's rows against
+`blum-aventos-lift-systems-smartcabinet-input.md` §3–§5, including the Y-datum question.
+
+**Still open from today:** `Raw/Side Left.pdf` can now be filed (the 350 unit is settled); the corner unit's single 1011
+shelf is with the owner; FL-003 and the Hub rows AWT-0089, -0127, -0147, -0194 and -0225 were not touched this session.
+`change-log-index.md`'s session-27 row was extended to cover the whole day.
