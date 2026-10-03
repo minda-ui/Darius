@@ -945,3 +945,33 @@ together.
    three files; the rest of that row is untouched.
 
 **No mail has been read yet.** Next: search `from:lathams.co.uk` for Steven Elliott's panel prices.
+
+## (52) First supplier-mail read: Lathams prices, and a first BU60 material cost
+
+**Mail read under §6b's 2026-10-03 rule**, connection `gmail_rebush-slad`, search **`from:lathams.co.uk`** only. 25 results.
+**Opened:** the four messages carrying Steven Elliott's quote PDFs and the sales order. **Left unopened:** credit-control
+invoices and credit notes (`creditcontrol2@`; invoices are financial documents under the estate law, and not needed for
+this) and two event invitations. **Nothing sent, replied to, labelled or changed.** The PDFs were read in the scratchpad
+and **are not filed in git** (§6b keeps quotations out of git); they are cited here by number.
+
+| Lathams doc | Date | Board / edging (ex VAT) |
+|---|---|---|
+| Quote **412541** | 15/06/2026 (expired 16/07) | **18 mm MFC W980 ST7 Platinum White £52.40/board**; F422 £85.65; H1385 £110.00; 19 mm MDF U708 PM £190.04; edging 23 × 0.8 W980 / F422 **£35.20 per 75 m** |
+| Quote 389763 = Sales Order **2619630** | 30/04 / 01/05/2026 | 19 mm PerfectSense Premium Gloss £175.10; 18 mm MDF W1000 £101.60; 19 mm PerfectSense Texture U999 £165.20; edging W1000 £32.00, **W1100 PG 23 × 1 £42.00** per 75 m |
+| Quotes 389715 / 389348 | 30/04/2026 | 18 mm MDF W1000 £101.60; 18 mm MDF W980 £99.80 |
+
+**The board BU60 is drawn in, 19 mm W1100 MFC, is in none of them.** The cheapest carcass board quoted is **18 mm W980 MFC
+at £52.40 (£9.04/m²)**. Lathams' June note warns that prices may move with energy costs.
+
+**BU60 materials at that price** (ex VAT):
+
+| Item | Cost |
+|---|---|
+| Board, 2.227 m² | **£20.13** (£23.15 with 15 % waste, *an assumption*) |
+| Edging, 3.7 m *(estimate)* | **£1.74** |
+| **38 Cabineo** at the KB's retail £0.87 | **£33.06** |
+| **Subtotal** | **£55–58** |
+
+**Already above the classifier's £47 selling price, before hinges, legs and labour.** With only the 14 structural Cabineos
+(shelves on pins, the back not Cabineo-fixed): **£34–37**. *Not included:* hinges and plates, legs (no price in the mail
+read), labour and machine time, and the door (outside the "without doors" price).
