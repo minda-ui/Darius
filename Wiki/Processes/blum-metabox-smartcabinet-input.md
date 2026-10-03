@@ -201,6 +201,37 @@ holes. *The Italian was ambiguous. The shop's data was not.*
 row: for another NL, the rear hole moves (229 / 261 / 357 / 389 / 453 / 165 + 517). For another height, `Y`
 moves (≈ 49 N, 113 K, 145 H *(derived)*) and `LY` must keep `LY + Y` ≥ side height + 2.
 
+## 7a. Drawer-box settings (`.SCS`) for METABOX K — what to set, and why
+
+Written 2026-10-03 after the 350 mm unit's reviews kept producing **base 292 × 388 and back 302 × 103** against Blum's
+**281 × 398 and 281 × 103**. Sources: SmartCabinet manual *Progettazione dei Cassetti* (Scatole) and Kosmosoft's
+reference sheet **`legrabox_default_scs.pdf`** (fetched 2026-10-03), which lists the `.SCS` parameters for
+prefabricated (metal) sides.
+
+**Where:** the drawer's *Scatole* → the button under the box height opens the box window. Save / load configurations
+with the buttons at its foot. For a box system they are stored as `.SCS` files in
+`\Kosmosoft\SmartCabinet\dati_server\system_sc\Data\`, selected on the METABOX row of *Tabelle CAM Accessori →
+Scatola Cassetto* (**Box Config file**). *Copy the file before editing.*
+
+| `.SCS` parameter (box-window field) | Meaning (Kosmosoft) | Set for METABOX K | Why |
+|---|---|---|---|
+| `cass01_dist_lat` | side distance = runner `LX` | **5.00** (keep) | the imported rail's `LX` |
+| `cass03_dist_sot` | lowest drawer above the cabinet bottom = `LY` | **18.00** (keep) | the imported rail's `LY` |
+| `cass05_spess` (➏a sides) | thickness of the prefabricated sides | **10.50** | *(derived)* LW − 31 needs 15.5 a side; 15.5 − 5 = 10.5. **This is the setting that makes the box 281 inside** |
+| `cass_sot_dz` | how far the base enters the sides | **0.00** | the base sits **between** the steel sides on their flange, not in a groove |
+| `cass_sp_sot` (➏b base) | base thickness | **16.00** | Blum's cutting list is 16 mm chipboard |
+| `cass_sp_die` (➏d back) | back thickness | **16.00** | as above |
+| `cass_sp_fro` (➏c front) | inner front thickness | **0.00** | METABOX has no inner front; 0 = not made |
+| `bCassDDIE` (➐) | 0 = back across the sides' outer edges; **1 = back between the sides** | **1** | Blum's back is LW − 31, between the sides. *The 302-wide back is what `0` produces* |
+| `bCassDIESOT` | 0 = back runs down past the base; **1 = back stands on the base** | **1** | Blum's base is the full NL − 2 = **398**, with the back on it |
+| `cass_sot_dy` | base height above the bottom of the sides | **check, do not guess** | the base sits on the steel side's bottom flange; read it off the result (below) |
+
+**Check after regenerating (METABOX K, NL 400, LW 312):** **base 281 × 398 × 16**, **back 281 × 103 × 16**, **no
+`FRONT`/`FRONTAL` inner-front part**, base program **16 mm** with no grooving. If the back comes out ~87 high
+instead of 103, the back-height rule has changed with `bCassDIESOT`. Adjust the height, not the width. *None of these
+values is from a SmartCabinet METABOX template, which this KB has not seen: if Kosmosoft's import shipped a
+METABOX `.SCS`, compare it first.*
+
 ## 8. What is still open
 
 - Whether Import Accessori already offers METABOX (**check first** — §1).
@@ -218,3 +249,4 @@ moves (≈ 49 N, 113 K, 145 H *(derived)*) and `LY` must keep `LY + Y` ≥ side 
 | 2026-10-02 | §7 check sheet for the imported rails, incl. hole-line height read from the drawing | Session 26 |
 | 2026-10-03 | §7: first CN output (`Raw/Side Left.pdf`) checked; NL 400 pattern, bottom-drawer clearance 99 mm | Session 27 |
 | 2026-10-03 | §7: the imported `320M4000C` row checked — M not K/H, so the bottom drawer fits. **§2 corrected: the hole groups are cabinet-side holes** | Session 27 |
+| 2026-10-03 | §7a: drawer-box `.SCS` settings for METABOX K, from Kosmosoft's parameter sheet | Session 27 |

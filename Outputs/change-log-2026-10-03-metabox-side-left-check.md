@@ -212,3 +212,13 @@ v3.** Only `Cutting list for Base Unit with Metabox K.pdf` is new (07:46).
 
 Two of four drawer issues fixed. **Still blocking:** box width (the side-thickness setting, (10)) and base length
 (*extend the bottom under the back*), then regenerate the programs so the bottoms are re-programmed at 16 mm.
+
+## (12) Drawer-box settings for METABOX — `blum-metabox-smartcabinet-input.md` §7a
+
+Owner: *"I need help with drawer box settings in SmartCabinet."* Read the manual's *Progettazione dei Cassetti*
+(the box window: side / base / front / back thicknesses, back-to-side joint, base extension) and fetched Kosmosoft's
+**`legrabox_default_scs.pdf`** and **`parametri_legrabox_ini.pdf`**: the `.SCS` parameters for prefabricated sides.
+**Diagnosis:** the 302-wide back is what `bCassDDIE=0` produces (back across the sides' outer edges), and the
+292 base is consistent with a side thickness well under the 10.5 METABOX needs. **Proposed set** (LX 5, LY 18, sides
+10.5, base dz 0, base 16, back 16, front 0, back between the sides, back standing on the base) written into §7a with
+the expected result to check. *Derived values flagged; no METABOX `.SCS` from Kosmosoft has been seen.*
