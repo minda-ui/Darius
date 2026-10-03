@@ -848,3 +848,56 @@ Kitchens' prices. That corrects (44): the owner's earlier "sales price of diy-ki
 
 **Still not compared: our *cost*.** These are selling prices. The shop's cost for BU60 (board, edging, hardware, time)
 needs the unit drawn in SmartCabinet first.
+
+## (49) BU60: drawing check and the quantities for costing
+
+Owner: *"Check raw folder, I have uploaded 600mm base unit drawings."* **`Raw/` listed in full: 64 items.** The new item is
+a **folder, `012_@_600mm_Base_unit_2`**, whose files are **dated 2026-09-16**. It was moved in today, so **nothing about it
+was "recent"**. **Found by diffing the listing's ids against the 63 recorded earlier: the date-filter lesson again.**
+12 files downloaded, md5 all match; decoded with the skill's `tcn_decode.py`. **No cutting list in the folder.**
+
+**Unit:** 600 × 720 × 570, 19 mm throughout.
+
+| Part | Qty | Size |
+|---|---|---|
+| Side L/R | 2 | 701 × 570 |
+| Bottom (under the sides) | 1 | 600 × 570 |
+| Front rail | 1 | 562 × 150 |
+| Back rail | 1 | 562 × 200 |
+| Shelves | 2 | 561 × 451 |
+| Back | 1 | 682 × 562 |
+| Door | 1 | 716 × 597 |
+
+**Joints, checked:**
+
+- **Side ↔ bottom:** 3 Cabineo each side (pockets at the side's foot, inner face; bottom Ø5 at 11.9, Y 40 / 285 / 530) ✓.
+- **Rails ↔ sides:** 2 Cabineo per rail end; side Ø5 at Y 30 / 120 (front, 150) and 400 / 540 (back, 200) ✓.
+- **Back:** 12 Cabineo (3 per side edge, 3 to the bottom, 3 to the back rail). Its screw line is at **Y 462.9 in sides and
+  bottom**, so **the back stands ~98 mm forward of the carcass rear**: the same as the corner unit, now seen to be the
+  **design standard** (the owner called it a service void, (27)).
+- **Shelves:** 2, each fixed by **6 Cabineo**: 2 into each side's 32-mm hole rows (Y 74 / 377) and 2 into the back's
+  **B face** (`08-BACK-1B`, rows at Y 187.5 / 374.5). Positions agree (shelf 561 in a 562 back, +0.5) ✓.
+- **Door:** cups Ø35 × 13 at 100 / 616, 22.5 in; left-side plates Ø3 × 5 at Y 37, centred at 102 / 618 = cups + 2 (the
+  2 mm top gap) ✓; gaps 2 (height), 1.5 (width).
+- **Legs:** 4 × TD130 patterns (64 × 64, Ø3 × 13) ✓.
+- **Verdict: no ✗.** Questions only (below).
+
+**Quantities for costing:**
+
+- **Carcass board 19 mm: 2.227 m²** = 0.38 of a 2800 × 2070 sheet, before waste. Split: sides 0.799, bottom 0.342,
+  rails 0.197, **shelves 0.506**, **back 0.383**.
+- **Door: 0.427 m²**, outside the classifier's "without doors" price.
+- **Edging:** not in the files. Visible front edges (sides, bottom, front rail, shelves) ≈ **3.7 m** *(estimate)*; the door
+  perimeter is 2.6 m.
+- **Hardware:** 2 hinges + plates, 4 legs, and **38 Cabineo X joints**: 6 at the bottom, 8 at the rails, **12 on the
+  shelves, 12 on the back**.
+
+**The finding that matters:** `carcase-fixings-cabineo-x-vs-confirmat.md` costs a unit at **8 fixings**, counted on the
+wall units, giving ≈ £7 per unit. **This base unit has 38.** At the article's retail ≈ £0.87 per joint, that is
+**≈ £33 of connectors**, against the classifier's **£47 selling price** for the whole carcass. The 24 on the shelves and
+the back are the ones a DIY Kitchens-style build does without: shelves on pins, an 8 mm back in a groove or pinned.
+**Not acted on; for the owner.** The Cabineo article's 8-per-unit figure stands for wall units, and is now known not to
+hold for this base unit.
+
+**Asked:** is this `_2` (16 Sep) the current base design? Are the 24 shelf and back Cabineos intended? Should the back be
+19 mm? Board, edging and connector prices are needed for a cost.
