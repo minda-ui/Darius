@@ -510,3 +510,10 @@ HK-S and HK-XS** *(drawing)*, read from PDF pp. 38, 44, 59 and 66:
 
 **The reference line differs between types** (HK top adds FAo; HK-S subtracts F). **One sample front to be drilled and
 offered up before D rows go into SmartCabinet.** Article 9,783 -> 11,155 B, in place, same id; registers amended.
+
+## (34) AVENTOS — chosen per customer
+
+Owner: *"It depends from customer about Aventos."* **No house AVENTOS type**: the system is chosen per job. The open item
+in the AVENTOS article §6 is closed and replaced by a **per-job routine**: type from §1 → LF = KH × FG incl. handles → part
+numbers §2 → holes §3/§4 → SmartCabinet rows §5 → one sample per new type. Still open: whether Import Accessori already
+holds Blum AVENTOS rows.

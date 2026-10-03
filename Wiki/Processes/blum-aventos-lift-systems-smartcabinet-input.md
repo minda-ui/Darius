@@ -158,7 +158,11 @@ choice: Blum gives positions, not pilot sizes.
 
 ## 6. Open
 
-- Which AVENTOS the shop actually uses, and whether Import Accessori already has Blum rows. **Check before typing.**
+- ~~Which AVENTOS the shop actually uses~~: **it depends on the customer** (owner, 2026-10-03). There is no house
+  standard; the type is chosen per job. **Per job:** pick the type from §1 by how the front opens and KH; weigh the
+  front with its handles and work out **LF = KH × FG**; take the part numbers from §2; drill from §3 and §4; enter or
+  check the SmartCabinet rows (§5). **Drill and hang one sample for each new type.**
+- Whether Import Accessori already has Blum AVENTOS rows. **Check before typing.**
 - Whether `Y` (cabinet side) is measured from the top of the side or from the underside of the top panel. **Check on
   the first sample.**
 - ~~The front-bracket drilling for HS, HL, HK-S and HK-XS~~: **added to §4** (2026-10-03). The datum for each is still to be confirmed on a sample.
@@ -170,3 +174,4 @@ choice: Blum gives positions, not pilot sizes.
 |---|---|---|
 | 2026-10-03 | Created on the owner's *"Do AVENTOS next"*; the `79T8500` reply corrected | Session 27 (32) |
 | 2026-10-03 | §4: front fixing holes for HS, HL, HK-S and HK-XS added (owner repeated *"Do AVENTOS next"*) | Session 27 (33) |
+| 2026-10-03 | §6: AVENTOS type is chosen per job by the customer (owner); per-job routine added | Session 27 (34) |
