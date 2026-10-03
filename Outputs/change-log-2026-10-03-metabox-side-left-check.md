@@ -262,3 +262,15 @@ exactly the worklist's 18 programs, plus `.fnm` and the cutting list. **Every pr
 cutting list was re-exported (new md5) with the **same parts**: base 281 × 382, back 281 × 87. **Still open:** base 16
 short / back 16 short (routes A and B in (14)); tool-182 cuts in the single bottom files (the nesting has none);
 no tool number on the nesting contours.
+
+## (16) Unticking "base under front and back" changed nothing
+
+Owner: *"I done it, but it still generates same sizes."* **So that checkbox is not what puts the back on the base.**
+Kosmosoft's sheet says prefabricated-side boxes have **further parameters only in the `.SCS` file**, and two of them
+govern exactly this: `bCassDIESOT` (0 = back runs down past the base, 1 = back stands on the base) and
+`bCassDIESOTFILO` (with DIESOT = 0: 1 = back down to the underside of the base). **The window does not appear to
+show them.** The 87 = 103 − 16 is what `bCassDIESOT=1` produces, which matches §7a's own instruction to set it to 1:
+*my instruction, and the cause of the 87.* **Asked of the owner:** set `bCassDIESOT=0` and `bCassDIESOTFILO=1` in the
+saved `METABOX_K.scs` (Notepad, copy first), reload and regenerate. Expected **back 281 × 103**, base 281 × 382: **398**
+overall. Also check that **BH = 103** on the METABOX K row of *Scatola Cassetto*. Better still, put the `.SCS` file in
+`Raw/` so the values can be read rather than inferred.

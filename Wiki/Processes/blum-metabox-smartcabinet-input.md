@@ -223,7 +223,7 @@ Scatola Cassetto* (**Box Config file**). *Copy the file before editing.*
 | `cass_sp_die` (➏d back) | back thickness | **16.00** | as above |
 | `cass_sp_fro` (➏c front) | inner front thickness | **0.00** | METABOX has no inner front; 0 = not made |
 | `bCassDDIE` (➐) | 0 = back across the sides' outer edges; **1 = back between the sides** | **1** | Blum's back is LW − 31, between the sides. *The 302-wide back is what `0` produces* |
-| `bCassDIESOT` | 0 = back runs down past the base; **1 = back stands on the base** | **1** | Blum's base is the full NL − 2 = **398**, with the back on it |
+| `bCassDIESOT` | 0 = back runs down past the base; **1 = back stands on the base** | ~~1~~ **0**, with `bCassDIESOTFILO=1` *(corrected 2026-10-03)* | Setting 1 made SmartCabinet take the base off the back's height (**back 87**) **without** lengthening the base (382), so neither part was Blum's. **0 + FILO 1 gives back 103 down past a 382 base, 398 overall**: Blum's overall box, with the base/back joint differing from Blum's drawing. *Not in the English window; edit the `.SCS`* |
 | `cass_sot_dy` | base height above the bottom of the sides | **check, do not guess** | the base sits on the steel side's bottom flange; read it off the result (below) |
 
 **The shop runs the English version of SmartCabinet** (owner, 2026-10-03), but the online manual is **Italian only**: no English edition was found at `smartcabinet.eu/manuale/` (checked 2026-10-03). **The `.SCS` parameter names are the same in both languages**, so editing the file is the language-proof route. The English on-screen labels are still to be mapped from a screenshot. *Do not guess them.*
