@@ -326,3 +326,22 @@ the METABOX K standard.
 - The single `…DRAWER-n-BOTTOM.TCN` files still carry two **tool-182, 8 mm** cuts running mostly off the panel. The
   nesting has none. **Do not run the single bottom files.**
 - The nesting contours carry no tool number: confirm the cutter in TpaCAD's simulation before the first sheet.
+
+## (21) 1050 corner unit — blind corner, door on the right, 500 wide: the plan given
+
+Owner: *"Blind corner, door on the right, 500 wide."* Read SmartCabinet's *Ante* pages (`ante_progettazione`,
+`ante_ferramenta`, fetched 2026-10-03). The door types include **single door opening on the left with hinges on the
+right** and a **fixed door (*anta fissa*) for closing a space permanently**, plus *shorten left / right / top / bottom*
+parameters. In *door hardware*: hinge model, **number of hinges (auto by size if blank)**, and distance of the top /
+bottom hinge from the door edges.
+
+**Plan given (derived; check after regeneration):**
+- **Door:** single, hinges on the **right cabinet side**, full overlay. Full-width door would be 1050 − 3 = 1047;
+  **shorten left by 547 → 500**. Height as the 350 unit's fronts (720 with the shop's 3.2 gap → **716.8**).
+- **Hinge:** the shop's **71B3550** (CLIP top BLUMOTION 110°, overlay, screw-on). FA = 19 − 1.5 = **17.5** → with plate
+  MD 0, **TB 6.5** (FA = 11 + TB − MD, `blum-clip-top-hinges-smartcabinet-input.md` §4), so the **cup centre is 24 from
+  the door edge**, Ø35 × 13. **2 hinges** (≈ 716 high, ~4–5 kg at 19 mm: Blum's 2-hinge band ≤ ~750 / 4–6 kg).
+  Plate holes in the right side at **37 from the front, 32 apart**: clear of the shelf-pin band (242–434 above the base).
+- **Blank:** 1047 − 500 − 3 = **544** × 716.8, as a fixed door (*anta fissa*) or a loose part fixed on site. Asked
+  which the shop prefers.
+- Still unanswered: **the back's 107 mm setback** and the **middle legs**.
