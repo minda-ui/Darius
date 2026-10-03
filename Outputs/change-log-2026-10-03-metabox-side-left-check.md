@@ -596,3 +596,28 @@ production. Save it as your new skill."* Two parts, so that the method has a gov
   plain text, so it was fixed before saving.* **The skill is git-only**: Drive cannot run it, and the article is the
   governed copy it points to. It loads in future Claude Code sessions on this repository.
 - `Wiki/index.md` and the registers amended in place; the Review-folder Processed item now points at the article.
+
+## (39) Business process: order from Sales to handover — first discussion
+
+Owner asked for thoughts on the process from **order received from Sales to finished furniture handed back to Sales**.
+Darius proposed **gates** on the existing Job Tracker spine (`Software/smartcabinet-and-production-workflow.md`):
+
+- **Gate 0**, release from Sales;
+- **Gate 1**, the drawing check;
+- **Gate 2**, final QC against the order spec;
+- **Gate 3**, handover pack to Sales;
+
+plus change control after release and a snag loop from site. **Nothing written to the workflow article yet: discussion
+only.**
+
+**Owner's direction, recorded:**
+- **Sales give the workshop a 3D render and dimensions.** Step one is a **checklist that lets the workshop create
+  production drawings** from them. Darius drafted it (layout, carcass, fronts, hardware, drawer materials, site
+  constraints, appliances/scope; each item marked render / dimensions / house default / ask Sales).
+- **Two directions for the workshop:**
+  1. **Standardised kitchen production**: a library of standard unit sizes, where the client chooses only panel decor,
+     edging and colours. This allows **a clear delivery term**.
+  2. **Bespoke production**: the opposite end.
+
+Darius's response and questions are in the session reply. **Awaiting the owner's answers before anything is written
+into the workflow article.**
