@@ -231,3 +231,26 @@ grooves → base ≈ 292; back joint "back across the sides" → back 302. **Cha
 back joint **2nd option**, base-under-front-and-back **on**, groove depths **0 / 0**. Save as a named `.SCS`, **not**
 *Set as Default*. Also visible: *Drawer guide* now reads **`320K4000C METABOX`** (the K rail row exists) and *Box
 system* **METABOX K** on each drawer.
+
+## (14) 350 mm unit, version 5 — after the drawer-box settings
+
+Owner regenerated after setting the box window (13). Compared with v4; nesting programs decoded.
+
+| Item | v5 | Blum K / NL 400 | Verdict |
+|---|---|---|---|
+| Base ×4 | **281** × **382** × 16 | 281 × **398** × 16 | **width ✓; length 16 short** |
+| Back ×4 | **281** × **87** × 16 | 281 × **103** × 16 | **width ✓; height 16 short** |
+| Inner front | gone | none | ✓ |
+| Fronts | 347 × 176.8 × 19, Diamond Grey; screw pilots moved 11 mm with the rails | — | ✓ consistent |
+| Rail lines (from the top) | **47.8** / 227.5 / 407.3 / 570, mirrored | top ≥ 24 below the rails; bottom ≥ 120 | ✓ top **28.8**; bottom 131; gaps ≥ 162.7 |
+| Carcass | unchanged | — | ✓ |
+| **New: nesting** | `27-NESTING01-SP19-W1100`, `28-…02-SP16-U961`, `29-…03-SP19-U963`: full-sheet cut-and-drill programs | — | contours carry **no tool number** (`#205=` blank): check in TpaCAD before running. **`NESTING02` has no tool-182 cuts** |
+| Single bottom programs | still two **tool-182** cuts, now **8 mm deep**, 38 from each edge, running off the 382 panel | none | **✗ unexplained**: do not run these single files; the nesting doesn't include them |
+| **Stale files** | v4's `13-…2-FRONT`, `16-…2-BOTTOM` (292 × 388 × 10), `19-…3-FRONT`, `22-…3-BOTTOM` (old), `25-…4-FRONT`, `28-…4-BOTTOM` (old) still in the folder; **new numbering re-uses 22 and 25** | — | **✗ delete them**: one wrong file is one click away |
+
+**Why the base and back are both 16 short:** with *base under front and back* ticked, SmartCabinet stands the back
+on the base and takes the base out of the back's height (103 − 16 = **87**). The base stops at **382 = 398 − 16**.
+**Two routes given to the owner:** (A) **untick it**. The back goes back to **103** and runs down past a 382 base:
+overall box depth 382 + 16 = **398**, the same as Blum, with only the base/back joint differing from Blum's drawing.
+(B) keep Blum's exact build (398 base, back on it) by raising the back height and box depth. **Not recommended
+until tested**: this KB has no verified setting for it.
