@@ -494,3 +494,19 @@ SmartCabinet manual page *Supporto Anta (Aventos)* (`tabelle_cam_accessori_avent
   lists it as the **corner-cabinet bi-fold hinge** (with a CLIP top 155° hinge). Recorded in the AVENTOS article and in
   `blum-clip-top-hinges-smartcabinet-input.md` §8.
 - `blum-library.md`, `Wiki/index.md` and the registers amended in place.
+
+## (33) AVENTOS — the front holes filled in
+
+Owner sent *"Do AVENTOS next"* again, after (32) was already published. **Read as "carry on with AVENTOS"**, and the gap
+(32) left was closed: §4 of `blum-aventos-lift-systems-smartcabinet-input.md` now has the **front fixing holes for HS, HL,
+HK-S and HK-XS** *(drawing)*, read from PDF pp. 38, 44, 59 and 66:
+
+| Type | Holes | Datum |
+|---|---|---|
+| HS | 196.5, +32 × 3 | SFA + 12.5 |
+| HL | X = 153 / 203 / 253 / 303 by lever arm `20L3200` / `3500` / `3800` / `3900`, +32 × 3 | SFA + 12.5 |
+| HK-S | 78 − F, 110 − F | SFA + 12.5 |
+| HK-XS | 125.5 + MD + K, +32 (131.5 + MD + K at 100 deep) | SFA + 15.5 |
+
+**The reference line differs between types** (HK top adds FAo; HK-S subtracts F). **One sample front to be drilled and
+offered up before D rows go into SmartCabinet.** Article 9,783 -> 11,155 B, in place, same id; registers amended.

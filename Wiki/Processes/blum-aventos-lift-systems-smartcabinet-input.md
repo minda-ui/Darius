@@ -104,7 +104,20 @@ depth ≥ 125. *(drawing)*
   X depends on KH and the mounting plate: KH 480–549 → **70** (68 with `175H5400`); KH 550–1040 → **47** (45). The top
   front hangs on CLIP top 120° hinges: drilling distance **TB 3–6**, from the TB table on p. 22. The centre hinges join
   the two fronts. *(drawing)*
-- **HL, HS, HK-S, HK-XS**: front brackets on pp. 40, 34, 55, 62. **Not tabulated here yet.**
+- **HS** (p. 34), wooden fronts: **4 chipboard screws** at **196.5, then +32, +32, +32** down from the front's top edge,
+  **SFA + 12.5** in from the side edge. *(drawing)*
+- **HL** (p. 40), wooden fronts: the same 4 holes (+32 × 3) at SFA + 12.5, starting at **X** below the top edge. X depends
+  on the lever arm: `20L3200.06` → **153** · `20L3500.06` → **203** · `20L3800.06` → **253** · `20L3900.06` → **303**
+  (the same for the SERVO-DRIVE `21L…` arms). *(drawing)*
+- **HK-S** (p. 55): **2 chipboard screws** at **78 − F** and **110 − F** below the top (F = gap), **SFA + 12.5** in from the
+  side edge. *(drawing)*
+- **HK-XS** (p. 62): **2 chipboard screws** at **125.5 + MD + K** and +32 below the top (**131.5 + MD + K** in a
+  100-deep cabinet), **SFA + 15.5** in. MD = mounting plate spacing; K = hinge arm crank (0 / 9.5 / 18). *(drawing)*
+
+**Reference line, to confirm on the first sample:** for HK top Blum adds FAo (62 + FAo), and for HK-S it subtracts F, so the
+datum differs between types. The other figures are measured from the front's top edge **as drawn**. **Drill one sample
+front and offer it up before entering D rows in SmartCabinet.** Narrow alu frames have their own figures on the same
+pages (e.g. HS 197, HL X + 0.5).
 
 ## 5. SmartCabinet — *Tabelle CAM Accessori → Supporto Anta (Aventos)*
 
@@ -148,7 +161,7 @@ choice: Blum gives positions, not pilot sizes.
 - Which AVENTOS the shop actually uses, and whether Import Accessori already has Blum rows. **Check before typing.**
 - Whether `Y` (cabinet side) is measured from the top of the side or from the underside of the top panel. **Check on
   the first sample.**
-- The front-bracket drilling for HS, HL, HK-S and HK-XS (pp. 34, 40, 55, 62).
+- ~~The front-bracket drilling for HS, HL, HK-S and HK-XS~~: **added to §4** (2026-10-03). The datum for each is still to be confirmed on a sample.
 - The HS and HL KH × FG selection tables are on pp. 32 and 38. **Not copied here; read them for the actual cabinet.**
 
 ## Changes
@@ -156,3 +169,4 @@ choice: Blum gives positions, not pilot sizes.
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-03 | Created on the owner's *"Do AVENTOS next"*; the `79T8500` reply corrected | Session 27 (32) |
+| 2026-10-03 | §4: front fixing holes for HS, HL, HK-S and HK-XS added (owner repeated *"Do AVENTOS next"*) | Session 27 (33) |

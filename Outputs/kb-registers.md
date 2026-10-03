@@ -145,6 +145,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-03 | **`blum-metabox-smartcabinet-input.md` (§2, §7) and `blum-runners-tandem-movento-smartcabinet-input.md` (§5) corrected in place**: SmartCabinet's hole groups are **cabinet-side** runner holes, not drawer-side (shown by the shop's own Kosmosoft rows). Imported `320M4000C` row checked. | Owner's photo of *Guide Cassetto* |
 | 2026-10-03 | **`Processes/blum-legrabox-smartcabinet-input.md` created** (**8,686 B**, id `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo`, placeholder then in-place upload; Drive reports it `text/plain`, not `text/markdown`). `blum-library.md` and `Wiki/index.md` amended in place to point at it. | Owner: *"please carry on with Blum"* |
 | 2026-10-03 | **`Processes/blum-aventos-lift-systems-smartcabinet-input.md` created** (**9,783 B**, id `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q`, placeholder then in-place upload). `blum-library.md`, `Wiki/index.md` and `blum-clip-top-hinges-smartcabinet-input.md` (`79T8500` identified) amended in place. | Owner: *"Do AVENTOS next"* |
+| 2026-10-03 | **`blum-aventos-lift-systems-smartcabinet-input.md` §4 amended in place** (9,783 -> **11,155 B**, same id): front fixing holes for HS, HL, HK-S and HK-XS. | Owner repeated *"Do AVENTOS next"* |
 
 ## Outputs produced
 
@@ -272,7 +273,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
 | `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |
 | `Wiki/Processes/blum-legrabox-smartcabinet-input.md` | **8,686** | `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo` — **created 2026-10-03** |
-| `Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` | **9,783** | `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q` — **created 2026-10-03** |
+| `Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` | **11,155** | `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q` — **created 2026-10-03** (9,783 B), amended in place the same day (§4) |
 | `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
 | `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 
