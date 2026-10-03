@@ -195,3 +195,20 @@ steel side**. **Giving the METABOX box system a 10.5 mm side** would bring back 
 length** wants SmartCabinet's *"extend the bottom under the back"* option (*Progettazione cassetti* ➑a): Blum's base
 is NL − 2 = 398 with the back standing on it. **Delete or disable the `FRONTAL` part**; restore the fronts to
 19 mm Diamond Grey.
+
+## (11) 350 mm unit, version 4 — only the cutting list changed
+
+Owner: *"I have updated the 350 unit folder again."* **All 15 programs, the worklist and `.fnm` have the same md5 as
+v3.** Only `Cutting list for Base Unit with Metabox K.pdf` is new (07:46).
+
+| Item | v3 | v4 | Verdict |
+|---|---|---|---|
+| `FRONTAL` ×4 | 302 × 103, Diamond Grey 19 | **gone** | **✓ fixed** |
+| Fronts ×4 | 347 × 177 on Graphite 16 | **347 × 177 on U963 Diamond Grey 19** | **✓ fixed**, matches the 19 mm programs |
+| Carcass (W1100, 19) | 6 parts | unchanged | ✓ |
+| Backs ×4 (Graphite 16) | 302 × 103 | **302 × 103** | **✗ still 21 too wide**: Blum 281 × 103 × 16 |
+| Bottoms ×4 (Graphite 16) | 292 × 388 | **292 × 388** | **✗ still**: Blum 281 × 398 × 16 |
+| Bottom programs | 10 mm, tool-182 cuts | **unchanged** | **✗ stale**: they disagree with the 16 mm on the cutting list |
+
+Two of four drawer issues fixed. **Still blocking:** box width (the side-thickness setting, (10)) and base length
+(*extend the bottom under the back*), then regenerate the programs so the bottoms are re-programmed at 16 mm.
