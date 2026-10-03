@@ -169,3 +169,29 @@ Owner: *"Use 400 mm rails, keep as is."* **NL 400 is the owner's choice for the 
 is closed.** The rail holes (37 · 165 · 261 · 357) and the drawer clearances stay as reviewed in (7). **Still open on
 this unit:** drawer bottoms (need **281 × 398 × 16**; the programs say 292 × 388 × 10) and drawer backs (**281 × 103 × 16**),
 not yet on a cutting list.
+
+## (10) 350 mm unit, version 3 — same folder, files replaced, cutting list added
+
+Owner: *"I have updated the 350 unit folder again."* Programs compared byte-for-byte with v2; joints re-checked
+across v1–v3 by script. New: `Cutting list for Base Unit with Metabox K.pdf` (6 pp., three boards).
+
+**Carcass ✓.** The only program changes are the **top-rail joints**, moved from 30 / 120 to **40 / 110** on the rails
+and to 40 / 110 / 460 / 530 on both sides. Consistent: back rail at 420 + 40 / 110. Sides to bottom are unchanged
+(40 / 270 / 500 ↔ 40 / 270 / 500). v1 and v2 were also consistent; this is a deliberate move, not a fix. Back,
+bottom, legs and fronts are unchanged.
+
+**Drawer parts: the cutting list now has them, but they are still not Blum's METABOX K / NL 400:**
+
+| Part | Cutting list (board) | Program | Blum | Verdict |
+|---|---|---|---|---|
+| Bottom ×4 | **292 × 388**, U961 ST7 Graphite Grey **16** | 292 × 388 × **10**, byte-identical to v1/v2 (incl. tool-182 cuts) | **281 × 398 × 16** | **✗** width +11, length −10. **The program is stale**: it still says 10 mm |
+| Back ×4 | **302 × 103**, Graphite Grey 16 | none | **281 × 103 × 16** | **✗ width +21** (height ✓) |
+| `FRONTAL` ×4 | **302 × 103**, **U963 Diamond Grey 19** | none | **none**: METABOX has no inner front | **✗ not needed**, and 302 will not pass between the steel sides |
+| Fronts ×4 | **347 × 177**, on the **Graphite Grey 16** board | 347 × 176.8 × **19** | — | **✗? material**: v1 had them on Diamond Grey 19, and the programs still say 19. **Looks swapped with `FRONTAL`** |
+
+**Likely single root cause** *(derived)*: SmartCabinet builds the box **302 wide = LW − 2 × `LX` (5)**, as if the
+drawer sides were **0 mm thick**. Blum's wooden parts are **LW − 31**, i.e. 15.5 a side = `LX` 5 + **~10.5 for the
+steel side**. **Giving the METABOX box system a 10.5 mm side** would bring back and base to 281 at once. **The base
+length** wants SmartCabinet's *"extend the bottom under the back"* option (*Progettazione cassetti* ➑a): Blum's base
+is NL − 2 = 398 with the back standing on it. **Delete or disable the `FRONTAL` part**; restore the fronts to
+19 mm Diamond Grey.
