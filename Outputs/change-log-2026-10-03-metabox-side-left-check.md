@@ -685,7 +685,7 @@ Note`:
 
 **Data issues found** (for the owner; nothing edited, as it is her sheet):
 
-- `BCULemans110`: the price is inside the description, with the price column empty. *(Figure redacted 2026-10-03, see (43).)*
+- `BCULemans110`: the price is inside the description ("…Base Unit£276"), with the price column empty. *(Briefly redacted under (43); restored under (44): a public retail price.)*
 - `BDU-5DRW`: width missing (1000 mm unit).
 - `BUTOWS60`: "00mm" for 600mm.
 - Codes containing commas (`BDU1,80`, `BUBIN30-1x10,1x20`), which will break CSV/order-form handling.
@@ -733,3 +733,16 @@ different question, so it is put to her rather than assumed.** Until she rules:
   purged on request (a history rewrite of this branch).
 
 The classifier stays where she keeps it, in `Raw/` as a live sheet.
+
+## (44) Correction from the owner: the £ column is DIY Kitchens' sale price
+
+Owner: *"Sorry, my mistake. 1. Is sales price of diy-kitchens.com."* **The classifier's £ figures are diy-kitchens.com's
+public retail prices**, a **market benchmark**, not the shop's costs or margin. (43)'s caution therefore does not apply:
+the figures are public, and the redacted figure in (41) is restored. **No ruling is needed.** The classifier is in effect
+**a list of what a UK online competitor sells and at what price**. Its links (DIY Kitchens, Toolstation, Kitchen Door Hub,
+JMT) are the product references.
+
+Consequence for the standard range: the list says **which units to offer and the price to beat**. The shop's own costs
+per unit (board, edging, hardware, machine and labour time) are still to be worked out, and that is where SmartCabinet's
+cutting lists and the hardware lists come in. *What the DIY Kitchens price includes (carcass only, or with a door) is not
+assumed: to be checked on their site or asked.*
