@@ -685,7 +685,7 @@ Note`:
 
 **Data issues found** (for the owner; nothing edited, as it is her sheet):
 
-- `BCULemans110`: the price is inside the description ("…Base Unit£276"), with the price column empty.
+- `BCULemans110`: the price is inside the description, with the price column empty. *(Figure redacted 2026-10-03, see (43).)*
 - `BDU-5DRW`: width missing (1000 mm unit).
 - `BUTOWS60`: "00mm" for 600mm.
 - Codes containing commas (`BDU1,80`, `BUBIN30-1x10,1x20`), which will break CSV/order-form handling.
@@ -714,3 +714,22 @@ Range: Howdens' system, not ours.** Its planning dimensions (p. 14, read off the
 
 **Against our numbers:** the classifier's wall units are 720 / 900 high, D300; our base carcass is 720 × 570 on 150 legs,
 which gives 870 to the worktop underside (Howdens: 890). **Not moved or summarised further**; registered `partial`.
+
+## (43) The classifier's prices are cost + margin — kept out of git until ruled
+
+Owner's answers to (41):
+
+1. **The £ column is our costs + profit margin**, i.e. the workshop's price list.
+2. Whether the Sales catalogue uses the classifier's codes and units is **open to discuss**.
+3. The sheet has **no other tabs**.
+
+**Handling:** a price list built from cost and margin is commercially sensitive, and the estate's financial-documents law
+(`Raw/2026-09-22_estate-law_financial-documents-v1.4-7b.md`: *never git*; not adopted here, but binding on the estate) may
+reach it. The owner ruled in September that the Machinery Register is *not* a financial document; **a price list is a
+different question, so it is put to her rather than assumed.** Until she rules:
+
+- **no classifier prices go into the KB, git or the catalogue draft;**
+- the one figure quoted in (41) is **redacted** in this file's current version. Git history still holds it; it can be
+  purged on request (a history rewrite of this branch).
+
+The classifier stays where she keeps it, in `Raw/` as a live sheet.
