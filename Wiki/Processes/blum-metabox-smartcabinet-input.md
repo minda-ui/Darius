@@ -157,6 +157,26 @@ K and H in NL 350–550 (there is no 300 in any height).
 two Ø5 holes on one line, at 37 and the NL-dependent second position. If they are there, the import is complete.
 If the side panel has no holes, SmartCabinet is not drilling METABOX rails, and that becomes the next question.
 
+### First CN output checked — `Raw/Side Left.pdf`, 2026-10-03
+
+The owner's SmartCabinet drilling drawing of a cabinet side: **`01 SIDE LEFT L851 × H570 × Z19`**, four METABOX
+drawers. Read against this check sheet:
+
+| Check | Drawing | Verdict |
+|---|---|---|
+| Rail holes present | **`C: 5x5`** (Ø5, 5 deep), one line per drawer, at **128.25 · 345.50 · 562.75 · 752** from the top end | **yes**: the import drills the rails |
+| Front hole | **37** from the front edge | **matches** Blum |
+| Further holes on each line | **165 · 261 · 357** from the front edge | **357 is NL 400's rear hole.** 165 and 261 line up with the NL 400 profile's intermediate holes *(drawing, p. 417)*. **No other NL uses 357**, so the rail drawn is **NL 400** |
+| NL against the cabinet | side 570 deep; NL 400 needs ≥ 403 | fits, but **a 570-deep side would usually take NL 500** (≥ 503) — *if* the internal depth is ≥ 503. Is 400 intended? |
+| **Bottom drawer clearance** | lowest line **752**: **99 mm** above the bottom panel (the shop's Cabineo joint puts the sides **on** the bottom panel, `cabineo-joint-geometry-reconciled.md`) | **N (54) and M (86) fit; K (118) and H (150) do not** (+2 with BLUMOTION). The import holds **K and H only** |
+| Spacing between drawers | 217.25 · 217.25 · 189.25 | fits any height, H included (needs ≥ 152) |
+| Top drawer | line 128.25 → ~109 below the top rails | ≥ 24 ✓ |
+| Hole depth | 5 mm | a pilot for chipboard screws Ø4 × 15 (A). **Too shallow to seat system screws Ø6 × 14.5 (B)**; the shop's own B holes elsewhere on this panel are 5 × 12 |
+
+**Verdict:** the rails are being drilled at Blum's front position with an NL 400 rear hole. **Two questions for the
+owner:** which height the **bottom** drawer is (K or H will not fit at 99 mm), and whether **NL 400** is the length
+intended.
+
 ## 8. What is still open
 
 - Whether Import Accessori already offers METABOX (**check first** — §1).
@@ -172,3 +192,4 @@ If the side panel has no holes, SmartCabinet is not drilling METABOX rails, and 
 | 2026-10-02 | §6 added: METABOX imported under its own category, not as runners — why the rails are missing, and the proposed fix | Session 26 |
 | 2026-10-02 | §6: rails found in Kosmosoft's import and imported by the owner; manual fix superseded | Session 26 |
 | 2026-10-02 | §7 check sheet for the imported rails, incl. hole-line height read from the drawing | Session 26 |
+| 2026-10-03 | §7: first CN output (`Raw/Side Left.pdf`) checked; NL 400 pattern, bottom-drawer clearance 99 mm | Session 27 |
