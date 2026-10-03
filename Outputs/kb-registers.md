@@ -273,7 +273,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
 | `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |
 | `Wiki/Processes/blum-legrabox-smartcabinet-input.md` | **8,686** | `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo` — **created 2026-10-03** |
-| `Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` | **11,155** | `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q` — **created 2026-10-03** (9,783 B), amended in place the same day (§4) |
+| `Wiki/Processes/blum-aventos-lift-systems-smartcabinet-input.md` | **11,678** | `1E-T8xFm0-Tqq3gEzaBzHXONCK7k8XY4q` — **created 2026-10-03** (9,783 B), amended in place the same day (§4, §6) |
 | `Wiki/index.md` | see file | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` — **unchanged**, in place |
 | `Raw/Blum/` (folder) | — | `1QumXqBo1OXocFEEBVZFMtKB6MfXAtKud` — 39 files; per-file ids in `change-log-2026-10-02-blum-library-and-metabox.md` |
 
