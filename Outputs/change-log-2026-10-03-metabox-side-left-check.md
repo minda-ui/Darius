@@ -698,3 +698,19 @@ Note`:
 Toolstation and others.
 
 **Not moved or edited.** It is a live working sheet. Registered as a Processed item, `partial`.
+
+## (42) Raw check again — a Howdens installation manual
+
+Owner: *"Check Raw folder again."* Listed in full: **63 items**, one new. **`Emailing ASS_25527203.PDF.pdf`** (30.3 MB, 20:06),
+which is **Howdens' *Kitchen Installation Manual*, June 2026**, 277 pages. **Read as reference for the Standard Kitchen
+Range: Howdens' system, not ours.** Its planning dimensions (p. 14, read off the drawing):
+
+- **Base:** carcass **720**, legs **170**, so **890** to the worktop's underside; depth 575 (616 to the worktop front).
+- **Wall:** **557** standard / **720** full height / **900** extra tall; **290** deep. **502** from the worktop top to the
+  wall units' underside with a 38 worktop (464 + 38).
+- **Towers:** **2112** standard / **2292** extra tall, incl. legs. A tall unit needs +50 mm ceiling height to stand up.
+- **Widths** (p. 8): 150–1000, in 50/100 steps by type. Handleless profile system (sections 2–3); shallow 290 bases in
+  handleless only.
+
+**Against our numbers:** the classifier's wall units are 720 / 900 high, D300; our base carcass is 720 × 570 on 150 legs,
+which gives 870 to the worktop underside (Howdens: 890). **Not moved or summarised further**; registered `partial`.
