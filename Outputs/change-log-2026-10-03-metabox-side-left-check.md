@@ -765,3 +765,30 @@ someone opens the pages.
 
 **Reading the classifier against this:** its `BU60` figure is well below the FD6-with-door figure. It **probably holds
 cabinet-only prices**, but **this is not confirmed**: to be checked on the site from a normal browser.
+
+## (46) DIY Kitchens read directly, and the classifier's figures don't match it
+
+Owner added diy-kitchens.com to the environment. **The bare `diy-kitchens.com` now answers (HTTP 200);
+`www.diy-kitchens.com` and `advice.diy-kitchens.com` are still blocked**, so pages were fetched by `curl` on the bare
+domain. **Highline single and double base units, read 2026-10-03:**
+
+| Unit | Door(s) included | Price ex VAT | "Cabinet only price" ex VAT | Classifier |
+|---|---|---|---|---|
+| FD3 300 | 1 | £65.86 | £59.27 | `BU30` £38 |
+| FD4 400 | 1 | £70.33 | £63.30 | `BU40` £41 |
+| FD5 500 | 1 | £71.47 | £64.32 | `BU50` £44 |
+| FD6 600 | 1 × 715 × 597 | £73.94 | £66.55 | `BU60` £47 |
+| FD8 800 | 2 × 715 × 397 | £80.33 | £72.30 | `BU80` £53 |
+| FD10 1000 | 2 × 715 × 497 | £83.29 | £74.96 | `BU100` £59 |
+
+FD6 spec on the page: **720 carcass, 870 with 150 legs, 560 deep**; 2 hinges included; **soft close £2.50 ex VAT**.
+
+**Two findings, stated as found:**
+
+1. **"Cabinet only" is exactly 90 % of the price with doors on every unit**, one-door and two-door alike. So it reads as a
+   flat 10 % reduction, not as the door's real cost. The door style shown by default is chosen in a script the fetch
+   cannot run.
+2. **The classifier's figures are below both prices**: 57–71 % of DIY Kitchens' with-door price, and 64–79 % of the
+   cabinet-only price. **So they are not today's DIY Kitchens Highline prices.** They may be from another range or site
+   (the classifier also links Kitchen Door Hub and Toolstation), from an earlier date, or after a discount. **Asked of the
+   owner; not guessed.**
