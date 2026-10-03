@@ -792,3 +792,30 @@ FD6 spec on the page: **720 carcass, 870 with 150 legs, 560 deep**; 2 hinges inc
    cabinet-only price. **So they are not today's DIY Kitchens Highline prices.** They may be from another range or site
    (the classifier also links Kitchen Door Hub and Toolstation), from an earlier date, or after a discount. **Asked of the
    owner; not guessed.**
+
+## (47) DIY Kitchens — specification read first-hand
+
+The owner added `www.` and `advice.diy-kitchens.com`. **Both now answer; the bare `diy-kitchens.com` no longer does**,
+so the allowed list was replaced, not extended. `advice.` refused a plain `curl` (*"Access to this resource on the server
+is denied!"*, the site's own block) but **answered a browser-like request**. Read 2026-10-03:
+
+**Carcass specification** (*"What are the specifications of your kitchen unit carcasses?"*, quoted in substance):
+
+- Supplied **fully rigid**, glue-and-dowel, **doors and drawer fronts mounted at the factory**.
+- **Egger 18 mm** MFC, **8 mm MFC backs** (base and wall); front edges **2 mm PVC**, other exposed edges **0.4**.
+- **"It is not possible to order just carcasses without doors"** (open units excepted). So the "cabinet only price" in
+  (46) is a **display figure, not something a customer can buy**.
+- Base units drilled for **3 shelf positions**. Wall units: **300 deep** (excl. door); 570 / 720 / 900 high with 1 / 2 / 2
+  shelves; **hanging brackets 70 kg/pair, DIN 68840**; wall plates included.
+- **Depth can be increased or reduced to order** (limits apply).
+- **Drawers: Blum TANDEMBOX**, full extension, 470 sides (485 installation depth), **15 mm MFC base**; **soft close +£5 per
+  drawer**. (One older line on the same page also names Hettich Innotech.)
+- **Legs 150 mm** (100 optional), −10 / +20 adjustment; plinth clips supplied.
+- **Hinges: Blum 110°, standard not soft-close; soft close +£2.50 per door.**
+
+**Delivery** (*Delivery Information* and the advice page): units arrive **fully assembled** (except large corner larders);
+two-person delivery to the ground floor; **a week-commencing date with a 2-day window**; **just-in-time production, no
+stock held**. **Lead time is not a fixed published figure**: *"select a range on our website and the first available
+delivery date will be displayed"*, and bespoke painted takes longer. **(45)'s "usually 2 weeks" came from a search
+summary and is not confirmed by the pages read: withdrawn.** The lead-times page builds its dates in a script that a
+fetch cannot run.
