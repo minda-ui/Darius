@@ -251,6 +251,8 @@ edges = **302**.
 | 5 (⓱) | front-to-box dowels | 0 | **leave 0**: the METABOX front fixes by brackets |
 | foot | *Set as Default* · load · **save** | — | **Save as a named `.SCS` (e.g. `METABOX_K.scs`) and select it in *Box Config file*. Do NOT press *Set as Default*: it would change every wooden drawer too** |
 
+**What actually takes effect (proved 2026-10-03 on the 350 unit):** edit the `.SCS` in Notepad, restart SmartCabinet, and **load it through *Box Config file* on the METABOX row** of the drawer-box table. Values typed and saved in the *Drawer Box settings* window did **not** reach the box-system output. The first load fixed the back height (`cass_sot_dy=0`) and exposed that the file still lacked `cass05_spess=10.50`.
+
 **Check after regenerating (METABOX K, NL 400, LW 312):** **base 281 × 398 × 16**, **back 281 × 103 × 16**, **no
 `FRONT`/`FRONTAL` inner-front part**, base program **16 mm** with no grooving. If the back comes out ~87 high
 instead of 103, the back-height rule has changed with `bCassDIESOT`. Adjust the height, not the width. *None of these

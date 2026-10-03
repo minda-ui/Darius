@@ -297,3 +297,20 @@ in practice, so I stopped inferring.* Mapping read from the screenshots: the win
 the owner:** set the red 16 to 0 **in the window itself**, save, tick, regenerate. If the back is still 87, send the
 METABOX K row of the drawer-box table (H, BH …), because a `BH` of 87 there would explain it. **If that fails too,
 take it to Kosmosoft support** (the shop's contract covers it) rather than iterate further.
+
+## (19) 350 mm unit, version 8 — Way 2 loads the file: back height fixed, width lost
+
+Owner: *"Way 2: on the METABOX row … this way works."* **Loading the `.SCS` through *Box Config file* on the METABOX
+row is the route that takes effect.** Recorded as the method. Result against v7:
+
+| Part | v7 | v8 | Blum | Verdict |
+|---|---|---|---|---|
+| Back ×4 | 281 × 87 | **302 × 103** | 281 × 103 | **height ✓ fixed**; width ✗ back to 302 |
+| Base ×4 | 281 × 382 | **302 × 382** | 281 × 382 (route A) | width ✗ back to 302 |
+| Everything else | — | byte-identical to v7; `NESTING01`/`03` back, `NESTING02` (graphite) absent | — | ✓ |
+
+**Reading:** 302 = LW − 2 × 5, i.e. the file now loaded has **`cass05_spess` at 0, not 10.50**. The 10.5 typed in the
+window earlier never went into this file (the owner's photo of it started below the `cass05` line). **Fix given:**
+in the same `.SCS`, set `cass05_spess=10.50`, keep `cass_sot_dy=0.00`, save, restart SmartCabinet, regenerate.
+Expected: **base 281 × 382, back 281 × 103**. Also recorded in `blum-metabox-smartcabinet-input.md` §7a: **edit the
+`.SCS` and load it on the METABOX row; the window's own save does not reach the box system.**
