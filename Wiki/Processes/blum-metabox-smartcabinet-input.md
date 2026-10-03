@@ -226,6 +226,8 @@ Scatola Cassetto* (**Box Config file**). *Copy the file before editing.*
 | `bCassDIESOT` | 0 = back runs down past the base; **1 = back stands on the base** | **1** | Blum's base is the full NL − 2 = **398**, with the back on it |
 | `cass_sot_dy` | base height above the bottom of the sides | **check, do not guess** | the base sits on the steel side's bottom flange; read it off the result (below) |
 
+**The shop runs the English version of SmartCabinet** (owner, 2026-10-03), but the online manual is **Italian only**: no English edition was found at `smartcabinet.eu/manuale/` (checked 2026-10-03). **The `.SCS` parameter names are the same in both languages**, so editing the file is the language-proof route. The English on-screen labels are still to be mapped from a screenshot. *Do not guess them.*
+
 **Check after regenerating (METABOX K, NL 400, LW 312):** **base 281 × 398 × 16**, **back 281 × 103 × 16**, **no
 `FRONT`/`FRONTAL` inner-front part**, base program **16 mm** with no grooving. If the back comes out ~87 high
 instead of 103, the back-height rule has changed with `bCassDIESOT`. Adjust the height, not the width. *None of these
