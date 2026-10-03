@@ -222,3 +222,12 @@ Owner: *"I need help with drawer box settings in SmartCabinet."* Read the manual
 292 base is consistent with a side thickness well under the 10.5 METABOX needs. **Proposed set** (LX 5, LY 18, sides
 10.5, base dz 0, base 16, back 16, front 0, back between the sides, back standing on the base) written into §7a with
 the expected result to check. *Derived values flagged; no METABOX `.SCS` from Kosmosoft has been seen.*
+
+## (13) The English *Drawer Box settings* window mapped
+
+The owner sent a screenshot of the English window. Mapped field by field to the Italian manual's numbering in
+`blum-metabox-smartcabinet-input.md` §7a. **The values found reproduce the bad parts exactly**: sides 16 with 10 mm
+grooves → base ≈ 292; back joint "back across the sides" → back 302. **Changes given:** sides **10.5**, front **0**,
+back joint **2nd option**, base-under-front-and-back **on**, groove depths **0 / 0**. Save as a named `.SCS`, **not**
+*Set as Default*. Also visible: *Drawer guide* now reads **`320K4000C METABOX`** (the K rail row exists) and *Box
+system* **METABOX K** on each drawer.

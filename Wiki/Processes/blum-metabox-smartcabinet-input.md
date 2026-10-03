@@ -228,6 +228,29 @@ Scatola Cassetto* (**Box Config file**). *Copy the file before editing.*
 
 **The shop runs the English version of SmartCabinet** (owner, 2026-10-03), but the online manual is **Italian only**: no English edition was found at `smartcabinet.eu/manuale/` (checked 2026-10-03). **The `.SCS` parameter names are the same in both languages**, so editing the file is the language-proof route. The English on-screen labels are still to be mapped from a screenshot. *Do not guess them.*
 
+**The English *Drawer Box settings* window, mapped 2026-10-03 from the owner's screenshot** (icons are the same as
+the Italian manual's; the window has almost no words). Values *as found* explain the bad parts exactly. **Box outer
+302 (LW − 2 × 5)**, sides 16 with **10 mm grooves** each side: 302 − 32 + 20 ≈ base 292; back across the sides' outer
+edges = **302**.
+
+| Row (manual no.) | Icon | Found | Set for METABOX K |
+|---|---|---|---|
+| 1 (➌a/b) | box / front crossed out | off / off | leave off |
+| 2 (➍) | gap, top box to cabinet | 18 | leave |
+| 2 (➎) | box above front bottom / auto | 18, manual | leave |
+| 2 (➏) | **thicknesses**: teal = **sides**, black = **base**, green = **front**, red = **back** | 16 / 16 / 16 / 16 | **sides 10.5** *(derived)*, base **16**, front **0**, back **16** |
+| 2 (➐) | back-to-side joint: 1st = back across the sides, 2nd = sides past the back, 3rd = mitre | **1st** | **2nd**: the back goes **between** the sides → 281 |
+| 3 (➑a, ➑b) | base into the back; *">130"* = only above a front height | off; 130 | leave off |
+| 3 (➒) | base **under** front and back | off | **ON**: full-length base, back stands on it |
+| 3 (➓) | base into the front | off | leave off |
+| 4 (⓫a) | box back to cabinet back | 20 | leave |
+| 4 (⓫b, ⓫c) | groove depth in sides (green) / front-back (red) | **10 / 10** | **0 / 0**: METABOX base sits on the steel flange, no groove |
+| 4 (⓫d–g) | groove air / width / height / min. width | 0 / 16 / 16 / 0 | leave; check the base height in the result |
+| 4 (⓬) | groove tool: cutter / **saw LAMA120**, 3.50, 1 pass | saw | irrelevant once the grooves are 0 |
+| 5 (⓭–⓰) | box dowels Ø8 / bolts / Cabineo / Clamex | Ø8, 20, 15/20; others off | irrelevant (no wooden sides) |
+| 5 (⓱) | front-to-box dowels | 0 | **leave 0**: the METABOX front fixes by brackets |
+| foot | *Set as Default* · load · **save** | — | **Save as a named `.SCS` (e.g. `METABOX_K.scs`) and select it in *Box Config file*. Do NOT press *Set as Default*: it would change every wooden drawer too** |
+
 **Check after regenerating (METABOX K, NL 400, LW 312):** **base 281 × 398 × 16**, **back 281 × 103 × 16**, **no
 `FRONT`/`FRONTAL` inner-front part**, base program **16 mm** with no grooving. If the back comes out ~87 high
 instead of 103, the back-height rule has changed with `bCassDIESOT`. Adjust the height, not the width. *None of these
