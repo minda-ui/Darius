@@ -446,3 +446,10 @@ and back rail are **byte-identical** to (26); `08-BACK-1B` is **gone**.
    0.4 at the bottom, not the "1–2 mm" I gave**: the 3.2 is the gap *between* drawers, which has no counterpart on a
    single door. To match exactly: set the corner unit's top/bottom front gap to **1.6** → door and blank **716.8** high.
    Left to the owner whether 0.4 mm is worth the regeneration.
+
+## (30) Corner unit — closed by the owner
+
+Owner: *"all good and noted about shelves"*. Read as: the regenerated set (28) is accepted as is, the **2 mm front gaps
+stay** (0.4 mm difference accepted, (29)), and the owner will handle the shelf themselves (one 1011 shelf, **not**
+`06-SHELF-1` + `07-SHELF-2` from this set, (28)). **Corner unit review closed.** All three Review-folder units now
+reviewed: 350 METABOX K (v9 ✓), TV shelf unit (✓), 1050 corner unit (✓ with the shelf caveat).
