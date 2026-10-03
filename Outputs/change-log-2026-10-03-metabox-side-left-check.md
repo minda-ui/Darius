@@ -139,3 +139,26 @@ version 1**:
 
 Also: a copy of the folder *"Shelf unit for TV unit 30_09"* sits **inside** the 350 folder as well as beside it,
 probably dropped in by accident. Not reviewed yet.
+
+## (8) Pre-production review — `Shelf unit for TV unit 30_09`
+
+Owner: *"Yes, review the TV shelf unit."* Two copies exist (beside and inside the 350 folder). **Their programs are
+identical by md5**; only the outer copy has the cutting list. Reviewed the outer one: 10 `.TCN`, worklist, `.fnm`,
+`Cutting list Shelf unit for TV unit 30 09.pdf` (one board, **H1307 ST19 Brown Warmia Walnut** 19 mm, 38 % used).
+
+**Unit:** 500 wide × 1780 high × 250 deep. Sides 1780 × 250 run full height; bottom and top 462 × 250 sit between
+them; three shelves 461 × 211; full 19 mm back 1742 × 462 inside the carcass. **The cutting list matches the
+programs part for part (8 parts).**
+
+| Joint | Programs | Verdict |
+|---|---|---|
+| Bottom / top → sides (Cabineo, 2 per end) | pockets in the machined faces (`BOTTOMB` underside, `UPB` top) at Y 40 / 210, centres 3.6 from the end ↔ side Ø5 × 12 at **7.1** from each end, Y 40 / 210 | ✓ (axis 7.1 from the machined face, flush with the side's end) |
+| Back → bottom / top (×3 each) | back pockets at 50 / 231 / 412 ↔ bottom and top Ø5 at 50 / 231 / 412, Y 232.9 | ✓ |
+| Back → sides (×7 each) | back pocket centres 50 … 1692 (+19) ↔ side Ø5 at 69 … 1711, Y 232.9 | ✓ all seven |
+| Back position | inner face 225.8, set 5.2 in from the rear: same as the kitchen units | ✓ |
+| Shelves (Cabineo both ends, Y 40 / 171) | sides: three bands of **5 × Ø5 × 12 at 32 pitch**, rows **Y 50 / 181**; left and right mirrored correctly | ✓ shelf sits 10 back, its screws land in the pin holes, so each shelf has 5 heights. 10 + 211 = 221 clears the back (225.8) |
+| Widths | 462 = 500 − 38; shelves 461 | ✓ |
+
+**Verdict: correct as drawn, ready to make.** One recommendation, judgement rather than a defect: **a 1780-tall,
+250-deep unit should be fixed to the wall against tipping**, and the programs carry no wall-fixing provision.
+Fit a bracket or screw through the back on site. The duplicate copy inside the 350 folder can be deleted by the owner.
