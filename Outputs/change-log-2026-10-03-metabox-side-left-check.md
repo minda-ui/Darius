@@ -644,3 +644,57 @@ back byte-identical). It is also published as a **private** Claude artifact page
 **Every owner decision is left as [TBC]**: delivery term, leg height, tall height, gap standard, drawer system, handles,
 palette, the corner width (today's unit is 1050; the catalogue lists 1000 [TBC]), scope. **Not given to Sales: Darius
 does not send it; the owner reviews first.**
+
+## (41) Raw check — the Joinery Classifier
+
+Owner: *"Check workshop raw folder."* **Listed in full** (not date-filtered); 62 items. **New since the morning: two**,
+both this evening.
+
+- **`Joinery Classifier - Joinery Shop`**: a Google Sheet, 19:58, read as CSV (the first tab only; other tabs, if any,
+  were not exported).
+- **`Joinery Classifier.pdf`**: a one-page print of the same sheet, 19:50. **It is older than the sheet**: its doors read
+  2040 × 626/726/826/926 and its appliances carry `P14-` codes, where the sheet has 2058 × 658/758/858/958 and `M14-013`…`-020`.
+
+**What it is:** the owner's coded classifier of joinery products, headed `Ref · Level 1 · Internal Code · Level 2 · Unit ·
+Note`:
+
+1. **Doors**: internal doors + lining, 4 widths; ironmongery sets.
+2. **Kitchen units**:
+   - about 100 coded units with a £ figure each, for base, drawer, corner, pan-drawer, bin, pull-out, wine, oven and fridge
+     housings;
+   - wall units **H720 / H900 "T", D300**, corner, bi-fold, boiler, open;
+   - fillers, end panels and corner posts;
+   - appliances (Hisense, `M14-013`…`-020`);
+   - worktop (custom, laminate);
+   - decor panels 36 mm;
+   - **Gola handle-less profiles** (Häfele systems B/C/E);
+   - LED lighting;
+   - sink and tap.
+
+**Bearing on the Standard Kitchen Range draft (40):**
+
+- The classifier **already has a code scheme** (`BU60`, `BDU60-3DRW`, `WU60T`…). The draft's `B600-1D` scheme should
+  **follow the owner's**, not compete with it.
+- **Wall depth is 300** in the classifier (`WU30`: H720 W300 D300); the draft proposed 320.
+- **Wall heights 720 and 900** ("T") ✓.
+- **Fridge housings 1970 and 2150 high**, tall end panel 2320: these give the tall heights the draft left TBC.
+- **Legs 150 mm** (the note on `BU40`); base end panel 900 × 600.
+- **Handle-less = Gola profiles**, not TIP-ON. That changes the carcass (rail cut-outs or recessed rails) and is a
+  SmartCabinet question still to look at.
+- **Hinges:** Blum CLIP top soft-close 110° and 170° pairs, with 0 mm plates; a Klug clip-on hinge in one note.
+
+**Data issues found** (for the owner; nothing edited, as it is her sheet):
+
+- `BCULemans110`: the price is inside the description ("…Base Unit£276"), with the price column empty.
+- `BDU-5DRW`: width missing (1000 mm unit).
+- `BUTOWS60`: "00mm" for 600mm.
+- Codes containing commas (`BDU1,80`, `BUBIN30-1x10,1x20`), which will break CSV/order-form handling.
+- Codes with spaces (`BUPull out15`, `BUT-2 OW`).
+- Typos: "includet", "Frezeer", "Uni", "shelfs".
+- **Sections 2.2–2.4 appear twice**: the second set has no codes. It looks like a draft area.
+- Leading line breaks in some descriptions.
+
+**Not answered by the sheet:** what the £ column is (market reference? cost? sell price?). The links point to DIY Kitchens,
+Toolstation and others.
+
+**Not moved or edited.** It is a live working sheet. Registered as a Processed item, `partial`.
