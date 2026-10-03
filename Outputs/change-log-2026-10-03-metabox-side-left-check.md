@@ -361,3 +361,14 @@ Owner: *"Fixed door in SmartCabinet, back at the rear, add middle legs."* Read `
 - **Middle legs:** the leg table sets each leg's **hole pattern** (the shop's 4 × Ø3 at 64 × 64 underneath = Type 3), not
   how many legs or where. **The control for count / position was not found in the pages read**: told the owner
   so. Fallback: the plinth legs screw on; a middle pair can be fixed at assembly without CNC holes.
+
+## (23) Corner unit — "it's not allowing to split into two doors": dummy divider
+
+Owner: *"1. problem. it's not allowing to split into two doors."* Confirms one door per space. Read
+`progettazione_divisori_v` and `progettazione_griglie` (fetched 2026-10-03). **Both pages say the same: a divider or
+grid with thickness 0 is *fittizio* (dummy): it only creates spaces for doors and drawers, with no part and no CN
+machining.** Given: Vertical dividers → **1**, **thickness 0**, set the **right space** width (spaces numbered from the
+left; 0 = automatic). **Start at ~484** *(derived: 500 door − 17.5 overlay on the right side + 1.5 half-gap)* and correct
+by the difference shown. Then **right space: single door, hinges right, 71B3550**; **left space: fixed door**;
+shortening values back to **0**. **Check on regeneration:** the shelf must still come out as **one 1011 piece**. A
+divider may split it into two.
