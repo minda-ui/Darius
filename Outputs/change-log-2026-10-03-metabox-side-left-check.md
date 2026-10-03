@@ -274,3 +274,15 @@ show them.** The 87 = 103 − 16 is what `bCassDIESOT=1` produces, which matches
 saved `METABOX_K.scs` (Notepad, copy first), reload and regenerate. Expected **back 281 × 103**, base 281 × 382: **398**
 overall. Also check that **BH = 103** on the METABOX K row of *Scatola Cassetto*. Better still, put the `.SCS` file in
 `Raw/` so the values can be read rather than inferred.
+
+## (17) The `.SCS` file read — `cass_sot_dy=16` is the 87 mm back
+
+The owner photographed the `.SCS` in Notepad (lines from `cass_sp_P_CP` down; the first lines, incl.
+`cass01` / `cass03` / `cass05`, were off-screen). **`bCassDIESOT=0` and `bCassDIESOTFILO=1` were already set**, so (16)'s
+fix was already in place and could not have changed anything. **The cause is `cass_sot_dy=16.00`**: the base sits
+16 above the bottom of the steel sides, and the back, running down to the base's underside, comes out
+103 − 16 = **87**. **Fix given: `cass_sot_dy=0.00`.** Expected: back **281 × 103**, base 281 × 382 (398 overall). Also
+asked: scroll up to confirm `cass05_spess=10.50`, `cass01_dist_lat=5.00`, `cass03_dist_sot=18.00`. The Notepad tabs read
+*FP-Inbox-Report-Routine-Prompt* and *Scripts.txt*, so **confirm the open file is the `.SCS` that the METABOX row
+loads**. Rest of the file as read: base 16, back 16, front 0, dz 0, back between the sides (`bCassDDIE=1`), no
+mitre, `szEccCass=CABINEO` (irrelevant with no wooden sides).
