@@ -901,3 +901,25 @@ hold for this base unit.
 
 **Asked:** is this `_2` (16 Sep) the current base design? Are the 24 shelf and back Cabineos intended? Should the back be
 19 mm? Board, edging and connector prices are needed for a cost.
+
+## (50) Mailbox access: the owner's ruling, and where it stopped
+
+Owner: *"For panel price check info@fishboneconstruction.co.uk emails from Steven.elliott@lathams.co.uk"*. **Declined
+at first**: the charter (`CLAUDE.md` §0a, *"no Gmail"*) and the owner's own earlier instruction rule it out. Then: *"Let's
+connect you to info@fishboneconstruction.co.uk"*. Scope put as a question. **Owner chose "Read-only, suppliers":**
+search and read messages and attachments **from named supplier senders, starting with Lathams (`@lathams.co.uk`)**, to
+file quotes and prices into the KB; **never send, reply, draft, forward, delete, label or mark**; every new sender
+domain needs the owner's OK.
+
+**Found while preparing it:**
+
+- **The git mirror's charter is v31; Drive's live `CLAUDE.md` is v35** (2026-09-29, id `13wu4w-vAKNiIS46mwNB1BV1V3b3bKo-K`,
+  25,129 B), and Drive's `CLAUDE-Rules.md` also differs from git's (17,146 B). This is the AWT-0225 lag, still open.
+  **Any charter amendment must be made on the Drive copies**, and a version bump is archive-then-recreate (§4, limit 1).
+- **Composio already holds an active `victoria-gmail-info` connection.** It is another seat's, and is **not to be
+  used**: Darius gets its own, with alias `darius-gmail-info`.
+
+**Stopped:** creating the `darius-gmail-info` link was **refused by this session's permission check**. Darius has not
+retried or worked around it. **No mail has been read. The charter is not yet amended**: the amendment (v36, §0a
+connectors line and a §6b access entry) waits until the connection exists, so that the rule and the access arrive
+together.
