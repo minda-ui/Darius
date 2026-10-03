@@ -345,3 +345,19 @@ bottom hinge from the door edges.
 - **Blank:** 1047 − 500 − 3 = **544** × 716.8, as a fixed door (*anta fissa*) or a loose part fixed on site. Asked
   which the shop prefers.
 - Still unanswered: **the back's 107 mm setback** and the **middle legs**.
+
+## (22) Corner unit — owner's decisions, and where they are set in SmartCabinet
+
+Owner: *"Fixed door in SmartCabinet, back at the rear, add middle legs."* Read `progettazione_schienale`,
+`tabelle_cam_accessori_piedini` and `progettazione_zoccolo` (fetched 2026-10-03).
+
+- **Blank = fixed door** (*Ante fisse*: *"for closing a space permanently"*). **544** wide (shorten **right** by 503),
+  716.8 high, in the fronts' Diamond Grey. If SmartCabinet allows one door per space and the second replaces the
+  first, the front must be split (grid / divider): to be looked up if it happens.
+- **Back to the rear:** the corner unit's back is the *internal* type (*schienale interno*), whose setting is **how far
+  in from the rear edge**. The 350 unit's side bores sit at **552.9** (back face ~5 mm in); the corner unit's at
+  **462.9**, 90 further in. **Copy the 350 unit's value.** Expected after regeneration: side and bottom back-joint bores at
+  Y **552.9**, as on the 350 unit.
+- **Middle legs:** the leg table sets each leg's **hole pattern** (the shop's 4 × Ø3 at 64 × 64 underneath = Type 3), not
+  how many legs or where. **The control for count / position was not found in the pages read**: told the owner
+  so. Fallback: the plinth legs screw on; a middle pair can be fixed at assembly without CNC holes.
