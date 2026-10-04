@@ -269,3 +269,36 @@ against £23.15 at the W980 stand-in. That's +£10.44 on the £43.02 total, so *
 £46.30 with 14**. *If Uniboards' prices include VAT, the board part falls to £27.98.* **Not yet a firm figure:**
 thickness and VAT are both open.
 
+## (11) EGGER processing instructions and the Leitz / Leuco tool guides: fetched, filed, written up
+
+**Owner** added `*.egger.com`, then `*.egger.link`, then `*.egger-cdn.com`. **All three were needed.** The download
+chain is `www.egger.com/get_download/…` → `binary.egger.link/dld/…` → `downloads.egger-cdn.com`. The bare
+`egger.com` and `www.egger.link` stay refused, which is harmless.
+
+**Fetched and filed in a new `Raw/EGGER/`** (folder `167yUHu3BCw1p_FxnfTVtZUv7gWWZheSn`). **Drive md5 = local md5 for
+all four:**
+
+| File | Pages | Bytes | Drive id |
+|---|---|---|---|
+| `EGGER_Processing_instructions_Compact_Laminates.pdf` (rev. 04, 24 Jun 2026) | 24 | 1,391,802 | `1viLKuzTpheuWmzrK71IKhfH8dlLCNAVr` |
+| `EGGER_Processing_instructions_Compact_Laminates_cooperation_Leitz.pdf` (01/2026) | 21 | 3,611,837 | `1qnex6Atz-se2i_jIPUwWHOeY8bICGaaQ` |
+| `EGGER_Processing_Instructions_Compact_Laminates_Leuco_en.pdf` | 9 | 2,128,538 | `1A7O24ksQHTclCfBJyYWbB4dExDLP3-Ly` |
+| `EGGER_Processing_instructions_Worktops.pdf` | 27 | 2,308,093 | `1VWdWdWfp4aM4R1k8jd8Mo4Xcxa3i_0e0` |
+
+The Leitz tables are images, **read by OCR (tesseract)**, so they are flagged in the article for checking against
+the PDF.
+
+**`Processes/egger-compact-laminates.md` §6 rewritten** (6,341 → 12,090 B):
+- **sawing:** DP blades, 60–90 m/s; **Ø350 at 4,000 rpm = 73 m/s** on the F45; the guides disagree on blade
+  projection (Leitz 5–10, Leuco 15–33 by diameter), so **test**; Leitz DP table-saw blades Ø303 × 3.2 Z60/96 and
+  Ø350 × 3.5 Z72;
+- **drilling:** Leuco 4,000–4,500 rpm, 1.5–2 m/min, peck above 12 mm, "Light" cylinder bits for hinge cups;
+  residual ≥ 1.5 mm (blind) and ≥ 3 mm (edge);
+- **screws:** pre-drill, RAMPA sleeves, flat-head, fixed and sliding points, spacing table;
+- cut-out radius ≥ 5, production direction, adhesives, storage at 80° or flat, dust.
+
+**Flagged:**
+- **Cabineo X in compact laminate is not covered by EGGER.**
+- **The F45's fitted blade (diameter, Z, HW or DP) isn't recorded.**
+- Altendorf is not in Leitz's machine list: **check bore and pin holes** before buying a blade.
+
