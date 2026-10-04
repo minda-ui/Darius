@@ -455,7 +455,7 @@ a hole drilled into an edge, and a **fine** thread, pre-drilled.
 
 1. **Which confirmat is in stock.** *Answered 2026-10-04: **about 3,000** screws in the shop, bought from
    **IronmongeryDirect, code 659270**, which is **5 × 50 mm**, £2.30 per 50 (owner, with screenshot).*
-   **Worth one look at a box in the shop** to confirm the boxes there match the code.
+   **Confirmed from the boxes in the shop, 2026-10-04: 5 × 50** (owner). Item 1 is closed.
    - **What 3,000 covers:** at the **8 carcase fixings** counted per unit above, about **375 units**. At BU60's
      **38 joint positions** if every Cabineo position became a confirmat, about **78 units**. **Either way, a
      whole kitchen or more**, so Plan B is not short of screws.

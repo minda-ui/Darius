@@ -382,3 +382,9 @@ partly answered. `related` is linked both ways with `egger-compact-laminates.md`
   as *superseded*), `Suppliers/interfit-furniture-components.md`, `Processes/egger-compact-laminates.md`.
 - *Not changed: the article's older cost table carries confirmat at £0.03 a screw, an estimate from 2026-09; the
   measured £0.046 is recorded in the Plan B section. The gap per unit is pennies and does not move the decision.*
+
+## (17) Box size confirmed: 5 × 50
+
+**Owner:** *"Boxes say 5 x 50, confirmed."* The shop stock matches IronmongeryDirect 659270. Plan B item 1 closed in
+the fixings article; supplier article and Hardware Price Library row `1234829444777860` note it. **Next for Plan B:**
+one 3.5 / 5 / 8 step bit and a trial joint on 19 mm offcuts.
