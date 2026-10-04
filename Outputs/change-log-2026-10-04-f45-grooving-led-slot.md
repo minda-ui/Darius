@@ -353,3 +353,12 @@ partly answered. `related` is linked both ways with `egger-compact-laminates.md`
   units** at BU60's 38 joint positions.
 - **Size still unknown.** It decides the stepped bit.
 
+## (15) The confirmat screws are IronmongeryDirect 659270
+
+**Owner:** *"They are from ironmongery direct under 659270."*
+- **Size not found:** web search doesn't index the code, and the site returns 403 (Cloudflare) to WebFetch as well
+  as curl.
+- **Added to the Hardware Price Library** as the shop's stock, with size, pack and price blank and a note to read
+  them from the box or invoice.
+- Code recorded in the fixings article's Plan B list and in the supplier article's IronmongeryDirect section.
+

@@ -75,6 +75,9 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
   - *TD180 and TD130 are both leg names. That they share the 64 × 64 square is read from the drawing, not
     assumed from the names.*
 - The Interfit leg rows stay as **alternatives**, not the shop's leg.
+- **The shop's confirmat screws** (about 3,000 in stock) are IronmongeryDirect **`659270`**. They are in the Hardware
+  Price Library; **size and price are still to be read from the box or invoice**. Search doesn't show the code
+  either.
 
 ## Not yet checked
 
@@ -106,3 +109,4 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
 | 2026-10-04 | Plate checked against the shop's drilling: 175H3100 → **173H7100**; legs not confirmable from Interfit, flagged | `change-log-2026-10-04-f45-grooving-led-slot.md` (6) |
 | 2026-10-04 | IronmongeryDirect recorded as the second ironmongery supplier; the shop's leg `705309` added to the sheet (price from invoice; hole pattern to measure) | `change-log-2026-10-04-f45-grooving-led-slot.md` (7) |
 | 2026-10-04 | Leg 705309 checked against TD130 from the maker's drawing (`Raw/Emailing 705309.PDF.pdf`): **64 × 64 matches** | `change-log-2026-10-04-f45-grooving-led-slot.md` (8) |
+| 2026-10-04 | Confirmat stock: IronmongeryDirect `659270` recorded | `change-log-2026-10-04-f45-grooving-led-slot.md` (15) |

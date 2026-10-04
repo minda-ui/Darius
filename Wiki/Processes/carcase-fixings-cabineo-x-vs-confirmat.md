@@ -442,7 +442,7 @@ a hole drilled into an edge, and a **fine** thread, pre-drilled.
 
 ### What would close Plan B
 
-1. **Which confirmat is in stock.** *Quantity answered 2026-10-04: **about 3,000** screws in the shop (owner).*
+1. **Which confirmat is in stock.** *Quantity answered 2026-10-04: **about 3,000** screws in the shop, bought from **IronmongeryDirect, code 659270** (owner).*
    **Size still unknown** (7 × 50? 6.3 × 50?), and it decides the bit.
    - **What 3,000 covers:** at the **8 carcase fixings** counted per unit above, about **375 units**. At BU60's
      **38 joint positions** if every Cabineo position became a confirmat, about **78 units**. **Either way, a
