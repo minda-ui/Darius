@@ -465,3 +465,15 @@ line items, **not filed in git or Drive**; payment details not copied; local cop
 - **Hardware Price Library:** Stehle 58100388 row added (`1349197105028`).
 - **Files:** `Suppliers/north-east-grinding.md` (price list, totals), `Processes/f45-blades-tct-vs-pcd.md` (cost section
   and short answer rewritten).
+
+## (23) Test job for 2026-10-05: LEGO drawer unit, Option B with Gola
+
+**Owner:** a LEGO storage unit, **950 W × 750 H, LEGRABOX drawers 400 deep**; of two layouts offered, chose
+**Option B — two columns of shallow M drawers — with Gola profiles**. *"That's a good test for us tomorrow!"*
+- **Option B as drawn:** 18 mm centre panel → **LW 448** per bay; **six M drawers per bay, fronts 110** (690 of front
+  height on a 60 plinth), ~12 L each, ~145 L in all. Base LW − 35 = 413 × NL − 10 = 390; back LW − 38 = 410
+  (`Processes/blum-legrabox-smartcabinet-input.md`).
+- **Raised with the owner:** Gola mid-rail profiles take height at every drawer row, so **six rows probably won't fit
+  in 690 with Gola** — likely 4 rows (8 drawers); to be settled against the actual profile's dimensions. NL 400 needs
+  ~425 carcass depth (inside ≥ NL + 3) — is 400 the drawer or the unit? Plinth, legs or castors? Wall fixing required.
+- Nothing designed in SmartCabinet yet; no KB article — this entry is the brief for tomorrow.
