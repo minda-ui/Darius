@@ -287,7 +287,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Suppliers/blum-library.md` | see file | `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679` — **created 2026-10-02** |
 | `Wiki/Suppliers/lathams-panel-price-library.md` | **8,372** | `1-vyPWyauoQlzKx-dapw6CLDZ4SePstw_` — **created 2026-10-03** (placeholder, then in place from disk) |
 | `Wiki/Processes/f45-grooving-slots-with-the-main-blade.md` | **4,727** | `15hWrHF9KCCXKpRhXwgP_ArhSvvj_fFdb` — **created 2026-10-04** (placeholder, then in place from disk) |
-| `Wiki/Suppliers/interfit-furniture-components.md` | **4,967** (3,805 at creation; amended in place, plate correction) | `1ZavdCVoA64lorV-oI83EqkD6qg1X9P_D` — **created 2026-10-04** (placeholder, then in place from disk) |
+| `Wiki/Suppliers/interfit-furniture-components.md` | **6,403** (3,805 at creation; amended in place: plate correction, IronmongeryDirect) | `1ZavdCVoA64lorV-oI83EqkD6qg1X9P_D` — **created 2026-10-04** (placeholder, then in place from disk) |
 | `Outputs/change-log-2026-10-04-f45-grooving-led-slot.md` | see file | `1g2NvkYPXtI79TIzTSj0hDxRIJGdi03Wz` — **created 2026-10-04** |
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
 | `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |

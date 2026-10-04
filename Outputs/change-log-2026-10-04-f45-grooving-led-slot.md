@@ -167,3 +167,20 @@ price library. This is held for the next charter version.
 - 4 rows of the sheet (`update_rows`, no failures);
 - `Suppliers/interfit-furniture-components.md` in place.
 
+## (7) IronmongeryDirect: the second ironmongery supplier, and the shop's leg
+
+**Owner:** the legs come from IronmongeryDirect, *"second our supplier for ironmongery"*, and
+**`ironmongerydirect.co.uk` was added to the environment**. Then: *"We have purchased 705309 legs"*.
+
+- **Access.** The bare domain is refused by the proxy. **`www.` passes the proxy but the site answers 403 from
+  Cloudflare** (*"Attention Required!"*, `server: cloudflare`), which is bot protection. **Not worked around.**
+  Product facts came through web search only.
+- **`705309`** = *Square Adjustable Cabinet Feet – Plastic – 120–180 mm*, **pack of 4 legs + 2 plinth clips**, 600 kg,
+  polypropylene, black. **Added to the Hardware Price Library** as the shop's leg, with the price blank.
+- **Unit £ formula changed**: it now stays blank when Pack £ is blank. It had shown **0** for an unknown price.
+  Read back: 13 rows, 705309 blank, the others unchanged.
+- **Still open:**
+  - the **price** (from the invoice);
+  - the **top-plate hole pattern** against TD130 64 × 64 (measure a leg).
+- `Suppliers/interfit-furniture-components.md` gained an IronmongeryDirect section.
+

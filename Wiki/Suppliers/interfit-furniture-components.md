@@ -55,6 +55,22 @@ One row per part:
 used before (`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`). BU60 materials recomputed: **£43.02**
 with 38 Cabineo, **£35.86** with 14 (with the corrected plate). The board is still a stand-in (change log 2026-10-04 (4)).
 
+## The second ironmongery supplier: IronmongeryDirect
+
+**Owner, 2026-10-04:** *"Legs been purchase from ironmongery direct … This is second our supplier for
+ironmongery"*, then *"We have purchased 705309 legs"*.
+
+- **The shop's leg is IronmongeryDirect `705309`**: *Square Adjustable Cabinet Feet, plastic, 120–180 mm*, **pack of
+  4 legs + 2 plinth clips**, 600 kg, polypropylene, black. Details are from the search listing.
+  [Product page](https://www.ironmongerydirect.co.uk/product/square-adjustable-cabinet-furniture-legs-120-180mm-plastic-pack-of-4-705309).
+  It is now the first row of the Hardware Price Library, marked *SHOP'S LEG*.
+- **Price not known yet.** `www.ironmongerydirect.co.uk` is allowed in the environment, **but the site's own
+  Cloudflare protection returns 403 "Attention Required" to automated readers**. That is the site's choice, so it
+  is **not worked around**; only web-search listings are readable. **Take the price from the invoice.**
+- **The 64 × 64 match is still not confirmed.** The listing gives no top-plate hole pattern. **Measure a leg**
+  against TD130 (4 × Ø3 × 13 on a 64 × 64 square).
+- The Interfit leg rows stay as **alternatives**, not the shop's leg.
+
 ## Not yet checked
 
 - ~~**The 175H3100 plate**~~ — **checked 2026-10-04 and corrected.** Our reviewed drawings drill the plate
@@ -83,3 +99,4 @@ with 38 Cabineo, **£35.86** with 14 (with the corrected plate). The board is st
 |---|---|---|
 | 2026-10-04 | Created with the Hardware Price Library sheet (12 rows) | `change-log-2026-10-04-f45-grooving-led-slot.md` (5) |
 | 2026-10-04 | Plate checked against the shop's drilling: 175H3100 → **173H7100**; legs not confirmable from Interfit, flagged | `change-log-2026-10-04-f45-grooving-led-slot.md` (6) |
+| 2026-10-04 | IronmongeryDirect recorded as the second ironmongery supplier; the shop's leg `705309` added to the sheet (price from invoice; hole pattern to measure) | `change-log-2026-10-04-f45-grooving-led-slot.md` (7) |
