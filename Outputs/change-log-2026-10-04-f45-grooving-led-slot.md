@@ -124,3 +124,22 @@ same pattern as before, but it doesn't matter here because the site lives on `ww
 
 *Prices are list prices on a public website on one day. They are not quotes, and no trade discount is
 assumed. Nothing ordered; §6a.*
+
+## (5) Hardware Price Library: a second price sheet, beside the panel one
+
+**Owner:** *"yes, add the hardware sheet"*.
+- **Smartsheet `Hardware Price Library`** (`1554175903270788`, workspace `Workshop`), new:
+  - 15 columns, including **Pack £ / Pack qty** with a formula column **Unit £**, and **Price type**
+    (*Web list price* / *Quote* / *Invoice*);
+  - **12 rows** from (4), **read back after writing**: every part no., pack price, pack qty and date matches;
+    Unit £ calculates (Cabineo X 0.196, legs 0.28).
+- **`Wiki/Suppliers/interfit-furniture-components.md`** (new): the supplier, the sheet, the 12 rows as built,
+  and what is unchecked:
+  - the 175H3100 plate against the shop's hinges;
+  - the legs against TD130;
+  - list price against trade price.
+- **`Wiki/index.md`**: a Suppliers entry.
+
+**Owed (same as the Panel Price Library):** §1 of `CLAUDE.md` lists the Workshop sheets and names **neither**
+price library. This is held for the next charter version.
+
