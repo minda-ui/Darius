@@ -302,3 +302,14 @@ the PDF.
 - **The F45's fitted blade (diameter, Z, HW or DP) isn't recorded.**
 - Altendorf is not in Leitz's machine list: **check bore and pin holes** before buying a blade.
 
+## (12) Scott+Sargeant recorded as the tooling supplier
+
+**Owner:** *"https://www.scosarg.com/ is a place where I am buying tooling for workshop machinery."*
+
+- **`www.scosarg.com` returns 403 from Cloudflare** (*"Just a moment…"*). Like IronmongeryDirect, it is **not worked
+  around**; the bare domain is refused by the proxy. **Web search only.**
+- **Found:** **CMT 237 Xtreme PCD, Ø350 × 30, Z72, kerf 3.2**. It is diamond, which is what EGGER and Leitz advise for
+  compact laminate, and its **kerf equals the 3.2 measured on the F45** today. Whether it is the fitted blade is not known.
+- **New: `Suppliers/scott-sargeant.md`.** `egger-compact-laminates.md` §8 points to the blade, with `related` linked
+  both ways. Index entry added.
+

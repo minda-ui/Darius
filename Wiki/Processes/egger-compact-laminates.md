@@ -8,7 +8,8 @@ updated: 2026-10-04
 sources:
  - "EGGER *Processing instructions Compact Laminates* rev. 04 (24 June 2026), Leitz *Machining recommendation* 01/2026, Leuco *Tool recommendation*, EGGER *Processing instructions Worktops* — all filed in `Raw/EGGER/` 2026-10-04"
  - "`Raw/Emailing BR_EGGER_Compact_Laminates_en.pdf` — EGGER brochure *Compact Laminates*, Decorative Collection 26+, 26 pp., 8,205,540 B, Drive `1BNd-TNvlqJGOfZK9b0j3o_06qKmcMepQ`, uploaded by the owner 2026-10-03; read 2026-10-04 (PDF pp. referred to by the brochure's own page numbers)"
-related: []
+related:
+ - ../Suppliers/scott-sargeant.md
 ---
 
 # EGGER compact laminates
@@ -197,6 +198,8 @@ Gap at the ceiling. Corrosion-free fixings. Direct-to-wall fixing only up to **3
 
 - **Prices.** Lathams have never quoted compact laminate, and Uniboards' board list wasn't searched for it.
 - **Our F45 blade's diameter, tooth count and tip type.** The saw settings above can't be finalised without them.
+  A candidate from the shop's tooling supplier: **CMT 237 Xtreme PCD Ø350 × 30, Z72, kerf 3.2**
+  (`../Suppliers/scott-sargeant.md`).
 - **A first test cut and drilling** on an offcut, before any customer job.
 
 ## Changes
