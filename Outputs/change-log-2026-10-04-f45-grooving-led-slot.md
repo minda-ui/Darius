@@ -345,3 +345,11 @@ partly answered. `related` is linked both ways with `egger-compact-laminates.md`
 2. buy one bit and trial a joint;
 3. read bushes 43 / 44 / 52 / 53.
 
+## (14) Confirmat stock: about 3,000 screws
+
+**Owner:** *"We got around 3000 comformat screws in the shop."*
+- Recorded in the fixings article's Plan B list.
+- **What it covers:** about **375 units** at the 8 carcase fixings per unit counted in the article, or about **78
+  units** at BU60's 38 joint positions.
+- **Size still unknown.** It decides the stepped bit.
+

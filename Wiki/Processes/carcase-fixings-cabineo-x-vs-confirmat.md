@@ -442,7 +442,11 @@ a hole drilled into an edge, and a **fine** thread, pre-drilled.
 
 ### What would close Plan B
 
-1. **Which confirmat is in stock** (size: 7 × 50? 6.3 × 50?). It decides the bit.
+1. **Which confirmat is in stock.** *Quantity answered 2026-10-04: **about 3,000** screws in the shop (owner).*
+   **Size still unknown** (7 × 50? 6.3 × 50?), and it decides the bit.
+   - **What 3,000 covers:** at the **8 carcase fixings** counted per unit above, about **375 units**. At BU60's
+     **38 joint positions** if every Cabineo position became a confirmat, about **78 units**. **Either way, a
+     whole kitchen or more**, so Plan B is not short of screws.
 2. **Buy one stepped bit** for that size and **trial a joint** on 19 mm offcuts; check the pull-up and that it
    doesn't split.
 3. **Read bushes 43 / 44 / 52 / 53** (type and useful length). That settles whether the Vitap can drill the
