@@ -404,3 +404,13 @@ one 3.5 / 5 / 8 step bit and a trial joint on 19 mm offcuts.
 - **Files:** fixings article (bits section replaced by "Every hole on the Vitap"; Plan B list re-stepped; source
   added), tooling article (new "Wanted for confirmat" section; first edit since 2026-09-23, Drive copy checked equal
   to git before editing), supplier article.
+
+## (19) CMT 515.042.31 (Ø4.2 / 7.6 / 10.6) checked — not for us
+
+**Owner:** a screenshot of Scott+Sargeant part **CM51504231**, *Adjustable step drill bit, S 9, D 4.2 / 7.6 / 10.6*,
+in stock, asking whether it suits. **No, for two independent reasons:**
+- **Sized for 7 mm confirmat, not our 5 × 50:** Ø4.2 pilot is too big for a 5 mm thread to bite, Ø7.6 clearance
+  leaves 2.6 mm of slop round a 5 mm shank, Ø10.6 countersink is wider than the head.
+- **It is a hand-drill bit** (9 mm round shank, grub-screwed adjustable collar), not a boring-machine drill, so it
+  can't go in the Vitap head — and under (18) hand drills are not a main tool.
+Not added to the Hardware Price Library. What to ask Scott+Sargeant for instead is unchanged from (18).
