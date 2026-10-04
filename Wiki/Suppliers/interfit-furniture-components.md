@@ -77,7 +77,7 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
 - The Interfit leg rows stay as **alternatives**, not the shop's leg.
 - **The shop's confirmat screws** (about 3,000 in stock) are IronmongeryDirect **`659270`**. **5 × 50 mm, £2.30 per pack of
   50 ex VAT (£0.046 a screw)**, from the owner's screenshot of the product page, 2026-10-04 — a web list price, not an
-  invoice. **Size confirmed from the boxes in the shop the same day.** In the Hardware Price Library. **They need a 3.5 / 5 / 8 step bit, not the 7 mm CMT bit first suggested**
+  invoice. **Size confirmed from the boxes in the shop the same day.** In the Hardware Price Library. **Holes Ø5 / Ø8 countersink / Ø3.5 core, all machined on the Vitap (owner's rule); the edge Ø3.5 needs new horizontal drills, and the 7 mm CMT bit first suggested is wrong**
   (`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`).
 
 ## Not yet checked

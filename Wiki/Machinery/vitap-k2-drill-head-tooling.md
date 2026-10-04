@@ -4,7 +4,7 @@ category: Machinery
 status: active
 sensitive: false
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-04
 sources:
  - "Owner at the machine, 2026-09-23 — WscTecnoManager `Tool information` dialogs for bushes 2 and 3 (photographed, read field by field) and reported Comment lines for bushes 4 and 6-10"
  - "Owner, 2026-09-22/23 — the tooling changes recorded under \"What changed, and when\""
@@ -125,6 +125,17 @@ p.63.
 **Consequence for any fix that moves a drill:** check the ring colour against the spindle. Note that
 editing a tool's **ID** in TpaCAD's Technology dialog moves nothing physical and is not affected by
 this.
+
+## Wanted for confirmat (Plan B), 2026-10-04 — not bought
+
+**Owner: "All holes needs to be machined on Vitap, no hand drills as main tools."** The shop's confirmat stock is
+**5 × 50** (Ø5 clearance, Ø8 countersink, Ø3.5 edge core ≥ 33 mm). Against this head:
+- **Ø5 through: bush 2 ✓.**
+- **Ø8 countersink: no countersink tool.** Bush 11 (Ø8, type unread) can make a flat recess for a trial; a Ø5 drill
+  with fitted Ø8 countersink would need its own through-designated spindle (not bush 2; p.63 above).
+- **Ø3.5 horizontal: none.** Would replace a Ø5 horizontal pair (43/44 or 52/53) once those are opened and found
+  unused; useful length ≥ 33 mm.
+- **To read first:** bushes 1, 11, 43, 44, 52, 53. Detail in `../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`.
 
 ## Where this really belongs
 

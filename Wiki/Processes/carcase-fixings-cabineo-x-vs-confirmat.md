@@ -10,6 +10,7 @@ sources:
  - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
  - "Owner (Minda), 2026-09-19: \"Cabineo X was chosen, we ordered them\" — the decision, and the connectors are on order"
  - "Owner (Minda), 2026-09-19: \"leave conformant as Plan B, we have them in stock too\" — confirmat retained as the fallback, and held in stock"
+ - "Owner (Minda), 2026-10-04: \"All holes needs to be machined on Vitap, no hand drills as main tools\" — shop rule; the bench route is trial/repair only"
  - "`Wiki/Machinery/vitap-k2-panel-saw.md` (Drive `1z41BjgLjOglkPSRD8vjigs6fypHqVGkm`), read 2026-09-18 — machine capability and the T016 incident record"
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (Drive `1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m`), decoded 2026-09-18"
  - "`AMFA Wall Unit 600 RH/01-SIDE-LEFT.TCN` (Drive `1ZWciFvdK2rkKbeWvRpNQ825UWJsnnPe1`) and `08-DOOR-1.TCN` (Drive `1FfGBMAP4XfjJeCBwM5hvEVraRnhIWzHL`), decoded 2026-09-18"
@@ -71,8 +72,9 @@ of the carcase**, so a pocket left empty is **hidden inside the finished unit**.
 do not change size, the holes that are there do no harm, and the cutting list is unaffected.
 
 What a confirmat fallback additionally needs is its **core hole in the panel edge** — and that is
-available two ways: on the Vitap, which has horizontal spindle pairs on Faces 3–6, or at the bench with
-a stepped bit and a jig. The edge in question is a side's **end** edge, which sits inside the joint and
+drilled on the Vitap, which has horizontal spindle pairs on Faces 3–6 — **on the Vitap only**: *"All holes
+needs to be machined on Vitap, no hand drills as main tools"* (owner, 2026-10-04). A bench step bit is for a
+trial or a repair, not the method. The edge in question is a side's **end** edge, which sits inside the joint and
 is **not edged**, so there is no tape to drill through either.
 
 **Why this matters more than it sounds.** T016 was recorded as a precondition for populating the library
@@ -414,32 +416,56 @@ the end of this section so the correction is visible.
 *Sizes are from manufacturers' and suppliers' listings, not a standard; check them against a screw from the box
 before drilling a batch.*
 
-### The bits — two ways to drill
+### Every hole on the Vitap — the shop rule, and what it means for confirmat
 
-**1. At the bench, all three in one pass, with a 3.5 / 5 / 8 stepped confirmat bit.** Clamp the joint, drill through
-the face panel into the edge, then screw. This needs **no CNC change at all**: it is how Plan B works on the day.
-- **Candidate: EXTOL confirmat step bit Ø3.5 / 5 / 8**, about **£10.22** (Amazon UK, B076CQ755N). *A listing price,
-  not a quote; a DIY-grade bit, fine for a trial.* It is in the **Hardware Price Library**.
-- **Better for production: ask Scott+Sargeant for a CMT or TCT 3.5 / 5 / 8 step bit.** Their site blocks automated
-  readers, so this has to be asked, not looked up.
-- **⚠ The CMT 515.050.31 (Ø5 / 7.6 / 10.6) first suggested here is for 7 mm screws and is the WRONG bit for our
-  stock.** Its Ø5 tip would drill the core hole the size of the screw, and the thread would not bite. Marked
-  *wrong size* in the Hardware Price Library; **do not buy it.**
-- **Check the shank** fits the shop's drill chuck.
-- A **drilling jig** keeps the hole square and on the centre line; *not researched yet*.
+> **"All holes needs to be machined on Vitap, no hand drills as main tools."** — owner, 2026-10-04
 
-**2. On the Vitap, split into a face hole and an edge hole.** This is the production route if confirmat ever
-replaces Cabineo.
-- **Face Ø5 clearance: available.** The head has a **Ø5 through drill (passante) at bush 2**
-  (`../Machinery/vitap-k2-drill-head-tooling.md`).
-- **Countersink Ø8:** **no countersink on the head.** The **Ø8 blind drill at bush 11** makes a **flat** recess,
-  not a true countersink; the head would sit on a step. Either countersink at the bench, or accept a flat-bottomed
-  recess and a cover cap. *Neither tested.*
-- **Edge Ø3.5 core: not on the head.** The horizontal positions carry **Ø5** (43, 44, 52, 53), which is the screw's
-  own size and too big for its core. **A pure-CNC route needs a Ø3.5 horizontal drill** (a purchase), fitted in one
-  of those bushes, and its **useful length must reach ≥ 33 mm** — read in WscTecnoManager.
-- **So the Vitap can do the face hole today, and the edge hole only after buying Ø3.5 horizontal drills.** The bench
-  route needs one ~£10 bit.
+**This rules out the bench route as Plan B's way of working.** A hand-held step bit is at most a tool for a
+one-off repair or a first trial joint; **production confirmat holes are drilled on `FA2304`, all three of them.**
+*Cabineo X is unaffected: everything it needs is already machined on the Vitap (see "No Ø15 drill is needed").*
+
+| Hole (5 × 50) | On the Vitap today? | What closes it |
+|---|---|---|
+| **Face Ø5 clearance**, through | **Yes** — **bush 2**, `Foratore passante Ø 5mm` (`ARCHIVE`) | nothing |
+| **Countersink Ø8** | **Only as a flat recess** — Ø8 at **bush 11** (`LAYOUT`, type unread) | a **Ø5 through drill with a fitted Ø8 countersink**, or accept the flat recess |
+| **Edge Ø3.5 core**, ≥ 33 mm deep | **No** — the horizontals are **Ø5** (43, 44, 52, 53) and **Ø8** (41, 42, 51, 54) | **Ø3.5 horizontal drills**, long enough for ≥ 33 mm useful length |
+
+Source for every bush: `../Machinery/vitap-k2-drill-head-tooling.md`.
+
+**1. The countersink — two ways, one free.**
+- **Free, testable now:** program a **shallow Ø8 blind hole** (bush 11) about the head's height deep, then the
+  **Ø5 through hole** (bush 2) at the same point. The head seats in a **flat-bottomed recess** rather than a cone:
+  it pulls up, bears on less material, and wants a cover cap. **Good enough for the trial joint**, and it tells us
+  whether the purchase below is needed. *Bush 11's type (blind or through) is read off a layout photo, not the
+  archive — open its `Tool information` first.*
+- **Proper:** a **boring-machine Ø5 through drill with a Ø8 countersink fitted**, both holes in one stroke.
+  - **Not in bush 2.** Bush 2 drills every other Ø5 through hole too, and a countersink would mark all of them.
+    It needs **its own through-designated spindle**.
+  - Manual ch. 5 p.63: through-drills **only in the indicated spindles**, **ring colour = rotation**. Bush 1 has
+    never been opened and is the first candidate to check.
+
+**2. The edge core — needs a purchase.**
+- **Ø3.5 horizontal drills**, one per direction the edge holes face, with **useful length ≥ 33 mm** (50 − 19 + ~2).
+  *51 and 54 are marked `LONG` on the layout, so long horizontals do fit that head; whether a Ø3.5 of that length
+  is a stock item is not yet checked.*
+- They would **replace a horizontal Ø5 pair** (43/44 or 52/53). **First check nothing uses those Ø5 horizontals:**
+  the wall-unit master has no edge drilling at all (see "The sides are machined face-only"), but other programs
+  have not been looked at, and the four bushes have never been opened.
+- **A Ø5 horizontal into the edge is not a substitute**: it is the screw's own diameter and the thread would not
+  bite.
+
+**3. Software — a tool change is not finished until the archive says so.** Every new drill needs its WscTecnoManager
+record (diameter, type, useful length) **before** any program calls it — the bush 3 lesson in the tooling article.
+SmartCABINET then has to emit the confirmat joint as these three operations: **untested**, and the same catalog
+question as T016.
+
+**Purchases are the owner's call** (§6a of `CLAUDE-Rules.md`); none has been made. **Scott+Sargeant** is the shop's
+tooling supplier (`../Suppliers/scott-sargeant.md`) and is where to ask for both drills, giving the head's shank
+and tool length (read from bush 2's and bush 43's records).
+
+*Bench bits, for a trial or a repair only: a **3.5 / 5 / 8** step bit (EXTOL candidate, about £10.22, in the
+Hardware Price Library). **The CMT 515.050.31 (Ø5 / 7.6 / 10.6) first suggested is for 7 mm screws and is wrong for
+our stock — do not buy it.***
 
 ### Compact laminate — the geometry now passes, the thread still doesn't
 
@@ -459,10 +485,12 @@ a hole drilled into an edge, and a **fine** thread, pre-drilled.
    - **What 3,000 covers:** at the **8 carcase fixings** counted per unit above, about **375 units**. At BU60's
      **38 joint positions** if every Cabineo position became a confirmat, about **78 units**. **Either way, a
      whole kitchen or more**, so Plan B is not short of screws.
-2. **Buy one 3.5 / 5 / 8 stepped bit** and **trial a joint** on 19 mm offcuts; check the pull-up and that it
-   doesn't split.
-3. **For CNC only:** price a **Ø3.5 horizontal drill** for the Vitap and read the useful length of bushes
-   43 / 44 / 52 / 53.
+2. **Open bushes 1, 11, 43, 44, 52 and 53** in WscTecnoManager (type, ring colour, tool and useful length). That
+   says where a countersink drill can go, and which horizontal pair can become Ø3.5.
+3. **Trial joint on the Vitap with no purchase:** Ø8 shallow recess (bush 11) + Ø5 through (bush 2) in the side;
+   the edge core is the one hole that can't be machined yet, so for the trial only it is drilled by hand.
+4. **Owner decides the purchase:** Ø3.5 horizontal drills (needed), and a Ø5 + Ø8 countersink through drill (only
+   if the flat recess isn't good enough). Ask Scott+Sargeant.
 
 *Superseded the same day, kept for the record: for a **7 × 50** confirmat the holes are Ø7–7.6 clearance,
 Ø10–11 countersink and Ø5 (Ø4.8) core; the bit is the CMT 515.050.31 Ø5 / 7.6 / 10.6 (Scott+Sargeant

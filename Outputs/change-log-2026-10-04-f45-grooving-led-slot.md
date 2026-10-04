@@ -388,3 +388,19 @@ partly answered. `related` is linked both ways with `egger-compact-laminates.md`
 **Owner:** *"Boxes say 5 x 50, confirmed."* The shop stock matches IronmongeryDirect 659270. Plan B item 1 closed in
 the fixings article; supplier article and Hardware Price Library row `1234829444777860` note it. **Next for Plan B:**
 one 3.5 / 5 / 8 step bit and a trial joint on 19 mm offcuts.
+
+## (18) Shop rule: every hole on the Vitap — confirmat Plan B re-planned as a CNC route
+
+**Owner:** *"All holes needs to be machined on Vitap, no hand drills as main tools."*
+- **The bench step bit is demoted** to trial joint / repair only (Hardware Price Library: EXTOL row "not a main
+  tool"; CMT row "do not buy — wrong size, and hand tool").
+- **Against the head as recorded** (`Machinery/vitap-k2-drill-head-tooling.md`): **Ø5 through — bush 2 ✓**;
+  **Ø8 countersink — none**, bush 11's Ø8 gives a flat recess for a trial, a proper Ø5 + Ø8 countersink through drill
+  needs its own through-designated spindle (manual p.63); **Ø3.5 horizontal — none**, would replace a Ø5 pair
+  (43/44 or 52/53) once those are opened and found unused, useful length ≥ 33 mm.
+- **Next:** read bushes 1, 11, 43, 44, 52, 53; trial joint with no purchase (flat recess + Ø5 through, edge core by
+  hand for the trial only); then the owner decides the purchase (§6a) — ask Scott+Sargeant.
+- **Cabineo X unaffected** — already all-Vitap.
+- **Files:** fixings article (bits section replaced by "Every hole on the Vitap"; Plan B list re-stepped; source
+  added), tooling article (new "Wanted for confirmat" section; first edit since 2026-09-23, Drive copy checked equal
+  to git before editing), supplier article.
