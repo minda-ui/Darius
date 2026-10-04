@@ -10,6 +10,7 @@ sources:
  - "Web search, 2026-10-04 (snippets only; cutektools.com and keybladesfixings.co.uk are blocked to this session's fetcher): Cutek Tools 'PCD vs TCT circular saw blade' and 'panel sizing solutions'; Key Blades 'What is a PCD circular saw blade'; Smarter Production 'scoring blade types'; morecuttingtools.com and tristatetoolgrinding.com on PCD regrinding; toolingideas.com on why blades wander"
  - "UK listings, 2026-10-04: CMT XTreme Diamond Ø350 × 3.5 × 30, Z72, 45° TCG — £800.01 ex VAT (Machinery4Wood / Westcountry) and £607.14 ex VAT (another retailer, per search snippet)"
  - "`egger-compact-laminates.md` §6 — EGGER, Leitz and Leuco guidance filed in `Raw/EGGER/`"
+ - "North East Grinding emails in info@, 2026-01-12 to 2026-07-21 (bodies only) — `../Suppliers/north-east-grinding.md`"
  - "`../Machinery/altendorf-f45-panel-saw.md` — calibration test (350 mm / Z72 at 5,000 rpm, < 0.2 mm), RAPIDO Ø180 scorers, troubleshooting table"
 related:
  - ../Machinery/altendorf-f45-panel-saw.md
@@ -17,6 +18,7 @@ related:
  - egger-compact-laminates.md
  - f45-grooving-slots-with-the-main-blade.md
  - ../Suppliers/scott-sargeant.md
+ - ../Suppliers/north-east-grinding.md
 ---
 
 # F45 blades — carbide (TCT) or diamond (PCD)?
@@ -63,6 +65,21 @@ was not found.
 - **Candidates seen:** CMT XTreme PCD Ø350 × 3.5 × 30 Z72 (listings above); CMT 237 Xtreme PCD Ø350 × 30 Z72 kerf 3.2
   (Scott+Sargeant, `../Suppliers/scott-sargeant.md`; price not readable). **No purchase made — the owner's call.**
 
+## What sharpening costs us now (North East Grinding, 2026)
+
+From six emails, bodies only (`../Suppliers/north-east-grinding.md`):
+- **A batch every ~3 months, about £200 each** (Jan, 30 Apr, 21 Jul) → **about £800 a year**, *for every TCT blade sent,
+  not only the F45's*.
+- **One blade sharpened alone: £17.88** (19 Jan). **New Stehle TCT 300 × 96T × 30: about £106 each** (three for £318.60,
+  Jan). VAT basis not stated in either.
+- **Possibly our blade:** three **Stehle TCT Ø300 × Z96 × 30** were bought in January. *Whether they are the F45's main
+  blade is not confirmed* — the F45 manual's calibration test uses Ø350 / Z72.
+
+**First rough payback.** A Ø350 PCD at **£607–800 ex VAT** against **£17.88 a sharpening**: it has to save **34–45
+sharpenings** to pay back, plus the downtime of each change. *If* the F45's main blade were most of the ~£800 a year,
+that is **about a year**; if it is a small part, several years. **The receipts' line items (blades per batch, sizes)
+would settle it** — not yet opened.
+
 ## How the decision gets made
 
 **Payback ≈ PCD price ÷ (carbide blades + sharpenings saved per month + downtime per change).** It needs:
@@ -70,7 +87,7 @@ was not found.
 2. **How often** each is changed or sent for sharpening — **logged from 2026-10-04 as MT-037 (main) and MT-038
    (scorers)** on the Maintenance Schedule: date in *Last Done* (cell history keeps the trail), and blade, reason,
    sharpener and cost noted.
-3. **What a sharpening costs.**
+3. **What a sharpening costs** — *partly answered: £17.88 for one blade; ~£200 a quarter for batches (North East Grinding). Line items are in the receipts.*
 4. **Whether compact laminate goes ahead** — if yes, PCD is justified on that alone.
 
 *Figures are vendor claims and listing prices from search snippets, not quotes or tests on this machine.*
@@ -80,3 +97,4 @@ was not found.
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-04 | Created from the owner's question; MT-037 / MT-038 added to the Maintenance Schedule | `change-log-2026-10-04-f45-grooving-led-slot.md` (20) |
+| 2026-10-04 | Sharpening costs from North East Grinding's emails; first rough payback | `change-log-2026-10-04-f45-grooving-led-slot.md` (21) |

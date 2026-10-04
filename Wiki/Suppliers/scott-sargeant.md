@@ -11,6 +11,7 @@ sources:
 related:
  - ../Processes/egger-compact-laminates.md
  - ../Processes/f45-blades-tct-vs-pcd.md
+ - north-east-grinding.md
 ---
 
 # Scott+Sargeant — the workshop's tooling supplier
