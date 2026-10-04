@@ -208,3 +208,27 @@ folders' newest files are from that morning.
 - `Suppliers/interfit-furniture-components.md`;
 - a Processed-items row for the drawing.
 
+## (9) EGGER compact laminates brochure read and written up
+
+**Owner:** *"yes, go through the Egger compact laminates"*. Source: `Raw/Emailing BR_EGGER_Compact_Laminates_en.pdf`
+(8,205,540 B, 26 pp., Drive `1BNd-TNvlqJGOfZK9b0j3o_06qKmcMepQ`), uploaded 2026-10-03 23:16 and found
+unregistered by today's Raw check.
+
+**New: `Wiki/Processes/egger-compact-laminates.md`.** The points that matter here:
+
+- **Board size 2,790 × 2,060**, not our 2,800 × 2,070.
+- **Our decors exist as compact laminate**, including U963 and a coloured-core U9631.
+- **Worktops:**
+  - allow 2 mm/m for movement;
+  - **closed carcass tops are not permitted**; our rails are fine;
+  - crossbars on sink and hob units;
+  - cut-out radius ≥ 5 mm, ≥ 300 mm from joints;
+  - special 12 mm connectors.
+- **Shelf and top spans by thickness** (10 / 12 / 13 mm → 310 / 390 / 440).
+- **Doors:** cut lengthways; **thin-door hinges** (Blum EXPANDO T and others).
+  - Darius's note: **71B3550's 13 mm cup is too deep** for a thin compact door.
+- **Dust:** extraction required.
+
+**Not in the brochure:** prices and cutting data. EGGER's separate processing instructions (linked in the
+brochure) are **not fetched**. Index entry added; Processed-items row added.
+
