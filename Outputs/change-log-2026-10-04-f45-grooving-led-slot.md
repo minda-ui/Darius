@@ -81,3 +81,46 @@ holes.
 
 **Owner's reply** to *"once it works, say save it"*: *"yes add"*. **Recorded as fitted and working, with the
 wording quoted** so the inference is visible.
+
+## (4) Interfit (interfitco.com): hardware prices, and the BU60 cost recomputed
+
+**Owner:** *"i have added interfitco.com"*. **`www.interfitco.com` answers; the bare domain is blocked**, the
+same pattern as before, but it doesn't matter here because the site lives on `www.`
+
+**Interfit Furniture Components** is a UK distributor of Blum, Lamello, Häfele and Sensio. Its prices are public.
+**Read 2026-10-04, GBP ex VAT** (the page's own ex-VAT figure; inc-VAT = ×1.2):
+
+| Part | Interfit SKU | Price ex VAT | Unit |
+|---|---|---|---|
+| METABOX M, NL 400 (rail + side, pair) | 320M4000C | **£7.34** | pair |
+| BLUMOTION for METABOX | Z70.0320 | **£3.27** | each |
+| METABOX front fixing, screw-on, set | ZSF.1700 | **£1.18** | L+R |
+| METABOX front fixing, knock-in | ZSF.1800L | **£0.67** | each |
+| CLIP top 110° soft-close hinge, overlay | 71B3550 | **£2.42** | each |
+| CLIP mounting plate, cam, 0 mm | 175H3100 | **£0.48** | each |
+| **Lamello Cabineo X** | 186360 | **£98.02** | box of 500 → **£0.196** each |
+| Cabineo X screws | 186380 | **£51.00** | box of 500 → **£0.102** each |
+| Cabineo cover caps | 186350W | **£8.19** | pack of 100 → £0.082 each |
+| Adjustable 150 mm plinth legs | LEG150S | **£1.12** | pack of 4 |
+| Bigfoot 150 mm leg | IBF115 | £0.44 | each |
+| Häfele AXILO 150 mm leg | 637.76.355 | £1.06 | each |
+
+**Cabineo X per joint (housing + screw) = £0.30 at Interfit, against the KB's earlier retail ≈ £0.87**
+(`carcase-fixings-cabineo-x-vs-confirmat.md`). Caps are extra where a joint is visible.
+
+**BU60 materials recomputed** from (52). Board is still the W980 stand-in at £52.40, because W1100 ST9 has no price yet.
+
+| Item | 38 Cabineo | 14 Cabineo |
+|---|---|---|
+| Board (15 % waste) | £23.15 | £23.15 |
+| Edging | £1.74 | £1.74 |
+| Cabineo X + screws | **£11.33** | **£4.17** |
+| 2 hinges + 2 plates | £5.80 | £5.80 |
+| 4 legs (LEG150S) | £1.12 | £1.12 |
+| **Materials, ex VAT** | **£43.14** | **£35.98** |
+
+**Against the £47 selling price** (the classifier's figure, "without doors"), materials alone leave **£3.86** with
+38 Cabineo or **£11.02** with 14. **That is before labour, machine time and the real carcass-board price.**
+
+*Prices are list prices on a public website on one day. They are not quotes, and no trade discount is
+assumed. Nothing ordered; §6a.*
