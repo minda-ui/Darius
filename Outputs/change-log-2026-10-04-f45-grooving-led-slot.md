@@ -486,4 +486,6 @@ line items, **not filed in git or Drive**; payment details not copied; local cop
   **Gola System B Plus** 56.5 × 27, mid **Gola System C Plus** 73 × 26, 4.1 m lengths; C Plus trim caps, B/C
   connectors. Worst case (fronts not overlapping the profiles), 690 of front height: **4 rows ≈ 135 per front ✓;
   6 rows ≈ 78 ✗** (M side 90.5). Needs Häfele's fitting drawing (front overlap, side cut-out) — the owner to add
-  `*.hafele.co.uk` or put the PDFs in `Raw/`.
+  `*.hafele.co.uk` or put the PDFs in `Raw/`. **Owner added `*.hafele.com` and `*.hafele.co.uk`; both answer 403 with Cloudflare
+  bot protection** (www.hafele.co.uk product pages and www.hafele.com) — not worked around, same as
+  IronmongeryDirect and Scott+Sargeant. **The fitting PDFs have to come via `Raw/`.**
