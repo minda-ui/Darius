@@ -204,7 +204,10 @@ were the whole mailbox read-only, and read-plus-drafts).
 - **May:** search for, fetch and read messages and their attachments **from named supplier sender domains**, to file
   quotes, price lists and delivery documents into this KB under the correspondence rules; read the mailbox profile
   to confirm which mailbox a connection is.
-- **Approved senders:** **`@lathams.co.uk`** (2026-10-03). **Every new domain needs the owner's OK** before it is
+- **Approved senders:** **`@lathams.co.uk`** (2026-10-03); **North East Grinding** (2026-10-04 — the owner, *"Under my
+  authority please add North East Grinding in approved mail senders list"*, after a first attempt was refused by the
+  environment's safety check; for saw and tool sharpening costs. Domain not yet known: the first search is by sender
+  name, and the domain is written here once seen). **Every new domain needs the owner's OK** before it is
   searched, and is added to this list when given.
 - **Never:** send, reply, draft, forward, delete, trash, untrash, label, modify, filter, change settings, import or
   insert — by Composio, an MCP connector or any other route. *§6a's "never reply to a supplier" and §0a's "Darius
