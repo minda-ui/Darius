@@ -232,3 +232,40 @@ unregistered by today's Raw check.
 **Not in the brochure:** prices and cutting data. EGGER's separate processing instructions (linked in the
 brochure) are **not fetched**. Index entry added; Processed-items row added.
 
+## (10) Uniboards: a second panel supplier, 19 web prices in the Panel Price Library
+
+**Owner:** *"I have added another supplier for panels. It is https://uniboards.co.uk/"*.
+
+- **Access:** `uniboards.co.uk` returns 200; `www.` is refused by the proxy, but it isn't needed.
+- **Source:** it is a Shopify shop, so its public product data (`/collections/<name>/products.json`) was read as
+  JSON: EGGER 221, MFC 254, EGGER edging 243, Kronospan 29, Xylo-Cleaf 55, MDF 116, melamine MDF 12.
+- **Price used:** each board has six prices (board only, three machining levels, two machine-hire levels). **The
+  *Board only* price is used.**
+
+**Added to the Panel Price Library: 19 rows, Supplier = Uniboards** (16 boards, 3 × 0.8 mm edging), each read back
+with its £/m² calculated:
+- **W1100 ST9 18 mm £75.99**, the first price this KB has for our carcass decor;
+- **U963 ST9 18 mm £87.99**, the first for this week's decor panels;
+- W980 ST7 £70.99, W1000 ST9 £74.99, U702 / U708 / U732 / U961 £75.99;
+- U999 ST19 £102.99, H1180 £105.99, H1385 £107.99, F422 £96.99;
+- PerfectSense: W1100 TM9 19 mm £139.99, U999 TM28 £144.99, W1100 PG and U708 PM MDF £196.99;
+- edging £47.00 per 75 m.
+
+**Two cautions, written into every row:**
+- **The VAT basis is not stated** on the site, while Lathams' prices are ex VAT. **Not compared until confirmed.**
+- **Delivery is extra** (boards £65 in England).
+
+**Finding: W1100 ST9 is listed in 8 and 18 mm only.** Our drawings are 19 mm. **The owner is asked which board the
+carcasses are actually made from.**
+
+**Also:** two listings carry URL names for other products (W980 ST7 under `…st2…`; W1100 TM9 under `…u780…`).
+The titles and descriptions were followed.
+
+**New: `Suppliers/uniboards.md`.** `Suppliers/lathams-panel-price-library.md` gets a pointer, with `related` linked
+both ways. Index entry added.
+
+**BU60 at Uniboards' W1100 ST9 18 mm (£13.11/m²)** gives about **£29.20** of board, or **£33.58** with 15 % waste,
+against £23.15 at the W980 stand-in. That's +£10.44 on the £43.02 total, so **about £53.46 with 38 Cabineo and
+£46.30 with 14**. *If Uniboards' prices include VAT, the board part falls to £27.98.* **Not yet a firm figure:**
+thickness and VAT are both open.
+

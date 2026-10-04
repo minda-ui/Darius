@@ -4,17 +4,20 @@ category: Suppliers
 status: active
 sensitive: false
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-04
 sources:
  - "Every quotation and sales order from Steven Elliott (`steven.elliott@lathams.co.uk`) in info@fishboneconstruction.co.uk, 06/01/2025 – 15/06/2026: 15 quotes and 13 sales orders (28 PDFs, 75 lines), read 2026-10-03 under §6b of `CLAUDE-Rules.md`. The documents themselves are not filed in git."
  - "Smartsheet **Panel Price Library** (`7248546623522692`, workspace `Workshop`) — the live copy"
-related: []
+related:
+ - uniboards.md
 ---
 
 # James Latham Gateshead — panel and edging price library
 
 **Owner, 2026-10-03: *"Create a library for panels with price."*** Every board and edging price Lathams has sent
 to info@ is in one place, with the latest price per material and its history.
+
+*Since 2026-10-04 the sheet also holds **Uniboards** web prices (19 rows, Supplier = Uniboards; see `uniboards.md`). This article covers the Lathams rows.*
 
 **The live copy is the Smartsheet sheet `Panel Price Library`** (`7248546623522692`, workspace `Workshop`,
 <https://app.smartsheet.eu/sheets/fCG2PF48wHmwrhcr3PhX8VF58JMGmhHwH672PqF1>). **Add new prices there.** This
@@ -112,3 +115,4 @@ first (§6b).
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-03 | Created at the owner's request; Smartsheet sheet built and populated, 37 rows | Session 27 (54) |
+| 2026-10-04 | Pointer added: the sheet now also holds Uniboards rows | `change-log-2026-10-04-f45-grooving-led-slot.md` (10) |
