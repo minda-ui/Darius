@@ -75,9 +75,10 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
   - *TD180 and TD130 are both leg names. That they share the 64 × 64 square is read from the drawing, not
     assumed from the names.*
 - The Interfit leg rows stay as **alternatives**, not the shop's leg.
-- **The shop's confirmat screws** (about 3,000 in stock) are IronmongeryDirect **`659270`**. They are in the Hardware
-  Price Library; **size and price are still to be read from the box or invoice**. Search doesn't show the code
-  either.
+- **The shop's confirmat screws** (about 3,000 in stock) are IronmongeryDirect **`659270`**. **5 × 50 mm, £2.30 per pack of
+  50 ex VAT (£0.046 a screw)**, from the owner's screenshot of the product page, 2026-10-04 — a web list price, not an
+  invoice. In the Hardware Price Library. **They need a 3.5 / 5 / 8 step bit, not the 7 mm CMT bit first suggested**
+  (`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`).
 
 ## Not yet checked
 
@@ -110,3 +111,4 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
 | 2026-10-04 | IronmongeryDirect recorded as the second ironmongery supplier; the shop's leg `705309` added to the sheet (price from invoice; hole pattern to measure) | `change-log-2026-10-04-f45-grooving-led-slot.md` (7) |
 | 2026-10-04 | Leg 705309 checked against TD130 from the maker's drawing (`Raw/Emailing 705309.PDF.pdf`): **64 × 64 matches** | `change-log-2026-10-04-f45-grooving-led-slot.md` (8) |
 | 2026-10-04 | Confirmat stock: IronmongeryDirect `659270` recorded | `change-log-2026-10-04-f45-grooving-led-slot.md` (15) |
+| 2026-10-04 | `659270` is **5 × 50**, £2.30/50 ex VAT; bit corrected to 3.5 / 5 / 8 | `change-log-2026-10-04-f45-grooving-led-slot.md` (16) |

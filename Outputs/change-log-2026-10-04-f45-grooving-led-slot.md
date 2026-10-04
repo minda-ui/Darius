@@ -362,3 +362,23 @@ partly answered. `related` is linked both ways with `egger-compact-laminates.md`
   them from the box or invoice.
 - Code recorded in the fixings article's Plan B list and in the supplier article's IronmongeryDirect section.
 
+
+## (16) Correction: the confirmat stock is 5 × 50, so the bit was wrong
+
+**Owner:** a screenshot of IronmongeryDirect **659270** — **5 × 50 mm, £2.30 per pack of 50, VAT off** (753 in stock).
+**£0.046 a screw ex VAT.** A web list price from the owner's own screen, not an invoice.
+- **(13) assumed 7 × 50, and that was wrong.** For 5 × 50 the holes are **Ø5 clearance, Ø8 countersink, Ø3.5 core
+  ≥ 33 mm deep**, and the bit is a **3.5 / 5 / 8 step bit**.
+- **The CMT 515.050.31 (Ø5 / 7.6 / 10.6) recommended in (13) is for 7 mm screws: do not buy it.** Its row in the
+  Hardware Price Library is marked *wrong size*. A candidate **EXTOL 3.5 / 5 / 8** (£10.22, Amazon UK) is added;
+  Scott+Sargeant to be asked for a CMT/TCT equivalent.
+- **Vitap:** the face Ø5 hole can be drilled today (bush 2, through drill); the edge Ø3.5 core cannot — the
+  horizontals are Ø5 — so a CNC route needs Ø3.5 horizontal drills. Ø8 blind (bush 11) is a flat recess, not a
+  countersink.
+- **Compact laminate:** 5 mm in a 12 mm edge leaves 3.5 mm per side, passing EGGER's 3 mm rule (the 2.5 mm fail
+  was for 7 mm), but the coarse thread is still wrong for HPL; conclusion unchanged.
+- **Hardware Price Library:** row `1234829444777860` now 5 × 50, £2.30 / 50, Unit £0.046.
+- **Files:** `Processes/carcase-fixings-cabineo-x-vs-confirmat.md` (Plan B section rewritten, 7 × 50 figures kept
+  as *superseded*), `Suppliers/interfit-furniture-components.md`, `Processes/egger-compact-laminates.md`.
+- *Not changed: the article's older cost table carries confirmat at £0.03 a screw, an estimate from 2026-09; the
+  measured £0.046 is recorded in the Plan B section. The gap per unit is pennies and does not move the decision.*

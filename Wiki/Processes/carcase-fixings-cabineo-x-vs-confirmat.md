@@ -395,62 +395,79 @@ half a carcase's worth of joints.
 stays the decision** (above). This section is about making **Plan B usable**, because confirmat is held in stock and
 the bits are what decide whether it can be used on the day.
 
-### The screw and its three holes (7 × 50, the common size)
+### The screw and its three holes — 5 × 50, the size in stock
+
+**Corrected 2026-10-04, same day.** This section was first written for **7 × 50**, the commonest confirmat, because
+the stock size was not yet known. The owner's screenshot of IronmongeryDirect **659270** then showed **5 × 50 mm,
+£2.30 per pack of 50, VAT off**, so **£0.046 a screw ex VAT** (against roughly **£0.29** for a Cabineo X). Every
+size below is for **5 × 50**; the 7 × 50 figures and the bit chosen for them are kept, marked superseded, at
+the end of this section so the correction is visible.
 
 | Hole | Where | Size | Why |
 |---|---|---|---|
-| **Clearance** | through the **face** panel (the side) | **Ø7–7.6** | the plain shank must slide through, so the joint pulls tight |
-| **Countersink** | top of the clearance hole | **Ø10–11** | the head sits flush |
-| **Core (pilot)** | into the **edge** of the mating panel (bottom, top rail) | **Ø5**, depth **≥ 33 mm** in a 19 mm side (50 − 19 + ~2) | the thread cuts into chipboard. *Core Ø4.8 for 7 mm screws* |
+| **Clearance** | through the **face** panel (the side) | **Ø5** | the plain shank must slide through, so the joint pulls tight |
+| **Countersink** | top of the clearance hole | **Ø8** | the head sits flush |
+| **Core (pilot)** | into the **edge** of the mating panel (bottom, top rail) | **Ø3.5**, depth **≥ 33 mm** in a 19 mm side (50 − 19 + ~2) | the thread cuts into chipboard |
 
 **Edge distance:** keep **≥ 8 mm** from the panel's end. On a 19 mm panel the hole sits on the centre line,
 9.5 mm in ✓. **Material:** made for **chipboard / MFC, MDF, ply, 15 mm and up**; **18–19 mm is ideal**.
-*Sizes are from manufacturers' and suppliers' listings, not a standard; check them against the screws in stock.*
+*Sizes are from manufacturers' and suppliers' listings, not a standard; check them against a screw from the box
+before drilling a batch.*
 
 ### The bits — two ways to drill
 
-**1. At the bench, both holes in one pass, with a stepped confirmat bit.** Clamp the joint, drill through the face
-panel into the edge, then screw. This needs **no CNC change at all**: it is how Plan B works on the day.
-- **CMT adjustable step drill 515.050.31: Ø5 / 7.6 / 10.6, length 93.7, shank 9**. From Scott+Sargeant (SKU
-  CM51505031), listed at **£9.60 inc VAT (£8.00 ex)**. *From a web-search snippet, because their site blocks
-  automated readers.* It is now in the **Hardware Price Library**.
-  - The same listing has a **Ø4.2 / 7.6 / 10.6** variant, for a smaller screw.
-  - **Check the 9 mm shank** fits the shop's drill chuck.
-- Other makers (Snappy 43750, Würth, Häfele) make the same Ø5 / 7 / 10 stepped bit, but none was found in UK stock.
+**1. At the bench, all three in one pass, with a 3.5 / 5 / 8 stepped confirmat bit.** Clamp the joint, drill through
+the face panel into the edge, then screw. This needs **no CNC change at all**: it is how Plan B works on the day.
+- **Candidate: EXTOL confirmat step bit Ø3.5 / 5 / 8**, about **£10.22** (Amazon UK, B076CQ755N). *A listing price,
+  not a quote; a DIY-grade bit, fine for a trial.* It is in the **Hardware Price Library**.
+- **Better for production: ask Scott+Sargeant for a CMT or TCT 3.5 / 5 / 8 step bit.** Their site blocks automated
+  readers, so this has to be asked, not looked up.
+- **⚠ The CMT 515.050.31 (Ø5 / 7.6 / 10.6) first suggested here is for 7 mm screws and is the WRONG bit for our
+  stock.** Its Ø5 tip would drill the core hole the size of the screw, and the thread would not bite. Marked
+  *wrong size* in the Hardware Price Library; **do not buy it.**
+- **Check the shank** fits the shop's drill chuck.
 - A **drilling jig** keeps the hole square and on the centre line; *not researched yet*.
 
 **2. On the Vitap, split into a face hole and an edge hole.** This is the production route if confirmat ever
 replaces Cabineo.
-- **Edge Ø5 core:** the head layout shows **Ø5 at horizontal positions 43, 44, 52 and 53**
-  (`../Machinery/vitap-k2-drill-head-tooling.md`). **Their type and useful length have never been read.**
-  Confirmat needs **≥ 33 mm deep**, so **check bush 43 / 44 / 52 / 53 *Useful Length* in WscTecnoManager.**
-- **Face Ø7 clearance:** **there is no Ø7 on the head** (Ø3, 5, 8, 10, 12, 35).
-  - Options: fit a **Ø7 through drill** in a free or spare bush; or use **Ø8** (bush 11), which leaves 1 mm of play
-    around the 7 mm shank. That still clamps, but locates less precisely.
-- **Countersink Ø10–11:** **no countersink on the head.** It is done at the bench with a countersink bit, or the
-  Ø10 blind drill at bush 4 makes a **flat** recess, which is not a true countersink. *Neither tested.*
-- **So a pure-CNC confirmat route needs at least one purchase (Ø7 through drill) and a countersink step.** The
-  bench route needs one £8 bit.
+- **Face Ø5 clearance: available.** The head has a **Ø5 through drill (passante) at bush 2**
+  (`../Machinery/vitap-k2-drill-head-tooling.md`).
+- **Countersink Ø8:** **no countersink on the head.** The **Ø8 blind drill at bush 11** makes a **flat** recess,
+  not a true countersink; the head would sit on a step. Either countersink at the bench, or accept a flat-bottomed
+  recess and a cover cap. *Neither tested.*
+- **Edge Ø3.5 core: not on the head.** The horizontal positions carry **Ø5** (43, 44, 52, 53), which is the screw's
+  own size and too big for its core. **A pure-CNC route needs a Ø3.5 horizontal drill** (a purchase), fitted in one
+  of those bushes, and its **useful length must reach ≥ 33 mm** — read in WscTecnoManager.
+- **So the Vitap can do the face hole today, and the edge hole only after buying Ø3.5 horizontal drills.** The bench
+  route needs one ~£10 bit.
 
-### Not for compact laminate
+### Compact laminate — the geometry now passes, the thread still doesn't
 
 EGGER's processing instructions (`egger-compact-laminates.md` §6) require **≥ 3 mm of material either side** of
 a hole drilled into an edge, and a **fine** thread, pre-drilled.
-- A **7 mm** confirmat in a **12 mm** compact edge leaves **2.5 mm** per side **✗**, and only 3.0 in 13 mm.
-- Confirmat's **coarse chipboard thread** is the wrong type for HPL.
+- A **5 mm** confirmat in a **12 mm** compact edge leaves **3.5 mm** per side **✓** — the 7 × 50 figure of 2.5 mm
+  that failed was for a screw we don't have.
+- But confirmat's **coarse chipboard thread** is still the wrong type for HPL, and EGGER does not list it.
 - **For compact laminate use EGGER's routes:** RAMPA screw-in sleeves, fine-pitch screws, or glued corner joints.
+  *Confirmat into compact is untested and not recommended.*
 
 ### What would close Plan B
 
-1. **Which confirmat is in stock.** *Quantity answered 2026-10-04: **about 3,000** screws in the shop, bought from **IronmongeryDirect, code 659270** (owner).*
-   **Size still unknown** (7 × 50? 6.3 × 50?), and it decides the bit.
+1. **Which confirmat is in stock.** *Answered 2026-10-04: **about 3,000** screws in the shop, bought from
+   **IronmongeryDirect, code 659270**, which is **5 × 50 mm**, £2.30 per 50 (owner, with screenshot).*
+   **Worth one look at a box in the shop** to confirm the boxes there match the code.
    - **What 3,000 covers:** at the **8 carcase fixings** counted per unit above, about **375 units**. At BU60's
      **38 joint positions** if every Cabineo position became a confirmat, about **78 units**. **Either way, a
      whole kitchen or more**, so Plan B is not short of screws.
-2. **Buy one stepped bit** for that size and **trial a joint** on 19 mm offcuts; check the pull-up and that it
+2. **Buy one 3.5 / 5 / 8 stepped bit** and **trial a joint** on 19 mm offcuts; check the pull-up and that it
    doesn't split.
-3. **Read bushes 43 / 44 / 52 / 53** (type and useful length). That settles whether the Vitap can drill the
-   edge hole.
+3. **For CNC only:** price a **Ø3.5 horizontal drill** for the Vitap and read the useful length of bushes
+   43 / 44 / 52 / 53.
+
+*Superseded the same day, kept for the record: for a **7 × 50** confirmat the holes are Ø7–7.6 clearance,
+Ø10–11 countersink and Ø5 (Ø4.8) core; the bit is the CMT 515.050.31 Ø5 / 7.6 / 10.6 (Scott+Sargeant
+CM51505031, £8.00 ex VAT listed); and in 12 mm compact it leaves 2.5 mm per side ✗. None of it applies to the
+5 × 50 stock.*
 
 ## What each one actually buys you
 

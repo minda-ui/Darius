@@ -152,8 +152,9 @@ matched the downloaded file). Download chain: `www.egger.com` → `binary.egger.
   13 → 970 × 920.**
 - *Not addressed by EGGER:* **Cabineo X**, our carcass connector, which is made for chipboard. **Don't assume it
   works in compact laminate.**
-  **Confirmat doesn't suit it either**: a 7 mm screw in a 12 mm edge leaves 2.5 mm per side, against EGGER's 3 mm
-  (`carcase-fixings-cabineo-x-vs-confirmat.md`, 2026-10-04).
+  **Confirmat doesn't suit it either**: the shop's **5 × 50** screws leave 3.5 mm per side in a 12 mm edge, which
+  passes EGGER's 3 mm, but the **coarse chipboard thread** is the wrong type for HPL
+  (`carcase-fixings-cabineo-x-vs-confirmat.md`, 2026-10-04; corrected the same day from a 7 mm assumption).
 
 ### Cut-outs, joints, gluing
 
