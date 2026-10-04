@@ -1,6 +1,6 @@
 # Standard Kitchen Range — catalogue for Sales
 
-**DRAFT v0, 2026-10-03, for the owner's review. Not yet for Sales.** Prepared by Darius (Workshop Operations
+**DRAFT v0, 2026-10-03 (decor end panels and legs added 2026-10-04), for the owner's review. Not yet for Sales.** Prepared by Darius (Workshop Operations
 Assistant) on the owner's instruction: *"Provide to Sales — draft a catalogue for Sales."* Items marked **[TBC]** are
 owner decisions not yet taken. Sizes marked *proposed* come from the workshop's current, checked construction
 (2026-10-03), not from a decision.
@@ -27,8 +27,8 @@ modifications (e.g. width cut) with a fixed extra time each.
 |---|---|---|
 | Carcass board | 19 mm, colour from the palette | checked 2026-10-03 |
 | Base carcass | **720 high × 570 deep** (for a 600 mm worktop) | *proposed*, the current checked build |
-| Base height to worktop | 720 + legs **[TBC] mm**, adjustable legs, plinth in front | [TBC] leg/plinth height |
-| Wall carcass | **720 high** (900 option) × **320 deep** | *proposed* |
+| Base height to worktop | 720 + **150 mm legs = 870**, adjustable legs, plinth in front | legs 150: owner, 2026-10-04 (decor panel job) |
+| Wall carcass | **720 high** (900 option) × **300 deep** | 300 is the shop's library units, measured (`kitchen-unit-library.md`); v0 said 320 |
 | Tall carcass | **[TBC] high** × 570 deep | [TBC] |
 | Fronts | 19 mm, overlay, colour from the palette; gaps **[TBC] 2 mm** | gap standard [TBC] |
 | Doors | Blum CLIP top **soft-close** hinges | checked |
@@ -70,10 +70,36 @@ modifications (e.g. width cut) with a fixed extra time each.
 ### Panels and finishing (P)
 | Code | Description |
 |---|---|
-| `P-END-B` / `P-END-W` / `P-END-T` | end panel for base / wall / tall |
+| `P-END-B` / `P-END-W` / `P-END-T` | decor end panel for base / wall / tall; sizes below |
 | `P-FILL-50` / `-100` / `-150` | filler strip, cut to fit on site |
 | `P-PLINTH` | plinth, length to order |
 | `P-CORNICE` / `P-PELMET` | **[TBC]** whether in the range |
+
+### Decor end panels — standard sizes (added 2026-10-04)
+
+Same board and edge as the fronts. **Front edge flush with the door face**:
+- base: carcass 570 + hinge gap 1.5 + door 19 = 591;
+- wall: 300 + 1.5 + 19 = 321.
+
+**Every panel is +25 mm deeper at the back, for the fitter to scribe to the wall.** Base panels are also
++10 mm taller for the floor. **The back edge is not edged**, because it is scribed on site.
+
+| Code | Use | Size H × D (mm) | Note |
+|---|---|---|---|
+| `P-END-B` | base, 150 legs | **880 × 616** | 870 + 10 scribe; fitters may ask for 890 |
+| `P-END-W90` | wall, 900 high | **900 × 346** | |
+| `P-END-W90L` | wall, 900 high, **with LED under the units** | **950 × 346** | +50 drop hides the strip |
+| `P-END-W72` | wall, 720 high | **720 × 346** | |
+| `P-END-W72L` | wall, 720 high, with LED | **770 × 346** | |
+| `P-END-T` | tall | **[TBC]** | tall height not yet decided |
+
+*Benchmarks, read 2026-10-04:*
+- **Howdens' manual:** decor ends fitted flush with the fronts and "scribed to the wall as required"; base
+  890 = 720 + 170 legs.
+- **DIY Kitchens:** wall 772 / 952 × 325 (+52 drop), base 900 × 600.
+
+**Board use (2800 × 2070, plain decor):** 6 × `P-END-W90` + 1 × `P-END-B` in one 900 row, 2 + 3 in the second
+row. That is **12 panels per board**. A woodgrain decor must keep its grain vertical, so it fits fewer.
 
 **Appliance housings** fit appliances **to the manufacturer's built-in dimensions**. Sales give the **model number**
 on the order form, and the workshop checks it fits before release.

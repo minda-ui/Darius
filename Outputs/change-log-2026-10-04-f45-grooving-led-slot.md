@@ -32,3 +32,52 @@ cutting strip. Strip is 16mm wide 9mm deep"*, then *"All good! Save it for futur
 
 **Darius's advice, not the manual's, and labelled as such in the article:** scorer off, a test cut on an
 offcut, keep slots clear of shelf-pin and Cabineo positions.
+
+## (2) Decor end panels: sizes worked out, benchmarked, added to the Standard Kitchen Range draft
+
+**Owner:** *"8 wall decor panels and 5 base decor panels. Wall units are 900mm high, base it's our standard."*
+Then legs **150** and decor **U963**. Then: add **20–30 mm** for scribing? Check Howdens and DIY Kitchens. Then
+*"yes, add them to the standard range"*.
+
+**Sizes.** The front edge is flush with the door face: carcass + CLIP top front gap 1.5 + door 19, so 591 base and
+321 wall. **Each panel is +25 deeper at the back for scribing, and base panels +10 taller for the floor.** That
+gives:
+- **wall 900 × 346** (950 × 346 with LED under the units);
+- **base 880 × 616**.
+
+The back edge is left unedged.
+
+**Benchmarks:**
+- **Howdens** (`Raw/` manual, pp. 129–130, 262, 267): decor ends fitted flush with the fronts and "scribe to
+  the wall as required"; base decor end 890 = 720 + 170 legs.
+- **DIY Kitchens** (end-panel page, read 2026-10-04): wall 772 / 952 × 325 (+52 drop), base 900 × 600; prices
+  £34.85 / £42.59 / £67.88 (Altino Alabaster). Their carcass depths could not be confirmed, because the
+  product pages load by script.
+
+**Board.** A 2800 × 2070 board of plain U963 takes **12 of the 13** panels. The 13th needs an offcut or a
+second board. **U963 has no price** in the Panel Price Library.
+
+**`Outputs/standard-kitchen-range-v0-draft.md`** (in place, 5,999 → 7,520 B):
+- a **decor end panel table** (`P-END-B`, `-W90`, `-W90L`, `-W72`, `-W72L`; tall [TBC]);
+- **legs set to 150** (the owner, for this job; recorded as the standard);
+- **wall depth corrected 320 → 300**, which is the library units' measured depth. v0's 320 was a proposal
+  that never matched the library.
+
+## (3) BLUMOTION for METABOX (Z70.0320): fitting from Blum's own sheet, filed and written up
+
+**Owner** (photo of the unit): *"How to fit soft closer to Metabox"*.
+- The catalogue (p. 409) gives the part but **no fitting drawing**.
+- `www.blum.com` was blocked until the owner added **`*.blum.com`** to the environment. Adding the bare
+  `blum.com` was not enough, because it redirects to `www.`, the same pattern as diy-kitchens.
+- Blum's sheet **MA-379/0ML 06.10** came from `d2.blum.com` and is **filed in `Raw/Blum/`** (Drive
+  `1xnyDYxfNOQ8hGc76r8_DDKGyBZ41ON9A`, 63,996 B, **md5 matches the local copy**).
+
+**What the sheet gives:**
+- unit on the left side under the runner: **37 / 261** from the front, **64 below the runner's front hole for M**;
+- catch under the drawer bottom: **126 + 32**, **22.5** in.
+
+**METABOX article §7b** written from it. *Not yet done:* drilling the unit's holes on the Vitap with the runner
+holes.
+
+**Owner's reply** to *"once it works, say save it"*: *"yes add"*. **Recorded as fitted and working, with the
+wording quoted** so the inference is visible.

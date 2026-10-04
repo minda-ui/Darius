@@ -4,9 +4,10 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 sources:
  - "`Raw/Blum_publication.pdf` — *Blum catalogue and technical manual 2022/2023* (KA-150), 758 pp., 548,904,350 B; METABOX is PDF pp. 394–417 (catalogue pp. 390–413). Extract: `Raw/Blum/Blum-2022-23_METABOX_pp394-417.pdf`"
+ - "Blum fitting sheet MA-379/0ML 06.10, *Z70.0320 METABOX BLUMOTION*, `Raw/Blum/Blum_MA-379_Z70.0320_METABOX-BLUMOTION_fitting.pdf`, from d2.blum.com 2026-10-04"
  - "SmartCabinet online manual, `mainit/smartcabinet/tabelle_cam_accessori_guide.html`, `anagrafica_accessori.html`, `utility_import_accessori.html`, fetched 2026-10-02"
 related:
  - ../Software/smartcabinet-online-manual.md
@@ -267,6 +268,35 @@ instead of 103, the back-height rule has changed with `bCassDIESOT`. Adjust the 
 values is from a SmartCabinet METABOX template, which this KB has not seen: if Kosmosoft's import shipped a
 METABOX `.SCS`, compare it first.*
 
+## 7b. BLUMOTION soft close (Z70.0320) — fitting
+
+**Source:** Blum's fitting sheet **MA-379/0ML 06.10, "Z70.0320 METABOX BLUMOTION"**, filed as
+`Raw/Blum/Blum_MA-379_Z70.0320_METABOX-BLUMOTION_fitting.pdf` (Drive `1xnyDYxfNOQ8hGc76r8_DDKGyBZ41ON9A`, 63,996 B,
+md5 matched), downloaded from `d2.blum.com` on 2026-10-04. Given to the owner for fitting the same day. The owner's reply to *"once it works, say save it"* was
+*"yes add"*, **taken as fitted and working**. Figures are read off the sheet's drawings *(drawing)*.
+
+- **One unit per drawer**, up to cabinet width 900 (catalogue p. 409). It goes on the **left** cabinet side.
+  A right-hand fit is possible by turning the two end brackets 180° (retailer summary of the sheet, not
+  seen on MA-379 itself).
+- **Unit on the cabinet side, under the runner (cabinet profile):**
+  - front fixing on the runner's **37 mm** line; rear fixing **224** behind it, so **261** from the front;
+  - both fixings **below the runner's front hole** by **N 32 / M 64 / K 96 / H 128**. The shop's M drawers:
+    **64**.
+- **Screws:** **Ø6 × 14.5 system screw** (661.1450.HG) in a Ø5 hole, or **Ø3.5 × 15 chipboard** (609.1500). The
+  sheet's legend gives both (and Ø4 × 15 for the runner).
+- **Catch on the drawer:** under the **drawer bottom**, left side, **2 × Ø3.5 × 15**:
+  - first screw **126** back from the front of the drawer bottom, second **32** behind it;
+  - screw line **22.5** in from the outside of the drawer side (a **9** step is also dimensioned).
+  - **Offer it up to the unit before screwing.**
+- **Clearance:** +2 mm on hole-line height and cabinet depth with BLUMOTION (§3, §7). On the Side Left
+  bottom drawer the unit sits about **35 mm** above the bottom panel (99 − 64). It fits.
+- **CNC opportunity, not yet done:** the unit's two holes are on the runner's own 37 mm line, so **the Vitap
+  could drill them with the runner holes** (X 37 and 261, Y = runner front hole − 64 for M). That needs a
+  hardware entry in SmartCabinet; **not set up**.
+- **Compatibility note:** a US retailer lists Z70.0320 as "C15 only". Blum's catalogue offers it for the
+  single extension generally, and **the owner's fit on 2026-10-04 is taken as
+confirming it on the shop's screw-on `320M4000C`**.
+
 ## 8. What is still open
 
 - Whether Import Accessori already offers METABOX (**check first** — §1).
@@ -285,3 +315,4 @@ METABOX `.SCS`, compare it first.*
 | 2026-10-03 | §7: first CN output (`Raw/Side Left.pdf`) checked; NL 400 pattern, bottom-drawer clearance 99 mm | Session 27 |
 | 2026-10-03 | §7: the imported `320M4000C` row checked — M not K/H, so the bottom drawer fits. **§2 corrected: the hole groups are cabinet-side holes** | Session 27 |
 | 2026-10-03 | §7a: drawer-box `.SCS` settings for METABOX K, from Kosmosoft's parameter sheet | Session 27 |
+| 2026-10-04 | §7b added: BLUMOTION Z70.0320 fitting from Blum sheet MA-379 (filed in `Raw/Blum/`); owner: *"yes add"* | `change-log-2026-10-04-f45-grooving-led-slot.md` (3) |
