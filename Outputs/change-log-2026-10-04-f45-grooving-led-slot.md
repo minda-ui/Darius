@@ -143,3 +143,27 @@ assumed. Nothing ordered; §6a.*
 **Owed (same as the Panel Price Library):** §1 of `CLAUDE.md` lists the Workshop sheets and names **neither**
 price library. This is held for the next charter version.
 
+## (6) Hardware Price Library: the hinge plate and the legs checked against ours
+
+**Owner:** *"check the plate and legs against ours"*.
+
+**Plate: wrong row, corrected.**
+- The reviewed drawings (2026-10-03: the corner unit and BU60, `change-log-2026-10-03-metabox-side-left-check.md`) drill the plate pilots **Ø3 × 5 at 37 from the
+  front, 32 apart**. That is the **37/32 cruciform** pattern for chipboard screws.
+- **175H3100 is a horizontal 20/32 plate**, which does not fit that drilling.
+- The row is now **173H7100** (steel, cam, MD 0, **£0.42**). MD 0 is what the hinge plan used (TB 6.5).
+- Alternatives recorded in the row: 175H7100 £0.55, 173L6100 £0.16.
+- **BU60 materials: £43.02 / £35.86** (was £43.14 / £35.98).
+
+**Legs: not confirmable from here.**
+- TD130 = **4 × Ø3 × 13 on a 64 × 64 square**.
+- Interfit publishes **no top-plate hole pattern**. The drawings are on `cdn11.bigcommerce.com`, which this
+  environment blocks.
+- **Bigfoot and AXILO prices are leg only**; the top section is an extra option. **LEG150S** fixing is not described.
+- All four leg rows now say so in Notes.
+- **To settle it:** measure the screw holes on a leg the shop already uses, or allow the CDN host.
+
+**Updated:**
+- 4 rows of the sheet (`update_rows`, no failures);
+- `Suppliers/interfit-furniture-components.md` in place.
+

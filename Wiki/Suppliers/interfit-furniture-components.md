@@ -43,7 +43,7 @@ One row per part:
 | METABOX front fixing, screw-on, set | ZSF.1700 | £1.18 / set | 1.18 |
 | METABOX front fixing, knock-in | ZSF.1800 | £0.67 each | 0.67 |
 | CLIP top 110° soft-close hinge, overlay | 71B3550 | £2.42 | 2.42 |
-| CLIP mounting plate, cam, 0 mm | 175H3100 | £0.48 | 0.48 |
+| CLIP **cruciform 37/32** plate, cam, 0 mm | **173H7100** | £0.42 | 0.42 |
 | Lamello Cabineo X | 186360 | £98.02 / 500 | 0.196 |
 | Cabineo X screws | 186380 | £51.00 / 500 | 0.102 |
 | Cabineo cover caps | 186350W | £8.19 / 100 | 0.082 |
@@ -52,14 +52,24 @@ One row per part:
 | Häfele AXILO leg 150 (250 kg) | 637.76.355 | £1.06 | 1.06 |
 
 **What changed because of it:** **Cabineo X costs £0.30 per joint** (housing + screw), against the **≈ £0.87** the KB
-used before (`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`). BU60 materials recomputed: **£43.14**
-with 38 Cabineo, **£35.98** with 14. The board is still a stand-in (change log 2026-10-04 (4)).
+used before (`../Processes/carcase-fixings-cabineo-x-vs-confirmat.md`). BU60 materials recomputed: **£43.02**
+with 38 Cabineo, **£35.86** with 14 (with the corrected plate). The board is still a stand-in (change log 2026-10-04 (4)).
 
 ## Not yet checked
 
-- **The 175H3100 plate** is a likely match for the shop's hinges, **not confirmed** against the CLIP top article
-  or the shop's stock.
-- **The legs** were not checked against the shop's **TD130** 64 × 64 hole pattern.
+- ~~**The 175H3100 plate**~~ — **checked 2026-10-04 and corrected.** Our reviewed drawings drill the plate
+  pilots **Ø3 at 37 from the front, 32 apart**, so the plate is a **37/32 cruciform for chipboard screws**.
+  175H3100 is a **horizontal 20/32** plate, the wrong pattern. The row is now **173H7100** (steel, cam ±2,
+  **£0.42**); MD 0 matches the hinge setting the reviews used (TB 6.5).
+  - Alternatives on Interfit: **175H7100** (zinc, screw adjustment) £0.55; **173L6100** (elongated hole ±3) £0.16.
+  - *What is in the shop's stock is still not seen.*
+- **The legs: not confirmable from Interfit.** Our **TD130** drilling is **4 × Ø3 × 13 on a 64 × 64 square**
+  under the bottom. **No Interfit page gives the top-plate hole pattern**, and the product drawings sit on
+  `cdn11.bigcommerce.com`, which this environment blocks. Also:
+  - the **Bigfoot** and **AXILO** prices are **for the leg only**; the screw-fixing top section is an extra option;
+  - **LEG150S** comes with "base shoes", fixing not described.
+  - **Check by measuring a leg the shop already uses**, or allow `cdn11.bigcommerce.com` so I can read the
+    drawings.
 - **List price ≠ our price.** A trade account, a quote or an invoice replaces a row's price and its *Price type*.
 
 ## Keeping it current
@@ -72,3 +82,4 @@ with 38 Cabineo, **£35.98** with 14. The board is still a stand-in (change log 
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-10-04 | Created with the Hardware Price Library sheet (12 rows) | `change-log-2026-10-04-f45-grooving-led-slot.md` (5) |
+| 2026-10-04 | Plate checked against the shop's drilling: 175H3100 → **173H7100**; legs not confirmable from Interfit, flagged | `change-log-2026-10-04-f45-grooving-led-slot.md` (6) |
