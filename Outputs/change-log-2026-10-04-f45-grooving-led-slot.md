@@ -450,3 +450,18 @@ authority please add North East Grinding in approved mail senders list."*
 - **Files:** `Suppliers/north-east-grinding.md` (new, Drive `1EYskU0Eksr-OFNbQdxtW5Z37KbPhfofQ`); `Processes/f45-blades-tct-vs-pcd.md` new section;
   `related` from Scott+Sargeant; index entry.
 - **Owed:** whether the Stehle 300 × 96T blades are the F45's; whether to open the receipts for line items.
+
+## (22) North East Grinding receipts read — per-blade costs and a payback
+
+**Owner:** *"2. Yes"* — open the five cash-sale receipts (.xlsx). Downloaded to the session scratchpad only, read for
+line items, **not filed in git or Drive**; payment details not copied; local copies deleted after reading.
+- **Receipts are ex VAT**; the emails' totals are inc VAT except 12 Jan's.
+- **Prices:** sharpen 300 × 96T **£14.40**, 350 × 108T **£16.20**, 180 × 36T split scorer **£12**, 254 × 80T £12,
+  165/160 mm £8, PCD borer £96.06; new **Stehle 300 × 96T (58100388) £88.50**.
+- **7 Jan – 21 Jul:** £556.36 in all, £460.30 on saw blades; **300 × 96T sharpened 16 times** (£230.40, ~30 a year),
+  350 × 108T 4, scorer 2.
+- **Conclusion recorded:** if 300 × 96T is the F45 main blade, a PCD main blade pays back in **~1–2 years** — get a
+  Ø300 PCD quote; a PCD scorer isn't worth it on cost. **Not confirmed** that 300 × 96T / 350 × 108T are the F45's.
+- **Hardware Price Library:** Stehle 58100388 row added (`1349197105028`).
+- **Files:** `Suppliers/north-east-grinding.md` (price list, totals), `Processes/f45-blades-tct-vs-pcd.md` (cost section
+  and short answer rewritten).

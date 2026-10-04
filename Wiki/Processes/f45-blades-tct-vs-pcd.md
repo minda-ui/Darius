@@ -10,7 +10,7 @@ sources:
  - "Web search, 2026-10-04 (snippets only; cutektools.com and keybladesfixings.co.uk are blocked to this session's fetcher): Cutek Tools 'PCD vs TCT circular saw blade' and 'panel sizing solutions'; Key Blades 'What is a PCD circular saw blade'; Smarter Production 'scoring blade types'; morecuttingtools.com and tristatetoolgrinding.com on PCD regrinding; toolingideas.com on why blades wander"
  - "UK listings, 2026-10-04: CMT XTreme Diamond Ø350 × 3.5 × 30, Z72, 45° TCG — £800.01 ex VAT (Machinery4Wood / Westcountry) and £607.14 ex VAT (another retailer, per search snippet)"
  - "`egger-compact-laminates.md` §6 — EGGER, Leitz and Leuco guidance filed in `Raw/EGGER/`"
- - "North East Grinding emails in info@, 2026-01-12 to 2026-07-21 (bodies only) — `../Suppliers/north-east-grinding.md`"
+ - "North East Grinding emails and their five cash-sale receipts, 2026-01-12 to 2026-07-21 — `../Suppliers/north-east-grinding.md`"
  - "`../Machinery/altendorf-f45-panel-saw.md` — calibration test (350 mm / Z72 at 5,000 rpm, < 0.2 mm), RAPIDO Ø180 scorers, troubleshooting table"
 related:
  - ../Machinery/altendorf-f45-panel-saw.md
@@ -25,8 +25,10 @@ related:
 
 **Short answer.** A diamond (PCD) blade does **not cut cleaner than a sharp carbide one**; it **stays sharp far
 longer**, so the clean cut lasts. It makes cuts straighter **only compared with a dull blade**. Whether it is worth
-**about £600–800** depends on **how often the carbide blades are changed today**, which is now being logged
-(MT-037 / MT-038). **Decision: not yet for MFC alone; yes if compact laminate becomes a product line.**
+**about £600–800** depends on **how often the carbide blades are changed**. *Updated with the receipts:* the 300 × 96T blades are
+sharpened **about 30 times a year (~£430–700 a year with new blades)**, so **if they are the F45's main blade, a PCD
+main blade pays back in roughly 1–2 years — worth getting a Ø300 PCD quote.** A PCD scorer is not worth it on cost.
+**Yes regardless if compact laminate becomes a product line.** No purchase made — the owner's call.
 
 ## Cleaner cuts?
 
@@ -65,20 +67,28 @@ was not found.
 - **Candidates seen:** CMT XTreme PCD Ø350 × 3.5 × 30 Z72 (listings above); CMT 237 Xtreme PCD Ø350 × 30 Z72 kerf 3.2
   (Scott+Sargeant, `../Suppliers/scott-sargeant.md`; price not readable). **No purchase made — the owner's call.**
 
-## What sharpening costs us now (North East Grinding, 2026)
+## What our TCT blades cost now (North East Grinding receipts, 2026)
 
-From six emails, bodies only (`../Suppliers/north-east-grinding.md`):
-- **A batch every ~3 months, about £200 each** (Jan, 30 Apr, 21 Jul) → **about £800 a year**, *for every TCT blade sent,
-  not only the F45's*.
-- **One blade sharpened alone: £17.88** (19 Jan). **New Stehle TCT 300 × 96T × 30: about £106 each** (three for £318.60,
-  Jan). VAT basis not stated in either.
-- **Possibly our blade:** three **Stehle TCT Ø300 × Z96 × 30** were bought in January. *Whether they are the F45's main
-  blade is not confirmed* — the F45 manual's calibration test uses Ø350 / Z72.
+From the five receipts, ex VAT (`../Suppliers/north-east-grinding.md`), **7 Jan – 21 Jul 2026, about 6½ months:**
 
-**First rough payback.** A Ø350 PCD at **£607–800 ex VAT** against **£17.88 a sharpening**: it has to save **34–45
-sharpenings** to pay back, plus the downtime of each change. *If* the F45's main blade were most of the ~£800 a year,
-that is **about a year**; if it is a small part, several years. **The receipts' line items (blades per batch, sizes)
-would settle it** — not yet opened.
+| Blade | Sharpenings | Each | Spend | Per year, at that rate |
+|---|---|---|---|---|
+| **300 × 96T** | **16** | £14.40 | £230.40 | **~£425** (~30 sharpenings) |
+| 350 × 108T | 4 | £16.20 | £64.80 | ~£120 |
+| 180 × 36T split scorer | 2 | £12.00 | £24.00 | ~£45 |
+
+Plus **new Stehle TCT 300 × 96T at £88.50 each** — three bought in January.
+
+- **Probably the F45's**: the scorer certainly (Ø180); the 300 × 96T and 350 × 108T most likely, as the only panel saw
+  registered. *Not confirmed by the owner yet.*
+- **16 sharpenings of 300 × 96T in 6½ months** — six went in one batch in July, so **at least six are in rotation**,
+  and one comes off about **every 1½–2 weeks**. That is **close to the trade's "about weekly" line** for PCD.
+
+**Payback, if the 300 × 96T is the F45 main blade.** TCT costs **~£425 a year in sharpening, plus about £265 a year in
+new blades** if January's three are a yearly pattern — **~£430–700 a year**. A PCD main blade at **~£600–800** (Ø350
+listings; **a Ø300 price is still to find**) pays back in **roughly 1–2 years**, before counting fewer blade changes.
+PCD still needs **resharpening (2–4 times, specialist)** and **a TCT spare**, so the saving is less than the whole
+sharpening bill. **The scorers (~£45 a year) don't justify PCD on cost.**
 
 ## How the decision gets made
 
@@ -87,7 +97,7 @@ would settle it** — not yet opened.
 2. **How often** each is changed or sent for sharpening — **logged from 2026-10-04 as MT-037 (main) and MT-038
    (scorers)** on the Maintenance Schedule: date in *Last Done* (cell history keeps the trail), and blade, reason,
    sharpener and cost noted.
-3. **What a sharpening costs** — *partly answered: £17.88 for one blade; ~£200 a quarter for batches (North East Grinding). Line items are in the receipts.*
+3. **What a sharpening costs** — *answered from the receipts: £14.40 (300 × 96T), £16.20 (350 × 108T), £12 (scorer), ex VAT.*
 4. **Whether compact laminate goes ahead** — if yes, PCD is justified on that alone.
 
 *Figures are vendor claims and listing prices from search snippets, not quotes or tests on this machine.*
@@ -98,3 +108,4 @@ would settle it** — not yet opened.
 |---|---|---|
 | 2026-10-04 | Created from the owner's question; MT-037 / MT-038 added to the Maintenance Schedule | `change-log-2026-10-04-f45-grooving-led-slot.md` (20) |
 | 2026-10-04 | Sharpening costs from North East Grinding's emails; first rough payback | `change-log-2026-10-04-f45-grooving-led-slot.md` (21) |
+| 2026-10-04 | Replaced with the receipts' line items: per-blade sharpening counts and a 1–2 year payback if 300 × 96T is the F45 main blade | `change-log-2026-10-04-f45-grooving-led-slot.md` (22) |
