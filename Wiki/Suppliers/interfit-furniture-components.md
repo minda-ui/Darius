@@ -67,8 +67,13 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
 - **Price not known yet.** `www.ironmongerydirect.co.uk` is allowed in the environment, **but the site's own
   Cloudflare protection returns 403 "Attention Required" to automated readers**. That is the site's choice, so it
   is **not worked around**; only web-search listings are readable. **Take the price from the invoice.**
-- **The 64 × 64 match is still not confirmed.** The listing gives no top-plate hole pattern. **Measure a leg**
-  against TD130 (4 × Ø3 × 13 on a 64 × 64 square).
+- **The 64 × 64 match is confirmed.** The maker's drawing came in as `Raw/Emailing 705309.PDF.pdf`
+  (Drive `1XBqmB3xsGfdnvuuN_tC8CDfOE21AvF03`; titled **TD180**). It shows:
+  - top plate **92 × 79.5 × 25**, with **4 counterbored Ø5 holes on a 64 × 64 square** — the SmartCabinet
+    **TD130** pattern (4 × Ø3 × 13 at 64 × 64);
+  - Ø33.5 socket; tube Ø41 × 66.5; foot Ø79.5 on an 88 mm thread.
+  - *TD180 and TD130 are both leg names. That they share the 64 × 64 square is read from the drawing, not
+    assumed from the names.*
 - The Interfit leg rows stay as **alternatives**, not the shop's leg.
 
 ## Not yet checked
@@ -100,3 +105,4 @@ ironmongery"*, then *"We have purchased 705309 legs"*.
 | 2026-10-04 | Created with the Hardware Price Library sheet (12 rows) | `change-log-2026-10-04-f45-grooving-led-slot.md` (5) |
 | 2026-10-04 | Plate checked against the shop's drilling: 175H3100 → **173H7100**; legs not confirmable from Interfit, flagged | `change-log-2026-10-04-f45-grooving-led-slot.md` (6) |
 | 2026-10-04 | IronmongeryDirect recorded as the second ironmongery supplier; the shop's leg `705309` added to the sheet (price from invoice; hole pattern to measure) | `change-log-2026-10-04-f45-grooving-led-slot.md` (7) |
+| 2026-10-04 | Leg 705309 checked against TD130 from the maker's drawing (`Raw/Emailing 705309.PDF.pdf`): **64 × 64 matches** | `change-log-2026-10-04-f45-grooving-led-slot.md` (8) |

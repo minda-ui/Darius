@@ -184,3 +184,27 @@ price library. This is held for the next charter version.
   - the **top-plate hole pattern** against TD130 64 × 64 (measure a leg).
 - `Suppliers/interfit-furniture-components.md` gained an IronmongeryDirect section.
 
+## (8) Raw check: the leg drawing, and the 64 × 64 match confirmed
+
+**Owner:** *"Check workshop Raw folder for new drawing"*. `Raw/` was listed in full (66 items, not filtered by date).
+**One new file:** `Emailing 705309.PDF.pdf` (31,422 B, Drive `1XBqmB3xsGfdnvuuN_tC8CDfOE21AvF03`, 2026-10-04
+15:59). It is a one-page maker's drawing, titled **TD180**, from a Chinese-language CAD file.
+
+**What it shows:**
+- Top plate **92 × 79.5 × 25** with **4 counterbored Ø5 holes on a 64 × 64 square**, plus 4 plain holes.
+- Ø33.5 socket; tube Ø41 / 32.5 × 66.5; foot Ø79.5 × 25; thread 88; overall leg 113.
+
+**So the shop's leg (705309) matches SmartCabinet's TD130 drilling (4 × Ø3 × 13 at 64 × 64). ✓** The Ø3 pilots
+suit Ø4 screws through the Ø5 holes.
+- The legs in the reviewed BU60 sit at X 13–77, so the 79.5 plate's edge is about 5 mm inside the carcass edge.
+  That is a reading of the drawing, *not checked on a cabinet*.
+
+**Also seen, not processed:** `Emailing BR_EGGER_Compact_Laminates_en.pdf` (8.2 MB, 2026-10-03 23:16). It is not
+in the registers and has not been read. **`Raw/Review folder/`: no changes** since 2026-10-03; the three job
+folders' newest files are from that morning.
+
+**Updated:**
+- the 705309 row's Notes in the Hardware Price Library;
+- `Suppliers/interfit-furniture-components.md`;
+- a Processed-items row for the drawing.
+
