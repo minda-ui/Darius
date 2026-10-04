@@ -11,6 +11,7 @@ sources:
  - "First use, 2026-10-04: a 16 × 9 mm slot for an LED strip in a shelf, cut by the owner with Darius following on chat; the owner's photo of the Grooves screen; first cut measured 3.2 mm; result *\"All good!\"*"
 related:
  - ../Machinery/altendorf-f45-panel-saw.md
+ - f45-blades-tct-vs-pcd.md
 ---
 
 # F45 — cutting a slot wider than the blade (Grooves function)

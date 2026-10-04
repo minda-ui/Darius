@@ -4,7 +4,7 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-10-01
+updated: 2026-10-04
 sources:
  - ../../Raw/F45 part 5.pdf
  - ../../Raw/F45 part 6.pdf
@@ -14,6 +14,7 @@ related:
  - ../Machinery/altendorf-f45-panel-saw.md
  - f45-monthly-safety-device-check.md
  - ../Troubleshooting/troubleshooting-altendorf-f45.md
+ - f45-blades-tct-vs-pcd.md
 ---
 
 # Maintenance schedule — Altendorf F45 sliding-table saw (`FA2303`)
@@ -62,6 +63,11 @@ additives are prohibited.**
 | MT-025 | PTC winding-shield resistor check by a qualified electrician (cold motor, expect 150–1000 Ω) | At least annually |
 | MT-026 | Re-check the riving knife (thickness ≥ main blade; holder rated to Ø450 mm) | Every saw-blade change |
 | MT-028 | Inspect scorer & main-saw drive belts and wear parts; replace on wear | Condition-based |
+| MT-037 | Change / send for sharpening the **main saw blade**, and **log it** (blade, reason, sharpener, cost). Then MT-026, ElmoDrive tool recalibration, real kerf into Grooves | When cut quality drops (chipping, burns, motor labouring) |
+| MT-038 | Change / send for sharpening the **RAPIDO Ø180 scorers**, and **log it** the same way; scorer width to match the kerf, re-set free cut | When the underside chips |
+
+**MT-037 / MT-038 are local additions, not from the manual** (owner, 2026-10-04): they measure how fast blades wear,
+for the carbide-vs-diamond decision in `f45-blades-tct-vs-pcd.md`.
 
 Key wear-part numbers (belts, riving-knife holder B1480.0051, saw shaft B1480.0044, RAPIDO Ø180 mm
 scorer blades) and ordering contact are in `../Machinery/altendorf-f45-panel-saw.md` and
@@ -85,3 +91,4 @@ question tracked as Task **T007**, not part of routine maintenance. See the mach
 |---|---|---|
 | 2026-09-15 | Created from the F45 article's manual-derived Chapter 7 schedule + annual electrical check; rows loaded as MT-020…MT-028 | Session — workshop operational systems build |
 | 2026-10-01 | Added MT-029 (blow out control-panel buttons) after fault `FL-004`, on the owner's instruction; row added to the sheet the same day | Session — 2026-10-01 extractor and F45 faults |
+| 2026-10-04 | Added MT-037 (main blade) and MT-038 (scorers) change logging, on the owner's instruction; rows added to the sheet the same day | `change-log-2026-10-04-f45-grooving-led-slot.md` (20) |

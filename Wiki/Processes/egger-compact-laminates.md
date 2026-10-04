@@ -11,6 +11,7 @@ sources:
 related:
  - ../Suppliers/scott-sargeant.md
  - carcase-fixings-cabineo-x-vs-confirmat.md
+ - f45-blades-tct-vs-pcd.md
 ---
 
 # EGGER compact laminates

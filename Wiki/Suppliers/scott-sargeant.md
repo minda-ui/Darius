@@ -10,6 +10,7 @@ sources:
  - "Web-search listings of scosarg.com, 2026-10-04 (the site itself not readable from this environment — see Access)"
 related:
  - ../Processes/egger-compact-laminates.md
+ - ../Processes/f45-blades-tct-vs-pcd.md
 ---
 
 # Scott+Sargeant — the workshop's tooling supplier

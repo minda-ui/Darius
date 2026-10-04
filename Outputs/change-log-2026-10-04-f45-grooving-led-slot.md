@@ -414,3 +414,22 @@ in stock, asking whether it suits. **No, for two independent reasons:**
 - **It is a hand-drill bit** (9 mm round shank, grub-screwed adjustable collar), not a boring-machine drill, so it
   can't go in the Vitap head — and under (18) hand drills are not a main tool.
 Not added to the Hardware Price Library. What to ask Scott+Sargeant for instead is unchanged from (18).
+
+## (20) F45 blades: carbide or diamond — researched and saved; blade changes now logged
+
+**Owner:** is changing the F45's TCT blades to diamond worth it — cleaner cuts, and straighter because it stays sharp?
+Then *"Save it, and add blade changes to the Maintenance Schedule."*
+- **Finding:** PCD is **not cleaner than a sharp TCT**, it **stays sharp 10×+ longer** (vendor claims); **straighter
+  only than a dull blade** — straightness is calibration, free cut, feed and blade flatness. **Ø350 × 30 Z72 PCD about
+  £607–800 ex VAT** (CMT XTreme listings) against £70–170 for TCT. Scorers matter as much as the main blade. Worth it
+  if carbide is changed about weekly or more, or if **compact laminate** goes ahead (EGGER: DP recommended).
+- **New article** `Processes/f45-blades-tct-vs-pcd.md` (Drive `1vdKhVhbrq4dRKlgFeDAfGb3qAXEebxdf`); pointers and
+  `related` both ways from the F45, Grooves, EGGER compact-laminates, Scott+Sargeant and F45 maintenance-schedule
+  articles; index entry.
+- **Maintenance Schedule** (`6753985971226500`): **MT-037** main blade and **MT-038** RAPIDO scorers, both
+  *Condition-based*, rows `43886553204612` and `4547486180575108`: date in *Last Done*, blade / reason / sharpener /
+  cost noted; after a change MT-026, ElmoDrive recalibration, real kerf into Grooves. Mirrored in
+  `Processes/maintenance-schedule-altendorf-f45.md`.
+- **Research limits:** cutektools.com and keybladesfixings.co.uk are blocked to the fetcher, so their figures are
+  search snippets. No UK price found for a Ø180 PCD scorer. **No purchase made.**
+- **Still owed by the owner:** blades fitted now (main and scorers), sharpening cost, compact-laminate decision.
