@@ -477,3 +477,8 @@ line items, **not filed in git or Drive**; payment details not copied; local cop
   in 690 with Gola** — likely 4 rows (8 drawers); to be settled against the actual profile's dimensions. NL 400 needs
   ~425 carcass depth (inside ≥ NL + 3) — is 400 the drawer or the unit? Plinth, legs or castors? Wall fixing required.
 - Nothing designed in SmartCabinet yet; no KB article — this entry is the brief for tomorrow.
+- **Correction, same evening — the owner was right:** *"We can use top gola profile to worktop and another one between
+  2nd and 3rd row."* **One mid (C) channel serves two rows** — the bottom edge of the front above and the top edge of
+  the front below — so channels are **not one per row**. Four rows: top L (row 1) + C between rows 2/3 (rows 2 and 3);
+  row 4 needs a grip at its bottom edge (plinth/legs gap) or a further channel. Six rows: top L + C 2/3 + C 4/5, row 6
+  from below. **Six rows may fit after all**; front heights wait on the profile's dimensions.
