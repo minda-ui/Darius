@@ -482,3 +482,8 @@ line items, **not filed in git or Drive**; payment details not copied; local cop
   the front below — so channels are **not one per row**. Four rows: top L (row 1) + C between rows 2/3 (rows 2 and 3);
   row 4 needs a grip at its bottom edge (plinth/legs gap) or a further channel. Six rows: top L + C 2/3 + C 4/5, row 6
   from below. **Six rows may fit after all**; front heights wait on the profile's dimensions.
+- **Gola supplier: Häfele** (owner). From search listings only (hafele.co.uk blocked to this environment): top
+  **Gola System B Plus** 56.5 × 27, mid **Gola System C Plus** 73 × 26, 4.1 m lengths; C Plus trim caps, B/C
+  connectors. Worst case (fronts not overlapping the profiles), 690 of front height: **4 rows ≈ 135 per front ✓;
+  6 rows ≈ 78 ✗** (M side 90.5). Needs Häfele's fitting drawing (front overlap, side cut-out) — the owner to add
+  `*.hafele.co.uk` or put the PDFs in `Raw/`.
