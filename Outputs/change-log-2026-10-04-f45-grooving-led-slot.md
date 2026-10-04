@@ -313,3 +313,35 @@ the PDF.
 - **New: `Suppliers/scott-sargeant.md`.** `egger-compact-laminates.md` §8 points to the blade, with `related` linked
   both ways. Index entry added.
 
+## (13) Confirmat as Plan B: the holes and the bits researched
+
+**Owner:** *"It's worth to research comformat screw option, but it needed right bits too."* Cabineo X stays the
+decision (2026-09-19, re-confirmed 2026-09-28). This makes the in-stock confirmat fallback usable.
+
+**Before editing, the git copy of `Processes/carcase-fixings-cabineo-x-vs-confirmat.md` was found BEHIND Drive.**
+- Git had 23,245 B, last touched in the 2026-09-27 sync (`a020f5f`).
+- Drive (`1d260Ed3tcBVcWh4igSeVkB5uFULbXtjB`) had 32,327 B, modified 2026-09-28: the Cabineo trade-price and divider
+  sections.
+- **The Drive copy was taken as the base** (Drive is the source of truth), so this commit also brings git up to
+  that version. *This is the AWT-0225 lag again, in a file the v36 catch-up didn't cover. Other articles last
+  touched 2026-09-28 may be behind too, not checked.*
+
+**Researched (web search; Scott+Sargeant's site is Cloudflare-blocked):**
+- **7 × 50 confirmat:** Ø7–7.6 clearance and Ø10–11 countersink in the face panel; **Ø5 core ≥ 33 mm** into the
+  mating edge (50 − 19 + 2); edge distance ≥ 8 mm.
+- **Bench route:** one stepped bit. **CMT 515.050.31, Ø5 / 7.6 / 10.6, L 93.7, shank 9**, £9.60 inc VAT
+  (£8.00 ex) at Scott+Sargeant. **Added to the Hardware Price Library** as a web list price.
+- **Vitap route:**
+  - **Ø5 horizontal bushes 43, 44, 52, 53 exist** (layout), but their useful length is unread;
+  - **no Ø7 and no countersink on the head**, so it needs a Ø7 through drill (or Ø8 with play) and a separate
+    countersink.
+- **Not for compact laminate:** 2.5 mm per side in a 12 mm edge, against EGGER's ≥ 3 mm, and a coarse thread.
+
+**Article:** a new section, *"2026-10-04 — confirmat as Plan B"*. The open question about the horizontal spindles is
+partly answered. `related` is linked both ways with `egger-compact-laminates.md`, whose §6 notes confirmat.
+
+**To close Plan B:**
+1. which confirmat size is in stock;
+2. buy one bit and trial a joint;
+3. read bushes 43 / 44 / 52 / 53.
+

@@ -10,6 +10,7 @@ sources:
  - "`Raw/Emailing BR_EGGER_Compact_Laminates_en.pdf` — EGGER brochure *Compact Laminates*, Decorative Collection 26+, 26 pp., 8,205,540 B, Drive `1BNd-TNvlqJGOfZK9b0j3o_06qKmcMepQ`, uploaded by the owner 2026-10-03; read 2026-10-04 (PDF pp. referred to by the brochure's own page numbers)"
 related:
  - ../Suppliers/scott-sargeant.md
+ - carcase-fixings-cabineo-x-vs-confirmat.md
 ---
 
 # EGGER compact laminates
@@ -151,6 +152,8 @@ matched the downloaded file). Download chain: `www.egger.com` → `binary.egger.
   13 → 970 × 920.**
 - *Not addressed by EGGER:* **Cabineo X**, our carcass connector, which is made for chipboard. **Don't assume it
   works in compact laminate.**
+  **Confirmat doesn't suit it either**: a 7 mm screw in a 12 mm edge leaves 2.5 mm per side, against EGGER's 3 mm
+  (`carcase-fixings-cabineo-x-vs-confirmat.md`, 2026-10-04).
 
 ### Cut-outs, joints, gluing
 

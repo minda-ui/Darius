@@ -4,7 +4,7 @@ category: Processes
 status: draft
 sensitive: false
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-04
 sources:
  - "Owner (Minda), 2026-09-18: range will contain wall, base, sink, appliance housing and tall units; asks which fixing is better for a low-cost range"
  - "Owner (Minda), 2026-09-19: panels are cut on the F45 and then drilled on the Vitap"
@@ -14,12 +14,19 @@ sources:
  - "`AMFA Wall Unit 600 RH/03-BOTTOM.TCN` (Drive `1ygANqYNEfpT7-q7TNkfm-hhllShoZ62m`), decoded 2026-09-18"
  - "`AMFA Wall Unit 600 RH/01-SIDE-LEFT.TCN` (Drive `1ZWciFvdK2rkKbeWvRpNQ825UWJsnnPe1`) and `08-DOOR-1.TCN` (Drive `1FfGBMAP4XfjJeCBwM5hvEVraRnhIWzHL`), decoded 2026-09-18"
  - "Lamello product pages and UK reseller listings, searched 2026-09-18 — see Prices, and read the caveat there"
+ - "Trade listings photographed by the owner 2026-09-28: Lamello Cabineo X SKU 186361, Box of 2000, £379.03 ex VAT; Cabineo X Screws SKU 186381, Cabineo 12, Box of 2000, £195.13 ex VAT — supplier not legible, see the caveat"
+ - "Owner (Minda), 2026-09-28: \"Yes, Cabineo is chosen for fixing\" — re-confirming the 2026-09-19 decision"
+ - "Owner (Minda), 2026-09-28: how to joint a vertical divider into the top and bottom panels, with a SmartCabinet 3D wireframe of a carcase with a full-height divider"
+ - "`../Software/smartcabinet-online-manual.md` §7 — SmartCabinet's `giunzioni` page, captured 2026-09-28: joints are configured per cabinet part and `divisori verticali` is one of them"
 related:
  - ../Software/kitchen-unit-library.md
  - ../Processes/tpacad-tool-type-optimizer-ambiguity.md
  - ../Machinery/vitap-k2-panel-saw.md
  - ../Processes/panel-production-route.md
  - ../Processes/tpacad-blind-bore-tool-id-fix.md
+ - ../Processes/cabineo-joint-geometry-reconciled.md
+ - ../Software/smartcabinet-online-manual.md
+ - egger-compact-laminates.md
 ---
 
 # Carcase fixings: Cabineo X vs confirmat screws
@@ -236,7 +243,7 @@ formality — it is the single biggest lever in the comparison.
 |---|---|---|
 | **Confirmat 7 × 50** | **£0.0297 each** inc VAT | £29.69 per 1,000, Furnica UK |
 | **Cabineo X housing** | **£0.77 each** | one UK listing (T&D Architectural); pack sizes are 500 and 2,000 |
-| **Cabineo X 12 screw** | **£0.10 each** | £49.98 per 500, Axminster (listed as reduced from £59.98 → £0.12) |
+| **Cabineo X 12 screw** | **£0.10 each** | £49.98 per 500, Axminster (listed as reduced from £59.98 → £0.12). ***Confirmed at volume 2026-09-28: £0.0976*** (£195.13 per 2,000 ex VAT, SKU 186381) |
 | **Cabineo X, per joint** | **≈ £0.87** | housing **plus** screw — the X housing ships **without** a screw |
 
 **Cabineo X is an open housing.** Unlike the original Cabineo, the screw is not integral: you snap the
@@ -244,9 +251,66 @@ housing in and fit whichever Cabineo screw (8 / 12) or shelf pin the application
 genuine flexibility advantage — one housing serves carcase joints *and* shelf supports — but it means
 **two line items, not one**, and any quote must cover both.
 
-**£0.77 for the housing is the number I least trust.** It reads like a single-unit retail price, and
+## 2026-09-28 — the price this article told you to challenge was four times too high
+
+**Not a new decision.** Cabineo X was decided on **2026-09-19** and is recorded above; the owner
+re-confirmed it on 2026-09-28 (*"Yes, Cabineo is chosen for fixing"*) in the course of a live question
+about placing the joints. *Recorded because I briefly told the owner the decision was still open — I had
+grepped this file and read two of its sections rather than its "Decided" section, which is §3's sampling
+lesson in a new place. The decision has stood since the 19th.*
+
+**What is new is the number.** This article says, twice, *"£0.77 for the housing is the number I least
+trust… Challenge it at 2,000."* The owner did. A trade listing for **Lamello Cabineo X, SKU 186361**,
+prices a **Box of 2000 at £379.03 ex VAT** — **£0.19 per housing**, against the £0.77 carried here.
+**Four times too high, and the direction of the suspicion was right.**
+
+| At 8 carcase fixings | Per joint | Per unit | Per 12-unit kitchen |
+|---|---|---|---|
+| Cabineo X — the figure this article carried | £0.87 | £6.96 | £83.52 |
+| **Cabineo X — both at 2,000, measured** | **£0.2871** | **£2.30** | **£27.56** |
+| Confirmat | £0.03 | £0.24 | £2.85 |
+| **Premium over confirmat** | | **+£2.06** | **+£24.71** *(was +£80.67)* |
+
+**So the settled cost of the decision falls from ~£81 a kitchen to ~£25.** The article's own line —
+*"getting it nearer £0.30 is money for one phone call"* — turned out to understate it.
+
+**Three limits on that £0.29, stated rather than buried.**
+
+1. ~~**The screw is not re-priced**~~ — **it was, minutes later, and it confirmed the carried figure.**
+   **Lamello Cabineo X Screws, SKU 186381, Cabineo 12, Box of 2000 at £195.13 ex VAT = £0.0976 each**,
+   against the £0.10 this article already carried. *So the estimate I flagged as the weak half survived
+   contact with a real volume price, and the £0.29 joint now has **both** halves measured rather than one
+   carried.* **Per joint £0.1895 + £0.0976 = £0.2871.**
+2. **£379.03 is a stocking commitment, not a unit price** — 2,000 housings ≈ 250 carcases ≈ 21 kitchens.
+   Whether to hold that much stock is a separate decision from which fixing to use, and both are the
+   owner's. **Nothing was ordered and no supplier was contacted from this KB** (§6a).
+3. **Read from a photograph of a browser, ex VAT, page header cut off.** SKU, price and box size are
+   legible and recorded; **the supplier is not named here because it could not be read**, and the
+   2,000-box price should be confirmed at checkout rather than from the listing panel.
+
+### And the screw listing answers "which screw", on the master's own evidence
+
+**Only the Cabineo 12 is offered in a 2,000 box.** The page's options are **Cabineo 12** (500 / 2000),
+**Cabineo 8** (500) and **Cabineo 8 M6** (500) — so the volume price above is specifically the 12, and the
+8 and M6 are 500-pack items whose prices are not known.
+
+**The master says 12 is the right one.** `03-BOTTOM.TCN` drills its mating holes **Ø5 × 12 mm** in 19 mm
+board, and the Cabineo **12** screw is the 12 mm length (the page states the two lengths are 12 mm and
+8 mm, plus an M6 version). **A 12 mm hole for a 12 mm screw.**
+
+*Stated at the same strength this article already used for the pocket: the hole depth and the screw
+designation agree, which is strong circumstantial support, not a part number read off a drawing. It does
+not close the open question below about **what was actually ordered on 2026-09-19** — a price listing is
+not order paperwork — but it means the expected answer is now specific enough to check in one line.*
+
+**Total outlay if both 2,000 boxes are taken: £574.16 ex VAT** — 2,000 joints, ≈250 carcases, ≈21
+kitchens. *A stocking decision, and the owner's.*
+
+~~**£0.77 for the housing is the number I least trust.** It reads like a single-unit retail price, and
 the original all-in-one Cabineo 12 sells for less than that in 500 packs — which would be odd if the
-housing alone really cost £0.77 in volume. **Challenge it at 2,000.**
+housing alone really cost £0.77 in volume. **Challenge it at 2,000.**~~
+**Challenged 2026-09-28, and it was £0.19 at 2,000** — see the section above. *Kept struck rather than
+deleted: the reasoning was right and is worth leaving visible.*
 
 ### What it costs per unit and per kitchen
 
@@ -261,13 +325,128 @@ pins and cost pennies either way.*
 | Cabineo X | **£6.96** | **£83.52** |
 | **Difference** | **+£6.72** | **+£80.67** |
 
-Halve the housing price on a trade quote and the kitchen difference is still around **£40**. On a
-low-cost range that is real money, and it recurs on every kitchen.
+~~Halve the housing price on a trade quote and the kitchen difference is still around **£40**.~~
+**The real 2,000-price was a quarter, not a half: the kitchen difference is ~£25** (see above). Still
+real money on a low-cost range, and it still recurs on every kitchen — but a third of what this table says.
 
 **Shelf supports would widen the gap further.** The master has two shelves; if Cabineo X housings were
 used as shelf supports too, that is another 8 housings a unit against shelf pins costing pennies. If
 Cabineo X is adopted, it should probably be **for carcase joints only**, with ordinary Ø5 pins for
 shelves — the master already drills Ø5.
+
+## 2026-09-28 — a vertical divider is the same joint, with its own hole length
+
+**The owner asked how to joint a vertical divider into the top and bottom panels**, with a SmartCabinet
+3D wireframe of a carcase carrying one full-height divider. This article had counted carcase joints only.
+
+**The answer is not a new fixing — it is the same Cabineo joint, and the software already knows about
+dividers.** From SmartCabinet's own `giunzioni` page, captured the same day
+(`../Software/smartcabinet-online-manual.md` §7):
+
+- **Joints are configured per cabinet part**, and **`divisori verticali` is one of the eleven parts** with
+  its own configuration. A divider is not an improvisation on the carcase case.
+- Inside the Cabineo configuration, the internal screw carries ***different hole lengths depending on
+  whether it mounts in the structure, in the dividers, or in the back*** — each with its own tool.
+  **The divider case is named by the software itself**, which is as close to a direct answer as a vendor
+  manual gets.
+- There is an **offset to avoid conflicts between opposing joints** ⓯. ***Measured the same day, and it
+  matters less here than this bullet first said*** (`./cabineo-joint-geometry-reconciled.md` §5): the sides'
+  screw holes sit at **X = 11.9 and 588.1** of a 600 mm panel, so **a centre divider collides with nothing**
+  and ⓯ stays at 0. **The real constraint is the thickness** — 13.0 mm of pocket in a 19.0 mm panel leaves
+  **6.0 mm**, and two opposing pockets do not fit.
+- **Three scopes to set it in**, and they are not interchangeable: the `CAM` button (default for all
+  cabinets), the `Giunzioni` button under `Settaggi cabinet` (**this cabinet only**), and
+  `Personalizza Giunzioni` from the `Intagli` window (**individual pieces**).
+
+### What a divider costs
+
+**Four more fixings, and the count is an inference — flagged as one.** The master's sides take **two
+pockets per joint line**, which is how the eight-per-box figure above was counted. A full-height divider
+meets the top panel and the bottom panel, so **at the same two-per-end pattern it adds four**: 8 + 4 =
+**12 per unit**. *That pattern is read across from the sides, not measured on a divider — the master unit
+this KB has decoded has no divider in it.*
+
+| On a unit with one full-height divider | Per unit | vs no divider |
+|---|---|---|
+| **Cabineo X**, 12 joints at £0.2871 | **£3.45** | +£1.15 *(was £2.30)* |
+| Confirmat, 12 joints at ~£0.03 | **£0.36** | +£0.12 |
+
+*My arithmetic from the measured £0.2871 joint above, not a quoted figure.* **The premium a divider adds
+is about £1.15 a unit** — on the same order as the £2.06 the whole carcase costs, because a divider is
+half a carcase's worth of joints.
+
+### What this does not settle
+
+- **The manual is the vendor's, not this shop's.** What the shop's installation actually has in
+  `Configurazione Giunzioni` is **unread**, and the only way to know is to open it.
+- ~~**No dimension in §7 is reconciled with the master's measured geometry** … *the obvious next pass and
+  deliberately not claimed.*~~ **Done the same day** — `./cabineo-joint-geometry-reconciled.md`. It confirms
+  the 37 × 15 × 13 pocket, adds a **45.0 × 18.9 × 2.1 support-base recess no article here had recorded**, and
+  puts the screw axis **7.1 mm from the machined face** — *2.4 mm off centre, so the "tick to centre" note
+  does not describe this master.*
+- **Dowels are the silent default.** *"nel caso che nessun tipo di giunzione sia selezionato saranno
+  inserite solo le spine"* — a divider configured with **no** joint type still produces a part, with
+  dowels and no error. **Silence is a setting**, so the divider's own configuration has to be checked,
+  not assumed to inherit the structure's.
+
+## 2026-10-04 — confirmat as Plan B: the screw, the holes and the bits
+
+**Owner, 2026-10-04:** *"It's worth to research comformat screw option, but it needed right bits too."* **Cabineo X
+stays the decision** (above). This section is about making **Plan B usable**, because confirmat is held in stock and
+the bits are what decide whether it can be used on the day.
+
+### The screw and its three holes (7 × 50, the common size)
+
+| Hole | Where | Size | Why |
+|---|---|---|---|
+| **Clearance** | through the **face** panel (the side) | **Ø7–7.6** | the plain shank must slide through, so the joint pulls tight |
+| **Countersink** | top of the clearance hole | **Ø10–11** | the head sits flush |
+| **Core (pilot)** | into the **edge** of the mating panel (bottom, top rail) | **Ø5**, depth **≥ 33 mm** in a 19 mm side (50 − 19 + ~2) | the thread cuts into chipboard. *Core Ø4.8 for 7 mm screws* |
+
+**Edge distance:** keep **≥ 8 mm** from the panel's end. On a 19 mm panel the hole sits on the centre line,
+9.5 mm in ✓. **Material:** made for **chipboard / MFC, MDF, ply, 15 mm and up**; **18–19 mm is ideal**.
+*Sizes are from manufacturers' and suppliers' listings, not a standard; check them against the screws in stock.*
+
+### The bits — two ways to drill
+
+**1. At the bench, both holes in one pass, with a stepped confirmat bit.** Clamp the joint, drill through the face
+panel into the edge, then screw. This needs **no CNC change at all**: it is how Plan B works on the day.
+- **CMT adjustable step drill 515.050.31: Ø5 / 7.6 / 10.6, length 93.7, shank 9**. From Scott+Sargeant (SKU
+  CM51505031), listed at **£9.60 inc VAT (£8.00 ex)**. *From a web-search snippet, because their site blocks
+  automated readers.* It is now in the **Hardware Price Library**.
+  - The same listing has a **Ø4.2 / 7.6 / 10.6** variant, for a smaller screw.
+  - **Check the 9 mm shank** fits the shop's drill chuck.
+- Other makers (Snappy 43750, Würth, Häfele) make the same Ø5 / 7 / 10 stepped bit, but none was found in UK stock.
+- A **drilling jig** keeps the hole square and on the centre line; *not researched yet*.
+
+**2. On the Vitap, split into a face hole and an edge hole.** This is the production route if confirmat ever
+replaces Cabineo.
+- **Edge Ø5 core:** the head layout shows **Ø5 at horizontal positions 43, 44, 52 and 53**
+  (`../Machinery/vitap-k2-drill-head-tooling.md`). **Their type and useful length have never been read.**
+  Confirmat needs **≥ 33 mm deep**, so **check bush 43 / 44 / 52 / 53 *Useful Length* in WscTecnoManager.**
+- **Face Ø7 clearance:** **there is no Ø7 on the head** (Ø3, 5, 8, 10, 12, 35).
+  - Options: fit a **Ø7 through drill** in a free or spare bush; or use **Ø8** (bush 11), which leaves 1 mm of play
+    around the 7 mm shank. That still clamps, but locates less precisely.
+- **Countersink Ø10–11:** **no countersink on the head.** It is done at the bench with a countersink bit, or the
+  Ø10 blind drill at bush 4 makes a **flat** recess, which is not a true countersink. *Neither tested.*
+- **So a pure-CNC confirmat route needs at least one purchase (Ø7 through drill) and a countersink step.** The
+  bench route needs one £8 bit.
+
+### Not for compact laminate
+
+EGGER's processing instructions (`egger-compact-laminates.md` §6) require **≥ 3 mm of material either side** of
+a hole drilled into an edge, and a **fine** thread, pre-drilled.
+- A **7 mm** confirmat in a **12 mm** compact edge leaves **2.5 mm** per side **✗**, and only 3.0 in 13 mm.
+- Confirmat's **coarse chipboard thread** is the wrong type for HPL.
+- **For compact laminate use EGGER's routes:** RAMPA screw-in sleeves, fine-pitch screws, or glued corner joints.
+
+### What would close Plan B
+
+1. **Which confirmat is in stock** (size: 7 × 50? 6.3 × 50?). It decides the bit.
+2. **Buy one stepped bit** for that size and **trial a joint** on 19 mm offcuts; check the pull-up and that it
+   doesn't split.
+3. **Read bushes 43 / 44 / 52 / 53** (type and useful length). That settles whether the Vitap can drill the
+   edge hole.
 
 ## What each one actually buys you
 
@@ -336,8 +515,9 @@ saw operator actually works from (see Open questions).
   dimensions rather than job files. So what the saw operator actually works from is unrecorded.*
 - **Is a "LAMELLO" or "OVVO" aggregated head actually fitted to `FA2304`?** Both are listed as optional
   in the machine article; neither is confirmed present. One is made by Cabineo's manufacturer.
-- **What Ø are the Vitap's horizontal spindles?** Needed to confirm confirmat's edge core hole is
-  drillable without new tooling.
+- **What Ø are the Vitap's horizontal spindles?** *Partly answered 2026-10-04:* the head layout shows
+  **Ø5 at 43, 44, 52, 53** and Ø8 at 41, 42, 51, 54. **Their type and useful length (confirmat needs ≥ 33 mm)
+  are still unread.** See "confirmat as Plan B" above.
 - ~~**Who chose Cabineo X — and was it a choice?**~~ — **answered by the owner 2026-09-19: it was chosen
   and the connectors are ordered.** The profile was never the evidence; it only pointed at where to ask.
 - **Which Cabineo X variant and which screw were ordered?** The housing takes a Cabineo 8 or 12 screw or
@@ -353,7 +533,10 @@ saw operator actually works from (see Open questions).
   from the side's inside face near the joint. Untested, and only matters if Plan B is used in anger.
 - **What are the Ø10 × 13 holes** on the side panel — three at 32 mm pitch, 11 mm in from the back edge?
   Not identified. Possibly back-panel or cam fixings.
-- **The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.
+- ~~**The trade price of the Cabineo X housing at 2,000** — the number the whole comparison turns on.~~
+  **Answered 2026-09-28: £379.03 ex VAT per 2,000 = £0.19 each** (SKU 186361), and the screw too —
+  **£195.13 per 2,000 = £0.0976 each** (SKU 186381, Cabineo 12). Both halves of the joint are now
+  measured at volume: **£0.2871**.
 - **How many fixings does a whole unit actually take?** The eight carcase fixings are counted, from the
   side panel and confirmed against the bottom. **Back fixings are not identified** — the back is 19 mm
   and housed inside all four panels, and nothing decoded so far shows what holds it. Shelf pins are
