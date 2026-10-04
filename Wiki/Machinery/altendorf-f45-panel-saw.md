@@ -4,7 +4,7 @@ category: Machinery
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-10-04
 sources:
  - ../../Raw/F45 part 1.pdf
  - ../../Raw/F45 part 2.pdf
@@ -29,6 +29,7 @@ related:
  - ../Processes/panel-production-route.md
  - ../Software/smartcabinet-and-production-workflow.md
  - ../Troubleshooting/troubleshooting-altendorf-f45.md
+ - ../Processes/f45-grooving-slots-with-the-main-blade.md
 ---
 
 # Altendorf F45 ElmoDrive — Sliding Table Saw
@@ -158,6 +159,10 @@ enter/measure cutting height → hold Cal ~1s → enter measured value → press
 Altendorf technician log in — the code is printed in the ElmoDrive manual; it is deliberately **not
 reproduced here**, since a published default is still a way into the machine. Screen frames red
 while a technician is connected; ends on machine restart or re-entering the code.
+
+**Slots wider than the blade** (e.g. LED-strip recesses): ElmoDrive **Grooves** function, multi-pass with the
+main blade. Groove cutters wider than 5 mm are not allowed on this two-way-tilt machine. Settings and method:
+`Wiki/Processes/f45-grooving-slots-with-the-main-blade.md`.
 
 ## Safety
 
@@ -354,6 +359,7 @@ is most likely consumed by an operator on screen or paper, not imported.
 | 2026-09-15 | Created from `Raw/F45 part 1.pdf`-`part 8.pdf` (two manuals: main F45 saw + ElmoDrive control unit) and invoice 100153 | Session 6, entry "Altendorf F45 registered" |
 | 2026-09-15 | Added the spare parts manual (4 more parts): confirmed "two-way tilt" variant, added key wear-part numbers (belts, riving-knife holder, saw shaft, scorer blades), created `Wiki/Suppliers/altendorf-gmbh.md` for manufacturer contact/ordering info; PTC resistor and F1-F16 fuses remain unidentified even after this document | Session 7, entry "F45 spare parts manual processed" |
 | 2026-09-17 | **Location corrected to Unit 31.** The workshop moved from Unit 32, which is no longer held; the 2023 invoice address is retained separately because it is what the invoice says. Added "The 2026 move" section with the full re-commissioning tolerance list, a note that the ElmoDrive documents no cut-list import, and a re-commissioning open question. The ElmoDrive remote-maintenance access code was **removed** from this article — a published default is still a way into the machine | Session 14, entry "Networking correction and barcode scoping" |
+| 2026-10-04 | Pointer to the new Grooves-function article (first used for a 16 × 9 LED slot); `related` updated both ways | `change-log-2026-10-04-f45-grooving-led-slot.md` (1) |
 
 ## Sources
 

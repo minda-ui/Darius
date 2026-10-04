@@ -259,6 +259,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Pre-production drawing check** - `Processes/pre-production-drawing-check.md` + skill `.claude/skills/pre-production-drawing-check/`. | 2026-10-03 | pre-production-drawing-check; the Blum articles | Owner |
 | **Standard Kitchen Range — catalogue for Sales, DRAFT v0** - `Outputs/standard-kitchen-range-v0-draft.md` (**5,999 B**, Drive id `1kB_iha5XC23LxM_lppRNIhVHJbtf21am`); readable copy published as a private Claude artifact (https://claude.ai/artifact/29S2i4Sg9RpgnRzEz6jQzS). **For the owner's review; not yet given to Sales.** | 2026-10-03 | smartcabinet-and-production-workflow (to be linked once agreed) | Owner: *"Provide to Sales"* → *"Draft a catalogue for Sales"* |
 | **Panel Price Library** - Smartsheet `Panel Price Library` (`7248546623522692`, 37 rows) and `Suppliers/lathams-panel-price-library.md` (**8,372 B**, Drive id `1-vyPWyauoQlzKx-dapw6CLDZ4SePstw_`); index entry. From all 28 Lathams quotes/sales orders in info@, 75 lines reconciled to each document's Goods total. Change log (54). | 2026-10-03 | lathams-panel-price-library | Owner: *"Create a library for panels with price"* |
+| **F45 Grooves function** - `Processes/f45-grooving-slots-with-the-main-blade.md` (new, **4,727 B**); `Machinery/altendorf-f45-panel-saw.md` pointer + `related` both ways; index entry. First use 2026-10-04: 16 × 9 LED-strip slot, 6 cuts, 3.2 blade. Change log `change-log-2026-10-04-f45-grooving-led-slot.md` (1). | 2026-10-04 | f45-grooving-slots-with-the-main-blade; altendorf-f45-panel-saw | Owner: *"Save it for future"* |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
@@ -283,6 +284,8 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Processes/blum-metabox-smartcabinet-input.md` | **7,094** | `1bCxAk6Btj_-Xh3mlM4E_L2_qoiyrur-W` — **created 2026-10-02** |
 | `Wiki/Suppliers/blum-library.md` | see file | `1cj6z6xuTHl1y8j_IVVLDoMPsru2sX679` — **created 2026-10-02** |
 | `Wiki/Suppliers/lathams-panel-price-library.md` | **8,372** | `1-vyPWyauoQlzKx-dapw6CLDZ4SePstw_` — **created 2026-10-03** (placeholder, then in place from disk) |
+| `Wiki/Processes/f45-grooving-slots-with-the-main-blade.md` | **4,727** | `15hWrHF9KCCXKpRhXwgP_ArhSvvj_fFdb` — **created 2026-10-04** (placeholder, then in place from disk) |
+| `Outputs/change-log-2026-10-04-f45-grooving-led-slot.md` | see file | `1g2NvkYPXtI79TIzTSj0hDxRIJGdi03Wz` — **created 2026-10-04** |
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
 | `Wiki/Processes/blum-runners-tandem-movento-smartcabinet-input.md` | **9,190** | `11L-BL7gapj9g_3kgnQAzP7HFSNSEnIAA` — **created 2026-10-02** |
 | `Wiki/Processes/blum-legrabox-smartcabinet-input.md` | **8,686** | `17cZnqRHkDCo8BPCEuxV2IgD64zSFWHvo` — **created 2026-10-03** |
