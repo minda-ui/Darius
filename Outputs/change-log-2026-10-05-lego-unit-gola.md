@@ -28,3 +28,14 @@ channel, **rows 2 and 3** at the C, and **row 4** from underneath, which needs *
 - **Capacity warning:** 8 × M at LW 448 is only **~90 L** (~11 L each), against the **~150–200 L** estimated from the
   owner's photo. Taller drawers (K on lower legs, or C in the bottom two rows) raise it; to decide with the owner.
 - **Assumed, to confirm:** the 30 mm opening; legs vs plinth; drawer heights.
+
+## (3) C drawers in the bottom two rows — needs lower legs
+
+**Owner:** *"C drawers in the bottom two rows."*
+- **Assumed minimum fronts** (side height + ~12; *to check on Blum's planning pages*): **M ~105, K ~140, C ~190**.
+  Openings 30 at each GOLA channel, gaps 3.
+- **On 150 legs** (582 front zone): 2 × 190 + 2 × M leaves ~68 for each M ✗ — **doesn't fit**.
+- **Needed:** 2 × 105 + 2 × 190 + 30 + 30 + 6 = **656** front zone → carcase ~674 → **legs ~75 mm** (row 4 still has a
+  finger gap under it). Capacity **~146 L** (4 × M ~11 L + 4 × C ~25 L).
+- **Alternative on 150 legs:** K in the bottom rows (~140 fronts) fits, ~115 L.
+- Put to the owner: legs ~75 with C, or 150 with K.
