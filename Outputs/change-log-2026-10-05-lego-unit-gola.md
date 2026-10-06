@@ -55,3 +55,15 @@ boxes could run up to the opening.
   fronts = box side + offsets. **Not Blum or Häfele figures** — to confirm by a dry-fit (side offcut with a C Plus
   notch, one drawer, one front) or from Blum's planning for recessed grips, before anything is cut.
 - *The Composio MCP server reported 502 at session start; the Composio CLI used for uploads worked.*
+
+## (5) 2026-10-06 — taller unit, four rows of C
+
+**Owner:** *"Let's do unit taller to fit 4 rows of C."* Same assumptions as (4) (front ~13 below box base; 30 openings
+centred; 3 mm clearance where a box runs up to a gap).
+- **Minimum fronts, top to bottom:** row 1 (under B Plus) **~218**; row 2 (above C Plus) **~202**; row 3 (below C Plus)
+  **~212**; row 4 **~190**. Sum 822 + openings 60 + gaps 6 = **888 front zone** → carcase ~906 with an 18 top →
+  **~970 overall on 65 legs**.
+- **Equal fronts** (all ~218): 872 + 66 = 938 → **~1,020 overall**.
+- **Capacity ~200 L** (8 × C at LW 448, ~25 L each) — matches the ~150–200 L estimated from the photo. Full C drawer
+  ~9 kg, well under the 40 kg runner rating.
+- Still to confirm by dry-fit before cutting.
