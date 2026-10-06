@@ -39,3 +39,20 @@ channel, **rows 2 and 3** at the C, and **row 4** from underneath, which needs *
   finger gap under it). Capacity **~146 L** (4 × M ~11 L + 4 × C ~25 L).
 - **Alternative on 150 legs:** K in the bottom rows (~140 fronts) fits, ~115 L.
 - Put to the owner: legs ~75 with C, or 150 with K.
+
+## (4) 2026-10-06 — Option 1 chosen; then corrected: the GOLA notches take space from the drawer boxes
+
+**Owner:** *"Option 1, 75mm legs."* Working the stack out properly showed an error in (3): **the profile sits in a 26 mm
+notch at the front of the carcase, exactly where the LEGRABOX box sides start** (just behind the front). So **no box
+can be level with a profile**, and a front next to a profile must be **taller than its box by the overlap** —
+~21.5 at the C Plus (73 profile, 30 opening, centred) and ~27.5 at the B Plus (57.5 notch). (3) sized fronts as if
+boxes could run up to the opening.
+- **Option 1 recomputed** (M, M, C, C): fronts ~131 / 115 / 212 / 190 + 60 openings + 6 gaps = **~714** — needs the whole
+  750 with **no legs**, and row 4 then has no finger gap. **✗**
+- **A — N, N, C, C:** 107 / 91 / 212 / 190 → **~666** → legs **~65**. ~129 L. *Keeps C in the bottom two rows.*
+- **B — M, M, K, C:** 131 / 115 / 163 / 190 → ~665 → legs ~65. ~131 L.
+- **Assumptions behind every figure:** front bottom ~13 below box base; 30 mm openings centred on the profiles; minimum
+  fronts = box side + offsets. **Not Blum or Häfele figures** — to confirm by a dry-fit (side offcut with a C Plus
+  notch, one drawer, one front) or from Blum's planning for recessed grips, before anything is cut.
+- **Drive not updated for this entry**: the Composio connection used for in-place uploads returned 502 at session start;
+  git is ahead of Drive for this file until it is back.
