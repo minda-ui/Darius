@@ -54,5 +54,4 @@ boxes could run up to the opening.
 - **Assumptions behind every figure:** front bottom ~13 below box base; 30 mm openings centred on the profiles; minimum
   fronts = box side + offsets. **Not Blum or Häfele figures** — to confirm by a dry-fit (side offcut with a C Plus
   notch, one drawer, one front) or from Blum's planning for recessed grips, before anything is cut.
-- **Drive not updated for this entry**: the Composio connection used for in-place uploads returned 502 at session start;
-  git is ahead of Drive for this file until it is back.
+- *The Composio MCP server reported 502 at session start; the Composio CLI used for uploads worked.*
