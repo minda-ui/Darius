@@ -31,3 +31,17 @@ motor with all motor details."*
 - **Fallback if no LRE16 by Friday:** an LRD16 on its own mounting terminal block, wired in series in the same
   position — an electrician's job; *the block part number to be confirmed with the wholesaler*. **The motor must not
   run on the LRE22.**
+
+## (3) Mail: minda@ connected on info@'s terms; the LRE16 order found — arrives after the motor swap
+
+- **eBay approved** (*"It's from Ebay"*) — §6b, narrowest scope: order confirmations from `ebay@ebay.co.uk` /
+  `ebay@ebay.com`, only for purchases the owner names. Nothing found in info@.
+- **minda@fishboneconstruction.co.uk connected** (*"Let's give you access to minda@… via composio"*). Scope put as a
+  question; owner chose **"Same as info@"** — read-only, approved senders only. Connection `darius-gmail-minda` created
+  by `composio link`, authorised by the owner, **confirmed by `GMAIL_GET_PROFILE` before §6b was amended**, then read.
+- **Found (minda@, eBay, 2026-10-08 11:58 UTC):** **Schneider Electric LRE16**, "New NFP" (new, not in factory
+  packaging), eBay item 336055236752, order **07-15274-63159**, seller **maxodeals, Roosendaal, Netherlands**. **£13.98 +
+  £21.03 postage + £7.00 VAT = £42.01.** **Estimated delivery Sat 10 – Wed 14 Oct** — *after* the planned Fri 9 / Sat 10
+  motor swap. Delivered to a home address, not the workshop. *Payment card and address not copied here.*
+- **Consequence recorded on `FL-003`:** the new motor should not be run on the LRE22; either commission when the LRE16
+  arrives, or get one locally for Friday.
