@@ -210,7 +210,8 @@ were the whole mailbox read-only, and read-plus-drafts).
   `northeastgrinding@outlook.com`, not the domain** — outlook.com is a public mail service, so approving the domain
   would approve anyone on it. Seen on the first, name-only search the same day; searches use `from:` that address.
   **eBay order confirmations** (2026-10-08 — the owner, asked who sent the proof of an LRE16 overload purchase: *"It's
-  from Ebay"*). **Narrowest scope that does the job:** eBay's order-confirmation address `ebay@ebay.co.uk`, and only
+  from Ebay"*). **Narrowest scope that does the job:** eBay's order-confirmation addresses `ebay@ebay.co.uk` and `ebay@ebay.com` (the second added the same day, when
+  nothing came from the first — eBay UK sends from both), and only
   messages about **workshop purchases the owner names** (searched as `from:ebay@ebay.co.uk` plus the item, e.g.
   `LRE16`). eBay also sends marketing and messages about other purchases from that address; those are **not opened,
   quoted or filed**. **Every new domain needs the owner's OK** before it is
