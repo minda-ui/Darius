@@ -70,3 +70,11 @@ fires up, you will show me candidates for skill and I will choose which adopt an
 for the owner to review and send; never send, reply, forward, delete, label, or edit/delete a draft once made.
 **Not in force until the owner changes `.claude/settings.json`** — the `GMAIL_CREATE_*` deny covers drafts; proposed
 replacement: `GMAIL_CREATE_LABEL*` + `GMAIL_CREATE_FILTER*`. Darius does not edit its own permissions.
+
+## (7) Proposed `.claude/settings.json` for drafts — for the owner to apply
+
+**Owner:** *"Create full replacement."* Written as `Outputs/2026-10-08-proposed-settings.json` (Drive `1IRaO7mHO5ogDMgKlvF7gPJuLhvXRVxQB`); **the live
+settings file was not touched.** Changes against the current file: `GMAIL_CREATE_*` → `GMAIL_CREATE_LABEL*` +
+`GMAIL_CREATE_FILTER*` (allows `GMAIL_CREATE_EMAIL_DRAFT` only); **plus denies for every write action of the native
+Gmail MCP connector** (`mcp__Gmail__send_message`, reply, forward, drafts, trash, labels, spam), which until now §6b
+covered by policy only. Everything else identical; valid JSON checked.
