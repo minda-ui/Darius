@@ -272,6 +272,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **North East Grinding** - `Suppliers/north-east-grinding.md` (new, **3,288 B**) from six emails (bodies only; receipts unopened); `CLAUDE-Rules.md` §6b approved sender `northeastgrinding@outlook.com` (in place, 20,686 B); `f45-blades-tct-vs-pcd.md` sharpening-cost section; Scott+Sargeant related; index entry. Change log 2026-10-04 (21). | 2026-10-04 | north-east-grinding; f45-blades-tct-vs-pcd | Owner: *"Under my authority please add North East Grinding in approved mail senders list"* |
 | **North East Grinding receipts** - five cash-sale receipts read for line items on the owner's OK (not filed; local copies deleted); `north-east-grinding.md` price list (5,022 B), `f45-blades-tct-vs-pcd.md` cost section and payback (7,744 B); Hardware Price Library Stehle 58100388 row. Change log 2026-10-04 (22). | 2026-10-04 | north-east-grinding; f45-blades-tct-vs-pcd | Owner: *"2. Yes"* |
 | **Häfele GOLA** - `Processes/hafele-gola-profiles.md` (new, **4,403 B**) from the owner's catalogue `Raw/blaetterkatalog.pdf`; extract filed in new `Raw/Hafele/`; index entry. Change log 2026-10-05 (1)-(2). | 2026-10-05 | hafele-gola-profiles | Owner: *"Häfele PDFs are in Raw"* |
+| **Extractor motor repair quotes** - `Outputs/2026-10-08-extractor-motor-repair-quote-requests.md` (new, 3,285 B): three shops and the email text for the owner to send; Fault Log `FL-003` remedy updated. Change log 2026-10-08 (1). | 2026-10-08 | aes-saf-10000-stk-extractor | Owner: *"Old motor needs repairing. Find repair shops in Newcastle"* |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
@@ -305,6 +306,8 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Wiki/Suppliers/north-east-grinding.md` | **5,022** | `1EYskU0Eksr-OFNbQdxtW5Z37KbPhfofQ` — **created 2026-10-04** (placeholder, then in place from disk) |
 | `Wiki/Processes/hafele-gola-profiles.md` | **4,403** | `1jZzT0To9-PsMZ8Fx31xB0VJCy8I4MUuN` — **created 2026-10-05** (placeholder, then in place from disk) |
 | `Outputs/change-log-2026-10-05-lego-unit-gola.md` | **2,401** | `11zQIjYppTuT8BXdQ82blwj9-XETJcUpN` — **created 2026-10-05** |
+| `Outputs/2026-10-08-extractor-motor-repair-quote-requests.md` | **3,285** | `1nAUIX1aAw0ZdckT9ik_C0QgjDU-DgEO4` — **created 2026-10-08** |
+| `Outputs/change-log-2026-10-08-extractor-motor-repair.md` | **1,656** | `1Ha28hXZt_bY_f0Grht9YZoEeovlkkcad` — **created 2026-10-08** |
 | `Raw/Hafele/` folder; `Hafele_TCH_Design_GOLA_profiles_pp4.236-247G.pdf` | **35,143,971** | folder `1r29xjiIBf9pQNkJckfTkJOnpzowIK9ai`; file `1_ZELbxgCbam2NE84M6YCL1U54ej8qIGA` — **created 2026-10-05**, extract of `Raw/blaetterkatalog.pdf` (`1ZLGTmMQ_NG3JGREW4_lOiwRsHnh2fd0F`) |
 | `Outputs/change-log-2026-10-04-f45-grooving-led-slot.md` | see file | `1g2NvkYPXtI79TIzTSj0hDxRIJGdi03Wz` — **created 2026-10-04** |
 | `Wiki/Processes/blum-clip-top-hinges-smartcabinet-input.md` | **10,515** | `1nh0YvFGvyjd8CzP4frknYxQjz-oSpvyY` — **created 2026-10-02** |
