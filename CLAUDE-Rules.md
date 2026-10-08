@@ -226,6 +226,16 @@ were the whole mailbox read-only, and read-plus-drafts).
   `gmail_rebush-slad`, also info@; the owner is to remove it and the two expired attempts.* The other Gmail connections in
   the shared Composio workspace — including `victoria-gmail-info` — **belong to other seats and are not used**.
 
+2026-10-08: **a second mailbox, minda@fishboneconstruction.co.uk, on the same terms.** The owner: *"Let's give you
+access to minda@fishboneconstruction.co.uk via composio"*, after an eBay order confirmation could not be found in info@.
+**The scope was put as a question and the owner chose "Same as info@"** (over "read-only, whole mailbox" and "read plus
+drafts"). So **everything in the rule above applies unchanged to this mailbox**: read-only; **approved senders only**
+(the same list); never send, reply, draft, forward, delete, trash, label or modify; anything else a search returns is
+not opened, quoted or filed. **Connection:** Composio **`darius-gmail-minda`** (`ca_C_G_wYdk-AZT`), created by
+`composio link` and **authorised by the owner**; **confirmed minda@fishboneconstruction.co.uk by one
+`GMAIL_GET_PROFILE` call before this paragraph was written** — the order of 2026-10-03 (confirm, amend, then read).
+**Every call carries `--account darius-gmail-minda`**; the settings' Gmail denies apply to it as to info@.
+
 **Tooling.** The owner narrowed the repo's `.claude/settings.json` herself (commit `e7029e1`, `main`): the blanket
 `GMAIL_*` deny became **per-action denies for every write, list, search and settings action**, plus a deny on
 `composio execute -p`, leaving `GMAIL_FETCH_EMAILS`, `GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID`/`_BY_THREAD_ID`,
