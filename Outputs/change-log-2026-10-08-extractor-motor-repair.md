@@ -78,3 +78,17 @@ settings file was not touched.** Changes against the current file: `GMAIL_CREATE
 `GMAIL_CREATE_FILTER*` (allows `GMAIL_CREATE_EMAIL_DRAFT` only); **plus denies for every write action of the native
 Gmail MCP connector** (`mcp__Gmail__send_message`, reply, forward, drafts, trash, labels, spam), which until now §6b
 covered by policy only. Everything else identical; valid JSON checked.
+
+## (8) Settings applied by the owner; three drafts created in minda@
+
+**Owner:** *"Settings updated, create the drafts."* `main` (`3a19f33`) merged into this branch; **`.claude/settings.json`
+is identical to the proposal** (`GMAIL_CREATE_*` → `_LABEL*` + `_FILTER*`; native Gmail MCP write tools denied).
+- **First attempt refused** — a combined command also mentioning `GMAIL_CREATE_EMAIL_DRAFT` ran before the merge, while
+  the old `GMAIL_CREATE_*` deny was still in force. **The deny worked as designed**; nothing was created.
+- **Drafts created** (`GMAIL_CREATE_EMAIL_DRAFT`, `--account darius-gmail-minda`), subject *"Quote request - 11 kW OMEGA
+  motor, insulation failure, test and repair"*, body = `Outputs/2026-10-08-extractor-motor-repair-quote-requests.md`,
+  signed as the owner's own email signature:
+  - **ADC Electrical** — info@adc-electrical.co.uk — draft `r-967162823884410110`
+  - **Team Rewinds** — sales@teamrewindsltd.co.uk *(directory address — owner to confirm by phone)* — `r-1052401179081407038`
+  - **BAWCo** — sales@bawco.com — `r-2832137272361694503`
+- **Nothing sent.** The owner reviews and sends. Replies will only be read once those senders are approved (§6b).
