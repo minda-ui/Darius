@@ -50,3 +50,16 @@ motor with all motor details."*
 
 **Owner:** *"Option 1, we'll wait for LRE16."* Fit the new motor Fri 9 / Sat 10 Oct, **don't run it** until the LRE16
 arrives (est. Sat 10 – Wed 14 Oct). Recorded on `FL-003`.
+
+## (5) Good night now proposes skill candidates
+
+**Owner:** *"Every time we trigger 'Good Night' … propose me candidates for skill from all day's work. When this trigger
+fires up, you will show me candidates for skill and I will choose which adopt and which to delete."*
+- **New skill `.claude/skills/good-night/`**: runs `end-of-day` first, then reviews the whole day's change-log entries
+  and conversation for 2–5 candidates (repeated sequences, methods learnt the hard way, lookups with known sources),
+  each with trigger, steps and evidence; the owner chooses **Adopt / Delete / Later**.
+- **New register `Outputs/skill-candidates-register.md`**: every decision; deleted candidates are not offered again.
+- **`end-of-day` skill (2026-09-29) brought onto this branch** from `claude/vigilant-bell-olevtr`, where it had sat
+  unmerged; the matching "good night" **hook** lives in that branch's `.claude/settings.json` and is **not** merged here
+  (`AWT-0225`, the owner's) — so for now the skills fire on the words alone.
+- **Charter:** `CLAUDE-Lessons.md` §3, new paragraph (in place).

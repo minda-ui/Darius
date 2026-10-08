@@ -11,6 +11,17 @@ ordinary change re-emits this file rather than all 86,856 bytes of the old monol
 ## 3. Workflow for processing new items
 
 Group workflow (Detect → Register → Read → Extract → Update → Check → Log → Output → Commit).
+
+**At every good night, propose skill candidates from the whole day's work** (owner, 2026-10-08: *"Every time we
+trigger 'Good Night', propose me candidates for skill from all day's work … I will choose which to adopt and which to
+delete"*). Close the day's change log first, then offer 2–5 candidates — repeated sequences, methods learnt the hard
+way, lookups with known sources — each with its trigger, steps and evidence; **the owner adopts, deletes or defers each
+one**. Adopted ones become `.claude/skills/<name>/`; **every decision** is recorded in
+`Outputs/skill-candidates-register.md`, and deleted ones are not offered again. The method is the skill
+`.claude/skills/good-night/`, which first runs `.claude/skills/end-of-day/` (2026-09-29, brought onto this branch
+from `vigilant-bell` the same day). *The "good night" hook that fires it deterministically is in `vigilant-bell`'s
+`.claude/settings.json`, which is still unmerged (`AWT-0225`); until the owner merges it, the skill fires on the words
+alone.*
 Lessons from Sessions 2–15, all on real incidents rather than invented ahead of time:
 - For a multi-part scanned manual, extract via background sub-tasks (split across parallel agents
   for large sets, e.g. 8 parts as two 4-part agents) rather than reading everything inline; flag
