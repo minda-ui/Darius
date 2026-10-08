@@ -92,3 +92,14 @@ is identical to the proposal** (`GMAIL_CREATE_*` → `_LABEL*` + `_FILTER*`; nat
   - **Team Rewinds** — sales@teamrewindsltd.co.uk *(directory address — owner to confirm by phone)* — `r-1052401179081407038`
   - **BAWCo** — sales@bawco.com — `r-2832137272361694503`
 - **Nothing sent.** The owner reviews and sends. Replies will only be read once those senders are approved (§6b).
+
+## (9) First good-night skill review — three adopted
+
+Candidates from today and since the last good night; **owner adopted all three**:
+- **`approve-mail-sender`** — record the OK in §6b first (single address for public domains, item-scoped for
+  marketplaces), confirm a new mailbox by profile, then `from:`-only search, bodies only, no bank/card/address data.
+- **`supplier-quote-request`** — 2–3 local firms, own-site contacts preferred, Cloudflare not bypassed, request text in
+  `Outputs/`, drafts in minda@ listed back, never sent.
+- **`raw-folder-check`** — list Raw/ directly newest-first (never search or a date filter), size-check, extract
+  catalogue pages into `Raw/<Supplier>/`, original left in place.
+Recorded in `Outputs/skill-candidates-register.md`.
