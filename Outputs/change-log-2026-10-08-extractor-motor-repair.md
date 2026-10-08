@@ -45,3 +45,8 @@ motor with all motor details."*
   motor swap. Delivered to a home address, not the workshop. *Payment card and address not copied here.*
 - **Consequence recorded on `FL-003`:** the new motor should not be run on the LRE22; either commission when the LRE16
   arrives, or get one locally for Friday.
+
+## (4) Decision: wait for the LRE16
+
+**Owner:** *"Option 1, we'll wait for LRE16."* Fit the new motor Fri 9 / Sat 10 Oct, **don't run it** until the LRE16
+arrives (est. Sat 10 – Wed 14 Oct). Recorded on `FL-003`.
