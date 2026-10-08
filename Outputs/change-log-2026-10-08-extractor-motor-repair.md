@@ -63,3 +63,10 @@ fires up, you will show me candidates for skill and I will choose which adopt an
   unmerged; the matching "good night" **hook** lives in that branch's `.claude/settings.json` and is **not** merged here
   (`AWT-0225`, the owner's) — so for now the skills fire on the words alone.
 - **Charter:** `CLAUDE-Lessons.md` §3, new paragraph (in place).
+
+## (6) Drafts allowed in minda@ and info@ — never send
+
+**Owner:** *"Allow drafts in minda@ (and info@), never send."* Recorded in CLAUDE-Rules §6b: Darius may create drafts
+for the owner to review and send; never send, reply, forward, delete, label, or edit/delete a draft once made.
+**Not in force until the owner changes `.claude/settings.json`** — the `GMAIL_CREATE_*` deny covers drafts; proposed
+replacement: `GMAIL_CREATE_LABEL*` + `GMAIL_CREATE_FILTER*`. Darius does not edit its own permissions.

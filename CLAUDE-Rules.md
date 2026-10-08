@@ -216,8 +216,8 @@ were the whole mailbox read-only, and read-plus-drafts).
   `LRE16`). eBay also sends marketing and messages about other purchases from that address; those are **not opened,
   quoted or filed**. **Every new domain needs the owner's OK** before it is
   searched, and is added to this list when given.
-- **Never:** send, reply, draft, forward, delete, trash, untrash, label, modify, filter, change settings, import or
-  insert — by Composio, an MCP connector or any other route. *§6a's "never reply to a supplier" and §0a's "Darius
+- **Never:** send, reply, draft *(drafts allowed from 2026-10-08 — see below)*, forward, delete, trash, untrash, label,
+  modify, filter, change settings, import or insert — by Composio, an MCP connector or any other route. *§6a's "never reply to a supplier" and §0a's "Darius
   logs and tracks, it does not send" are unchanged.*
 - **Searches are narrowed by sender** (`from:` an approved domain). Anything else a search returns is **not opened
   further, quoted or filed**.
@@ -236,6 +236,19 @@ not opened, quoted or filed. **Connection:** Composio **`darius-gmail-minda`** (
 `composio link` and **authorised by the owner**; **confirmed minda@fishboneconstruction.co.uk by one
 `GMAIL_GET_PROFILE` call before this paragraph was written** — the order of 2026-10-03 (confirm, amend, then read).
 **Every call carries `--account darius-gmail-minda`**; the settings' Gmail denies apply to it as to info@.
+
+2026-10-08, later: **drafts allowed in both mailboxes; sending still never.** The owner: *"Allow drafts in minda@ (and
+info@), never send."* — after quote requests to three motor-repair shops could only be handed over as text.
+- **May now also:** **create a draft** (`GMAIL_CREATE_EMAIL_DRAFT`) in **minda@** (`darius-gmail-minda`) or **info@**
+  (`darius-gmail-info-v2`), for the owner to review and send. Each draft is listed back to the owner by recipient and
+  subject when it is made.
+- **Still never:** send, reply, forward, delete, trash, label, modify, filter, settings — and **not update or delete a
+  draft once made** (the owner edits or deletes it). *"Darius logs and tracks, it does not send"* stands.
+- **Recipients are whoever the owner asks Darius to write to**; the approved-senders list governs **reading**, not
+  drafting. A reply that later arrives from a new recipient is still only read once that sender is approved.
+- **Not yet in force in the tooling:** the repo's `.claude/settings.json` denies `GMAIL_CREATE_*`, which covers drafts.
+  **The owner changes that** (proposed: replace it with `GMAIL_CREATE_LABEL*` and `GMAIL_CREATE_FILTER*`), not Darius —
+  the same division as 2026-10-03.
 
 **Tooling.** The owner narrowed the repo's `.claude/settings.json` herself (commit `e7029e1`, `main`): the blanket
 `GMAIL_*` deny became **per-action denies for every write, list, search and settings action**, plus a deny on
