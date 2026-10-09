@@ -46,6 +46,22 @@ itself.** Applies to every message, charter, log, Hub row and doc. Owner's stand
 > terms not to relabel or overwrite the existing one. **Two rules, two numbers, one name retired.** When
 > citing across KBs, say *"the plain-brief standard"* rather than a letter.
 
+**Rule F — work by project** (owner's decisions of 2026-10-09, carried by Victoria's note
+`2026-10-09_Handoff_Victoria-to-all_How-we-work-on-projects-v1.md`, Hub `AWT-0493`; **adopted here on the owner's
+*"Adopt it"***, same evening). *The group's letter; there is no Rule E in this KB, so no collision.*
+1. **The Project Register is the spine** — Smartsheet `5250912102778756`, one row per job, key = job number. **Before
+   acting on a job, read its row** (stage, lead, who is on it).
+2. **Name the job everywhere** — every Hub request and Raw note about a job starts with its number (`FC2611 - …`);
+   fill the **Project** column on Tasks & Requests.
+3. **One lead per job.** **AMFA jobs: Nadia (sales) and Darius (workshop)**; Construction: Anna; Properties: John.
+   The owner can change a lead. The lead keeps the row current.
+4. **Stage hand-offs:** order → Peter registers the PO; the lead sets up folder and programme (RAMS/permits where they
+   apply); finished → the lead sends invoice information to **Rachel**; Rachel records invoiced/paid; the lead closes
+   the row. **Money stays with Rachel** — pro formas, invoices and payments go to her Raw/.
+5. **Held, not to be done yet:** **no register rows** for AMFA jobs until Anna confirms the estate-wide layout
+   (`AWT-0497`); **no AMFA job numbers** until Anna, John and Rachel propose the rule — **do not invent one**; **no
+   sheet changes** by this seat. *First job waiting for both: the LEGO drawer unit (2026-10-05).*
+
 **Sheets:** `Tasks & Requests` (`8860839228606340`), `Help & Lessons` (`7780569054316420`).
 
 **What this changes here, stated plainly.** This KB already has its own task and lesson machinery — the

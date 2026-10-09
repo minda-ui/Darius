@@ -276,6 +276,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Good night proposes skill candidates** - `.claude/skills/good-night/SKILL.md` (new); `.claude/skills/end-of-day/SKILL.md` brought from `vigilant-bell`; `Outputs/skill-candidates-register.md` (new, 701 B); `CLAUDE-Lessons.md` §3 paragraph (in place, 25,244 B). Change log 2026-10-08 (5). | 2026-10-08 | none (charter §3; `.claude/` is git-only) | Owner: *"Every time we trigger 'Good Night' … propose me candidates for skill"* |
 | **Gmail drafts allowed; three repair-quote drafts** - `CLAUDE-Rules.md` §6b (drafts in minda@ and info@, never send); `Outputs/2026-10-08-proposed-settings.json` (Drive `1IRaO7mHO5ogDMgKlvF7gPJuLhvXRVxQB`), applied by the owner on `main` (`3a19f33`) and merged; drafts `r-967162823884410110`, `r-1052401179081407038`, `r-2832137272361694503` in minda@. Change log 2026-10-08 (6)-(8). | 2026-10-08 | aes-saf-10000-stk-extractor | Owner: *"Allow drafts in minda@ (and info@), never send"* |
 | **Three skills adopted at the first good-night review** - `.claude/skills/approve-mail-sender/`, `supplier-quote-request/`, `raw-folder-check/` (new); `Outputs/skill-candidates-register.md` rows. Change log 2026-10-08 (9). | 2026-10-08 | none (`.claude/` is git-only) | Owner: Adopt ×3 |
+| **Rule F adopted** - Victoria's note `Raw/2026-10-09_Handoff_Victoria-to-all_How-we-work-on-projects-v1.md` (`1CXOFIphDfgtXq0NAluMuls3wYuaRvW3I`) read; `CLAUDE-Rules.md` §0b Rule F (in place, 25,095 B). Change log 2026-10-09 (2). | 2026-10-09 | none (charter) | Owner: *"Adopt it"* |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
 
@@ -311,6 +312,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Outputs/change-log-2026-10-05-lego-unit-gola.md` | **2,401** | `11zQIjYppTuT8BXdQ82blwj9-XETJcUpN` — **created 2026-10-05** |
 | `Outputs/2026-10-08-extractor-motor-repair-quote-requests.md` | **3,285** | `1nAUIX1aAw0ZdckT9ik_C0QgjDU-DgEO4` — **created 2026-10-08** |
 | `Outputs/change-log-2026-10-08-extractor-motor-repair.md` | **1,656** | `1Ha28hXZt_bY_f0Grht9YZoEeovlkkcad` — **created 2026-10-08** |
+| `Outputs/change-log-2026-10-09-rule-f-projects.md` | **1,538** | `1FMCCAHyh2RdDreSWJRiJGKISU6xls9OU` — **created 2026-10-09** |
 | `Outputs/skill-candidates-register.md` | **701** | `14wsys9LZm62NFIibg11r_CICrEcdvjNV` — **created 2026-10-08** |
 | `Outputs/2026-10-08-proposed-settings.json` | see file | `1IRaO7mHO5ogDMgKlvF7gPJuLhvXRVxQB` — **created 2026-10-08** |
 | `Raw/Hafele/` folder; `Hafele_TCH_Design_GOLA_profiles_pp4.236-247G.pdf` | **35,143,971** | folder `1r29xjiIBf9pQNkJckfTkJOnpzowIK9ai`; file `1_ZELbxgCbam2NE84M6YCL1U54ej8qIGA` — **created 2026-10-05**, extract of `Raw/blaetterkatalog.pdf` (`1ZLGTmMQ_NG3JGREW4_lOiwRsHnh2fd0F`) |
