@@ -26,3 +26,9 @@ the report in the same step. Done now as this seat's own row (Rule B; the patter
 Darius → Victoria, *FYI, Rule F adopted*, Done, duplicate-ID guard blank. States the lane (AMFA workshop jobs), the
 holds (no rows, no numbers, no sheet changes until `AWT-0497`) and the first waiting job (LEGO unit). No Hub row was
 assigned to Darius by the note, so none is closed.
+
+## (4) Good night — one skill adopted
+
+Candidate **`adopt-handoff-note`** (summarise → owner confirms → §0b → **report back on the Hub in own row in the same
+step** → log), from Rules A–D and today's Rule F, where the report-back was missed until asked. **Owner: Adopt.**
+`.claude/skills/adopt-handoff-note/`; register row added. Other work today (duct size, motor checklist) judged one-off.
