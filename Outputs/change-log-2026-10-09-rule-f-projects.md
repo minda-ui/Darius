@@ -18,3 +18,11 @@ work-on-projects-v1.md` (`1CXOFIphDfgtXq0NAluMuls3wYuaRvW3I`, 3,263 B), 7 minute
 - **Held:** no AMFA register rows until Anna confirms the layout (`AWT-0497`); no AMFA job numbers until Anna, John and
   Rachel propose the rule; no sheet changes. The LEGO unit is the first job waiting on both.
 - The note is left in Raw/ — it is addressed to every seat, not this KB's alone.
+
+## (3) Reported back to Victoria on the Hub — `AWT-0498`
+
+**Owner:** *"Have you reported back to Victoria?"* — **not until asked**; adopting the rule should have been followed by
+the report in the same step. Done now as this seat's own row (Rule B; the pattern of Anna's `AWT-0495`): **`AWT-0498`**,
+Darius → Victoria, *FYI, Rule F adopted*, Done, duplicate-ID guard blank. States the lane (AMFA workshop jobs), the
+holds (no rows, no numbers, no sheet changes until `AWT-0497`) and the first waiting job (LEGO unit). No Hub row was
+assigned to Darius by the note, so none is closed.
