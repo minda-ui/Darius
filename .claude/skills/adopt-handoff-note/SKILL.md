@@ -14,7 +14,9 @@ sheet **Tasks & Requests** `8860839228606340`; **own rows only, never another se
 2. **Say what it means for this seat**, briefly: what Darius does, what Darius leads, what is **held** ("do not … until").
 3. **Ask the owner to confirm adoption.** Nothing goes into the charter before the owner's word (as for Rules A–D, F).
 4. **Write it into `CLAUDE-Rules.md` §0b** under the group's letter — **check for a clash with this KB's own letters
-   first** (the 2026-09-22 Rule C/D collision). Quote the owner's words and date; list the holds. Publish in place, verify.
+   first** (the 2026-09-22 Rule C/D collision) **and against the estate's letters on the Hub** — open rows assigned to
+   Darius may carry a rule not yet adopted (2026-10-10: "Rule F" was already the 27/09 broadcast rule, `AWT-0147`). A
+   note headed *"(Rule F)"* is usually a **Rule F broadcast**, not a new rule. Quote the owner's words and date; list the holds. Publish in place, verify.
 5. **Report back on the Hub in the same step — not when asked** (2026-10-09: missed until the owner asked):
    - next free `AWT-` id: filter the sheet for the next few ids and take the first absent one;
    - Assigned to the note's author, Requested by **Darius**, *"FYI, Rule X (AWT-…): adopted on Minda's word…"*, the
