@@ -35,3 +35,8 @@ collision check looked at this KB's own letters and not at the Hub rows assigned
   connection faults at K1 (T2 burnt 30/09, a phase off today) fit a long-standing poor supply wearing the insulation
   down, with an overload that could not trip below 16 A. Proposed: **retighten every power terminal** (F1, K1–K3, T1).
 - **Still to do:** LRE16 at 11.6 A; three phase currents in delta; rotation and suction; old motor's B/C readings.
+
+## (5) Suction good at the F45; Raw/ check
+- **Owner:** *"Suction is good at the F45"* — fan moving air, rotation right. `FL-003` updated; still open for the LRE16,
+  phase currents, other ports, terminal retightening, old motor's B/C readings.
+- **Raw/ checked** (direct listing, plus Review, Blum, EGGER, Hafele): nothing new since Anna's note at 09:08.
