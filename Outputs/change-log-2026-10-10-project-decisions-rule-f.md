@@ -24,3 +24,14 @@ collision check looked at this KB's own letters and not at the Hub rows assigned
 - **(b) The real Rule F adopted** into §0b: a shared-space change is not finished until **registered** on the Hub **and
   broadcast** to the Raw/ of everyone it affects. **`AWT-0147` closed** with where it is recorded.
 - `CLAUDE-Rules.md` in place on Drive, SAME. Both notes left in Raw/ (addressed to several seats).
+
+## (4) Extractor `FA2402` — new motor fitted and running (`FL-003`)
+- **Owner:** motor changed and reconnected; **first start buzzed and would not turn**. Darius: stop, isolate, check
+  terminal-box links, lead pairing, free rotation, missing phase. **Owner found one phase disconnected at K1**;
+  reconnected — **starts, runs at full speed, about 60% of the old motor's noise.**
+- **Run before the LRE16 arrived** (the 08/10 decision was to wait): LRE22 still fitted, so **short, attended runs
+  only** until the LRE16 is in.
+- **Owner's reading: the old motor had been damaged over a long time.** Recorded as plausible, unproven — two
+  connection faults at K1 (T2 burnt 30/09, a phase off today) fit a long-standing poor supply wearing the insulation
+  down, with an overload that could not trip below 16 A. Proposed: **retighten every power terminal** (F1, K1–K3, T1).
+- **Still to do:** LRE16 at 11.6 A; three phase currents in delta; rotation and suction; old motor's B/C readings.
