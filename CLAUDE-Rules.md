@@ -46,9 +46,20 @@ itself.** Applies to every message, charter, log, Hub row and doc. Owner's stand
 > terms not to relabel or overwrite the existing one. **Two rules, two numbers, one name retired.** When
 > citing across KBs, say *"the plain-brief standard"* rather than a letter.
 
-**Rule F — work by project** (owner's decisions of 2026-10-09, carried by Victoria's note
+**Rule F — shared-space changes are registered and broadcast** (owner's estate-wide ruling of 2026-09-27, *"make it
+as rule across estate, if someone make a changed in shared space (Smartsheet's or similiar) need to notify everyone and
+register it"*; Alex's note `2026-09-27_Handoff_Rule-F-Shared-Space-Broadcast-Register.md`, Hub `AWT-0147`). **Adopted
+here 2026-10-10 on the owner's *"Yes to both"*** — thirteen days late; the row had sat open. Any change to a shared
+system — a Hub sheet, a shared Drive structure, or any other space more than one employee reads from — **is not
+finished until it is both registered** (a Tasks & Requests row, or a Help & Lessons row for a lesson, naming what
+changed and why) **and broadcast** (a Raw/ hand-off note in the Raw/ of every employee it could affect). Being within
+your own authority to make the change is never a reason to skip either half. *This seat's own Workshop sheets are not
+shared spaces unless another seat reads them; when in doubt, register and broadcast.*
+
+**Working by project** (owner's decisions of 2026-10-09, carried by Victoria's note
 `2026-10-09_Handoff_Victoria-to-all_How-we-work-on-projects-v1.md`, Hub `AWT-0493`; **adopted here on the owner's
-*"Adopt it"***, same evening). *The group's letter; there is no Rule E in this KB, so no collision.*
+*"Adopt it"***, same evening). *Recorded on 2026-10-09 as "Rule F" — **wrong**: Victoria's "(Rule F)" heading marked
+the note as a Rule F broadcast, not a new rule. Relabelled 2026-10-10.*
 1. **The Project Register is the spine** — Smartsheet `5250912102778756`, one row per job, key = job number. **Before
    acting on a job, read its row** (stage, lead, who is on it).
 2. **Name the job everywhere** — every Hub request and Raw note about a job starts with its number (`FC2611 - …`);
@@ -58,9 +69,16 @@ itself.** Applies to every message, charter, log, Hub row and doc. Owner's stand
 4. **Stage hand-offs:** order → Peter registers the PO; the lead sets up folder and programme (RAMS/permits where they
    apply); finished → the lead sends invoice information to **Rachel**; Rachel records invoiced/paid; the lead closes
    the row. **Money stays with Rachel** — pro formas, invoices and payments go to her Raw/.
-5. **Held, not to be done yet:** **no register rows** for AMFA jobs until Anna confirms the estate-wide layout
-   (`AWT-0497`); **no AMFA job numbers** until Anna, John and Rachel propose the rule — **do not invent one**; **no
-   sheet changes** by this seat. *First job waiting for both: the LEGO drawer unit (2026-10-05).*
+5. **Decisions A–D (owner, 2026-10-09; Anna's note `Copy of Anna decision 2026-10-09 - Estate-wide project management
+   decisions A-D (AWT-0497).md`; adopted here 2026-10-10, *"Yes to both"*):**
+   - **A.** The register moves to the **"3. Project Delivery"** workspace (same sheet id); new project sheets are built there.
+   - **B. AMFA job numbers: `AM` + year + number** — **`AM2601`** = AMFA's first job of 2026. **Job numbers only: the
+     machine asset codes (`FA2301`–`FA2402`, §1) are a separate register and do not change** (owner's confirmation).
+   - **C–D.** Programme sheet per job (only for jobs longer than one shift) and budget per job; one shared sheet each
+     for materials, operatives, risks, progress, permits, communication. Built by Eugene, tried on FC2611 first.
+6. **Still held:** **no AMFA rows** — Anna adds them **after Rachel** says how the numbers match QuickBooks; **no AM
+   number assigned by this seat** until then; **no sheet changes** by this seat. *First job waiting: the LEGO drawer unit
+   (2026-10-05).*
 
 **Sheets:** `Tasks & Requests` (`8860839228606340`), `Help & Lessons` (`7780569054316420`).
 
