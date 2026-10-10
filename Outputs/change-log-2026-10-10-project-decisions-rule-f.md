@@ -40,3 +40,8 @@ collision check looked at this KB's own letters and not at the Hub rows assigned
 - **Owner:** *"Suction is good at the F45"* — fan moving air, rotation right. `FL-003` updated; still open for the LRE16,
   phase currents, other ports, terminal retightening, old motor's B/C readings.
 - **Raw/ checked** (direct listing, plus Review, Blum, EGGER, Hafele): nothing new since Anna's note at 09:08.
+
+## (6) Good night — two skills adopted
+**`three-phase-motor-fault`** (stop → symptom table → measure, nine-combination windings, 500 V insulation, phase
+currents → recommission → Fault Log) and **`session-start-check`** (Hub own rows, Raw/, open faults, git, one-list
+report). **Owner: Adopt both.** Register rows added.
