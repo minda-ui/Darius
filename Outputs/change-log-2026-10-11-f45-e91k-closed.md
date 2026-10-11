@@ -34,3 +34,10 @@ Session 33.
 - `troubleshooting-altendorf-f45.md`: new section + E40 row pointer + Changes row, in place, SAME.
 - *Lesson candidate:* the scans' page order is shuffled across parts (p.75–77 sit at the start of part 3, p.78 at the end
   of part 4) — search all parts by printed page number, not by part.
+
+## (5) Owner's cabinet photos — F9 located
+- **RH cabinet:** `T1` transformer top; right of it `K5E`, then fuse terminals **`F9` `F8` `F7` `F11`** (F9 first, next to
+  `K5E`); `GL1` below right. `T1` plate: **20 V 6.0 A → 4.0 AT** (24 V → 2.0 AT, 18 V → 6.3 AT). F10 not fitted.
+- **Hazards recorded:** mains terminals live with the main switch off; KEB inverters 5-minute capacitor discharge.
+- **Second photo:** ElmoDrive board in the other cabinet, LEDs green, **sawdust on the cabinet floor**.
+- Wiki section extended, `FL-005` updated. Photos not filed (chat only).

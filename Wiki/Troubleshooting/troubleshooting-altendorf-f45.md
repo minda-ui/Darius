@@ -128,8 +128,25 @@ electrician or Altendorf. **Never bridge a fuse.**
 
 Fuse legend (manual p.78): **F1–F2** control primary · **F4–F6** scorer motor · **F7–F9** control secondary ·
 **F10–F11** spray/laser · **F12–F14** CEKON · **F15–F16** brake unit (E51). *This is the manual's generic diagram, not
-this machine's drawing `B1434.0220`; **where F9 sits in the cabinet is not shown in any document held** — find it by
-its label beside the control transformer, and photograph it for this article.*
+this machine's drawing `B1434.0220`.*
+
+**Where F9 is — from the owner's photograph of the right-hand cabinet, 2026-10-11.** Top of the panel: control
+transformer **`T1`** (BLOCK B1307116, 280/700 VA; primary taps 380/400/420 V). Immediately right of it, contactor
+**`K5E`** (Schneider LC1SK0600); then **four fuse terminals in a row, labelled left to right `F9`, `F8`, `F7`, `F11`** —
+**F9 is the first one, right next to `K5E`.** `GL1` (rectifier) is just below and right of them. *(F10 — spray — is not
+fitted.)* Lower rail: `F1`/`F2` (primary) at the left, `F4`/`F5`/`F6` (scorer motor U/V/W) in the middle.
+
+**Fuse rating, as printed on `T1`'s plate (read from the photo — confirm on the fuse itself):** 24 V secondary 2.08 A →
+**2.0 AT**; 18 V 6.1 A → **6.3 AT**; **20 V 6.0 A → 4.0 AT**. So F9 should be a **4 A time-lag (T)** fuse.
+
+**Two hazards in this cabinet, before touching anything:**
+- **The mains terminals `L1`/`L2`/`L3` (bottom right) stay live with the main switch off** — they are upstream of it.
+  Isolate at the wall supply as well, or do not go near that corner.
+- **Two KEB inverters** (main saw "5,0 KW BS" left, blue unit right): their label says capacitors take **5 minutes** to
+  discharge. Wait 5 minutes after switching off.
+
+The second photo the same day — the **ElmoDrive control board** in the other cabinet — showed **sawdust on the cabinet
+floor**; the board's LEDs were green.
 
 ## Changes
 
@@ -139,3 +156,4 @@ its label beside the control transformer, and photograph it for this article.*
 | 2026-10-01 | Added the E91K / yellow START note from fault `FL-004`, on the owner's instruction | Session — 2026-10-01 extractor and F45 faults |
 | 2026-10-11 | Outcome line: `FL-004` closed Resolved after a week with no E91K (owner) | Session — 2026-10-11 |
 | 2026-10-11 | New section: E40 / fuse F9 feeds the scorer height and side drives (manual Fig. 5-34), for `FL-005` | Session — 2026-10-11 |
+| 2026-10-11 | F9's position, rating (4 AT per `T1` plate) and cabinet hazards, from the owner's cabinet photo | Session — 2026-10-11 |
