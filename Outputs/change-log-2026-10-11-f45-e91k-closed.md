@@ -16,3 +16,10 @@ Session 33.
   returns, reopen `FL-004` and see `MT-029`.
 - `Wiki/Troubleshooting/troubleshooting-altendorf-f45.md`: outcome line + Changes row (8,017 → **8,378 B**), in place
   on `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5`, SAME.
+
+## (3) F45 scorer will not raise; intermittent "20 V" error — `FL-005` opened
+- **Owner:** the scorer won't go up; the display sometimes shows a "20 V" error; no screenshot yet.
+- **Lead, not a diagnosis:** ElmoDrive **E40 = 20 VAC control voltage missing → fuse F9** (E41 = 24 VAC → F8). Whether
+  the scorer raise runs off that supply is **not in the KB** (schematic sheets 9–12, 19–24 unread). One fault or two: open.
+- **Fault Log `FL-005`** (row `6683835796948868`, Open): photo of the screen; what the scorer does; F9/F8 checked
+  isolated, like-for-like only; blow out the scorer button; electrician/Altendorf if it recurs. Never bridge a fuse.
