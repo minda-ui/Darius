@@ -53,3 +53,10 @@ Session 33.
   adjustment supply** (K5E pull-in / contacts, GL1, a loose 20 V terminal), not the scorer motor and not one drive. Next:
   power-cycle; tighten terminals isolated; then an electrician's live readings (does K5E pull in; 20 VAC after F9 and
   after K5E; DC out of GL1). `FL-005` updated with the decision table and Altendorf service contact.
+
+## (8) Close of day
+- **Still open:** `FL-005` — power-cycle test, terminals tightened isolated, then an electrician's live readings (table on
+  the row). `FL-003` — LRE16 (eBay, 10–14 Oct) at 11.6 A, phase currents, other ports, terminals, old motor's B/C readings;
+  repair drafts in minda@. **`AWT-0537`** (Anna's HSE/QC/ENV facts) not started — owner's facts needed for inductions, PPE,
+  first aid, quality checks, waste. Hub `AWT-0089`, `AWT-0127`, `AWT-0194`, `AWT-0225`.
+- Registers (Wiki structure row, Drive ids) and index updated in place.
