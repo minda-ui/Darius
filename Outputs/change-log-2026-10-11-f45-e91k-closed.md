@@ -47,3 +47,9 @@ Session 33.
   **side** adjustment move? Side and height share F9 → K5E → GL1, so side working = height-only fault (motor, limit
   switch, plug, mechanism); side failing too = the shared supply (K5E, GL1, loose terminal). Then terminal tightness
   isolated, then an electrician's live readings.
+
+## (7) Split test — the scorer saw runs, no adjustment moves at all
+- **Owner:** scorer motor starts; **no up, no down, no side.** Both adjustment drives dead together → the **shared 20 V
+  adjustment supply** (K5E pull-in / contacts, GL1, a loose 20 V terminal), not the scorer motor and not one drive. Next:
+  power-cycle; tighten terminals isolated; then an electrician's live readings (does K5E pull in; 20 VAC after F9 and
+  after K5E; DC out of GL1). `FL-005` updated with the decision table and Altendorf service contact.
