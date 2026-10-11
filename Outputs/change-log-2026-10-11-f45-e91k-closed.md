@@ -41,3 +41,9 @@ Session 33.
 - **Hazards recorded:** mains terminals live with the main switch off; KEB inverters 5-minute capacitor discharge.
 - **Second photo:** ElmoDrive board in the other cabinet, LEDs green, **sawdust on the cabinet floor**.
 - Wiki section extended, `FL-005` updated. Photos not filed (chat only).
+
+## (6) F9 and F8 fine — `FL-005` In Progress
+- **Owner:** both fuses checked, both fine. Not a blown fuse. Next: **split test** — does the scorer go down, and does the
+  **side** adjustment move? Side and height share F9 → K5E → GL1, so side working = height-only fault (motor, limit
+  switch, plug, mechanism); side failing too = the shared supply (K5E, GL1, loose terminal). Then terminal tightness
+  isolated, then an electrician's live readings.
