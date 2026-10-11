@@ -60,3 +60,7 @@ Session 33.
   repair drafts in minda@. **`AWT-0537`** (Anna's HSE/QC/ENV facts) not started — owner's facts needed for inductions, PPE,
   first aid, quality checks, waste. Hub `AWT-0089`, `AWT-0127`, `AWT-0194`, `AWT-0225`.
 - Registers (Wiki structure row, Drive ids) and index updated in place.
+
+## (9) Good night — two skills adopted
+- **`machine-manual-lookup`** and **`machine-control-fault`** — owner: Adopt both. Written to `.claude/skills/`, rows added
+  to `Outputs/skill-candidates-register.md`.
