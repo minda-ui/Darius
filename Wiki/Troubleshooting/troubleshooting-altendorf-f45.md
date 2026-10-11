@@ -4,7 +4,7 @@ category: Troubleshooting
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-10-01
+updated: 2026-10-11
 sources:
  - ../../Raw/F45 part 5.pdf
  - ../../Raw/F45 part 7.pdf
@@ -84,6 +84,10 @@ button faulty"*. It appeared when the **yellow START** button was pressed to pos
 the fault was **dust in that START button**, not in a STOP button. Blowing the START button out with
 compressed air cleared it.
 
+**Outcome (2026-10-11):** no E91K in the week after the clean, with extraction back to full suction from
+2026-10-10 — `FL-004` closed **Resolved**. If it returns, reopen `FL-004` rather than raise a new fault;
+the weekly blow-out is `MT-029`.
+
 **So if E91K appears when pressing the yellow START:**
 1. Switch the machine off and blow out the **yellow START** button first, then the I/0 buttons.
 2. Restart. If E91K returns, call an electrician or Altendorf technician to inspect that button's
@@ -112,3 +116,4 @@ edge defect belongs to the Hebrock, not here.
 |---|---|---|
 | 2026-09-15 | Created; mechanical fault table + full ElmoDrive error-code list carried over from the machine article's Fault-diagnosis section | Session — workshop operational systems build |
 | 2026-10-01 | Added the E91K / yellow START note from fault `FL-004`, on the owner's instruction | Session — 2026-10-01 extractor and F45 faults |
+| 2026-10-11 | Outcome line: `FL-004` closed Resolved after a week with no E91K (owner) | Session — 2026-10-11 |
