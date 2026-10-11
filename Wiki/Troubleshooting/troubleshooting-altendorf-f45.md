@@ -55,7 +55,7 @@ on-screen text. "Request a service technician" means an Altendorf technician, no
 | E23 | Remote-maintenance file missing | Check the data-carrier directory |
 | E29 | No remote-maintenance connection | — |
 | E31 | Swivel-segment sensor failure | Check the sensor |
-| E40 / E41 | 20 VAC / 24 VAC control voltage missing | Check fuse **F9** / **F8** |
+| E40 / E41 | 20 VAC / 24 VAC control voltage missing | Check fuse **F9** / **F8** — F9 feeds the scorer drives, see *E40 and a scorer that will not rise* |
 | E42 / E43 | Scoring / main-saw motor overheated | Allow to cool |
 | E44–E49 | Sliding-table limit switch / blade cover / door / E-stop 1/2/3 actuated | Close / rearm as applicable |
 | E50 | Speed-sensor setting | Check setting and sensor |
@@ -110,6 +110,27 @@ edge defect belongs to the Hebrock, not here.
 [^2]: [ElmoDrive manual, part 7](<../../Raw/F45 part 7.pdf>) — error-code list
 [^3]: [ElmoDrive manual, part 8](<../../Raw/F45 part 8.pdf>) — error-code list continued
 
+## E40 and a scorer that will not rise — fuse F9 feeds the scorer drives
+
+**From the manual's circuit diagram, Fig. 5-34 (p.77; Drive `F45 part 3.pdf`, PDF page 2), found on 2026-10-11 for
+fault `FL-005`.** The control transformer, after fuses **F1–F2**, has three secondary taps:
+
+| Tap | Fuse | Feeds |
+|---|---|---|
+| 18 V | F11 / F7 | diode laser (option) / display, sensors, Digit_X |
+| **20 V** | **F9** | **→ `K5E` (supply contactor for adjustment drives) → `GL1` (rectifier) → scorer height and scorer side drives** (*Verstellantriebe Ritzerhöhe / Ritzerseite*) |
+| 24 V | F10 / F8 | spray (option) / the safety chain and contactor control |
+
+**So E40 (*"20 VAC control voltage missing — check fuse F9"*) and a scorer that will not move up or sideways are the
+same circuit.** Check, machine isolated and locked off: **F9** (blown, or loose in its holder) → `K5E` → `GL1` → the
+wiring between. Replace a fuse with the **same rating only**; if F9 blows again, there is a short downstream —
+electrician or Altendorf. **Never bridge a fuse.**
+
+Fuse legend (manual p.78): **F1–F2** control primary · **F4–F6** scorer motor · **F7–F9** control secondary ·
+**F10–F11** spray/laser · **F12–F14** CEKON · **F15–F16** brake unit (E51). *This is the manual's generic diagram, not
+this machine's drawing `B1434.0220`; **where F9 sits in the cabinet is not shown in any document held** — find it by
+its label beside the control transformer, and photograph it for this article.*
+
 ## Changes
 
 | Date | Change | Change-log ref |
@@ -117,3 +138,4 @@ edge defect belongs to the Hebrock, not here.
 | 2026-09-15 | Created; mechanical fault table + full ElmoDrive error-code list carried over from the machine article's Fault-diagnosis section | Session — workshop operational systems build |
 | 2026-10-01 | Added the E91K / yellow START note from fault `FL-004`, on the owner's instruction | Session — 2026-10-01 extractor and F45 faults |
 | 2026-10-11 | Outcome line: `FL-004` closed Resolved after a week with no E91K (owner) | Session — 2026-10-11 |
+| 2026-10-11 | New section: E40 / fuse F9 feeds the scorer height and side drives (manual Fig. 5-34), for `FL-005` | Session — 2026-10-11 |

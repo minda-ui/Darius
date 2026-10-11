@@ -23,3 +23,14 @@ Session 33.
   the scorer raise runs off that supply is **not in the KB** (schematic sheets 9–12, 19–24 unread). One fault or two: open.
 - **Fault Log `FL-005`** (row `6683835796948868`, Open): photo of the screen; what the scorer does; F9/F8 checked
   isolated, like-for-like only; blow out the scorer button; electrician/Altendorf if it recurs. Never bridge a fuse.
+
+## (4) Where F9 is, and what it feeds — `FL-005` narrowed
+- **Owner:** *"Do you have position of F9 fuse?"* Not in the KB; searched the F45 manual scans. **Found Fig. 5-34
+  "Circuit diagram" (p.77, `F45 part 3.pdf` PDF page 2) and the device legend (p.78, `F45 part 4.pdf` PDF page 24).**
+- **F9 is on the transformer's 20 V tap and feeds `K5E` → `GL1` rectifier → the scorer height and side drives.** So the
+  scorer not rising and E40 are **one circuit**. `FL-005` probable cause rewritten accordingly.
+- **Physical position of F9: not in any document held** — only "control fuses (secondary) F7–F9" in the cabinet. Owner to
+  find it by label and photograph it.
+- `troubleshooting-altendorf-f45.md`: new section + E40 row pointer + Changes row, in place, SAME.
+- *Lesson candidate:* the scans' page order is shuffled across parts (p.75–77 sit at the start of part 3, p.78 at the end
+  of part 4) — search all parts by printed page number, not by part.
