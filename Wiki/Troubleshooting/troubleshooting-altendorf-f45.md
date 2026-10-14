@@ -4,7 +4,7 @@ category: Troubleshooting
 status: active
 sensitive: false
 created: 2026-09-15
-updated: 2026-10-11
+updated: 2026-10-14
 sources:
  - ../../Raw/F45 part 5.pdf
  - ../../Raw/F45 part 7.pdf
@@ -110,6 +110,23 @@ edge defect belongs to the Hebrock, not here.
 [^2]: [ElmoDrive manual, part 7](<../../Raw/F45 part 7.pdf>) — error-code list
 [^3]: [ElmoDrive manual, part 8](<../../Raw/F45 part 8.pdf>) — error-code list continued
 
+## Scorer will not move? Check its settings on the screen first
+
+**`FL-005`, 2026-10-11 to 10-14.** The scorer saw ran but would not go up, down or sideways, and a "20 V" message
+sometimes showed. **The cause was configuration — the scorer had been set in the control not to go up** (owner's
+finding). Fuses F9/F8 were fine. Darius's first reasoning — the shared 20 V supply below — was **wrong**: it went to
+the electrics without first checking the scorer's own state on the screen.
+
+**So, before any cabinet is opened:**
+1. Open the **scorer menu** and read its state. The ElmoDrive manual (*"Adjust Rapido Plus Scorer"*) describes a
+   **parking position** — the button then reads *"Scorer in its parking position / activate scorer"*, and **the
+   scorer cannot be adjusted while parked**. With a main blade ≥ Ø450 mm fitted it **cannot leave parking at all**.
+2. Check the **saved scorer position for the blade** (tool management) and the cutting-height setting.
+3. Only then the electrics below.
+
+*Which exact setting it was is to be recorded from the owner.* Whether the "20 V" message was connected is **not
+established**.
+
 ## E40 and a scorer that will not rise — fuse F9 feeds the scorer drives
 
 **From the manual's circuit diagram, Fig. 5-34 (p.77; Drive `F45 part 3.pdf`, PDF page 2), found on 2026-10-11 for
@@ -157,3 +174,4 @@ floor**; the board's LEDs were green.
 | 2026-10-11 | Outcome line: `FL-004` closed Resolved after a week with no E91K (owner) | Session — 2026-10-11 |
 | 2026-10-11 | New section: E40 / fuse F9 feeds the scorer height and side drives (manual Fig. 5-34), for `FL-005` | Session — 2026-10-11 |
 | 2026-10-11 | F9's position, rating (4 AT per `T1` plate) and cabinet hazards, from the owner's cabinet photo | Session — 2026-10-11 |
+| 2026-10-14 | `FL-005` cause was **configuration**, not electrical: new section *Scorer will not move? Check its settings on the screen first*; the F9 section kept as reference | Session — 2026-10-14 |
