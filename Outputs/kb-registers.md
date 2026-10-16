@@ -156,6 +156,8 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-03 | **`Processes/blum-drawer-addons-tip-on-servo-drive-ambia-line.md` created** (**6,364 B**, id `1ZVskCHZxTc5kzDMIdlBPfa3ooJM5sC92`, placeholder then in-place upload). `blum-library.md` and `Wiki/index.md` amended in place. | Owner: *"Let's do one more batch"* |
 | 2026-10-03 | **`Processes/pre-production-drawing-check.md` created** (**9,380 B**, id `1W80CWjMxZzRRDWv9zhU0vEbfMvma_QUi`, placeholder then in-place upload) and **the first Claude skill in the mirror, `.claude/skills/pre-production-drawing-check/`** (`SKILL.md` + `tcn_decode.py`; git only, since Drive cannot run a skill; the article is its governed copy). `Wiki/index.md` amended in place. | Owner: *"Save it as your new skill"* |
 | 2026-10-11 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended in place** (8,017 -> **10,108 B**, same id `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5`): `FL-004` outcome line; new section *"E40 and a scorer that will not rise — fuse F9 feeds the scorer drives"* from manual Fig. 5-34 (p.77) and legend (p.78), extended with **F9's position, 4 AT rating and two cabinet hazards** from the owner's cabinet photo. | Owner: *"Do you have position of F9 fuse?"* (fault `FL-005`) |
+| 2026-10-14 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended in place** (10,108 -> **12,830 B**, same id): `FL-005` cause was **configuration** — new section *"Scorer will not move? Check its settings on the screen first"*, with the 2026-10-11 electrical reasoning marked wrong. Skill `machine-control-fault` amended (settings before electrics). | Owner: *"it was configuration. It was set not go up"* |
+| 2026-10-16 | **`Troubleshooting/troubleshooting-aes-saf-10000.md` back-filled into the git mirror** (11,956 B, Drive id `1p6fM3mEWB3vcmfmOxtf_spC2w2OMUSkf`, fetched and `cmp`-identical) — it had been on Drive and in `Wiki/index.md` since 2026-09-28 but never committed; found while gathering facts for `AWT-0537`. | Mirror completeness (CLAUDE.md s1) |
 
 ## Outputs produced
 
@@ -294,7 +296,7 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 
 | Path | Bytes | Drive id |
 |---|---|---|
-| `Wiki/Troubleshooting/troubleshooting-altendorf-f45.md` | **10,108** (in place 2026-10-11, same id) | `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5` — **new id**, archive-then-recreate 2026-10-01 (Composio not signed in); *supersedes `1BrG-COTZWG4bOrzWwrLgZmvRblox3ITz`, now in `Archive/` with that id preserved* |
+| `Wiki/Troubleshooting/troubleshooting-altendorf-f45.md` | **12,830** (in place 2026-10-14, same id) | `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5` — **new id**, archive-then-recreate 2026-10-01 (Composio not signed in); *supersedes `1BrG-COTZWG4bOrzWwrLgZmvRblox3ITz`, now in `Archive/` with that id preserved* |
 | `Wiki/Processes/maintenance-schedule-altendorf-f45.md` | **5,950** (5,119 -> in place 2026-10-04, MT-037/038) | `1J0vyP9AEIJqngSE6eLtd-mzhi_nSRauf` — **new id**, same route; *supersedes `1HSEVzy3o96d7sxrVFHefcM7pLRc2FU6k`, now in `Archive/`* |
 | `Outputs/change-log-2026-10-01-extractor-motor-and-f45-e91k.md` | **7,061** | `1H1Jtd4V60x6id77p2vatYR4EmGKORSiu` — **created 2026-10-02** with `create_file` |
 | `Outputs/change-log-index.md` | see that file | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` — **unchanged**, updated in place 2026-10-02 (Composio) |
@@ -317,6 +319,10 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Outputs/change-log-2026-10-09-rule-f-projects.md` | **1,538** | `1FMCCAHyh2RdDreSWJRiJGKISU6xls9OU` — **created 2026-10-09** |
 | `Outputs/change-log-2026-10-10-project-decisions-rule-f.md` | **2,051** | `1jy2aXBtGCIk0ZcUjDwm5UdzBZOlEfu01` — **created 2026-10-10** |
 | `Outputs/change-log-2026-10-11-f45-e91k-closed.md` | *see Drive* | `11i-mt245tm-DEYMDyHjRXkNUhg8mxax3` — **created 2026-10-11** |
+| `Outputs/change-log-2026-10-14-f45-scorer-configuration.md` | *see Drive* | `1mp8B5hzNo8CPdk34kpUTNV7pXMxTEpGe` — **created 2026-10-14** |
+| `Outputs/change-log-2026-10-15-awt-0537-closed.md` | *see Drive* | `1uCDsGLId7nfYI6OplpPE3sBo7ibUuOhf` — **created 2026-10-15** |
+| `Outputs/2026-10-14_Darius-to-Anna_workshop-facts-for-HSE-QC-ENV.md` | **6,250** | own copy `15b996e79bO7tsWuLhRvp3GIrIuQnNd9B`; **delivered copy in Anna's Raw/ `1EBtUPxea_DvybUHVxnIQsNY46uKiaJ6b`** (not ours to edit) |
+| `Outputs/2026-10-15_Darius-to-Anna_workshop-facts-follow-up-owner-answers.md` | **1,311** | own copy `17BTzQt3uxl0tsszeju2ePcvW9Yzl_RK7`; **delivered copy in Anna's Raw/ `1rUE7eEMiPdckNA27zJg13btGV15ytjt7`** |
 | `Outputs/skill-candidates-register.md` | **701** | `14wsys9LZm62NFIibg11r_CICrEcdvjNV` — **created 2026-10-08** |
 | `Outputs/2026-10-08-proposed-settings.json` | see file | `1IRaO7mHO5ogDMgKlvF7gPJuLhvXRVxQB` — **created 2026-10-08** |
 | `Raw/Hafele/` folder; `Hafele_TCH_Design_GOLA_profiles_pp4.236-247G.pdf` | **35,143,971** | folder `1r29xjiIBf9pQNkJckfTkJOnpzowIK9ai`; file `1_ZELbxgCbam2NE84M6YCL1U54ej8qIGA` — **created 2026-10-05**, extract of `Raw/blaetterkatalog.pdf` (`1ZLGTmMQ_NG3JGREW4_lOiwRsHnh2fd0F`) |
