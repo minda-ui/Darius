@@ -6,6 +6,7 @@ unless something new changes the case. Newest first.
 
 | Date | Candidate | Trigger | Decision | Reason / note | Skill |
 |---|---|---|---|---|---|
+| 2026-10-16 | answer-seat-request | a Hub row / Raw note asking Darius for facts or input; "go ahead" on one | **Adopted** | AWT-0537 (10-14/15), AWT-0498 (10-09), AWT-0516 (10-10) | `.claude/skills/answer-seat-request/` |
 | 2026-10-11 | machine-manual-lookup | "where is…", "do you have the position of…", "what does E.. mean" | **Adopted** | F9 / Fig. 5-34 found by printed page across shuffled parts (10-11); E91K (10-01); Gola catalogue (10-05) | `.claude/skills/machine-manual-lookup/` |
 | 2026-10-11 | machine-control-fault | an error code, "won't move", "display shows…" (not motors) | **Adopted** | FL-004 (10-01, closed 10-11), FL-005 (10-11) | `.claude/skills/machine-control-fault/` |
 | 2026-10-10 | three-phase-motor-fault | "motor won't start / buzzes / runs slow / trips" | **Adopted** | FL-002 (09-26/28), FL-003 (10-01), buzz-no-start (10-10) | `.claude/skills/three-phase-motor-fault/` |

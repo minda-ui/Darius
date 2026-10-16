@@ -19,3 +19,6 @@ Session 35 (continues the 2026-10-14 evening session past midnight).
 - Registers (Wiki structure rows, Drive ids incl. both delivered copies in Anna's Raw) and index updated in place.
 - **Still open:** `FL-003` — LRE16 fit Saturday 17/10 (checklist on the row); `FL-005` Monitoring to ~21/10 (which
   setting, and any "20 V" message); Hub `AWT-0089`, `AWT-0127`, `AWT-0194`, `AWT-0225`.
+
+## (4) Good night — one skill adopted
+- **`answer-seat-request`** — owner: Adopt. Written to `.claude/skills/`; register row added.
