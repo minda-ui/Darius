@@ -20,3 +20,9 @@ Session 36.
   (53,055 → 55,444 B, in place, SAME).
 - **Hub:** `AWT-0849` **Done**, saying where; the Amfa order hand-off draft with Nadia carried to its own row **`AWT-0871`**
   (Darius, Open).
+
+## (3) Good night — one skill adopted
+- **`charter-version-bump`** — owner: Adopt. Written to `.claude/skills/`; register row added.
+- **Still open:** `FL-003` — Saturday's LRE16 fit not yet reported (phase currents, suction at Vitap and edgebander);
+  `FL-005` Monitoring to ~21/10; **`AWT-0871`** Amfa order hand-off with Nadia; Hub `AWT-0089`, `AWT-0127`, `AWT-0194`,
+  `AWT-0225`.
