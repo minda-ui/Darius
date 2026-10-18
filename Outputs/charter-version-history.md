@@ -10,7 +10,7 @@ version of the question.
 **The charter carries the current version's note only**; when a new version lands, the outgoing note is
 appended to the top of this file.
 
-**Covers v8 (2026-09-16) to v35 (2026-09-29)** — the fork reconciliation that gave the KB a named owner,
+**Covers v8 (2026-09-16) to v36 (2026-10-03)** — the fork reconciliation that gave the KB a named owner,
 through to the Workforce Hub rules. Earlier versions (v1–v7) predate the fork and have no surviving notes.
 
 **v28 and v29 arrived late, and the file says so rather than hiding it.** v29's own note stated that
@@ -21,6 +21,34 @@ rather than retyped. *The standing rule moves the outgoing note; nothing was mov
 already fallen out.*
 
 ---
+
+**Changed in v36 — read-only access to supplier mail in info@, on the owner's ruling; the "no Gmail" line is
+narrowed, not dropped.**
+
+**Owner, 2026-10-03:** asked for panel prices from Lathams' emails in **info@fishboneconstruction.co.uk**, then
+*"Let's connect you to info@fishboneconstruction.co.uk"*. **The scope was put as a question, not assumed, and the
+owner chose "Read-only, suppliers".** The full rule, with what may and may not be called, is in **§6b of
+`CLAUDE-Rules.md`** (the 2026-10-03 entry). §0a's connectors line now says the same in one sentence.
+
+**What changed, and what did not.** **Read** (search, fetch a message or thread, download an attachment, read the
+profile) of mail **from named supplier senders** — starting with **`@lathams.co.uk`** — so that quotes and prices can
+be filed into this KB. **Never** send, reply, draft, forward, delete, trash, label or modify; **every new sender
+domain needs the owner's OK first**. *"Darius logs and tracks, it does not send"* stands exactly as it was.
+
+**Enforced in two places, not one.** The 2026-09-27 entry recorded that no-Gmail was *"a policy this assistant
+observes, not a boundary the tooling enforces"*. This time the tooling carries part of it: **the owner narrowed the
+repo's `.claude/settings.json` deny list herself** (commit `e7029e1` on `main`, merged into this session's branch),
+from a blanket `GMAIL_*` deny to every write action plus listing/search/settings, leaving only fetch, attachment
+and profile reachable through `composio execute`. *Darius proposed the list; the environment's safety check refused
+to let Darius edit its own permissions, so the owner made the change — which is the right way round for a rule
+that widens this seat's reach.* **The sender restriction is policy, not tooling**: nothing in the settings stops a
+fetch from returning other mail, so the search itself is what is narrowed (`from:` the approved domain), and
+anything else that comes back is not read further or filed.
+
+**The connection.** Composio `gmail_rebush-slad` (unaliased), confirmed **info@fishboneconstruction.co.uk** by one
+`GMAIL_GET_PROFILE` call **before** this amendment was written — the order agreed with the owner (confirm the mailbox,
+then amend, then read). A first attempt under the alias `darius-gmail-info` expired unfinished. **No mail was read
+before this version reached Drive.**
 
 **Changed in v35 — limit 3 goes to 1 MB, on the owner's instruction and on two fresh measurements.**
 
