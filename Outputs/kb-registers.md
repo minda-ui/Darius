@@ -322,6 +322,12 @@ they share **no** paths at all, so nothing here contradicts anything else.*
 | `Outputs/change-log-2026-10-14-f45-scorer-configuration.md` | *see Drive* | `1mp8B5hzNo8CPdk34kpUTNV7pXMxTEpGe` — **created 2026-10-14** |
 | `Outputs/change-log-2026-10-15-awt-0537-closed.md` | *see Drive* | `1uCDsGLId7nfYI6OplpPE3sBo7ibUuOhf` — **created 2026-10-15** |
 | `Outputs/change-log-2026-10-18-charter-v37-work-runs.md` | *see Drive* | `1sFeRu-7FQd-le7nRZcDtPoIu8rTR5MdC` — **created 2026-10-18** |
+| `Outputs/change-log-2026-10-22-corner-wall-unit-diagonal.md` | *see Drive* | `16doeiKP5iSQVb-nBkrfnzRJGy2JTKK5Y` — **created 2026-10-22** |
+| `Outputs/2026-10-22-corner-wall-unit-600x600-diagonal-spec.md` | *see Drive* | `1qObQZSjACxbe-xz1NcZfv1t832vALKHC` — spec v0.4 |
+| `Outputs/2026-10-22_Darius-feedback-OS-framework-v0.1-AWT-0958.md` | *see Drive* | `103ovUF-FjwZTIKA9GEHHGIxMS4ewgDtA` |
+| `Outputs/2026-10-22_Darius-workshop-KB-ids-and-connections-inventory-AWT-0967.md` | *see Drive* | `1hPlcVtnATho43q4JrEJPI8EbZl3wsgmu` |
+| `Outputs/2026-10-22_Darius-to-Victoria_project-A-questions-AWT-0958-0967.md` | *see Drive* | own `1rVxVAulQAjfRxPVOi3wBgw3QKaXOhrr_`; **in Victoria's Raw `1g3UdeIBMxBC21TrxbZWZaK-HyGgtTwtN`** (not ours to edit) |
+| `Outputs/2026-10-22_Darius-to-Victoria_AWT-0971-answers-Q2-Q6.md` | 835 | **in Victoria's Raw only, `1clogVKgbn-ddq18Ztxgtl8oAHnVtJjwT`** (native connector) — own copy `1WXtVcEAjZ9-XWoD1wDm8F-IJbxpKAxyy` |
 | `Outputs/2026-10-14_Darius-to-Anna_workshop-facts-for-HSE-QC-ENV.md` | **6,250** | own copy `15b996e79bO7tsWuLhRvp3GIrIuQnNd9B`; **delivered copy in Anna's Raw/ `1EBtUPxea_DvybUHVxnIQsNY46uKiaJ6b`** (not ours to edit) |
 | `Outputs/2026-10-15_Darius-to-Anna_workshop-facts-follow-up-owner-answers.md` | **1,311** | own copy `17BTzQt3uxl0tsszeju2ePcvW9Yzl_RK7`; **delivered copy in Anna's Raw/ `1rUE7eEMiPdckNA27zJg13btGV15ytjt7`** |
 | `Outputs/skill-candidates-register.md` | **701** | `14wsys9LZm62NFIibg11r_CICrEcdvjNV` — **created 2026-10-08** |
