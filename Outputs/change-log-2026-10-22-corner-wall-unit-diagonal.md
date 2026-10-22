@@ -93,3 +93,13 @@ Session 37.
   written with the **native Drive connector** (Composio's Google route blocked by an SSRF guard all evening) and checked
   byte-identical with the native download. Her row is hers to close.
 - **Drive copies behind git** until Composio recovers: this change log (from section 9) and the inventory file.
+
+## (11) Good night — three skill decisions, all Adopt
+- **`new-library-unit-design`** (new); **`pre-production-drawing-check`** extended (in-place replaced folders, TpaCAD-saved
+  files, spacing test, shelf-pin pockets); **`end-of-day`** extended (Composio Google route blocked → native connector for
+  new files, log the Drive copies behind git, catch up). Register rows added.
+- Drive caught up tonight once Composio answered: this log, the inventory, the index, the registers, and an own copy of the
+  Victoria Q2/Q6 note — all SAME.
+- **Still open:** corner unit — left side's shelf-pin rows (TpaCAD), shelf-pin depths 126 vs 107, door 420 vs ~370, RH
+  version; `FL-003` LRE16 results; `FL-005` close; charter §1 "machine-share folder not identified" → "Furniture" at the next
+  bump; `AWT-0225` merge to `main`.

@@ -44,6 +44,18 @@ The hardware figures come from the Blum articles in `Wiki/Processes/blum-*.md`.
    Re-read each control file's live Drive copy and compare it with git `HEAD` before editing. Upload in place
    (`GOOGLEDRIVE_UPLOAD_UPDATE_FILE`), download back, `cmp`, then commit and push.
 
+## Learned 2026-10-22 (corner wall unit, rounds 1–3)
+
+- **Folders get replaced in place.** The owner may overwrite files in the same folder ("v3" in the `v2` folder). Always
+  diff the md5 list against the previous round, whatever the folder is called; name rounds `r1`, `r2`, … yourself.
+- **TpaCAD-saved files.** A file saved in TpaCAD carries the header `TPA\ALBATROS\EDICAD\02.00` (UTF-16, `tcn version`
+  2.9.x) instead of SmartCabinet's `01.00`. The decoder can miss parameters in it (on 22/10 the `foro mul` rows showed no
+  start, depth or Y). **Never pass a row the decoder could not read**: say so, and ask for the rows to be checked in
+  TpaCAD or re-exported from SmartCabinet. Convert with `iconv -f UTF-16 -t UTF-8` to read the raw lines.
+- **Spacing is frame-independent.** When parts are measured from different references, compare the **spacing** between
+  joints/pins on the two mating parts (e.g. side 126 vs shelf 107) before arguing about absolute positions.
+- **Ask what the pockets are for.** Cabineo pockets in a shelf may be **shelf pins** (loose shelf), not connectors.
+
 ## Boundaries (from the charter)
 
 - Read-only on the owner's job files: **never delete, move or edit anything in `Raw/Review folder/`** unless asked.

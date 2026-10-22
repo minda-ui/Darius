@@ -123,3 +123,14 @@ owner's** — propose, never adopt unasked.
   pointer table is not a count of the thing itself (`HL-0064`, five instances).
 - **Do not smooth over a correction.** If something published earlier today was
   wrong, the log says so in the log, not only in chat.
+
+## When Composio's Google route fails (adopted 2026-10-22)
+Errors like *"SSRF guard blocked request … unvalidated host"* or `KeyError: 'downloaded_file_content'` in `chk.sh`:
+1. Retry once after a short wait; check `curl -sS "$HTTPS_PROXY/__agentproxy/status"`. Do **not** try to get round the guard.
+2. **New files that must reach someone now** (e.g. a Raw note): write with the **native Drive connector**
+   (`mcp__Google_Drive__create_file`, `disableConversionToGoogleType: true`, `contentMimeType: text/markdown`), then verify
+   with `mcp__Google_Drive__download_file_content` → base64-decode → `cmp` against the local file.
+3. **In-place updates of KB files**: commit and push to git, and write in the change log **which Drive copies are behind
+   git**. Catch them up with the normal in-place upload + `chk.sh` as soon as Composio answers — at the latest at the next
+   good night or session start.
+
