@@ -1,4 +1,4 @@
-# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.2
+# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.3
 
 Darius, 2026-10-22, for Minda. **Status: proposal — to be modelled in SmartCabinet, then checked with
 `pre-production-drawing-check` before anything is cut.**
@@ -32,14 +32,25 @@ Built to the library rules in `Wiki/Software/kitchen-unit-library.md` (master `A
 
 *Shelf count: **two**, as the 900 library units (owner, 22/10). Spaced equally unless the master's pin rows say otherwise: 862 inside ÷ 3 ≈ 268 mm clear openings with 19 mm shelves — the drawing check compares against the master's pin positions.*
 
-## 4. Door and hinges — the open point
-- The door sits **at 45° to both sides**, so a standard hinge does not fit: it needs Blum **CLIP top angled hinges for
-  +45° corner cabinets** (in family **H1** of the Blum library — `blum-clip-top-hinges-smartcabinet-input.md`). **Part
-  number, hinge count and the cup/plate positions to come from SmartCabinet's Blum library, not from me.**
-- **The door width is set by the hinge's overlay at 45°**, so it is ~380–420 until the hinge is chosen. Door weight ≈
-  4–5 kg (896 × 400 × 19 board).
-- **LH / RH differ only in the hinge side:** cup holes on the door and plate holes on that side panel mirrored. The
-  carcase is otherwise identical — one cutting list, two hinge programs.
+## 4. Door and hinges — chosen from the Blum catalogue (2022/23, pp. 118–121), 22/10
+- **Blum's own corner-cabinet drawings** (pp. 118 and 120) show exactly this unit: diagonal front, **side front edges
+  bevelled at 45°**, door between them. Two versions: **+45° I** "set back fronts" (95°, door behind the sides, FB = LW)
+  and **+45° II** "flush fronts" (110°, door flush with the bevelled sides, **FB = LW − 5.4**).
+- **Proposed: +45° II, flush front** — cleaner front, 110° opening, and the door stays inside the diagonal, so it cannot
+  clash with the neighbouring units' doors (the §5.1 worry).
+  | Item | Part no. |
+  |---|---|
+  | Hinge, CLIP top BLUMOTION +45° II, screw-on boss | **79B3558** (INSERTA: 79B3598; without soft-close: 78T5550) |
+  | Mounting plate, 0 mm (planning Nº 9, 45°) | **173H7100** |
+- **Door width = LW − 5.4**, where LW is the internal width across the front between the bevelled sides (2.7 mm gap each
+  side). Door 896 high. Cup Ø35; boss distance and plate positions per p. 121 (Nº 9: 32.5 / 2.5 / 14).
+- **Sides: front edge bevelled 45°** — Blum's drawing assumes it, and SmartCabinet's corner shape appears to draw it. That
+  is an **F45 tilt cut**, and **edging a bevel on the Hebrock is unproven** (test on an offcut, or leave the bevel unedged
+  behind the door gap).
+- **Not in SmartCabinet's hinge list yet**: the `35 CERNIERE` list photographed 22/10 runs 78Z5530T → 79B9590 with no
+  79B3558 / 79B3598 / 78T5550. It must be **added** (accessory registry + its CAM hinge table) before the door can be
+  drilled. *Earlier text said "~380–420 wide"; superseded by FB = LW − 5.4.*
+- LH / RH: hinges on the left or right side only; the carcase is identical.
 
 ## 5. Watch-outs before cutting
 1. **Neighbouring doors.** The diagonal door's outer corners come close to the doors of the straight units either side
