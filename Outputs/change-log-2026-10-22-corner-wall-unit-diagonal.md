@@ -66,3 +66,11 @@ Session 37.
 - **Findings stated as facts:** Drive connection = Minda's own account (confirmed by `GET_ABOUT`); Composio account shared
   (50 connections across seats); native Drive/Gmail/Calendar/QuickBooks connectors present but unused by the charter; an
   expired `darius-gmail-info` (removal is the owner's call); **the design↔machine share folder is unidentified**.
+
+## (8) Open questions handed to Victoria (project curator)
+- **Owner:** *"All questions can answer Victoria, she is curator of project."* Seven questions from `AWT-0958` / `AWT-0967`
+  (business space of the workshop; Darius as gate resolver; exchange sheet vs Raw + Hub; supplier reads after ops@
+  copying; standing route for Nadia's order hand-off; the design↔machine share folder id; ops@ labelling not in v37 —
+  needs Minda's own word) sent as a Raw note to **Victoria's Raw** (`1rzRlNRLdg-qZnXU4MTHCnn3H2b1Z5L6G`, parent
+  "Victoria - CEO's Assistant", checked), file `1g3UdeIBMxBC21TrxbZWZaK-HyGgtTwtN`, SAME; own copy `1rVxVAulQAjfRxPVOi3wBgw3QKaXOhrr_`.
+  Hub row **`AWT-0971`** (Victoria, Open), id checked free before writing.
