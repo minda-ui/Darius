@@ -1,4 +1,4 @@
-# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.1
+# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.2
 
 Darius, 2026-10-22, for Minda. **Status: proposal — to be modelled in SmartCabinet, then checked with
 `pre-production-drawing-check` before anything is cut.**
@@ -27,10 +27,10 @@ Built to the library rules in `Wiki/Software/kitchen-unit-library.md` (master `A
 | Bottom | 1 | 600 × 600 × 19 blank | same pentagon as top | as top |
 | Back A | 1 | 862 × 546 × 19 | rectangle, housed | none |
 | Back B | 1 | 862 × 565 × 19 | rectangle, housed; runs past Back A into the corner | none |
-| Shelf | 1 (2?) | 545.5 × 545.5 bounding | **pentagon**: (35,35) (580.5,35) (580.5,286.4) (286.4,580.5) (35,580.5) — front diagonal 415.9, 10 mm behind the sides' inner front corners | diagonal front |
+| Shelf | **2** | 545.5 × 545.5 bounding | **pentagon**: (35,35) (580.5,35) (580.5,286.4) (286.4,580.5) (35,580.5) — front diagonal 415.9, 10 mm behind the sides' inner front corners | diagonal front |
 | Door | 1 | 896 × **≈ 380–420** × 19 | width **set by the hinge** (§4) | all four |
 
-*Shelf count: the 900 library units — check how many shelves the master carries and match it.*
+*Shelf count: **two**, as the 900 library units (owner, 22/10). Spaced equally unless the master's pin rows say otherwise: 862 inside ÷ 3 ≈ 268 mm clear openings with 19 mm shelves — the drawing check compares against the master's pin positions.*
 
 ## 4. Door and hinges — the open point
 - The door sits **at 45° to both sides**, so a standard hinge does not fit: it needs Blum **CLIP top angled hinges for
@@ -49,8 +49,8 @@ Built to the library rules in `Wiki/Software/kitchen-unit-library.md` (master `A
    marking out). Your choice.
 3. **Edgebanding the pentagons** on the Hebrock: the diagonal is a straight edge, but its ends meet the 300 edges at
    **135°**, not 90° — **check the end trim handles a 135° corner** before running good parts (one offcut test).
-4. **Shelf pins**: 5 mm holes on both sides **and** both backs, so the pentagon shelf sits on four or five pins (all on
-   the Vitap).
+4. **Shelf pins**: 5 mm holes on both sides **and** both backs, so each pentagon shelf sits on four or five pins — two
+   shelves, so two sets (all on the Vitap).
 5. **Hanging**: Häfele concealed mounts in the same position as the library units, one per wing.
 
 ## 6. Names (proposed)
