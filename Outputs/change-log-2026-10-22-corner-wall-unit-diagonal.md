@@ -74,3 +74,12 @@ Session 37.
   needs Minda's own word) sent as a Raw note to **Victoria's Raw** (`1rzRlNRLdg-qZnXU4MTHCnn3H2b1Z5L6G`, parent
   "Victoria - CEO's Assistant", checked), file `1g3UdeIBMxBC21TrxbZWZaK-HyGgtTwtN`, SAME; own copy `1rVxVAulQAjfRxPVOi3wBgw3QKaXOhrr_`.
   Hub row **`AWT-0971`** (Victoria, Open), id checked free before writing.
+
+## (9) Victoria's reply on `AWT-0971` (Minda decided in chat)
+- (3) Exchange sheet sits **beside** Raw notes + Hub rows; Raw stays for hand-offs between assistants.
+- (4) Principle 8 (ops@ copying) is for **future businesses only** — the read-only supplier reads in info@ / minda@ continue.
+- (5) Nadia → Darius order route **stays as today**.
+- (7) **No charter change**: ops@ labelling beyond v37 needs Minda's own word. v37 stands (read + create_draft).
+- (1) Workshop business-space ownership **parked** until Business 2; machines stay as invoiced.
+- **Still open, Minda's:** (2) is Darius the gate resolver for workshop/machinery requests; (6) the Drive folder
+  SmartCabinet uses to pass job files to the Vitap. Row In Progress until both answered.
