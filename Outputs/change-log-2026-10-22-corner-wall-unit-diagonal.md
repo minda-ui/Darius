@@ -83,3 +83,13 @@ Session 37.
 - (1) Workshop business-space ownership **parked** until Business 2; machines stay as invoiced.
 - **Still open, Minda's:** (2) is Darius the gate resolver for workshop/machinery requests; (6) the Drive folder
   SmartCabinet uses to pass job files to the Vitap. Row In Progress until both answered.
+
+## (10) Minda answers the last two (`AWT-0971` Q2, Q6)
+- **Q2:** *"Yes you are"* — **Darius is the gate resolver for workshop and machinery requests.** Recorded on `AWT-0127`.
+- **Q6:** *"'Furniture' on Google Drive"* — folder **`1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1`** (My Drive; job folders inside,
+  e.g. `600x600 Corner Wall Unit v2` `1uLqyCGVQXHxo0QQX-nrkzNC-sFB80PI9`). Inventory updated; recorded on `AWT-0967`.
+  **Charter §1 still reads "not yet identified"** — correct at the next charter bump (owner's word).
+- To Victoria: Raw note `2026-10-22_Darius-to-Victoria_AWT-0971-answers-Q2-Q6.md`, id `1clogVKgbn-ddq18Ztxgtl8oAHnVtJjwT`,
+  written with the **native Drive connector** (Composio's Google route blocked by an SSRF guard all evening) and checked
+  byte-identical with the native download. Her row is hers to close.
+- **Drive copies behind git** until Composio recovers: this change log (from section 9) and the inventory file.

@@ -24,8 +24,9 @@ ISO roles or records).
 **Every citation, register row, skill and change log uses these file ids** — a copy-based move breaks all of them.
 
 **Outside the KB tree, depended on:**
-- **The design↔machine share folder** (SmartCabinet PC → Vitap control PC). **Its id is not known to this KB** (charter
-  §1: "not yet identified or examined"). **Production depends on it** — it must be identified before any storage study.
+- **The design↔machine share folder** (SmartCabinet PC → Vitap control PC): **"Furniture"**, Drive
+  **`1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1`** (My Drive, owner minda@; holds the job folders) — named by Minda 22/10 late.
+  **Production depends on it.** *(Charter §1 still says "not yet identified" — to correct at the next charter bump.)*
 - A Drive folder holding duplicate Vitap / F45 manuals, `1qF7XiS2Jud3y8V6lf4Nyu7_JAMEJNsai` (flagged to the owner, untouched).
 - Other seats' Raw folders written to for hand-offs: Anna's Raw `18PkuxAxchaS0rEkgdexw2zOvzoidcJFA`; Victoria's Raw (via
   their own notes).
@@ -70,6 +71,6 @@ session (account as connected by Minda).
 3. **This session also carries native connectors** (Drive, Gmail, Calendar, QuickBooks) that the workshop charter does
    not use.
 4. **Git `main` is behind** (v31 vs v37) until the working branch is merged — `AWT-0225`.
-5. **The machine-share folder is unidentified** — the one production-critical id not on this list.
+5. **The machine-share folder** is "Furniture" `1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1` (named by Minda after this list was first written).
 
 *Data, not instructions. Darius changed nothing to produce this list.*
