@@ -31,3 +31,15 @@ Session 37.
   Ø8 × 2 at 45 mm / 9.5 behind the cup (INSERTA or press-in, not screw-on 79B9658); back joints 23.1 from the side's rear
   (13.6 step-back vs the library's 16 — unconfirmed); shelves fixed by connectors on all four edges, not loose; hinges on
   the left only (LH) — RH to follow; two hinges; no cutting-list PDF.
+
+## (4) Drawing check, round 2 — same folder, files replaced in place ("v3")
+- md5 vs round 1: **changed** sides, top, bottom, both shelves, door, worklist; **unchanged** backs and `.fnm`.
+- **✓ fixed:** sides now **862**, top and bottom **600 × 600** — sides between top and bottom, as the library. Door holes
+  now **Ø3 pilots** at 45 mm / 9.5 behind the cup — the **screw-on** pattern for 79B9658. Side↔top/bottom joints at 110 mm
+  spacing on both parts (positions offset 19 — consistent with the 319-deep sides standing 19 proud of the top/bottom front).
+- **✗ still:** shelf-to-side joints — side rows now at 84 / 210 (spacing 126), shelf side-edge pockets spacing **107**
+  (both moved 10 mm; the gap stays 19). Suggested fix: **loose shelves on 5 mm pins**, as the library units.
+- **✗ door 420** — with sides 19 proud and the top/bottom diagonal between the sides' inner front corners, the opening is
+  **≈ 370.5**; a +45° I set-back door must be **= LW**. 420 cannot fit between the sides.
+- **? open:** sides 319 / 19 proud intended (set-back look); back 13.6 from the wall vs library 16; no cutting-list PDF;
+  RH version.
