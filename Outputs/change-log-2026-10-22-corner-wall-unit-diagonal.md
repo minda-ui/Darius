@@ -58,3 +58,11 @@ Session 37.
 - Raw/: Victoria `AWT-0958` — framework v0.1 read (3 pp.); feedback written (`Outputs/2026-10-22_Darius-feedback-OS-framework-v0.1-AWT-0958.md`,
   `103ovUF-FjwZTIKA9GEHHGIxMS4ewgDtA`, SAME) and posted on the row, **Done**. Offered for Monday: an id/connection
   inventory and a master-only classification of the workshop KB.
+
+## (7) `AWT-0967` — ids and connections inventory (Project A), Done
+- Read live: Drive folder tree under the KB root, Composio connection list (own aliases only used), KB registers.
+  `Outputs/2026-10-22_Darius-workshop-KB-ids-and-connections-inventory-AWT-0967.md` (`1hPlcVtnATho43q4JrEJPI8EbZl3wsgmu`, SAME);
+  summary on the row, **Done** (due 24/10).
+- **Findings stated as facts:** Drive connection = Minda's own account (confirmed by `GET_ABOUT`); Composio account shared
+  (50 connections across seats); native Drive/Gmail/Calendar/QuickBooks connectors present but unused by the charter; an
+  expired `darius-gmail-info` (removal is the owner's call); **the design↔machine share folder is unidentified**.
