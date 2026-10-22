@@ -1,4 +1,4 @@
-# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.3
+# Corner wall unit 600 × 600, diagonal, 900 high — design spec v0.4
 
 Darius, 2026-10-22, for Minda. **Status: proposal — to be modelled in SmartCabinet, then checked with
 `pre-production-drawing-check` before anything is cut.**
@@ -32,24 +32,24 @@ Built to the library rules in `Wiki/Software/kitchen-unit-library.md` (master `A
 
 *Shelf count: **two**, as the 900 library units (owner, 22/10). Spaced equally unless the master's pin rows say otherwise: 862 inside ÷ 3 ≈ 268 mm clear openings with 19 mm shelves — the drawing check compares against the master's pin positions.*
 
-## 4. Door and hinges — chosen from the Blum catalogue (2022/23, pp. 118–121), 22/10
-- **Blum's own corner-cabinet drawings** (pp. 118 and 120) show exactly this unit: diagonal front, **side front edges
-  bevelled at 45°**, door between them. Two versions: **+45° I** "set back fronts" (95°, door behind the sides, FB = LW)
-  and **+45° II** "flush fronts" (110°, door flush with the bevelled sides, **FB = LW − 5.4**).
-- **Proposed: +45° II, flush front** — cleaner front, 110° opening, and the door stays inside the diagonal, so it cannot
-  clash with the neighbouring units' doors (the §5.1 worry).
+## 4. Door and hinges — square-edged sides (owner, 22/10)
+- **Owner: "square edges please".** The Hebrock edges rectangular panels with square edges only (its manual: *not rated
+  for non-rectangular workpieces*; no tilting unit), so the **sides keep a square, Hebrock-edged front** — no 45° bevel.
+- That rules out Blum's +45° II (flush front, assumes bevelled sides — spec v0.3, **withdrawn**). Blum's **+45° I, half
+  overlay, "for corner cabinets with set back fronts"** has a planning case drawn with a **square-edged side**:
+  **planning Nº 53, 45°** (catalogue p. 119: 34 / 5.5 / 5 / 20).
   | Item | Part no. |
   |---|---|
-  | Hinge, CLIP top BLUMOTION +45° II, screw-on boss | **79B3558** (INSERTA: 79B3598; without soft-close: 78T5550) |
-  | Mounting plate, 0 mm (planning Nº 9, 45°) | **173H7100** |
-- **Door width = LW − 5.4**, where LW is the internal width across the front between the bevelled sides (2.7 mm gap each
-  side). Door 896 high. Cup Ø35; boss distance and plate positions per p. 121 (Nº 9: 32.5 / 2.5 / 14).
-- **Sides: front edge bevelled 45°** — Blum's drawing assumes it, and SmartCabinet's corner shape appears to draw it. That
-  is an **F45 tilt cut**, and **edging a bevel on the Hebrock is unproven** (test on an offcut, or leave the bevel unedged
-  behind the door gap).
-- **Not in SmartCabinet's hinge list yet**: the `35 CERNIERE` list photographed 22/10 runs 78Z5530T → 79B9590 with no
-  79B3558 / 79B3598 / 78T5550. It must be **added** (accessory registry + its CAM hinge table) before the door can be
-  drilled. *Earlier text said "~380–420 wide"; superseded by FB = LW − 5.4.*
+  | Hinge, CLIP top BLUMOTION +45° I, screw-on boss, 95° | **79B9658** (INSERTA: 79B9698; without soft-close: 78A9658.T) |
+  | Mounting plate, 0 mm | **173H7100** |
+- **The door sits set back** behind the sides' square front edges, which stay visible as an edged reveal either side.
+  **Door width = LW**, the internal width between the sides at the door line (p. 118: FB = LW); 896 high. Opens **95°**.
+- Set back inside the diagonal, the door **cannot clash** with the neighbouring units' doors.
+- **SmartCabinet:** keep the sides' front edges at **90°** (the manual offers this for the chamfered shape — look for the
+  same option on the corner shape or under Sides), and set the door as **set back / inset** on the diagonal. Add
+  **79B9658** and **173H7100** to the `35 CERNIERE` list and its CAM hinge table — neither is there now (photo 22/10).
+- **Still hand work:** the diagonal edges of top, bottom and both shelves meet the short edges at 135° — Hebrock with
+  corner rounding off, ends trimmed by hand (8 short trims per unit). Everything else is normal Hebrock work.
 - LH / RH: hinges on the left or right side only; the carcase is identical.
 
 ## 5. Watch-outs before cutting
