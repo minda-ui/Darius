@@ -43,3 +43,18 @@ Session 37.
   **≈ 370.5**; a +45° I set-back door must be **= LW**. 420 cannot fit between the sides.
 - **? open:** sides 319 / 19 proud intended (set-back look); back 13.6 from the wall vs library 16; no cutting-list PDF;
   RH version.
+
+## (5) Owner: shelves are loose — Cabineo shelf pins
+- Round 1's "shelves fixed on all four edges" was **wrong**: Cabineo shelf pins, shelves loose. The depth alignment still
+  matters (pin must meet the pocket): sides 126 vs shelf 107 — open.
+
+## (6) "Check for updates" (evening)
+- `01-SIDE-LEFT.TCN` re-saved 15:23 by **TpaCAD** (EDICAD 02.00, tcn 2.9.29, UTF-16). Its four `foro mul` shelf-pin rows
+  now carry **no start X, depth or Y** (`#8510/#8513/#8518` absent; pairs identical). Either the decoder does not read the
+  newer format or the positions were lost — **not to run until the owner checks the rows in TpaCAD**.
+- Raw/: Eugene `AWT-0942` (sync git CLAUDE.md) — verified the working branch carries v37, `cmp` SAME with Drive; `main` is
+  v31 pending the merge (`AWT-0225`). **Correction recorded on the row:** v37 grants ops@ read + create_draft only, not
+  labelling (Eugene's note and the 13:00 run both said "+ label").
+- Raw/: Victoria `AWT-0958` — framework v0.1 read (3 pp.); feedback written (`Outputs/2026-10-22_Darius-feedback-OS-framework-v0.1-AWT-0958.md`,
+  `103ovUF-FjwZTIKA9GEHHGIxMS4ewgDtA`, SAME) and posted on the row, **Done**. Offered for Monday: an id/connection
+  inventory and a master-only classification of the workshop KB.
