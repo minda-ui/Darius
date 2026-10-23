@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.8 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.9 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -45,7 +45,11 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Labour, all hours at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.55 h (+10 % care) = **£4,479.75** |
 | Machine hours at **£65/h**, on top (owner 23/10) — F45 + Hebrock + Vitap | 35 h = **£2,275.00** | 38.5 h (+10 %) = **£2,502.50** |
 | **Materials + labour + machines** | **£9,365.10** | **£12,636.85** |
-| Still to add (both) | wall rail, margin, VAT | same |
+| Margin 15 % on materials (owner 23/10; added on cost) | £452.64 | £848.19 |
+| **Price ex VAT** | **£9,817.74** | **£13,485.04** |
+| VAT 20 % | £1,963.55 | £2,697.01 |
+| **Price inc VAT** | **£11,781.29** | **£16,182.05** |
+| Still to add (both) | wall rail price (+15 %, +VAT) | same |
 | Delivery, fitting | **Not in this job** (owner 23/10) | same |
 
 **Notes**
@@ -98,7 +102,7 @@ they are to be spread over machine hours.
 
 ## 4. Not included
 **Delivery and fitting are not in this job** (owner 23/10: *"no delivery; no fitting"*) — the quote should say so
-(customer collects and installs, incl. wall fixing). Still to add: wall rail price, margin, VAT. No lighting.
+(customer collects and installs, incl. wall fixing). Still to add: wall rail price. No lighting.
 
 ## 5. What Minda needs to supply before the quote
 1. **Board:** confirm U702 **PM** (PerfectSense Matt MDF) for everything — carcase, backs and shelves too — or carcase in

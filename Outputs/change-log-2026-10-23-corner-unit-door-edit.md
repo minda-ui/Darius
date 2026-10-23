@@ -70,3 +70,8 @@ Session 38.
 - Owner: *"handles at £4; no delivery; no fitting"* → 30 handles × £4.00 = £120.00; delivery and fitting excluded.
 - Totals: **Option 1 £9,365.10**, **Option 2 £12,636.85** (materials + £45/h labour + £65/h machine), before wall rail,
   margin and VAT. Published in place, SAME.
+
+## 9. Cost sheet v0.9 — margin and VAT
+- Owner: *"15% margin on materials and VAT at 20%"* → 15 % added on material cost (a mark-up; labour and machine
+  rates carry none). **Option 1 £9,817.74 ex VAT / £11,781.29 inc VAT; Option 2 £13,485.04 / £16,182.05.**
+  Wall rail still unpriced. Published in place, SAME.
