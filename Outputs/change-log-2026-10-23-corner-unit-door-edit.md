@@ -20,3 +20,17 @@ Session 38.
   folder were not touched.
 - **Caveats given:** a hand edit diverges from the SmartCabinet model (a later re-export brings 420 back); the saw cut size
   comes from the cutting list, so it must say 370.5 too; dry-fit before the hinges are set.
+
+## (3) Shelf joints — option B tried (round 4, `v2 v4`), then option A
+- Owner tried the joint table: `50 · 40 · 2 · 0` row, `2 → 1`. **v4 result:** still 2 joints per shelf edge, but both
+  parts' rear joints moved to ~40 from the shelf back — **rear aligned (75 / 75.5 from the wall), front still 18.5 out
+  (240 vs 221.5)**. The side is 319 deep, the shelf edge follows the 300 line; symmetric table values cannot fix it.
+- v4 also **reverted the construction** (sides 900 full height, top/bottom 581 between them, 2 joints per end) — owner told
+  not to use v4. Pocket geometry now read from the raw lines: each Cabineo shelf-pin seat is an open slot Ø18.8, centred
+  on the `type2` X/Y, from 9.4 outside the edge to 35.6 in.
+- **Owner: "Yes, do both"** — (a) **v5 built** in `Raw/Review folder/600x600 Corner Wall Unit v5 (Darius - v3 + door 370.5 +
+  plain shelf pins)` (`1cqn1ASdLWL5bNqrsSPQ8FyvjQhqy0hHP`): all parts = round-2/v3 SmartCabinet files (incl. the
+  **SmartCabinet** left side, not the TpaCAD re-save), door + worklist = the 370.5 edit, **both shelf programs emptied** of
+  their 224 pocket lines (all `W#89/2201/2111`, tool 1002) — shelves sit loose on 5 mm pins in the side rows and the back
+  rows. 13 files, all md5 equal to local. (b) **SmartCabinet ticket drafted**
+  `Outputs/2026-10-23-smartcabinet-ticket-corner-shelf-joints.md` for the owner to send via the in-app Ticket.
