@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.3 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.4 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -24,9 +24,9 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 | Shelf pins = **Cabineo** (owner 23/10) — Cabineo X + screw per pin | 126 shelves × 4 = **504** | £0.196 + £0.102 | **150.19** | Library (Interfit web). |
 | Wall fixing / hangers | 24 units | — | **?** | ⚠ Tall units need anti-tip wall fixing; type and price not in library. |
 | Handles / push-to-open for 30 doors | 30 | — | **?** | ⚠ Not in the scene export. |
-| Legs: the shop's kitchen-unit leg, IronmongeryDirect 705309 (120–180 mm, pack of 4 + 2 plinth clips) | 24 units × 4 = **96 legs = 24 packs** | — | **?** | ⚠ **Price not known** — the library row says "take from invoice". |
+| Legs: the shop's kitchen-unit leg, IronmongeryDirect 705309 (120–180 mm, pack of 4 + 2 plinth clips) | 24 units × 4 = **96 legs = 24 packs** | £4.00 / pack | **96.00** | Owner 23/10: £4.00 per pack of 4 (Hardware Price Library updated). |
 | Plinth **19 mm U702 PM** (owner 23/10) — not in the 29-sheet optimisation | ≈ 19.6 m run (22 × 800 + 2 corner fronts) × ≈ 150 high → strips from **1 extra sheet** | £150.00 | **150.00** | ⚠ board price proxy as above; plinth height and run to confirm on the scene. Edging of plinth ends only (in the 5 rolls). |
-| **Materials subtotal (known lines)** | | | **≈ 5,259.00** | + legs, wall fixings, handles |
+| **Materials subtotal (known lines, option 2)** | | | **≈ 5,355.00** | + wall fixings, handles |
 
 ## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
 Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
@@ -38,8 +38,9 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Hinges + plates (60) | £170.40 | £170.40 |
 | Cabineo X, carcase (≈ 696) | £207.41 | £207.41 |
 | Cabineo shelf pins (504) | £150.19 | £150.19 |
-| **Known materials** | **£2,622.00** | **£5,259.00** |
-| Still to add (both) | legs 705309 × 24 packs, wall fixings, handles | same |
+| Legs 705309, 24 packs × £4.00 (owner 23/10; £1.00 per leg) | £96.00 | £96.00 |
+| **Known materials** | **£2,718.00** | **£5,355.00** |
+| Still to add (both) | wall fixings, handles | same |
 | Workshop time | ≈ 90.5 h | ≈ 90.5 h + handling care (lacquered MDF, protective film) — your call, suggest +10 % |
 
 **Notes**
@@ -67,7 +68,7 @@ Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour
 ## 5. What Minda needs to supply before the quote
 1. **Board:** confirm U702 **PM** (PerfectSense Matt MDF) for everything — carcase, backs and shelves too — or carcase in
    MFC and only doors/visible parts in PM; and thickness (19).
-2. **Prices / products** still missing: leg 705309 (invoice price), wall fixings, handles. *(Shelf pins = Cabineo; plinth
+2. **Prices / products** still missing: wall fixings, handles. *(Legs £4.00 / pack of 4 — owner 23/10.)* *(Shelf pins = Cabineo; plinth
    = 19 mm U702 PM — owner 23/10.)*
 3. **Hourly rate**, and whether delivery / fitting are in.
 4. A Lathams quote for U702 PM board + edging (Darius can draft the request).
