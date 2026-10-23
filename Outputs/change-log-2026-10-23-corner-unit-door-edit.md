@@ -84,3 +84,7 @@ Session 38.
   Bank details on the pro forma were not copied anywhere.
 - Open: is Option 1's colour U963 Diamond Grey, or U702 Cashmere Grey at the same price? Option 1 edging still the
   05/2025 U702 ST9 price.
+
+## 11. Cost sheet v0.11 — wall rail £100
+- Owner: *"add £100 for wall rail"* → both options. **Option 1 £10,143.19 ex VAT / £12,171.83 inc VAT; Option 2
+  £13,600.04 / £16,320.05.** Every line now priced; proxies (PM board/edging, brackets, Option 1 edging) remain.

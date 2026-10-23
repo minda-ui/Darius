@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.10 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.11 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -26,7 +26,7 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 | Handles, one per door (owner 23/10) | 30 | £4.00 | **120.00** | Owner-stated £4.00 each; model not named. |
 | Legs: the shop's kitchen-unit leg, IronmongeryDirect 705309 (120–180 mm, pack of 4 + 2 plinth clips) | 24 units × 4 = **96 legs = 24 packs** | £4.00 / pack | **96.00** | Owner 23/10: £4.00 per pack of 4 (Hardware Price Library updated). |
 | Plinth **19 mm U702 PM** (owner 23/10) — not in the 29-sheet optimisation | ≈ 19.6 m run (22 × 800 + 2 corner fronts) × ≈ 150 high → strips from **1 extra sheet** | £150.00 | **150.00** | ⚠ board price proxy as above; plinth height and run to confirm on the scene. Edging of plinth ends only (in the 5 rolls). |
-| **Materials subtotal (known lines, option 2)** | | | **≈ 5,654.60** | + wall rail |
+| **Materials subtotal (known lines, option 2)** | | | **≈ 5,754.60** | incl. wall rail £100 (owner 23/10) |
 
 ## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
 Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
@@ -41,15 +41,16 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Legs 705309, 24 packs × £4.00 (owner 23/10; £1.00 per leg) | £96.00 | £96.00 |
 | Wall brackets, 48 Häfele concealed hangers (indicative) | £179.60 | £179.60 |
 | Handles, 30 × £4.00 (owner 23/10) | £120.00 | £120.00 |
-| **Known materials** | **£3,200.60** | **£5,654.60** |
+| Wall rail for the brackets, ≈ 19.6 m (owner 23/10) | £100.00 | £100.00 |
+| **Known materials** | **£3,300.60** | **£5,754.60** |
 | Labour, all hours at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.55 h (+10 % care) = **£4,479.75** |
 | Machine hours at **£65/h**, on top (owner 23/10) — F45 + Hebrock + Vitap | 35 h = **£2,275.00** | 38.5 h (+10 %) = **£2,502.50** |
-| **Materials + labour + machines** | **£9,548.10** | **£12,636.85** |
-| Margin 15 % on materials (owner 23/10; added on cost) | £480.09 | £848.19 |
-| **Price ex VAT** | **£10,028.19** | **£13,485.04** |
-| VAT 20 % | £2,005.64 | £2,697.01 |
-| **Price inc VAT** | **£12,033.83** | **£16,182.05** |
-| Still to add (both) | wall rail price (+15 %, +VAT) | same |
+| **Materials + labour + machines** | **£9,648.10** | **£12,736.85** |
+| Margin 15 % on materials (owner 23/10; added on cost) | £495.09 | £863.19 |
+| **Price ex VAT** | **£10,143.19** | **£13,600.04** |
+| VAT 20 % | £2,028.64 | £2,720.01 |
+| **Price inc VAT** | **£12,171.83** | **£16,320.05** |
+| Still to add (both) | nothing priced-out — see §5 for the proxies to firm up | same |
 | Delivery, fitting | **Not in this job** (owner 23/10) | same |
 
 **Notes**
@@ -102,7 +103,7 @@ they are to be spread over machine hours.
 
 ## 4. Not included
 **Delivery and fitting are not in this job** (owner 23/10: *"no delivery; no fitting"*) — the quote should say so
-(customer collects and installs, incl. wall fixing). Still to add: wall rail price. No lighting.
+(customer collects and installs, incl. wall fixing). Wall rail £100 included (owner 23/10). No lighting.
 
 ## 5. What Minda needs to supply before the quote
 1. **Board:** confirm U702 **PM** (PerfectSense Matt MDF) for everything — carcase, backs and shelves too — or carcase in
