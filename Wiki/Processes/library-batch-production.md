@@ -4,7 +4,7 @@ category: Processes
 status: draft
 sensitive: false
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-23
 sources:
  - "Owner (Minda), 2026-09-20: *\"Mostly side elements are same through all units, it's only up, bottom and back which are specific to width\"*"
  - "`AMFA Wall Unit 300 LH 900/01-SIDE-LEFT.TCN` (1sYdx4InTyfuV2rJKPOvhkUtlLgm6UqQo) and `AMFA Wall Unit 500 LH 900 high/01-SIDE-LEFT.TCN` (1Q3FvNhVKPwhG87rih2MVToHsgvW_eqOc), downloaded as exact bytes and diffed 2026-09-20 - identical, sha256 ac79530d4aa8ba14..."
@@ -182,6 +182,17 @@ files made by hand. Nothing seen so far answers it, and it decides how far this 
 - **Batch errors scale.** A wrong setup ruins 24 parts rather than 2, so a first-off check stops being
   optional. That is a process discipline the shop does not currently have written down.
 - **WIP storage becomes the constraint** once parts stop moving unit-by-unit.
+
+## Loading a unit on the Vitap — the whole folder at once (owner, 2026-10-23)
+
+**`worklist.xmlst` opens directly in WSC ListsManager and loads every program in the unit as one list.**
+Tested by the owner on the corner wall unit v5: the worklist opened and **all 13 parts loaded**, one row
+each. No need to add `.TCN` files one at a time. The worklist's fields (`REPETITIONS`, `MIRROR`,
+`LASERCORR`, L/H/T) are the ListsManager's own columns (Repetitions, Mirror, Disable Laser, L, H, T).
+
+At the machine, after loading: check **the folder version in the path** (the first attempt on
+23/10 had a v2 side loaded when v5 was the release), the row count against the folder, the sizes of any
+part edited by hand (the v5 door must read 370.5), and that **Mirror** is unticked.
 
 ## Suggested order
 

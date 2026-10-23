@@ -98,3 +98,10 @@ Session 38.
   (Drive `13Dl_5SulvyTywyPowjzDO_U56vNi2p2x`), 2 pages: p1 customer price summary (spec, both options, ex/inc VAT,
   exclusions; marked *not a formal quote* — the formal quote goes through the CRM); p2 **internal** cost build-up marked
   *do not hand to customer*. Built from HTML with headless Chromium; figures = cost sheet v0.12.
+
+## 14. Vitap: a whole unit loads from `worklist.xmlst`
+- Owner photographed WSC ListsManager with `600x600 Corner Wall Unit v2\02-SIDE-RIGHT.TCN` loaded and asked whether a
+  whole folder can be loaded. Darius flagged the **v2** path (v5 is the release) and suggested opening `worklist.xmlst`
+  as a list. Owner: *"worklist opened, all 13 parts loaded"*.
+- Recorded in `Wiki/Processes/library-batch-production.md` (new section, Drive `1weDcG8lIWw4WNbtihHZPshprDanmEGUt`,
+  in place, SAME).
