@@ -34,3 +34,12 @@ Session 38.
   their 224 pocket lines (all `W#89/2201/2111`, tool 1002) — shelves sit loose on 5 mm pins in the side rows and the back
   rows. 13 files, all md5 equal to local. (b) **SmartCabinet ticket drafted**
   `Outputs/2026-10-23-smartcabinet-ticket-corner-shelf-joints.md` for the owner to send via the in-app Ticket.
+
+## (4) "Library" project — workshop cost sheet v0.1
+- Owner asked how to cost a project and issue a quote. Answered with the split (Darius: workshop cost; Minda: price/rate/
+  margin; Nadia: quote in the CRM; Rachel: invoice), then costed the owner's SmartCabinet export (`library_Panel.csv`,
+  `library_Pieces.csv`, uploaded in chat): 24 units, 293 parts, 134.99 m², 29 sheets (yield 80.3 %).
+- `Outputs/2026-10-23-library-project-cost-sheet-v0.1.md` (Drive `1EnELNZM6CQm2dP7fu3Ra7bZ-onf4XIgb`). Known materials ≈ £4,958.81 (board
+  29 × £150 **proxy** — U702 PM not in the Panel Price Library; edging proxy U708 PM; hinges and Cabineo from the Hardware
+  Price Library); **open:** shelf pins, wall fixings, handles, legs/plinth (not in library or scene), labour ≈ 90.5 h
+  (Darius's estimate) × the owner's rate. Proxies and estimates marked in the sheet; nothing presented as a quoted price.
