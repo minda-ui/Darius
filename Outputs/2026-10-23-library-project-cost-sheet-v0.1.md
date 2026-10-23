@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.5 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.6 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -41,8 +41,9 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Legs 705309, 24 packs × £4.00 (owner 23/10; £1.00 per leg) | £96.00 | £96.00 |
 | Wall brackets, 48 Häfele concealed hangers (indicative) | £179.60 | £179.60 |
 | **Known materials** | **£2,897.60** | **£5,534.60** |
-| Workshop time at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.5 h (+10 % care) = **£4,479.75** |
-| **Materials + workshop** | **£6,970.10** | **£10,014.35** |
+| Labour, all hours at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.55 h (+10 % care) = **£4,479.75** |
+| Machine hours at **£65/h**, on top (owner 23/10) — F45 + Hebrock + Vitap | 35 h = **£2,275.00** | 38.5 h (+10 %) = **£2,502.50** |
+| **Materials + labour + machines** | **£9,245.10** | **£12,516.85** |
 | Still to add (both) | wall rail, handles, delivery/fitting, margin, VAT | same |
 
 **Notes**
@@ -62,9 +63,17 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Assembly | 15 tall × 2 h, 7 × 1.5 h, 2 corner × 2 h | 44.5 |
 | Doors: hang and adjust | 30 × 10 min | 5 |
 | Check and pack | 24 × 15 min | 6 |
-| **Total** | | **≈ 90.5 h × £45 = £4,072.50** (Option 2 +10 %: 99.55 h = £4,479.75) |
+| **Total** | | **≈ 90.5 h** |
 
-*Owner 23/10: rate **£45/h**. The owner also wrote "1 hr at £65" just before — if £65 is the charge-out rate, workshop time is £5,882.50 (Option 1) / £6,470.75 (Option 2). To confirm.*
+**Owner 23/10: labour £45/h on every hour, plus machine time £65/h on top** for the hours a machine runs:
+
+| | Hours | Rate | Option 1 | Option 2 (+10 %) |
+|---|---|---|---|---|
+| Labour (all stages) | 90.5 | £45 | £4,072.50 | £4,479.75 |
+| Machine: F45 saw 12 + Hebrock 8 + Vitap 15 | 35 | £65 | £2,275.00 | £2,502.50 |
+| **Workshop total** | | | **£6,347.50** | **£6,982.25** |
+
+*Reading of the owner's "1 hr at £65" + "£45 is my rate … machinery hours too and top of my rate". Assembly, doors and packing carry labour only.*
 
 ## 4. Not included (add if in the job)
 Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour, wall rail, any lighting, margin, VAT.
@@ -74,5 +83,5 @@ Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour
    MFC and only doors/visible parts in PM; and thickness (19).
 2. **Prices / products** still missing: handles; a trade price for the Häfele hangers and the wall rail *(brackets chosen by owner 23/10)*. *(Legs £4.00 / pack of 4 — owner 23/10.)* *(Shelf pins = Cabineo; plinth
    = 19 mm U702 PM — owner 23/10.)*
-3. ~~Hourly rate~~ **£45/h** (owner 23/10; £65 also mentioned — confirm which is charged). Whether delivery / fitting are in.
+3. ~~Hourly rate~~ **£45/h labour + £65/h machine time** (owner 23/10). Whether delivery / fitting are in.
 4. A Lathams quote for U702 PM board + edging (Darius can draft the request).

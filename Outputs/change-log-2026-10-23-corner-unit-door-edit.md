@@ -52,3 +52,10 @@ Session 38.
   Owner also wrote *"1 hr at £65"*; recorded as an alternative (£5,882.50 / £6,470.75) to confirm.
 - Materials + workshop: **Option 1 £6,970.10**, **Option 2 £10,014.35** — before handles, wall rail, delivery/fitting,
   margin and VAT. Published in place, SAME.
+
+## 6. Library cost sheet v0.6 — machine hours on top
+- Owner: *"£45 is my rate, we need to add machinery hours too and top of my rate"* (with the earlier *"1 hr at £65"*):
+  labour £45/h on all 90.5 h, plus machine time £65/h on the 35 machine hours (F45 12, Hebrock 8, Vitap 15).
+- Option 1: £4,072.50 + £2,275.00 = £6,347.50 workshop; with materials **£9,245.10**.
+  Option 2 (+10 %): £4,479.75 + £2,502.50 = £6,982.25; with materials **£12,516.85**. Before handles, rail, delivery,
+  margin, VAT. Published in place, SAME.
