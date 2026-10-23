@@ -1,6 +1,6 @@
 # Change-log index — Workshop of Furniture Making KB
 
-**Every session's `change-log-*.md` file, newest first — all 27 of them.** Split out of
+**Every session's `change-log-*.md` file, newest first — all 38 of them.** *(Recounted 2026-10-23: the figure had said 27 since session 27.)* Split out of
 `Outputs/kb-registers.md` at **v28** (2026-09-21) because that file was re-emitted whole every session and
 35,701 bytes of it was append-only history. It was then period-split on 2026-09-23, and **that split is now
 over**: the snapshots were **merged back in on 2026-09-28** on the owner's instruction (*"merge the
@@ -32,6 +32,7 @@ Newest first.
 
 | Date | Entry | File |
 |---|---|---|
+| 2026-10-23 | Session 38 - **Corner unit v5 and the library quote.** Door program edited 420 → 370.5 (SmartCabinet would not); shelf Cabineo joints: option B tried and reverted, **v5 released with plain pins** (13 files) and a Kosmosoft ticket drafted; **v5 loaded from `worklist.xmlst` and run on the Vitap** — a whole unit loads in one list (Wiki amended). **Library project quote**: cost sheet v0.1 → v0.12 from the SmartCabinet export — two options (18 mm MFC U702 ST9 at Lathams SO 3481260 £68.40; 19 mm PerfectSense proxy), Häfele concealed hangers + £100 rail, £4 handles, £45/h labour + £65/h machine, draft machine-hour cost (£15–£34), 15 % materials margin, VAT: **£12,171.83 / £16,320.05 inc VAT**; printable two-page PDF. | `change-log-2026-10-23-corner-unit-door-edit.md` |
 | 2026-10-22 | Session 37 - **Corner wall unit 600 × 600 diagonal, 900, LH/RH**: spec v0.4 (square-edged sides — the Hebrock edges square only; Blum **+45° I** 79B9658 + plate 173H7100, set-back door), two drawing-check rounds (shelf-pin depths 126 vs 107 and door 420 vs ~370 open; left side re-saved by TpaCAD with hole rows unreadable). Project A: framework feedback `AWT-0958` and ids/connections inventory `AWT-0967` Done; questions to Victoria `AWT-0971` answered — **Darius is the gate resolver; machine-share folder = "Furniture" `1BsTNcHI2OwjDlJdrCgv-x0BwHjas2qU1`**. Composio's Google route blocked by an SSRF guard for part of the evening. | `change-log-2026-10-22-corner-wall-unit-diagonal.md` |
 | 2026-10-18 | Session 36 - **Charter v37**: on Minda's own *"Fold it in"*, the estate work-run clause (four runs a day, DONE/PROGRESS/BLOCKED/NOT MINE, ASK form) and ops@ Gmail (read and drafts only) folded into `CLAUDE.md` §0/§0a by archive-then-recreate. `AWT-0849` closed; Amfa order hand-off with Nadia carried to `AWT-0871`. | `change-log-2026-10-18-charter-v37-work-runs.md` |
 | 2026-10-15 | Session 35 - **`AWT-0537` closed**: Minda's answers to the seven safety gaps (no inductions; PPE; 3 extinguishers, no fire plan; no final checks; own waste runs to the recycling centre; no finishes; lone working with no check-in) sent to Anna's Raw as a follow-up. Extractor troubleshooting article back-filled into git. | `change-log-2026-10-15-awt-0537-closed.md` |

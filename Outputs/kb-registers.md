@@ -93,7 +93,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Wiki structure changes
 
-**All 46, oldest first.**
+**All 61, oldest first.** *(recounted 2026-10-23 with awk over the table; the header had said 46.)*
 
 | Date | Change | Reason |
 |---|---|---|
@@ -158,10 +158,11 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-11 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended in place** (8,017 -> **10,108 B**, same id `15GhXBr63eyV5CUd9GyJ5AKLPoVF4nOo5`): `FL-004` outcome line; new section *"E40 and a scorer that will not rise — fuse F9 feeds the scorer drives"* from manual Fig. 5-34 (p.77) and legend (p.78), extended with **F9's position, 4 AT rating and two cabinet hazards** from the owner's cabinet photo. | Owner: *"Do you have position of F9 fuse?"* (fault `FL-005`) |
 | 2026-10-14 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended in place** (10,108 -> **12,830 B**, same id): `FL-005` cause was **configuration** — new section *"Scorer will not move? Check its settings on the screen first"*, with the 2026-10-11 electrical reasoning marked wrong. Skill `machine-control-fault` amended (settings before electrics). | Owner: *"it was configuration. It was set not go up"* |
 | 2026-10-16 | **`Troubleshooting/troubleshooting-aes-saf-10000.md` back-filled into the git mirror** (11,956 B, Drive id `1p6fM3mEWB3vcmfmOxtf_spC2w2OMUSkf`, fetched and `cmp`-identical) — it had been on Drive and in `Wiki/index.md` since 2026-09-28 but never committed; found while gathering facts for `AWT-0537`. | Mirror completeness (CLAUDE.md s1) |
+| 2026-10-23 | **`Processes/library-batch-production.md` amended** — new section *Loading a unit on the Vitap*: `worklist.xmlst` opens in WSC ListsManager and loads every program as one list (owner-tested on the corner unit v5, 13 parts). Updated in place, id kept. | Owner's question at the machine |
 
 ## Outputs produced
 
-**All 99, oldest first** *(recounted 2026-10-03 with awk over the table; the header had said 88 since session 26)*.
+**All 123, oldest first** *(recounted 2026-10-23 with awk over the table; the header had said 99. Rows for sessions after 2026-10-16 other than today's were not added at the time — see the change logs.)*.
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
@@ -283,6 +284,12 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | **Decisions A–D and the real Rule F adopted** - Anna's note `Raw/Copy of Anna decision 2026-10-09 … (AWT-0497).md` (`19PFAStLuzRnNyz5gZ5_rVMyOxuRGJIJk`) and Alex's 2026-09-27 Rule F note (`1ZmOGeU4O5iJnqSBx2fWSx7AtlmYgeG0r`) read; `CLAUDE-Rules.md` §0b (in place, 26,934 B); Hub `AWT-0147` closed, `AWT-0498` corrected, `AWT-0516` added. Change log 2026-10-10. | 2026-10-10 | none (charter) | Owner: *"Yes to both"* |
 | **METABOX side panel check** - `Raw/Side Left.pdf` read against the Blum check sheet; change log `change-log-2026-10-03-metabox-side-left-check.md`. | 2026-10-03 | blum-metabox-smartcabinet-input | Owner |
 | **Session 25's change log, and the registers and index brought current on Drive** after Composio sign-in. | 2026-10-02 | none | Darius, end-of-day owed |
+| **Corner unit door edit** — Drive folder `10K9RLtQSuk8aNN1X_Tz_guXSSqNeT_Qn`: door program DH, HF and worklist HEIGHT 420.0 → 370.5. | 2026-10-23 | pre-production-drawing-check | Minda |
+| **Corner unit v5 release** — Drive folder `1cqn1ASdLWL5bNqrsSPQ8FyvjQhqy0hHP`, 13 files, md5-verified: door 370.5, both shelf programs stripped of their Cabineo joint lines (plain pins). First Vitap run 23/10. | 2026-10-23 | pre-production-drawing-check | Minda |
+| `Outputs/2026-10-23-smartcabinet-ticket-corner-shelf-joints.md` — ticket draft for Kosmosoft (owner sends via the in-app Ticket). | 2026-10-23 | carcase-fixings-cabineo-x-vs-confirmat | Minda |
+| `Outputs/2026-10-23-library-project-cost-sheet-v0.1.md` — library project cost sheet, content v0.12: two board options, £45/h labour + £65/h machine, 15 % materials margin, VAT; draft machine-hour cost calculation. | 2026-10-23 | panel-production-route | Minda |
+| `Outputs/2026-10-23-library-project-two-options.pdf` — printable: p1 customer price summary, p2 internal build-up. | 2026-10-23 | none | Minda |
+| `Outputs/change-log-2026-10-23-corner-unit-door-edit.md` — session 38 change log. | 2026-10-23 | none | Darius |
 
 ## Drive ids
 
@@ -398,6 +405,11 @@ correct however many times the file is revised afterwards.
 | `Outputs/kb-registers-snapshot-2026-09-27.md` | 23,678 | `1t1h3hsZpc6Qw-fAAJ_RTNn8c2tIhazJi` — renamed, not rewritten |
 | `Outputs/2026-09-27-proposal-drive-in-place-update.md` | **6,917** | `1KNvAx1a0Ob7LMRhF4-i9m3aa3PxymwHq` — *supersedes the 5,974 B id above* |
 | `Outputs/2026-09-27_Darius-to-Alex_Composio-rollout-report.md` | 9,977 | `1WIakKYJ8Q41-n0Jll7Ygt5-bRml0M300` — **in Alex's `Raw/`, not this KB's tree** |
+| `Outputs/change-log-2026-10-23-corner-unit-door-edit.md` | 9,098 | `1FixdLm8p7JWaIBr3QcoQp_vBlRqUJz_o` — **created 2026-10-23** |
+| `Outputs/2026-10-23-library-project-cost-sheet-v0.1.md` | 9,706 | `1EnELNZM6CQm2dP7fu3Ra7bZ-onf4XIgb` — **created 2026-10-23** |
+| `Outputs/2026-10-23-library-project-two-options.pdf` | 86,544 | `13Dl_5SulvyTywyPowjzDO_U56vNi2p2x` — **created 2026-10-23** |
+| `Outputs/2026-10-23-smartcabinet-ticket-corner-shelf-joints.md` | 2,211 | `13rtz9GLS6_XPt0h8bzPZiJLmO80QW0UT` — **created 2026-10-23** |
+| `Wiki/Processes/library-batch-production.md` | 12,211 | `1weDcG8lIWw4WNbtihHZPshprDanmEGUt` — updated in place 2026-10-23 |
 
 *This file is no longer absent from its own id table for the reason it used to be — it is the one being
 written, and its id is `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o`, **unchanged since its first publish and through

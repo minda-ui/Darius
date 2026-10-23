@@ -106,3 +106,8 @@ Session 38.
 - Recorded in `Wiki/Processes/library-batch-production.md` (new section, Drive `1weDcG8lIWw4WNbtihHZPshprDanmEGUt`,
   in place, SAME).
 - Owner: *"v5 loaded, door 370.5, running it now"* — first Vitap run of the corner wall unit (LH) v5. Dry-fit result to come.
+
+## 15. End of day
+- Registers: today's rows added (1 Wiki, 6 Outputs, 5 Drive ids); the Wiki and Outputs header counts **recounted
+  with awk** — they had said 46 and 99 against 61 and 123 rows. Outputs rows for 2026-10-17 to 10-22 were not added at
+  the time; the change logs hold that work. Index: session 38 row; header recounted 27 → 38.
