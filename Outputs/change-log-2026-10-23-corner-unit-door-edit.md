@@ -65,3 +65,8 @@ Session 38.
   hours, plus power at £0.27/kWh and the compressor/extractor share. Result: F45 £19.08, Hebrock £15.49, Vitap £20.10
   per hour at 800 h/yr (£24–£34 at 400 h/yr). Job machine cost £654 (800 h) – £1,088 (400 h) vs £2,275 charged at £65.
   Excludes rent, insurance, finance, profit. Assumptions flagged for the owner. Published in place, SAME.
+
+## 8. Cost sheet v0.8 — handles; no delivery or fitting
+- Owner: *"handles at £4; no delivery; no fitting"* → 30 handles × £4.00 = £120.00; delivery and fitting excluded.
+- Totals: **Option 1 £9,365.10**, **Option 2 £12,636.85** (materials + £45/h labour + £65/h machine), before wall rail,
+  margin and VAT. Published in place, SAME.
