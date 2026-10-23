@@ -92,3 +92,9 @@ Session 38.
 ## 12. Cost sheet v0.12 — Option 1 colour confirmed
 - Owner: *"U702 Cashmere Grey at the same price"* → Option 1 is 18 mm MFC U702 ST9 at £68.40/sheet (U963 order price).
   Totals unchanged: £10,143.19 ex VAT / £12,171.83 inc VAT.
+
+## 13. Printable PDF of both options
+- Owner: *"create .pdf with both options to print"* → `Outputs/2026-10-23-library-project-two-options.pdf`
+  (Drive `13Dl_5SulvyTywyPowjzDO_U56vNi2p2x`), 2 pages: p1 customer price summary (spec, both options, ex/inc VAT,
+  exclusions; marked *not a formal quote* — the formal quote goes through the CRM); p2 **internal** cost build-up marked
+  *do not hand to customer*. Built from HTML with headless Chromium; figures = cost sheet v0.12.
