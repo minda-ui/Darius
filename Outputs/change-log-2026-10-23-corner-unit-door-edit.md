@@ -105,3 +105,4 @@ Session 38.
   as a list. Owner: *"worklist opened, all 13 parts loaded"*.
 - Recorded in `Wiki/Processes/library-batch-production.md` (new section, Drive `1weDcG8lIWw4WNbtihHZPshprDanmEGUt`,
   in place, SAME).
+- Owner: *"v5 loaded, door 370.5, running it now"* — first Vitap run of the corner wall unit (LH) v5. Dry-fit result to come.
