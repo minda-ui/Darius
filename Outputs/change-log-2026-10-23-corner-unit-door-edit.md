@@ -59,3 +59,9 @@ Session 38.
 - Option 1: £4,072.50 + £2,275.00 = £6,347.50 workshop; with materials **£9,245.10**.
   Option 2 (+10 %): £4,479.75 + £2,502.50 = £6,982.25; with materials **£12,516.85**. Before handles, rail, delivery,
   margin, VAT. Published in place, SAME.
+
+## 7. Cost sheet v0.7 — machine-hour rate calculated (draft)
+- Owner: *"we need to calculate machine hour"*. Added §3a: depreciation (10 yr) + 5 % maintenance/tooling over yearly
+  hours, plus power at £0.27/kWh and the compressor/extractor share. Result: F45 £19.08, Hebrock £15.49, Vitap £20.10
+  per hour at 800 h/yr (£24–£34 at 400 h/yr). Job machine cost £654 (800 h) – £1,088 (400 h) vs £2,275 charged at £65.
+  Excludes rent, insurance, finance, profit. Assumptions flagged for the owner. Published in place, SAME.

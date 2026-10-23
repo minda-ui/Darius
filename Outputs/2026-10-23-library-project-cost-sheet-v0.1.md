@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.6 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.7 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -74,6 +74,25 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | **Workshop total** | | | **£6,347.50** | **£6,982.25** |
 
 *Reading of the owner's "1 hr at £65" + "£45 is my rate … machinery hours too and top of my rate". Assembly, doors and packing carry labour only.*
+
+## 3a. What a machine hour costs — draft calculation (owner 23/10: *"we need to calculate machine hour"*)
+**Method:** (depreciation + maintenance/tooling) ÷ machine hours a year + the machine's electricity + its share of the
+compressor and extractor. **Assumptions to correct:** 10-year life, no resale value; maintenance and tooling 5 % of price
+a year; electricity £0.27/kWh; the compressor (≈ 7.5 kWh/h) and extractor (≈ 11 kWh/h) run whenever a machine runs.
+Prices from the Machinery Register / Wiki: F45 £64,030, Hebrock £42,000 (⚠ may be only the 70 % balance — invoice 100141
+not on file), Vitap £68,000, ABAC £9,696, AES £6,350.
+
+| Machine hours a year (each machine) | F45 | Hebrock | Vitap | Library job (12 + 8 + 15 h) |
+|---|---|---|---|---|
+| 400 h (≈ 8 h/week) | £32.09 | £24.37 | £33.85 | £1,087.79 |
+| **800 h (≈ 16 h/week)** | **£19.08** | **£15.49** | **£20.10** | **£654.38** |
+| 1,200 h (≈ 24 h/week) | £14.75 | £12.53 | £15.51 | £524.48 |
+
+**Read-out:** the **cost** of a machine hour is about **£15–£34**, depending most on how many hours the machines run in a
+year. **£65/h** covers that and leaves ≈ £30–£50 an hour towards rent, insurance, finance, the server/software and
+profit — which this calculation does **not** include. **Needs from Minda:** the machines' real yearly running hours;
+whether any machine is on finance (interest belongs in the rate); the workshop's rent/insurance/electricity rate if
+they are to be spread over machine hours.
 
 ## 4. Not included (add if in the job)
 Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour, wall rail, any lighting, margin, VAT.
