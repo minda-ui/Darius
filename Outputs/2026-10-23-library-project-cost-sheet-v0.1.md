@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.11 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.12 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -31,9 +31,9 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 ## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
 Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 
-| Line | **Option 1 — 18 mm MFC ST9** (priced on U963 Diamond Grey; colour to confirm) | **Option 2 — 19 mm PerfectSense Matt U702 PM** |
+| Line | **Option 1 — 18 mm MFC U702 ST9 Cashmere Grey** | **Option 2 — 19 mm PerfectSense Matt U702 PM** |
 |---|---|---|
-| Board, 30 sheets | 30 × £68.40 = **£2,052.00** — owner 23/10: *"same board as 18mm MFC"*, **Lathams Sales Order 3481260, 22/10/2026**: 18 mm Egger Eurodecor MFC **ST9 U963 Diamond Grey** 2800 × 2070, £68.40 ex VAT (was £62.30 from 05/2025) | 30 × £150.00 = **£4,500.00** ⚠ proxy: PerfectSense **Gloss** price (Lathams SO 1993765, 12/2025); PM not yet quoted |
+| Board, 30 sheets | 30 × £68.40 = **£2,052.00** — owner 23/10: *"same board as 18mm MFC"*, **Lathams Sales Order 3481260, 22/10/2026**: 18 mm Egger Eurodecor MFC **ST9 U963 Diamond Grey** 2800 × 2070, £68.40 ex VAT (was £62.30 from 05/2025). **Colour U702 Cashmere Grey at the same price** (owner 23/10) | 30 × £150.00 = **£4,500.00** ⚠ proxy: PerfectSense **Gloss** price (Lathams SO 1993765, 12/2025); PM not yet quoted |
 | Edging, 5 rolls | 5 × £45.00 = **£225.00** (ABS 23 × 2 U702 ST9, Lathams SO 1005830, 05/2025) | 5 × £46.20 = **£231.00** ⚠ proxy: U708 PerfectSense Matt 23 × 1 (Lathams Quote 412541) |
 | Hinges + plates (60) | £170.40 | £170.40 |
 | Cabineo X, carcase (≈ 696) | £207.41 | £207.41 |

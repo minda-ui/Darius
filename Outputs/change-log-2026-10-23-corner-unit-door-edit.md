@@ -88,3 +88,7 @@ Session 38.
 ## 11. Cost sheet v0.11 — wall rail £100
 - Owner: *"add £100 for wall rail"* → both options. **Option 1 £10,143.19 ex VAT / £12,171.83 inc VAT; Option 2
   £13,600.04 / £16,320.05.** Every line now priced; proxies (PM board/edging, brackets, Option 1 edging) remain.
+
+## 12. Cost sheet v0.12 — Option 1 colour confirmed
+- Owner: *"U702 Cashmere Grey at the same price"* → Option 1 is 18 mm MFC U702 ST9 at £68.40/sheet (U963 order price).
+  Totals unchanged: £10,143.19 ex VAT / £12,171.83 inc VAT.
