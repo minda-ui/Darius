@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.2 (for Minda's quote)
+# "Library" project — workshop cost sheet v0.3 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -27,6 +27,28 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 | Legs: the shop's kitchen-unit leg, IronmongeryDirect 705309 (120–180 mm, pack of 4 + 2 plinth clips) | 24 units × 4 = **96 legs = 24 packs** | — | **?** | ⚠ **Price not known** — the library row says "take from invoice". |
 | Plinth **19 mm U702 PM** (owner 23/10) — not in the 29-sheet optimisation | ≈ 19.6 m run (22 × 800 + 2 corner fronts) × ≈ 150 high → strips from **1 extra sheet** | £150.00 | **150.00** | ⚠ board price proxy as above; plinth height and run to confirm on the scene. Edging of plinth ends only (in the 5 rolls). |
 | **Materials subtotal (known lines)** | | | **≈ 5,259.00** | + legs, wall fixings, handles |
+
+## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
+Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
+
+| Line | **Option 1 — 18 mm MFC U702 ST9** | **Option 2 — 19 mm PerfectSense Matt U702 PM** |
+|---|---|---|
+| Board, 30 sheets | 30 × £62.30 = **£1,869.00** (Lathams SO 1005830, **22/05/2025** — 17 months old; Uniboards web 04/10/2026: £75.99 → £2,279.70) | 30 × £150.00 = **£4,500.00** ⚠ proxy: PerfectSense **Gloss** price (Lathams SO 1993765, 12/2025); PM not yet quoted |
+| Edging, 5 rolls | 5 × £45.00 = **£225.00** (ABS 23 × 2 U702 ST9, Lathams SO 1005830, 05/2025) | 5 × £46.20 = **£231.00** ⚠ proxy: U708 PerfectSense Matt 23 × 1 (Lathams Quote 412541) |
+| Hinges + plates (60) | £170.40 | £170.40 |
+| Cabineo X, carcase (≈ 696) | £207.41 | £207.41 |
+| Cabineo shelf pins (504) | £150.19 | £150.19 |
+| **Known materials** | **£2,622.00** | **£5,259.00** |
+| Still to add (both) | legs 705309 × 24 packs, wall fixings, handles | same |
+| Workshop time | ≈ 90.5 h | ≈ 90.5 h + handling care (lacquered MDF, protective film) — your call, suggest +10 % |
+
+**Notes**
+- **Option 1 needs a re-export.** The library units are drawn for **19 mm**; in 18 mm every part that sits between two
+  others changes by 1–2 mm (e.g. backs and shelves 762 → 764). Re-run the optimisation in SmartCabinet with the 18 mm
+  material before the order — the sheet count may move by one either way.
+- **Option 2 is MDF:** heavier (19 mm MDF ≈ 14 kg/m² vs 18 mm MFC ≈ 12), more care on the saw and edging, and the
+  price is still a proxy — **a Lathams quote for U702 PM board + edging fixes it**.
+- Both prices are ex VAT supplier costs; neither includes waste beyond the optimisation's 80 % yield.
 
 ## 3. Workshop time — Darius's estimate, **to be corrected by you**
 | Stage | Basis | Hours |
