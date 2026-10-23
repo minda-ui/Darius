@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.9 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.10 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -31,9 +31,9 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 ## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
 Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 
-| Line | **Option 1 — 18 mm MFC U702 ST9** | **Option 2 — 19 mm PerfectSense Matt U702 PM** |
+| Line | **Option 1 — 18 mm MFC ST9** (priced on U963 Diamond Grey; colour to confirm) | **Option 2 — 19 mm PerfectSense Matt U702 PM** |
 |---|---|---|
-| Board, 30 sheets | 30 × £62.30 = **£1,869.00** (Lathams SO 1005830, **22/05/2025** — 17 months old; Uniboards web 04/10/2026: £75.99 → £2,279.70) | 30 × £150.00 = **£4,500.00** ⚠ proxy: PerfectSense **Gloss** price (Lathams SO 1993765, 12/2025); PM not yet quoted |
+| Board, 30 sheets | 30 × £68.40 = **£2,052.00** — owner 23/10: *"same board as 18mm MFC"*, **Lathams Sales Order 3481260, 22/10/2026**: 18 mm Egger Eurodecor MFC **ST9 U963 Diamond Grey** 2800 × 2070, £68.40 ex VAT (was £62.30 from 05/2025) | 30 × £150.00 = **£4,500.00** ⚠ proxy: PerfectSense **Gloss** price (Lathams SO 1993765, 12/2025); PM not yet quoted |
 | Edging, 5 rolls | 5 × £45.00 = **£225.00** (ABS 23 × 2 U702 ST9, Lathams SO 1005830, 05/2025) | 5 × £46.20 = **£231.00** ⚠ proxy: U708 PerfectSense Matt 23 × 1 (Lathams Quote 412541) |
 | Hinges + plates (60) | £170.40 | £170.40 |
 | Cabineo X, carcase (≈ 696) | £207.41 | £207.41 |
@@ -41,14 +41,14 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Legs 705309, 24 packs × £4.00 (owner 23/10; £1.00 per leg) | £96.00 | £96.00 |
 | Wall brackets, 48 Häfele concealed hangers (indicative) | £179.60 | £179.60 |
 | Handles, 30 × £4.00 (owner 23/10) | £120.00 | £120.00 |
-| **Known materials** | **£3,017.60** | **£5,654.60** |
+| **Known materials** | **£3,200.60** | **£5,654.60** |
 | Labour, all hours at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.55 h (+10 % care) = **£4,479.75** |
 | Machine hours at **£65/h**, on top (owner 23/10) — F45 + Hebrock + Vitap | 35 h = **£2,275.00** | 38.5 h (+10 %) = **£2,502.50** |
-| **Materials + labour + machines** | **£9,365.10** | **£12,636.85** |
-| Margin 15 % on materials (owner 23/10; added on cost) | £452.64 | £848.19 |
-| **Price ex VAT** | **£9,817.74** | **£13,485.04** |
-| VAT 20 % | £1,963.55 | £2,697.01 |
-| **Price inc VAT** | **£11,781.29** | **£16,182.05** |
+| **Materials + labour + machines** | **£9,548.10** | **£12,636.85** |
+| Margin 15 % on materials (owner 23/10; added on cost) | £480.09 | £848.19 |
+| **Price ex VAT** | **£10,028.19** | **£13,485.04** |
+| VAT 20 % | £2,005.64 | £2,697.01 |
+| **Price inc VAT** | **£12,033.83** | **£16,182.05** |
 | Still to add (both) | wall rail price (+15 %, +VAT) | same |
 | Delivery, fitting | **Not in this job** (owner 23/10) | same |
 

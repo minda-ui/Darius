@@ -75,3 +75,12 @@ Session 38.
 - Owner: *"15% margin on materials and VAT at 20%"* → 15 % added on material cost (a mark-up; labour and machine
   rates carry none). **Option 1 £9,817.74 ex VAT / £11,781.29 inc VAT; Option 2 £13,485.04 / £16,182.05.**
   Wall rail still unpriced. Published in place, SAME.
+
+## 10. Cost sheet v0.10 — Option 1 board from Lathams SO 3481260
+- Owner uploaded Lathams Sales Order / pro forma **3481260** (22/10/2026): 18 mm Egger MFC ST9 **U963 Diamond Grey**
+  2800 × 2070, **£68.40** ex VAT — *"same board as 18mm MFC"*. Option 1 board 30 × £68.40 = £2,052.00 (was £1,869.00).
+- Option 1 now **£10,028.19 ex VAT / £12,033.83 inc VAT**; Option 2 unchanged (£13,485.04 / £16,182.05).
+- Panel Price Library: new row *18 mm MFC U963 ST9 Diamond Grey* (row 638476289181572), £68.40, 22/10/2026.
+  Bank details on the pro forma were not copied anywhere.
+- Open: is Option 1's colour U963 Diamond Grey, or U702 Cashmere Grey at the same price? Option 1 edging still the
+  05/2025 U702 ST9 price.
