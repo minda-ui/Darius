@@ -1,4 +1,4 @@
-# "Library" project — workshop cost sheet v0.4 — two board options (for Minda's quote)
+# "Library" project — workshop cost sheet v0.5 — two board options (for Minda's quote)
 
 Darius, 23/10/2026. From the owner's SmartCabinet export `library_Panel.csv` + `library_Pieces.csv`. **Workshop cost
 only** — price, margin and VAT are Minda's; the quote is issued by Nadia in the CRM. No job number yet (AM numbers are
@@ -22,11 +22,11 @@ Optimisation: **29 sheets 2800 × 2070** of U702 PM Cashmere Grey = 168.08 m² �
 | Hinges Blum 71B3550 + plates 173H7100 | 30 doors × 2 = **60** | £2.42 + £0.42 | **170.40** | Library (Interfit web). 2 per 974.5 door — check Blum's chart for door weight ≈ 5.5 kg. |
 | Lamello Cabineo X + screw | **≈ 696** (est.: tall 30, mid 26, corner 32 per unit) | £0.196 + £0.102 | **≈ 207.41** | Library (Interfit web). Exact count from the CN files at production. |
 | Shelf pins = **Cabineo** (owner 23/10) — Cabineo X + screw per pin | 126 shelves × 4 = **504** | £0.196 + £0.102 | **150.19** | Library (Interfit web). |
-| Wall fixing / hangers | 24 units | — | **?** | ⚠ Tall units need anti-tip wall fixing; type and price not in library. |
+| Wall fixing: **kitchen wall-unit brackets** (owner 23/10) — Häfele concealed hanger 290.03.935 R / 290.03.936 L, 130 kg/pair, needs 16 mm behind the back | 24 units × 2 = **48** (24 L + 24 R) | ≈ £3.74 ex VAT | **≈ 179.60** | ⚠ **Indicative web price** (eBay listing £4.49 inc VAT); no trade price in the library. **Wall rail** sold separately, ≈ 19.6 m run — price **?** |
 | Handles / push-to-open for 30 doors | 30 | — | **?** | ⚠ Not in the scene export. |
 | Legs: the shop's kitchen-unit leg, IronmongeryDirect 705309 (120–180 mm, pack of 4 + 2 plinth clips) | 24 units × 4 = **96 legs = 24 packs** | £4.00 / pack | **96.00** | Owner 23/10: £4.00 per pack of 4 (Hardware Price Library updated). |
 | Plinth **19 mm U702 PM** (owner 23/10) — not in the 29-sheet optimisation | ≈ 19.6 m run (22 × 800 + 2 corner fronts) × ≈ 150 high → strips from **1 extra sheet** | £150.00 | **150.00** | ⚠ board price proxy as above; plinth height and run to confirm on the scene. Edging of plinth ends only (in the 5 rolls). |
-| **Materials subtotal (known lines, option 2)** | | | **≈ 5,355.00** | + wall fixings, handles |
+| **Materials subtotal (known lines, option 2)** | | | **≈ 5,534.60** | + wall rail, handles |
 
 ## 2a. Two board options (owner 23/10: "1. 18 mm MFC panels 2. 19 mm PerfectSense")
 Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
@@ -39,9 +39,11 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Cabineo X, carcase (≈ 696) | £207.41 | £207.41 |
 | Cabineo shelf pins (504) | £150.19 | £150.19 |
 | Legs 705309, 24 packs × £4.00 (owner 23/10; £1.00 per leg) | £96.00 | £96.00 |
-| **Known materials** | **£2,718.00** | **£5,355.00** |
-| Still to add (both) | wall fixings, handles | same |
-| Workshop time | ≈ 90.5 h | ≈ 90.5 h + handling care (lacquered MDF, protective film) — your call, suggest +10 % |
+| Wall brackets, 48 Häfele concealed hangers (indicative) | £179.60 | £179.60 |
+| **Known materials** | **£2,897.60** | **£5,534.60** |
+| Workshop time at **£45/h** (owner 23/10) | 90.5 h = **£4,072.50** | 99.5 h (+10 % care) = **£4,479.75** |
+| **Materials + workshop** | **£6,970.10** | **£10,014.35** |
+| Still to add (both) | wall rail, handles, delivery/fitting, margin, VAT | same |
 
 **Notes**
 - **Option 1 needs a re-export.** The library units are drawn for **19 mm**; in 18 mm every part that sits between two
@@ -60,15 +62,17 @@ Hardware is the same in both. Sheets: 29 (scene) + 1 (plinth) = **30**.
 | Assembly | 15 tall × 2 h, 7 × 1.5 h, 2 corner × 2 h | 44.5 |
 | Doors: hang and adjust | 30 × 10 min | 5 |
 | Check and pack | 24 × 15 min | 6 |
-| **Total** | | **≈ 90.5 h × your rate** |
+| **Total** | | **≈ 90.5 h × £45 = £4,072.50** (Option 2 +10 %: 99.55 h = £4,479.75) |
+
+*Owner 23/10: rate **£45/h**. The owner also wrote "1 hr at £65" just before — if £65 is the charge-out rate, workshop time is £5,882.50 (Option 1) / £6,470.75 (Option 2). To confirm.*
 
 ## 4. Not included (add if in the job)
-Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour, any lighting.
+Delivery, fitting (on site, incl. scribing to walls/ceiling), wall fixing labour, wall rail, any lighting, margin, VAT.
 
 ## 5. What Minda needs to supply before the quote
 1. **Board:** confirm U702 **PM** (PerfectSense Matt MDF) for everything — carcase, backs and shelves too — or carcase in
    MFC and only doors/visible parts in PM; and thickness (19).
-2. **Prices / products** still missing: wall fixings, handles. *(Legs £4.00 / pack of 4 — owner 23/10.)* *(Shelf pins = Cabineo; plinth
+2. **Prices / products** still missing: handles; a trade price for the Häfele hangers and the wall rail *(brackets chosen by owner 23/10)*. *(Legs £4.00 / pack of 4 — owner 23/10.)* *(Shelf pins = Cabineo; plinth
    = 19 mm U702 PM — owner 23/10.)*
-3. **Hourly rate**, and whether delivery / fitting are in.
+3. ~~Hourly rate~~ **£45/h** (owner 23/10; £65 also mentioned — confirm which is charged). Whether delivery / fitting are in.
 4. A Lathams quote for U702 PM board + edging (Darius can draft the request).

@@ -43,3 +43,12 @@ Session 38.
   29 × £150 **proxy** — U702 PM not in the Panel Price Library; edging proxy U708 PM; hinges and Cabineo from the Hardware
   Price Library); **open:** shelf pins, wall fixings, handles, legs/plinth (not in library or scene), labour ≈ 90.5 h
   (Darius's estimate) × the owner's rate. Proxies and estimates marked in the sheet; nothing presented as a quoted price.
+
+## 5. Library cost sheet v0.5 — wall brackets and £45/h
+- Owner: *"use kitchen wall unit brackets"* → Häfele concealed hanger 290.03.935 R / 290.03.936 L (130 kg/pair, 16 mm
+  behind the back), 48 for 24 units, **indicative** £3.74 ex VAT each (eBay £4.49 inc VAT) = £179.60. Wall rail separate,
+  price unknown. Sources: Häfele catalogue https://files.hafele.co.uk/CatalogFiles/www/23T7-220.pdf; eBay 175558001083.
+- Owner: *"My rate is £45/hr"* → 90.5 h = £4,072.50 (Option 1); 99.5 h with +10 % care = £4,479.75 (Option 2).
+  Owner also wrote *"1 hr at £65"*; recorded as an alternative (£5,882.50 / £6,470.75) to confirm.
+- Materials + workshop: **Option 1 £6,970.10**, **Option 2 £10,014.35** — before handles, wall rail, delivery/fitting,
+  margin and VAT. Published in place, SAME.
