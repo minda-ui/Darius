@@ -1,6 +1,6 @@
 ---
 name: pre-production-drawing-check
-description: Darius's quality-control step before a cabinet job goes to the machines. Use when the owner asks to review or check drawings, a job folder, a cutting list or SmartCabinet/TpaCAD output (.TCN, worklist.xmlst, .fnm) — typically "review the … unit", "I have updated the … folder", "check before production", or anything placed in Workshop Raw/Review folder. Downloads every file, decodes the programs, checks parts against each other and against Blum data, and reports ✓ / ✗ / ? with the exact SmartCabinet fix.
+description: Darius's quality-control step before a cabinet job goes to the machines. Use when the owner asks to review or check drawings, a job folder, a cutting list or SmartCabinet/TpaCAD output (.TCN, worklist.xmlst, .fnm) — typically "review the … unit", "I have updated the … folder", "check before production", or anything placed in Workshop Raw/Review folder. Downloads every file, decodes the programs, checks parts against each other and against Blum data, and reports ✓ / ✗ / ? with the exact SmartCabinet fix. Also use when the owner says "SmartCabinet won't let me change it" / "can you update the … file" (hand-edit a program), and when a unit is released to the Vitap ("how do I load it", "running it now").
 ---
 
 # Pre-production drawing check
@@ -55,6 +55,28 @@ The hardware figures come from the Blum articles in `Wiki/Processes/blum-*.md`.
 - **Spacing is frame-independent.** When parts are measured from different references, compare the **spacing** between
   joints/pins on the two mating parts (e.g. side 126 vs shelf 107) before arguing about absolute positions.
 - **Ask what the pockets are for.** Cabineo pockets in a shelf may be **shelf pins** (loose shelf), not connectors.
+
+## Hand-editing a program when SmartCabinet won't (learned 2026-10-23, corner unit door and v5)
+
+1. **New folder, never in place**: `Raw/Review folder/<unit> vN (Darius - <what changed>)`. Never edit the owner's
+   folder or write to the `Furniture` machine folder.
+2. Start from the **SmartCabinet** files (header `EDICAD\01.00`), not a TpaCAD re-save.
+3. Keep the encoding: **UTF-16 LE with BOM**. Edit with a script, never retype a file.
+4. Change **only** the lines needed, and keep the three sources in step:
+   - a size: program header (`DL/DH/DS`), the `SIDE#…` face size (`HF`…) **and** the `worklist.xmlst` row;
+   - removing machining (e.g. Cabineo pockets `W#89/2201/2111`): delete those lines only; count them before and after.
+5. `diff` old vs new line by line (only the intended lines differ), re-decode with `tcn_decode.py`, md5 every file
+   after upload against local.
+6. Tell the owner the caveats: a hand edit **diverges from the SmartCabinet model** (a re-export brings the old value
+   back); the saw size comes from the cutting list, so it must match; dry-fit before production. Where SmartCabinet
+   itself is wrong, draft a ticket (`Outputs/…-smartcabinet-ticket-….md`) for the owner to send.
+
+## Releasing a unit to the Vitap (owner-tested 2026-10-23)
+
+End every release note with how to load it: in **WSC ListsManager open the unit's `worklist.xmlst`** — every program
+loads as one list (13 parts for the corner unit). Then check: **the version in the path** (a v2 file was loaded by
+mistake on 23/10), the row count against the folder, any hand-edited size (e.g. door 370.5), and **Mirror unticked**.
+Facts: `Wiki/Processes/library-batch-production.md` (*Loading a unit on the Vitap*).
 
 ## Boundaries (from the charter)
 

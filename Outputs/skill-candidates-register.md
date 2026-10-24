@@ -6,6 +6,9 @@ unless something new changes the case. Newest first.
 
 | Date | Candidate | Trigger | Decision | Reason / note | Skill |
 |---|---|---|---|---|---|
+| 2026-10-24 | project-quote-from-smartcabinet | "I got a project to quote", "how to do calculation … and issue quote", SmartCabinet panel/pieces CSVs | **Adopted** | library project cost sheet v0.1→v0.12 + PDF (23/10); owner's rates £45/h + £65/h machine, 15 % materials, VAT 20 % | `.claude/skills/project-quote-from-smartcabinet/` |
+| 2026-10-24 | hand-edit-cnc-program | "SmartCabinet not allowing it", "can you update the door file", "fix the shelf pins" | **Adopted (extension)** | door 420→370.5 and v5 pocket strip (23/10) | `.claude/skills/pre-production-drawing-check/` |
+| 2026-10-24 | load-unit-on-vitap | "can I load all folder", "running it now" | **Adopted (extension)** | worklist.xmlst opened in WSC, 13 parts; v2 path caught (23/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-22 | new-library-unit-design | "design a … unit", "new corner/wall/base unit" | **Adopted** | corner wall unit 600×600 (spec v0.1→v0.4, 22/10); LEGO unit (10-05) | `.claude/skills/new-library-unit-design/` |
 | 2026-10-22 | extend pre-production-drawing-check | in-place replaced folders; TpaCAD-saved files; spacing test | **Adopted (extension)** | corner unit rounds 1–3 (22/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-22 | drive-write-fallback | Composio Google route blocked | **Adopted (extension of end-of-day)** | SSRF guard ~21:10–21:30 on 22/10 | `.claude/skills/end-of-day/` |
