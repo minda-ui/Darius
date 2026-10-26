@@ -77,3 +77,17 @@ Darius, session 40.
   bottom, screwed to the front rail; check the sink's waste/trap clears the front 36 mm. Unit size not yet given.
 - Owner: *"Doors are closing to carcass as they do before"* — the post is in the carcase front plane, so the doors close
   as on any carcase; Darius's soft-close caution withdrawn.
+
+## 9. Drawing check — 1000mm Base Sink unit, round 1 (folder replaced in place 26/10 14:03)
+- Folder `Raw/Review folder/1000mm Base Sink unit` (`1er7gR1FBSoIFSQV-Jfrk6bsUZ78HHbQ3`), 13 files, all md5 equal
+  on download; worklist 11 rows = .fnm = 11 programs.
+- ✓ Carcase 1000 × 720 × 570 (sides 701 on a 19 bottom); doors 2 × 716 × 497 (4 mm under height; 1.5 + 3 + 1.5 across);
+  hinge plate pilots Ø3 at **37** and on the cups (door 100/616 → carcase 102/618 → side 83/599 with a 2 mm bottom gap),
+  cups Ø35 × 13 at Y 22.5; shelf 961 in 962, pin seats 83.5/386.4 ↔ side rows 74/377 (spacing 302.9 vs 303); rails
+  150 front / 200 back on Cabineo, joints line up; back 962 × 362 stands on the bottom at 462.9 (≈ 107 service void),
+  shelf back joints 240.3/480.5/720.8 ↔ back 240.8/481.0/721.3; 4 leg patterns 64 × 64 Ø3.
+- ✗/? **No centre post in the export** (the customer's 75 × 36 divider); no fixing holes for it in bottom or front rail.
+  This job is **19 mm** — two 19s make **38**, not the sketch's 36.
+- ? **Both doors re-saved in TpaCAD** (`EDICAD\02.00`) and carry `W#1511 … fresatebarnesting.tmcr` on face 0 (a nesting
+  milling macro); the other nine are SmartCabinet `01.00`. Asked why, and whether that macro should run.
+- ? Back only 362 high with a 200 rear rail above — open space for pipes between, assumed deliberate; asked.
