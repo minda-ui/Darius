@@ -24,3 +24,8 @@ Darius, session 40.
 ## 3. FL-005 closed
 - Owner: *"FL-005. Close it"* → Fault Log Status **Resolved**, Date Resolved 2026-10-26; the setting changed on 14/10
   is still not named.
+
+## 4. FL-003 — LRE16 fitted, extractor to Monitoring
+- Owner: *"FL-003. It was fitted. Suction works perfectly, no dust in workshop!"* → Fault Log **In Progress →
+  Monitoring**; Resolved after a clear week (to 2 Nov) with no trips. Phase currents not yet measured; old motor repair
+  as a spare still open.
