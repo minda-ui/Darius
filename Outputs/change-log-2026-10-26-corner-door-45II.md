@@ -67,3 +67,11 @@ Darius, session 40.
 - **v7 prepared as a PROPOSAL** (option A — door in front of top and bottom) in `Raw/Review folder` (`17rR6u7nhq0NWYbzK9qzCe6jKdWqONzKW`, 13 files byte-checked SAME): v5 with the left
   side's four plate pilots `#2 56.0 → 37.0` (X 67/99 and 763/795, still on the door cups at 100/796 less 17); the other
   12 files md5-identical to v5 (door 370.5). Not for production until the owner picks A or B.
+
+## 8. Sink unit centre post (customer request)
+- Owner: customer wants a divider in the sink unit *"where two doors meet"*, *"in line with carcass fascia"*; sketch:
+  front face **75 mm**, depth **36 mm** (2 × 18 laminated), full internal height, on the centre line; doors **hidden**
+  over it (owner: *"Hidden"*).
+- Advice: doors keep their normal width (they meet over the post with the usual centre gap); hinges on the outer sides
+  only (a 36 mm deep post cannot take a plate at 37); post = 2 strips 75 × internal height, glued; dowels into the
+  bottom, screwed to the front rail; check the sink's waste/trap clears the front 36 mm. Unit size not yet given.
