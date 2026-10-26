@@ -58,3 +58,12 @@ Darius, session 40.
   usable widening is only the 2–3 mm the +45° II brings the door forward.
 - Advice given: the carcase's hinge is **+45° I 79B9658** (p.118 draws a square side) on plates at 37, door 370.5. For the
   handover today, the +45° II stays a compromise.
+
+## 7. Plan for Thursday — owner away (Birmingham) until Thu 29 Oct; 79B9658 arrive 27 Oct
+- Owner: *"Tomorrow hinges arriving, and today I am away to Birmingham till Thursday"*.
+- **Handover fit (existing unit):** +45° I **79B9658** × 2 on **173H7100**, plate front holes at **37 mm** from the hinge
+  side's front edge (pilot through the plate), the **370.5 door** (not the 365.1 one); depth screws to set the door
+  just behind the side's inner front corner, side screws for an even gap; open fully and check.
+- **v7 prepared as a PROPOSAL** (option A — door in front of top and bottom) in `Raw/Review folder` (`17rR6u7nhq0NWYbzK9qzCe6jKdWqONzKW`, 13 files byte-checked SAME): v5 with the left
+  side's four plate pilots `#2 56.0 → 37.0` (X 67/99 and 763/795, still on the door cups at 100/796 less 17); the other
+  12 files md5-identical to v5 (door 370.5). Not for production until the owner picks A or B.
