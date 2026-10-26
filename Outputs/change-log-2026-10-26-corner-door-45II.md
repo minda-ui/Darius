@@ -75,3 +75,5 @@ Darius, session 40.
 - Advice: doors keep their normal width (they meet over the post with the usual centre gap); hinges on the outer sides
   only (a 36 mm deep post cannot take a plate at 37); post = 2 strips 75 × internal height, glued; dowels into the
   bottom, screwed to the front rail; check the sink's waste/trap clears the front 36 mm. Unit size not yet given.
+- Owner: *"Doors are closing to carcass as they do before"* — the post is in the carcase front plane, so the doors close
+  as on any carcase; Darius's soft-close caution withdrawn.
