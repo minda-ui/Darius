@@ -29,3 +29,21 @@ Darius, session 40.
 - Owner: *"FL-003. It was fitted. Suction works perfectly, no dust in workshop!"* → Fault Log **In Progress →
   Monitoring**; Resolved after a clear week (to 2 Nov) with no trips. Phase currents not yet measured; old motor repair
   as a spare still open.
+
+## 5. Door stands proud on the hinge side — root cause found, and it is Darius's
+- Owner (photos, door closed): non-hinge side looks right, hinge side stands forward with a gap; *"The holes doesn't
+  match for plate. I think we didn't take into account that top and bottom panels is sticking and door goes in front of
+  it"*; then a photo of the bottom corner on the hinge side.
+- **Measured in the programs:** side plate pilots (Ø2, pairs 32 apart at X 67/99 and 763/795) are at **Y 56 from the
+  side's front edge** (Y 0 = front: the back-joint holes are at 295.9 = 319 − 23.1). Blum p.118/p.120 planning: **37**.
+  56 − 37 = **19**.
+- **Geometry (bottom program coords):** sides' inner front corners at (319, 19) and (581, 281); the line through them is
+  370.5 long — the door width Darius set on 23/10. SmartCabinet's own door was **420**: (562 − c)·√2 = 420 → its door line
+  sits **≈ 24.7 mm (perpendicular) further back** than the inner-corner line, fully behind the sides' front edges — a
+  set-back door, consistent with plates at 56. That needs the top and bottom diagonal cut back to the door line.
+- **What was built:** top and bottom cut on the inner-corner line (owner's photo: the bottom's diagonal meets the side
+  at its inner front corner) — from Darius's spec, not from SmartCabinet (the bottom program has no contour). So the door
+  cannot set back; it sits in front of top and bottom, 19+ mm forward of where the plate holes expect it.
+- **Darius's error, on record:** the 23/10 door edit (420 → 370.5) and the spec's top/bottom line put the door on the
+  inner-corner line without checking SmartCabinet's plate depth (56) against Blum (37). The drawing check never compared
+  plate depth with Blum. The skill and spec need a plate-depth check and a stated door line.
