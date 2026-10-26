@@ -47,3 +47,14 @@ Darius, session 40.
 - **Darius's error, on record:** the 23/10 door edit (420 → 370.5) and the spec's top/bottom line put the door on the
   inner-corner line without checking SmartCabinet's plate depth (56) against Blum (37). The drawing check never compared
   plate depth with Blum. The skill and spec need a plate-depth check and a stated door line.
+
+## 6. "I think we need bigger door" — not with square sides
+- Owner photos (from below): non-hinge side closes to the side's inner corner; hinge side shows an open gap between
+  the side's front edge and the door. Owner: *"I think we need bigger door"*.
+- Blum p.121 (+45° II planning): both 45° cases — **Nº 9 overlay (0 mm plate, 32.5 / 74 / 45.5 / 2.5 / 14)** and **Nº 24
+  inset (18 mm plate)** — draw the **side's front edge bevelled at 45°**. The 24/10 statement "+45° II needs bevelled
+  sides" was right; the 26/10 retraction (§2) was wrong. On square sides the side's outer front corner sits
+  19/√2 = 13.4 mm in front of the inner-corner line, so a door widened past the inner corner meets it on closing; the
+  usable widening is only the 2–3 mm the +45° II brings the door forward.
+- Advice given: the carcase's hinge is **+45° I 79B9658** (p.118 draws a square side) on plates at 37, door 370.5. For the
+  handover today, the +45° II stays a compromise.
