@@ -29,3 +29,11 @@ Darius, session 41.
   a dust collector's fire/explosion siting is an HSE question (Anna); two new three-phase supplies (11 + 15 kW) are an
   electrician's job; duct and air-line runs depend on where the F45, Hebrock and Vitap stand; forklift access and bin
   emptying; noise near the entrance.
+
+## 3. Zones marked by the owner on GF_30
+- **Workshop:** the L-shaped area — the large hall on the left plus the bay running down past the meeting room to the
+  bottom-left corner (the extractor/compressor corner, on an external wall, beside a small blue square).
+- **Storage:** the bay to its right, along the canteen side down to the bottom-right wall, with a dashed line along
+  it. Plan dimensions there: **10,136** along the right-hand wall and **4,237** across the bottom (read off the drawing;
+  where the 4,237 starts against the dashed line is not certain). The plan gives no dimensions inside the workshop bay.
+- So GF_30 is used for **zones**, Unit_30 for room sizes; the owner's "ignore GF30" taken to mean its office detail.
