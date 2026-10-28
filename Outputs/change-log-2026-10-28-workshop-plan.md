@@ -115,3 +115,4 @@ Darius, session 41.
 - Owner: 5–6 colours max, white most used → suggested 2 bays (white / other colours) + a white floor stack by the F45 for the vacuum lifter; recorded in §6a, to confirm.
 - Owner: only one 3,000 × 2,270 bay → one shelf per colour; recorded in §6a. Open: white floor stack by the F45.
 - Owner: forklift is diesel, used only to bring panels to the rack → the rack-to-buffer option is out; §6b lists floor stacks under the lifter, roll-out drawer racking, or an electric stacker; diesel exhaust flagged for Anna.
+- Owner decided: panel storage where drawn; **F45 moves next to the rack**; jib crane with vacuum lifter preferred. Recorded in §6a.
