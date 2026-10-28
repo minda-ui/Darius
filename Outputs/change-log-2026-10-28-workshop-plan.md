@@ -122,3 +122,11 @@ Darius, session 41.
 - Owner: the canteen-side strip (≈ 4.7 m from the right wall, full depth) is **tools and construction materials storage, not workshop**. **Draft v0.3** `Outputs/2026-10-28-workshop-new-layout-draft-v0.3.png` (Drive `1Jgg42LLLHbnLmeDwun9VYFBACvgNBMfg`): F45 moved to the left of the aisle (can extend into the old workshop bay), jib post at the rack/F45 corner, no white floor stack — the lifter must pick from the rack (reach-in head). v0.2 superseded.
 - Owner: acoustic room for the extractor, cleaned air ducted outside after the filters. Marked ≈ 4.2 × 2.2 m in the corner. **Draft v0.4** `Outputs/2026-10-28-workshop-new-layout-draft-v0.4.png` (Drive `1rkEDxCckCUaeKJPvzXAnxYaYh-dy5pGD`); plan §6d lists service space, door, make-up air (10,000 m³/h out), motor cooling, outlet silencer, fire/DSEAR (Anna), landlord consent for the wall.
 - Owner: *"Go on with F4 and Vitap"* → **draft v0.5** `Outputs/2026-10-28-workshop-new-layout-draft-v0.5.png` (Drive `1sMNZZCQUUletsu3qPEwpyi8LdrBZSUGZ`), plan §6e: F4 line (2.8 in-feed + 4.2 + 2.8 out-feed) from the F45's Unit 31 side towards the Vitap, Vitap about where it is, offcut rack by the F45, flow arrows to assembly. Four checks listed.
+
+## 7. End of day (covers 24, 26 and 28 Oct)
+- Index: sessions 39–41 added (header 38 → 41). Registers: 2 Processed-items rows (the plans; the shop drawing), 8
+  Outputs rows, 12 Drive-id rows; Processed-items and Outputs headers **recounted with awk** (40 and 131 rows — the
+  Processed-items header had said 30).
+- Still open: corner unit 79B9658 fit (owner, Thursday) and the A/B door-line choice; sink unit doors re-export and
+  the post; layout v0.5 checks (hall double line, mitre bench vs Vitap 1,000, offcut rack by the door, F4 direction);
+  compressor footprint; acoustic-room points for Anna (DSEAR) and the landlord; FL-003 close after 2 Nov.

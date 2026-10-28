@@ -47,7 +47,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Processed items
 
-**All 30, oldest first.** The nine still open carry their **current** status; the rest are settled.
+**All 40, oldest first.** The nine still open carry their **current** status; the rest are settled.
 
 | Raw path | Processed (date) | Status | Wiki articles created / updated | Notes |
 |---|---|---|---|---|
@@ -90,6 +90,8 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | `Raw/Emailing 705309.PDF.pdf` (31,422 B, `1XBqmB3xsGfdnvuuN_tC8CDfOE21AvF03`, 2026-10-04 15:59) | 2026-10-04 | done | Suppliers/interfit-furniture-components (IronmongeryDirect section); Hardware Price Library row 705309 | Maker's drawing of the shop's leg (IronmongeryDirect **705309**, drawing titled **TD180**): top plate 92 × 79.5 × 25, **4 × Ø5 counterbored on 64 × 64 = SmartCabinet TD130 pattern ✓**. Not moved. Change log 2026-10-04 (8) |
 | `Raw/Emailing BR_EGGER_Compact_Laminates_en.pdf` (8,205,540 B, `1BNd-TNvlqJGOfZK9b0j3o_06qKmcMepQ`, 2026-10-03 23:16) | 2026-10-04 | done | Processes/egger-compact-laminates | EGGER brochure *Compact Laminates* (Decorative Collection 26+), 26 pp. Product range, sizes (2,790 × 2,060; 12 mm worktops 4,100 × 650/920/1,300), decor list incl. our W1100/W980/W1000/U963/U702/U708/U732/U999/H1180/F422, worktop, top, door, cladding and health rules. **Reference, not a processing manual**; EGGER's processing instructions not yet fetched. No prices. Not moved. Change log 2026-10-04 (9) |
 | `Raw/EGGER/` (new folder `167yUHu3BCw1p_FxnfTVtZUv7gWWZheSn`): 4 EGGER PDFs **fetched by Darius from egger.com and filed** — processing instructions Compact Laminates rev. 04 (`1viLKuzTpheuWmzrK71IKhfH8dlLCNAVr`), Leitz machining recommendation 01/2026 (`1qnex6Atz-se2i_jIPUwWHOeY8bICGaaQ`), Leuco tool recommendation (`1A7O24ksQHTclCfBJyYWbB4dExDLP3-Ly`), processing instructions Worktops (`1VWdWdWfp4aM4R1k8jd8Mo4Xcxa3i_0e0`); md5 matched for all four | 2026-10-04 | done | Processes/egger-compact-laminates §6 | Machining, drilling, screwing, storage and dust rules; Leitz tables read by OCR. Change log 2026-10-04 (11) |
+| `Raw/Unit 30 - Ground floor plan (GF_30, 22-05-2024).pdf` (`15rmCPSKiABU_6N6d0b1cmKV0mRe3wa9Y`) and `Raw/Unit 30 - dimensioned plan (Unit_30).pdf` (`1zmBHrsB-6d3Gflymqh2qUWR4BRYySDZK`) — the owner's Unit 30/31 plans, uploaded in chat and filed by Darius | 2026-10-28 | Processed | none (layout plan in Outputs) | GF_30 is the base drawing for the layout plan; not true 1:100 (36.95–38.0 mm/pt). |
+| `Raw/last planning  furn.prod.shop.pdf` (`1_Itj0qPDKAI4qtGrrphf5btT2NCPMMGc`) — owner's dimensioned drawing of the existing workshop | 2026-10-28 | Processed | none (layout plan §2a) | Confirmed by the owner as the layout now; PDF dated 14/10/2024. |
 
 ## Wiki structure changes
 
@@ -162,7 +164,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Outputs produced
 
-**All 123, oldest first** *(recounted 2026-10-23 with awk over the table; the header had said 99. Rows for sessions after 2026-10-16 other than today's were not added at the time — see the change logs.)*.
+**All 131, oldest first** *(recounted 2026-10-23 with awk over the table; the header had said 99. Rows for sessions after 2026-10-16 other than today's were not added at the time — see the change logs.)*.
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
@@ -290,6 +292,14 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | `Outputs/2026-10-23-library-project-cost-sheet-v0.1.md` — library project cost sheet, content v0.12: two board options, £45/h labour + £65/h machine, 15 % materials margin, VAT; draft machine-hour cost calculation. | 2026-10-23 | panel-production-route | Minda |
 | `Outputs/2026-10-23-library-project-two-options.pdf` — printable: p1 customer price summary, p2 internal build-up. | 2026-10-23 | none | Minda |
 | `Outputs/change-log-2026-10-23-corner-unit-door-edit.md` — session 38 change log. | 2026-10-23 | none | Darius |
+| `Outputs/change-log-2026-10-24-corner-unit-dry-fit.md` — session 39: corner unit v5 dry-fit; three skills adopted. | 2026-10-24 | none | Darius |
+| `Outputs/change-log-2026-10-26-corner-door-45II.md` — session 40: +45° II hinges, v6/v7 proposals, plate depth 56 vs 37 root cause, FL-005 closed, FL-003 to Monitoring, sink unit check and post. | 2026-10-26 | blum-clip-top-hinges-smartcabinet-input | Darius |
+| **Corner unit v6** — `Raw/Review folder/600x600 Corner Wall Unit v6 (Darius - v5 + door 365.1 for +45 II hinges)` (`13JZzrhl5aW24O9YhKH_qfZvSEiSyvaoj`), 13 files. | 2026-10-26 | pre-production-drawing-check | Minda |
+| **Corner unit v7 PROPOSAL** — `Raw/Review folder/600x600 Corner Wall Unit v7 (…plate holes at 37…) - PROPOSAL` (`17rR6u7nhq0NWYbzK9qzCe6jKdWqONzKW`), 13 files. | 2026-10-26 | pre-production-drawing-check | Minda |
+| `Outputs/change-log-2026-10-28-workshop-plan.md` — session 41: workshop plans, phase 1 existing layout, phase 2 drafts v0.1–v0.5. | 2026-10-28 | none | Darius |
+| `Outputs/2026-10-28-workshop-layout-plan.md` — the working layout plan (phase 1 existing, phase 2 decisions, drafts, vacuum lifter, acoustic room). | 2026-10-28 | machinery articles (footprints) | Minda |
+| `Outputs/2026-10-28-photo-checklist-extractor-compressor-move.md` | 2026-10-28 | none | Minda |
+| Layout images: `…-workshop-layout-current-and-proposed.png`, `…-workshop-existing-layout.png`, `…-workshop-new-layout-draft-v0.1` to `v0.5.png` (7 files). | 2026-10-28 | none | Minda |
 
 ## Drive ids
 
@@ -410,6 +420,18 @@ correct however many times the file is revised afterwards.
 | `Outputs/2026-10-23-library-project-two-options.pdf` | 86,544 | `13Dl_5SulvyTywyPowjzDO_U56vNi2p2x` — **created 2026-10-23** |
 | `Outputs/2026-10-23-smartcabinet-ticket-corner-shelf-joints.md` | 2,211 | `13rtz9GLS6_XPt0h8bzPZiJLmO80QW0UT` — **created 2026-10-23** |
 | `Wiki/Processes/library-batch-production.md` | 12,211 | `1weDcG8lIWw4WNbtihHZPshprDanmEGUt` — updated in place 2026-10-23 |
+| `Outputs/change-log-2026-10-24-corner-unit-dry-fit.md` | 1,496 | `1yRyWZjwtOO5giL0DJiEEvkp4x1Izkmeh` — **created 2026-10-24** |
+| `Outputs/change-log-2026-10-26-corner-door-45II.md` | 8,240 | `15U6v5Dc0GCSyFdY2aMYBB9dnCVIBTeeE` — **created 2026-10-26** |
+| `Outputs/change-log-2026-10-28-workshop-plan.md` | 13,996 | `1gWg3-keOlqdF_ciO-pDJhEVsio2EzM5B` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-layout-plan.md` | 22,476 | `1mTiTZr-6xvtETHErZrZcwxSK0Xe2H-eo` — **created 2026-10-28** |
+| `Outputs/2026-10-28-photo-checklist-extractor-compressor-move.md` | 1,915 | `1U6laXuE4tcX6r3jg6nproAOLKnp79jlj` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-layout-current-and-proposed.png` | 195,740 | `1aGW1CnwkIABMNQPVH0Crbxyk8sZ_lqLX` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-existing-layout.png` | 149,543 | `10FTtkIKnbJQ-bdlrfVwNl_tc_TriiN0r` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-new-layout-draft-v0.1.png` | 277,011 | `18g0HlWUFleGP6aEeoqW9cIY0NgGJFDFh` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-new-layout-draft-v0.2.png` | 280,096 | `1mu4Zo-_8lBe-9Em4PxJhGTdrA-5qU_IQ` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-new-layout-draft-v0.3.png` | 283,600 | `1Jgg42LLLHbnLmeDwun9VYFBACvgNBMfg` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-new-layout-draft-v0.4.png` | 287,815 | `1rkEDxCckCUaeKJPvzXAnxYaYh-dy5pGD` — **created 2026-10-28** |
+| `Outputs/2026-10-28-workshop-new-layout-draft-v0.5.png` | 294,149 | `1sMNZZCQUUletsu3qPEwpyi8LdrBZSUGZ` — **created 2026-10-28** |
 
 *This file is no longer absent from its own id table for the reason it used to be — it is the one being
 written, and its id is `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o`, **unchanged since its first publish and through
