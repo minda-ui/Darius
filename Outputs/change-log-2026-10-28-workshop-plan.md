@@ -52,3 +52,14 @@ Darius, session 41.
   drawing (≈ 35 mm/px): F45 to the extractor now ≈ 3.5–4 m; to the proposed corner ≈ 8 m. Estimates, not measurements.
 - Owner marked **where the F4 (Hebrock) stands now**: in the hall above the F45, towards the stair block, also across
   the thin double line. Scaled: F4 to the extractor now ≈ 5.5 m; to the proposed corner ≈ 11.5 m (estimates).
+- Owner marked **where the Vitap stands now**: at the far left of the Unit 31 hall, by the left wall.
+- **Straight-line distances to the extractor, scaled off GF_30 (≈ 35 mm/px; estimates — real duct runs are longer):**
+
+  | Machine | To the extractor now | To the proposed corner |
+  |---|---|---|
+  | F45 | ≈ 3.5–4 m | ≈ 8 m |
+  | F4 (Hebrock) | ≈ 5.5 m | ≈ 11.5 m |
+  | Vitap | ≈ 12 m | ≈ 16 m |
+
+  The move adds roughly 4–6 m to every run. More duct means more resistance and less suction at each port; suction is
+  reported "perfect" now (26/10, FL-003). Asked why the move, and where the compressor stands now.
