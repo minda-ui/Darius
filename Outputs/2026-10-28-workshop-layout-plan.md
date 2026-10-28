@@ -153,6 +153,30 @@ This is not a workshop area"* — the strip along the canteen side, **≈ 4.7 m 
 so a reach-in head (§6b) becomes the key question for suppliers. The F4 and offcuts go to the Unit 31 side, by the F45's
 out-feed. v0.1 and v0.2 superseded.
 
+## 6d. Extractor in an acoustic room, cleaned air ducted outside (owner, 28/10)
+
+Owner: *"We need to create a acoustic room for extractor with extract duct going outside after filters."* Marked on
+v0.3: a room in the corner, **x ≈ 8,000–12,250, y 0–2,250** — about **4.2 × 2.2 m** inside the walls' centre lines.
+Drawn in `Outputs/2026-10-28-workshop-new-layout-draft-v0.4.png`; the F45 moves up to y 2,550–9,050 to clear it.
+
+What the room has to allow for (to settle before it is built — **planning only**):
+- **Service space.** The extractor is 3,170 × 1,200; the room leaves ≈ 0.5 m at each end and ≈ 0.9 m in front, less the
+  wall thickness. The existing drawing keeps **700 mm** to the walls. Bins are emptied and 64 filters changed from inside
+  — a bigger room (≈ 4.6 × 2.6) or the bin end at the door is worth checking.
+- **A door** wide enough for the dust bins / a trolley; the start/stop control outside the room.
+- **Make-up air.** Ducting the cleaned air outside removes up to **10,000 m³/h** from the building: in winter that is
+  heated air lost, and the building runs under negative pressure (doors pulling, draughts) unless replacement air comes
+  in. Common answer: a **summer/winter damper** — outside in summer, back into the workshop through the filters in winter.
+- **Motor cooling.** The 11 kW motor's heat stays in a closed room: ventilation grilles (acoustically lined) or a fan.
+- **Noise outside.** The fan noise travels out of the duct: a **silencer/attenuator** on the outlet, and the neighbours'
+  side of that wall.
+- **Fire and dust.** A wood-dust filter in its own room: fire-resisting walls and door, and any explosion relief vented
+  to a safe place outside — **for Anna (DSEAR/HSE) before the design is fixed.**
+- **The exterior wall.** A duct through the bottom wall needs the landlord's consent (and possibly planning). Unit 30/31
+  lease terms are an owner/Victoria question.
+- **Construction.** A stud partition with acoustic insulation and two layers of plasterboard each side is the usual
+  build — Fishbone's own trade.
+
 ## 6b. Panel handling — vacuum lifter (owner's idea, 28/10 — *planning only, no drafts or quotes yet*)
 
 Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels around."*
