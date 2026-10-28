@@ -58,6 +58,7 @@ storage. **This replaces the traced positions in the 28/10 sketch.** Labelled co
 | **Panel rack B** | **2,500 × 1,200**, **500** each side, red zone = loading space | the bottom corner of the bay — the proposed extractor/compressor corner (owner, 28/10) |
 | Room above the hall | 6,000 × 5,720 | double doors to the hall |
 | Tool storage | 3,340 × 2,478 | beside the WC |
+| **Wall removed** | — | the wall between the workshop bay and the Unit 30 bay (from the meeting-room corner down to the bottom wall) is **already gone** (owner, 28/10) — the two bays are one floor; GF_30 still draws it |
 | **Compressor** | **footprint not measured** | in the **6,000 × 5,720 room** above the hall, its bottom-right corner by the stair block (owner's mark, 28/10) — a separate room from the dust |
 
 **Early findings for phase 2** (from the drawing, not measured on site):

@@ -103,3 +103,4 @@ Darius, session 41.
   rack / network equipment goes.
 - Owner: *"Racking in assembly area going too"* — the 2,500 × 1,500 racking goes; recorded in §6a.
 - Owner marked the **new full-panel storage**: Unit 30 bay at the bottom wall, straight in from the double doors for the forklift. Scaled ≈ 4.2 × 4.5–5.8 m; recorded in §6a with what is still to confirm.
+- Owner: *"This wall is removed already"* — the wall between the workshop bay and the Unit 30 bay (meeting-room corner to the bottom wall) is gone; the bays are one floor. Recorded in §2a; GF_30 is out of date there.
