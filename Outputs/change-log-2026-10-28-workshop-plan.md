@@ -39,3 +39,7 @@ Darius, session 41.
 - So GF_30 is used for **zones**, Unit_30 for room sizes; the owner's "ignore GF30" taken to mean its office detail.
 - Owner: *"This is a plan for unit 30 and 31"* — **contradiction resolved**: one plan covers both units (title block
   reads "Unit 30"); the Wiki's "moved to Unit 31" stands. Which unit each zone sits in is not stated.
+- Owner marked the units on GF_30: **Unit 31** = the large hall on the left plus the room above it (with the stair
+  block); **Unit 30** = office, meeting room, server, canteen, WCs and the lower bays. So the **workshop spans both
+  units**: its large hall is in 31, its lower bay — and the proposed extractor/compressor corner by the blue square —
+  sits on the 30 side, at the boundary. **Storage is in Unit 30.**
