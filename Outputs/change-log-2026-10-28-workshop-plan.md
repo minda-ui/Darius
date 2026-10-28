@@ -43,3 +43,7 @@ Darius, session 41.
   block); **Unit 30** = office, meeting room, server, canteen, WCs and the lower bays. So the **workshop spans both
   units**: its large hall is in 31, its lower bay — and the proposed extractor/compressor corner by the blue square —
   sits on the 30 side, at the boundary. **Storage is in Unit 30.**
+- Owner marked **where the extractor stands now**: in the workshop bay against the wall beside the server room /
+  meeting-room corner (Unit 31 side of the boundary). The proposed corner is further down the same bay — **about 7 m**
+  (scaled off the drawing: the 10,136 dimension spans ≈ 286 px, so ≈ 35 mm/px; ≈ 195 px between the two marks). An
+  estimate from a drawing, not a measurement.
