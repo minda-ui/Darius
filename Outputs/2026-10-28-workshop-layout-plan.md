@@ -121,6 +121,7 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 | 28/10 | *"Server room and panel racks are going for good"* | The server-room walls go, freeing the bay between the F4 and the extractor; **panel racks A and B go**, so all panel storage is new. *Where the network/server rack goes after the room is removed is open* — the shop's network runs from it (charter §1). |
 | 28/10 | *"Racking in assembly area going too"* | The 2,500 × 1,500 racking at the top of the hall goes; the assembly corner is clear. |
 | 28/10 | **Full-panel storage** in the Unit 30 bay, at the bottom wall — *"good area because fork truck can place panels easily because it is straight through double doors"* | Marked as a U on GF_30, roughly **4.2 m wide × 4.5–5.8 m deep** (scaled, ± 10 %). Full sheets 2,800 × 2,070: two packs side by side need 4,140 + gaps — tight in 4.2 m. **To confirm:** sheet count, flat stacks or racking, double-door width, forklift fork length. |
+| 28/10 | *"Panel racking is the size of panels and 100mm on each side extra"* | One rack bay = **3,000 × 2,270** (2,800 × 2,070 + 100 each side). Two side by side = 4,540 wide — **more than the ≈ 4.2 m marked**, but the bay wall is gone so the area can widen towards the workshop. Still open: how many bays / levels, door width, fork length. |
 
 ## 6. Phase 2 — what the new layout will be checked against (draft)
 
