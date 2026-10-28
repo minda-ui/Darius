@@ -125,7 +125,11 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 | 28/10 | *"Racking we got is full height about 3.6m height. Panels will stored flat. For each colour will be dedicated shelf"* | Existing racking, **≈ 3.6 m high**, sheets **flat**, **one shelf per colour**. Shelf count = number of colours; with ~500–600 mm per level, ≈ 5–6 levels in 3.6 m per bay. Check: the ceiling over the storage area clears 3.6 m plus lifting room (the plans give H = 3,830 / 4,760 in places); the forklift lifts to the top shelf (~3 m). |
 | 28/10 | Loaded from the **short side** — *"otherwise you can get through double door which are 2.4m wide"* | Packs come through the **2.4 m double door** with the **2,070 side across** (≈ 165 mm clear each side) and the 2,800 along the forks; each bay's **2,270 face looks at the doors** and the pack slides in **3,000 deep**. Bays stand side by side across the area: 2 bays = 4,540 wide, plus a clear run straight from the doors. |
 
-## 6b. Panel handling — vacuum lifter (owner's idea, 28/10)
+**Planning assumption (owner, 28/10): *"Let's work with 3.6m height"*** — 3.6 m is the usable height for planning
+(racks, cranes, ducts) until measured on site. *Racks of ≈ 3.6 m then fill it; a forklift placing the top pack needs its
+own clearance — check on site.*
+
+## 6b. Panel handling — vacuum lifter (owner's idea, 28/10 — *planning only, no drafts or quotes yet*)
 
 Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels around."*
 
