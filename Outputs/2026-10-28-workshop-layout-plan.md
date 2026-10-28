@@ -125,6 +125,24 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 | 28/10 | *"Racking we got is full height about 3.6m height. Panels will stored flat. For each colour will be dedicated shelf"* | Existing racking, **≈ 3.6 m high**, sheets **flat**, **one shelf per colour**. Shelf count = number of colours; with ~500–600 mm per level, ≈ 5–6 levels in 3.6 m per bay. Check: the ceiling over the storage area clears 3.6 m plus lifting room (the plans give H = 3,830 / 4,760 in places); the forklift lifts to the top shelf (~3 m). |
 | 28/10 | Loaded from the **short side** — *"otherwise you can get through double door which are 2.4m wide"* | Packs come through the **2.4 m double door** with the **2,070 side across** (≈ 165 mm clear each side) and the 2,800 along the forks; each bay's **2,270 face looks at the doors** and the pack slides in **3,000 deep**. Bays stand side by side across the area: 2 bays = 4,540 wide, plus a clear run straight from the doors. |
 
+## 6b. Panel handling — vacuum lifter (owner's idea, 28/10)
+
+Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels around."*
+
+- **The load:** a 2,800 × 2,070 sheet ≈ 5.8 m²: 18 mm MFC ≈ 70 kg, 19 mm MDF ≈ 75–80 kg. Capacity is not the hard part;
+  sheet size and the pad layout are (a US dealer rates a JumboErgo-85 for 4' × 8' and 5' × 10' only — ours is bigger).
+- **The catch with the racks:** a vacuum lifter picks **from above**. It can take the top sheet of a stack, but **not a
+  sheet from a shelf with another shelf over it**. With 3.6 m multi-level racks, the forklift brings a colour's pack
+  out first.
+- **Workable arrangement (draft):** forklift: rack → **buffer table** beside the F45 → vacuum lifter: buffer → F45
+  sliding table (and later to the Vitap). Lifter on a **pillar jib crane** (reach ≈ 4–6 m) or an **aluminium rail crane**
+  over the saw area.
+- **Checks:** ceiling / roof structure height over the saw (H = 3,830 in places) less crane and lift tube; floor for a
+  jib's foundation; 400 V / 230 V supply for the vacuum blower; noise.
+- **Market (first look):** Schmalz JumboErgo / JumboSprint (to 300 kg); a used JumboErgo PSE140 in Northern Ireland
+  listed at €12,000 + VAT, said to lift 2 × 18 mm MFC (woodweb.com). New: quote needed — a Schmalz UK distributor,
+  giving sheet size, weight and headroom. *No order without the owner (§6a).*
+
 ## 6. Phase 2 — what the new layout will be checked against (draft)
 
 - One-way board flow: delivery → panel storage → F45 → F4 → Vitap → assembly → staging → loading door.
