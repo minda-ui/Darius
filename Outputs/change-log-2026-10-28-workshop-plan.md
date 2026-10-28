@@ -92,3 +92,6 @@ Darius, session 41.
   where the compressor is, and whether the 2024 drawing is still current.
 - Owner: *"A and B is panel racks now"* — both unlabelled items are **panel racks** (2,500 × 2,200 and 2,500 × 1,200);
   rack B stands in the proposed extractor/compressor corner.
+- Owner marked **the compressor**: in the 6,000 × 5,720 room above the hall, bottom-right corner by the stair block
+  (a separate room from the dust). Labelled existing layout `Outputs/2026-10-28-workshop-existing-layout.png` (Drive `10FTtkIKnbJQ-bdlrfVwNl_tc_TriiN0r`) — the owner's drawing with the
+  racks and compressor added; compressor footprint still to measure.

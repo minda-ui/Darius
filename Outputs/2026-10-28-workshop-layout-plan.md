@@ -9,7 +9,7 @@ will move to next phase planning."*
 
 | Phase | What | Status |
 |---|---|---|
-| **1. Existing** | Record what stands where today, to scale | **In progress** — owner's dimensioned drawing received 28/10 (§2a); open: compressor position, drawing still current? |
+| **1. Existing** | Record what stands where today, to scale | **In progress** — owner's dimensioned drawing received 28/10 (§2a); open: is the 2024 drawing still current? compressor footprint |
 | **2. New layout** | Plan machines, panel and offcut storage, assembly, services | Starts when phase 1 is complete |
 
 ---
@@ -45,7 +45,7 @@ Sketch with everything marked so far: `Outputs/2026-10-28-workshop-layout-curren
 stated**; its own dimension lines measure ≈ **26 mm per PDF point** (4,500 / 4,374 / 4,200 / 3,200 all within 26.1–26.6),
 so roughly 1:74 as printed. *The PDF's creation date is 14/10/2024; the owner calls it the newest, with machinery where it
 stands now.* Covers the Unit 31 hall, the 6,000 × 5,720 room above it, the bay down past the server room, WC and tool
-storage. **This replaces the traced positions in the 28/10 sketch.**
+storage. **This replaces the traced positions in the 28/10 sketch.** Labelled copy: `Outputs/2026-10-28-workshop-existing-layout.png`.
 
 | Item | Size on the drawing (mm) | Position / clearances on the drawing |
 |---|---|---|
@@ -59,7 +59,7 @@ storage. **This replaces the traced positions in the 28/10 sketch.**
 | **Panel rack B** | **2,500 × 1,200**, **500** each side, red zone = loading space | the bottom corner of the bay — the proposed extractor/compressor corner (owner, 28/10) |
 | Room above the hall | 6,000 × 5,720 | double doors to the hall |
 | Tool storage | 3,340 × 2,478 | beside the WC |
-| **Compressor** | **not on the drawing** | *where?* |
+| **Compressor** | **footprint not measured** | in the **6,000 × 5,720 room** above the hall, its bottom-right corner by the stair block (owner's mark, 28/10) — a separate room from the dust |
 
 **Early findings for phase 2** (from the drawing, not measured on site):
 - **Vitap to the mitre saw bench is 800 mm**; the Vitap manual asks for **≥ 1,000 mm all round**.
