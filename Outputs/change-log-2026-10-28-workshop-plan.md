@@ -37,3 +37,5 @@ Darius, session 41.
   it. Plan dimensions there: **10,136** along the right-hand wall and **4,237** across the bottom (read off the drawing;
   where the 4,237 starts against the dashed line is not certain). The plan gives no dimensions inside the workshop bay.
 - So GF_30 is used for **zones**, Unit_30 for room sizes; the owner's "ignore GF30" taken to mean its office detail.
+- Owner: *"This is a plan for unit 30 and 31"* — **contradiction resolved**: one plan covers both units (title block
+  reads "Unit 30"); the Wiki's "moved to Unit 31" stands. Which unit each zone sits in is not stated.
