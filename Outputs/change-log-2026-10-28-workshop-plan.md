@@ -68,3 +68,5 @@ Darius, session 41.
   the owner marked, drawn approximately over GF_30 (positions hand-traced from the owner's marks, not measured), board
   flow storage → F45 → F4 → Vitap → assembly, and duct lines from the proposed corner. Reading: the proposed corner is
   off the board route from storage, but every duct run gets longer; the Vitap, the furthest machine, goes to ≈ 16 m.
+- Owner: *"Create for checklist for pictures to do"* → `Outputs/2026-10-28-photo-checklist-extractor-compressor-move.md`
+  (Drive `1U6laXuE4tcX6r3jg6nproAOLKnp79jlj`): corner, compressor (incl. tank plate — also answers T021), extractor, ductwork, outside wall.
