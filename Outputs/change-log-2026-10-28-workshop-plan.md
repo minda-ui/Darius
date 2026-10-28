@@ -117,3 +117,4 @@ Darius, session 41.
 - Owner: forklift is diesel, used only to bring panels to the rack → the rack-to-buffer option is out; §6b lists floor stacks under the lifter, roll-out drawer racking, or an electric stacker; diesel exhaust flagged for Anna.
 - Owner decided: panel storage where drawn; **F45 moves next to the rack**; jib crane with vacuum lifter preferred. Recorded in §6a.
 - Owner: *"Yes, draw it"* → **new layout draft v0.1** `Outputs/2026-10-28-workshop-new-layout-draft-v0.1.png` (Drive `18g0HlWUFleGP6aEeoqW9cIY0NgGJFDFh`), table in plan §6c. Unit 30 bay measured from GF_30 vectors: 12.25 m × 10.5 m inside. Door position assumed; compressor left to decide.
+- Owner: cable-hung vacuum pad can be pushed into the shelf to the panel centre → §6b: possible in principle but a side pull (hoist rules); ask suppliers for a reach-in head; white floor stack kept as fallback.

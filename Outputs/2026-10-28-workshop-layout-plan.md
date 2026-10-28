@@ -179,6 +179,13 @@ Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels
     serve every colour from the rack; heavy-duty and costly (a shelf of ~25 sheets is ≈ 1.8–2 t).
   - **(c) Electric pallet stacker** (battery, no fumes) for indoor moves rack → buffer by the F45.
   Diesel exhaust indoors is also a health-and-safety point for Anna (keep use short, doors open).
+- **Owner, 28/10:** *"I think you can reach center of panel with vacuum sucker. It is attached to arm on steel cables, so
+  you loosing cable and push sucker to center of panel"* — slacking the cables and pushing the pad into the shelf.
+  Darius's reading: **possible in principle, but it is a side pull** — the cable runs at an angle into the shelf and
+  rubs the beam above, and most hoist makers and LOLER-based practice forbid dragging or lifting at an angle. Depends on:
+  the gap above each stack (pad + lift), the panel centre being ≈ 1.5 m inside (3,000 deep, loaded from the short side),
+  and the sheet's far end sliding over the stack below (scratches). **Ask suppliers for a reach-in / cantilever vacuum
+  head made for shelf picking**; the white floor stack stays as the fallback.
 - **Checks:** ceiling / roof structure height over the saw (H = 3,830 in places) less crane and lift tube; floor for a
   jib's foundation; 400 V / 230 V supply for the vacuum blower; noise.
 - **Market (first look):** Schmalz JumboErgo / JumboSprint (to 300 kg); a used JumboErgo PSE140 in Northern Ireland
