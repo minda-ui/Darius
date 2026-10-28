@@ -9,7 +9,7 @@ will move to next phase planning."*
 
 | Phase | What | Status |
 |---|---|---|
-| **1. Existing** | Record what stands where today, to scale | **In progress** — zones and 5 machines marked roughly; survey below |
+| **1. Existing** | Record what stands where today, to scale | **In progress** — owner's dimensioned drawing received 28/10 (§2a); 3 open questions |
 | **2. New layout** | Plan machines, panel and offcut storage, assembly, services | Starts when phase 1 is complete |
 
 ---
@@ -38,6 +38,33 @@ will move to next phase planning."*
 
 Sketch with everything marked so far: `Outputs/2026-10-28-workshop-layout-current-and-proposed.png`
 (`1aGW1CnwkIABMNQPVH0Crbxyk8sZ_lqLX`) — positions traced from the owner's marks, **not measured**.
+
+## 2a. Existing layout — the owner's dimensioned drawing (28/10)
+
+`Raw/last planning  furn.prod.shop.pdf` (`1_Itj0qPDKAI4qtGrrphf5btT2NCPMMGc`, 94,866 B) — AutoCAD, A3, **no scale
+stated**; its own dimension lines measure ≈ **26 mm per PDF point** (4,500 / 4,374 / 4,200 / 3,200 all within 26.1–26.6),
+so roughly 1:74 as printed. *The PDF's creation date is 14/10/2024; the owner calls it the newest, with machinery where it
+stands now.* Covers the Unit 31 hall, the 6,000 × 5,720 room above it, the bay down past the server room, WC and tool
+storage. **This replaces the traced positions in the 28/10 sketch.**
+
+| Item | Size on the drawing (mm) | Position / clearances on the drawing |
+|---|---|---|
+| **F45** (working zone) | **6,500 × 4,500** | against the bottom outside wall; **1,000** to the Vitap, **900** to the F4, **1,024** to the extractor |
+| **F4** | **4,200 long**, 950 at the out-feed end (L-shape) | in the middle of the hall; **3,314** to the stair-block corner, **4,374** to the server-room wall |
+| **Vitap** | **2,900 × 1,710** (manual: 2,940 × 1,710) | **800** to the mitre saw bench, **1,000** to the F45 zone, **2,786** to the bottom wall |
+| **Extractor ("Hood")** | **3,200 × 1,200** (manual: 3,170 × 1,200) | in the bay by the server room; **700** to the server-room wall and **700** to the outside wall |
+| Racking | 2,500 × 1,500 | top of the hall, against the 6,000 room's wall |
+| Mitre saw bench | 1,200 deep, along the left wall | dashed |
+| Unlabelled item A | **2,500 × 2,200**, with a red zone around it | below the WC wall — *what is it?* |
+| Unlabelled item B | **2,500 × 1,200**, with **500** each side and a red zone | the bottom corner of the bay (the proposed extractor/compressor corner) — *what is it?* |
+| Room above the hall | 6,000 × 5,720 | double doors to the hall |
+| Tool storage | 3,340 × 2,478 | beside the WC |
+| **Compressor** | **not on the drawing** | *where?* |
+
+**Early findings for phase 2** (from the drawing, not measured on site):
+- **Vitap to the mitre saw bench is 800 mm**; the Vitap manual asks for **≥ 1,000 mm all round**.
+- The extractor sits 1,024 mm from the F45's zone, so the duct runs are short today; the proposed corner is where
+  item B stands now.
 
 ## 3. Inventory — what has to go on the drawing
 

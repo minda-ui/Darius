@@ -80,3 +80,13 @@ Darius, session 41.
   (two distances to two walls per item); phase-2 criteria (draft).
 - **Scale finding:** GF_30 is not true 1:100 — its own dimension lines measure 36.95 and 38.0 mm per PDF point against
   35.3 for 1:100 (pdftocairo SVG, magenta dimension lines). Distances off it are ± 5 % estimates.
+
+## 5. The owner's dimensioned drawing of the existing workshop
+- Owner: *"i have uploaded newest drawing with exact position of machinery now to Raw folder"* →
+  `Raw/last planning  furn.prod.shop.pdf` (`1_Itj0qPDKAI4qtGrrphf5btT2NCPMMGc`), AutoCAD A3, PDF created 14/10/2024, no
+  scale stated (≈ 26 mm/pt measured from its dimension lines).
+- Read and recorded in the layout plan §2a: F45 zone 6,500 × 4,500; F4 4,200; Vitap 2,900 × 1,710; extractor ("Hood")
+  3,200 × 1,200 with 700 to two walls; racking 2,500 × 1,500; mitre saw bench 1,200 deep; two unlabelled items
+  (2,500 × 2,200; 2,500 × 1,200 in the proposed corner); **no compressor on the drawing**.
+- Finding: Vitap 800 mm from the mitre saw bench against the manual's ≥ 1,000 mm. Asked: the two unlabelled items,
+  where the compressor is, and whether the 2024 drawing is still current.
