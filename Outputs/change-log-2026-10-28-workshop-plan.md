@@ -112,3 +112,4 @@ Darius, session 41.
 - Owner: lifter only rack → F45; afterwards parts move by trolley or pallet. Recorded in §6b with the two ways to bridge rack → saw.
 - Owner: *"Server room is moved to tool storage"* — the server rack goes into the 3,340 × 2,478 tool-storage room; recorded in §6a. Open: where the tools go.
 - Owner: *"No tools in that room. And rack is moved last week"* — the server rack is already in the room drawn as "Tool storage"; nothing to re-home. §2a and §6a corrected.
+- Owner: 5–6 colours max, white most used → suggested 2 bays (white / other colours) + a white floor stack by the F45 for the vacuum lifter; recorded in §6a, to confirm.
