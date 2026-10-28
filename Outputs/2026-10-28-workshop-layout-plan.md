@@ -118,6 +118,7 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 | Date | Decision (owner's words) | Consequence for the layout |
 |---|---|---|
 | 28/10 | *"Server room and panel racks are going for good"* | The server-room walls go, freeing the bay between the F4 and the extractor; **panel racks A and B go**, so all panel storage is new. *Where the network/server rack goes after the room is removed is open* — the shop's network runs from it (charter §1). |
+| 28/10 | *"Racking in assembly area going too"* | The 2,500 × 1,500 racking at the top of the hall goes; the assembly corner is clear. |
 
 ## 6. Phase 2 — what the new layout will be checked against (draft)
 

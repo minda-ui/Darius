@@ -101,3 +101,4 @@ Darius, session 41.
 ## 6. Phase 2 started
 - Owner: *"Server room and panel racks are going for good"* — recorded in the layout plan §6a. Open: where the server
   rack / network equipment goes.
+- Owner: *"Racking in assembly area going too"* — the 2,500 × 1,500 racking goes; recorded in §6a.
