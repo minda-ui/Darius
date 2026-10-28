@@ -13,3 +13,5 @@ Darius, session 41.
     two pairs of small rooms 1,005 / 1,400 × 1,970 / 1,960; corridor 3,920 / 4,735; entrance door 900, window 3,000.
   - Both byte-checked SAME. Which area is the workshop floor, and where the machines stand, not yet stated.
 - Not yet in the Wiki or the Workshop Document Log — waiting for the owner's purpose (machine layout, fire plan, …).
+- Owner: *"Ignore GF30 file"* — **`Unit_30.pdf` is the workshop plan; GF_30 is not to be used.** GF_30 left in Raw
+  untouched (not deleted), marked here as ignored.
