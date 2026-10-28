@@ -47,3 +47,6 @@ Darius, session 41.
   meeting-room corner (Unit 31 side of the boundary). The proposed corner is further down the same bay — **about 7 m**
   (scaled off the drawing: the 10,136 dimension spans ≈ 286 px, so ≈ 35 mm/px; ≈ 195 px between the two marks). An
   estimate from a drawing, not a measurement.
+- Owner marked **where the F45 stands now**: lower part of the Unit 31 hall, beside the extractor, its area drawn
+  across the thin double line inside the hall — so that line is presumably not a wall any more (asked). Scaled off the
+  drawing (≈ 35 mm/px): F45 to the extractor now ≈ 3.5–4 m; to the proposed corner ≈ 8 m. Estimates, not measurements.
