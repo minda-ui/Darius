@@ -113,6 +113,12 @@ The owner proposes moving both to the bottom corner of the workshop bay (Unit 30
 distances to the extractor, scaled off the plan: F45 ≈ 3.7 → 8 m; F4 ≈ 5.5 → 11.5 m; Vitap ≈ 12 → 16 m — every duct
 run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10.
 
+## 6a. Phase 2 — decisions so far
+
+| Date | Decision (owner's words) | Consequence for the layout |
+|---|---|---|
+| 28/10 | *"Server room and panel racks are going for good"* | The server-room walls go, freeing the bay between the F4 and the extractor; **panel racks A and B go**, so all panel storage is new. *Where the network/server rack goes after the room is removed is open* — the shop's network runs from it (charter §1). |
+
 ## 6. Phase 2 — what the new layout will be checked against (draft)
 
 - One-way board flow: delivery → panel storage → F45 → F4 → Vitap → assembly → staging → loading door.

@@ -97,3 +97,7 @@ Darius, session 41.
   racks and compressor added; compressor footprint still to measure.
 - Owner: *"No, that's the layout now"* — the 2024 drawing is current. **Phase 1 (existing) done**, bar the compressor
   footprint.
+
+## 6. Phase 2 started
+- Owner: *"Server room and panel racks are going for good"* — recorded in the layout plan §6a. Open: where the server
+  rack / network equipment goes.
