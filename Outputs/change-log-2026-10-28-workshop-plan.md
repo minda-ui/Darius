@@ -106,3 +106,4 @@ Darius, session 41.
 - Owner: *"This wall is removed already"* — the wall between the workshop bay and the Unit 30 bay (meeting-room corner to the bottom wall) is gone; the bays are one floor. Recorded in §2a; GF_30 is out of date there.
 - Owner: panel racking = panel size + 100 mm each side → **3,000 × 2,270 per bay**; two side by side (4,540) exceed the ≈ 4.2 m marked. Recorded in §6a.
 - Owner: existing racking ≈ 3.6 m high, sheets flat, one shelf per colour. Recorded in §6a with the ceiling and forklift-lift checks.
+- Owner: racks loaded from the short side; double door 2.4 m wide. Recorded in §6a (2,070 across the door, ≈ 165 mm clear each side; 2,270 rack face to the doors, 3,000 deep).
