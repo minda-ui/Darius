@@ -149,6 +149,16 @@ Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels
   the saw (the racks stay as they are); (2) a **forklift-mounted vacuum attachment** picks single sheets straight off a
   shelf — only if each shelf leaves enough gap above its stack for the pad frame (roughly 200–300 mm; to check with a
   supplier).
+- **Forklift (owner, 28/10):** *"Fork truck is diesel powered, so it is used only for bringing panels to rack"* — it
+  does **not** shuttle packs from the rack to the saw, so option (1) above and the forklift-mounted attachment are out.
+  That leaves the lifter needing a sheet it can reach **from above**:
+  - **(a) Floor stacks under the lifter** — the working colours (white at least) stored flat on the floor within the
+    crane's reach; the rack holds reserve stock. Uses floor, not height; refilling a floor stack from the rack still
+    needs something to move a pack (the forklift at delivery, or an electric stacker).
+  - **(b) Roll-out drawer racking** — each shelf pulls out into the open and the lifter picks from it. Lets the lifter
+    serve every colour from the rack; heavy-duty and costly (a shelf of ~25 sheets is ≈ 1.8–2 t).
+  - **(c) Electric pallet stacker** (battery, no fumes) for indoor moves rack → buffer by the F45.
+  Diesel exhaust indoors is also a health-and-safety point for Anna (keep use short, doors open).
 - **Checks:** ceiling / roof structure height over the saw (H = 3,830 in places) less crane and lift tube; floor for a
   jib's foundation; 400 V / 230 V supply for the vacuum blower; noise.
 - **Market (first look):** Schmalz JumboErgo / JumboSprint (to 300 kg); a used JumboErgo PSE140 in Northern Ireland
