@@ -132,6 +132,25 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 (racks, cranes, ducts) until measured on site. *Racks of ≈ 3.6 m then fill it; a forklift placing the top pack needs its
 own clearance — check on site.*
 
+## 6c. Draft v0.1 of the new layout (28/10)
+
+`Outputs/2026-10-28-workshop-new-layout-draft-v0.1.png` — drawn on GF_30 at its own measured scale (37.5 mm/pt), in a
+frame on the **Unit 30 bay: 12.25 m along the bottom wall × 10.5 m up the right wall** (inside faces, from the PDF's
+vectors). Positions in mm from the bay's bottom-right inside corner (x along the bottom wall, y into the room):
+
+| Item | x | y | Note |
+|---|---|---|---|
+| Storage zone (owner's mark) | 3,900–8,400 | 0–4,700 | |
+| Panel rack 3,000 × 2,270 | 4,975–7,245 | 900–3,900 | short side to the doors; forklift loads from outside |
+| White floor stack 3,000 × 2,270 | 7,445–9,715 | 900–3,900 | **proposed** |
+| Jib crane post, reach 4.2 m | 7,345 | 4,200 | covers rack, white stack and the F45's near side |
+| F45 working area 6,500 × 4,500 | 4,300–10,800 | 4,500–9,000 | moved; clears the meeting room and canteen corners (y ≈ 9.4–10) |
+| Extractor 1,200 × 3,170 | 10,850–12,050 | 200–3,370 | the owner's corner |
+| 2.4 m double doors | 4,900–7,300 | 0 | **position assumed** — not on GF_30 |
+
+F4, Vitap and assembly unchanged (traced). Compressor: own room (clean air) or the corner — to decide; the corner is too
+tight for both once the F45 moves in.
+
 ## 6b. Panel handling — vacuum lifter (owner's idea, 28/10 — *planning only, no drafts or quotes yet*)
 
 Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels around."*
