@@ -111,3 +111,4 @@ Darius, session 41.
 - Owner: *"That's planning yet. No drafts needed at this stage"*; *"Let's work with 3.6m height"* — recorded as the planning height (§6b).
 - Owner: lifter only rack → F45; afterwards parts move by trolley or pallet. Recorded in §6b with the two ways to bridge rack → saw.
 - Owner: *"Server room is moved to tool storage"* — the server rack goes into the 3,340 × 2,478 tool-storage room; recorded in §6a. Open: where the tools go.
+- Owner: *"No tools in that room. And rack is moved last week"* — the server rack is already in the room drawn as "Tool storage"; nothing to re-home. §2a and §6a corrected.
