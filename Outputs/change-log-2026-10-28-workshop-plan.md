@@ -109,3 +109,4 @@ Darius, session 41.
 - Owner: racks loaded from the short side; double door 2.4 m wide. Recorded in §6a (2,070 across the door, ≈ 165 mm clear each side; 2,270 rack face to the doors, 3,000 deep).
 - Owner: vacuum lifter idea for moving panels → layout plan §6b: lifter picks from above only, so with multi-level racks the forklift feeds a buffer table by the F45; jib or aluminium rail crane; headroom check; first market look (Schmalz JumboErgo; used PSE140 €12,000 + VAT, woodweb.com).
 - Owner: *"That's planning yet. No drafts needed at this stage"*; *"Let's work with 3.6m height"* — recorded as the planning height (§6b).
+- Owner: lifter only rack → F45; afterwards parts move by trolley or pallet. Recorded in §6b with the two ways to bridge rack → saw.

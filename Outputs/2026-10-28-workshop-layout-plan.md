@@ -141,6 +141,12 @@ Owner: *"Ideally we need to plan some kind arm with vacuum sucker to move panels
 - **Workable arrangement (draft):** forklift: rack → **buffer table** beside the F45 → vacuum lifter: buffer → F45
   sliding table (and later to the Vitap). Lifter on a **pillar jib crane** (reach ≈ 4–6 m) or an **aluminium rail crane**
   over the saw area.
+- **Scope (owner, 28/10):** *"We need to move panel from rack to F45 only. Afterwards it is moved by trolley or pallet"* —
+  the lifter's job ends at the F45; cut parts travel on trolleys or pallets.
+- **Two ways to bridge rack → F45:** (1) forklift brings the colour's pack to a buffer table by the F45, the lifter feeds
+  the saw (the racks stay as they are); (2) a **forklift-mounted vacuum attachment** picks single sheets straight off a
+  shelf — only if each shelf leaves enough gap above its stack for the pad frame (roughly 200–300 mm; to check with a
+  supplier).
 - **Checks:** ceiling / roof structure height over the saw (H = 3,830 in places) less crane and lift tube; floor for a
   jib's foundation; 400 V / 230 V supply for the vacuum blower; noise.
 - **Market (first look):** Schmalz JumboErgo / JumboSprint (to 300 kg); a used JumboErgo PSE140 in Northern Ireland
