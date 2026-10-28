@@ -132,25 +132,26 @@ run gets 4–6 m longer. Carried into phase 2; detail in the change log of 28/10
 (racks, cranes, ducts) until measured on site. *Racks of ≈ 3.6 m then fill it; a forklift placing the top pack needs its
 own clearance — check on site.*
 
-## 6c. Draft v0.2 of the new layout (28/10)
+## 6c. Draft v0.3 of the new layout (28/10)
 
-`Outputs/2026-10-28-workshop-new-layout-draft-v0.2.png`, same frame as v0.1 (Unit 30 bay, 12.25 m × 10.5 m inside, mm
-from the bottom-right inside corner; x along the bottom wall, **y away from it**). v0.2 follows two corrections (owner,
-28/10): *"Extractor is red rectangle and no double door on exterior wall. Entry is on opposite wall, where is roller
-shutter."*
+`Outputs/2026-10-28-workshop-new-layout-draft-v0.3.png`, same frame (Unit 30 bay, mm from the bottom-right inside corner;
+x along the bottom wall, y away from it). Owner on v0.2: *"This is tool and other construction materials storage area.
+This is not a workshop area"* — the strip along the canteen side, **≈ 4.7 m from the right-hand wall, full depth**
+(read off the owner's mark).
 
 | Item | x | y | Note |
 |---|---|---|---|
-| **2.4 m double doors** | ≈ 5,100–7,500 | ≈ 9,600 | the red double doors between the meeting room and the canteen, read off GF_30; forklift comes in by the roller shutter, then through them |
-| Forklift aisle | 5,000–7,650 | 3,300–9,500 | straight from the doors to the rack face — **keep clear** |
-| Panel rack 3,000 × 2,270 | 5,195–7,465 | 150–3,150 | back to the bottom wall, **short side faces the aisle** |
-| White floor stack 3,000 × 2,270 | 2,725–4,995 | 150–3,150 | proposed; forklift reaches it from the aisle |
-| Jib crane post, reach 4.2 m | 4,870 | 3,300 | covers rack, white stack and the F45's loading side |
-| F45 working area 4,500 × 6,500 | 250–4,750 | 3,450–9,900 | **tight at the top** — the canteen corner (≈ 3,400 / 9,980) and its door swing; check on site |
-| Extractor 3,170 × 1,200 | 9,000–12,170 | 150–1,350 | along the bottom wall (owner's mark) |
-| Free | 7,800–12,150 | 1,600–9,300 | for the F4 / offcuts in v0.3 |
+| **Tools and construction materials storage** | 150–4,700 | full depth | **not workshop** |
+| 2.4 m double doors | ≈ 5,100–7,500 | ≈ 9,600 | forklift via the roller shutter |
+| Forklift aisle | 5,000–7,650 | 3,300–9,500 | keep clear |
+| Panel rack 3,000 × 2,270 | 5,195–7,465 | 150–3,150 | back to the bottom wall, short side to the aisle |
+| Jib crane post, reach 4.2 m | 7,700 | 3,350 | rack face + F45 loading side |
+| F45 working area 4,500 × 6,500 | 7,750–12,250 | 1,550–8,050 | its left edge is the removed wall — **it can shift further left** into the old workshop bay |
+| Extractor 3,170 × 1,200 | 9,000–12,170 | 150–1,350 | along the bottom wall |
 
-v0.1 (`…-draft-v0.1.png`) is superseded: it assumed doors in the bottom wall and the extractor end-on.
+**Consequences:** no room left for a **white floor stack** — the vacuum lifter has to take sheets from the rack itself,
+so a reach-in head (§6b) becomes the key question for suppliers. The F4 and offcuts go to the Unit 31 side, by the F45's
+out-feed. v0.1 and v0.2 superseded.
 
 ## 6b. Panel handling — vacuum lifter (owner's idea, 28/10 — *planning only, no drafts or quotes yet*)
 
