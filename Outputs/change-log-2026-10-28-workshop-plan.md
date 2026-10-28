@@ -50,3 +50,5 @@ Darius, session 41.
 - Owner marked **where the F45 stands now**: lower part of the Unit 31 hall, beside the extractor, its area drawn
   across the thin double line inside the hall — so that line is presumably not a wall any more (asked). Scaled off the
   drawing (≈ 35 mm/px): F45 to the extractor now ≈ 3.5–4 m; to the proposed corner ≈ 8 m. Estimates, not measurements.
+- Owner marked **where the F4 (Hebrock) stands now**: in the hall above the F45, towards the stair block, also across
+  the thin double line. Scaled: F4 to the extractor now ≈ 5.5 m; to the proposed corner ≈ 11.5 m (estimates).
