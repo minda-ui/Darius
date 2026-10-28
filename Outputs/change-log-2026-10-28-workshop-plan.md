@@ -63,3 +63,8 @@ Darius, session 41.
 
   The move adds roughly 4–6 m to every run. More duct means more resistance and less suction at each port; suction is
   reported "perfect" now (26/10, FL-003). Asked why the move, and where the compressor stands now.
+- Owner marked the **assembly area**: top-left of the Unit 31 hall, behind the Vitap.
+- **Layout sketch** `Outputs/2026-10-28-workshop-layout-current-and-proposed.png` (Drive `1aGW1CnwkIABMNQPVH0Crbxyk8sZ_lqLX`): every zone and machine
+  the owner marked, drawn approximately over GF_30 (positions hand-traced from the owner's marks, not measured), board
+  flow storage → F45 → F4 → Vitap → assembly, and duct lines from the proposed corner. Reading: the proposed corner is
+  off the board route from storage, but every duct run gets longer; the Vitap, the furthest machine, goes to ≈ 16 m.
