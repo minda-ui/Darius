@@ -102,3 +102,4 @@ Darius, session 41.
 - Owner: *"Server room and panel racks are going for good"* — recorded in the layout plan §6a. Open: where the server
   rack / network equipment goes.
 - Owner: *"Racking in assembly area going too"* — the 2,500 × 1,500 racking goes; recorded in §6a.
+- Owner marked the **new full-panel storage**: Unit 30 bay at the bottom wall, straight in from the double doors for the forklift. Scaled ≈ 4.2 × 4.5–5.8 m; recorded in §6a with what is still to confirm.
