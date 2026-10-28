@@ -70,3 +70,13 @@ Darius, session 41.
   off the board route from storage, but every duct run gets longer; the Vitap, the furthest machine, goes to ≈ 16 m.
 - Owner: *"Create for checklist for pictures to do"* → `Outputs/2026-10-28-photo-checklist-extractor-compressor-move.md`
   (Drive `1U6laXuE4tcX6r3jg6nproAOLKnp79jlj`): corner, compressor (incl. tank plate — also answers T021), extractor, ductwork, outside wall.
+
+## 4. Workshop layout plan — phase 1 (existing) started
+- Owner: *"I will need your help with planning workshop. Now we are removing a lot of things around both units. … But
+  first let's create existing and when we will move to next phase planning."*
+- `Outputs/2026-10-28-workshop-layout-plan.md` (Drive `1mTiTZr-6xvtETHErZrZcwxSK0Xe2H-eo`), a working document: base drawing and scale; zones;
+  inventory of machines (footprints from the Wiki: Vitap 2,940 × 1,710, ≥ 1,000 clearance; extractor 1,200 × 3,170;
+  F4 ≥ 500 clearance; **F45 and compressor footprints not on file**) and of everything else to place; survey method
+  (two distances to two walls per item); phase-2 criteria (draft).
+- **Scale finding:** GF_30 is not true 1:100 — its own dimension lines measure 36.95 and 38.0 mm per PDF point against
+  35.3 for 1:100 (pdftocairo SVG, magenta dimension lines). Distances off it are ± 5 % estimates.
