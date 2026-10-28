@@ -9,7 +9,7 @@ will move to next phase planning."*
 
 | Phase | What | Status |
 |---|---|---|
-| **1. Existing** | Record what stands where today, to scale | **In progress** — owner's dimensioned drawing received 28/10 (§2a); 3 open questions |
+| **1. Existing** | Record what stands where today, to scale | **In progress** — owner's dimensioned drawing received 28/10 (§2a); open: compressor position, drawing still current? |
 | **2. New layout** | Plan machines, panel and offcut storage, assembly, services | Starts when phase 1 is complete |
 
 ---
@@ -55,8 +55,8 @@ storage. **This replaces the traced positions in the 28/10 sketch.**
 | **Extractor ("Hood")** | **3,200 × 1,200** (manual: 3,170 × 1,200) | in the bay by the server room; **700** to the server-room wall and **700** to the outside wall |
 | Racking | 2,500 × 1,500 | top of the hall, against the 6,000 room's wall |
 | Mitre saw bench | 1,200 deep, along the left wall | dashed |
-| Unlabelled item A | **2,500 × 2,200**, with a red zone around it | below the WC wall — *what is it?* |
-| Unlabelled item B | **2,500 × 1,200**, with **500** each side and a red zone | the bottom corner of the bay (the proposed extractor/compressor corner) — *what is it?* |
+| **Panel rack A** | **2,500 × 2,200**, red zone = loading space | below the WC wall (owner, 28/10) |
+| **Panel rack B** | **2,500 × 1,200**, **500** each side, red zone = loading space | the bottom corner of the bay — the proposed extractor/compressor corner (owner, 28/10) |
 | Room above the hall | 6,000 × 5,720 | double doors to the hall |
 | Tool storage | 3,340 × 2,478 | beside the WC |
 | **Compressor** | **not on the drawing** | *where?* |
@@ -64,7 +64,7 @@ storage. **This replaces the traced positions in the 28/10 sketch.**
 **Early findings for phase 2** (from the drawing, not measured on site):
 - **Vitap to the mitre saw bench is 800 mm**; the Vitap manual asks for **≥ 1,000 mm all round**.
 - The extractor sits 1,024 mm from the F45's zone, so the duct runs are short today; the proposed corner is where
-  item B stands now.
+  **panel rack B** stands now — moving the extractor and compressor there means re-homing that rack.
 
 ## 3. Inventory — what has to go on the drawing
 

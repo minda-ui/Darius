@@ -90,3 +90,5 @@ Darius, session 41.
   (2,500 × 2,200; 2,500 × 1,200 in the proposed corner); **no compressor on the drawing**.
 - Finding: Vitap 800 mm from the mitre saw bench against the manual's ≥ 1,000 mm. Asked: the two unlabelled items,
   where the compressor is, and whether the 2024 drawing is still current.
+- Owner: *"A and B is panel racks now"* — both unlabelled items are **panel racks** (2,500 × 2,200 and 2,500 × 1,200);
+  rack B stands in the proposed extractor/compressor corner.
