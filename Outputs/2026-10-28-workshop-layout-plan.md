@@ -153,6 +153,27 @@ This is not a workshop area"* — the strip along the canteen side, **≈ 4.7 m 
 so a reach-in head (§6b) becomes the key question for suppliers. The F4 and offcuts go to the Unit 31 side, by the F45's
 out-feed. v0.1 and v0.2 superseded.
 
+## 6e. Draft v0.5 — F4, offcuts and Vitap (28/10)
+
+`Outputs/2026-10-28-workshop-new-layout-draft-v0.5.png`. Owner: *"Go on with F4 and Vitap."* Same frame, extended into
+Unit 31 (x beyond 12,250 runs into the old workshop bay and the hall; the hall's bottom wall sits at y ≈ 1,000–1,900;
+landmarks traced from the owner's marks, so ± more than the Unit 30 bay).
+
+| Item | x | y | Note |
+|---|---|---|---|
+| F45 (from v0.4) | 7,750–12,250 | 2,550–9,050 | parts come off on the Unit 31 side |
+| F4 in-feed table space 2.8 m | 12,800–15,600 | 3,500–5,450 | starts right beside the F45 |
+| **F4** 4,200 × 950 | 15,600–19,800 | 4,000–4,950 | feed runs along x, towards the Vitap; ≥ 500 clear all round |
+| F4 out-feed space 2.8 m | 19,800–22,600 | 3,500–5,450 | |
+| **Vitap** 2,940 × 1,710 | 24,200–27,140 | 4,700–6,410 | **about where it stands now**; 1,000 clear all round drawn (23,200–28,140 / 3,700–7,410) |
+| **Offcut rack** 3,000 × 1,200 | 12,600–15,600 | 6,800–8,000 | by the F45's Unit 31 side |
+| Assembly | unchanged | | top-left of the hall |
+
+Flow: rack → (jib) → F45 → F4 → Vitap → assembly, trolleys / pallets after the saw.
+**To check:** (1) the thin double line across the hall (the old F45 already stood across it — not a wall?); (2) the
+mitre saw bench along the left wall vs the Vitap's 1,000 mm clearance (today 800); (3) the offcut rack sits near the
+door by the old server room — keep that door's route clear; (4) which end of the F4 is the in-feed.
+
 ## 6d. Extractor in an acoustic room, cleaned air ducted outside (owner, 28/10)
 
 Owner: *"We need to create a acoustic room for extractor with extract duct going outside after filters."* Marked on
