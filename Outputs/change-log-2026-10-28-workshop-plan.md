@@ -95,3 +95,5 @@ Darius, session 41.
 - Owner marked **the compressor**: in the 6,000 × 5,720 room above the hall, bottom-right corner by the stair block
   (a separate room from the dust). Labelled existing layout `Outputs/2026-10-28-workshop-existing-layout.png` (Drive `10FTtkIKnbJQ-bdlrfVwNl_tc_TriiN0r`) — the owner's drawing with the
   racks and compressor added; compressor footprint still to measure.
+- Owner: *"No, that's the layout now"* — the 2024 drawing is current. **Phase 1 (existing) done**, bar the compressor
+  footprint.
