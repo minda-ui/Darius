@@ -130,3 +130,12 @@ Darius, session 41.
 - Still open: corner unit 79B9658 fit (owner, Thursday) and the A/B door-line choice; sink unit doors re-export and
   the post; layout v0.5 checks (hall double line, mitre bench vs Vitap 1,000, offcut rack by the door, F4 direction);
   compressor footprint; acoustic-room points for Anna (DSEAR) and the landlord; FL-003 close after 2 Nov.
+
+## 8. Good night — skill decisions (owner, 29/10 00:xx: *"Adopt all"*)
+- **`workshop-layout-planning`** (new): calibrate the plan from its own dimension lines (`pdf_dims.py`), one frame,
+  marks → mm, numbered drafts (`draft_example_v05.py`), clearance checks, decisions table.
+- **`pre-production-drawing-check`** extended: hinge plates at 37, the Blum angled-hinge case vs square/bevelled sides,
+  the door line against top and bottom.
+- **`machine-manual-lookup`** extended: the Blum catalogue (printed page = PDF − 4, part-number search, planning
+  drawings at high resolution).
+- Register rows added; register published in place.

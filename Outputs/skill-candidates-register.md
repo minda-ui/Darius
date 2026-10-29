@@ -6,6 +6,9 @@ unless something new changes the case. Newest first.
 
 | Date | Candidate | Trigger | Decision | Reason / note | Skill |
 |---|---|---|---|---|---|
+| 2026-10-29 | workshop-layout-planning | "plan the workshop", "draw it", marks on a plan | **Adopted** | layout plan, existing layout + drafts v0.1–v0.5 (28/10); GF_30 scale found 5–8 % off | `.claude/skills/workshop-layout-planning/` |
+| 2026-10-29 | hinge-plate-check | any hinged unit; angled hinges | **Adopted (extension)** | corner unit plate pilots 56 vs Blum 37, missed in 3 rounds (26/10) | `.claude/skills/pre-production-drawing-check/` |
+| 2026-10-29 | blum-catalogue-lookup | "show me in Blum catalog", a Blum part number | **Adopted (extension)** | +45° I / +45° II / planning pages, 3 lookups (24–26/10) | `.claude/skills/machine-manual-lookup/` |
 | 2026-10-24 | project-quote-from-smartcabinet | "I got a project to quote", "how to do calculation … and issue quote", SmartCabinet panel/pieces CSVs | **Adopted** | library project cost sheet v0.1→v0.12 + PDF (23/10); owner's rates £45/h + £65/h machine, 15 % materials, VAT 20 % | `.claude/skills/project-quote-from-smartcabinet/` |
 | 2026-10-24 | hand-edit-cnc-program | "SmartCabinet not allowing it", "can you update the door file", "fix the shelf pins" | **Adopted (extension)** | door 420→370.5 and v5 pocket strip (23/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-24 | load-unit-on-vitap | "can I load all folder", "running it now" | **Adopted (extension)** | worklist.xmlst opened in WSC, 13 parts; v2 path caught (23/10) | `.claude/skills/pre-production-drawing-check/` |

@@ -1,6 +1,6 @@
 ---
 name: machine-manual-lookup
-description: Find a fact in a machine's own manual or drawings when the KB does not have it — a fuse or component position, what an error code means, a wiring route, a part number, a page the owner needs to see. Use when the owner asks "where is…", "do you have the position of…", "what does E.. mean", "what does the manual say about…", or when a fault needs a fact the Wiki lacks.
+description: Find a fact in a machine's own manual, drawings or a hardware catalogue (Blum) when the KB does not have it — a fuse or component position, what an error code means, a wiring route, a part number, a page the owner needs to see. Use when the owner asks "where is…", "do you have the position of…", "what does E.. mean", "what does the manual say about…", or when a fault needs a fact the Wiki lacks.
 ---
 
 # Machine manual lookup
@@ -26,6 +26,16 @@ the answer (Fig. 5-34, p.77) was in `F45 part 3.pdf` while its legend (p.78) was
    physical position is not in any document, **ask for a photo** and read the labels from it.
 7. **Write it back:** the fact, with part + PDF page + printed page, into the Wiki article (in place, verify SAME) and the
    Fault Log row if a fault prompted it; a line in the change log.
+
+## Hardware catalogues — Blum (added 2026-10-29)
+
+- The Blum catalogue 2022/2023 (KA-150) is `Raw/Blum_publication.pdf` on Drive (`1tmR66kPxDRUPeevzLS8eqntF68BwcalQ`,
+  549 MB); a local copy may sit at `/home/user/blum/Blum_publication.pdf` — check before downloading again.
+- **Printed page = PDF page − 4** (printed p.118 is PDF page 122). Find a part by number:
+  `for p in $(seq A B); do pdftotext -f $p -l $p -layout <pdf> - | grep -q 79B9658 && echo $p; done`.
+- Show the page: `pdftoppm -f N -l N -r 110 -png`; render the **planning drawing** at 300–400 dpi with `-x/-y/-W/-H`
+  to read its dimensions. Angled hinges: overview p.116, +45° I p.118–119, +45° II p.120–121.
+- Name the page and case number to the owner, not just the part number.
 
 ## Never
 - Never state a position, rating or route the documents do not show — mark it *not shown* and ask.

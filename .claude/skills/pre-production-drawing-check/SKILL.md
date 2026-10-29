@@ -56,6 +56,18 @@ The hardware figures come from the Blum articles in `Wiki/Processes/blum-*.md`.
   joints/pins on the two mating parts (e.g. side 126 vs shelf 107) before arguing about absolute positions.
 - **Ask what the pockets are for.** Cabineo pockets in a shelf may be **shelf pins** (loose shelf), not connectors.
 
+## Hinge plates and angled hinges (learned 2026-10-26, corner unit)
+
+The corner unit's side plate pilots were at **56 mm** from the front edge; Blum's planning drawings say **37**. Three
+review rounds passed it; it showed only when the door was hung. **Every hinged unit:**
+- plate pilots on the side at **37 mm** from the front edge (0 mm plate), 32 apart, level with the door cups
+  (door cup X − door/side offset = side X);
+- for **angled hinges**, name the Blum case from the angled-applications overview (catalogue p.116): half overlay
+  (+45° I, Nº 53, square side, door set back, FB = LW), overlay (+45° II, Nº 9) or inset (+45° II, Nº 24, 18 mm plate) —
+  **the +45° II cases draw a bevelled side**; square Hebrock-edged sides mean +45° I;
+- state **where the door sits** against the top and bottom (in front of them, or set back with them cut back). A plate
+  depth that implies a different door line from the carcase is a ✗.
+
 ## Hand-editing a program when SmartCabinet won't (learned 2026-10-23, corner unit door and v5)
 
 1. **New folder, never in place**: `Raw/Review folder/<unit> vN (Darius - <what changed>)`. Never edit the owner's
