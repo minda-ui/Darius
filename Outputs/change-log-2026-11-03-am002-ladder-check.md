@@ -25,3 +25,8 @@ Darius, session 42.
   reaches **7.0 mm into** the back. Same engagement here needs shelves **≈ 365.5 deep**. Asked the owner rather than
   assumed — a deliberate set-back would also explain it.
 - ? Freestanding 1.4 m bookcase: an anti-tip wall fixing is advisable. ? What "Ladder" refers to.
+- Owner: *"i have set shelf back on purpose"* — the set-back is intended; the shelf-to-back ✗ withdrawn as a fault.
+  Consequence raised: the shelves then hang on the four side pins only, and the machining for the back joint has no
+  purpose — **18 Ø5 holes (12 deep) on the inside face of the back** (2 per height × 3 heights × 3 shelves), visible inside the
+  bookcase, plus the back-edge seats in each shelf. Asked whether to remove them (in SmartCabinet, or a hand edit in a
+  new folder).
