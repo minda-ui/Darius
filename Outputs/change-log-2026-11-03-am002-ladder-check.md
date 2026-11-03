@@ -30,3 +30,5 @@ Darius, session 42.
   purpose — **18 Ø5 holes (12 deep) on the inside face of the back** (2 per height × 3 heights × 3 shelves), visible inside the
   bookcase, plus the back-edge seats in each shelf. Asked whether to remove them (in SmartCabinet, or a hand edit in a
   new folder).
+- Owner: *"Leave them"* — the back's 18 pin holes and the shelf back-edge seats stay as exported. **AM002 Ladder cleared
+  for production** (round 1, no file changes). Open, optional: anti-tip wall fixing; what "Ladder" refers to.
