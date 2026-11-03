@@ -36,3 +36,8 @@ Darius, session 42.
   instruction (Darius otherwise never writes to Furniture): new folder `Furniture/AM002 Ladder`
   (`1ABYUTy7z7_Wzrx5Y_Zqiv-q6Lh4fTlfh`), 13 files copied server-side (Drive copy, no re-upload); **all 13 md5s equal
   the reviewed originals**. The Review-folder copy left untouched.
+- Owner: side **decor panels** for AM002 — *"I will add it as part in panel optimizing"*: cut-list parts only, no CN
+  program, so the reviewed files in `Furniture/AM002 Ladder` stay valid. Darius looked for a SmartCabinet decor-panel
+  function first: the manual's *fianchi* page (thickness, extensions, DXF shape) and *cover* page (= *cornice*, front/top
+  frame) have none; suggested a one-side "cabinet" as an alternative. Advised: fix from inside with screws shorter than
+  side + panel (18 + 18 → ≤ 30 mm), panel size to confirm.
