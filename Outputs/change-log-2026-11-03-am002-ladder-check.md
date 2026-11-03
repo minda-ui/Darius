@@ -32,3 +32,7 @@ Darius, session 42.
   new folder).
 - Owner: *"Leave them"* — the back's 18 pin holes and the shelf back-edge seats stay as exported. **AM002 Ladder cleared
   for production** (round 1, no file changes). Anti-tip strap: the client's installers fit it (owner, 3/11). Open, optional: what "Ladder" refers to.
+- Owner: *"copy folder to Furniture folder on Google Drive for production please"* — on the owner's explicit
+  instruction (Darius otherwise never writes to Furniture): new folder `Furniture/AM002 Ladder`
+  (`1ABYUTy7z7_Wzrx5Y_Zqiv-q6Lh4fTlfh`), 13 files copied server-side (Drive copy, no re-upload); **all 13 md5s equal
+  the reviewed originals**. The Review-folder copy left untouched.
