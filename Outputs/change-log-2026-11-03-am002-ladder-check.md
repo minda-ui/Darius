@@ -31,4 +31,4 @@ Darius, session 42.
   bookcase, plus the back-edge seats in each shelf. Asked whether to remove them (in SmartCabinet, or a hand edit in a
   new folder).
 - Owner: *"Leave them"* — the back's 18 pin holes and the shelf back-edge seats stay as exported. **AM002 Ladder cleared
-  for production** (round 1, no file changes). Open, optional: anti-tip wall fixing; what "Ladder" refers to.
+  for production** (round 1, no file changes). Anti-tip strap: the client's installers fit it (owner, 3/11). Open, optional: what "Ladder" refers to.
