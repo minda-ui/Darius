@@ -135,3 +135,5 @@ Darius, session 43.
   old name; renaming is Minda's call (Darius writes to Furniture only on her word).
 - Owner: *"It is got W1100 ST9 at the back of TV"* — the panel behind the TV (≈ 1,500 × 1,570 from the photo), 1 sheet
   W1100 ST9 + edging + 1 h added: **£1,124.29 ex VAT / £1,349.15 inc VAT**.
+- Owner: *"It has a timber frame behind panel"* — ≈ 9 m CLS 38 × 63 + fixings (£19, proxy) and 1 h added:
+  **£1,191.14 ex VAT / £1,429.37 inc VAT**.

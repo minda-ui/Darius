@@ -24,21 +24,23 @@ Parts ≈ **7.8 m²** → **2 sheets** (yield ≈ 67 %). Edging ≈ **27 m** (fr
 | Wall hanging for a floating 3 m unit — allowance ⚠ | 20.00 |
 | **Panel behind the TV — W1100 ST9** (owner, 04/11), 1 sheet, Uniboards web | 75.99 |
 | Edging for it, ≈ 6.1 m W1100 ST9 (of a £47 / 75 m roll) ⚠ | 3.82 |
-| **Materials at cost** | **336.34** |
-| Margin 15 % | 50.45 |
-| Labour 11.55 h × £45 | 519.75 |
+| **Timber frame behind the panel** (owner, 04/11): ≈ 9 m CLS 38 × 63 (perimeter + 2 rails) = 4 × 2.4 m @ £3.50 ⚠ + screws and plugs £5 ⚠ | 19.00 |
+| **Materials at cost** | **355.34** |
+| Margin 15 % | 53.30 |
+| Labour 12.55 h × £45 | 564.75 |
 | Machine 3.35 h × £65 | 217.75 |
-| **Total ex VAT** | **1,124.29** |
-| VAT 20 % | 224.86 |
-| **Total inc VAT** | **1,349.15** |
+| **Total ex VAT** | **1,191.14** |
+| VAT 20 % | 238.23 |
+| **Total inc VAT** | **1,429.37** |
 
 **Hours:** check 1.0 · F45 2 sheets 0.6 · F4 ≈ 40 parts 1.2 · Vitap ≈ 50 programs 1.25 · assemble 4 boxes and join 3.5 ·
-tower 1.0 · hang doors 1.0 · TV back panel (cut, edge, battens) 1.0 · check and pack 1.0 = **11.55 h**, of which
+tower 1.0 · hang doors 1.0 · TV back panel (cut, edge) 1.0 · timber frame 1.0 · check and pack 1.0 = **12.55 h**, of which
 **3.35 h** machine.
 
 **TV back panel** (owner, 04/11: *"It is got W1100 ST9 at the back of TV"*): the white panel between the tower and the
 slats, ≈ **1,500 × 1,570** by eye from the photo (scaled on the 3,000 unit) — one 2,800 × 2,070 sheet. It stands off the
-wall with LED light round it; the stand-off battens are counted in the hour, the LED is not.
+wall with LED light round it; behind it a **timber frame** (owner, 04/11: *"It has a timber frame behind panel"*), priced as CLS 38 × 63 — section
+and timber to confirm. The LED is not priced.
 
 ## 3. What the photo shows that the export does not — the test's main finding
 0. ~~Panel behind the TV~~ — **now priced** (W1100 ST9, owner).
