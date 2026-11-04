@@ -145,3 +145,6 @@ Darius, session 43.
   100 W driver £28.80 inc, SS17 profile from £2.50 inc. ≈ 13 m by eye, 2 drivers, profiles, allowance = £167.58 ex VAT,
   +1.5 h / +0.3 h machine: **£1,714.86 ex VAT / £2,057.83 inc VAT**.
 - Owner: *"warm white"* — LED colour confirmed; the £36 economy COB reel was taken from the warm-white category, so the price stands.
+- Owner: *"PC24-FC"* — the strip used: Tagra PC24-FC, 24 V COB cut-anywhere, 320 LEDs/m, 11.2 W/m, CRI 90+, from £75.60
+  inc VAT per 5 m reel (search listing). 3 reels £189.00 ex VAT replaces the £90 economy proxy; ≈ 146 W, 2 × 100 W drivers
+  still fit. **£1,828.71 ex VAT / £2,194.45 inc VAT.**

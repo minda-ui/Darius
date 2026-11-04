@@ -26,14 +26,14 @@ Parts ≈ **7.8 m²** → **2 sheets** (yield ≈ 67 %). Edging ≈ **27 m** (fr
 | Edging for it, ≈ 6.1 m W1100 ST9 (of a £47 / 75 m roll) ⚠ | 3.82 |
 | **Timber frame behind the panel** (owner, 04/11): ≈ 9 m CLS 38 × 63 (perimeter + 2 rails) = 4 × 2.4 m @ £3.50 ⚠ + screws and plugs £5 ⚠ | 19.00 |
 | **Slatted panel** (owner, 04/11): ≈ 16 slats **50 mm** wide × ≈ 1,200, same board, **edged both long sides** — board from the 2 sheets' offcut (≈ 0.96 m² of ≈ 3.8 m² spare) ⚠; edging ≈ 38 m from the same roll (≈ 65 of 75 m used — tight ⚠); fixing battens 2 × 2.4 m CLS + screws ⚠ | 10.00 |
-| **LED lighting — Ultra LEDs** (owner's supplier, 04/11; prices from search listings, **inc VAT ÷ 1.2**, site not reachable from here ⚠): ≈ 13 m → 3 × 5 m reels 24 V COB 10.5 W/m economy, **warm white** (£36 inc each) £90.00 · 2 × Tagra 24 V 100 W drivers (£28.80 inc each) £48.00 · aluminium profile, 4 tower shelves + 3 m under the unit (Tagra SS17 "from £2.50 inc") £14.58 · connectors, cable, switch allowance £15.00 | 167.58 |
-| **Materials at cost** | **532.92** |
-| Margin 15 % | 79.94 |
+| **LED lighting — Ultra LEDs** (owner's supplier, 04/11; prices from search listings, **inc VAT ÷ 1.2**, site not reachable from here ⚠): ≈ 13 m → 3 × 5 m reels **Tagra PC24-FC** (owner, 04/11) — 24 V COB cut-anywhere, 320 LEDs/m, 11.2 W/m, CRI 90+, IP20, **warm white** (£75.60 inc each, "from" price ⚠) £189.00 · 2 × Tagra 24 V 100 W drivers (£28.80 inc each) £48.00 · aluminium profile, 4 tower shelves + 3 m under the unit (Tagra SS17 "from £2.50 inc") £14.58 · connectors, cable, switch allowance £15.00 | 266.58 |
+| **Materials at cost** | **631.92** |
+| Margin 15 % | 94.79 |
 | Labour 17.05 h × £45 | 767.25 |
 | Machine 5.15 h × £65 | 334.75 |
-| **Total ex VAT** | **1,714.86** |
-| VAT 20 % | 342.97 |
-| **Total inc VAT** | **2,057.83** |
+| **Total ex VAT** | **1,828.71** |
+| VAT 20 % | 365.74 |
+| **Total inc VAT** | **2,194.45** |
 
 **Hours:** check 1.0 · F45 2 sheets 0.6 · F4 ≈ 40 parts 1.2 · Vitap ≈ 50 programs 1.25 · assemble 4 boxes and join 3.5 ·
 tower 1.0 · hang doors 1.0 · TV back panel (cut, edge) 1.0 · timber frame 1.0 · **slats: rip 0.5, edge 32 long edges 1.0, fix with spacers 1.5** · **LED: fit profiles and tape, wire and test 1.5** · check and pack 1.0 = **17.05 h**, of which
@@ -50,7 +50,7 @@ and timber to confirm. The LED is not priced.
 2. ~~The slatted panel~~ — **now priced** (owner: made in the workshop, 50 mm slats, edged both sides). Size by eye from
    the photo: ≈ **900 W × 1,200 H, 16 slats** — count and length to confirm.
 3. ~~LED lighting~~ — **now priced** from Ultra LEDs listings. **Lengths by eye from the photo:** tower 4 × 0.46 ≈ 1.9 m,
-   under the unit 3.0 m, round the TV panel and the slats ≈ 8 m → ≈ **13 m**, ≈ 137 W at 10.5 W/m → **2 × 100 W drivers**.
+   under the unit 3.0 m, round the TV panel and the slats ≈ 8 m → ≈ **13 m**, ≈ 146 W at 11.2 W/m → **2 × 100 W drivers** (≈ 73 % load each).
    **Colour: warm white** (owner, 04/11). Strip type (COB vs SMD), dimming and who wired it (electrician?) to confirm. **Mains connection
    is an electrician's job — not priced.**
 4. **Fronts with no handles** → push-to-open (Blum TIP-ON / BLUMOTION?) not priced; 747-wide fronts 396 high may be
