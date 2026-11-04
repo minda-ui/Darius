@@ -140,3 +140,7 @@ Darius, session 43.
 - Owner: *"Slatted panel are made by us in workshop, it is 50mm wide and edging on both sides"* — ≈ 16 slats 50 × 1,200
   (count and length by eye from the photo), board from the offcut, ≈ 38 m edging, +3 h labour / +1.5 h machine:
   **£1,435.14 ex VAT / £1,722.17 inc VAT**.
+- Owner: *"www.ultraleds.co.uk; check led strips"* — site not reachable from this session (host not in the network
+  allow-list); prices taken from search-result listings (inc VAT ÷ 1.2): 24 V COB economy 5 m reel £36 inc, Tagra 24 V
+  100 W driver £28.80 inc, SS17 profile from £2.50 inc. ≈ 13 m by eye, 2 drivers, profiles, allowance = £167.58 ex VAT,
+  +1.5 h / +0.3 h machine: **£1,714.86 ex VAT / £2,057.83 inc VAT**.
