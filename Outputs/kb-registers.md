@@ -95,7 +95,7 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 
 ## Wiki structure changes
 
-**All 61, oldest first.** *(recounted 2026-10-23 with awk over the table; the header had said 46.)*
+**All 62, oldest first.** *(recounted 2026-10-23 with awk over the table; the header had said 46.)*
 
 | Date | Change | Reason |
 |---|---|---|
@@ -161,10 +161,11 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | 2026-10-14 | **`Troubleshooting/troubleshooting-altendorf-f45.md` amended in place** (10,108 -> **12,830 B**, same id): `FL-005` cause was **configuration** — new section *"Scorer will not move? Check its settings on the screen first"*, with the 2026-10-11 electrical reasoning marked wrong. Skill `machine-control-fault` amended (settings before electrics). | Owner: *"it was configuration. It was set not go up"* |
 | 2026-10-16 | **`Troubleshooting/troubleshooting-aes-saf-10000.md` back-filled into the git mirror** (11,956 B, Drive id `1p6fM3mEWB3vcmfmOxtf_spC2w2OMUSkf`, fetched and `cmp`-identical) — it had been on Drive and in `Wiki/index.md` since 2026-09-28 but never committed; found while gathering facts for `AWT-0537`. | Mirror completeness (CLAUDE.md s1) |
 | 2026-10-23 | **`Processes/library-batch-production.md` amended** — new section *Loading a unit on the Vitap*: `worklist.xmlst` opens in WSC ListsManager and loads every program as one list (owner-tested on the corner unit v5, 13 parts). Updated in place, id kept. | Owner's question at the machine |
+| 2026-11-04 | **`Processes/klug-innobox-smartcabinet-input.md` created** — Klug Innobox = Taiming 908SH-A86: NL table, runner holes 37/261, line ≥ 56, base LW − 75, back LW − 89 (drawing reads), METABOX method; index entry added. Git only until today's Drive publish. | Owner: *"We need to klug innobox to SmartCabinet"* |
 
 ## Outputs produced
 
-**All 131, oldest first** *(recounted 2026-10-23 with awk over the table; the header had said 99. Rows for sessions after 2026-10-16 other than today's were not added at the time — see the change logs.)*.
+**All 136, oldest first** *(recounted 2026-10-23 with awk over the table; the header had said 99. Rows for sessions after 2026-10-16 other than today's were not added at the time — see the change logs.)*.
 
 | Output path | Date | Built from (wiki articles) | Requested by |
 |---|---|---|---|
@@ -300,6 +301,11 @@ merged back in and now holds every session. `CLAUDE.md` §0 and §4 point there.
 | `Outputs/2026-10-28-workshop-layout-plan.md` — the working layout plan (phase 1 existing, phase 2 decisions, drafts, vacuum lifter, acoustic room). | 2026-10-28 | machinery articles (footprints) | Minda |
 | `Outputs/2026-10-28-photo-checklist-extractor-compressor-move.md` | 2026-10-28 | none | Minda |
 | Layout images: `…-workshop-layout-current-and-proposed.png`, `…-workshop-existing-layout.png`, `…-workshop-new-layout-draft-v0.1` to `v0.5.png` (7 files). | 2026-10-28 | none | Minda |
+| `Outputs/2026-11-04-furniture-production-workflow-v0.1.md` | 2026-11-04 | `Software/smartcabinet-and-production-workflow` | Owner |
+| `Outputs/2026-11-04-ENQ-0002-pre-quote-costing.md` (v0.2) + `…-workshop-price-final.md` | 2026-11-04 | `Processes/blum-clip-top-hinges-smartcabinet-input`, Panel/Hardware Price Libraries | Nadia (AWT-1105/1107/1110) |
+| `Outputs/2026-11-04-ENQ-0003-AM002-Ladder-workshop-price.md` | 2026-11-04 | AM002 production files | Nadia (AWT-1109) |
+| `Outputs/2026-11-04-anvar-kitchen-v3-cost-sheet.md` | 2026-11-04 | Anvar v3 worklists, price libraries | Owner (test) |
+| `Outputs/2026-11-04-tv-unit-30-09-cost-sheet.md` | 2026-11-04 | TV Unit 30_09 worklists, photo, Ultra LEDs listings | Owner (test) |
 
 ## Drive ids
 

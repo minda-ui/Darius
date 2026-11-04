@@ -188,3 +188,14 @@ Darius, session 43.
   Checked first: it no longer held the 03/11 open-bookcase release but **the 07:51 draft** (sides `fab836fe…`/`ba5b0470…`,
   doors `67f72b22…`/`2a798d0a…`) plus a subfolder — someone had overwritten it this morning; my earlier note that it held
   "the version without doors" was out of date. `Furniture/AM2602 Ladder` is now the only Ladder folder in Furniture.
+
+## 14. End of day
+- Owner: *"Good night"*. `change-log-index.md` (+ 11-03 and 11-04 rows, count 41 → 43) and `kb-registers.md` (+1 Wiki row,
+  +5 Outputs rows) updated in git.
+- **Drive not published today.** The Composio CLI is still not signed in in this container (`composio whoami` empty), and
+  the native connector can create files but not replace a file's bytes in place, which the index, registers and
+  `Wiki/index.md` need. **First job next session (with the CLI signed in):** publish in place `change-log-index.md`,
+  `kb-registers.md`, `Wiki/index.md`; create `change-log-2026-11-03-…`, `change-log-2026-11-04-…`,
+  `Wiki/Processes/klug-innobox-smartcabinet-input.md`, the workflow draft and today's cost sheets; verify each by
+  download + `cmp`. The notes for Nadia are already on Drive (her `Raw/`).
+- Skill candidates offered (see `Outputs/skill-candidates-register.md`).
