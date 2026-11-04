@@ -183,3 +183,8 @@ Darius, session 43.
   md5s equal the checked files.** The 07:51 subfolder ignored. The old `Furniture/AM002 Ladder`
   (`1ABYUTy7z7_Wzrx5Y_Zqiv-q6Lh4fTlfh`, open bookcase, no doors) left untouched — **must not be run**; deleting or
   renaming it is the owner's. The job file inside is still named `AM002 Ladder.fnm` (SmartCabinet's name, not changed).
+- Owner: *"delete AM002 Ladder folder in Furniture"* — `Furniture/AM002 Ladder` (`1ABYUTy7z7_Wzrx5Y_Zqiv-q6Lh4fTlfh`)
+  **moved to Drive's bin** (`GOOGLEDRIVE_TRASH_FILE`, `trashed: true`), restorable for 30 days — not deleted permanently.
+  Checked first: it no longer held the 03/11 open-bookcase release but **the 07:51 draft** (sides `fab836fe…`/`ba5b0470…`,
+  doors `67f72b22…`/`2a798d0a…`) plus a subfolder — someone had overwritten it this morning; my earlier note that it held
+  "the version without doors" was out of date. `Furniture/AM2602 Ladder` is now the only Ladder folder in Furniture.
