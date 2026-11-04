@@ -32,3 +32,15 @@ Darius, session 43.
 - **Workflow learning (1st):** bespoke work needs workshop costing **before** the quote — in Darius's draft that is step
   3, in hand-off v0.2 Darius joins only at step 4. Nadia is flagging it to Victoria.
 - Hub `AWT-1105` → In Progress with a receipt line.
+
+## 5. ENQ-0002 costed and handed back (`AWT-1105` Done)
+- Owner's answers: *"1. Carcass board: 18mm W1100 ST9 2. Klug Innobox: I have downloaded the drawing to the Raw folder.
+  3. Nothing; it goes in the wall, 100 mm from the floor. 4. No top board it goes inside wall"*. Klug drawing 758810 =
+  Innobox 86 mm, full extension, 35 kg; NL 450 needs 460 install depth (carcase gives 482).
+- Note `Outputs/2026-11-04-ENQ-0002-pre-quote-costing.md` (4,097 B) → Nadia `Raw/` as
+  `2026-11-04-from-Darius-ENQ-0002-pre-quote-costing.md` (Drive `1dOQai6JzS-FkKRef_k4WUcmYUwfOWAVe`, 4,097 B — matches).
+- **£624.52 ex VAT / £749.42 inc VAT** for carcases + hardware + workshop time (materials £155.45 + 15 %, 7.45 h × £45,
+  1.7 h × £65). Excludes IDS fronts, knobs, delivery, fitting (~£90 + travel). ⚠ Board, edging and Innobox prices are
+  web/indicative. Blocks to a firm price: niche size (≥ 1,006–1,010 wide), IDS door hinge holes, who fits, knobs, IDS
+  lead time.
+- Hub `AWT-1105` → **Done** with the result line.
