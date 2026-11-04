@@ -133,3 +133,5 @@ Darius, session 43.
 - Nadia's note (`1n7PCGX3Jna_UvM7__I1zhZ6FSxn6cn_X`): Amfa jobs are **AM + year + number** (Anna, `AWT-0497`) —
   **AM002 Ladder = AM2602**, AM001 = AM2601, ENQ-0002 will be AM2603 when won. `Furniture/AM002 Ladder` still carries the
   old name; renaming is Minda's call (Darius writes to Furniture only on her word).
+- Owner: *"It is got W1100 ST9 at the back of TV"* — the panel behind the TV (≈ 1,500 × 1,570 from the photo), 1 sheet
+  W1100 ST9 + edging + 1 h added: **£1,124.29 ex VAT / £1,349.15 inc VAT**.
