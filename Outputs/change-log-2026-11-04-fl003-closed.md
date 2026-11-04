@@ -47,3 +47,16 @@ Darius, session 43.
 - Owner: *"send over to Nadia"*. The note was already in her `Raw/`; added the matching Hub row **`AWT-1106`** (Nadia,
   Open, Medium; duplicate guard clear) for her next step: price and issue the quote through the CRM with Minda.
   `AWT-1105` Done date set to 2026-11-04.
+
+## 6. ENQ-0002 costing v0.2 — fronts made in-house (`AWT-1107` Done)
+- Owner: *"check on Nadia"*. Nadia had set `AWT-1106` In Progress and opened **`AWT-1107`** with a Raw note
+  (`17u7U4mPNG3q0YqK4Bu163M4tVVOnKVZs`): Minda's correction — *doors and drawer fronts are made by us*; "Interior Door
+  Systems Stratford" was only SmartCabinet's default supplier label.
+- `Outputs/2026-11-04-ENQ-0002-pre-quote-costing.md` rewritten as **v0.2** (5,583 B) → Nadia `Raw/` as
+  `2026-11-04-from-Darius-ENQ-0002-pre-quote-costing-v0.2-fronts-in-house.md` (Drive
+  `1xoWClfP43fVb3yZiOLB9G2QyqNDnvWUM`, 5,583 B — matches). v0.1 left in her Raw as sent.
+- Fronts assumed 18 mm W1100 ST9 slab, edged all round; on the same sheet (yield ≈ 64 %); +5.9 m edging; hinge cups,
+  knob and bracket holes on the Vitap; +1.2 h labour, +0.7 h machine. **£728.30 ex VAT / £873.96 inc VAT**
+  (+£103.78 / +£124.54). Lead time now workshop-set: ≈ 3–4 working days from go-ahead.
+- **Workflow learning (2nd):** SmartCabinet's parts list names IDS Stratford on every front by default — not a supplier.
+- Hub `AWT-1107` → **Done**.
