@@ -137,3 +137,6 @@ Darius, session 43.
   W1100 ST9 + edging + 1 h added: **£1,124.29 ex VAT / £1,349.15 inc VAT**.
 - Owner: *"It has a timber frame behind panel"* — ≈ 9 m CLS 38 × 63 + fixings (£19, proxy) and 1 h added:
   **£1,191.14 ex VAT / £1,429.37 inc VAT**.
+- Owner: *"Slatted panel are made by us in workshop, it is 50mm wide and edging on both sides"* — ≈ 16 slats 50 × 1,200
+  (count and length by eye from the photo), board from the offcut, ≈ 38 m edging, +3 h labour / +1.5 h machine:
+  **£1,435.14 ex VAT / £1,722.17 inc VAT**.
