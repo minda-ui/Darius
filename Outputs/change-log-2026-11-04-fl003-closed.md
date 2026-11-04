@@ -44,3 +44,6 @@ Darius, session 43.
   web/indicative. Blocks to a firm price: niche size (≥ 1,006–1,010 wide), IDS door hinge holes, who fits, knobs, IDS
   lead time.
 - Hub `AWT-1105` → **Done** with the result line.
+- Owner: *"send over to Nadia"*. The note was already in her `Raw/`; added the matching Hub row **`AWT-1106`** (Nadia,
+  Open, Medium; duplicate guard clear) for her next step: price and issue the quote through the CRM with Minda.
+  `AWT-1105` Done date set to 2026-11-04.
