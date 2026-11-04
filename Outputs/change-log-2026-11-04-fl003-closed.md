@@ -17,3 +17,5 @@ Darius, session 43.
 - Finding: the **Job Tracker** (`6914515205752708`, built 17/09 with `WJ-YY-NNN` numbers) has **0 rows** — jobs carry
   **AM** numbers instead. Six decisions put to the owner (job number, tracker use, release trigger, materials, QC,
   hand-back).
+- Owner: *"I will start by giving the order picture to Nadia, and then we will test how our workflow will work."* —
+  test run recorded in the draft; Darius watches the Hub and `Raw/` for Nadia's hand-off.

@@ -46,6 +46,12 @@ a job is without asking.
 5. **QC (step 10):** what is checked before packing — sizes, doors and drawers adjusted, edges, labels?
 6. **Hand back:** delivery by us, or collection / client's installers (as for AM002)?
 
+## Test run (owner, 04/11)
+
+*"I will start by giving the order picture to Nadia, and then we will test how our workflow will work."* The first job
+runs through the draft as a test: Minda → Nadia (step 1) → Darius picks it up when Nadia's hand-off arrives (a Hub row
+and/or a note in the workshop `Raw/`). Each step's hiccups are logged against this draft and fixed in v0.2.
+
 ## Next, once these are answered
 - Fill in the Job Tracker for live jobs (AM002 first).
 - Write the missing pieces: release checklist, materials list from the optimiser, QC checklist, packing/label note.
