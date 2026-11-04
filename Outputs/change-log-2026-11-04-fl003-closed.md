@@ -96,3 +96,15 @@ Darius, session 43.
   the drawing check compared the programs with each other, not with what was sold. A release gate needs **the order's
   spec (Sales' drawings) as the reference**: step 6 should check the export against the confirmed order, and step 7
   (release) should wait for step 4 (order released). To fold into workflow v0.2.
+
+## 10. Anvar kitchen v3 priced (owner)
+- Owner: *"i have uploaded Anvar v3 folder in your review folder. could you priced it for me please"*; then *"it would be
+  metaboxes, not legraboxes"* and *"board is W1100 ST9"*.
+- `Raw/Review folder/ANVAR_KITCHEN_V3` (`1Vti_zlTShdGREWsToyMZvc_pShTAvaTk`): 17 unit folders, 153 programs; the 12
+  unique worklists downloaded (Composio, `darius-googledrive`) and md5-checked; UTF-16 parsed. 147 parts, all **19 mm**.
+  Programs **not** drawing-checked yet.
+- `Outputs/2026-11-04-anvar-kitchen-v3-cost-sheet.md`: **£3,547.92 ex VAT / £4,257.50 inc VAT** workshop price
+  (materials £1,083.19 incl. 9 sheets W1100 ST9 at the 18 mm web price, 37.15 h labour, 9.7 h machine).
+- Flagged: export is 19 mm vs the 18 mm price; **026 corner base and 025 housing have no doors** (today's AM002 lesson);
+  corner wall unit hinging; Metabox NL500 priced at NL400, 20 mm drawer bottoms, no drawer backs; sink post not in the
+  export; handles, plinth; unit 014 is 600 deep vs 570.
