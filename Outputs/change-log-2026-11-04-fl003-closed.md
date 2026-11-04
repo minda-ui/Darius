@@ -148,3 +148,25 @@ Darius, session 43.
 - Owner: *"PC24-FC"* — the strip used: Tagra PC24-FC, 24 V COB cut-anywhere, 320 LEDs/m, 11.2 W/m, CRI 90+, from £75.60
   inc VAT per 5 m reel (search listing). 3 reels £189.00 ex VAT replaces the £90 economy proxy; ≈ 146 W, 2 × 100 W drivers
   still fit. **£1,828.71 ex VAT / £2,194.45 inc VAT.**
+
+## 13. AM2602 (AM002) Ladder — drawing check round 2, with doors
+- Owner: *"check review folder for AM002 Larder"*. `Raw/Review folder/AM002 Ladder` (`1TfkKsUWZu8iKvJfXb0VZsA8jVm9CH3jX`)
+  **replaced in place** at 13:16: 15 files, all md5 = Drive (fetched via Composio, bundled, md5 re-checked locally).
+  A subfolder `AM002 Ladder` (`1WUztnPCNNp_OP6X3HETHtZ3upi1xU8K6`, 07:51) holds an **earlier draft** (sides and doors
+  differ) — not checked; owner to say it is not to be run.
+- **Changed vs round 1:** sides (hinge-plate pilots added), **new 09-DOOR-1 / 10-DOOR-2**; bottom, top, shelves, back
+  byte-identical (decoder `--diff`).
+- ✓ Doors **1,396 × 437 × 18**, a pair: 2 × 437 + 6 = 880 (1.5 / 3 / 1.5 reveals), 1,396 + 2 × 2 = 1,400 — full overlay over
+  top and bottom.
+- ✓ **4 hinges a door**, cups Ø35 × 13 at **TB 5** (centre 22.5), 100 from each end, evenly spaced; screw pilots ±22.5 /
+  9.5 — the CLIP top pattern. Blum's chart needs 3 at this height and width; 4 is more than enough.
+- ✓ **Plates on 37 / 32** (Ø3 × 5): centres at side **102 · 500.7 · 899.3 · 1,298** = door cups 100 · 498.7 · 897.3 · 1,296
+  **+ 2** (the door's top reveal) — level. Both sides mirrored. Overlay needed 18 − 1.5 = **16.5**; hinge gives 11 + 5 − 0 =
+  **16** (TB 5, MD 0) — 0.5 within the adjustment.
+- ✓ No hinge–shelf clash: hinges 140+ mm from the nearest shelf seats.
+- **? still open:** (1) **height 1,400** (files) vs **≈ 1,436** (Sales' drawing); (2) **bar handles** — no handle holes in the
+  doors (all holes on the Vitap): model and centres; (3) **side decor panels** — the 18 mm doors stand 18 in front of the
+  carcase: panel depth 400 or ≈ 418+ to cover the door edge?; (4) the 07:51 subfolder.
+- Not released: on the owner's word the folder replaces `Furniture/AM002 Ladder` (old open-bookcase files, **must not be
+  run**) — and Nadia's new number **AM2602** can be used for the new folder name.
+- Costing note: 8 hinges, not the 6 priced on AWT-1109 (+£2 × 2.84 = £5.68 at cost).
