@@ -144,3 +144,4 @@ Darius, session 43.
   allow-list); prices taken from search-result listings (inc VAT ÷ 1.2): 24 V COB economy 5 m reel £36 inc, Tagra 24 V
   100 W driver £28.80 inc, SS17 profile from £2.50 inc. ≈ 13 m by eye, 2 drivers, profiles, allowance = £167.58 ex VAT,
   +1.5 h / +0.3 h machine: **£1,714.86 ex VAT / £2,057.83 inc VAT**.
+- Owner: *"warm white"* — LED colour confirmed; the £36 economy COB reel was taken from the warm-white category, so the price stands.
