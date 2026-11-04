@@ -69,3 +69,30 @@ Darius, session 43.
 - Told Nadia: Raw note `2026-11-04-from-Darius-ENQ-0002-workshop-vs-sales-pricing.md` (Drive
   `1vfnil9MKwdP8bhsEefR8-gOWXa0ATZ6D`, 1,060 B) + Hub **`AWT-1108`** (Nadia, Open; duplicate guard clear). Answers the
   pricing-rule point on her `AWT-1106`.
+
+## 8. ENQ-0002 final workshop price (`AWT-1110` Done)
+- Nadia's notes: sizes final (`1lAqPNrnpNFlfJu7BuAEYoQA7ARiXLNa9`); spec final (`18oMz8mGXjA9CJKT50n7Qb9A08K1e96Gq`) —
+  W1100 ST9 carcases and fronts, knobs **Carlisle Brass FTD703MB** ×4 at £6.75 ex VAT, no fitting.
+- `Outputs/2026-11-04-ENQ-0002-workshop-price-final.md` (2,395 B) → Nadia `Raw/` (`1DyXf-d4BxctgKXPc58PfWWCPXjQLA7i5`,
+  2,395 B — matches). **£763.85 ex VAT / £916.62 inc VAT.**
+- Knob: the supplier page scan (`1tgh6NjYE2ay7e4gOYbFObq2wkrnljJEe`) shows price and SKU only; retailer listings give
+  Ø35, 34 projection, 19 rose, bolt supplied; **no source states the thread** — M4 / Ø5 mm through hole assumed, to be
+  checked on the first knob before the fronts are drilled.
+
+## 9. ENQ-0003 = AM002 Ladder — and the doors were missing (`AWT-1109` Done)
+- Nadia's note (`1ll4YMXr6WDW1vib4uHdYxVF5DVWUQdyN`) described a tall two-door cupboard, internal 332/332/332/350.
+  Owner: *"ENQ-0003 is AM002 Ladder"* — costed from the released production files instead of assumptions.
+- The comparison showed AM002 as released (03/11) is an **open** bookcase 1,400 high, while Nadia's renders show a pair of
+  full-height doors and the elevation gives ≈ 1,436. Owner: *"I forget to add doors :(. This is why i understand
+  importance of workflow"*.
+- **Consequence:** the files in `Furniture/AM002 Ladder` are incomplete — no doors, no hinge-plate holes in the sides.
+  **AM002 must not be cut or drilled from them**; Minda to add the doors in SmartCabinet, re-export to the Review folder,
+  Darius re-checks, then re-release. Darius has not touched the Furniture folder (writes there only on the owner's word).
+- `Outputs/2026-11-04-ENQ-0003-AM002-Ladder-workshop-price.md` (5,094 B) → Nadia `Raw/`
+  (`17f-MmCR2Zu7Q_vARUCUoPS37OW9m6bwQ`, 5,094 B — matches). **£658.81 ex VAT / £790.57 inc VAT** with doors
+  (carcase + decor panels £511.92, doors £146.89), before bar handles; decor on a U702 proxy. Open: height 1,400 vs 1,436,
+  decor, decor panel sizes, base box, handles.
+- **Workflow learning (3rd), the big one:** AM002 was checked and released **before** Sales held the client's drawings —
+  the drawing check compared the programs with each other, not with what was sold. A release gate needs **the order's
+  spec (Sales' drawings) as the reference**: step 6 should check the export against the confirmed order, and step 7
+  (release) should wait for step 4 (order released). To fold into workflow v0.2.
