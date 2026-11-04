@@ -60,3 +60,12 @@ Darius, session 43.
   (+£103.78 / +£124.54). Lead time now workshop-set: ≈ 3–4 working days from go-ahead.
 - **Workflow learning (2nd):** SmartCabinet's parts list names IDS Stratford on every front by default — not a supplier.
 - Hub `AWT-1107` → **Done**.
+
+## 7. Pricing roles settled (owner)
+- Owner: *"you providing workshop pricing and Nadia do sales pricing. You use workshop pricing rules"*.
+- Recorded in workflow draft step 3 (`Outputs/2026-11-04-furniture-production-workflow-v0.1.md`) and the
+  `project-quote-from-smartcabinet` skill's boundary line: Darius = **workshop price** (23/10 rules); Nadia = **sales
+  price**; Darius applies no sales mark-up.
+- Told Nadia: Raw note `2026-11-04-from-Darius-ENQ-0002-workshop-vs-sales-pricing.md` (Drive
+  `1vfnil9MKwdP8bhsEefR8-gOWXa0ATZ6D`, 1,060 B) + Hub **`AWT-1108`** (Nadia, Open; duplicate guard clear). Answers the
+  pricing-rule point on her `AWT-1106`.

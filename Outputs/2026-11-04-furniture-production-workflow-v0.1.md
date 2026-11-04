@@ -24,7 +24,7 @@ Minda to confirm or change.**
 |---|---|---|---|---|---|
 | 1 | **Enquiry & design brief** | Sales (Nadia, CRM) | client request | brief, sizes, finish | — |
 | 2 | **Design in SmartCabinet** | Minda | brief | scene, panel + parts CSV | — |
-| 3 | **Costing & quote** | Darius costs → Minda prices → Nadia issues | CSVs, rates | cost sheet + PDF; quote in CRM | client accepts |
+| 3 | **Workshop price → sales price → quote** | Darius: **workshop price** (workshop rules 23/10) → Nadia: **sales price** → quote in CRM | CSVs, rates | workshop costing note; quote in CRM | client accepts |
 | 4 | **Order released to the workshop** | Nadia → Darius | signed order / deposit | **AM number**, tracker row | contract signed + deposit (QuickBooks) |
 | 5 | **Production drawings** | Minda exports to `Raw/Review folder/<AM> <name>` | final scene | TCN + worklist + .fnm (+ cutting list PDF) | — |
 | 6 | **Drawing check** | Darius | job folder | ✓ / ✗ / ? report | **no open ✗ or ?** |
@@ -35,6 +35,10 @@ Minda to confirm or change.**
 
 Every step moves the job's row in the **Job Tracker**: stage, dates, blocked flag, folder link — so anyone can see where
 a job is without asking.
+
+**Settled 04/11 (owner):** *"you providing workshop pricing and Nadia do sales pricing. You use workshop pricing rules"* —
+Darius gives the **workshop price** on the 23/10 rules (materials + 15 %, labour £45/h, machine £65/h, VAT 20 %); Nadia
+sets the **sales price** from it.
 
 ## Decisions needed from Minda
 

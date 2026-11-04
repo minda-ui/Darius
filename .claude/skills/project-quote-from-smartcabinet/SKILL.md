@@ -59,4 +59,6 @@ Cost sheet and PDF in `Outputs/`, change-log section per revision (quote the own
 commit, push. Offer a Lathams quote request (supplier-quote-request) to replace proxies.
 
 ## Boundaries
-Darius costs; **Minda prices and sends**. Never send a quote or contact a customer or supplier (§6a). No order is placed.
+Darius gives the **workshop price** on the workshop rules (§4); **Nadia (Sales) sets the sales price** and issues the
+quote in the CRM (owner, 04/11/2026: *"you providing workshop pricing and Nadia do sales pricing. You use workshop
+pricing rules"*). Darius does not apply a sales mark-up or choose between pricing rules. Never send a quote or contact a customer or supplier (§6a). No order is placed.
