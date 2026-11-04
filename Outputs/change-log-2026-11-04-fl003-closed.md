@@ -110,3 +110,14 @@ Darius, session 43.
   export; handles, plinth; unit 014 is 600 deep vs 570.
 - Owner: *"no, it is test for me"* — a test of the costing method. **Not sent to Nadia, no Hub row, no drawing check.**
   Cost sheet marked as a test.
+
+## 11. Klug Innobox into SmartCabinet — data article
+- Owner: *"We need to klug innobox to SmartCabinet"*.
+- Read the owner's drawing `Raw/758810.pdf` (scanned, no text layer; pp. 5, 6, 15 read as images at 400 dpi): it is
+  **Taiming 908SH-A86 "Noble Drawer"** — double-wall 86 side, full extension, 35 kg, NL 270–550, internal length NL − 26,
+  min. depth NL + 10; runner holes **37 and 261 (37 + 224) for every NL**, screw line **min. 56** above the part below,
+  min. 105 per drawer; **37.5 ± 0.5** cabinet side to base edge (→ base LW − 75), back edge **44.5** (→ back LW − 89);
+  front bracket 2 holes 32 apart, lowest min. 54.
+- New article `Wiki/Processes/klug-innobox-smartcabinet-input.md`, set out on the METABOX method (runner row per NL in
+  *Guide Cassetto* + an `INNOBOX_A86.scs` copied from `METABOX_K.scs`), with a one-drawer proving step on ENQ-0002.
+  **Every figure is a drawing read; the ⚠ ones to measure on the first set.** `Wiki/index.md` entry added.
