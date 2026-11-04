@@ -90,6 +90,21 @@ loads as one list (13 parts for the corner unit). Then check: **the version in t
 mistake on 23/10), the row count against the folder, any hand-edited size (e.g. door 370.5), and **Mirror unticked**.
 Facts: `Wiki/Processes/library-batch-production.md` (*Loading a unit on the Vitap*).
 
+## Check against the sold order, then release (learned 2026-11-03/04, AM2602 Ladder)
+
+AM002 was cleared and released on 03/11 by checking its programs against **each other** — and it had **no doors**:
+the client had been sold a two-door cupboard (*"I forget to add doors :("*). So:
+- **Before clearing, compare the export with what Sales sold**: Nadia's drawings/spec in her `Drafts/ENQ-…` folder
+  and Hub rows (sizes, doors/fronts, handles, base, decor panels). Every difference is a **?** for the owner.
+- **Release waits for the order to be released** (workflow step 4) unless the owner says otherwise.
+- **Release** (only on the owner's word): new folder `Furniture/<AM+yy+nnn> <name>` (job numbers AM + year + number,
+  Anna `AWT-0497`; e.g. **AM2602**), `GOOGLEDRIVE_CREATE_FOLDER` then `GOOGLEDRIVE_COPY_FILE_ADVANCED` per file
+  (server-side), then list the new folder and **compare every md5 with the checked round**. Superseded release folders
+  go to the **bin** (`GOOGLEDRIVE_TRASH_FILE`, restorable) only on the owner's word — **list them first**: on 04/11 the
+  old folder had been overwritten with a different draft.
+- **Many files from Composio:** download in one multi-execute, then in the remote sandbox `curl` them, `md5sum`,
+  `tar cJf` + `base64`, print, and unpack locally — one transfer instead of fifteen.
+
 ## Boundaries (from the charter)
 
 - Read-only on the owner's job files: **never delete, move or edit anything in `Raw/Review folder/`** unless asked.

@@ -58,6 +58,18 @@ render a PNG preview with `pdftoppm` and look at it before sending.
 Cost sheet and PDF in `Outputs/`, change-log section per revision (quote the owner's words), Drive in place + `chk.sh`,
 commit, push. Offer a Lathams quote request (supplier-quote-request) to replace proxies.
 
+## No CSV? Cost from the worklists (learned 2026-11-04, Anvar v3, TV Unit 30_09)
+- `worklist.xmlst` is **UTF-16** XML: each `<Row FileName=…>` has `LENGTH`, `HEIGHT`, `THICKNESS` cells. Parse with
+  `re` after `.decode('utf-16')`. **`…B.TCN` rows are second-face programs of the same part — count once.**
+- Identical worklist md5s across unit folders = identical units: download each unique one once, multiply.
+- Sheet count = parts m² ÷ (5.796 × yield ≈ 0.67–0.75); say the yield used.
+
+## What SmartCabinet does not draw — look for it
+Photos and Sales' drawings show parts the export never has. On the TV unit test the cabinets were £968 and the job
+**£1,829** once these were added: **top boards, back/wall panels, timber frames, slatted panels (strips edged both
+sides), LED strip/drivers/profiles, push-to-open, plinths, sink-unit posts, decor panels, handles**. List each as
+"not in the export" and price it on the owner's answers; size from the photo only by eye, and say so.
+
 ## Boundaries
 Darius gives the **workshop price** on the workshop rules (§4); **Nadia (Sales) sets the sales price** and issues the
 quote in the CRM (owner, 04/11/2026: *"you providing workshop pricing and Nadia do sales pricing. You use workshop

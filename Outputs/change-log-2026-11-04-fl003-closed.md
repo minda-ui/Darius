@@ -199,3 +199,4 @@ Darius, session 43.
   `Wiki/Processes/klug-innobox-smartcabinet-input.md`, the workflow draft and today's cost sheets; verify each by
   download + `cmp`. The notes for Nadia are already on Drive (her `Raw/`).
 - Skill candidates offered (see `Outputs/skill-candidates-register.md`).
+- Skill candidates: **all four adopted** — `workshop-price-for-sales` (new), `hardware-into-smartcabinet` (new), `pre-production-drawing-check` (check against the sold order; release and bin), `project-quote-from-smartcabinet` (worklists; parts not drawn). Register updated.
