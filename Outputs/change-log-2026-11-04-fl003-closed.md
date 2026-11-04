@@ -170,3 +170,11 @@ Darius, session 43.
 - Not released: on the owner's word the folder replaces `Furniture/AM002 Ladder` (old open-bookcase files, **must not be
   run**) — and Nadia's new number **AM2602** can be used for the new folder name.
 - Costing note: 8 hinges, not the 6 priced on AWT-1109 (+£2 × 2.84 = £5.68 at cost).
+- Owner: *"1400 is right, decor panels 400 deep"* — ? (1) and (3) closed: the unit stays **1,400**; decor panels **400**
+  (flush with the carcase, the doors stand 18 proud of them).
+- Owner: *"2. will be done by hand"* — bar-handle holes drilled **by hand** on this job: **the owner's own exception** to
+  the standing rule that every hole is machined on the Vitap (owner, 2026-10-04). ? (2) closed.
+- Told Nadia (sales drawing said ≈ 1,436): Raw note `2026-11-04-from-Darius-AM2602-Ladder-height-and-doors.md`
+  (`1K7t_Kc4_VGPcKkE0YJ2mO8XQnhI9MFr_`, 1,081 B) + Hub **`AWT-1113`** (Nadia, Open; duplicate guard clear): 1,400 high,
+  doors, 400 decor panels, workshop price **£665.34 ex VAT / £798.41 inc VAT** (8 hinges), before handles.
+- Open: (4) the 07:51 draft subfolder; then release to Furniture on the owner's word.
