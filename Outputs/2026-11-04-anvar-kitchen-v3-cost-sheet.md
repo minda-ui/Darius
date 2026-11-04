@@ -1,6 +1,6 @@
 # Anvar kitchen v3 — workshop cost sheet v0.1
 
-Darius for Minda, 04/11/2026. **Workshop price on the 23/10 workshop rules** (materials at cost + 15 %, labour £45/h,
+Darius for Minda, 04/11/2026. **Owner's test of the costing method (*"no, it is test for me"*) — not sent to Sales, no drawing check.** **Workshop price on the 23/10 workshop rules** (materials at cost + 15 %, labour £45/h,
 machine £65/h, VAT 20 %; delivery and fitting not included). Sales price is Nadia's (owner, 04/11). Built from the
 SmartCabinet export the owner put in `Raw/Review folder/ANVAR_KITCHEN_V3` (Drive `1Vti_zlTShdGREWsToyMZvc_pShTAvaTk`) —
 **the 12 unique worklists, md5-checked**; the programs are **not yet drawing-checked** (that is a separate step).

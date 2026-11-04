@@ -108,3 +108,5 @@ Darius, session 43.
 - Flagged: export is 19 mm vs the 18 mm price; **026 corner base and 025 housing have no doors** (today's AM002 lesson);
   corner wall unit hinging; Metabox NL500 priced at NL400, 20 mm drawer bottoms, no drawer backs; sink post not in the
   export; handles, plinth; unit 014 is 600 deep vs 570.
+- Owner: *"no, it is test for me"* — a test of the costing method. **Not sent to Nadia, no Hub row, no drawing check.**
+  Cost sheet marked as a test.
