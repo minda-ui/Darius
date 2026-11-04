@@ -178,3 +178,8 @@ Darius, session 43.
   (`1K7t_Kc4_VGPcKkE0YJ2mO8XQnhI9MFr_`, 1,081 B) + Hub **`AWT-1113`** (Nadia, Open; duplicate guard clear): 1,400 high,
   doors, 400 decor panels, workshop price **£665.34 ex VAT / £798.41 inc VAT** (8 hinges), before handles.
 - Open: (4) the 07:51 draft subfolder; then release to Furniture on the owner's word.
+- Owner: *"Yes ignore subfolder, release to Furniture"* — **AM2602 Ladder cleared and released.** New folder
+  `Furniture/AM2602 Ladder` (`1hYQzsKOvIgoBc_dgngEuDi8clJYoPzLX`), the 15 round-2 files copied server-side; **all 15
+  md5s equal the checked files.** The 07:51 subfolder ignored. The old `Furniture/AM002 Ladder`
+  (`1ABYUTy7z7_Wzrx5Y_Zqiv-q6Lh4fTlfh`, open bookcase, no doors) left untouched — **must not be run**; deleting or
+  renaming it is the owner's. The job file inside is still named `AM002 Ladder.fnm` (SmartCabinet's name, not changed).
