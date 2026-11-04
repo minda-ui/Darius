@@ -19,3 +19,16 @@ Darius, session 43.
   hand-back).
 - Owner: *"I will start by giving the order picture to Nadia, and then we will test how our workflow will work."* —
   test run recorded in the draft; Darius watches the Hub and `Raw/` for Nadia's hand-off.
+
+## 4. Workflow test run — Nadia's hand-off arrived (`AWT-1105`, ENQ-0002)
+- Owner: *"check on Nadia"*. Found Hub **`AWT-1105`** (Nadia for Minda, due 6 Nov) and two Raw notes
+  (`1mqJ4GGzx-Rtw4kwBqWfceX-HrCiddYz9` 09:05, addendum `1A4wC9DdTWM2wADtj22UJK9RTLtub77Wg` 09:13) plus Nadia's
+  `Drafts/ENQ-0002 - cabinet and top board/` folder (`1RFYr1016iKdIDIp1QMuCUdxvzcPMK7HP`): parts list, spec draft v0.1,
+  two elevations, render — all md5-checked on download. No client details in any of it.
+- Scope: **pre-quote costing** for two separate carcasses **500 × 500 × 500** (drawer chest, 3 × 164 fronts; base
+  cupboard, 1 door 494 × 497 RHH), **fronts bought in** (Interior Door Systems, Stratford — Nadia prices them), a ~2,000
+  top board not in the parts list. Drawing: 1,900 above the cabinet, 2,300 overall vs 1,900 + 500 = 2,400, and a 100 at
+  the floor (plinth?).
+- **Workflow learning (1st):** bespoke work needs workshop costing **before** the quote — in Darius's draft that is step
+  3, in hand-off v0.2 Darius joins only at step 4. Nadia is flagging it to Victoria.
+- Hub `AWT-1105` → In Progress with a receipt line.
