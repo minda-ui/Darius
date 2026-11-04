@@ -121,3 +121,15 @@ Darius, session 43.
 - New article `Wiki/Processes/klug-innobox-smartcabinet-input.md`, set out on the METABOX method (runner row per NL in
   *Guide Cassetto* + an `INNOBOX_A86.scs` copied from `METABOX_K.scs`), with a one-drawer proving step on ENQ-0002.
   **Every figure is a drawing read; the ⚠ ones to measure on the first set.** `Wiki/index.md` entry added.
+
+## 12. TV Unit 30_09 — costing test on a finished job; AM002 → AM2602
+- Owner: *"Check Raw folder for new picture. It is finished project done by us. In review folder there is TV Unit 30 09 and
+  shelf for tv unit 30 09"*. Photo (`1mqvpx5Ca0ofy-4oXQOfzUesYkMOeW4sT`, in `Raw/Review folder`): floating walnut-look TV
+  unit, lit shelf tower, slatted panel. Two worklists + cutting-list PDF downloaded (md5 = Drive).
+- `Outputs/2026-11-04-tv-unit-30-09-cost-sheet.md`: **£968.01 ex VAT / £1,161.61 inc VAT** for the cabinets in the export
+  (TV unit 3,000 × 400 × 300 in 4 boxes + tower 500 × 1,780 × 250, 2 sheets, 10.55 h). Finding: the photo's **top board,
+  slatted panel, LED lighting and push-to-open fronts are not in the export** — the costing method only sees what
+  SmartCabinet drew.
+- Nadia's note (`1n7PCGX3Jna_UvM7__I1zhZ6FSxn6cn_X`): Amfa jobs are **AM + year + number** (Anna, `AWT-0497`) —
+  **AM002 Ladder = AM2602**, AM001 = AM2601, ENQ-0002 will be AM2603 when won. `Furniture/AM002 Ladder` still carries the
+  old name; renaming is Minda's call (Darius writes to Furniture only on her word).
