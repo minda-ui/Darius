@@ -315,6 +315,27 @@ appears in more than one table below, the later table wins.** *Checked rather th
 they share **no** paths at all, so nothing here contradicts anything else.*
 
 
+### As at the 2026-11-05 publish — newest; wins over the tables below for any path it lists
+
+| Path | Bytes | Drive id |
+|---|---|---|
+| `Outputs/change-log-2026-11-03-am002-ladder-check.md` | 3,959 | `1C4TVNi-fDhryA6oAttyC0AR2s7Xz73Bd` |
+| `Outputs/change-log-2026-11-04-fl003-closed.md` | 18,139 | `1ddATk0B5TFmvVYiW4svzDDEeX1ASxMeu` |
+| `Outputs/change-log-2026-11-05-corner-unit-handed-over.md` | 4,830 | `1VjnRF7YsILaUMGL3745wDSoeI-cgAOMT` |
+| `Outputs/2026-11-04-furniture-production-workflow-v0.1.md` | 4,559 | `1oETS_sEuSBan0m8pX_NQKxZ8WzLBYt2K` |
+| `Outputs/2026-11-04-ENQ-0002-pre-quote-costing.md` | 5,583 | `1UYjczPTV8WMHznKu-95AWN1tnoSn3TyY` |
+| `Outputs/2026-11-04-ENQ-0002-workshop-price-final.md` | 2,395 | `1HSe27UAIFUX1iVQNOTGxR2lijjDS0KEY` |
+| `Outputs/2026-11-04-ENQ-0003-AM002-Ladder-workshop-price.md` | 5,094 | `12adazbGl9bb6UNjHPgXjIZW_iJUm2HBq` |
+| `Outputs/2026-11-04-anvar-kitchen-v3-cost-sheet.md` | 5,900 | `1vSrsw49EAbN14YISRP1-NwxKz4ANZpw9` |
+| `Outputs/2026-11-04-tv-unit-30-09-cost-sheet.md` | 5,513 | `15364NBrQ7gD0HWGlg-4WI-PqIBqatxwT` |
+| `Outputs/2026-11-05-Darius-to-Eugene-barcode-scanners-production.md` | 4,147 | `1LK9hDzTZv7mSsGQYsYTHrPaJYKBCkBdu` |
+| `Wiki/Processes/klug-innobox-smartcabinet-input.md` | 7,215 | `16kHl8t0FNXiIXbqLQoqJcd5QmGRDIWkn` |
+| `Outputs/change-log-2026-10-28-workshop-plan.md` | 15,299 | `1gWg3-keOlqdF_ciO-pDJhEVsio2EzM5B` |
+| `Outputs/change-log-index.md` | in place | `1xFl9RLgTZYdYqCwzjCTbAhOGGg_Nq6Nb` |
+| `Outputs/kb-registers.md` | in place | `1Zw5cRA1NdSBCgaTHTUuLl11qbiN4dk5o` |
+| `Wiki/index.md` | in place | `1f42ytWXO4_v019gjKkkF67CfPFPOzYD7` |
+| `Outputs/skill-candidates-register.md` | in place | `14wsys9LZm62NFIibg11r_CICrEcdvjNV` |
+
 ### As at the 2026-10-01/02 publishes — newest; wins over the tables below for any path it lists
 
 | Path | Bytes | Drive id |

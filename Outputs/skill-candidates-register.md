@@ -6,6 +6,10 @@ unless something new changes the case. Newest first.
 
 | Date | Candidate | Trigger | Decision | Reason / note | Skill |
 |---|---|---|---|---|---|
+| 2026-11-04 | workshop-price-for-sales | "check on Nadia", a Hub row from Nadia asking for a costing / workshop price | **Adopted** | AWT-1105, 1107, 1109, 1110, 1113 (04/11); pricing roles (owner 04/11) | `.claude/skills/workshop-price-for-sales/` |
+| 2026-11-04 | extend pre-production-drawing-check | check against the sold order; release as AM+yy+nnn with md5 check; bin old folders on the owner's word; Composio bundle transfer | **Adopted (extension)** | AM002 released without doors (03/11), round 2 + release (04/11) | `.claude/skills/pre-production-drawing-check/` |
+| 2026-11-04 | extend project-quote-from-smartcabinet | cost from UTF-16 worklists (B rows once); parts SmartCabinet does not draw | **Adopted (extension)** | Anvar v3, TV Unit 30_09 (04/11) | `.claude/skills/project-quote-from-smartcabinet/` |
+| 2026-11-04 | hardware-into-smartcabinet | "we need to add <hardware> to SmartCabinet" | **Adopted** | METABOX (10-02/03), LEGRABOX (10-03), Klug Innobox (11-04) | `.claude/skills/hardware-into-smartcabinet/` |
 | 2026-10-29 | workshop-layout-planning | "plan the workshop", "draw it", marks on a plan | **Adopted** | layout plan, existing layout + drafts v0.1–v0.5 (28/10); GF_30 scale found 5–8 % off | `.claude/skills/workshop-layout-planning/` |
 | 2026-10-29 | hinge-plate-check | any hinged unit; angled hinges | **Adopted (extension)** | corner unit plate pilots 56 vs Blum 37, missed in 3 rounds (26/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-29 | blum-catalogue-lookup | "show me in Blum catalog", a Blum part number | **Adopted (extension)** | +45° I / +45° II / planning pages, 3 lookups (24–26/10) | `.claude/skills/machine-manual-lookup/` |
@@ -13,10 +17,6 @@ unless something new changes the case. Newest first.
 | 2026-10-24 | hand-edit-cnc-program | "SmartCabinet not allowing it", "can you update the door file", "fix the shelf pins" | **Adopted (extension)** | door 420→370.5 and v5 pocket strip (23/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-24 | load-unit-on-vitap | "can I load all folder", "running it now" | **Adopted (extension)** | worklist.xmlst opened in WSC, 13 parts; v2 path caught (23/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-22 | new-library-unit-design | "design a … unit", "new corner/wall/base unit" | **Adopted** | corner wall unit 600×600 (spec v0.1→v0.4, 22/10); LEGO unit (10-05) | `.claude/skills/new-library-unit-design/` |
-| 2026-11-04 | workshop-price-for-sales | "check on Nadia", a Hub row from Nadia asking for a costing / workshop price | **Adopted** | AWT-1105, 1107, 1109, 1110, 1113 (04/11); pricing roles (owner 04/11) | `.claude/skills/workshop-price-for-sales/` |
-| 2026-11-04 | extend pre-production-drawing-check | check against the sold order; release as AM+yy+nnn with md5 check; bin old folders on the owner's word; Composio bundle transfer | **Adopted (extension)** | AM002 released without doors (03/11), round 2 + release (04/11) | `.claude/skills/pre-production-drawing-check/` |
-| 2026-11-04 | extend project-quote-from-smartcabinet | cost from UTF-16 worklists (B rows once); parts SmartCabinet does not draw | **Adopted (extension)** | Anvar v3, TV Unit 30_09 (04/11) | `.claude/skills/project-quote-from-smartcabinet/` |
-| 2026-11-04 | hardware-into-smartcabinet | "we need to add <hardware> to SmartCabinet" | **Adopted** | METABOX (10-02/03), LEGRABOX (10-03), Klug Innobox (11-04) | `.claude/skills/hardware-into-smartcabinet/` |
 | 2026-10-22 | extend pre-production-drawing-check | in-place replaced folders; TpaCAD-saved files; spacing test | **Adopted (extension)** | corner unit rounds 1–3 (22/10) | `.claude/skills/pre-production-drawing-check/` |
 | 2026-10-22 | drive-write-fallback | Composio Google route blocked | **Adopted (extension of end-of-day)** | SSRF guard ~21:10–21:30 on 22/10 | `.claude/skills/end-of-day/` |
 | 2026-10-18 | charter-version-bump | "fold it in", "adopt it", "put it in the charter" | **Adopted** | v37 (10-18, AWT-0849; fileId/file_id gotcha), v36 (10-03), v27-v35 | `.claude/skills/charter-version-bump/` |

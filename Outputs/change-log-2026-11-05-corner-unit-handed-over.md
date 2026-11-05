@@ -41,3 +41,16 @@ Darius, session 44.
   `Darius-to-Eugene-barcode-scanners-production-2026-11-05.md` (`1CLxv6HuAaEUd2tNEKgrjJoYrlojRB1Yz`, 4,147 B = local);
   own copy `Outputs/2026-11-05-Darius-to-Eugene-barcode-scanners-production.md`. Hub `AWT-1116` Response written,
   **In Progress** pending Minda's three answers (hands-full stations, headcount, PC scanner vs handheld).
+
+## 5. Drive publish of 03–05/11 — done
+- Owner: *"Drive publishing from 3–4 Nov is still waiting"*. The Composio CLI was signed in by the owner through the
+  login link (`composio login --no-browser --no-wait`, then `--poll`; account minda@, org minda_workspace) — no key
+  handled by Darius.
+- **Before overwriting**, each Drive copy's md5 was matched to a git version (index and registers = `508728d`,
+  `Wiki/index.md` = `e506148`, skill register = `2f7f790`, 28/10 log = `2f7f790`) — nothing on Drive was newer than git.
+- **In place** (`GOOGLEDRIVE_UPLOAD_UPDATE_FILE`, ids kept): `change-log-index.md`, `kb-registers.md` — **verified by
+  the native connector** (download → `cmp` SAME); `Wiki/index.md`, `skill-candidates-register.md` (re-ordered: the
+  04/11 rows had been inserted mid-table; now newest first), `change-log-2026-10-28-workshop-plan.md` — md5 SAME.
+- **Created** (`GOOGLEDRIVE_UPLOAD_FILE`), all md5 SAME and in the right folder: three change logs (03, 04, 05/11), the
+  workflow draft, the ENQ-0002 (v0.2, final), ENQ-0003 and the two test cost sheets, the Eugene note copy (Outputs) and
+  `Wiki/Processes/klug-innobox-smartcabinet-input.md` (Processes). Ids in `kb-registers.md` → Drive ids.
