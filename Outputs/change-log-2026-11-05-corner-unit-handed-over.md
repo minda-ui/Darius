@@ -29,3 +29,15 @@ Darius, session 44.
   41,781 B; md5 = Drive) are a **Fishbone Construction** labour-only tender draft (Anna v0.9, not issued).
 - Owner: *"Ignore it; that's our project for labour supply only"* — **not processed, not filed, not copied into this KB**;
   left where it is in `Raw/` (moving or deleting the owner's upload is the owner's call).
+
+## 4. AWT-1116 — barcode scanners in production, facts to Eugene
+- Owner: *"yes, go ahead with Eugene"*. Eugene's note (`1R2GxCrTSOeddnT9CbNSAj3dkuZAzmJ45`) asks 7 questions for a
+  group scanner choice (InvenTree stock, Snipe-IT assets).
+- KB gathered by an Explore agent (barcode article, printer article, CLAUDE-Workshop T022, layout plan, Anna HSE note).
+  Reply written facts-and-gaps; **re-read against the sources and four lines cut back** (a "both hands at every
+  machine" claim, "expect dusty labels", "the F4 has no input", "Phase 4 needs a keyboard-wedge") to what the KB says or
+  labelled *my reading*.
+- Delivered to Eugene's `Raw/` (`1qkD2xtFMJtZQVaBJFzHQPz842t8VxjHx`, KB root `1o4MBRcckZBspw-uT6qM2V-74H6OsRK9T`):
+  `Darius-to-Eugene-barcode-scanners-production-2026-11-05.md` (`1CLxv6HuAaEUd2tNEKgrjJoYrlojRB1Yz`, 4,147 B = local);
+  own copy `Outputs/2026-11-05-Darius-to-Eugene-barcode-scanners-production.md`. Hub `AWT-1116` Response written,
+  **In Progress** pending Minda's three answers (hands-full stations, headcount, PC scanner vs handheld).
