@@ -54,3 +54,13 @@ Darius, session 44.
 - **Created** (`GOOGLEDRIVE_UPLOAD_FILE`), all md5 SAME and in the right folder: three change logs (03, 04, 05/11), the
   workflow draft, the ENQ-0002 (v0.2, final), ENQ-0003 and the two test cost sheets, the Eugene note copy (Outputs) and
   `Wiki/Processes/klug-innobox-smartcabinet-input.md` (Processes). Ids in `kb-registers.md` → Drive ids.
+
+## 6. Check on Nadia — ENQ-0002 now four units (AWT-1118 Done)
+- Owner: *"check on Nadia"*. New: **AWT-1118** + note `19BxokdQ7SNpILrQjLQ2C0EstURoRZeZK` — *the customer asked for two of
+  each unit*. Also seen (Nadia's rows, no action for Darius): AWT-1106 waits on the sales mark-up (AWT-1111, Victoria /
+  Andrejus route, Minda's AWT-1112); AWT-1113 — Minda confirmed **AM2602 completed**, tracker *Ready to ship*.
+- `Outputs/2026-11-05-ENQ-0002-workshop-price-v0.4-four-units.md` (3,031 B) → Nadia `Raw/` as
+  `2026-11-05-from-Darius-ENQ-0002-workshop-price-v0.4-four-units.md` (`1mTkt1I3j9io1QMXVspSZcHA_gcj2MFGs`), own copy on
+  Drive `1egGgWl-zgP0arPTRcI7mmJ_zQagd3b6h`; both md5 = local. **£1,427.19 ex VAT / £1,712.63 inc VAT** — 2 sheets,
+  6 Innobox, 4 hinges, 8 knobs, 15.7 h (4.5 h machine); design once, so £100.51 under twice v0.3. Lead time 4–5 working
+  days. Hub AWT-1118 → Done.
