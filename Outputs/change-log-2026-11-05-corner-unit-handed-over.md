@@ -71,3 +71,25 @@ Darius, session 44.
   row `A86-450 INNOBOX` (LX 5, LY 18, CX 0, LBox 424, holes X 37 / 261 at Y 38, Ø5 × 5) and `INNOBOX_A86.scs` copied
   from `METABOX_K.scs` with `cass05_spess=32.50`; proving export of one ENQ-0002 chest to the Review folder, expected
   base 389 / back 375. Asked: base/back thickness, back height, a set in hand to measure. Article §1 updated.
+
+## 8. ENQ-0002 drawer chest — first Innobox export, drawing check round 1
+- Owner set up in SmartCabinet (photos): Register of Accessories `A86-450 INNOBOX` (group 25 DRAWER GUIDES); CAM *Drawer
+  guides* row LX 5 / LY 18 / CX 0 / LBox 424 / holes X 37 & 261 at Y 38, Ø5 φ5 — **checked ✓**; `INNOBOX_A86.scs` copied
+  from `Metabox.scs` (the file the Metabox rows use — not `METABOX_K` as Darius first said) with `cass05_spess=32.50`,
+  rest = the proved Metabox set — **checked ✓**; *Drawer Box* row `INNOBOX 450`, Metallic, Box Config `INNOBOX_A86`.
+  **H (back height) would not save — stays 0** (owner: *"Still zero everywhere"*); the Metabox rows show H = Blum's back
+  heights (B 127, D 191, H 135, K 103, M 71, N 39).
+- Owner: *"I have uploaded drawings to review folder"* — `Raw/Review folder/untitled` (`1tzG55TkGI4iPgHgNxaEf5_Vfgc1Yt2Q-`),
+  12 files, all md5 = Drive. Drawer chest 500 × 500 × 500, 18 mm, 3 drawers.
+- ✓ **Drawer base 389 × 408 × 16** — 389 = LW 464 − 75 (the `.SCS` works); 408 + 16 back = 424 = LBox.
+- ✓ **Runner holes** Ø5 × 5 at **37 and 261** from the front, both sides, mirrored (left 426 / 275.7 / 109.3 = right
+  500 − 74 / 224.3 / 390.7). **Bottom drawer line 74 from the bottom edge = 18 panel + 56** — Klug's minimum exactly.
+- ✓ Carcase joints and inset back as previous cleared units (spacings 210 / 182 match across mating parts).
+- **✗ Drawer backs missing:** `10/15/20-DRAWER-n-BACK` are in the `.fnm` but have no program and no worklist row —
+  H = 0 makes a 0-high back. **✗ / ? Fronts missing:** `06/11/16-DRAWER-n-FRONT` likewise listed, not exported (no
+  machining — F holes all 0 — so possibly no program; the cutting list must still carry them, and the bracket and knob
+  holes are to be drilled on the Vitap).
+- Info: runner lines from the bottom are 74 / 224.3 / 390.7 — spacing **150.3 then 166.4**: drawers 2 and 3 follow the
+  166 front pitch, the bottom drawer is lifted to keep the 56 clearance, so its box sits ~16 mm higher inside its front
+  than the other two. Fits (each box clears the one above); the front-bracket holes will sit higher on that front.
+- **Not cleared.** Open: H = 71 to save (or measured), fronts and their holes, the folder name ("untitled").
