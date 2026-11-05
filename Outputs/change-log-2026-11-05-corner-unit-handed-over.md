@@ -17,3 +17,9 @@ Darius, session 44.
   each way); also check the hood/duct is not touching the door.
 - **Open item closed:** the corner unit (+45° hinge, 370.5 door question since 26/10) is **fitted** as of 05/11. Which
   hinge went on was not stated in this session.
+- Owner: *"It is hand it over. We need to come back later to drawing board, because this unit is look horrible"* —
+  **handed over to the client 05/11**; the owner is not happy with how it looks. **Open: redesign the 600 × 600 corner
+  wall unit** before it is made again (library unit). Inputs to bring to that session: the 05/11 photos (door stands
+  off the carcase, uneven/near-touching gap to the neighbour, fronts not in one plane next to the hood); the hinge
+  history 22–26/10 (plates at 56 → 37, door 420 → 370.5 → 365.1, +45° I vs +45° II, square vs bevelled side —
+  `change-log-2026-10-24-…`, `…-10-26-corner-door-45II.md`); `new-library-unit-design` as the method.
