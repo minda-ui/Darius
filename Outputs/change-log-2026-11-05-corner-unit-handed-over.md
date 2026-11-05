@@ -93,3 +93,12 @@ Darius, session 44.
   166 front pitch, the bottom drawer is lifted to keep the 56 clearance, so its box sits ~16 mm higher inside its front
   than the other two. Fits (each box clears the one above); the front-bracket holes will sit higher on that front.
 - **Not cleared.** Open: H = 71 to save (or measured), fronts and their holes, the folder name ("untitled").
+- Owner (photo of SmartCabinet's Panel Optimization): *"Backs are on cutting plan"* — the backs exist (387 × 71 cut,
+  no CN program); bottoms 387 × 408 cut. The plan showed **W1100 ST9 at 19 mm** and the drawer parts on **U961 ST7
+  Graphite 16 mm** (9.6 % of a sheet). Darius also flagged the back width (= base, 389 finished, vs Klug drawing ≈ 375 —
+  to measure on a set) and whether bottoms/backs should be edged.
+- Owner: *"1. I will set it up to 18mm 2. It come from U961 ST7 Graphite"*. → ENQ-0002 **workshop price v0.5**:
+  + 1 sheet U961 (18 mm web price £75.99 as proxy, no 16 mm price held) and +0.2 h saw = **£1,536.58 ex VAT /
+  £1,843.90 inc VAT** (+£109.39 ex). Note `Outputs/2026-11-05-ENQ-0002-workshop-price-v0.5-graphite-drawer-boxes.md`
+  (1,925 B) → Nadia `Raw/` (`1UJTX4Of6M46kpbzJIoGMGDWnmq8WbPBy`), own copy `1RvAxY9RIC2hULSE4_Jr2VtgkGOF6R_YA`, both
+  md5 = local; Hub **AWT-1122** (Nadia, Open, duplicate guard clear).
