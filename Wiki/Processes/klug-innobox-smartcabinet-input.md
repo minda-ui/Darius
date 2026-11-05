@@ -27,6 +27,8 @@ taken to be that product sold under the Klug name. *Confirm the Klug part number
 As with METABOX: **Utility → Import Accessori**, search `Klug`, `Innobox`, `Taiming` or `A86`. Kosmosoft's library is
 mostly the big brands, so **expect it not to be there**, and then enter it by hand with §3–§5.
 
+**Checked 2026-11-05 by the owner: not in Import Accessori** — *"Not in import, I'll enter it by hand"*.
+
 ## 2. What it is
 
 | | Innobox A86 | METABOX M (for comparison) |
@@ -126,3 +128,4 @@ Then add the other NLs (only the `LBox` changes; holes stay 37 / 261).
 | Date | Change | Change-log ref |
 |---|---|---|
 | 2026-11-04 | Created from the owner's Klug drawing (Taiming 908SH-A86) and the METABOX method | `change-log-2026-11-04-fl003-closed.md` (11) |
+| 2026-11-05 | §1: not in Import Accessori (owner); hand entry started for ENQ-0002 (NL 450, LY 18 / Y 38) | `change-log-2026-11-05-corner-unit-handed-over.md` (7) |

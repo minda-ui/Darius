@@ -64,3 +64,10 @@ Darius, session 44.
   Drive `1egGgWl-zgP0arPTRcI7mmJ_zQagd3b6h`; both md5 = local. **£1,427.19 ex VAT / £1,712.63 inc VAT** — 2 sheets,
   6 Innobox, 4 hinges, 8 knobs, 15.7 h (4.5 h machine); design once, so £100.51 under twice v0.3. Lead time 4–5 working
   days. Hub AWT-1118 → Done.
+
+## 7. Klug Innobox into SmartCabinet — hand entry for ENQ-0002
+- Owner: *"Next let's move to drawings for ENQ-0002, we need to add innobox to smartcabinet"*, then *"Not in import,
+  I'll enter it by hand"*. Darius gave the entry card from `Wiki/Processes/klug-innobox-smartcabinet-input.md`: runner
+  row `A86-450 INNOBOX` (LX 5, LY 18, CX 0, LBox 424, holes X 37 / 261 at Y 38, Ø5 × 5) and `INNOBOX_A86.scs` copied
+  from `METABOX_K.scs` with `cass05_spess=32.50`; proving export of one ENQ-0002 chest to the Review folder, expected
+  base 389 / back 375. Asked: base/back thickness, back height, a set in hand to measure. Article §1 updated.
