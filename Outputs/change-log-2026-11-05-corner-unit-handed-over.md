@@ -23,3 +23,9 @@ Darius, session 44.
   off the carcase, uneven/near-touching gap to the neighbour, fronts not in one plane next to the hood); the hinge
   history 22–26/10 (plates at 56 → 37, door 420 → 370.5 → 365.1, +45° I vs +45° II, square vs bevelled side —
   `change-log-2026-10-24-…`, `…-10-26-corner-door-45II.md`); `new-library-unit-design` as the method.
+
+## 3. FC2614 in workshop Raw — not workshop work
+- The two Raw files (`1m8f2QyW40s_69N2SboQ0BVbNrMfaoyey` PDF 62,003 B, `1OjIzdIYAVdrnSg8Pzg084ZIBVTbsXpK2` xlsx
+  41,781 B; md5 = Drive) are a **Fishbone Construction** labour-only tender draft (Anna v0.9, not issued).
+- Owner: *"Ignore it; that's our project for labour supply only"* — **not processed, not filed, not copied into this KB**;
+  left where it is in `Raw/` (moving or deleting the owner's upload is the owner's call).
