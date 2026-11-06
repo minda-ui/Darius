@@ -29,3 +29,15 @@ Darius, session 45. (Composio CLI still signed in from 05/11; machine replaced o
   `2026-11-06-Darius-to-Nadia-ENQ-0002-won-AM2603.md` (`1inQNT5AEOozHXsU9Po_lDs81UbO0jXQL`, own copy
   `19zfEJzR63f7mfgFMZ7NY-pLvv7ab4U10`, md5 = local) + Hub **AWT-1125** (High). Order release (signed order / deposit) left
   to her and Minda.
+
+## 4. Owner's answers on the round-3 open items
+Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edging"*
+1. **Nesting export** — will be switched off. ✓
+2. **Back 6 mm further back** — intended (*"needed"*). Closed; round 4 checks the back against the new y 482.9, not round 1.
+3. **Drawer-front holes (knob + Innobox bracket)** — **done by hand** on AM2603, not on the Vitap. Owner's stated
+   exception to the all-holes-on-the-Vitap rule, like the AM2602 handles. Fronts need no drilling program; the Innobox
+   `F` columns can stay 0 for this job.
+4. **Drawer-back width 389 vs ≈375** — understood; settled by measuring the first set before the drawer backs are cut.
+5. **Edging on drawer parts** — **drawer backs: top edge only**; drawer bottoms not edged. 6 backs × 389 ≈ **2.3 m** of
+   U961 edging. *Not in the v0.5 price (U961 edging not costed) — small (≈ £1.50 at the W1100 roll rate, proxy); left
+   for the final cost reconciliation, not re-sent to Nadia.*

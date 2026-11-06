@@ -4,7 +4,7 @@ category: Processes
 status: active
 sensitive: false
 created: 2026-11-04
-updated: 2026-11-04
+updated: 2026-11-06
 sources:
  - "`Raw/758810.pdf` (owner, 04/11/2026) — Taiming *motion 908SH-A86 NOBLE DRAWER*, catalogue pp. 5, 6 and 15 (specifications, components, assembly). Scanned: **no text layer**, every figure read off the page image (*drawing*)"
  - "`Wiki/Processes/blum-metabox-smartcabinet-input.md` — how the shop's SmartCabinet takes a steel-sided drawer (runner row + box `.SCS`), proved on METABOX 2026-10-02/03"
@@ -103,6 +103,8 @@ for an 86 side).
 - Bracket position: **37.5 ± 0.5** in from the cabinet side, **20** from the front's back face line *(drawing)*.
 - All front holes on the Vitap (shop rule) — they need a hardware entry or a hand-edited program, like METABOX's knock-in
   holes.
+- **AM2603 (ENQ-0002): front holes done by hand** — owner's exception, 2026-11-06 (*"hand work"*); no front program needed.
+- **Drawer backs: top edge edged only** (U961 on AM2603); bottoms not edged — owner, 2026-11-06.
 
 ## 6. Proving it — one drawer, before any job
 
@@ -129,3 +131,4 @@ Then add the other NLs (only the `LBox` changes; holes stay 37 / 261).
 |---|---|---|
 | 2026-11-04 | Created from the owner's Klug drawing (Taiming 908SH-A86) and the METABOX method | `change-log-2026-11-04-fl003-closed.md` (11) |
 | 2026-11-05 | §1: not in Import Accessori (owner); hand entry started for ENQ-0002 (NL 450, LY 18 / Y 38) | `change-log-2026-11-05-corner-unit-handed-over.md` (7) |
+| 2026-11-06 | §5: AM2603 front holes by hand; drawer backs edged on top only (owner) | `change-log-2026-11-06-enq0002-drawings.md` (4) |
