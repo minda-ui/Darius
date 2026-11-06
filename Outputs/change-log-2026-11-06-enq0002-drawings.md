@@ -41,3 +41,17 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
 5. **Edging on drawer parts** — **drawer backs: top edge only**; drawer bottoms not edged. 6 backs × 389 ≈ **2.3 m** of
    U961 edging. *Not in the v0.5 price (U961 edging not costed) — small (≈ £1.50 at the W1100 roll rate, proxy); left
    for the final cost reconciliation, not re-sent to Nadia.*
+
+## 5. Round 4 — all four AM2603 units
+- Owner: *"I have uploaded new drawings to review folder"* — `Raw/Review folder/AM2603_` (`15BS201tgum8wgYRFEm30jJSgm7Ut3r9G`),
+  four sub-folders `005`/`006` Cupboard with Drawers 3/4, `007`/`008` Cupboard with Door (2); 44 files, md5 = Drive.
+- **Drawer chests 005 = 006, byte-identical, and every program byte-identical to round 3**; nesting file gone and not in
+  the `.fnm`. ✓ Ready (front holes by hand, §4).
+- **Cupboards 007 = 008, byte-identical.** Top, bottom (both faces) and back byte-identical to the chests; left side = the
+  chest's less the Innobox holes. ✓
+  - Hinges RHH ✓: right side plate holes Ø3 at y 37, pairs 86/118 and 382/414 (centres 102 / 398). Door 496 high × 497
+    wide; cups Ø35 d13 at 100 / 396, 22.5 from the edge; screw holes Ø3 45 apart, 9.5 behind the cup. Door centred
+    (2 mm short of 500) → cups land on 102 / 398 exactly ✓.
+  - ? **No shelf** — no shelf part and no pin holes. v0.4/v0.5 price an adjustable shelf + 4 pins per cupboard.
+  - ? **No knob hole on the door** — assumed by hand, as the drawer fronts (§4).
+- Not cleared yet: shelf answer.
