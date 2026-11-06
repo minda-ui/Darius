@@ -88,7 +88,7 @@ values typed into the window did not take effect; the loaded file did).
 | `cass_sp_sot` (base) | **16** ⚠ | drawing shows a screwed-in base; thickness not printed |
 | `cass_sp_die` (back) | **16** (wooden back) | the back screws to the rear connecting brackets: 2 holes **32 apart**, **9** from the back's end ⚠ |
 | `cass_sp_fro` (inner front) | **0** | no inner front |
-| `bCassDDIE` | **1** (back between the sides) | back edge **44.5** from the cabinet side → **back = LW − 89** ⚠ measure |
+| `bCassDDIE` | **1** (back between the sides) | back edge **44.5** from the cabinet side → **back = LW − 89** (leaflet photos 2026-11-06 show the same 44.5 and the back's bracket holes **9** from its end, 32 apart) ⚠ dry-fit |
 | `cass_sot_dz`, `cass_sot_dy` | **0** | base sits on the profile's flange, no groove |
 | `bCassDIESOT` / `FILO` | as METABOX (0 / 1), check the result | — |
 
@@ -99,7 +99,10 @@ for an 86 side).
 ## 5. Front
 
 - Front fixing bracket screws into the front: **2 holes 32 apart**, the lower **min. 54** above the front's bottom
-  reference, **Ø10** (side view shows a 10 hole) ⚠ — confirm whether that is a Ø10 dowel/insert hole or a screw.
+  reference, **10 deep**. *Corrected 2026-11-06 from the owner's photos of the printed leaflet (the A/B-140/164/204
+  page is legible): the "10" in the side view is the **depth** of the two bracket holes; **Ø10 (12 deep)** is only the
+  gallery-rail hole on the taller A/B-140/164/204 drawers, which A/B-86 does not have. The bracket holes' diameter is
+  not printed — pilot to suit the screws in the set ⚠.* (Until 2026-11-06 this line read "Ø10".)
 - Bracket position: **37.5 ± 0.5** in from the cabinet side, **20** from the front's back face line *(drawing)*.
 - All front holes on the Vitap (shop rule) — they need a hardware entry or a hand-edited program, like METABOX's knock-in
   holes.
@@ -132,3 +135,4 @@ Then add the other NLs (only the `LBox` changes; holes stay 37 / 261).
 | 2026-11-04 | Created from the owner's Klug drawing (Taiming 908SH-A86) and the METABOX method | `change-log-2026-11-04-fl003-closed.md` (11) |
 | 2026-11-05 | §1: not in Import Accessori (owner); hand entry started for ENQ-0002 (NL 450, LY 18 / Y 38) | `change-log-2026-11-05-corner-unit-handed-over.md` (7) |
 | 2026-11-06 | §5: AM2603 front holes by hand; drawer backs edged on top only (owner) | `change-log-2026-11-06-enq0002-drawings.md` (4) |
+| 2026-11-06 | §4/§5 from the owner's photos of the printed leaflet: front bracket holes are **10 deep** (not Ø10); back 44.5 / 9 / 32 confirmed | `change-log-2026-11-06-enq0002-drawings.md` (9) |

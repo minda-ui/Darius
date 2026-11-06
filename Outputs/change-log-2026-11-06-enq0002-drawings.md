@@ -99,3 +99,13 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
 - Loading: WSC ListsManager → open each unit's `worklist.xmlst` (cupboard 9 programs, chest 10); Mirror unticked.
   By hand, not on the Vitap: drawer-front holes. Not programmed: drawer fronts, drawer backs (saw; width to measure on
   the first Innobox set before cutting), door with no knob.
+
+## 9. Owner's photos of the printed Innobox leaflet (3 photos, not filed to Drive)
+- Same document as `Raw/758810.pdf`, on paper; the A/B-140/164/204 page is sharp enough to settle one misread.
+- **Correction:** drawer-front bracket holes are **2 × 32 apart, lowest ≥ 54, 10 deep**; the **Ø10 (12 deep)** is the
+  gallery-rail hole of the taller versions only. The Klug article §5 said "Ø10" — fixed. Diameter not printed.
+- **Drawer back:** 44.5 from the cabinet side each end, holes 9 from the back's end, 32 apart → **back = 464 − 89 = 375**
+  on AM2603. SmartCabinet's 389 is the **base** width; the backs (not programmed, cut on the saw) should be cut **375**
+  after a dry fit of one. Base 389 = 464 − 75 ✓.
+- Components list: item 5 is a **metal drawer back**, shown as an option; AM2603 uses the wooden U961 back on the rear
+  connecting brackets (item 4), as drawn.
