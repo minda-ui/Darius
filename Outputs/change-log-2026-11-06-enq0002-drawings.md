@@ -122,3 +122,9 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   Backs **375 × 70** on the saw (top edge edged) after a dry fit. Remove the three bottom programs from the two chest
   worklists in Furniture — **on the owner's word only**. For future jobs: Drawer Box row H 71 → 70; `.SCS` back on the
   base (`bCassDIESOT=1`, my reading) and base length NL − 5, proved on one re-export.
+
+## 11. Drawers fitted
+- Owner: *"Drawers are fitted, left only fronts"*. The drawer boxes and runners on AM2603 are in; the §10 question
+  (remove the bottom programs from Furniture) is moot for this job and nothing in Furniture was changed. The sizes
+  actually cut for bottoms and backs are asked for, to prove the `.SCS` fix against a real set.
+- Left: 6 drawer fronts (holes by hand, knob each) and the 2 knob-less doors.
