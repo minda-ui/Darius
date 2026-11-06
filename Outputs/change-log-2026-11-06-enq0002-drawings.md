@@ -71,3 +71,20 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
     with its joint to the sides generated (sides get Ø5 bores), or an **adjustable** shelf on pins as priced (sides get
     pin rows; shelf ≈ 462 wide with no Cabineo).
 - Not cleared: cupboards (shelf joint; door opening). Chests still ready (front holes by hand).
+
+## 7. Round 6 (06:01) — shelf holes in; folder holds two exports
+- Owner: *"I have uploaded new drawings to review folder"* — same `AM2603` folder; listed with md5. It now holds **seven**
+  sub-folders: the 06:01 export `001`/`002` Cupboard with Door (2), `003`/`004` Cupboard with Drawers (2), **and** three
+  left from 05:51: `002_@_am2603_cupboard_with_drawers`, `003_@_AM2603_Cupboard_with_Drawers_2`,
+  `004_@_AM2603_Cupboard_with_Door_2` (numbers clash with the new ones). ✗ The 05:51 `004 … Door_2` has the **old sides
+  with no shelf holes**; the two old chest folders would double the chest count. Owner to delete the three 05:51
+  folders before release (Darius does not touch the Review folder).
+- **Chests (06:01 `003`, `004`): Drive md5 of every file = round 3** ✓.
+- **Cupboards (06:01 `001` = `002` by md5; `002` downloaded, 11 files md5 = Drive):** only the two sides changed. Each side
+  gets two `W1001` hole rows, Ø5 d12, pitch 32, three holes (219.9–283.9 on the left, mirrored 216.1–280.1 on the right),
+  at **84 and 398 from the front**. *My reading:* 398 − 84 = 314 = the shelf's Cabineo spacing 388 − 74 → the shelf sits
+  **10 back** from the carcase front and its 4 Cabineo lock into the rows — an **adjustable Cabineo shelf with 3
+  positions, 32 apart**. Shelf rear 472 vs the back's front face ≈ 473.9 → ≈ 2 mm clear ✓. Shelf, door, top, bottom,
+  back unchanged ✓.
+- **Cleared for release** once the three 05:51 folders are deleted; release to Furniture on the owner's word. Still open,
+  not blocking the Vitap: drawer-back width on the first Innobox set; how the knob-less door opens.
