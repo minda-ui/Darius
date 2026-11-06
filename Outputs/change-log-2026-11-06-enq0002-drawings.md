@@ -22,3 +22,10 @@ Darius, session 45. (Composio CLI still signed in from 05/11; machine replaced o
   won and released (Nadia's note 04/11: issued by a human at step 3/4). Use `ENQ-0002 Drawer chest` now, rename on order
   — or the owner issues AM2603 now, her call.
 - Not cleared.
+
+## 3. ENQ-0002 won → AM2603
+- Owner: *"Order is won and that's why we need two units of each"*. Job number **AM2603** given (next after AM2602; not on
+  the Hub anywhere); folder to be `AM2603 Drawer chest`. Nadia told: note
+  `2026-11-06-Darius-to-Nadia-ENQ-0002-won-AM2603.md` (`1inQNT5AEOozHXsU9Po_lDs81UbO0jXQL`, own copy
+  `19zfEJzR63f7mfgFMZ7NY-pLvv7ab4U10`, md5 = local) + Hub **AWT-1125** (High). Order release (signed order / deposit) left
+  to her and Minda.
