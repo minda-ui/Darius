@@ -55,3 +55,19 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   - ? **No shelf** — no shelf part and no pin holes. v0.4/v0.5 price an adjustable shelf + 4 pins per cupboard.
   - ? **No knob hole on the door** — assumed by hand, as the drawer fronts (§4).
 - Not cleared yet: shelf answer.
+
+## 6. Owner: "No knob" on the cupboard door; round 5 (shelves)
+- Owner: *"No knob"* — the cupboard doors have **no knob**. Knobs 8 → **6** (drawer fronts only): −2 × £6.75 = −£13.50 at
+  cost (−£15.53 ex VAT with the 15 %). Left for the final cost reconciliation; Nadia not re-priced (order already won).
+  ? How the door opens without a knob (edge grip, or push-to-open, which would change the hinges) — asked.
+- Owner: *"check new drawings with shelfs"* — new folder `Raw/Review folder/AM2603` (`14eGoO5w3odg1jwOBAylkpZDKffPz6dgJ`):
+  `001`/`004` Cupboard with Door, `002`/`003` Cupboard with Drawers; 43 downloaded md5 = Drive, the 44th
+  (`002/01-SIDE-LEFT`, proxy 403 on download) has Drive md5 = round 3's side.
+- **Chests 002, 003: every program byte-identical to round 3** ✓.
+- **Cupboards 001 = 004.** New `05-SHELF-1` **463 × 462 × 18**, joined by **4 Cabineo** (pockets at y 74 / 388 each end)
+  — a **fixed** shelf. Sides, top, bottom, back and door **byte-identical to round 4**.
+  - ✗ **The sides have no holes for the shelf** — no Cabineo Ø5 bores at shelf height (and no pin rows). As exported the
+    shelf's Cabineo have nothing to lock into. Fix in SmartCabinet, then re-export the cupboards: either a **fixed** shelf
+    with its joint to the sides generated (sides get Ø5 bores), or an **adjustable** shelf on pins as priced (sides get
+    pin rows; shelf ≈ 462 wide with no Cabineo).
+- Not cleared: cupboards (shelf joint; door opening). Chests still ready (front holes by hand).
