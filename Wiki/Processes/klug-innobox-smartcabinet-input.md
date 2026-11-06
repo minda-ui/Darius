@@ -106,6 +106,8 @@ drawing reads above where they differ:**
 | Back length | **LW − 89 ± 0.5** | **375** (SmartCabinet 389 ✗) |
 | Back height | A/B-86 **70** (120: 104, 140: 124, 164: 148, 204: 188) | **70** (Drawer Box row H 71 → set 70) |
 
+**Proved on a real set, AM2603, 2026-11-06** — owner: *"Size workd perfectly"* (bottoms 389 × 445, backs 375 × 70, 16 mm U961, cut on the saw).
+
 The back stands **on** the bottom (16 + 70 = the 86 side), so the `.SCS` wants the back on the base, not between the
 sides above it: my reading, **`bCassDIESOT=1`** and the base length = NL − 5 — **to prove on one re-export**, as METABOX was.
 SmartCabinet's 408 + 16 = 424 is the *internal* length laid out as base + back; the leaflet's base runs the full 445.
@@ -151,3 +153,4 @@ Then add the other NLs (only the `LBox` changes; holes stay 37 / 261).
 | 2026-11-06 | §5: AM2603 front holes by hand; drawer backs edged on top only (owner) | `change-log-2026-11-06-enq0002-drawings.md` (4) |
 | 2026-11-06 | §4/§5 from the owner's photos of the printed leaflet: front bracket holes are **10 deep** (not Ø10); back 44.5 / 9 / 32 confirmed | `change-log-2026-11-06-enq0002-drawings.md` (9) |
 | 2026-11-06 | §4: printed panel sizes from the leaflet (bottom NL − 5, back LW − 89 × 70); SmartCabinet's 408 bottom and 389 back are wrong | `change-log-2026-11-06-enq0002-drawings.md` (10) |
+| 2026-11-06 | Printed panel sizes proved on AM2603's set (owner) | `change-log-2026-11-06-enq0002-drawings.md` (12) |

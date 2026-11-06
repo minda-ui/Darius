@@ -128,3 +128,9 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   (remove the bottom programs from Furniture) is moot for this job and nothing in Furniture was changed. The sizes
   actually cut for bottoms and backs are asked for, to prove the `.SCS` fix against a real set.
 - Left: 6 drawer fronts (holes by hand, knob each) and the 2 knob-less doors.
+
+## 12. Panel sizes proved
+- Owner: *"Size workd perfectly"* (after the photo of the six fitted drawers) — read as the leaflet sizes given in §10:
+  **bottoms 389 × 445, backs 375 × 70**. Klug article §4 marked proved on a real set. Still to do for the next Innobox
+  job: make SmartCabinet produce them (Drawer Box H 70; `.SCS` back on base, base NL − 5) and drop the stray tool-182
+  cuts — one test re-export.
