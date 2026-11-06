@@ -109,3 +109,16 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   after a dry fit of one. Base 389 = 464 − 75 ✓.
 - Components list: item 5 is a **metal drawer back**, shown as an option; AM2603 uses the wooden U961 back on the rear
   connecting brackets (item 4), as drawn.
+
+## 10. Leaflet panel sizes — the released drawer bottoms are wrong
+- Owner's photos, "Bottom and back panels measurement" (printed): **bottom LW − 75 × (NL − 5)**, **back (LW − 89) × 70**
+  for A/B-86, 16 mm. AM2603 → **bottoms 389 × 445, backs 375 × 70**, 6 of each, U961.
+- ✗ **Released bottoms `09`/`14`/`19-DRAWER-n-BOTTOM.TCN` are 389 × 408** — 37 short.
+- ✗ **And each carries two tool-182 cuts, 8 deep**, at x 38 and x 351, from y 368 running off the 408 panel (≈ 40 mm on the
+  part) — the "stray tool-182 cuts in single drawer-bottom programs" already on the checklist. **Missed in rounds 3–6**:
+  I checked the size and passed them. Lesson: decode every program in full, every round, including parts that "need
+  no holes".
+- Recommendation: **do not run the drawer-bottom programs**; the bottoms need no machining — **cut 389 × 445 on the F45**.
+  Backs **375 × 70** on the saw (top edge edged) after a dry fit. Remove the three bottom programs from the two chest
+  worklists in Furniture — **on the owner's word only**. For future jobs: Drawer Box row H 71 → 70; `.SCS` back on the
+  base (`bCassDIESOT=1`, my reading) and base length NL − 5, proved on one re-export.

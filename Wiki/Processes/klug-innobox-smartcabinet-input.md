@@ -96,6 +96,20 @@ values typed into the window did not take effect; the loaded file did).
 base depth ≈ **424** less the back if the back stands on it. Back height: **not on the drawing** ⚠ measure (≈ 70 likely
 for an 86 side).
 
+**Printed panel sizes — the leaflet's "Bottom and back panels measurement" (owner's photo, 2026-11-06). These replace the
+drawing reads above where they differ:**
+
+| Part (16 mm) | Rule | AM2603 (LW 464, NL 450) |
+|---|---|---|
+| Bottom width | **LW − 75 ± 0.5** | **389** ✓ (SmartCabinet 389) |
+| Bottom length | **NL − 5** (wooden back); NL − 8 with the metal back | **445** ✗ (SmartCabinet 408) |
+| Back length | **LW − 89 ± 0.5** | **375** (SmartCabinet 389 ✗) |
+| Back height | A/B-86 **70** (120: 104, 140: 124, 164: 148, 204: 188) | **70** (Drawer Box row H 71 → set 70) |
+
+The back stands **on** the bottom (16 + 70 = the 86 side), so the `.SCS` wants the back on the base, not between the
+sides above it: my reading, **`bCassDIESOT=1`** and the base length = NL − 5 — **to prove on one re-export**, as METABOX was.
+SmartCabinet's 408 + 16 = 424 is the *internal* length laid out as base + back; the leaflet's base runs the full 445.
+
 ## 5. Front
 
 - Front fixing bracket screws into the front: **2 holes 32 apart**, the lower **min. 54** above the front's bottom
@@ -136,3 +150,4 @@ Then add the other NLs (only the `LBox` changes; holes stay 37 / 261).
 | 2026-11-05 | §1: not in Import Accessori (owner); hand entry started for ENQ-0002 (NL 450, LY 18 / Y 38) | `change-log-2026-11-05-corner-unit-handed-over.md` (7) |
 | 2026-11-06 | §5: AM2603 front holes by hand; drawer backs edged on top only (owner) | `change-log-2026-11-06-enq0002-drawings.md` (4) |
 | 2026-11-06 | §4/§5 from the owner's photos of the printed leaflet: front bracket holes are **10 deep** (not Ø10); back 44.5 / 9 / 32 confirmed | `change-log-2026-11-06-enq0002-drawings.md` (9) |
+| 2026-11-06 | §4: printed panel sizes from the leaflet (bottom NL − 5, back LW − 89 × 70); SmartCabinet's 408 bottom and 389 back are wrong | `change-log-2026-11-06-enq0002-drawings.md` (10) |
