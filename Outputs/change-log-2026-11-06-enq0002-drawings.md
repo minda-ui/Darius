@@ -88,3 +88,14 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   back unchanged ✓.
 - **Cleared for release** once the three 05:51 folders are deleted; release to Furniture on the owner's word. Still open,
   not blocking the Vitap: drawer-back width on the first Innobox set; how the knob-less door opens.
+
+## 8. Released to Furniture
+- Owner: *"Deleted, release to Furniture"*. At release the three 05:51 folders **still listed as not trashed** in Drive
+  (sync lag, or deleted elsewhere) — so only the four checked 06:01 folders were released, picked by timestamp and md5.
+- New folder **`Furniture/AM2603 Drawer chests and cupboards`** (`1QGYilcfTkqKI6EuvedcjeEcwXkleHccs`): `001`
+  (`1P1UI-nER_1D6KkHr2tkUNt36bSzH62kV`) and `002` (`1nds2QB-IIcK7lSFcbEomFRSA6_ER_4Y7`) Cupboard with Door, `003`
+  (`17ys3FWUCrPkXMcE-twH4PYj97Cv6MYG_`) and `004` (`114LUlLssO7Iq6-ll7-2xJZg1cdg-2XZA`) Cupboard with Drawers. Server-side
+  copies; **46 / 46 md5 = source**, and every program = the checked round (chests round 3, cupboards round 6).
+- Loading: WSC ListsManager → open each unit's `worklist.xmlst` (cupboard 9 programs, chest 10); Mirror unticked.
+  By hand, not on the Vitap: drawer-front holes. Not programmed: drawer fronts, drawer backs (saw; width to measure on
+  the first Innobox set before cutting), door with no knob.
