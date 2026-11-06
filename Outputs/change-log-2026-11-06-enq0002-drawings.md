@@ -134,3 +134,8 @@ Owner: *"1. ok 2. needed 3. hand work 4. understand 5. only Backs top need edgin
   **bottoms 389 × 445, backs 375 × 70**. Klug article §4 marked proved on a real set. Still to do for the next Innobox
   job: make SmartCabinet produce them (Drawer Box H 70; `.SCS` back on base, base NL − 5) and drop the stray tool-182
   cuts — one test re-export.
+
+## 13. Fronts fitted
+- Owner's photo: both chests and both cupboards with all fronts and doors on (chests stacked on the cupboards for the
+  photo). Owner: *"Only candles left"* — read as **handles**: the 6 Carlisle Brass FTD703MB knobs on the drawer fronts
+  (doors have none, §6). AM2603 otherwise built. Knob hole by hand; size to check on the first knob (M4 / Ø5 assumed).
